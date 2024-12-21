@@ -15,10 +15,7 @@ jobs:
 
       - name: ファイル内のundergardensをswamplandsに置き換え
         run: |
-          # すべてのファイルを対象にして検索・置き換え
-          find . -type f \( -name "*.java" -or -name "*.txt" -or -name "*.md" -or -name "*.json" \) | while read file; do
-            sed -i 's/simibubi/sakalti/g' "$file"
-          done
+          mv "src/main/java/com/simibubi/create" "src/main/java/com/sakalti/create_re"
 
       - name: 変更をコミット
         run: |
