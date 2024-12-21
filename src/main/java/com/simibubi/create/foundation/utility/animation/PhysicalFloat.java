@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.utility.animation;
+package com.sakalti.create_re.foundation.utility.animation;
 
 import java.util.ArrayList;
 

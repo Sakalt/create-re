@@ -1,12 +1,12 @@
-package com.simibubi.create_re.infrastructure.data;
+package com.sakalti.create_re.infrastructure.data;
 
 import java.util.concurrent.CompletableFuture;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create_re.AllTags.AllRecipeSerializerTags;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.compat.Mods;
+import com.sakalti.create_re.AllTags.AllRecipeSerializerTags;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.compat.Mods;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.HolderLookup.Provider;

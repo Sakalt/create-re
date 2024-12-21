@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.contraptions.behaviour.dispenser;
+package com.sakalti.create_re.content.contraptions.behaviour.dispenser;
 
 import net.minecraft.core.Position;
 

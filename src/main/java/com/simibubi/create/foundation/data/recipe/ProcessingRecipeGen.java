@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.data.recipe;
+package com.sakalti.create_re.foundation.data.recipe;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,12 +6,12 @@ import java.util.concurrent.CompletableFuture;
 import java.util.function.Supplier;
 import java.util.function.UnaryOperator;
 
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.content.processing.recipe.ProcessingRecipe;
-import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder;
-import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeSerializer;
-import com.simibubi.create_re.foundation.recipe.IRecipeTypeInfo;
-import com.simibubi.create_re.foundation.utility.RegisteredObjects;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.content.processing.recipe.ProcessingRecipe;
+import com.sakalti.create_re.content.processing.recipe.ProcessingRecipeBuilder;
+import com.sakalti.create_re.content.processing.recipe.ProcessingRecipeSerializer;
+import com.sakalti.create_re.foundation.recipe.IRecipeTypeInfo;
+import com.sakalti.create_re.foundation.utility.RegisteredObjects;
 
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataGenerator;

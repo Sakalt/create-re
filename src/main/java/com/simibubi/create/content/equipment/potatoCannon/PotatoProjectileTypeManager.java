@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.equipment.potatoCannon;
+package com.sakalti.create_re.content.equipment.potatoCannon;
 
 import java.util.HashMap;
 import java.util.IdentityHashMap;
@@ -9,9 +9,9 @@ import java.util.function.Supplier;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.AllPackets;
-import com.simibubi.create_re.foundation.networking.SimplePacketBase;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.AllPackets;
+import com.sakalti.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;

@@ -1,8 +1,8 @@
-package com.simibubi.create_re.content.logistics.chute;
+package com.sakalti.create_re.content.logistics.chute;
 
-import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBoxTransform;
-import com.simibubi.create_re.foundation.utility.AngleHelper;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.ValueBoxTransform;
+import com.sakalti.create_re.foundation.utility.AngleHelper;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.Direction;
 import net.minecraft.core.Direction.Axis;

@@ -1,10 +1,10 @@
-package com.simibubi.create_re.content.contraptions.actors.psi;
+package com.sakalti.create_re.content.contraptions.actors.psi;
 
-import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
-import com.simibubi.create_re.content.contraptions.render.ActorVisual;
-import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
-import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
-import com.simibubi.create_re.foundation.virtualWorld.VirtualRenderWorld;
+import com.sakalti.create_re.content.contraptions.behaviour.MovementContext;
+import com.sakalti.create_re.content.contraptions.render.ActorVisual;
+import com.sakalti.create_re.foundation.utility.AnimationTickHolder;
+import com.sakalti.create_re.foundation.utility.animation.LerpedFloat;
+import com.sakalti.create_re.foundation.virtualWorld.VirtualRenderWorld;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
 

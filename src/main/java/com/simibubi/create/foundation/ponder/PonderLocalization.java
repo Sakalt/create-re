@@ -1,12 +1,12 @@
-package com.simibubi.create_re.foundation.ponder;
+package com.sakalti.create_re.foundation.ponder;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.BiConsumer;
 
 import com.google.gson.JsonObject;
-import com.simibubi.create_re.foundation.utility.Couple;
-import com.simibubi.create_re.infrastructure.ponder.PonderIndex;
+import com.sakalti.create_re.foundation.utility.Couple;
+import com.sakalti.create_re.infrastructure.ponder.PonderIndex;
 import com.tterrag.registrate.AbstractRegistrate;
 
 import net.minecraft.client.resources.language.I18n;

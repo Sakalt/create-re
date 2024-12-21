@@ -1,12 +1,12 @@
-package com.simibubi.create_re.foundation.mixin.client;
+package com.sakalti.create_re.foundation.mixin.client;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import com.simibubi.create_re.content.trains.track.TrackBlockOutline;
-import com.simibubi.create_re.foundation.block.BigOutlines;
+import com.sakalti.create_re.content.trains.track.TrackBlockOutline;
+import com.sakalti.create_re.foundation.block.BigOutlines;
 
 import net.minecraft.client.renderer.GameRenderer;
 

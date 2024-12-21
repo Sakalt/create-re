@@ -1,11 +1,11 @@
-package com.simibubi.create_re.foundation.data.recipe;
+package com.sakalti.create_re.foundation.data.recipe;
 
 import java.util.function.Supplier;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllRecipeTypes;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.foundation.utility.RegisteredObjects;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllRecipeTypes;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.foundation.utility.RegisteredObjects;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.ItemTags;

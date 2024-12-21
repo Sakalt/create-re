@@ -1,11 +1,11 @@
-package com.simibubi.create_re.content.equipment.armor;
+package com.sakalti.create_re.content.equipment.armor;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create_re.foundation.render.CachedBufferer;
-import com.simibubi.create_re.foundation.render.SuperByteBuffer;
-import com.simibubi.create_re.foundation.utility.AngleHelper;
-import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.sakalti.create_re.foundation.render.CachedBufferer;
+import com.sakalti.create_re.foundation.render.SuperByteBuffer;
+import com.sakalti.create_re.foundation.utility.AngleHelper;
+import com.sakalti.create_re.foundation.utility.AnimationTickHolder;
 
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.HumanoidModel;

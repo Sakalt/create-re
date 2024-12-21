@@ -1,7 +1,7 @@
-package com.simibubi.create_re.content.equipment.bell;
+package com.sakalti.create_re.content.equipment.bell;
 
-import com.simibubi.create_re.content.contraptions.behaviour.BellMovementBehaviour;
-import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
+import com.sakalti.create_re.content.contraptions.behaviour.BellMovementBehaviour;
+import com.sakalti.create_re.content.contraptions.behaviour.MovementContext;
 
 import net.minecraft.core.BlockPos;
 

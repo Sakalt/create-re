@@ -1,10 +1,10 @@
-package com.simibubi.create_re.content.equipment.bell;
+package com.sakalti.create_re.content.equipment.bell;
 
 import org.joml.Quaternionf;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;
-import com.simibubi.create_re.AllParticleTypes;
+import com.sakalti.create_re.AllParticleTypes;
 
 import net.minecraft.client.Camera;
 import net.minecraft.client.multiplayer.ClientLevel;

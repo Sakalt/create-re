@@ -1,8 +1,8 @@
-package com.simibubi.create_re.content.equipment.potatoCannon;
+package com.sakalti.create_re.content.equipment.potatoCannon;
 
-import com.simibubi.create_re.CreateClient;
-import com.simibubi.create_re.content.equipment.zapper.ShootGadgetPacket;
-import com.simibubi.create_re.content.equipment.zapper.ShootableGadgetRenderHandler;
+import com.sakalti.create_re.CreateClient;
+import com.sakalti.create_re.content.equipment.zapper.ShootGadgetPacket;
+import com.sakalti.create_re.content.equipment.zapper.ShootableGadgetRenderHandler;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.InteractionHand;

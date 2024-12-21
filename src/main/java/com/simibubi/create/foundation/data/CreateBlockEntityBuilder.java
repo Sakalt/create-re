@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.data;
+package com.sakalti.create_re.foundation.data;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -6,7 +6,7 @@ import java.util.function.Supplier;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create_re.Create;
+import com.sakalti.create_re.Create;
 import com.tterrag.registrate.AbstractRegistrate;
 import com.tterrag.registrate.builders.BlockEntityBuilder;
 import com.tterrag.registrate.builders.BuilderCallback;

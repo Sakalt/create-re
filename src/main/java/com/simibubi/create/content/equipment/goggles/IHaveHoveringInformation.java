@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.equipment.goggles;
+package com.sakalti.create_re.content.equipment.goggles;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.kinetics.transmission;
+package com.sakalti.create_re.content.kinetics.transmission;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

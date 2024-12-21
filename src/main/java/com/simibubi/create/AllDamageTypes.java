@@ -1,6 +1,6 @@
-package com.simibubi.create_re;
+package com.sakalti.create_re;
 
-import com.simibubi.create_re.foundation.damageTypes.DamageTypeBuilder;
+import com.sakalti.create_re.foundation.damageTypes.DamageTypeBuilder;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;

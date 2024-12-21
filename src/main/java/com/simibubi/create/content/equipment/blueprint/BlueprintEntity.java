@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.equipment.blueprint;
+package com.sakalti.create_re.content.equipment.blueprint;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,17 +9,17 @@ import javax.annotation.Nullable;
 
 import org.apache.commons.lang3.Validate;
 
-import com.simibubi.create_re.AllEntityTypes;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.content.logistics.filter.FilterItemStack;
-import com.simibubi.create_re.content.schematics.requirement.ISpecialEntityItemRequirement;
-import com.simibubi.create_re.content.schematics.requirement.ItemRequirement;
-import com.simibubi.create_re.content.schematics.requirement.ItemRequirement.ItemUseType;
-import com.simibubi.create_re.foundation.networking.ISyncPersistentData;
-import com.simibubi.create_re.foundation.utility.Couple;
-import com.simibubi.create_re.foundation.utility.IInteractionChecker;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.AllEntityTypes;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.content.logistics.filter.FilterItemStack;
+import com.sakalti.create_re.content.schematics.requirement.ISpecialEntityItemRequirement;
+import com.sakalti.create_re.content.schematics.requirement.ItemRequirement;
+import com.sakalti.create_re.content.schematics.requirement.ItemRequirement.ItemUseType;
+import com.sakalti.create_re.foundation.networking.ISyncPersistentData;
+import com.sakalti.create_re.foundation.utility.Couple;
+import com.sakalti.create_re.foundation.utility.IInteractionChecker;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

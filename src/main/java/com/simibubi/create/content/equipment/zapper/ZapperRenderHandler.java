@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.equipment.zapper;
+package com.sakalti.create_re.content.equipment.zapper;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -7,8 +7,8 @@ import java.util.function.Supplier;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import com.simibubi.create_re.AllSoundEvents;
-import com.simibubi.create_re.CreateClient;
+import com.sakalti.create_re.AllSoundEvents;
+import com.sakalti.create_re.CreateClient;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;

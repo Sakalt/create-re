@@ -1,11 +1,11 @@
-package com.simibubi.create_re.content.kinetics.mixer;
+package com.sakalti.create_re.content.kinetics.mixer;
 
 import java.util.function.Consumer;
 
-import com.simibubi.create_re.AllPartialModels;
-import com.simibubi.create_re.content.kinetics.base.RotatingInstance;
-import com.simibubi.create_re.content.kinetics.simpleRelays.encased.EncasedCogVisual;
-import com.simibubi.create_re.foundation.render.AllInstanceTypes;
+import com.sakalti.create_re.AllPartialModels;
+import com.sakalti.create_re.content.kinetics.base.RotatingInstance;
+import com.sakalti.create_re.content.kinetics.simpleRelays.encased.EncasedCogVisual;
+import com.sakalti.create_re.foundation.render.AllInstanceTypes;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.model.Model;

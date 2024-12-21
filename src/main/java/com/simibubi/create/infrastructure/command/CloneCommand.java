@@ -1,4 +1,4 @@
-package com.simibubi.create_re.infrastructure.command;
+package com.sakalti.create_re.infrastructure.command;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import com.mojang.brigadier.Command;
 import com.mojang.brigadier.builder.ArgumentBuilder;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.brigadier.exceptions.Dynamic2CommandExceptionType;
-import com.simibubi.create_re.content.contraptions.glue.SuperGlueEntity;
-import com.simibubi.create_re.foundation.utility.Components;
+import com.sakalti.create_re.content.contraptions.glue.SuperGlueEntity;
+import com.sakalti.create_re.foundation.utility.Components;
 
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;

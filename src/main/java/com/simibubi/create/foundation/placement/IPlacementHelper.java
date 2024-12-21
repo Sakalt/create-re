@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.placement;
+package com.sakalti.create_re.foundation.placement;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -8,10 +8,10 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-import com.simibubi.create_re.CreateClient;
-import com.simibubi.create_re.foundation.utility.Iterate;
-import com.simibubi.create_re.foundation.utility.Pair;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.CreateClient;
+import com.sakalti.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.foundation.utility.Pair;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;

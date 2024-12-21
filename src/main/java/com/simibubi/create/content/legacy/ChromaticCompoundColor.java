@@ -1,7 +1,7 @@
-package com.simibubi.create_re.content.legacy;
+package com.sakalti.create_re.content.legacy;
 
-import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
-import com.simibubi.create_re.foundation.utility.Color;
+import com.sakalti.create_re.foundation.utility.AnimationTickHolder;
+import com.sakalti.create_re.foundation.utility.Color;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.color.item.ItemColor;

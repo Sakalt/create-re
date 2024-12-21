@@ -1,15 +1,15 @@
-package com.simibubi.create_re.foundation.gui.widget;
+package com.sakalti.create_re.foundation.gui.widget;
 
 import java.util.function.Function;
 
-import com.simibubi.create_re.foundation.gui.Theme;
-import com.simibubi.create_re.foundation.gui.Theme.Key;
-import com.simibubi.create_re.foundation.gui.UIRenderHelper;
-import com.simibubi.create_re.foundation.gui.element.BoxElement;
-import com.simibubi.create_re.foundation.gui.element.DelegatedStencilElement;
-import com.simibubi.create_re.foundation.utility.Color;
-import com.simibubi.create_re.foundation.utility.Couple;
-import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
+import com.sakalti.create_re.foundation.gui.Theme;
+import com.sakalti.create_re.foundation.gui.Theme.Key;
+import com.sakalti.create_re.foundation.gui.UIRenderHelper;
+import com.sakalti.create_re.foundation.gui.element.BoxElement;
+import com.sakalti.create_re.foundation.gui.element.DelegatedStencilElement;
+import com.sakalti.create_re.foundation.utility.Color;
+import com.sakalti.create_re.foundation.utility.Couple;
+import com.sakalti.create_re.foundation.utility.animation.LerpedFloat;
 
 import net.minecraft.client.gui.GuiGraphics;
 

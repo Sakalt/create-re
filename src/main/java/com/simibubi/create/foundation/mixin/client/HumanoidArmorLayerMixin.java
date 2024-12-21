@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.mixin.client;
+package com.sakalti.create_re.foundation.mixin.client;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -7,7 +7,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.foundation.item.CustomRenderedArmorItem;
+import com.sakalti.create_re.foundation.item.CustomRenderedArmorItem;
 
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.renderer.MultiBufferSource;

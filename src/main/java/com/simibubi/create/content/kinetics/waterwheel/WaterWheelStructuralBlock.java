@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.kinetics.waterwheel;
+package com.sakalti.create_re.content.kinetics.waterwheel;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -6,10 +6,10 @@ import java.util.function.Consumer;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.content.equipment.goggles.IProxyHoveringInformation;
-import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
-import com.simibubi.create_re.foundation.block.render.MultiPosDestructionHandler;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.content.equipment.goggles.IProxyHoveringInformation;
+import com.sakalti.create_re.content.equipment.wrench.IWrenchable;
+import com.sakalti.create_re.foundation.block.render.MultiPosDestructionHandler;
 
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.ParticleEngine;

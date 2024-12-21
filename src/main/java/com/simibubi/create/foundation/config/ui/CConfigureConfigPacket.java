@@ -1,9 +1,9 @@
-package com.simibubi.create_re.foundation.config.ui;
+package com.sakalti.create_re.foundation.config.ui;
 
 import java.util.Objects;
 
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.foundation.networking.SimplePacketBase;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.server.level.ServerPlayer;

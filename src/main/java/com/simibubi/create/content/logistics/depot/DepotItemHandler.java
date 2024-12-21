@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.logistics.depot;
+package com.sakalti.create_re.content.logistics.depot;
 
-import com.simibubi.create_re.content.kinetics.belt.transport.TransportedItemStack;
+import com.sakalti.create_re.content.kinetics.belt.transport.TransportedItemStack;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.items.IItemHandler;

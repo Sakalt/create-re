@@ -1,7 +1,7 @@
-package com.simibubi.create_re.foundation.particle;
+package com.sakalti.create_re.foundation.particle;
 
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.Particle;

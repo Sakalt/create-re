@@ -1,9 +1,9 @@
-package com.simibubi.create_re.foundation.data;
+package com.sakalti.create_re.foundation.data;
 
 import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create_re.Create;
+import com.sakalti.create_re.Create;
 import com.tterrag.registrate.AbstractRegistrate;
 import com.tterrag.registrate.builders.BuilderCallback;
 import com.tterrag.registrate.builders.EntityBuilder;

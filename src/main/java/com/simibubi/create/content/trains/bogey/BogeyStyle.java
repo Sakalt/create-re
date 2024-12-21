@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.trains.bogey;
+package com.sakalti.create_re.content.trains.bogey;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,10 +9,10 @@ import java.util.stream.Stream;
 import org.jetbrains.annotations.Nullable;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.AllBogeyStyles;
-import com.simibubi.create_re.AllSoundEvents;
-import com.simibubi.create_re.content.trains.bogey.BogeySizes.BogeySize;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.AllBogeyStyles;
+import com.sakalti.create_re.AllSoundEvents;
+import com.sakalti.create_re.content.trains.bogey.BogeySizes.BogeySize;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
 import net.minecraft.client.renderer.MultiBufferSource;

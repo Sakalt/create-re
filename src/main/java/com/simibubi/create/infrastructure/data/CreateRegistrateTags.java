@@ -1,14 +1,14 @@
-package com.simibubi.create_re.infrastructure.data;
+package com.sakalti.create_re.infrastructure.data;
 
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.AllTags.AllBlockTags;
-import com.simibubi.create_re.AllTags.AllEntityTags;
-import com.simibubi.create_re.AllTags.AllFluidTags;
-import com.simibubi.create_re.AllTags.AllItemTags;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.foundation.data.TagGen;
-import com.simibubi.create_re.foundation.data.TagGen.CreateTagsProvider;
-import com.simibubi.create_re.foundation.data.recipe.Mods;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.AllTags.AllBlockTags;
+import com.sakalti.create_re.AllTags.AllEntityTags;
+import com.sakalti.create_re.AllTags.AllFluidTags;
+import com.sakalti.create_re.AllTags.AllItemTags;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.foundation.data.TagGen;
+import com.sakalti.create_re.foundation.data.TagGen.CreateTagsProvider;
+import com.sakalti.create_re.foundation.data.recipe.Mods;
 import com.tterrag.registrate.providers.ProviderType;
 import com.tterrag.registrate.providers.RegistrateTagsProvider;
 

@@ -1,12 +1,12 @@
-package com.simibubi.create_re.content.contraptions.gantry;
+package com.sakalti.create_re.content.contraptions.gantry;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.content.kinetics.base.DirectionalAxisKineticBlock;
-import com.simibubi.create_re.content.kinetics.base.IRotate;
-import com.simibubi.create_re.content.kinetics.gantry.GantryShaftBlock;
-import com.simibubi.create_re.foundation.block.IBE;
-import com.simibubi.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.content.kinetics.base.DirectionalAxisKineticBlock;
+import com.sakalti.create_re.content.kinetics.base.IRotate;
+import com.sakalti.create_re.content.kinetics.gantry.GantryShaftBlock;
+import com.sakalti.create_re.foundation.block.IBE;
+import com.sakalti.create_re.foundation.utility.Iterate;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

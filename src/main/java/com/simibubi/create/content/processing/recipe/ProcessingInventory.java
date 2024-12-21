@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.processing.recipe;
+package com.sakalti.create_re.content.processing.recipe;
 
 import java.util.function.Consumer;
 

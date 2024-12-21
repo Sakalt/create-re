@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.redstone.displayLink.source;
+package com.sakalti.create_re.content.redstone.displayLink.source;
 
-import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkContext;
-import com.simibubi.create_re.content.redstone.thresholdSwitch.ThresholdSwitchBlockEntity;
-import com.simibubi.create_re.foundation.gui.ModularGuiLineBuilder;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.content.redstone.displayLink.DisplayLinkContext;
+import com.sakalti.create_re.content.redstone.thresholdSwitch.ThresholdSwitchBlockEntity;
+import com.sakalti.create_re.foundation.gui.ModularGuiLineBuilder;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.api.distmarker.Dist;

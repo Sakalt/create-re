@@ -1,20 +1,20 @@
-package com.simibubi.create_re.content.kinetics.crafter;
+package com.sakalti.create_re.content.kinetics.crafter;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.content.kinetics.base.HorizontalKineticBlock;
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create_re.content.kinetics.crafter.ConnectedInputHandler.ConnectedInput;
-import com.simibubi.create_re.content.kinetics.crafter.MechanicalCrafterBlockEntity.Phase;
-import com.simibubi.create_re.content.kinetics.simpleRelays.ICogWheel;
-import com.simibubi.create_re.foundation.block.IBE;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
-import com.simibubi.create_re.foundation.utility.AngleHelper;
-import com.simibubi.create_re.foundation.utility.Iterate;
-import com.simibubi.create_re.foundation.utility.Pointing;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.content.kinetics.base.HorizontalKineticBlock;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntity;
+import com.sakalti.create_re.content.kinetics.crafter.ConnectedInputHandler.ConnectedInput;
+import com.sakalti.create_re.content.kinetics.crafter.MechanicalCrafterBlockEntity.Phase;
+import com.sakalti.create_re.content.kinetics.simpleRelays.ICogWheel;
+import com.sakalti.create_re.foundation.block.IBE;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
+import com.sakalti.create_re.foundation.utility.AngleHelper;
+import com.sakalti.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.foundation.utility.Pointing;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

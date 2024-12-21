@@ -1,14 +1,14 @@
-package com.simibubi.create_re.content.trains.graph;
+package com.sakalti.create_re.content.trains.graph;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Supplier;
 
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.content.trains.observer.TrackObserver;
-import com.simibubi.create_re.content.trains.signal.SignalBoundary;
-import com.simibubi.create_re.content.trains.signal.TrackEdgePoint;
-import com.simibubi.create_re.content.trains.station.GlobalStation;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.content.trains.observer.TrackObserver;
+import com.sakalti.create_re.content.trains.signal.SignalBoundary;
+import com.sakalti.create_re.content.trains.signal.TrackEdgePoint;
+import com.sakalti.create_re.content.trains.station.GlobalStation;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;

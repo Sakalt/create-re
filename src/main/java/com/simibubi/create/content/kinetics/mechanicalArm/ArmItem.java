@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.kinetics.mechanicalArm;
+package com.sakalti.create_re.content.kinetics.mechanicalArm;
 
-import com.simibubi.create_re.AllPackets;
+import com.sakalti.create_re.AllPackets;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;

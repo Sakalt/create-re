@@ -1,7 +1,7 @@
-package com.simibubi.create_re.content.contraptions.pulley;
+package com.sakalti.create_re.content.contraptions.pulley;
 
-import com.simibubi.create_re.AllPartialModels;
-import com.simibubi.create_re.content.fluids.hosePulley.HosePulleyBlockEntity;
+import com.sakalti.create_re.AllPartialModels;
+import com.sakalti.create_re.content.fluids.hosePulley.HosePulleyBlockEntity;
 
 import dev.engine_room.flywheel.api.instance.Instancer;
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;

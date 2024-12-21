@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.equipment;
+package com.sakalti.create_re.content.equipment;
 
-import com.simibubi.create_re.foundation.utility.worldWrappers.PlacementSimulationServerWorld;
+import com.sakalti.create_re.foundation.utility.worldWrappers.PlacementSimulationServerWorld;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;

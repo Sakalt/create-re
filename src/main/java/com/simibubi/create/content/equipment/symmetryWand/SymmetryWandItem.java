@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.equipment.symmetryWand;
+package com.sakalti.create_re.content.equipment.symmetryWand;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,19 +8,19 @@ import java.util.function.Consumer;
 
 import javax.annotation.Nonnull;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.AllPackets;
-import com.simibubi.create_re.content.contraptions.mounted.CartAssemblerBlock;
-import com.simibubi.create_re.content.equipment.symmetryWand.mirror.CrossPlaneMirror;
-import com.simibubi.create_re.content.equipment.symmetryWand.mirror.EmptyMirror;
-import com.simibubi.create_re.content.equipment.symmetryWand.mirror.PlaneMirror;
-import com.simibubi.create_re.content.equipment.symmetryWand.mirror.SymmetryMirror;
-import com.simibubi.create_re.foundation.gui.ScreenOpener;
-import com.simibubi.create_re.foundation.item.render.SimpleCustomRenderer;
-import com.simibubi.create_re.foundation.utility.BlockHelper;
-import com.simibubi.create_re.foundation.utility.Iterate;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.AllPackets;
+import com.sakalti.create_re.content.contraptions.mounted.CartAssemblerBlock;
+import com.sakalti.create_re.content.equipment.symmetryWand.mirror.CrossPlaneMirror;
+import com.sakalti.create_re.content.equipment.symmetryWand.mirror.EmptyMirror;
+import com.sakalti.create_re.content.equipment.symmetryWand.mirror.PlaneMirror;
+import com.sakalti.create_re.content.equipment.symmetryWand.mirror.SymmetryMirror;
+import com.sakalti.create_re.foundation.gui.ScreenOpener;
+import com.sakalti.create_re.foundation.item.render.SimpleCustomRenderer;
+import com.sakalti.create_re.foundation.utility.BlockHelper;
+import com.sakalti.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

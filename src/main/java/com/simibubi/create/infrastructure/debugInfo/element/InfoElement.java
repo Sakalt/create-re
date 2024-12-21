@@ -1,4 +1,4 @@
-package com.simibubi.create_re.infrastructure.debugInfo.element;
+package com.sakalti.create_re.infrastructure.debugInfo.element;
 
 import java.util.function.Consumer;
 

@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.trains.entity;
+package com.sakalti.create_re.content.trains.entity;
 
 import java.util.Objects;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.content.contraptions.render.ContraptionEntityRenderer;
+import com.sakalti.create_re.content.contraptions.render.ContraptionEntityRenderer;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationManager;
 import dev.engine_room.flywheel.lib.transform.TransformStack;

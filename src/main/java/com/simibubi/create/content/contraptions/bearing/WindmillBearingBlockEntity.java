@@ -1,14 +1,14 @@
-package com.simibubi.create_re.content.contraptions.bearing;
+package com.sakalti.create_re.content.contraptions.bearing;
 
 import java.util.List;
 
-import com.simibubi.create_re.foundation.advancement.AllAdvancements;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.scrollValue.INamedIconOptions;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.scrollValue.ScrollOptionBehaviour;
-import com.simibubi.create_re.foundation.gui.AllIcons;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.foundation.advancement.AllAdvancements;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.scrollValue.INamedIconOptions;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.scrollValue.ScrollOptionBehaviour;
+import com.sakalti.create_re.foundation.gui.AllIcons;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

@@ -1,23 +1,23 @@
-package com.simibubi.create_re.content.kinetics.crusher;
+package com.sakalti.create_re.content.kinetics.crusher;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-import com.simibubi.create_re.AllRecipeTypes;
-import com.simibubi.create_re.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
-import com.simibubi.create_re.content.processing.recipe.ProcessingInventory;
-import com.simibubi.create_re.content.processing.recipe.ProcessingRecipe;
-import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create_re.foundation.damageTypes.CreateDamageSources;
-import com.simibubi.create_re.foundation.item.ItemHelper;
-import com.simibubi.create_re.foundation.sound.SoundScapes;
-import com.simibubi.create_re.foundation.sound.SoundScapes.AmbienceGroup;
-import com.simibubi.create_re.foundation.utility.NBTHelper;
-import com.simibubi.create_re.foundation.utility.VecHelper;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.AllRecipeTypes;
+import com.sakalti.create_re.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
+import com.sakalti.create_re.content.processing.recipe.ProcessingInventory;
+import com.sakalti.create_re.content.processing.recipe.ProcessingRecipe;
+import com.sakalti.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.damageTypes.CreateDamageSources;
+import com.sakalti.create_re.foundation.item.ItemHelper;
+import com.sakalti.create_re.foundation.sound.SoundScapes;
+import com.sakalti.create_re.foundation.sound.SoundScapes.AmbienceGroup;
+import com.sakalti.create_re.foundation.utility.NBTHelper;
+import com.sakalti.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

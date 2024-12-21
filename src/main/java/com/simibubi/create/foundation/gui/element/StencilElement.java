@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.gui.element;
+package com.sakalti.create_re.foundation.gui.element;
 
 import org.lwjgl.opengl.GL11;
 

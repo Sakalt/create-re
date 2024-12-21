@@ -1,8 +1,8 @@
-package com.simibubi.create_re.content.contraptions.bearing;
+package com.sakalti.create_re.content.contraptions.bearing;
 
 import java.util.Map;
 
-import com.simibubi.create_re.AllBlocks;
+import com.sakalti.create_re.AllBlocks;
 import com.tterrag.registrate.util.entry.BlockEntry;
 
 import net.minecraft.world.item.BlockItem;

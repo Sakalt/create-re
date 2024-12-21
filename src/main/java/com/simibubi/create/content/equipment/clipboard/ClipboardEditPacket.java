@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.equipment.clipboard;
+package com.sakalti.create_re.content.equipment.clipboard;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.foundation.networking.SimplePacketBase;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

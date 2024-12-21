@@ -1,14 +1,14 @@
-package com.simibubi.create_re.content.redstone.displayLink.source;
+package com.sakalti.create_re.content.redstone.displayLink.source;
 
-import static com.simibubi.create_re.content.trains.display.FlapDisplaySection.WIDE_MONOSPACE;
+import static com.sakalti.create_re.content.trains.display.FlapDisplaySection.WIDE_MONOSPACE;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkContext;
-import com.simibubi.create_re.content.redstone.displayLink.target.DisplayTargetStats;
-import com.simibubi.create_re.content.trains.display.FlapDisplayBlockEntity;
-import com.simibubi.create_re.content.trains.display.FlapDisplaySection;
-import com.simibubi.create_re.foundation.utility.Components;
+import com.sakalti.create_re.content.redstone.displayLink.DisplayLinkContext;
+import com.sakalti.create_re.content.redstone.displayLink.target.DisplayTargetStats;
+import com.sakalti.create_re.content.trains.display.FlapDisplayBlockEntity;
+import com.sakalti.create_re.content.trains.display.FlapDisplaySection;
+import com.sakalti.create_re.foundation.utility.Components;
 
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.util.Mth;

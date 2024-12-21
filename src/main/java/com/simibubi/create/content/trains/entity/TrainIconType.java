@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.trains.entity;
+package com.sakalti.create_re.content.trains.entity;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import com.simibubi.create_re.Create;
+import com.sakalti.create_re.Create;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.resources.ResourceLocation;

@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.item;
+package com.sakalti.create_re.foundation.item;
 
 import static net.minecraft.ChatFormatting.DARK_GRAY;
 import static net.minecraft.ChatFormatting.GRAY;
@@ -15,9 +15,9 @@ import org.apache.commons.lang3.tuple.Pair;
 import org.jetbrains.annotations.Nullable;
 
 import com.google.common.collect.ImmutableList;
-import com.simibubi.create_re.foundation.item.TooltipHelper.Palette;
-import com.simibubi.create_re.foundation.utility.Components;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.item.TooltipHelper.Palette;
+import com.sakalti.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.Screen;

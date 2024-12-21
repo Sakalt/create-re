@@ -1,12 +1,12 @@
-package com.simibubi.create_re.foundation.gui;
+package com.sakalti.create_re.foundation.gui;
 
 import java.util.Collection;
 import java.util.List;
 
 import com.mojang.blaze3d.platform.InputConstants;
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.foundation.gui.widget.AbstractSimiWidget;
-import com.simibubi.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.gui.widget.AbstractSimiWidget;
+import com.sakalti.create_re.foundation.utility.Components;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.AbstractWidget;

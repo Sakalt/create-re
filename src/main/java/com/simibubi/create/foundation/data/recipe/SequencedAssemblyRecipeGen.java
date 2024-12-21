@@ -1,16 +1,16 @@
-package com.simibubi.create_re.foundation.data.recipe;
+package com.sakalti.create_re.foundation.data.recipe;
 
 import java.util.function.UnaryOperator;
 import java.util.stream.Stream;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.AllTags.AllItemTags;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.content.fluids.transfer.FillingRecipe;
-import com.simibubi.create_re.content.kinetics.deployer.DeployerApplicationRecipe;
-import com.simibubi.create_re.content.kinetics.press.PressingRecipe;
-import com.simibubi.create_re.content.processing.sequenced.SequencedAssemblyRecipeBuilder;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.AllTags.AllItemTags;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.content.fluids.transfer.FillingRecipe;
+import com.sakalti.create_re.content.kinetics.deployer.DeployerApplicationRecipe;
+import com.sakalti.create_re.content.kinetics.press.PressingRecipe;
+import com.sakalti.create_re.content.processing.sequenced.SequencedAssemblyRecipeBuilder;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Items;

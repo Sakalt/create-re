@@ -1,23 +1,23 @@
-package com.simibubi.create_re.content.decoration.palettes;
+package com.sakalti.create_re.content.decoration.palettes;
 
-import static com.simibubi.create_re.content.decoration.palettes.PaletteBlockPartial.ALL_PARTIALS;
-import static com.simibubi.create_re.content.decoration.palettes.PaletteBlockPartial.FOR_POLISHED;
-import static com.simibubi.create_re.content.decoration.palettes.PaletteBlockPattern.PatternNameType.PREFIX;
-import static com.simibubi.create_re.content.decoration.palettes.PaletteBlockPattern.PatternNameType.SUFFIX;
-import static com.simibubi.create_re.content.decoration.palettes.PaletteBlockPattern.PatternNameType.WRAP;
+import static com.sakalti.create_re.content.decoration.palettes.PaletteBlockPartial.ALL_PARTIALS;
+import static com.sakalti.create_re.content.decoration.palettes.PaletteBlockPartial.FOR_POLISHED;
+import static com.sakalti.create_re.content.decoration.palettes.PaletteBlockPattern.PatternNameType.PREFIX;
+import static com.sakalti.create_re.content.decoration.palettes.PaletteBlockPattern.PatternNameType.SUFFIX;
+import static com.sakalti.create_re.content.decoration.palettes.PaletteBlockPattern.PatternNameType.WRAP;
 
 import java.util.Optional;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.foundation.block.connected.AllCTTypes;
-import com.simibubi.create_re.foundation.block.connected.CTSpriteShiftEntry;
-import com.simibubi.create_re.foundation.block.connected.CTSpriteShifter;
-import com.simibubi.create_re.foundation.block.connected.CTType;
-import com.simibubi.create_re.foundation.block.connected.ConnectedTextureBehaviour;
-import com.simibubi.create_re.foundation.block.connected.HorizontalCTBehaviour;
-import com.simibubi.create_re.foundation.block.connected.RotatedPillarCTBehaviour;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.foundation.block.connected.AllCTTypes;
+import com.sakalti.create_re.foundation.block.connected.CTSpriteShiftEntry;
+import com.sakalti.create_re.foundation.block.connected.CTSpriteShifter;
+import com.sakalti.create_re.foundation.block.connected.CTType;
+import com.sakalti.create_re.foundation.block.connected.ConnectedTextureBehaviour;
+import com.sakalti.create_re.foundation.block.connected.HorizontalCTBehaviour;
+import com.sakalti.create_re.foundation.block.connected.RotatedPillarCTBehaviour;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 import com.tterrag.registrate.providers.RegistrateRecipeProvider;

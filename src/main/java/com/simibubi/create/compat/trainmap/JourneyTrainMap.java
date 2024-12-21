@@ -1,12 +1,12 @@
-package com.simibubi.create_re.compat.trainmap;
+package com.sakalti.create_re.compat.trainmap;
 
 import java.util.List;
 
 import com.mojang.blaze3d.platform.Window;
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.foundation.gui.RemovedGuiUtils;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.foundation.gui.RemovedGuiUtils;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
 
 import journeymap.client.api.display.Context.UI;
 import journeymap.client.api.util.UIState;

@@ -1,14 +1,14 @@
-package com.simibubi.create_re.content.kinetics.simpleRelays;
+package com.sakalti.create_re.content.kinetics.simpleRelays;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllShapes;
-import com.simibubi.create_re.content.decoration.encasing.EncasableBlock;
-import com.simibubi.create_re.content.kinetics.base.IRotate;
-import com.simibubi.create_re.content.kinetics.speedController.SpeedControllerBlock;
-import com.simibubi.create_re.foundation.advancement.AllAdvancements;
-import com.simibubi.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllShapes;
+import com.sakalti.create_re.content.decoration.encasing.EncasableBlock;
+import com.sakalti.create_re.content.kinetics.base.IRotate;
+import com.sakalti.create_re.content.kinetics.speedController.SpeedControllerBlock;
+import com.sakalti.create_re.foundation.advancement.AllAdvancements;
+import com.sakalti.create_re.foundation.utility.Iterate;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;

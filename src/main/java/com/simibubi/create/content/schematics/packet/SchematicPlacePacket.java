@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.schematics.packet;
+package com.sakalti.create_re.content.schematics.packet;
 
-import com.simibubi.create_re.content.schematics.SchematicPrinter;
-import com.simibubi.create_re.foundation.networking.SimplePacketBase;
-import com.simibubi.create_re.foundation.utility.BlockHelper;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.content.schematics.SchematicPrinter;
+import com.sakalti.create_re.foundation.networking.SimplePacketBase;
+import com.sakalti.create_re.foundation.utility.BlockHelper;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;

@@ -1,13 +1,13 @@
-package com.simibubi.create_re.content.equipment.potatoCannon;
+package com.sakalti.create_re.content.equipment.potatoCannon;
 
 import org.jetbrains.annotations.NotNull;
 
-import com.simibubi.create_re.AllEnchantments;
-import com.simibubi.create_re.AllSoundEvents;
-import com.simibubi.create_re.foundation.advancement.AllAdvancements;
-import com.simibubi.create_re.foundation.damageTypes.CreateDamageSources;
-import com.simibubi.create_re.foundation.particle.AirParticleData;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.AllEnchantments;
+import com.sakalti.create_re.AllSoundEvents;
+import com.sakalti.create_re.foundation.advancement.AllAdvancements;
+import com.sakalti.create_re.foundation.damageTypes.CreateDamageSources;
+import com.sakalti.create_re.foundation.particle.AirParticleData;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ItemParticleOption;

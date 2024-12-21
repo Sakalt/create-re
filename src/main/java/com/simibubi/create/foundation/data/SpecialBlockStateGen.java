@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.data;
+package com.sakalti.create_re.foundation.data;
 
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;

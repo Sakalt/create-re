@@ -1,19 +1,19 @@
-package com.simibubi.create_re.compat.computercraft.implementation;
+package com.sakalti.create_re.compat.computercraft.implementation;
 
-import com.simibubi.create_re.compat.computercraft.AbstractComputerBehaviour;
-import com.simibubi.create_re.compat.computercraft.implementation.peripherals.DisplayLinkPeripheral;
-import com.simibubi.create_re.compat.computercraft.implementation.peripherals.SequencedGearshiftPeripheral;
-import com.simibubi.create_re.compat.computercraft.implementation.peripherals.SpeedControllerPeripheral;
-import com.simibubi.create_re.compat.computercraft.implementation.peripherals.SpeedGaugePeripheral;
-import com.simibubi.create_re.compat.computercraft.implementation.peripherals.StationPeripheral;
-import com.simibubi.create_re.compat.computercraft.implementation.peripherals.StressGaugePeripheral;
-import com.simibubi.create_re.content.kinetics.gauge.SpeedGaugeBlockEntity;
-import com.simibubi.create_re.content.kinetics.gauge.StressGaugeBlockEntity;
-import com.simibubi.create_re.content.kinetics.speedController.SpeedControllerBlockEntity;
-import com.simibubi.create_re.content.kinetics.transmission.sequencer.SequencedGearshiftBlockEntity;
-import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkBlockEntity;
-import com.simibubi.create_re.content.trains.station.StationBlockEntity;
-import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.sakalti.create_re.compat.computercraft.AbstractComputerBehaviour;
+import com.sakalti.create_re.compat.computercraft.implementation.peripherals.DisplayLinkPeripheral;
+import com.sakalti.create_re.compat.computercraft.implementation.peripherals.SequencedGearshiftPeripheral;
+import com.sakalti.create_re.compat.computercraft.implementation.peripherals.SpeedControllerPeripheral;
+import com.sakalti.create_re.compat.computercraft.implementation.peripherals.SpeedGaugePeripheral;
+import com.sakalti.create_re.compat.computercraft.implementation.peripherals.StationPeripheral;
+import com.sakalti.create_re.compat.computercraft.implementation.peripherals.StressGaugePeripheral;
+import com.sakalti.create_re.content.kinetics.gauge.SpeedGaugeBlockEntity;
+import com.sakalti.create_re.content.kinetics.gauge.StressGaugeBlockEntity;
+import com.sakalti.create_re.content.kinetics.speedController.SpeedControllerBlockEntity;
+import com.sakalti.create_re.content.kinetics.transmission.sequencer.SequencedGearshiftBlockEntity;
+import com.sakalti.create_re.content.redstone.displayLink.DisplayLinkBlockEntity;
+import com.sakalti.create_re.content.trains.station.StationBlockEntity;
+import com.sakalti.create_re.foundation.blockEntity.SmartBlockEntity;
 
 import dan200.computercraft.api.peripheral.IPeripheral;
 import net.minecraftforge.common.capabilities.Capability;

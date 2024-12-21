@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.kinetics.deployer;
+package com.sakalti.create_re.content.kinetics.deployer;
 
 import java.util.Objects;
 import java.util.OptionalInt;
@@ -9,9 +9,9 @@ import javax.annotation.Nullable;
 import org.apache.commons.lang3.tuple.Pair;
 
 import com.mojang.authlib.GameProfile;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
-import com.simibubi.create_re.infrastructure.config.CKinetics;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.infrastructure.config.CKinetics;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.Connection;

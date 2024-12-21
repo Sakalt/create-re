@@ -1,8 +1,8 @@
-package com.simibubi.create_re.content.fluids.particle;
+package com.sakalti.create_re.content.fluids.particle;
 
-import com.simibubi.create_re.AllParticleTypes;
-import com.simibubi.create_re.content.fluids.potion.PotionFluid;
-import com.simibubi.create_re.foundation.utility.Color;
+import com.sakalti.create_re.AllParticleTypes;
+import com.sakalti.create_re.content.fluids.potion.PotionFluid;
+import com.sakalti.create_re.foundation.utility.Color;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;

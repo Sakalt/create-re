@@ -1,14 +1,14 @@
-package com.simibubi.create_re.content.contraptions.bearing;
+package com.sakalti.create_re.content.contraptions.bearing;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllTags.AllBlockTags;
-import com.simibubi.create_re.content.contraptions.AssemblyException;
-import com.simibubi.create_re.content.contraptions.Contraption;
-import com.simibubi.create_re.content.contraptions.ContraptionType;
-import com.simibubi.create_re.content.decoration.copycat.CopycatBlockEntity;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllTags.AllBlockTags;
+import com.sakalti.create_re.content.contraptions.AssemblyException;
+import com.sakalti.create_re.content.contraptions.Contraption;
+import com.sakalti.create_re.content.contraptions.ContraptionType;
+import com.sakalti.create_re.content.decoration.copycat.CopycatBlockEntity;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

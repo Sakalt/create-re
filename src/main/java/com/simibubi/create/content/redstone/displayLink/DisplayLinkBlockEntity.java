@@ -1,20 +1,20 @@
-package com.simibubi.create_re.content.redstone.displayLink;
+package com.sakalti.create_re.content.redstone.displayLink;
 
 import java.util.List;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create_re.compat.computercraft.AbstractComputerBehaviour;
-import com.simibubi.create_re.compat.computercraft.ComputerCraftProxy;
-import com.simibubi.create_re.content.redstone.displayLink.source.DisplaySource;
-import com.simibubi.create_re.content.redstone.displayLink.target.DisplayTarget;
-import com.simibubi.create_re.foundation.advancement.AllAdvancements;
-import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create_re.foundation.utility.NBTHelper;
-import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
-import com.simibubi.create_re.foundation.utility.animation.LerpedFloat.Chaser;
+import com.sakalti.create_re.compat.computercraft.AbstractComputerBehaviour;
+import com.sakalti.create_re.compat.computercraft.ComputerCraftProxy;
+import com.sakalti.create_re.content.redstone.displayLink.source.DisplaySource;
+import com.sakalti.create_re.content.redstone.displayLink.target.DisplayTarget;
+import com.sakalti.create_re.foundation.advancement.AllAdvancements;
+import com.sakalti.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.utility.NBTHelper;
+import com.sakalti.create_re.foundation.utility.animation.LerpedFloat;
+import com.sakalti.create_re.foundation.utility.animation.LerpedFloat.Chaser;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

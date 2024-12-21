@@ -1,19 +1,19 @@
-package com.simibubi.create_re.content.decoration.placard;
+package com.sakalti.create_re.content.decoration.placard;
 
 import java.util.List;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllShapes;
-import com.simibubi.create_re.AllSoundEvents;
-import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
-import com.simibubi.create_re.content.logistics.filter.FilterItem;
-import com.simibubi.create_re.content.logistics.filter.FilterItemStack;
-import com.simibubi.create_re.content.schematics.requirement.ISpecialBlockItemRequirement;
-import com.simibubi.create_re.content.schematics.requirement.ItemRequirement;
-import com.simibubi.create_re.content.schematics.requirement.ItemRequirement.ItemUseType;
-import com.simibubi.create_re.foundation.block.IBE;
-import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
+import com.sakalti.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllShapes;
+import com.sakalti.create_re.AllSoundEvents;
+import com.sakalti.create_re.content.equipment.wrench.IWrenchable;
+import com.sakalti.create_re.content.logistics.filter.FilterItem;
+import com.sakalti.create_re.content.logistics.filter.FilterItemStack;
+import com.sakalti.create_re.content.schematics.requirement.ISpecialBlockItemRequirement;
+import com.sakalti.create_re.content.schematics.requirement.ItemRequirement;
+import com.sakalti.create_re.content.schematics.requirement.ItemRequirement.ItemUseType;
+import com.sakalti.create_re.foundation.block.IBE;
+import com.sakalti.create_re.foundation.block.ProperWaterloggedBlock;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

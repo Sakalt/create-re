@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.kinetics.base;
+package com.sakalti.create_re.content.kinetics.base;
 
-import com.simibubi.create_re.AllPartialModels;
+import com.sakalti.create_re.AllPartialModels;
 
 import dev.engine_room.flywheel.api.model.Model;
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;

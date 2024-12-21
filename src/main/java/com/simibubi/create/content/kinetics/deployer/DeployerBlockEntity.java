@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.kinetics.deployer;
+package com.sakalti.create_re.content.kinetics.deployer;
 
-import static com.simibubi.create_re.content.kinetics.base.DirectionalKineticBlock.FACING;
+import static com.sakalti.create_re.content.kinetics.base.DirectionalKineticBlock.FACING;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,25 +10,25 @@ import java.util.UUID;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllPartialModels;
-import com.simibubi.create_re.AllRecipeTypes;
-import com.simibubi.create_re.content.equipment.sandPaper.SandPaperItem;
-import com.simibubi.create_re.content.equipment.sandPaper.SandPaperPolishingRecipe.SandPaperInv;
-import com.simibubi.create_re.content.kinetics.base.IRotate.StressImpact;
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create_re.content.kinetics.belt.behaviour.BeltProcessingBehaviour;
-import com.simibubi.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour;
-import com.simibubi.create_re.content.processing.sequenced.SequencedAssemblyRecipe;
-import com.simibubi.create_re.foundation.advancement.AllAdvancements;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
-import com.simibubi.create_re.foundation.item.TooltipHelper;
-import com.simibubi.create_re.foundation.utility.Components;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.foundation.utility.NBTHelper;
-import com.simibubi.create_re.foundation.utility.VecHelper;
-import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllPartialModels;
+import com.sakalti.create_re.AllRecipeTypes;
+import com.sakalti.create_re.content.equipment.sandPaper.SandPaperItem;
+import com.sakalti.create_re.content.equipment.sandPaper.SandPaperPolishingRecipe.SandPaperInv;
+import com.sakalti.create_re.content.kinetics.base.IRotate.StressImpact;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntity;
+import com.sakalti.create_re.content.kinetics.belt.behaviour.BeltProcessingBehaviour;
+import com.sakalti.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour;
+import com.sakalti.create_re.content.processing.sequenced.SequencedAssemblyRecipe;
+import com.sakalti.create_re.foundation.advancement.AllAdvancements;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
+import com.sakalti.create_re.foundation.item.TooltipHelper;
+import com.sakalti.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.utility.NBTHelper;
+import com.sakalti.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.foundation.utility.animation.LerpedFloat;
 
 import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 import net.minecraft.ChatFormatting;

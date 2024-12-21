@@ -1,10 +1,10 @@
-package com.simibubi.create_re.content.redstone.thresholdSwitch;
+package com.sakalti.create_re.content.redstone.thresholdSwitch;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.content.redstone.DirectedDirectionalBlock;
-import com.simibubi.create_re.foundation.block.IBE;
-import com.simibubi.create_re.foundation.gui.ScreenOpener;
+import com.sakalti.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.content.redstone.DirectedDirectionalBlock;
+import com.sakalti.create_re.foundation.block.IBE;
+import com.sakalti.create_re.foundation.gui.ScreenOpener;
 
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.core.BlockPos;

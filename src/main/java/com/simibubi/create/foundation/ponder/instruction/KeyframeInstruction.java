@@ -1,6 +1,6 @@
-package com.simibubi.create_re.foundation.ponder.instruction;
+package com.sakalti.create_re.foundation.ponder.instruction;
 
-import com.simibubi.create_re.foundation.ponder.PonderScene;
+import com.sakalti.create_re.foundation.ponder.PonderScene;
 
 public class KeyframeInstruction extends PonderInstruction {
 

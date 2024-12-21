@@ -1,12 +1,12 @@
-package com.simibubi.create_re.content.kinetics;
+package com.sakalti.create_re.content.kinetics;
 
-import com.simibubi.create_re.CreateClient;
-import com.simibubi.create_re.content.kinetics.base.IRotate;
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntityRenderer;
-import com.simibubi.create_re.foundation.utility.Color;
-import com.simibubi.create_re.foundation.utility.VecHelper;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.CreateClient;
+import com.sakalti.create_re.content.kinetics.base.IRotate;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntity;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntityRenderer;
+import com.sakalti.create_re.foundation.utility.Color;
+import com.sakalti.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;

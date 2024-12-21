@@ -1,10 +1,10 @@
-package com.simibubi.create_re.foundation.utility;
+package com.sakalti.create_re.foundation.utility;
 
-import com.simibubi.create_re.AllPackets;
-import com.simibubi.create_re.foundation.networking.SimplePacketBase;
-import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
-import com.simibubi.create_re.foundation.utility.animation.LerpedFloat.Chaser;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.AllPackets;
+import com.sakalti.create_re.foundation.networking.SimplePacketBase;
+import com.sakalti.create_re.foundation.utility.animation.LerpedFloat;
+import com.sakalti.create_re.foundation.utility.animation.LerpedFloat.Chaser;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.FriendlyByteBuf;

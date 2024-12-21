@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.logistics.filter;
+package com.sakalti.create_re.content.logistics.filter;
 
-import com.simibubi.create_re.AllMenuTypes;
+import com.sakalti.create_re.AllMenuTypes;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;

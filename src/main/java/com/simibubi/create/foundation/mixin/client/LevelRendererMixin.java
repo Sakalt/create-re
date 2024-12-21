@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.mixin.client;
+package com.sakalti.create_re.foundation.mixin.client;
 
 import java.util.Set;
 import java.util.SortedSet;
@@ -13,8 +13,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
 import com.google.common.collect.Sets;
-import com.simibubi.create_re.foundation.block.render.BlockDestructionProgressExtension;
-import com.simibubi.create_re.foundation.block.render.MultiPosDestructionHandler;
+import com.sakalti.create_re.foundation.block.render.BlockDestructionProgressExtension;
+import com.sakalti.create_re.foundation.block.render.MultiPosDestructionHandler;
 
 import it.unimi.dsi.fastutil.longs.Long2ObjectMap;
 import net.minecraft.client.multiplayer.ClientLevel;

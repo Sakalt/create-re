@@ -1,19 +1,19 @@
-package com.simibubi.create_re.foundation.blockEntity.behaviour.scrollValue;
+package com.sakalti.create_re.foundation.blockEntity.behaviour.scrollValue;
 
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
 import com.google.common.collect.ImmutableList;
-import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BehaviourType;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBoxTransform;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueSettingsBehaviour;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueSettingsBoard;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueSettingsFormatter;
-import com.simibubi.create_re.foundation.utility.Components;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BehaviourType;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.ValueBoxTransform;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.ValueSettingsBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.ValueSettingsBoard;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.ValueSettingsFormatter;
+import com.sakalti.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;

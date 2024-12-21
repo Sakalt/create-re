@@ -1,11 +1,11 @@
-package com.simibubi.create_re.content.kinetics.fan.processing;
+package com.sakalti.create_re.content.kinetics.fan.processing;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.simibubi.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour.TransportedResult;
-import com.simibubi.create_re.content.kinetics.belt.transport.TransportedItemStack;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour.TransportedResult;
+import com.sakalti.create_re.content.kinetics.belt.transport.TransportedItemStack;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.item.ItemEntity;

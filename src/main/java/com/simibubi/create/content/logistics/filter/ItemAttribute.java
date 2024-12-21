@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.logistics.filter;
+package com.sakalti.create_re.content.logistics.filter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -12,21 +12,21 @@ import java.util.stream.Collectors;
 import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create_re.AllRecipeTypes;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.content.kinetics.fan.processing.AllFanProcessingTypes;
-import com.simibubi.create_re.content.logistics.filter.attribute.BookAuthorAttribute;
-import com.simibubi.create_re.content.logistics.filter.attribute.BookCopyAttribute;
-import com.simibubi.create_re.content.logistics.filter.attribute.ColorAttribute;
-import com.simibubi.create_re.content.logistics.filter.attribute.EnchantAttribute;
-import com.simibubi.create_re.content.logistics.filter.attribute.FluidContentsAttribute;
-import com.simibubi.create_re.content.logistics.filter.attribute.ItemNameAttribute;
-import com.simibubi.create_re.content.logistics.filter.attribute.ShulkerFillLevelAttribute;
-import com.simibubi.create_re.content.logistics.filter.attribute.astralsorcery.AstralSorceryAmuletAttribute;
-import com.simibubi.create_re.content.logistics.filter.attribute.astralsorcery.AstralSorceryAttunementAttribute;
-import com.simibubi.create_re.content.logistics.filter.attribute.astralsorcery.AstralSorceryCrystalAttribute;
-import com.simibubi.create_re.content.logistics.filter.attribute.astralsorcery.AstralSorceryPerkGemAttribute;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.AllRecipeTypes;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.content.kinetics.fan.processing.AllFanProcessingTypes;
+import com.sakalti.create_re.content.logistics.filter.attribute.BookAuthorAttribute;
+import com.sakalti.create_re.content.logistics.filter.attribute.BookCopyAttribute;
+import com.sakalti.create_re.content.logistics.filter.attribute.ColorAttribute;
+import com.sakalti.create_re.content.logistics.filter.attribute.EnchantAttribute;
+import com.sakalti.create_re.content.logistics.filter.attribute.FluidContentsAttribute;
+import com.sakalti.create_re.content.logistics.filter.attribute.ItemNameAttribute;
+import com.sakalti.create_re.content.logistics.filter.attribute.ShulkerFillLevelAttribute;
+import com.sakalti.create_re.content.logistics.filter.attribute.astralsorcery.AstralSorceryAmuletAttribute;
+import com.sakalti.create_re.content.logistics.filter.attribute.astralsorcery.AstralSorceryAttunementAttribute;
+import com.sakalti.create_re.content.logistics.filter.attribute.astralsorcery.AstralSorceryCrystalAttribute;
+import com.sakalti.create_re.content.logistics.filter.attribute.astralsorcery.AstralSorceryPerkGemAttribute;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.MutableComponent;

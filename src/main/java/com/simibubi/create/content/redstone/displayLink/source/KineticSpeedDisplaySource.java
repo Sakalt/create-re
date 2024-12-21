@@ -1,10 +1,10 @@
-package com.simibubi.create_re.content.redstone.displayLink.source;
+package com.sakalti.create_re.content.redstone.displayLink.source;
 
-import com.simibubi.create_re.content.kinetics.gauge.SpeedGaugeBlockEntity;
-import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkContext;
-import com.simibubi.create_re.content.redstone.displayLink.target.DisplayTargetStats;
-import com.simibubi.create_re.foundation.gui.ModularGuiLineBuilder;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.content.kinetics.gauge.SpeedGaugeBlockEntity;
+import com.sakalti.create_re.content.redstone.displayLink.DisplayLinkContext;
+import com.sakalti.create_re.content.redstone.displayLink.target.DisplayTargetStats;
+import com.sakalti.create_re.foundation.gui.ModularGuiLineBuilder;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraftforge.api.distmarker.Dist;

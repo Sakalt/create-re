@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.logistics.crate;
+package com.sakalti.create_re.content.logistics.crate;
 
 import java.util.List;
 
-import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntityType;

@@ -1,7 +1,7 @@
-package com.simibubi.create_re.content.logistics.depot;
+package com.sakalti.create_re.content.logistics.depot;
 
-import com.simibubi.create_re.foundation.advancement.AllAdvancements;
-import com.simibubi.create_re.foundation.networking.BlockEntityConfigurationPacket;
+import com.sakalti.create_re.foundation.advancement.AllAdvancements;
+import com.sakalti.create_re.foundation.networking.BlockEntityConfigurationPacket;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;

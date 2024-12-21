@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.config.ui;
+package com.sakalti.create_re.foundation.config.ui;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,15 +10,15 @@ import java.util.Optional;
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.platform.Window;
 import com.mojang.blaze3d.systems.RenderSystem;
-import com.simibubi.create_re.foundation.config.ui.entries.NumberEntry;
-import com.simibubi.create_re.foundation.gui.RemovedGuiUtils;
-import com.simibubi.create_re.foundation.gui.Theme;
-import com.simibubi.create_re.foundation.gui.TickableGuiEventListener;
-import com.simibubi.create_re.foundation.gui.UIRenderHelper;
-import com.simibubi.create_re.foundation.gui.element.TextStencilElement;
-import com.simibubi.create_re.foundation.utility.Color;
-import com.simibubi.create_re.foundation.utility.Components;
-import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
+import com.sakalti.create_re.foundation.config.ui.entries.NumberEntry;
+import com.sakalti.create_re.foundation.gui.RemovedGuiUtils;
+import com.sakalti.create_re.foundation.gui.Theme;
+import com.sakalti.create_re.foundation.gui.TickableGuiEventListener;
+import com.sakalti.create_re.foundation.gui.UIRenderHelper;
+import com.sakalti.create_re.foundation.gui.element.TextStencilElement;
+import com.sakalti.create_re.foundation.utility.Color;
+import com.sakalti.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.utility.animation.LerpedFloat;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;

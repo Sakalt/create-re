@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.logistics.funnel;
+package com.sakalti.create_re.content.logistics.funnel;
 
-import com.simibubi.create_re.foundation.networking.BlockEntityDataPacket;
+import com.sakalti.create_re.foundation.networking.BlockEntityDataPacket;
 
 import net.minecraft.network.FriendlyByteBuf;
 

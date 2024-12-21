@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.mixin;
+package com.sakalti.create_re.foundation.mixin;
 
 import javax.annotation.Nullable;
 
@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.Intrinsic;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 
-import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity;
+import com.sakalti.create_re.content.contraptions.AbstractContraptionEntity;
 
 import net.minecraft.world.entity.Entity;
 import net.minecraftforge.common.capabilities.CapabilityProvider;

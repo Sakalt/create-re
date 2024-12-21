@@ -1,19 +1,19 @@
-package com.simibubi.create_re.content.kinetics.speedController;
+package com.sakalti.create_re.content.kinetics.speedController;
 
 import java.util.function.Predicate;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllShapes;
-import com.simibubi.create_re.content.kinetics.base.HorizontalAxisKineticBlock;
-import com.simibubi.create_re.content.kinetics.simpleRelays.CogWheelBlock;
-import com.simibubi.create_re.content.kinetics.simpleRelays.ICogWheel;
-import com.simibubi.create_re.foundation.block.IBE;
-import com.simibubi.create_re.foundation.placement.IPlacementHelper;
-import com.simibubi.create_re.foundation.placement.PlacementHelpers;
-import com.simibubi.create_re.foundation.placement.PlacementOffset;
+import com.sakalti.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllShapes;
+import com.sakalti.create_re.content.kinetics.base.HorizontalAxisKineticBlock;
+import com.sakalti.create_re.content.kinetics.simpleRelays.CogWheelBlock;
+import com.sakalti.create_re.content.kinetics.simpleRelays.ICogWheel;
+import com.sakalti.create_re.foundation.block.IBE;
+import com.sakalti.create_re.foundation.placement.IPlacementHelper;
+import com.sakalti.create_re.foundation.placement.PlacementHelpers;
+import com.sakalti.create_re.foundation.placement.PlacementOffset;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;

@@ -1,9 +1,9 @@
-package com.simibubi.create_re.foundation.data.recipe;
+package com.sakalti.create_re.foundation.data.recipe;
 
-import com.simibubi.create_re.AllFluids;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.AllRecipeTypes;
-import com.simibubi.create_re.AllTags.AllFluidTags;
+import com.sakalti.create_re.AllFluids;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.AllRecipeTypes;
+import com.sakalti.create_re.AllTags.AllFluidTags;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Items;

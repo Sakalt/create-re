@@ -1,7 +1,7 @@
-package com.simibubi.create_re.foundation.ponder.instruction;
+package com.sakalti.create_re.foundation.ponder.instruction;
 
-import com.simibubi.create_re.foundation.ponder.PonderScene;
-import com.simibubi.create_re.foundation.ponder.element.InputWindowElement;
+import com.sakalti.create_re.foundation.ponder.PonderScene;
+import com.sakalti.create_re.foundation.ponder.element.InputWindowElement;
 
 public class ShowInputInstruction extends FadeInOutInstruction {
 

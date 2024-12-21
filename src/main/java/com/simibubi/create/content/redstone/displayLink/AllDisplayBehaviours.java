@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.redstone.displayLink;
+package com.sakalti.create_re.content.redstone.displayLink;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,19 +8,19 @@ import java.util.Map;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.compat.Mods;
-import com.simibubi.create_re.content.redstone.displayLink.source.ComputerDisplaySource;
-import com.simibubi.create_re.content.redstone.displayLink.source.DeathCounterDisplaySource;
-import com.simibubi.create_re.content.redstone.displayLink.source.DisplaySource;
-import com.simibubi.create_re.content.redstone.displayLink.source.EnchantPowerDisplaySource;
-import com.simibubi.create_re.content.redstone.displayLink.source.RedstonePowerDisplaySource;
-import com.simibubi.create_re.content.redstone.displayLink.source.ScoreboardDisplaySource;
-import com.simibubi.create_re.content.redstone.displayLink.target.DisplayTarget;
-import com.simibubi.create_re.content.redstone.displayLink.target.LecternDisplayTarget;
-import com.simibubi.create_re.content.redstone.displayLink.target.SignDisplayTarget;
-import com.simibubi.create_re.foundation.utility.AttachedRegistry;
-import com.simibubi.create_re.foundation.utility.RegisteredObjects;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.compat.Mods;
+import com.sakalti.create_re.content.redstone.displayLink.source.ComputerDisplaySource;
+import com.sakalti.create_re.content.redstone.displayLink.source.DeathCounterDisplaySource;
+import com.sakalti.create_re.content.redstone.displayLink.source.DisplaySource;
+import com.sakalti.create_re.content.redstone.displayLink.source.EnchantPowerDisplaySource;
+import com.sakalti.create_re.content.redstone.displayLink.source.RedstonePowerDisplaySource;
+import com.sakalti.create_re.content.redstone.displayLink.source.ScoreboardDisplaySource;
+import com.sakalti.create_re.content.redstone.displayLink.target.DisplayTarget;
+import com.sakalti.create_re.content.redstone.displayLink.target.LecternDisplayTarget;
+import com.sakalti.create_re.content.redstone.displayLink.target.SignDisplayTarget;
+import com.sakalti.create_re.foundation.utility.AttachedRegistry;
+import com.sakalti.create_re.foundation.utility.RegisteredObjects;
 import com.tterrag.registrate.util.nullness.NonNullConsumer;
 
 import net.minecraft.core.BlockPos;

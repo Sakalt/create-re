@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.kinetics.base;
+package com.sakalti.create_re.content.kinetics.base;
 
 import java.util.Locale;
 
@@ -9,8 +9,8 @@ import com.mojang.serialization.DataResult;
 import com.mojang.serialization.DynamicOps;
 import com.mojang.serialization.codecs.PrimitiveCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import com.simibubi.create_re.AllParticleTypes;
-import com.simibubi.create_re.foundation.particle.ICustomParticleDataWithSprite;
+import com.sakalti.create_re.AllParticleTypes;
+import com.sakalti.create_re.foundation.particle.ICustomParticleDataWithSprite;
 
 import net.minecraft.client.particle.ParticleEngine.SpriteParticleRegistration;
 import net.minecraft.core.Direction.Axis;

@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.trains.graph;
+package com.sakalti.create_re.content.trains.graph;
 
 import java.util.List;
 
-import com.simibubi.create_re.content.trains.station.GlobalStation;
-import com.simibubi.create_re.foundation.utility.Couple;
+import com.sakalti.create_re.content.trains.station.GlobalStation;
+import com.sakalti.create_re.foundation.utility.Couple;
 
 public class DiscoveredPath {
 	public List<Couple<TrackNode>> path;

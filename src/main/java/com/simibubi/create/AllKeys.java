@@ -1,4 +1,4 @@
-package com.simibubi.create_re;
+package com.sakalti.create_re;
 
 import org.lwjgl.glfw.GLFW;
 

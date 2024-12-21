@@ -1,8 +1,8 @@
-package com.simibubi.create_re.compat.curios;
+package com.sakalti.create_re.compat.curios;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import com.simibubi.create_re.Create;
+import com.sakalti.create_re.Create;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.EntityModel;

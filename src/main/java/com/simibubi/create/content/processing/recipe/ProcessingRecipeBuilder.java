@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.processing.recipe;
+package com.sakalti.create_re.content.processing.recipe;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,12 +6,12 @@ import java.util.function.Consumer;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-import com.simibubi.create_re.foundation.data.SimpleDatagenIngredient;
-import com.simibubi.create_re.foundation.data.recipe.Mods;
-import com.simibubi.create_re.foundation.fluid.FluidHelper;
-import com.simibubi.create_re.foundation.fluid.FluidIngredient;
-import com.simibubi.create_re.foundation.recipe.IRecipeTypeInfo;
-import com.simibubi.create_re.foundation.utility.Pair;
+import com.sakalti.create_re.foundation.data.SimpleDatagenIngredient;
+import com.sakalti.create_re.foundation.data.recipe.Mods;
+import com.sakalti.create_re.foundation.fluid.FluidHelper;
+import com.sakalti.create_re.foundation.fluid.FluidIngredient;
+import com.sakalti.create_re.foundation.recipe.IRecipeTypeInfo;
+import com.sakalti.create_re.foundation.utility.Pair;
 import com.tterrag.registrate.util.DataIngredient;
 
 import net.minecraft.core.NonNullList;

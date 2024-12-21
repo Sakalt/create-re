@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.kinetics.motor;
+package com.sakalti.create_re.content.kinetics.motor;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
-import com.simibubi.create_re.AllShapes;
-import com.simibubi.create_re.content.kinetics.base.DirectionalKineticBlock;
-import com.simibubi.create_re.foundation.block.IBE;
+import com.sakalti.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.AllShapes;
+import com.sakalti.create_re.content.kinetics.base.DirectionalKineticBlock;
+import com.sakalti.create_re.foundation.block.IBE;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

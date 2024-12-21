@@ -1,11 +1,11 @@
-package com.simibubi.create_re.api.event;
+package com.sakalti.create_re.api.event;
 
 import java.lang.reflect.Type;
 import java.util.Map;
 
-import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BehaviourType;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BehaviourType;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.eventbus.api.GenericEvent;

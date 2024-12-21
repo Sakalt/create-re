@@ -1,4 +1,4 @@
-package com.simibubi.create_re.infrastructure.worldgen;
+package com.sakalti.create_re.infrastructure.worldgen;
 
 import java.util.List;
 

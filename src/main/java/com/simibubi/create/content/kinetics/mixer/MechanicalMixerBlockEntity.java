@@ -1,26 +1,26 @@
-package com.simibubi.create_re.content.kinetics.mixer;
+package com.sakalti.create_re.content.kinetics.mixer;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.simibubi.create_re.AllRecipeTypes;
-import com.simibubi.create_re.AllSoundEvents;
-import com.simibubi.create_re.content.fluids.FluidFX;
-import com.simibubi.create_re.content.fluids.potion.PotionMixingRecipes;
-import com.simibubi.create_re.content.kinetics.press.MechanicalPressBlockEntity;
-import com.simibubi.create_re.content.processing.basin.BasinBlockEntity;
-import com.simibubi.create_re.content.processing.basin.BasinOperatingBlockEntity;
-import com.simibubi.create_re.content.processing.recipe.ProcessingRecipe;
-import com.simibubi.create_re.foundation.advancement.AllAdvancements;
-import com.simibubi.create_re.foundation.advancement.CreateAdvancement;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.fluid.SmartFluidTankBehaviour;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.fluid.SmartFluidTankBehaviour.TankSegment;
-import com.simibubi.create_re.foundation.item.SmartInventory;
-import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
-import com.simibubi.create_re.foundation.utility.Couple;
-import com.simibubi.create_re.foundation.utility.VecHelper;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.AllRecipeTypes;
+import com.sakalti.create_re.AllSoundEvents;
+import com.sakalti.create_re.content.fluids.FluidFX;
+import com.sakalti.create_re.content.fluids.potion.PotionMixingRecipes;
+import com.sakalti.create_re.content.kinetics.press.MechanicalPressBlockEntity;
+import com.sakalti.create_re.content.processing.basin.BasinBlockEntity;
+import com.sakalti.create_re.content.processing.basin.BasinOperatingBlockEntity;
+import com.sakalti.create_re.content.processing.recipe.ProcessingRecipe;
+import com.sakalti.create_re.foundation.advancement.AllAdvancements;
+import com.sakalti.create_re.foundation.advancement.CreateAdvancement;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.fluid.SmartFluidTankBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.fluid.SmartFluidTankBehaviour.TankSegment;
+import com.sakalti.create_re.foundation.item.SmartInventory;
+import com.sakalti.create_re.foundation.utility.AnimationTickHolder;
+import com.sakalti.create_re.foundation.utility.Couple;
+import com.sakalti.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction.Axis;

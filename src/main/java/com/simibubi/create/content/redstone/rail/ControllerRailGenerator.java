@@ -1,7 +1,7 @@
-package com.simibubi.create_re.content.redstone.rail;
+package com.sakalti.create_re.content.redstone.rail;
 
-import com.simibubi.create_re.foundation.data.AssetLookup;
-import com.simibubi.create_re.foundation.data.SpecialBlockStateGen;
+import com.sakalti.create_re.foundation.data.AssetLookup;
+import com.sakalti.create_re.foundation.data.SpecialBlockStateGen;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 

@@ -1,7 +1,7 @@
-package com.simibubi.create_re.content.equipment.toolbox;
+package com.sakalti.create_re.content.equipment.toolbox;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllRecipeTypes;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllRecipeTypes;
 
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.resources.ResourceLocation;

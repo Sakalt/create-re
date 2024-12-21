@@ -1,14 +1,14 @@
-package com.simibubi.create_re.content.redstone.diodes;
+package com.sakalti.create_re.content.redstone.diodes;
 
-import static com.simibubi.create_re.content.redstone.diodes.BrassDiodeBlock.POWERING;
+import static com.sakalti.create_re.content.redstone.diodes.BrassDiodeBlock.POWERING;
 
 import java.util.List;
 
-import com.simibubi.create_re.content.equipment.clipboard.ClipboardCloneable;
-import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.scrollValue.ScrollValueBehaviour;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.content.equipment.clipboard.ClipboardCloneable;
+import com.sakalti.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.scrollValue.ScrollValueBehaviour;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

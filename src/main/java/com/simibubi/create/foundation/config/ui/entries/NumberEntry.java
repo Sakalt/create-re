@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.config.ui.entries;
+package com.sakalti.create_re.foundation.config.ui.entries;
 
 import java.lang.reflect.Field;
 import java.util.Locale;
@@ -6,11 +6,11 @@ import java.util.function.Function;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create_re.foundation.config.ui.ConfigTextField;
-import com.simibubi.create_re.foundation.gui.Theme;
-import com.simibubi.create_re.foundation.gui.UIRenderHelper;
-import com.simibubi.create_re.foundation.gui.element.TextStencilElement;
-import com.simibubi.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.config.ui.ConfigTextField;
+import com.sakalti.create_re.foundation.gui.Theme;
+import com.sakalti.create_re.foundation.gui.UIRenderHelper;
+import com.sakalti.create_re.foundation.gui.element.TextStencilElement;
+import com.sakalti.create_re.foundation.utility.Components;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;

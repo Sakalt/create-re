@@ -1,8 +1,8 @@
-package com.simibubi.create_re.foundation.block.connected;
+package com.sakalti.create_re.foundation.block.connected;
 
-import com.simibubi.create_re.content.decoration.copycat.CopycatBlock;
-import com.simibubi.create_re.content.decoration.palettes.ConnectedPillarBlock;
-import com.simibubi.create_re.content.decoration.palettes.LayeredBlock;
+import com.sakalti.create_re.content.decoration.copycat.CopycatBlock;
+import com.sakalti.create_re.content.decoration.palettes.ConnectedPillarBlock;
+import com.sakalti.create_re.content.decoration.palettes.LayeredBlock;
 
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.core.BlockPos;

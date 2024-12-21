@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.kinetics.belt.transport;
+package com.sakalti.create_re.content.kinetics.belt.transport;
 
 import java.util.Random;
 
-import com.simibubi.create_re.content.kinetics.belt.BeltHelper;
-import com.simibubi.create_re.content.kinetics.fan.processing.FanProcessingType;
+import com.sakalti.create_re.content.kinetics.belt.BeltHelper;
+import com.sakalti.create_re.content.kinetics.fan.processing.FanProcessingType;
 
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;

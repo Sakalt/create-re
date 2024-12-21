@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.item;
+package com.sakalti.create_re.foundation.item;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -7,8 +7,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Stream;
 
-import com.simibubi.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
-import com.simibubi.create_re.foundation.utility.IntAttached;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
+import com.sakalti.create_re.foundation.utility.IntAttached;
 
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.world.item.Item;

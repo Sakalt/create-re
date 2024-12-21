@@ -1,14 +1,14 @@
-package com.simibubi.create_re.content.kinetics.crank;
+package com.sakalti.create_re.content.kinetics.crank;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.AllShapes;
-import com.simibubi.create_re.content.kinetics.base.DirectionalKineticBlock;
-import com.simibubi.create_re.foundation.advancement.AllAdvancements;
-import com.simibubi.create_re.foundation.block.IBE;
-import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
-import com.simibubi.create_re.foundation.utility.Couple;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.AllShapes;
+import com.sakalti.create_re.content.kinetics.base.DirectionalKineticBlock;
+import com.sakalti.create_re.foundation.advancement.AllAdvancements;
+import com.sakalti.create_re.foundation.block.IBE;
+import com.sakalti.create_re.foundation.block.ProperWaterloggedBlock;
+import com.sakalti.create_re.foundation.utility.Couple;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

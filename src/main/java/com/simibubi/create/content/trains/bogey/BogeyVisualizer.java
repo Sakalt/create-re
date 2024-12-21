@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.trains.bogey;
+package com.sakalti.create_re.content.trains.bogey;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
 

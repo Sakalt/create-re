@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.kinetics.belt.item;
+package com.sakalti.create_re.content.kinetics.belt.item;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -6,9 +6,9 @@ import java.util.Random;
 
 import org.joml.Vector3f;
 
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.content.kinetics.simpleRelays.ShaftBlock;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.content.kinetics.simpleRelays.ShaftBlock;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;

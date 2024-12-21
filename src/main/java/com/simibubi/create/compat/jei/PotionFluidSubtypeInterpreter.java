@@ -1,9 +1,9 @@
-package com.simibubi.create_re.compat.jei;
+package com.sakalti.create_re.compat.jei;
 
 import java.util.List;
 
-import com.simibubi.create_re.content.fluids.potion.PotionFluid.BottleType;
-import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.sakalti.create_re.content.fluids.potion.PotionFluid.BottleType;
+import com.sakalti.create_re.foundation.utility.NBTHelper;
 
 import mezz.jei.api.ingredients.subtypes.IIngredientSubtypeInterpreter;
 import mezz.jei.api.ingredients.subtypes.UidContext;

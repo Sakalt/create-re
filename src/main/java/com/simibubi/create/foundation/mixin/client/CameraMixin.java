@@ -1,10 +1,10 @@
-package com.simibubi.create_re.foundation.mixin.client;
+package com.sakalti.create_re.foundation.mixin.client;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 
-import com.simibubi.create_re.content.trains.CameraDistanceModifier;
+import com.sakalti.create_re.content.trains.CameraDistanceModifier;
 
 import net.minecraft.client.Camera;
 

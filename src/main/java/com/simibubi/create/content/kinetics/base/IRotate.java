@@ -1,10 +1,10 @@
-package com.simibubi.create_re.content.kinetics.base;
+package com.sakalti.create_re.content.kinetics.base;
 
-import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
-import com.simibubi.create_re.foundation.item.TooltipHelper;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.foundation.utility.LangBuilder;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.content.equipment.wrench.IWrenchable;
+import com.sakalti.create_re.foundation.item.TooltipHelper;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.utility.LangBuilder;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;

@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.kinetics.crafter;
+package com.sakalti.create_re.content.kinetics.crafter;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.AllPartialModels;
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create_re.content.kinetics.base.SingleRotatingVisual;
+import com.sakalti.create_re.AllPartialModels;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntity;
+import com.sakalti.create_re.content.kinetics.base.SingleRotatingVisual;
 
 import dev.engine_room.flywheel.api.model.Model;
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;

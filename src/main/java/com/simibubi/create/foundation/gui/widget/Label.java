@@ -1,9 +1,9 @@
-package com.simibubi.create_re.foundation.gui.widget;
+package com.sakalti.create_re.foundation.gui.widget;
 
 import javax.annotation.Nonnull;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import com.simibubi.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.utility.Components;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;

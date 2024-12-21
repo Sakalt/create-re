@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.equipment.symmetryWand.mirror;
+package com.sakalti.create_re.content.equipment.symmetryWand.mirror;
 
 import java.util.HashMap;
 import java.util.List;

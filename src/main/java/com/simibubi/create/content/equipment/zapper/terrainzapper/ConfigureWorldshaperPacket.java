@@ -1,7 +1,7 @@
-package com.simibubi.create_re.content.equipment.zapper.terrainzapper;
+package com.sakalti.create_re.content.equipment.zapper.terrainzapper;
 
-import com.simibubi.create_re.content.equipment.zapper.ConfigureZapperPacket;
-import com.simibubi.create_re.content.equipment.zapper.PlacementPatterns;
+import com.sakalti.create_re.content.equipment.zapper.ConfigureZapperPacket;
+import com.sakalti.create_re.content.equipment.zapper.PlacementPatterns;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.InteractionHand;

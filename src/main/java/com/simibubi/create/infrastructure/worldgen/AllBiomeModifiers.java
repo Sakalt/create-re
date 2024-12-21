@@ -1,6 +1,6 @@
-package com.simibubi.create_re.infrastructure.worldgen;
+package com.sakalti.create_re.infrastructure.worldgen;
 
-import com.simibubi.create_re.Create;
+import com.sakalti.create_re.Create;
 
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;

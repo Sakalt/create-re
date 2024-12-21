@@ -1,12 +1,12 @@
-package com.simibubi.create_re.foundation.data.recipe;
+package com.sakalti.create_re.foundation.data.recipe;
 
 import java.util.function.UnaryOperator;
 
 import com.google.common.base.Supplier;
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.foundation.utility.RegisteredObjects;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.foundation.utility.RegisteredObjects;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;

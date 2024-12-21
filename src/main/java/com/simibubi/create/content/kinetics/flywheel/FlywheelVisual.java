@@ -1,13 +1,13 @@
-package com.simibubi.create_re.content.kinetics.flywheel;
+package com.sakalti.create_re.content.kinetics.flywheel;
 
 import java.util.function.Consumer;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntityVisual;
-import com.simibubi.create_re.content.kinetics.base.RotatingInstance;
-import com.simibubi.create_re.foundation.render.AllInstanceTypes;
-import com.simibubi.create_re.foundation.render.VirtualRenderHelper;
-import com.simibubi.create_re.foundation.utility.AngleHelper;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntityVisual;
+import com.sakalti.create_re.content.kinetics.base.RotatingInstance;
+import com.sakalti.create_re.foundation.render.AllInstanceTypes;
+import com.sakalti.create_re.foundation.render.VirtualRenderHelper;
+import com.sakalti.create_re.foundation.utility.AngleHelper;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.visual.DynamicVisual;

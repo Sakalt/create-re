@@ -1,7 +1,7 @@
-package com.simibubi.create_re.foundation.outliner;
+package com.sakalti.create_re.foundation.outliner;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.foundation.render.SuperRenderTypeBuffer;
+import com.sakalti.create_re.foundation.render.SuperRenderTypeBuffer;
 
 import dev.engine_room.flywheel.lib.transform.TransformStack;
 import net.minecraft.client.Minecraft;

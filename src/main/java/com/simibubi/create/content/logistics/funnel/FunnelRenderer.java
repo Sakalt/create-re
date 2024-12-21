@@ -1,13 +1,13 @@
-package com.simibubi.create_re.content.logistics.funnel;
+package com.sakalti.create_re.content.logistics.funnel;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create_re.AllPartialModels;
-import com.simibubi.create_re.foundation.blockEntity.renderer.SmartBlockEntityRenderer;
-import com.simibubi.create_re.foundation.render.CachedBufferer;
-import com.simibubi.create_re.foundation.render.SuperByteBuffer;
-import com.simibubi.create_re.foundation.utility.AngleHelper;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.AllPartialModels;
+import com.sakalti.create_re.foundation.blockEntity.renderer.SmartBlockEntityRenderer;
+import com.sakalti.create_re.foundation.render.CachedBufferer;
+import com.sakalti.create_re.foundation.render.SuperByteBuffer;
+import com.sakalti.create_re.foundation.utility.AngleHelper;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationManager;
 import dev.engine_room.flywheel.lib.model.baked.PartialModel;

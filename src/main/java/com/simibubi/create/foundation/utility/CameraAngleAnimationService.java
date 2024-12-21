@@ -1,6 +1,6 @@
-package com.simibubi.create_re.foundation.utility;
+package com.sakalti.create_re.foundation.utility;
 
-import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
+import com.sakalti.create_re.foundation.utility.animation.LerpedFloat;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.Mth;

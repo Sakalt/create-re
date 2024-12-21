@@ -1,11 +1,11 @@
-package com.simibubi.create_re.foundation.utility;
+package com.sakalti.create_re.foundation.utility;
 
 import javax.annotation.Nullable;
 
 import org.joml.Quaternionf;
 import org.joml.Vector3f;
 
-import com.simibubi.create_re.foundation.mixin.accessor.GameRendererAccessor;
+import com.sakalti.create_re.foundation.mixin.accessor.GameRendererAccessor;
 
 import net.minecraft.client.Camera;
 import net.minecraft.client.Minecraft;

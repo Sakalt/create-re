@@ -1,8 +1,8 @@
-package com.simibubi.create_re.content.kinetics.crafter;
+package com.sakalti.create_re.content.kinetics.crafter;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import com.simibubi.create_re.content.kinetics.crafter.RecipeGridHandler.GroupedItems;
+import com.sakalti.create_re.content.kinetics.crafter.RecipeGridHandler.GroupedItems;
 
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;

@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.schematics.requirement;
+package com.sakalti.create_re.content.schematics.requirement;
 
 public interface ISpecialEntityItemRequirement {
 

@@ -1,12 +1,12 @@
-package com.simibubi.create_re.content.equipment.extendoGrip;
+package com.sakalti.create_re.content.equipment.extendoGrip;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.AllPartialModels;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.foundation.item.render.CustomRenderedItemModel;
-import com.simibubi.create_re.foundation.item.render.CustomRenderedItemModelRenderer;
-import com.simibubi.create_re.foundation.item.render.PartialItemModelRenderer;
-import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.sakalti.create_re.AllPartialModels;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.foundation.item.render.CustomRenderedItemModel;
+import com.sakalti.create_re.foundation.item.render.CustomRenderedItemModelRenderer;
+import com.sakalti.create_re.foundation.item.render.PartialItemModelRenderer;
+import com.sakalti.create_re.foundation.utility.AnimationTickHolder;
 
 import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 import dev.engine_room.flywheel.lib.transform.TransformStack;

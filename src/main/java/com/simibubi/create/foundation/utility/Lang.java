@@ -1,10 +1,10 @@
-package com.simibubi.create_re.foundation.utility;
+package com.sakalti.create_re.foundation.utility;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-import com.simibubi.create_re.Create;
+import com.sakalti.create_re.Create;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;

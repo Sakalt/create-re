@@ -1,12 +1,12 @@
-package com.simibubi.create_re.foundation.render;
+package com.sakalti.create_re.foundation.render;
 
 import java.io.IOException;
 import java.util.function.BiFunction;
 
 import com.mojang.blaze3d.vertex.DefaultVertexFormat;
 import com.mojang.blaze3d.vertex.VertexFormat;
-import com.simibubi.create_re.AllSpecialTextures;
-import com.simibubi.create_re.Create;
+import com.sakalti.create_re.AllSpecialTextures;
+import com.sakalti.create_re.Create;
 
 import net.minecraft.Util;
 import net.minecraft.client.renderer.RenderStateShard;

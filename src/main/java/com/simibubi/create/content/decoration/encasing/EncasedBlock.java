@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.decoration.encasing;
+package com.sakalti.create_re.content.decoration.encasing;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;

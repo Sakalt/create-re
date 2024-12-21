@@ -1,12 +1,12 @@
-package com.simibubi.create_re.content.equipment.zapper.terrainzapper;
+package com.sakalti.create_re.content.equipment.zapper.terrainzapper;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

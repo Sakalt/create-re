@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.kinetics.belt;
+package com.sakalti.create_re.content.kinetics.belt;
 
 import java.util.Map;
 
-import com.simibubi.create_re.AllTags.AllItemTags;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.AllTags.AllItemTags;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import it.unimi.dsi.fastutil.objects.Object2BooleanOpenHashMap;
 import net.minecraft.core.BlockPos;

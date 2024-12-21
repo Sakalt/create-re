@@ -1,19 +1,19 @@
-package com.simibubi.create_re.foundation.data.recipe;
+package com.sakalti.create_re.foundation.data.recipe;
 
-import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.ALUMINUM;
-import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.LEAD;
-import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.NICKEL;
-import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.OSMIUM;
-import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.PLATINUM;
-import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.QUICKSILVER;
-import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.SILVER;
-import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.TIN;
-import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.URANIUM;
+import static com.sakalti.create_re.foundation.data.recipe.CompatMetals.ALUMINUM;
+import static com.sakalti.create_re.foundation.data.recipe.CompatMetals.LEAD;
+import static com.sakalti.create_re.foundation.data.recipe.CompatMetals.NICKEL;
+import static com.sakalti.create_re.foundation.data.recipe.CompatMetals.OSMIUM;
+import static com.sakalti.create_re.foundation.data.recipe.CompatMetals.PLATINUM;
+import static com.sakalti.create_re.foundation.data.recipe.CompatMetals.QUICKSILVER;
+import static com.sakalti.create_re.foundation.data.recipe.CompatMetals.SILVER;
+import static com.sakalti.create_re.foundation.data.recipe.CompatMetals.TIN;
+import static com.sakalti.create_re.foundation.data.recipe.CompatMetals.URANIUM;
 
 import java.util.function.Supplier;
 
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.AllRecipeTypes;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.AllRecipeTypes;
 import com.tterrag.registrate.util.entry.ItemEntry;
 
 import net.minecraft.data.PackOutput;

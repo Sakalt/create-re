@@ -1,11 +1,11 @@
-package com.simibubi.create_re.content.schematics.table;
+package com.sakalti.create_re.content.schematics.table;
 
 import java.util.List;
 
-import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create_re.foundation.utility.IInteractionChecker;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.utility.IInteractionChecker;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

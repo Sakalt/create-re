@@ -1,7 +1,7 @@
-package com.simibubi.create_re.content.trains.graph;
+package com.sakalti.create_re.content.trains.graph;
 
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.foundation.networking.SimplePacketBase;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraftforge.network.NetworkEvent.Context;

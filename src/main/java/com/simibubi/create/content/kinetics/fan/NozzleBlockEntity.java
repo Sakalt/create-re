@@ -1,13 +1,13 @@
-package com.simibubi.create_re.content.kinetics.fan;
+package com.sakalti.create_re.content.kinetics.fan;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create_re.foundation.utility.VecHelper;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;

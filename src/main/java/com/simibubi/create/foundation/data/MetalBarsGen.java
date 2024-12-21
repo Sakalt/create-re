@@ -1,6 +1,6 @@
-package com.simibubi.create_re.foundation.data;
+package com.sakalti.create_re.foundation.data;
 
-import static com.simibubi.create_re.Create.REGISTRATE;
+import static com.sakalti.create_re.Create.REGISTRATE;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.EAST;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.NORTH;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.SOUTH;
@@ -8,8 +8,8 @@ import static net.minecraft.world.level.block.state.properties.BlockStatePropert
 
 import java.util.function.Supplier;
 
-import com.simibubi.create_re.AllTags.AllBlockTags;
-import com.simibubi.create_re.Create;
+import com.sakalti.create_re.AllTags.AllBlockTags;
+import com.sakalti.create_re.Create;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 import com.tterrag.registrate.util.DataIngredient;

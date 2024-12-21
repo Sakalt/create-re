@@ -1,12 +1,12 @@
-package com.simibubi.create_re.content.decoration.palettes;
+package com.sakalti.create_re.content.decoration.palettes;
 
-import static com.simibubi.create_re.Create.REGISTRATE;
-import static com.simibubi.create_re.foundation.data.CreateRegistrate.connectedTextures;
-import static com.simibubi.create_re.foundation.data.TagGen.pickaxeOnly;
+import static com.sakalti.create_re.Create.REGISTRATE;
+import static com.sakalti.create_re.foundation.data.CreateRegistrate.connectedTextures;
+import static com.sakalti.create_re.foundation.data.TagGen.pickaxeOnly;
 
 import com.google.common.collect.ImmutableList;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.foundation.data.CreateRegistrate;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.builders.ItemBuilder;
 import com.tterrag.registrate.providers.ProviderType;

@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.virtualWorld;
+package com.sakalti.create_re.foundation.virtualWorld;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.state.BlockState;

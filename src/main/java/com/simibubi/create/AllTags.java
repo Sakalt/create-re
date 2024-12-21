@@ -1,14 +1,14 @@
-package com.simibubi.create_re;
+package com.sakalti.create_re;
 
-import static com.simibubi.create_re.AllTags.NameSpace.CURIOS;
-import static com.simibubi.create_re.AllTags.NameSpace.FORGE;
-import static com.simibubi.create_re.AllTags.NameSpace.MOD;
-import static com.simibubi.create_re.AllTags.NameSpace.QUARK;
-import static com.simibubi.create_re.AllTags.NameSpace.TIC;
+import static com.sakalti.create_re.AllTags.NameSpace.CURIOS;
+import static com.sakalti.create_re.AllTags.NameSpace.FORGE;
+import static com.sakalti.create_re.AllTags.NameSpace.MOD;
+import static com.sakalti.create_re.AllTags.NameSpace.QUARK;
+import static com.sakalti.create_re.AllTags.NameSpace.TIC;
 
 import java.util.Collections;
 
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;

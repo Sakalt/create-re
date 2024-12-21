@@ -1,13 +1,13 @@
-package com.simibubi.create_re.content.trains.station;
+package com.sakalti.create_re.content.trains.station;
 
 import java.util.UUID;
 
-import com.simibubi.create_re.AllPackets;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.content.trains.entity.Train;
-import com.simibubi.create_re.content.trains.entity.TrainIconType;
-import com.simibubi.create_re.foundation.networking.SimplePacketBase;
-import com.simibubi.create_re.foundation.utility.Components;
+import com.sakalti.create_re.AllPackets;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.content.trains.entity.Train;
+import com.sakalti.create_re.content.trains.entity.TrainIconType;
+import com.sakalti.create_re.foundation.networking.SimplePacketBase;
+import com.sakalti.create_re.foundation.utility.Components;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;

@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.equipment.potatoCannon;
+package com.sakalti.create_re.content.equipment.potatoCannon;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 

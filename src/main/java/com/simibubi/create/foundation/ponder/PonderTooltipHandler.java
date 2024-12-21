@@ -1,19 +1,19 @@
-package com.simibubi.create_re.foundation.ponder;
+package com.sakalti.create_re.foundation.ponder;
 
 import java.util.List;
 
 import com.google.common.base.Strings;
 import com.mojang.blaze3d.platform.InputConstants;
-import com.simibubi.create_re.AllKeys;
-import com.simibubi.create_re.foundation.gui.ScreenOpener;
-import com.simibubi.create_re.foundation.item.ItemHelper;
-import com.simibubi.create_re.foundation.ponder.ui.NavigatableSimiScreen;
-import com.simibubi.create_re.foundation.ponder.ui.PonderUI;
-import com.simibubi.create_re.foundation.utility.Color;
-import com.simibubi.create_re.foundation.utility.Components;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.foundation.utility.RegisteredObjects;
-import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
+import com.sakalti.create_re.AllKeys;
+import com.sakalti.create_re.foundation.gui.ScreenOpener;
+import com.sakalti.create_re.foundation.item.ItemHelper;
+import com.sakalti.create_re.foundation.ponder.ui.NavigatableSimiScreen;
+import com.sakalti.create_re.foundation.ponder.ui.PonderUI;
+import com.sakalti.create_re.foundation.utility.Color;
+import com.sakalti.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.utility.RegisteredObjects;
+import com.sakalti.create_re.foundation.utility.animation.LerpedFloat;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.KeyMapping;

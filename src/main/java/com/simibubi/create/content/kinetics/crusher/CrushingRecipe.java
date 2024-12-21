@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.kinetics.crusher;
+package com.sakalti.create_re.content.kinetics.crusher;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create_re.AllRecipeTypes;
-import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
+import com.sakalti.create_re.AllRecipeTypes;
+import com.sakalti.create_re.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
 
 import net.minecraft.world.level.Level;
 import net.minecraftforge.items.wrapper.RecipeWrapper;

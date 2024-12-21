@@ -1,10 +1,10 @@
-package com.simibubi.create_re.content.equipment.blueprint;
+package com.sakalti.create_re.content.equipment.blueprint;
 
 import java.util.Optional;
 
-import com.simibubi.create_re.AllMenuTypes;
-import com.simibubi.create_re.content.equipment.blueprint.BlueprintEntity.BlueprintSection;
-import com.simibubi.create_re.foundation.gui.menu.GhostItemMenu;
+import com.sakalti.create_re.AllMenuTypes;
+import com.sakalti.create_re.content.equipment.blueprint.BlueprintEntity.BlueprintSection;
+import com.sakalti.create_re.foundation.gui.menu.GhostItemMenu;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.FriendlyByteBuf;

@@ -1,8 +1,8 @@
-package com.simibubi.create_re.content.equipment.bell;
+package com.sakalti.create_re.content.equipment.bell;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllSoundEvents;
+import com.sakalti.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllSoundEvents;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

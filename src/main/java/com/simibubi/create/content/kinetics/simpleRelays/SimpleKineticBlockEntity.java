@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.kinetics.simpleRelays;
+package com.sakalti.create_re.content.kinetics.simpleRelays;
 
 import java.util.List;
 
-import com.simibubi.create_re.content.kinetics.base.IRotate;
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.sakalti.create_re.content.kinetics.base.IRotate;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntityType;

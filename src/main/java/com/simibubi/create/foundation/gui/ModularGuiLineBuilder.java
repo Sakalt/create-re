@@ -1,14 +1,14 @@
-package com.simibubi.create_re.foundation.gui;
+package com.sakalti.create_re.foundation.gui;
 
 import java.util.function.BiConsumer;
 
-import com.simibubi.create_re.foundation.gui.widget.Label;
-import com.simibubi.create_re.foundation.gui.widget.ScrollInput;
-import com.simibubi.create_re.foundation.gui.widget.SelectionScrollInput;
-import com.simibubi.create_re.foundation.gui.widget.TooltipArea;
-import com.simibubi.create_re.foundation.utility.Components;
-import com.simibubi.create_re.foundation.utility.Couple;
-import com.simibubi.create_re.foundation.utility.Pair;
+import com.sakalti.create_re.foundation.gui.widget.Label;
+import com.sakalti.create_re.foundation.gui.widget.ScrollInput;
+import com.sakalti.create_re.foundation.gui.widget.SelectionScrollInput;
+import com.sakalti.create_re.foundation.gui.widget.TooltipArea;
+import com.sakalti.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.utility.Couple;
+import com.sakalti.create_re.foundation.utility.Pair;
 
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.components.EditBox;

@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.trains.bogey;
+package com.sakalti.create_re.content.trains.bogey;
 
 import java.util.function.Consumer;
 
@@ -6,7 +6,7 @@ import org.jetbrains.annotations.Nullable;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import com.simibubi.create_re.content.trains.bogey.BogeySizes.BogeySize;
+import com.sakalti.create_re.content.trains.bogey.BogeySizes.BogeySize;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;

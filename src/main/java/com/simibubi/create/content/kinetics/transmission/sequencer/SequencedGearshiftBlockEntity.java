@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.kinetics.transmission.sequencer;
+package com.sakalti.create_re.content.kinetics.transmission.sequencer;
 
 import java.util.List;
 import java.util.Vector;
@@ -7,12 +7,12 @@ import javax.annotation.Nullable;
 
 import org.jetbrains.annotations.NotNull;
 
-import com.simibubi.create_re.compat.computercraft.AbstractComputerBehaviour;
-import com.simibubi.create_re.compat.computercraft.ComputerCraftProxy;
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create_re.content.kinetics.transmission.SplitShaftBlockEntity;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.sakalti.create_re.compat.computercraft.AbstractComputerBehaviour;
+import com.sakalti.create_re.compat.computercraft.ComputerCraftProxy;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntity;
+import com.sakalti.create_re.content.kinetics.transmission.SplitShaftBlockEntity;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

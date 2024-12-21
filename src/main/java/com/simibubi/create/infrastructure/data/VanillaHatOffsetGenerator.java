@@ -1,6 +1,6 @@
-package com.simibubi.create_re.infrastructure.data;
+package com.sakalti.create_re.infrastructure.data;
 
-import com.simibubi.create_re.api.data.TrainHatInfoProvider;
+import com.sakalti.create_re.api.data.TrainHatInfoProvider;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.entity.EntityType;

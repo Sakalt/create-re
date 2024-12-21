@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.config.ui;
+package com.sakalti.create_re.foundation.config.ui;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,14 +6,14 @@ import java.util.Locale;
 
 import org.lwjgl.glfw.GLFW;
 
-import com.simibubi.create_re.foundation.gui.AllIcons;
-import com.simibubi.create_re.foundation.gui.ScreenOpener;
-import com.simibubi.create_re.foundation.gui.Theme;
-import com.simibubi.create_re.foundation.gui.element.DelegatedStencilElement;
-import com.simibubi.create_re.foundation.gui.widget.BoxWidget;
-import com.simibubi.create_re.foundation.item.TooltipHelper;
-import com.simibubi.create_re.foundation.item.TooltipHelper.Palette;
-import com.simibubi.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.gui.AllIcons;
+import com.sakalti.create_re.foundation.gui.ScreenOpener;
+import com.sakalti.create_re.foundation.gui.Theme;
+import com.sakalti.create_re.foundation.gui.element.DelegatedStencilElement;
+import com.sakalti.create_re.foundation.gui.widget.BoxWidget;
+import com.sakalti.create_re.foundation.item.TooltipHelper;
+import com.sakalti.create_re.foundation.item.TooltipHelper.Palette;
+import com.sakalti.create_re.foundation.utility.Components;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.Screen;

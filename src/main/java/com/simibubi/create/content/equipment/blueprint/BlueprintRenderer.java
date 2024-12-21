@@ -1,13 +1,13 @@
-package com.simibubi.create_re.content.equipment.blueprint;
+package com.sakalti.create_re.content.equipment.blueprint;
 
 import org.joml.Matrix3f;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.AllPartialModels;
-import com.simibubi.create_re.content.equipment.blueprint.BlueprintEntity.BlueprintSection;
-import com.simibubi.create_re.foundation.render.CachedBufferer;
-import com.simibubi.create_re.foundation.render.SuperByteBuffer;
-import com.simibubi.create_re.foundation.utility.Couple;
+import com.sakalti.create_re.AllPartialModels;
+import com.sakalti.create_re.content.equipment.blueprint.BlueprintEntity.BlueprintSection;
+import com.sakalti.create_re.foundation.render.CachedBufferer;
+import com.sakalti.create_re.foundation.render.SuperByteBuffer;
+import com.sakalti.create_re.foundation.utility.Couple;
 
 import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 import dev.engine_room.flywheel.lib.transform.TransformStack;

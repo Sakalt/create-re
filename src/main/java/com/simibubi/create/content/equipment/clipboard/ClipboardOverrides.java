@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.equipment.clipboard;
+package com.sakalti.create_re.content.equipment.clipboard;
 
-import com.simibubi.create_re.Create;
+import com.sakalti.create_re.Create;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateItemModelProvider;
 

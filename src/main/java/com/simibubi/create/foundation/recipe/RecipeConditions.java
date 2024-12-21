@@ -1,8 +1,8 @@
-package com.simibubi.create_re.foundation.recipe;
+package com.sakalti.create_re.foundation.recipe;
 
 import java.util.function.Predicate;
 
-import com.simibubi.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Recipe;
@@ -11,7 +11,7 @@ import net.minecraft.world.item.crafting.RecipeType;
 /**
  * Commonly used Predicates for searching through recipe collections.
  * 
- * @author simibubi
+ * @author sakalti
  *
  */
 public class RecipeConditions {

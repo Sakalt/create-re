@@ -1,11 +1,11 @@
-package com.simibubi.create_re.content.logistics.depot;
+package com.sakalti.create_re.content.logistics.depot;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllSoundEvents;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
-import com.simibubi.create_re.content.kinetics.belt.transport.TransportedItemStack;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllSoundEvents;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
+import com.sakalti.create_re.content.kinetics.belt.transport.TransportedItemStack;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

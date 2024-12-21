@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation;
+package com.sakalti.create_re.foundation;
 
 import java.nio.file.Path;
 

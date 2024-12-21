@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.kinetics.waterwheel;
+package com.sakalti.create_re.content.kinetics.waterwheel;
 
 import net.minecraft.world.level.block.state.BlockState;
 

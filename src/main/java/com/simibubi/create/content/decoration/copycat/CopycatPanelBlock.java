@@ -1,13 +1,13 @@
-package com.simibubi.create_re.content.decoration.copycat;
+package com.sakalti.create_re.content.decoration.copycat;
 
 import java.util.List;
 import java.util.function.Predicate;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllShapes;
-import com.simibubi.create_re.foundation.placement.IPlacementHelper;
-import com.simibubi.create_re.foundation.placement.PlacementHelpers;
-import com.simibubi.create_re.foundation.placement.PlacementOffset;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllShapes;
+import com.sakalti.create_re.foundation.placement.IPlacementHelper;
+import com.sakalti.create_re.foundation.placement.PlacementHelpers;
+import com.sakalti.create_re.foundation.placement.PlacementOffset;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;

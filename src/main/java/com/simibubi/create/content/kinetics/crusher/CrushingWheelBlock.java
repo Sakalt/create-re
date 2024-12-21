@@ -1,13 +1,13 @@
-package com.simibubi.create_re.content.kinetics.crusher;
+package com.sakalti.create_re.content.kinetics.crusher;
 
-import static com.simibubi.create_re.content.kinetics.crusher.CrushingWheelControllerBlock.VALID;
+import static com.sakalti.create_re.content.kinetics.crusher.CrushingWheelControllerBlock.VALID;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllShapes;
-import com.simibubi.create_re.content.kinetics.base.RotatedPillarKineticBlock;
-import com.simibubi.create_re.foundation.block.IBE;
-import com.simibubi.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllShapes;
+import com.sakalti.create_re.content.kinetics.base.RotatedPillarKineticBlock;
+import com.sakalti.create_re.foundation.block.IBE;
+import com.sakalti.create_re.foundation.utility.Iterate;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

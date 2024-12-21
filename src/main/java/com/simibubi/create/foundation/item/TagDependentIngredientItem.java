@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.item;
+package com.sakalti.create_re.foundation.item;
 
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;

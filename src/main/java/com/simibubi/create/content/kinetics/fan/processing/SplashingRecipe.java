@@ -1,11 +1,11 @@
-package com.simibubi.create_re.content.kinetics.fan.processing;
+package com.sakalti.create_re.content.kinetics.fan.processing;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create_re.AllRecipeTypes;
-import com.simibubi.create_re.content.kinetics.fan.processing.SplashingRecipe.SplashingWrapper;
-import com.simibubi.create_re.content.processing.recipe.ProcessingRecipe;
-import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
+import com.sakalti.create_re.AllRecipeTypes;
+import com.sakalti.create_re.content.kinetics.fan.processing.SplashingRecipe.SplashingWrapper;
+import com.sakalti.create_re.content.processing.recipe.ProcessingRecipe;
+import com.sakalti.create_re.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
 
 import net.minecraft.world.level.Level;
 import net.minecraftforge.items.ItemStackHandler;

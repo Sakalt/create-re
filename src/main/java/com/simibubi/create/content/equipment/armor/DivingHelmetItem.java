@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.equipment.armor;
+package com.sakalti.create_re.content.equipment.armor;
 
 import java.util.List;
 import java.util.Map;
 
-import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.sakalti.create_re.foundation.advancement.AllAdvancements;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;

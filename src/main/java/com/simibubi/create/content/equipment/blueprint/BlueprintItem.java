@@ -1,11 +1,11 @@
-package com.simibubi.create_re.content.equipment.blueprint;
+package com.sakalti.create_re.content.equipment.blueprint;
 
 import java.util.Collection;
 
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.content.logistics.filter.AttributeFilterMenu.WhitelistMode;
-import com.simibubi.create_re.content.logistics.filter.FilterItem;
-import com.simibubi.create_re.content.logistics.filter.ItemAttribute;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.content.logistics.filter.AttributeFilterMenu.WhitelistMode;
+import com.sakalti.create_re.content.logistics.filter.FilterItem;
+import com.sakalti.create_re.content.logistics.filter.ItemAttribute;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

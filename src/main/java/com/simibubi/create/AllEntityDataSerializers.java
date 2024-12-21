@@ -1,6 +1,6 @@
-package com.simibubi.create_re;
+package com.sakalti.create_re;
 
-import com.simibubi.create_re.content.trains.entity.CarriageSyncDataSerializer;
+import com.sakalti.create_re.content.trains.entity.CarriageSyncDataSerializer;
 
 import net.minecraft.network.syncher.EntityDataSerializer;
 import net.minecraftforge.eventbus.api.IEventBus;

@@ -1,10 +1,10 @@
-package com.simibubi.create_re.content.kinetics;
+package com.sakalti.create_re.content.kinetics;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Supplier;
 
-import com.simibubi.create_re.foundation.utility.Couple;
+import com.sakalti.create_re.foundation.utility.Couple;
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
 

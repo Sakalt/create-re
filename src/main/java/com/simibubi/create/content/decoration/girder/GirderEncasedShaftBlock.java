@@ -1,16 +1,16 @@
-package com.simibubi.create_re.content.decoration.girder;
+package com.sakalti.create_re.content.decoration.girder;
 
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.WATERLOGGED;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllShapes;
-import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
-import com.simibubi.create_re.content.kinetics.base.HorizontalAxisKineticBlock;
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create_re.content.schematics.requirement.ISpecialBlockItemRequirement;
-import com.simibubi.create_re.content.schematics.requirement.ItemRequirement;
-import com.simibubi.create_re.foundation.block.IBE;
+import com.sakalti.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllShapes;
+import com.sakalti.create_re.content.equipment.wrench.IWrenchable;
+import com.sakalti.create_re.content.kinetics.base.HorizontalAxisKineticBlock;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntity;
+import com.sakalti.create_re.content.schematics.requirement.ISpecialBlockItemRequirement;
+import com.sakalti.create_re.content.schematics.requirement.ItemRequirement;
+import com.sakalti.create_re.foundation.block.IBE;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

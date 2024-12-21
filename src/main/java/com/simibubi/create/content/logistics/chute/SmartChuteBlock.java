@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.logistics.chute;
+package com.sakalti.create_re.content.logistics.chute;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.AllBlockEntityTypes;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;

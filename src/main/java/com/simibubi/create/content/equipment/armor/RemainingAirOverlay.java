@@ -1,12 +1,12 @@
-package com.simibubi.create_re.content.equipment.armor;
+package com.sakalti.create_re.content.equipment.armor;
 
 import java.util.List;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.foundation.gui.element.GuiGameElement;
-import com.simibubi.create_re.foundation.utility.Color;
-import com.simibubi.create_re.foundation.utility.Components;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.foundation.gui.element.GuiGameElement;
+import com.sakalti.create_re.foundation.utility.Color;
+import com.sakalti.create_re.foundation.utility.Components;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;

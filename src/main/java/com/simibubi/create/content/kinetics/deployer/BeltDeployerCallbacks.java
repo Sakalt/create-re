@@ -1,24 +1,24 @@
-package com.simibubi.create_re.content.kinetics.deployer;
+package com.sakalti.create_re.content.kinetics.deployer;
 
-import static com.simibubi.create_re.content.kinetics.base.DirectionalKineticBlock.FACING;
+import static com.sakalti.create_re.content.kinetics.base.DirectionalKineticBlock.FACING;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllSoundEvents;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.content.equipment.sandPaper.SandPaperPolishingRecipe;
-import com.simibubi.create_re.content.kinetics.belt.BeltHelper;
-import com.simibubi.create_re.content.kinetics.belt.behaviour.BeltProcessingBehaviour.ProcessingResult;
-import com.simibubi.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour;
-import com.simibubi.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour.TransportedResult;
-import com.simibubi.create_re.content.kinetics.belt.transport.TransportedItemStack;
-import com.simibubi.create_re.content.kinetics.deployer.DeployerBlockEntity.Mode;
-import com.simibubi.create_re.content.kinetics.deployer.DeployerBlockEntity.State;
-import com.simibubi.create_re.foundation.advancement.AllAdvancements;
-import com.simibubi.create_re.foundation.advancement.CreateAdvancement;
-import com.simibubi.create_re.foundation.recipe.RecipeApplier;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllSoundEvents;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.content.equipment.sandPaper.SandPaperPolishingRecipe;
+import com.sakalti.create_re.content.kinetics.belt.BeltHelper;
+import com.sakalti.create_re.content.kinetics.belt.behaviour.BeltProcessingBehaviour.ProcessingResult;
+import com.sakalti.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour;
+import com.sakalti.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour.TransportedResult;
+import com.sakalti.create_re.content.kinetics.belt.transport.TransportedItemStack;
+import com.sakalti.create_re.content.kinetics.deployer.DeployerBlockEntity.Mode;
+import com.sakalti.create_re.content.kinetics.deployer.DeployerBlockEntity.State;
+import com.sakalti.create_re.foundation.advancement.AllAdvancements;
+import com.sakalti.create_re.foundation.advancement.CreateAdvancement;
+import com.sakalti.create_re.foundation.recipe.RecipeApplier;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

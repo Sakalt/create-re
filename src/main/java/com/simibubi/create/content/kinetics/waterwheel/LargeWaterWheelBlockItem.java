@@ -1,8 +1,8 @@
-package com.simibubi.create_re.content.kinetics.waterwheel;
+package com.sakalti.create_re.content.kinetics.waterwheel;
 
-import com.simibubi.create_re.CreateClient;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.foundation.utility.Pair;
+import com.sakalti.create_re.CreateClient;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.utility.Pair;
 
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.core.BlockPos;

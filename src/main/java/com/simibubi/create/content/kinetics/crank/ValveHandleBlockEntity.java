@@ -1,25 +1,25 @@
-package com.simibubi.create_re.content.kinetics.crank;
+package com.sakalti.create_re.content.kinetics.crank;
 
 import java.util.List;
 
 import com.google.common.collect.ImmutableList;
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntityRenderer;
-import com.simibubi.create_re.content.kinetics.transmission.sequencer.SequencedGearshiftBlockEntity.SequenceContext;
-import com.simibubi.create_re.content.kinetics.transmission.sequencer.SequencerInstructions;
-import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBoxTransform;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueSettingsBoard;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueSettingsFormatter;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.scrollValue.ScrollValueBehaviour;
-import com.simibubi.create_re.foundation.render.CachedBufferer;
-import com.simibubi.create_re.foundation.render.SuperByteBuffer;
-import com.simibubi.create_re.foundation.render.VirtualRenderHelper;
-import com.simibubi.create_re.foundation.utility.Components;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntity;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntityRenderer;
+import com.sakalti.create_re.content.kinetics.transmission.sequencer.SequencedGearshiftBlockEntity.SequenceContext;
+import com.sakalti.create_re.content.kinetics.transmission.sequencer.SequencerInstructions;
+import com.sakalti.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.ValueBoxTransform;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.ValueSettingsBoard;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.ValueSettingsFormatter;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.scrollValue.ScrollValueBehaviour;
+import com.sakalti.create_re.foundation.render.CachedBufferer;
+import com.sakalti.create_re.foundation.render.SuperByteBuffer;
+import com.sakalti.create_re.foundation.render.VirtualRenderHelper;
+import com.sakalti.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import dev.engine_room.flywheel.api.model.Model;
 import net.minecraft.ChatFormatting;

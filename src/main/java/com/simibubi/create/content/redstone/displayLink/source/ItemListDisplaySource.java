@@ -1,13 +1,13 @@
-package com.simibubi.create_re.content.redstone.displayLink.source;
+package com.sakalti.create_re.content.redstone.displayLink.source;
 
 import java.util.stream.Stream;
 
-import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkContext;
-import com.simibubi.create_re.content.redstone.smartObserver.SmartObserverBlockEntity;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
-import com.simibubi.create_re.foundation.item.CountedItemStackList;
-import com.simibubi.create_re.foundation.utility.IntAttached;
+import com.sakalti.create_re.content.redstone.displayLink.DisplayLinkContext;
+import com.sakalti.create_re.content.redstone.smartObserver.SmartObserverBlockEntity;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
+import com.sakalti.create_re.foundation.item.CountedItemStackList;
+import com.sakalti.create_re.foundation.utility.IntAttached;
 
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.world.level.block.entity.BlockEntity;

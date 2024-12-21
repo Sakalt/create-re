@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.kinetics.base;
+package com.sakalti.create_re.content.kinetics.base;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-import com.simibubi.create_re.foundation.utility.BlockHelper;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.foundation.utility.BlockHelper;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

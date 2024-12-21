@@ -1,21 +1,21 @@
-package com.simibubi.create_re.content.equipment.zapper.terrainzapper;
+package com.sakalti.create_re.content.equipment.zapper.terrainzapper;
 
 import java.util.List;
 import java.util.Vector;
 
-import com.simibubi.create_re.content.equipment.zapper.ConfigureZapperPacket;
-import com.simibubi.create_re.content.equipment.zapper.ZapperScreen;
-import com.simibubi.create_re.foundation.gui.AllGuiTextures;
-import com.simibubi.create_re.foundation.gui.AllIcons;
-import com.simibubi.create_re.foundation.gui.widget.IconButton;
-import com.simibubi.create_re.foundation.gui.widget.Indicator;
-import com.simibubi.create_re.foundation.gui.widget.Indicator.State;
-import com.simibubi.create_re.foundation.gui.widget.Label;
-import com.simibubi.create_re.foundation.gui.widget.ScrollInput;
-import com.simibubi.create_re.foundation.gui.widget.SelectionScrollInput;
-import com.simibubi.create_re.foundation.utility.Components;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.sakalti.create_re.content.equipment.zapper.ConfigureZapperPacket;
+import com.sakalti.create_re.content.equipment.zapper.ZapperScreen;
+import com.sakalti.create_re.foundation.gui.AllGuiTextures;
+import com.sakalti.create_re.foundation.gui.AllIcons;
+import com.sakalti.create_re.foundation.gui.widget.IconButton;
+import com.sakalti.create_re.foundation.gui.widget.Indicator;
+import com.sakalti.create_re.foundation.gui.widget.Indicator.State;
+import com.sakalti.create_re.foundation.gui.widget.Label;
+import com.sakalti.create_re.foundation.gui.widget.ScrollInput;
+import com.sakalti.create_re.foundation.gui.widget.SelectionScrollInput;
+import com.sakalti.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.core.BlockPos;

@@ -1,10 +1,10 @@
-package com.simibubi.create_re.compat;
+package com.sakalti.create_re.compat;
 
 import java.util.Optional;
 import java.util.function.Supplier;
 
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.foundation.utility.RegisteredObjects;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.utility.RegisteredObjects;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;

@@ -1,18 +1,18 @@
-package com.simibubi.create_re.content.equipment.zapper;
+package com.sakalti.create_re.content.equipment.zapper;
 
 import java.util.Vector;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import com.simibubi.create_re.AllPackets;
-import com.simibubi.create_re.foundation.gui.AbstractSimiScreen;
-import com.simibubi.create_re.foundation.gui.AllGuiTextures;
-import com.simibubi.create_re.foundation.gui.AllIcons;
-import com.simibubi.create_re.foundation.gui.element.GuiGameElement;
-import com.simibubi.create_re.foundation.gui.widget.IconButton;
-import com.simibubi.create_re.foundation.utility.Components;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.sakalti.create_re.AllPackets;
+import com.sakalti.create_re.foundation.gui.AbstractSimiScreen;
+import com.sakalti.create_re.foundation.gui.AllGuiTextures;
+import com.sakalti.create_re.foundation.gui.AllIcons;
+import com.sakalti.create_re.foundation.gui.element.GuiGameElement;
+import com.sakalti.create_re.foundation.gui.widget.IconButton;
+import com.sakalti.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.core.registries.BuiltInRegistries;

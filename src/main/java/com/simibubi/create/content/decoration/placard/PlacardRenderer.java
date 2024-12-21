@@ -1,8 +1,8 @@
-package com.simibubi.create_re.content.decoration.placard;
+package com.sakalti.create_re.content.decoration.placard;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.foundation.blockEntity.renderer.SafeBlockEntityRenderer;
-import com.simibubi.create_re.foundation.utility.AngleHelper;
+import com.sakalti.create_re.foundation.blockEntity.renderer.SafeBlockEntityRenderer;
+import com.sakalti.create_re.foundation.utility.AngleHelper;
 
 import dev.engine_room.flywheel.lib.transform.TransformStack;
 import net.minecraft.client.Minecraft;

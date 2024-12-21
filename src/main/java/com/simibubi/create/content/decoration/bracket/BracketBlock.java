@@ -1,14 +1,14 @@
-package com.simibubi.create_re.content.decoration.bracket;
+package com.sakalti.create_re.content.decoration.bracket;
 
 import java.util.Optional;
 
-import com.simibubi.create_re.content.fluids.FluidPropagator;
-import com.simibubi.create_re.content.kinetics.base.DirectionalAxisKineticBlock;
-import com.simibubi.create_re.content.kinetics.base.RotatedPillarKineticBlock;
-import com.simibubi.create_re.content.kinetics.simpleRelays.AbstractSimpleShaftBlock;
-import com.simibubi.create_re.content.kinetics.simpleRelays.CogWheelBlock;
-import com.simibubi.create_re.foundation.block.WrenchableDirectionalBlock;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.content.fluids.FluidPropagator;
+import com.sakalti.create_re.content.kinetics.base.DirectionalAxisKineticBlock;
+import com.sakalti.create_re.content.kinetics.base.RotatedPillarKineticBlock;
+import com.sakalti.create_re.content.kinetics.simpleRelays.AbstractSimpleShaftBlock;
+import com.sakalti.create_re.content.kinetics.simpleRelays.CogWheelBlock;
+import com.sakalti.create_re.foundation.block.WrenchableDirectionalBlock;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.Direction;
 import net.minecraft.core.Direction.Axis;

@@ -1,4 +1,4 @@
-package com.simibubi.create_re.compat.jei;
+package com.sakalti.create_re.compat.jei;
 
 import mezz.jei.api.gui.drawable.IDrawable;
 import net.minecraft.client.gui.GuiGraphics;

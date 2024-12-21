@@ -1,8 +1,8 @@
-package com.simibubi.create_re.content.contraptions.actors.psi;
+package com.sakalti.create_re.content.contraptions.actors.psi;
 
 import java.util.function.Consumer;
 
-import com.simibubi.create_re.foundation.utility.AngleHelper;
+import com.sakalti.create_re.foundation.utility.AngleHelper;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.instance.InstancerProvider;

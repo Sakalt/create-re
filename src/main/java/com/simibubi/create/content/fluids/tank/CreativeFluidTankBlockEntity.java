@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.fluids.tank;
+package com.sakalti.create_re.content.fluids.tank;
 
 import java.util.List;
 import java.util.function.Consumer;
 
-import com.simibubi.create_re.foundation.fluid.SmartFluidTank;
+import com.sakalti.create_re.foundation.fluid.SmartFluidTank;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;

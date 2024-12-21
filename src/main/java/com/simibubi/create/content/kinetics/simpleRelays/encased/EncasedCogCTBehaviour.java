@@ -1,14 +1,14 @@
-package com.simibubi.create_re.content.kinetics.simpleRelays.encased;
+package com.sakalti.create_re.content.kinetics.simpleRelays.encased;
 
-import static com.simibubi.create_re.content.kinetics.base.RotatedPillarKineticBlock.AXIS;
+import static com.sakalti.create_re.content.kinetics.base.RotatedPillarKineticBlock.AXIS;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create_re.content.decoration.encasing.EncasedCTBehaviour;
-import com.simibubi.create_re.content.kinetics.base.IRotate;
-import com.simibubi.create_re.content.kinetics.simpleRelays.ICogWheel;
-import com.simibubi.create_re.foundation.block.connected.CTSpriteShiftEntry;
-import com.simibubi.create_re.foundation.utility.Couple;
+import com.sakalti.create_re.content.decoration.encasing.EncasedCTBehaviour;
+import com.sakalti.create_re.content.kinetics.base.IRotate;
+import com.sakalti.create_re.content.kinetics.simpleRelays.ICogWheel;
+import com.sakalti.create_re.foundation.block.connected.CTSpriteShiftEntry;
+import com.sakalti.create_re.foundation.utility.Couple;
 
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.core.BlockPos;

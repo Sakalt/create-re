@@ -1,11 +1,11 @@
-package com.simibubi.create_re.foundation.mixin.client;
+package com.sakalti.create_re.foundation.mixin.client;
 
 import java.util.Set;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 
-import com.simibubi.create_re.foundation.block.render.BlockDestructionProgressExtension;
+import com.sakalti.create_re.foundation.block.render.BlockDestructionProgressExtension;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.BlockDestructionProgress;

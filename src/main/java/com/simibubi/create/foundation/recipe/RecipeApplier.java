@@ -1,12 +1,12 @@
-package com.simibubi.create_re.foundation.recipe;
+package com.sakalti.create_re.foundation.recipe;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.simibubi.create_re.content.kinetics.deployer.ManualApplicationRecipe;
-import com.simibubi.create_re.content.processing.recipe.ProcessingOutput;
-import com.simibubi.create_re.content.processing.recipe.ProcessingRecipe;
-import com.simibubi.create_re.foundation.item.ItemHelper;
+import com.sakalti.create_re.content.kinetics.deployer.ManualApplicationRecipe;
+import com.sakalti.create_re.content.processing.recipe.ProcessingOutput;
+import com.sakalti.create_re.content.processing.recipe.ProcessingRecipe;
+import com.sakalti.create_re.foundation.item.ItemHelper;
 
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;

@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.contraptions;
+package com.sakalti.create_re.content.contraptions;
 
 import net.minecraft.world.level.block.state.BlockState;
 

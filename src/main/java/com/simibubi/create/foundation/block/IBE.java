@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.block;
+package com.sakalti.create_re.foundation.block;
 
 import java.util.Optional;
 import java.util.function.Consumer;
@@ -6,8 +6,8 @@ import java.util.function.Function;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntityTicker;
+import com.sakalti.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.sakalti.create_re.foundation.blockEntity.SmartBlockEntityTicker;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionResult;

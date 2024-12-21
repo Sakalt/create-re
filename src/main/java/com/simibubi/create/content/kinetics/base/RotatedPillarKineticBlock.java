@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.kinetics.base;
+package com.sakalti.create_re.content.kinetics.base;
 
-import com.simibubi.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.foundation.utility.Iterate;
 
 import net.minecraft.core.Direction;
 import net.minecraft.core.Direction.Axis;

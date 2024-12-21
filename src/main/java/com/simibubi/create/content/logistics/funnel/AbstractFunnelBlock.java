@@ -1,17 +1,17 @@
-package com.simibubi.create_re.content.logistics.funnel;
+package com.sakalti.create_re.content.logistics.funnel;
 
 import java.util.function.Consumer;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
-import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
-import com.simibubi.create_re.foundation.block.IBE;
-import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
-import com.simibubi.create_re.foundation.block.render.ReducedDestroyEffects;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
+import com.sakalti.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.content.equipment.wrench.IWrenchable;
+import com.sakalti.create_re.foundation.block.IBE;
+import com.sakalti.create_re.foundation.block.ProperWaterloggedBlock;
+import com.sakalti.create_re.foundation.block.render.ReducedDestroyEffects;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

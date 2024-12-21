@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.utility.ghost;
+package com.sakalti.create_re.foundation.utility.ghost;
 
 import java.util.List;
 
@@ -6,9 +6,9 @@ import javax.annotation.Nullable;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create_re.foundation.placement.PlacementHelpers;
-import com.simibubi.create_re.foundation.render.SuperRenderTypeBuffer;
-import com.simibubi.create_re.foundation.render.VirtualRenderHelper;
+import com.sakalti.create_re.foundation.placement.PlacementHelpers;
+import com.sakalti.create_re.foundation.render.SuperRenderTypeBuffer;
+import com.sakalti.create_re.foundation.render.VirtualRenderHelper;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.LevelRenderer;

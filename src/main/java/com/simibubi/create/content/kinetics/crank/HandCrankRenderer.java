@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.kinetics.crank;
+package com.sakalti.create_re.content.kinetics.crank;
 
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.FACING;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntityRenderer;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntityRenderer;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationManager;
 import net.minecraft.client.renderer.MultiBufferSource;

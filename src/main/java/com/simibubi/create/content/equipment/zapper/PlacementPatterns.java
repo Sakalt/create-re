@@ -1,12 +1,12 @@
-package com.simibubi.create_re.content.equipment.zapper;
+package com.sakalti.create_re.content.equipment.zapper;
 
 import java.util.List;
 import java.util.Random;
 import java.util.function.Predicate;
 
 import com.google.common.base.Predicates;
-import com.simibubi.create_re.foundation.gui.AllIcons;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.gui.AllIcons;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

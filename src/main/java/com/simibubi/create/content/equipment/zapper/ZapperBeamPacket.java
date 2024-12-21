@@ -1,7 +1,7 @@
-package com.simibubi.create_re.content.equipment.zapper;
+package com.sakalti.create_re.content.equipment.zapper;
 
-import com.simibubi.create_re.CreateClient;
-import com.simibubi.create_re.content.equipment.zapper.ZapperRenderHandler.LaserBeam;
+import com.sakalti.create_re.CreateClient;
+import com.sakalti.create_re.content.equipment.zapper.ZapperRenderHandler.LaserBeam;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.InteractionHand;

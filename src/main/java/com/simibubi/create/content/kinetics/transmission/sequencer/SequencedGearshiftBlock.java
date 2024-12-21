@@ -1,14 +1,14 @@
-package com.simibubi.create_re.content.kinetics.transmission.sequencer;
+package com.sakalti.create_re.content.kinetics.transmission.sequencer;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.content.contraptions.ITransformableBlock;
-import com.simibubi.create_re.content.contraptions.StructureTransform;
-import com.simibubi.create_re.content.kinetics.base.HorizontalAxisKineticBlock;
-import com.simibubi.create_re.content.kinetics.base.KineticBlock;
-import com.simibubi.create_re.content.kinetics.base.RotatedPillarKineticBlock;
-import com.simibubi.create_re.foundation.block.IBE;
-import com.simibubi.create_re.foundation.gui.ScreenOpener;
+import com.sakalti.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.content.contraptions.ITransformableBlock;
+import com.sakalti.create_re.content.contraptions.StructureTransform;
+import com.sakalti.create_re.content.kinetics.base.HorizontalAxisKineticBlock;
+import com.sakalti.create_re.content.kinetics.base.KineticBlock;
+import com.sakalti.create_re.content.kinetics.base.RotatedPillarKineticBlock;
+import com.sakalti.create_re.foundation.block.IBE;
+import com.sakalti.create_re.foundation.gui.ScreenOpener;
 
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.core.BlockPos;

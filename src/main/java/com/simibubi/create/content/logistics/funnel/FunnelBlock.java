@@ -1,11 +1,11 @@
-package com.simibubi.create_re.content.logistics.funnel;
+package com.sakalti.create_re.content.logistics.funnel;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.AllShapes;
-import com.simibubi.create_re.foundation.advancement.AdvancementBehaviour;
-import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.AllShapes;
+import com.sakalti.create_re.foundation.advancement.AdvancementBehaviour;
+import com.sakalti.create_re.foundation.block.ProperWaterloggedBlock;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

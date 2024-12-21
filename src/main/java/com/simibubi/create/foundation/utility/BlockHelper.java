@@ -1,18 +1,18 @@
-package com.simibubi.create_re.foundation.utility;
+package com.sakalti.create_re.foundation.utility;
 
 import java.util.function.Consumer;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllTags.AllBlockTags;
-import com.simibubi.create_re.compat.Mods;
-import com.simibubi.create_re.compat.framedblocks.FramedBlocksInSchematics;
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock;
-import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock.HeatLevel;
-import com.simibubi.create_re.foundation.blockEntity.IMergeableBE;
-import com.simibubi.create_re.foundation.blockEntity.IMultiBlockEntityContainer;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllTags.AllBlockTags;
+import com.sakalti.create_re.compat.Mods;
+import com.sakalti.create_re.compat.framedblocks.FramedBlocksInSchematics;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntity;
+import com.sakalti.create_re.content.processing.burner.BlazeBurnerBlock;
+import com.sakalti.create_re.content.processing.burner.BlazeBurnerBlock.HeatLevel;
+import com.sakalti.create_re.foundation.blockEntity.IMergeableBE;
+import com.sakalti.create_re.foundation.blockEntity.IMultiBlockEntityContainer;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

@@ -1,8 +1,8 @@
-package com.simibubi.create_re.content.kinetics.mechanicalArm;
+package com.sakalti.create_re.content.kinetics.mechanicalArm;
 
 import java.util.Collection;
 
-import com.simibubi.create_re.foundation.networking.SimplePacketBase;
+import com.sakalti.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

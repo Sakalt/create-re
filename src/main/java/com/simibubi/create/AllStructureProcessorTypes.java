@@ -1,6 +1,6 @@
-package com.simibubi.create_re;
+package com.sakalti.create_re;
 
-import com.simibubi.create_re.content.schematics.SchematicProcessor;
+import com.sakalti.create_re.content.schematics.SchematicProcessor;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorType;

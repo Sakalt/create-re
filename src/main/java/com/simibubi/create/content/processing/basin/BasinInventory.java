@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.processing.basin;
+package com.sakalti.create_re.content.processing.basin;
 
-import com.simibubi.create_re.foundation.item.SmartInventory;
+import com.sakalti.create_re.foundation.item.SmartInventory;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.items.ItemHandlerHelper;

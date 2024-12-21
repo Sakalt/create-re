@@ -1,8 +1,8 @@
-package com.simibubi.create_re.content.schematics.packet;
+package com.sakalti.create_re.content.schematics.packet;
 
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.content.schematics.table.SchematicTableMenu;
-import com.simibubi.create_re.foundation.networking.SimplePacketBase;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.content.schematics.table.SchematicTableMenu;
+import com.sakalti.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;

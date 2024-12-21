@@ -1,13 +1,13 @@
-package com.simibubi.create_re.content.kinetics.press;
+package com.sakalti.create_re.content.kinetics.press;
 
 import java.util.function.Consumer;
 
 import org.joml.Quaternionf;
 
 import com.mojang.math.Axis;
-import com.simibubi.create_re.AllPartialModels;
-import com.simibubi.create_re.content.kinetics.base.ShaftVisual;
-import com.simibubi.create_re.foundation.utility.AngleHelper;
+import com.sakalti.create_re.AllPartialModels;
+import com.sakalti.create_re.content.kinetics.base.ShaftVisual;
+import com.sakalti.create_re.foundation.utility.AngleHelper;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.visual.DynamicVisual;

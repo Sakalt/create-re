@@ -1,8 +1,8 @@
-package com.simibubi.create_re.content.contraptions.bearing;
+package com.sakalti.create_re.content.contraptions.bearing;
 
-import com.simibubi.create_re.content.contraptions.AssemblyException;
-import com.simibubi.create_re.content.contraptions.Contraption;
-import com.simibubi.create_re.content.contraptions.ContraptionType;
+import com.sakalti.create_re.content.contraptions.AssemblyException;
+import com.sakalti.create_re.content.contraptions.Contraption;
+import com.sakalti.create_re.content.contraptions.ContraptionType;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.equipment.extendoGrip;
+package com.sakalti.create_re.content.equipment.extendoGrip;
 
 import java.util.UUID;
 import java.util.function.Consumer;
@@ -7,13 +7,13 @@ import java.util.function.Supplier;
 import com.google.common.base.Suppliers;
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.AllPackets;
-import com.simibubi.create_re.content.equipment.armor.BacktankUtil;
-import com.simibubi.create_re.foundation.advancement.AllAdvancements;
-import com.simibubi.create_re.foundation.item.render.SimpleCustomRenderer;
-import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.AllPackets;
+import com.sakalti.create_re.content.equipment.armor.BacktankUtil;
+import com.sakalti.create_re.foundation.advancement.AllAdvancements;
+import com.sakalti.create_re.foundation.item.render.SimpleCustomRenderer;
+import com.sakalti.create_re.foundation.utility.AnimationTickHolder;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;

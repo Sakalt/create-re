@@ -1,6 +1,6 @@
-package com.simibubi.create_re.foundation.data;
+package com.sakalti.create_re.foundation.data;
 
-import com.simibubi.create_re.content.kinetics.gauge.GaugeBlock;
+import com.sakalti.create_re.content.kinetics.gauge.GaugeBlock;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 

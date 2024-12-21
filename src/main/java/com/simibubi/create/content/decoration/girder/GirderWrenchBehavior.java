@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.decoration.girder;
+package com.sakalti.create_re.content.decoration.girder;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -6,14 +6,14 @@ import java.util.List;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.CreateClient;
-import com.simibubi.create_re.foundation.placement.IPlacementHelper;
-import com.simibubi.create_re.foundation.utility.Color;
-import com.simibubi.create_re.foundation.utility.Iterate;
-import com.simibubi.create_re.foundation.utility.Pair;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.CreateClient;
+import com.sakalti.create_re.foundation.placement.IPlacementHelper;
+import com.sakalti.create_re.foundation.utility.Color;
+import com.sakalti.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.foundation.utility.Pair;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;

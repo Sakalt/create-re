@@ -1,10 +1,10 @@
-package com.simibubi.create_re.content.kinetics.transmission.sequencer;
+package com.sakalti.create_re.content.kinetics.transmission.sequencer;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.simibubi.create_re.foundation.gui.AllGuiTextures;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.gui.AllGuiTextures;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import net.minecraft.network.chat.Component;
 

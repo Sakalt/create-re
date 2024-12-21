@@ -1,4 +1,4 @@
-package com.simibubi.create_re;
+package com.sakalti.create_re;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -6,12 +6,12 @@ import java.util.Map;
 
 import org.jetbrains.annotations.ApiStatus;
 
-import com.simibubi.create_re.content.trains.bogey.BogeySizes;
-import com.simibubi.create_re.content.trains.bogey.BogeyStyle;
-import com.simibubi.create_re.content.trains.bogey.BogeyStyle.SizeRenderer;
-import com.simibubi.create_re.content.trains.bogey.StandardBogeyRenderer;
-import com.simibubi.create_re.content.trains.bogey.StandardBogeyVisual;
-import com.simibubi.create_re.foundation.utility.Components;
+import com.sakalti.create_re.content.trains.bogey.BogeySizes;
+import com.sakalti.create_re.content.trains.bogey.BogeyStyle;
+import com.sakalti.create_re.content.trains.bogey.BogeyStyle.SizeRenderer;
+import com.sakalti.create_re.content.trains.bogey.StandardBogeyRenderer;
+import com.sakalti.create_re.content.trains.bogey.StandardBogeyVisual;
+import com.sakalti.create_re.foundation.utility.Components;
 
 import net.minecraft.resources.ResourceLocation;
 

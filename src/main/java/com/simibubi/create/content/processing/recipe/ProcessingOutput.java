@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.processing.recipe;
+package com.sakalti.create_re.content.processing.recipe;
 
 import java.util.Random;
 
@@ -7,9 +7,9 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonSyntaxException;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.foundation.utility.Pair;
-import com.simibubi.create_re.foundation.utility.RegisteredObjects;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.foundation.utility.Pair;
+import com.sakalti.create_re.foundation.utility.RegisteredObjects;
 
 import net.minecraft.nbt.TagParser;
 import net.minecraft.network.FriendlyByteBuf;

@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.advancement;
+package com.sakalti.create_re.foundation.advancement;
 
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -11,7 +11,7 @@ import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 import com.google.common.collect.Maps;
-import com.simibubi.create_re.Create;
+import com.sakalti.create_re.Create;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.advancements.CriterionTrigger;

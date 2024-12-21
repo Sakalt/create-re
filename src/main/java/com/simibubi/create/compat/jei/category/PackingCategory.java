@@ -1,12 +1,12 @@
-package com.simibubi.create_re.compat.jei.category;
+package com.sakalti.create_re.compat.jei.category;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create_re.compat.jei.category.animations.AnimatedBlazeBurner;
-import com.simibubi.create_re.compat.jei.category.animations.AnimatedPress;
-import com.simibubi.create_re.content.processing.basin.BasinRecipe;
-import com.simibubi.create_re.content.processing.recipe.HeatCondition;
-import com.simibubi.create_re.foundation.gui.AllGuiTextures;
+import com.sakalti.create_re.compat.jei.category.animations.AnimatedBlazeBurner;
+import com.sakalti.create_re.compat.jei.category.animations.AnimatedPress;
+import com.sakalti.create_re.content.processing.basin.BasinRecipe;
+import com.sakalti.create_re.content.processing.recipe.HeatCondition;
+import com.sakalti.create_re.foundation.gui.AllGuiTextures;
 
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.ingredient.IRecipeSlotsView;

@@ -1,7 +1,7 @@
-package com.simibubi.create_re.content.decoration;
+package com.sakalti.create_re.content.decoration;
 
-import com.simibubi.create_re.AllShapes;
-import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.sakalti.create_re.AllShapes;
+import com.sakalti.create_re.content.equipment.wrench.IWrenchable;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

@@ -1,19 +1,19 @@
-package com.simibubi.create_re.content.kinetics.simpleRelays;
+package com.sakalti.create_re.content.kinetics.simpleRelays;
 
-import static com.simibubi.create_re.content.kinetics.base.RotatedPillarKineticBlock.AXIS;
+import static com.sakalti.create_re.content.kinetics.base.RotatedPillarKineticBlock.AXIS;
 
 import java.util.List;
 import java.util.function.Predicate;
 
-import com.simibubi.create_re.AllShapes;
-import com.simibubi.create_re.content.kinetics.base.DirectionalKineticBlock;
-import com.simibubi.create_re.content.kinetics.base.HorizontalKineticBlock;
-import com.simibubi.create_re.content.kinetics.base.IRotate;
-import com.simibubi.create_re.content.kinetics.base.RotatedPillarKineticBlock;
-import com.simibubi.create_re.foundation.placement.IPlacementHelper;
-import com.simibubi.create_re.foundation.placement.PlacementHelpers;
-import com.simibubi.create_re.foundation.placement.PlacementOffset;
-import com.simibubi.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.AllShapes;
+import com.sakalti.create_re.content.kinetics.base.DirectionalKineticBlock;
+import com.sakalti.create_re.content.kinetics.base.HorizontalKineticBlock;
+import com.sakalti.create_re.content.kinetics.base.IRotate;
+import com.sakalti.create_re.content.kinetics.base.RotatedPillarKineticBlock;
+import com.sakalti.create_re.foundation.placement.IPlacementHelper;
+import com.sakalti.create_re.foundation.placement.PlacementHelpers;
+import com.sakalti.create_re.foundation.placement.PlacementOffset;
+import com.sakalti.create_re.foundation.utility.Iterate;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;

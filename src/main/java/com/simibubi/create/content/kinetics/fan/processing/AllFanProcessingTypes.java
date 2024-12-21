@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.kinetics.fan.processing;
+package com.sakalti.create_re.content.kinetics.fan.processing;
 
 import java.util.Collections;
 import java.util.List;
@@ -8,18 +8,18 @@ import java.util.Optional;
 import org.jetbrains.annotations.Nullable;
 import org.joml.Vector3f;
 
-import com.simibubi.create_re.AllRecipeTypes;
-import com.simibubi.create_re.AllTags.AllBlockTags;
-import com.simibubi.create_re.AllTags.AllFluidTags;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.content.kinetics.fan.processing.HauntingRecipe.HauntingWrapper;
-import com.simibubi.create_re.content.kinetics.fan.processing.SplashingRecipe.SplashingWrapper;
-import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock;
-import com.simibubi.create_re.content.processing.burner.LitBlazeBurnerBlock;
-import com.simibubi.create_re.foundation.damageTypes.CreateDamageSources;
-import com.simibubi.create_re.foundation.recipe.RecipeApplier;
-import com.simibubi.create_re.foundation.utility.Color;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.AllRecipeTypes;
+import com.sakalti.create_re.AllTags.AllBlockTags;
+import com.sakalti.create_re.AllTags.AllFluidTags;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.content.kinetics.fan.processing.HauntingRecipe.HauntingWrapper;
+import com.sakalti.create_re.content.kinetics.fan.processing.SplashingRecipe.SplashingWrapper;
+import com.sakalti.create_re.content.processing.burner.BlazeBurnerBlock;
+import com.sakalti.create_re.content.processing.burner.LitBlazeBurnerBlock;
+import com.sakalti.create_re.foundation.damageTypes.CreateDamageSources;
+import com.sakalti.create_re.foundation.recipe.RecipeApplier;
+import com.sakalti.create_re.foundation.utility.Color;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import it.unimi.dsi.fastutil.objects.Object2ReferenceOpenHashMap;
 import net.minecraft.core.BlockPos;

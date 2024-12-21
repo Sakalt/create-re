@@ -1,12 +1,12 @@
-package com.simibubi.create_re.content.equipment.symmetryWand.mirror;
+package com.sakalti.create_re.content.equipment.symmetryWand.mirror;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import com.google.common.collect.ImmutableList;
-import com.simibubi.create_re.AllPartialModels;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.AllPartialModels;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 import net.minecraft.core.BlockPos;

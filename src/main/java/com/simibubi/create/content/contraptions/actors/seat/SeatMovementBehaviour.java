@@ -1,12 +1,12 @@
-package com.simibubi.create_re.content.contraptions.actors.seat;
+package com.sakalti.create_re.content.contraptions.actors.seat;
 
 import java.util.Map;
 import java.util.UUID;
 
-import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity;
-import com.simibubi.create_re.content.contraptions.behaviour.MovementBehaviour;
-import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.content.contraptions.AbstractContraptionEntity;
+import com.sakalti.create_re.content.contraptions.behaviour.MovementBehaviour;
+import com.sakalti.create_re.content.contraptions.behaviour.MovementContext;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.Entity;

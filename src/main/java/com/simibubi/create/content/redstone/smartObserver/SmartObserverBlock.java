@@ -1,16 +1,16 @@
-package com.simibubi.create_re.content.redstone.smartObserver;
+package com.sakalti.create_re.content.redstone.smartObserver;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.content.fluids.FluidTransportBehaviour;
-import com.simibubi.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour;
-import com.simibubi.create_re.content.logistics.funnel.FunnelBlockEntity;
-import com.simibubi.create_re.content.redstone.DirectedDirectionalBlock;
-import com.simibubi.create_re.foundation.block.IBE;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
-import com.simibubi.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.content.fluids.FluidTransportBehaviour;
+import com.sakalti.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour;
+import com.sakalti.create_re.content.logistics.funnel.FunnelBlockEntity;
+import com.sakalti.create_re.content.redstone.DirectedDirectionalBlock;
+import com.sakalti.create_re.foundation.block.IBE;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
+import com.sakalti.create_re.foundation.utility.Iterate;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

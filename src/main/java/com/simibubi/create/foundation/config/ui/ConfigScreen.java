@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.config.ui;
+package com.sakalti.create_re.foundation.config.ui;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -12,15 +12,15 @@ import org.lwjgl.opengl.GL30;
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.content.kinetics.simpleRelays.CogWheelBlock;
-import com.simibubi.create_re.foundation.gui.AbstractSimiScreen;
-import com.simibubi.create_re.foundation.gui.UIRenderHelper;
-import com.simibubi.create_re.foundation.gui.element.GuiGameElement;
-import com.simibubi.create_re.foundation.gui.element.StencilElement;
-import com.simibubi.create_re.foundation.utility.animation.Force;
-import com.simibubi.create_re.foundation.utility.animation.PhysicalFloat;
-import com.simibubi.create_re.infrastructure.gui.CreateMainMenuScreen;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.content.kinetics.simpleRelays.CogWheelBlock;
+import com.sakalti.create_re.foundation.gui.AbstractSimiScreen;
+import com.sakalti.create_re.foundation.gui.UIRenderHelper;
+import com.sakalti.create_re.foundation.gui.element.GuiGameElement;
+import com.sakalti.create_re.foundation.gui.element.StencilElement;
+import com.sakalti.create_re.foundation.utility.animation.Force;
+import com.sakalti.create_re.foundation.utility.animation.PhysicalFloat;
+import com.sakalti.create_re.infrastructure.gui.CreateMainMenuScreen;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;

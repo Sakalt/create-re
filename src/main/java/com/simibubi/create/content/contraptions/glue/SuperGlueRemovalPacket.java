@@ -1,7 +1,7 @@
-package com.simibubi.create_re.content.contraptions.glue;
+package com.sakalti.create_re.content.contraptions.glue;
 
-import com.simibubi.create_re.AllSoundEvents;
-import com.simibubi.create_re.foundation.networking.SimplePacketBase;
+import com.sakalti.create_re.AllSoundEvents;
+import com.sakalti.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;

@@ -1,15 +1,15 @@
-package com.simibubi.create_re.content.processing.burner;
+package com.sakalti.create_re.content.processing.burner;
 
 import java.util.function.Consumer;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create_re.AllPartialModels;
-import com.simibubi.create_re.AllSpriteShifts;
-import com.simibubi.create_re.foundation.block.render.SpriteShiftEntry;
-import com.simibubi.create_re.foundation.render.AllInstanceTypes;
-import com.simibubi.create_re.foundation.utility.AngleHelper;
-import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.sakalti.create_re.AllPartialModels;
+import com.sakalti.create_re.AllSpriteShifts;
+import com.sakalti.create_re.foundation.block.render.SpriteShiftEntry;
+import com.sakalti.create_re.foundation.render.AllInstanceTypes;
+import com.sakalti.create_re.foundation.utility.AngleHelper;
+import com.sakalti.create_re.foundation.utility.AnimationTickHolder;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.visual.DynamicVisual;

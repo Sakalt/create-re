@@ -1,20 +1,20 @@
-package com.simibubi.create_re.content.decoration.palettes;
+package com.sakalti.create_re.content.decoration.palettes;
 
-import static com.simibubi.create_re.Create.REGISTRATE;
-import static com.simibubi.create_re.foundation.data.WindowGen.customWindowBlock;
-import static com.simibubi.create_re.foundation.data.WindowGen.customWindowPane;
-import static com.simibubi.create_re.foundation.data.WindowGen.framedGlass;
-import static com.simibubi.create_re.foundation.data.WindowGen.framedGlassPane;
-import static com.simibubi.create_re.foundation.data.WindowGen.woodenWindowBlock;
-import static com.simibubi.create_re.foundation.data.WindowGen.woodenWindowPane;
+import static com.sakalti.create_re.Create.REGISTRATE;
+import static com.sakalti.create_re.foundation.data.WindowGen.customWindowBlock;
+import static com.sakalti.create_re.foundation.data.WindowGen.customWindowPane;
+import static com.sakalti.create_re.foundation.data.WindowGen.framedGlass;
+import static com.sakalti.create_re.foundation.data.WindowGen.framedGlassPane;
+import static com.sakalti.create_re.foundation.data.WindowGen.woodenWindowBlock;
+import static com.sakalti.create_re.foundation.data.WindowGen.woodenWindowPane;
 
-import com.simibubi.create_re.AllCreativeModeTabs;
-import com.simibubi.create_re.AllSpriteShifts;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.foundation.block.connected.HorizontalCTBehaviour;
-import com.simibubi.create_re.foundation.block.connected.SimpleCTBehaviour;
-import com.simibubi.create_re.foundation.data.BlockStateGen;
-import com.simibubi.create_re.foundation.data.WindowGen;
+import com.sakalti.create_re.AllCreativeModeTabs;
+import com.sakalti.create_re.AllSpriteShifts;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.foundation.block.connected.HorizontalCTBehaviour;
+import com.sakalti.create_re.foundation.block.connected.SimpleCTBehaviour;
+import com.sakalti.create_re.foundation.data.BlockStateGen;
+import com.sakalti.create_re.foundation.data.WindowGen;
 import com.tterrag.registrate.util.DataIngredient;
 import com.tterrag.registrate.util.entry.BlockEntry;
 

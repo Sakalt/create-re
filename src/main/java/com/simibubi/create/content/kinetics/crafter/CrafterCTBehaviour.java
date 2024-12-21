@@ -1,12 +1,12 @@
-package com.simibubi.create_re.content.kinetics.crafter;
+package com.sakalti.create_re.content.kinetics.crafter;
 
-import static com.simibubi.create_re.content.kinetics.base.HorizontalKineticBlock.HORIZONTAL_FACING;
+import static com.sakalti.create_re.content.kinetics.base.HorizontalKineticBlock.HORIZONTAL_FACING;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create_re.AllSpriteShifts;
-import com.simibubi.create_re.foundation.block.connected.CTSpriteShiftEntry;
-import com.simibubi.create_re.foundation.block.connected.ConnectedTextureBehaviour;
+import com.sakalti.create_re.AllSpriteShifts;
+import com.sakalti.create_re.foundation.block.connected.CTSpriteShiftEntry;
+import com.sakalti.create_re.foundation.block.connected.ConnectedTextureBehaviour;
 
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.core.BlockPos;

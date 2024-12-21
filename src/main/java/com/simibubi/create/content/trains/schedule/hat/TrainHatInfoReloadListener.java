@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.trains.schedule.hat;
+package com.sakalti.create_re.content.trains.schedule.hat;
 
 import java.io.BufferedReader;
 import java.util.HashMap;
@@ -6,7 +6,7 @@ import java.util.Map;
 
 import com.google.gson.JsonObject;
 import com.mojang.serialization.JsonOps;
-import com.simibubi.create_re.Create;
+import com.sakalti.create_re.Create;
 
 import net.minecraft.resources.FileToIdConverter;
 import net.minecraft.resources.ResourceLocation;

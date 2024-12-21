@@ -1,7 +1,7 @@
-package com.simibubi.create_re.content.kinetics.base;
+package com.sakalti.create_re.content.kinetics.base;
 
-import com.simibubi.create_re.foundation.advancement.AdvancementBehaviour;
-import com.simibubi.create_re.foundation.block.IBE;
+import com.sakalti.create_re.foundation.advancement.AdvancementBehaviour;
+import com.sakalti.create_re.foundation.block.IBE;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

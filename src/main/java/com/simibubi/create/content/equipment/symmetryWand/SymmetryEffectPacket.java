@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.equipment.symmetryWand;
+package com.sakalti.create_re.content.equipment.symmetryWand;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.simibubi.create_re.foundation.networking.SimplePacketBase;
+import com.sakalti.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;

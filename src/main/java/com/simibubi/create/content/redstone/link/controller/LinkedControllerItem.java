@@ -1,13 +1,13 @@
-package com.simibubi.create_re.content.redstone.link.controller;
+package com.sakalti.create_re.content.redstone.link.controller;
 
 import java.util.function.Consumer;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.content.redstone.link.RedstoneLinkNetworkHandler;
-import com.simibubi.create_re.content.redstone.link.RedstoneLinkNetworkHandler.Frequency;
-import com.simibubi.create_re.foundation.item.render.SimpleCustomRenderer;
-import com.simibubi.create_re.foundation.utility.Couple;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.content.redstone.link.RedstoneLinkNetworkHandler;
+import com.sakalti.create_re.content.redstone.link.RedstoneLinkNetworkHandler.Frequency;
+import com.sakalti.create_re.foundation.item.render.SimpleCustomRenderer;
+import com.sakalti.create_re.foundation.utility.Couple;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

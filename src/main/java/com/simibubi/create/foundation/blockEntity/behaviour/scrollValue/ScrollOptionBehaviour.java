@@ -1,11 +1,11 @@
-package com.simibubi.create_re.foundation.blockEntity.behaviour.scrollValue;
+package com.sakalti.create_re.foundation.blockEntity.behaviour.scrollValue;
 
 import com.google.common.collect.ImmutableList;
-import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBoxTransform;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueSettingsBoard;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueSettingsFormatter.ScrollOptionSettingsFormatter;
-import com.simibubi.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.ValueBoxTransform;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.ValueSettingsBoard;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.ValueSettingsFormatter.ScrollOptionSettingsFormatter;
+import com.sakalti.create_re.foundation.utility.Components;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Player;

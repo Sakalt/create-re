@@ -1,11 +1,11 @@
-package com.simibubi.create_re.foundation.ponder.ui;
+package com.sakalti.create_re.foundation.ponder.ui;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.foundation.gui.Theme;
-import com.simibubi.create_re.foundation.gui.element.BoxElement;
-import com.simibubi.create_re.foundation.gui.widget.AbstractSimiWidget;
-import com.simibubi.create_re.foundation.ponder.PonderScene;
-import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
+import com.sakalti.create_re.foundation.gui.Theme;
+import com.sakalti.create_re.foundation.gui.element.BoxElement;
+import com.sakalti.create_re.foundation.gui.widget.AbstractSimiWidget;
+import com.sakalti.create_re.foundation.ponder.PonderScene;
+import com.sakalti.create_re.foundation.utility.animation.LerpedFloat;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;

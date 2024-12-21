@@ -1,10 +1,10 @@
-package com.simibubi.create_re.foundation.ponder.element;
+package com.sakalti.create_re.foundation.ponder.element;
 
 import java.util.function.Function;
 
-import com.simibubi.create_re.foundation.outliner.Outline.OutlineParams;
-import com.simibubi.create_re.foundation.outliner.Outliner;
-import com.simibubi.create_re.foundation.ponder.PonderScene;
+import com.sakalti.create_re.foundation.outliner.Outline.OutlineParams;
+import com.sakalti.create_re.foundation.outliner.Outliner;
+import com.sakalti.create_re.foundation.ponder.PonderScene;
 
 public class OutlinerElement extends AnimatedSceneElement {
 	

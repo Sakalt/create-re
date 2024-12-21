@@ -1,7 +1,7 @@
-package com.simibubi.create_re.foundation.blockEntity.behaviour;
+package com.sakalti.create_re.foundation.blockEntity.behaviour;
 
-import com.simibubi.create_re.content.equipment.clipboard.ClipboardCloneable;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.content.equipment.clipboard.ClipboardCloneable;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;

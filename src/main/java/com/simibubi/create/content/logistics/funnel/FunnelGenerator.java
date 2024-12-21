@@ -1,7 +1,7 @@
-package com.simibubi.create_re.content.logistics.funnel;
+package com.sakalti.create_re.content.logistics.funnel;
 
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.foundation.data.SpecialBlockStateGen;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.foundation.data.SpecialBlockStateGen;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 import com.tterrag.registrate.providers.RegistrateItemModelProvider;

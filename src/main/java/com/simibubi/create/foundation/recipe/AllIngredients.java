@@ -1,6 +1,6 @@
-package com.simibubi.create_re.foundation.recipe;
+package com.sakalti.create_re.foundation.recipe;
 
-import com.simibubi.create_re.Create;
+import com.sakalti.create_re.Create;
 
 import net.minecraftforge.common.crafting.CraftingHelper;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

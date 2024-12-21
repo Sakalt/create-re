@@ -1,29 +1,29 @@
-package com.simibubi.create_re.content.kinetics.mechanicalArm;
+package com.sakalti.create_re.content.kinetics.mechanicalArm;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.content.contraptions.ITransformableBlockEntity;
-import com.simibubi.create_re.content.contraptions.StructureTransform;
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create_re.content.kinetics.mechanicalArm.AllArmInteractionPointTypes.JukeboxPoint;
-import com.simibubi.create_re.content.kinetics.mechanicalArm.ArmInteractionPoint.Mode;
-import com.simibubi.create_re.foundation.advancement.AllAdvancements;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.CenteredSideValueBoxTransform;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.scrollValue.INamedIconOptions;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.scrollValue.ScrollOptionBehaviour;
-import com.simibubi.create_re.foundation.gui.AllIcons;
-import com.simibubi.create_re.foundation.item.TooltipHelper;
-import com.simibubi.create_re.foundation.utility.AngleHelper;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.foundation.utility.NBTHelper;
-import com.simibubi.create_re.foundation.utility.VecHelper;
-import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.content.contraptions.ITransformableBlockEntity;
+import com.sakalti.create_re.content.contraptions.StructureTransform;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntity;
+import com.sakalti.create_re.content.kinetics.mechanicalArm.AllArmInteractionPointTypes.JukeboxPoint;
+import com.sakalti.create_re.content.kinetics.mechanicalArm.ArmInteractionPoint.Mode;
+import com.sakalti.create_re.foundation.advancement.AllAdvancements;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.CenteredSideValueBoxTransform;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.scrollValue.INamedIconOptions;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.scrollValue.ScrollOptionBehaviour;
+import com.sakalti.create_re.foundation.gui.AllIcons;
+import com.sakalti.create_re.foundation.item.TooltipHelper;
+import com.sakalti.create_re.foundation.utility.AngleHelper;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.utility.NBTHelper;
+import com.sakalti.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.foundation.utility.animation.LerpedFloat;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
 
 import dev.engine_room.flywheel.lib.visualization.VisualizationHelper;
 import net.minecraft.core.BlockPos;

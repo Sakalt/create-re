@@ -1,8 +1,8 @@
-package com.simibubi.create_re.infrastructure.command;
+package com.sakalti.create_re.infrastructure.command;
 
-import com.simibubi.create_re.AllSpecialTextures;
-import com.simibubi.create_re.CreateClient;
-import com.simibubi.create_re.foundation.networking.SimplePacketBase;
+import com.sakalti.create_re.AllSpecialTextures;
+import com.sakalti.create_re.CreateClient;
+import com.sakalti.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;

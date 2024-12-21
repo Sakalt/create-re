@@ -1,9 +1,9 @@
-package com.simibubi.create_re.foundation.ponder;
+package com.sakalti.create_re.foundation.ponder;
 
 import java.util.Arrays;
 import java.util.function.Consumer;
 
-import com.simibubi.create_re.foundation.ponder.PonderStoryBoardEntry.PonderStoryBoard;
+import com.sakalti.create_re.foundation.ponder.PonderStoryBoardEntry.PonderStoryBoard;
 import com.tterrag.registrate.util.entry.ItemProviderEntry;
 
 import net.minecraft.resources.ResourceLocation;

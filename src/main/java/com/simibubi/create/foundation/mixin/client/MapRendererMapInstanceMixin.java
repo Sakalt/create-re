@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.mixin.client;
+package com.sakalti.create_re.foundation.mixin.client;
 
 import java.util.Iterator;
 
@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create_re.foundation.map.CustomRenderedMapDecoration;
+import com.sakalti.create_re.foundation.map.CustomRenderedMapDecoration;
 
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.world.level.saveddata.maps.MapDecoration;

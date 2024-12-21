@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.equipment.zapper;
+package com.sakalti.create_re.content.equipment.zapper;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;

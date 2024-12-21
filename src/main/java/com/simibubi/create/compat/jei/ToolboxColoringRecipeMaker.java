@@ -1,10 +1,10 @@
-package com.simibubi.create_re.compat.jei;
+package com.sakalti.create_re.compat.jei;
 
 import java.util.Arrays;
 import java.util.stream.Stream;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.Create;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.Create;
 
 import net.minecraft.core.NonNullList;
 import net.minecraft.resources.ResourceLocation;

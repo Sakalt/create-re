@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.equipment.armor;
+package com.sakalti.create_re.content.equipment.armor;
 
-import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.sakalti.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.FluidTags;

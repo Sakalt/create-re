@@ -1,9 +1,9 @@
-package com.simibubi.create_re.compat.jei.category.animations;
+package com.sakalti.create_re.compat.jei.category.animations;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllPartialModels;
-import com.simibubi.create_re.foundation.gui.AllGuiTextures;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllPartialModels;
+import com.sakalti.create_re.foundation.gui.AllGuiTextures;
 
 import net.minecraft.client.gui.GuiGraphics;
 

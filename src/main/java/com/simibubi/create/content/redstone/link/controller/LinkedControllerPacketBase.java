@@ -1,7 +1,7 @@
-package com.simibubi.create_re.content.redstone.link.controller;
+package com.sakalti.create_re.content.redstone.link.controller;
 
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.foundation.networking.SimplePacketBase;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;

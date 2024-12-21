@@ -1,12 +1,12 @@
-package com.simibubi.create_re.content.logistics.funnel;
+package com.sakalti.create_re.content.logistics.funnel;
 
 import java.util.ArrayList;
 import java.util.function.Consumer;
 
-import com.simibubi.create_re.AllPartialModels;
-import com.simibubi.create_re.content.logistics.flwdata.FlapInstance;
-import com.simibubi.create_re.foundation.render.AllInstanceTypes;
-import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.sakalti.create_re.AllPartialModels;
+import com.sakalti.create_re.content.logistics.flwdata.FlapInstance;
+import com.sakalti.create_re.foundation.render.AllInstanceTypes;
+import com.sakalti.create_re.foundation.utility.AnimationTickHolder;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.instance.Instancer;

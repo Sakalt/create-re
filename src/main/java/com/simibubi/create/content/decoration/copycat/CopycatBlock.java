@@ -1,12 +1,12 @@
-package com.simibubi.create_re.content.decoration.copycat;
+package com.sakalti.create_re.content.decoration.copycat;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllTags.AllBlockTags;
-import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
-import com.simibubi.create_re.foundation.block.IBE;
+import com.sakalti.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllTags.AllBlockTags;
+import com.sakalti.create_re.content.equipment.wrench.IWrenchable;
+import com.sakalti.create_re.foundation.block.IBE;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.color.block.BlockColor;

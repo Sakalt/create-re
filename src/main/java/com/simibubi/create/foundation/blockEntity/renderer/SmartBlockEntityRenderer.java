@@ -1,9 +1,9 @@
-package com.simibubi.create_re.foundation.blockEntity.renderer;
+package com.sakalti.create_re.foundation.blockEntity.renderer;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.content.redstone.link.LinkRenderer;
-import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.filtering.FilteringRenderer;
+import com.sakalti.create_re.content.redstone.link.LinkRenderer;
+import com.sakalti.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.filtering.FilteringRenderer;
 
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;

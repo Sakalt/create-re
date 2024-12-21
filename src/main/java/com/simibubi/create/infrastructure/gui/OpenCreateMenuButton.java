@@ -1,4 +1,4 @@
-package com.simibubi.create_re.infrastructure.gui;
+package com.sakalti.create_re.infrastructure.gui;
 
 import java.util.Arrays;
 import java.util.List;
@@ -6,10 +6,10 @@ import java.util.stream.Collectors;
 
 import org.apache.commons.lang3.mutable.MutableObject;
 
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.foundation.gui.ScreenOpener;
-import com.simibubi.create_re.foundation.utility.Components;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.foundation.gui.ScreenOpener;
+import com.sakalti.create_re.foundation.utility.Components;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;

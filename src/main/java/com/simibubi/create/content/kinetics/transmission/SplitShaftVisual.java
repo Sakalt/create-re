@@ -1,14 +1,14 @@
-package com.simibubi.create_re.content.kinetics.transmission;
+package com.sakalti.create_re.content.kinetics.transmission;
 
 import java.util.ArrayList;
 import java.util.function.Consumer;
 
-import com.simibubi.create_re.AllPartialModels;
-import com.simibubi.create_re.content.kinetics.base.IRotate;
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntityVisual;
-import com.simibubi.create_re.content.kinetics.base.RotatingInstance;
-import com.simibubi.create_re.foundation.render.AllInstanceTypes;
-import com.simibubi.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.AllPartialModels;
+import com.sakalti.create_re.content.kinetics.base.IRotate;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntityVisual;
+import com.sakalti.create_re.content.kinetics.base.RotatingInstance;
+import com.sakalti.create_re.foundation.render.AllInstanceTypes;
+import com.sakalti.create_re.foundation.utility.Iterate;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;

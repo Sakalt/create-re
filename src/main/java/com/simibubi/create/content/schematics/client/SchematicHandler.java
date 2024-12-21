@@ -1,27 +1,27 @@
-package com.simibubi.create_re.content.schematics.client;
+package com.sakalti.create_re.content.schematics.client;
 
 import java.util.List;
 import java.util.Vector;
 
 import com.google.common.collect.ImmutableList;
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.AllKeys;
-import com.simibubi.create_re.AllPackets;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.content.contraptions.StructureTransform;
-import com.simibubi.create_re.content.schematics.SchematicInstances;
-import com.simibubi.create_re.content.schematics.SchematicItem;
-import com.simibubi.create_re.content.schematics.SchematicWorld;
-import com.simibubi.create_re.content.schematics.client.tools.ToolType;
-import com.simibubi.create_re.content.schematics.packet.SchematicPlacePacket;
-import com.simibubi.create_re.content.schematics.packet.SchematicSyncPacket;
-import com.simibubi.create_re.foundation.outliner.AABBOutline;
-import com.simibubi.create_re.foundation.render.SuperRenderTypeBuffer;
-import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.AllKeys;
+import com.sakalti.create_re.AllPackets;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.content.contraptions.StructureTransform;
+import com.sakalti.create_re.content.schematics.SchematicInstances;
+import com.sakalti.create_re.content.schematics.SchematicItem;
+import com.sakalti.create_re.content.schematics.SchematicWorld;
+import com.sakalti.create_re.content.schematics.client.tools.ToolType;
+import com.sakalti.create_re.content.schematics.packet.SchematicPlacePacket;
+import com.sakalti.create_re.content.schematics.packet.SchematicSyncPacket;
+import com.sakalti.create_re.foundation.outliner.AABBOutline;
+import com.sakalti.create_re.foundation.render.SuperRenderTypeBuffer;
+import com.sakalti.create_re.foundation.utility.AnimationTickHolder;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;

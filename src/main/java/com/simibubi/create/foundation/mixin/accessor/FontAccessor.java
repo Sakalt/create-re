@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.mixin.accessor;
+package com.sakalti.create_re.foundation.mixin.accessor;
 
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.font.FontSet;

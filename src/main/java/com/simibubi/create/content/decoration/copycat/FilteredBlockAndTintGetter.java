@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.decoration.copycat;
+package com.sakalti.create_re.content.decoration.copycat;
 
 import java.util.function.Predicate;
 

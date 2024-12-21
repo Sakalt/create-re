@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.logistics.chute;
+package com.sakalti.create_re.content.logistics.chute;
 
-import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
+import com.sakalti.create_re.foundation.block.ProperWaterloggedBlock;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

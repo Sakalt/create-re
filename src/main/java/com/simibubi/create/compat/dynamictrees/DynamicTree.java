@@ -1,4 +1,4 @@
-package com.simibubi.create_re.compat.dynamictrees;
+package com.sakalti.create_re.compat.dynamictrees;
 
 import java.util.function.BiConsumer;
 
@@ -8,7 +8,7 @@ import com.ferreusveritas.dynamictrees.api.TreeHelper;
 import com.ferreusveritas.dynamictrees.block.branch.BranchBlock;
 import com.ferreusveritas.dynamictrees.block.branch.TrunkShellBlock;
 import com.ferreusveritas.dynamictrees.util.BranchDestructionData;
-import com.simibubi.create_re.foundation.utility.AbstractBlockBreakQueue;
+import com.sakalti.create_re.foundation.utility.AbstractBlockBreakQueue;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

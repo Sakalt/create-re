@@ -1,12 +1,12 @@
-package com.simibubi.create_re.infrastructure.command;
+package com.sakalti.create_re.infrastructure.command;
 
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.builder.ArgumentBuilder;
-import com.simibubi.create_re.AllPackets;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.foundation.config.ui.ConfigHelper;
-import com.simibubi.create_re.foundation.utility.Components;
+import com.sakalti.create_re.AllPackets;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.foundation.config.ui.ConfigHelper;
+import com.sakalti.create_re.foundation.utility.Components;
 
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;

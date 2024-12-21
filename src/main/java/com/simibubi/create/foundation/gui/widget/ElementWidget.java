@@ -1,12 +1,12 @@
-package com.simibubi.create_re.foundation.gui.widget;
+package com.sakalti.create_re.foundation.gui.widget;
 
 import java.util.function.Consumer;
 import java.util.function.UnaryOperator;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.foundation.gui.element.RenderElement;
-import com.simibubi.create_re.foundation.gui.element.ScreenElement;
-import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
+import com.sakalti.create_re.foundation.gui.element.RenderElement;
+import com.sakalti.create_re.foundation.gui.element.ScreenElement;
+import com.sakalti.create_re.foundation.utility.animation.LerpedFloat;
 
 import net.minecraft.client.gui.GuiGraphics;
 

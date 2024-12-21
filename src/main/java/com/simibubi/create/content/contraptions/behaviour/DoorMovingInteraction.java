@@ -1,7 +1,7 @@
-package com.simibubi.create_re.content.contraptions.behaviour;
+package com.sakalti.create_re.content.contraptions.behaviour;
 
-import com.simibubi.create_re.content.contraptions.Contraption;
-import com.simibubi.create_re.content.decoration.slidingDoor.SlidingDoorBlock;
+import com.sakalti.create_re.content.contraptions.Contraption;
+import com.sakalti.create_re.content.decoration.slidingDoor.SlidingDoorBlock;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

@@ -1,7 +1,7 @@
-package com.simibubi.create_re.content.trains.entity;
+package com.sakalti.create_re.content.trains.entity;
 
-import com.simibubi.create_re.content.trains.TrainHUD;
-import com.simibubi.create_re.foundation.networking.SimplePacketBase;
+import com.sakalti.create_re.content.trains.TrainHUD;
+import com.sakalti.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;

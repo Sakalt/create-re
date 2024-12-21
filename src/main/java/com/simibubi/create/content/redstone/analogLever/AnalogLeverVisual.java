@@ -1,10 +1,10 @@
-package com.simibubi.create_re.content.redstone.analogLever;
+package com.sakalti.create_re.content.redstone.analogLever;
 
 import java.util.function.Consumer;
 
-import com.simibubi.create_re.AllPartialModels;
-import com.simibubi.create_re.foundation.utility.AngleHelper;
-import com.simibubi.create_re.foundation.utility.Color;
+import com.sakalti.create_re.AllPartialModels;
+import com.sakalti.create_re.foundation.utility.AngleHelper;
+import com.sakalti.create_re.foundation.utility.Color;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.visual.DynamicVisual;

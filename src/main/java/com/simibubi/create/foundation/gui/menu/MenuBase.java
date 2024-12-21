@@ -1,6 +1,6 @@
-package com.simibubi.create_re.foundation.gui.menu;
+package com.sakalti.create_re.foundation.gui.menu;
 
-import com.simibubi.create_re.foundation.utility.IInteractionChecker;
+import com.sakalti.create_re.foundation.utility.IInteractionChecker;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;

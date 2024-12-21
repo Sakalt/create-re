@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.kinetics.crafter;
+package com.sakalti.create_re.content.kinetics.crafter;
 
-import static com.simibubi.create_re.content.kinetics.base.HorizontalKineticBlock.HORIZONTAL_FACING;
+import static com.sakalti.create_re.content.kinetics.base.HorizontalKineticBlock.HORIZONTAL_FACING;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -9,21 +9,21 @@ import java.util.Map.Entry;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.AllSoundEvents;
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create_re.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
-import com.simibubi.create_re.content.kinetics.crafter.ConnectedInputHandler.ConnectedInput;
-import com.simibubi.create_re.content.kinetics.crafter.RecipeGridHandler.GroupedItems;
-import com.simibubi.create_re.foundation.advancement.AllAdvancements;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.edgeInteraction.EdgeInteractionBehaviour;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
-import com.simibubi.create_re.foundation.item.SmartInventory;
-import com.simibubi.create_re.foundation.utility.BlockFace;
-import com.simibubi.create_re.foundation.utility.Pointing;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.AllSoundEvents;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntity;
+import com.sakalti.create_re.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
+import com.sakalti.create_re.content.kinetics.crafter.ConnectedInputHandler.ConnectedInput;
+import com.sakalti.create_re.content.kinetics.crafter.RecipeGridHandler.GroupedItems;
+import com.sakalti.create_re.foundation.advancement.AllAdvancements;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.edgeInteraction.EdgeInteractionBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
+import com.sakalti.create_re.foundation.item.SmartInventory;
+import com.sakalti.create_re.foundation.utility.BlockFace;
+import com.sakalti.create_re.foundation.utility.Pointing;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

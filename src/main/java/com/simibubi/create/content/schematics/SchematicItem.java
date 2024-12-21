@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.schematics;
+package com.sakalti.create_re.content.schematics;
 
 import java.io.BufferedInputStream;
 import java.io.DataInputStream;
@@ -15,12 +15,12 @@ import javax.annotation.Nonnull;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.content.schematics.client.SchematicEditScreen;
-import com.simibubi.create_re.foundation.gui.ScreenOpener;
-import com.simibubi.create_re.foundation.utility.Components;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.content.schematics.client.SchematicEditScreen;
+import com.sakalti.create_re.foundation.gui.ScreenOpener;
+import com.sakalti.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;

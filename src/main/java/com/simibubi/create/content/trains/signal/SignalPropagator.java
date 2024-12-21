@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.trains.signal;
+package com.sakalti.create_re.content.trains.signal;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,18 +11,18 @@ import java.util.UUID;
 import java.util.function.Predicate;
 
 import com.google.common.base.Predicates;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.content.trains.entity.Train;
-import com.simibubi.create_re.content.trains.graph.EdgeData;
-import com.simibubi.create_re.content.trains.graph.EdgePointType;
-import com.simibubi.create_re.content.trains.graph.TrackEdge;
-import com.simibubi.create_re.content.trains.graph.TrackGraph;
-import com.simibubi.create_re.content.trains.graph.TrackGraphSync;
-import com.simibubi.create_re.content.trains.graph.TrackNode;
-import com.simibubi.create_re.content.trains.graph.TrackNodeLocation;
-import com.simibubi.create_re.foundation.utility.Couple;
-import com.simibubi.create_re.foundation.utility.Iterate;
-import com.simibubi.create_re.foundation.utility.Pair;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.content.trains.entity.Train;
+import com.sakalti.create_re.content.trains.graph.EdgeData;
+import com.sakalti.create_re.content.trains.graph.EdgePointType;
+import com.sakalti.create_re.content.trains.graph.TrackEdge;
+import com.sakalti.create_re.content.trains.graph.TrackGraph;
+import com.sakalti.create_re.content.trains.graph.TrackGraphSync;
+import com.sakalti.create_re.content.trains.graph.TrackNode;
+import com.sakalti.create_re.content.trains.graph.TrackNodeLocation;
+import com.sakalti.create_re.foundation.utility.Couple;
+import com.sakalti.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.foundation.utility.Pair;
 
 public class SignalPropagator {
 

@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.contraptions.actors;
+package com.sakalti.create_re.content.contraptions.actors;
 
 import org.joml.Quaternionf;
 import org.joml.Quaternionfc;

@@ -1,12 +1,12 @@
-package com.simibubi.create_re.content.trains.bogey;
+package com.sakalti.create_re.content.trains.bogey;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllBogeyStyles;
-import com.simibubi.create_re.content.schematics.requirement.ISpecialBlockItemRequirement;
-import com.simibubi.create_re.content.trains.track.TrackMaterial;
-import com.simibubi.create_re.foundation.block.IBE;
-import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
+import com.sakalti.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllBogeyStyles;
+import com.sakalti.create_re.content.schematics.requirement.ISpecialBlockItemRequirement;
+import com.sakalti.create_re.content.trains.track.TrackMaterial;
+import com.sakalti.create_re.foundation.block.IBE;
+import com.sakalti.create_re.foundation.block.ProperWaterloggedBlock;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Player;

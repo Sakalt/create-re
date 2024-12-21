@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.block;
+package com.sakalti.create_re.foundation.block;
 
 import java.util.EnumMap;
 import java.util.HashMap;
@@ -9,10 +9,10 @@ import java.util.function.Supplier;
 
 import org.apache.commons.lang3.ArrayUtils;
 
-import com.simibubi.create_re.foundation.data.TagGen;
-import com.simibubi.create_re.foundation.utility.Iterate;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.foundation.utility.RegisteredObjects;
+import com.sakalti.create_re.foundation.data.TagGen;
+import com.sakalti.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.utility.RegisteredObjects;
 import com.tterrag.registrate.AbstractRegistrate;
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.providers.DataGenContext;

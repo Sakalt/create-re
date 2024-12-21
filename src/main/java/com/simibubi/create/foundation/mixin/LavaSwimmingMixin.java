@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.mixin;
+package com.sakalti.create_re.foundation.mixin;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -7,8 +7,8 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Slice;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.content.equipment.armor.DivingBootsItem;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.content.equipment.armor.DivingBootsItem;
 
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;

@@ -1,14 +1,14 @@
-package com.simibubi.create_re.content.logistics.chute;
+package com.sakalti.create_re.content.logistics.chute;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.content.logistics.funnel.FunnelBlock;
-import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
-import com.simibubi.create_re.foundation.utility.Iterate;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.content.logistics.funnel.FunnelBlock;
+import com.sakalti.create_re.foundation.block.ProperWaterloggedBlock;
+import com.sakalti.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

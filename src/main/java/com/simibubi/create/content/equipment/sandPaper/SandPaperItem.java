@@ -1,14 +1,14 @@
-package com.simibubi.create_re.content.equipment.sandPaper;
+package com.sakalti.create_re.content.equipment.sandPaper;
 
 import java.util.function.Consumer;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create_re.AllSoundEvents;
-import com.simibubi.create_re.foundation.item.CustomUseEffectsItem;
-import com.simibubi.create_re.foundation.item.render.SimpleCustomRenderer;
-import com.simibubi.create_re.foundation.mixin.accessor.LivingEntityAccessor;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.AllSoundEvents;
+import com.sakalti.create_re.foundation.item.CustomUseEffectsItem;
+import com.sakalti.create_re.foundation.item.render.SimpleCustomRenderer;
+import com.sakalti.create_re.foundation.mixin.accessor.LivingEntityAccessor;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;

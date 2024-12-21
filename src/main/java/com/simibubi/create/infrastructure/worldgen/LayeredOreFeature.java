@@ -1,11 +1,11 @@
-package com.simibubi.create_re.infrastructure.worldgen;
+package com.sakalti.create_re.infrastructure.worldgen;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.function.Function;
 
-import com.simibubi.create_re.infrastructure.worldgen.LayerPattern.Layer;
+import com.sakalti.create_re.infrastructure.worldgen.LayerPattern.Layer;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.BlockPos.MutableBlockPos;

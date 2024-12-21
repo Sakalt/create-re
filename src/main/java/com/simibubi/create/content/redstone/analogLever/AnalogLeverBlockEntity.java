@@ -1,13 +1,13 @@
-package com.simibubi.create_re.content.redstone.analogLever;
+package com.sakalti.create_re.content.redstone.analogLever;
 
 import java.util.List;
 
-import com.simibubi.create_re.content.equipment.goggles.IHaveGoggleInformation;
-import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
-import com.simibubi.create_re.foundation.utility.animation.LerpedFloat.Chaser;
+import com.sakalti.create_re.content.equipment.goggles.IHaveGoggleInformation;
+import com.sakalti.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.utility.animation.LerpedFloat;
+import com.sakalti.create_re.foundation.utility.animation.LerpedFloat.Chaser;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

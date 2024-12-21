@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.equipment.clipboard;
+package com.sakalti.create_re.content.equipment.clipboard;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,7 +6,7 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create_re.AllSoundEvents;
+import com.sakalti.create_re.AllSoundEvents;
 
 import net.minecraft.client.Minecraft;
 
@@ -23,15 +23,15 @@ import com.mojang.blaze3d.vertex.BufferBuilder;
 import com.mojang.blaze3d.vertex.DefaultVertexFormat;
 import com.mojang.blaze3d.vertex.Tesselator;
 import com.mojang.blaze3d.vertex.VertexFormat;
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllPackets;
-import com.simibubi.create_re.content.equipment.clipboard.ClipboardOverrides.ClipboardType;
-import com.simibubi.create_re.foundation.gui.AbstractSimiScreen;
-import com.simibubi.create_re.foundation.gui.AllGuiTextures;
-import com.simibubi.create_re.foundation.gui.AllIcons;
-import com.simibubi.create_re.foundation.gui.widget.IconButton;
-import com.simibubi.create_re.foundation.utility.Components;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllPackets;
+import com.sakalti.create_re.content.equipment.clipboard.ClipboardOverrides.ClipboardType;
+import com.sakalti.create_re.foundation.gui.AbstractSimiScreen;
+import com.sakalti.create_re.foundation.gui.AllGuiTextures;
+import com.sakalti.create_re.foundation.gui.AllIcons;
+import com.sakalti.create_re.foundation.gui.widget.IconButton;
+import com.sakalti.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import it.unimi.dsi.fastutil.ints.IntArrayList;
 import it.unimi.dsi.fastutil.ints.IntList;

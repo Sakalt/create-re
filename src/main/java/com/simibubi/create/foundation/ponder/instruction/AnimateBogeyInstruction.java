@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.ponder.instruction;
+package com.sakalti.create_re.foundation.ponder.instruction;
 
 public class AnimateBogeyInstruction {
 

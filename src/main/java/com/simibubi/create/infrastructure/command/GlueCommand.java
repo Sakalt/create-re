@@ -1,7 +1,7 @@
-package com.simibubi.create_re.infrastructure.command;
+package com.sakalti.create_re.infrastructure.command;
 
 import com.mojang.brigadier.builder.ArgumentBuilder;
-import com.simibubi.create_re.content.contraptions.glue.SuperGlueEntity;
+import com.sakalti.create_re.content.contraptions.glue.SuperGlueEntity;
 
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;

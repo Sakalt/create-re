@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.equipment.symmetryWand;
+package com.sakalti.create_re.content.equipment.symmetryWand;
 
 import java.util.Random;
 
@@ -6,10 +6,10 @@ import org.joml.Vector3f;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.content.equipment.symmetryWand.mirror.EmptyMirror;
-import com.simibubi.create_re.content.equipment.symmetryWand.mirror.SymmetryMirror;
-import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.content.equipment.symmetryWand.mirror.EmptyMirror;
+import com.sakalti.create_re.content.equipment.symmetryWand.mirror.SymmetryMirror;
+import com.sakalti.create_re.foundation.utility.AnimationTickHolder;
 
 import net.minecraft.client.Camera;
 import net.minecraft.client.Minecraft;

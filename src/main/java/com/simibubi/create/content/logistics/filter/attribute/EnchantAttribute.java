@@ -1,12 +1,12 @@
-package com.simibubi.create_re.content.logistics.filter.attribute;
+package com.sakalti.create_re.content.logistics.filter.attribute;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create_re.content.logistics.filter.ItemAttribute;
-import com.simibubi.create_re.foundation.utility.Components;
+import com.sakalti.create_re.content.logistics.filter.ItemAttribute;
+import com.sakalti.create_re.foundation.utility.Components;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;

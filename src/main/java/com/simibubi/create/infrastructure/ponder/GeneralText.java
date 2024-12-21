@@ -1,12 +1,12 @@
-package com.simibubi.create_re.infrastructure.ponder;
+package com.sakalti.create_re.infrastructure.ponder;
 
 import java.util.function.BiConsumer;
 
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.foundation.ponder.PonderTooltipHandler;
-import com.simibubi.create_re.foundation.ponder.ui.PonderTagIndexScreen;
-import com.simibubi.create_re.foundation.ponder.ui.PonderTagScreen;
-import com.simibubi.create_re.foundation.ponder.ui.PonderUI;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.foundation.ponder.PonderTooltipHandler;
+import com.sakalti.create_re.foundation.ponder.ui.PonderTagIndexScreen;
+import com.sakalti.create_re.foundation.ponder.ui.PonderTagScreen;
+import com.sakalti.create_re.foundation.ponder.ui.PonderUI;
 
 public class GeneralText {
 	public static void provideLang(BiConsumer<String, String> consumer) {

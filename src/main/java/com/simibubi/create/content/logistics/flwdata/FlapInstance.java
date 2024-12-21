@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.logistics.flwdata;
+package com.sakalti.create_re.content.logistics.flwdata;
 
 import org.joml.Vector3f;
 

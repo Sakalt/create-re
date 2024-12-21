@@ -1,7 +1,7 @@
-package com.simibubi.create_re.content.equipment.armor;
+package com.sakalti.create_re.content.equipment.armor;
 
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.Create;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.Create;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.PlayerModel;

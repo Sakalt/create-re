@@ -1,9 +1,9 @@
-package com.simibubi.create_re.foundation.utility;
+package com.sakalti.create_re.foundation.utility;
 
 import java.util.Vector;
 
 import com.mojang.blaze3d.platform.InputConstants;
-import com.simibubi.create_re.AllKeys;
+import com.sakalti.create_re.AllKeys;
 
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;

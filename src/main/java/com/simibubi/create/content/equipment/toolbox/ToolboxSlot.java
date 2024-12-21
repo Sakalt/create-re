@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.equipment.toolbox;
+package com.sakalti.create_re.content.equipment.toolbox;
 
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;

@@ -1,26 +1,26 @@
-package com.simibubi.create_re.content.decoration.girder;
+package com.sakalti.create_re.content.decoration.girder;
 
 import static net.minecraft.world.level.block.FaceAttachedHorizontalDirectionalBlock.FACE;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.WATERLOGGED;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.AllShapes;
-import com.simibubi.create_re.AllTags;
-import com.simibubi.create_re.content.decoration.bracket.BracketBlock;
-import com.simibubi.create_re.content.decoration.bracket.BracketedBlockEntityBehaviour;
-import com.simibubi.create_re.content.decoration.placard.PlacardBlock;
-import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create_re.content.logistics.chute.AbstractChuteBlock;
-import com.simibubi.create_re.content.redstone.nixieTube.NixieTubeBlock;
-import com.simibubi.create_re.content.trains.display.FlapDisplayBlock;
-import com.simibubi.create_re.content.trains.track.TrackBlock;
-import com.simibubi.create_re.content.trains.track.TrackShape;
-import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create_re.foundation.placement.IPlacementHelper;
-import com.simibubi.create_re.foundation.placement.PlacementHelpers;
-import com.simibubi.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.AllShapes;
+import com.sakalti.create_re.AllTags;
+import com.sakalti.create_re.content.decoration.bracket.BracketBlock;
+import com.sakalti.create_re.content.decoration.bracket.BracketedBlockEntityBehaviour;
+import com.sakalti.create_re.content.decoration.placard.PlacardBlock;
+import com.sakalti.create_re.content.equipment.wrench.IWrenchable;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntity;
+import com.sakalti.create_re.content.logistics.chute.AbstractChuteBlock;
+import com.sakalti.create_re.content.redstone.nixieTube.NixieTubeBlock;
+import com.sakalti.create_re.content.trains.display.FlapDisplayBlock;
+import com.sakalti.create_re.content.trains.track.TrackBlock;
+import com.sakalti.create_re.content.trains.track.TrackShape;
+import com.sakalti.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.sakalti.create_re.foundation.placement.IPlacementHelper;
+import com.sakalti.create_re.foundation.placement.PlacementHelpers;
+import com.sakalti.create_re.foundation.utility.Iterate;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

@@ -1,18 +1,18 @@
-package com.simibubi.create_re.content.kinetics.deployer;
+package com.sakalti.create_re.content.kinetics.deployer;
 
 import java.util.List;
 import java.util.Set;
 import java.util.function.Supplier;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllRecipeTypes;
-import com.simibubi.create_re.AllTags.AllItemTags;
-import com.simibubi.create_re.compat.jei.category.sequencedAssembly.SequencedAssemblySubCategory;
-import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder;
-import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
-import com.simibubi.create_re.content.processing.sequenced.IAssemblyRecipe;
-import com.simibubi.create_re.foundation.utility.Components;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllRecipeTypes;
+import com.sakalti.create_re.AllTags.AllItemTags;
+import com.sakalti.create_re.compat.jei.category.sequencedAssembly.SequencedAssemblySubCategory;
+import com.sakalti.create_re.content.processing.recipe.ProcessingRecipeBuilder;
+import com.sakalti.create_re.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
+import com.sakalti.create_re.content.processing.sequenced.IAssemblyRecipe;
+import com.sakalti.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;

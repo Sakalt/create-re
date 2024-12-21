@@ -1,19 +1,19 @@
-package com.simibubi.create_re.foundation.blockEntity.behaviour.scrollValue;
+package com.sakalti.create_re.foundation.blockEntity.behaviour.scrollValue;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.AllKeys;
-import com.simibubi.create_re.CreateClient;
-import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBox;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBox.IconValueBox;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBox.TextValueBox;
-import com.simibubi.create_re.foundation.utility.Components;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.AllKeys;
+import com.sakalti.create_re.CreateClient;
+import com.sakalti.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.ValueBox;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.ValueBox.IconValueBox;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.ValueBox.TextValueBox;
+import com.sakalti.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;

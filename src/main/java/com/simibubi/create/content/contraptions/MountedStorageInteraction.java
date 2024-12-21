@@ -1,10 +1,10 @@
-package com.simibubi.create_re.content.contraptions;
+package com.sakalti.create_re.content.contraptions;
 
 import java.util.List;
 import java.util.function.Supplier;
 
 import com.google.common.collect.ImmutableList;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.Mth;

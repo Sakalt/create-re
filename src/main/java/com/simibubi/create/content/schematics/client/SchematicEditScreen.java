@@ -1,19 +1,19 @@
-package com.simibubi.create_re.content.schematics.client;
+package com.sakalti.create_re.content.schematics.client;
 
 import java.util.List;
 
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.CreateClient;
-import com.simibubi.create_re.foundation.gui.AbstractSimiScreen;
-import com.simibubi.create_re.foundation.gui.AllGuiTextures;
-import com.simibubi.create_re.foundation.gui.AllIcons;
-import com.simibubi.create_re.foundation.gui.element.GuiGameElement;
-import com.simibubi.create_re.foundation.gui.widget.IconButton;
-import com.simibubi.create_re.foundation.gui.widget.Label;
-import com.simibubi.create_re.foundation.gui.widget.ScrollInput;
-import com.simibubi.create_re.foundation.gui.widget.SelectionScrollInput;
-import com.simibubi.create_re.foundation.utility.Components;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.CreateClient;
+import com.sakalti.create_re.foundation.gui.AbstractSimiScreen;
+import com.sakalti.create_re.foundation.gui.AllGuiTextures;
+import com.sakalti.create_re.foundation.gui.AllIcons;
+import com.sakalti.create_re.foundation.gui.element.GuiGameElement;
+import com.sakalti.create_re.foundation.gui.widget.IconButton;
+import com.sakalti.create_re.foundation.gui.widget.Label;
+import com.sakalti.create_re.foundation.gui.widget.ScrollInput;
+import com.sakalti.create_re.foundation.gui.widget.SelectionScrollInput;
+import com.sakalti.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.EditBox;

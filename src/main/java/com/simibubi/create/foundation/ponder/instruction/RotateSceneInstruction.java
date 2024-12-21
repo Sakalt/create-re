@@ -1,8 +1,8 @@
-package com.simibubi.create_re.foundation.ponder.instruction;
+package com.sakalti.create_re.foundation.ponder.instruction;
 
-import com.simibubi.create_re.foundation.ponder.PonderScene;
-import com.simibubi.create_re.foundation.ponder.PonderScene.SceneTransform;
-import com.simibubi.create_re.foundation.utility.animation.LerpedFloat.Chaser;
+import com.sakalti.create_re.foundation.ponder.PonderScene;
+import com.sakalti.create_re.foundation.ponder.PonderScene.SceneTransform;
+import com.sakalti.create_re.foundation.utility.animation.LerpedFloat.Chaser;
 
 public class RotateSceneInstruction extends PonderInstruction {
 

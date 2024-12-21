@@ -1,10 +1,10 @@
-package com.simibubi.create_re.content.logistics.filter.attribute.astralsorcery;
+package com.sakalti.create_re.content.logistics.filter.attribute.astralsorcery;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.simibubi.create_re.content.logistics.filter.ItemAttribute;
-import com.simibubi.create_re.foundation.utility.Components;
+import com.sakalti.create_re.content.logistics.filter.ItemAttribute;
+import com.sakalti.create_re.foundation.utility.Components;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;

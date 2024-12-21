@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.equipment.potatoCannon;
+package com.sakalti.create_re.content.equipment.potatoCannon;
 
-import static com.simibubi.create_re.content.equipment.potatoCannon.PotatoProjectileRenderMode.entityRandom;
+import static com.sakalti.create_re.content.equipment.potatoCannon.PotatoProjectileRenderMode.entityRandom;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.foundation.utility.AngleHelper;
+import com.sakalti.create_re.foundation.utility.AngleHelper;
 
 import dev.engine_room.flywheel.lib.transform.TransformStack;
 import net.minecraft.client.Minecraft;

@@ -1,12 +1,12 @@
-package com.simibubi.create_re.foundation.ponder;
+package com.sakalti.create_re.foundation.ponder;
 
 import java.util.HashSet;
 import java.util.Set;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
-import com.simibubi.create_re.foundation.outliner.Outline.OutlineParams;
-import com.simibubi.create_re.foundation.outliner.Outliner;
+import com.sakalti.create_re.foundation.outliner.Outline.OutlineParams;
+import com.sakalti.create_re.foundation.outliner.Outliner;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.levelgen.structure.BoundingBox;

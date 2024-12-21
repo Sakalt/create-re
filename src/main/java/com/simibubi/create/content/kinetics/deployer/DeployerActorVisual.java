@@ -1,22 +1,22 @@
-package com.simibubi.create_re.content.kinetics.deployer;
+package com.sakalti.create_re.content.kinetics.deployer;
 
-import static com.simibubi.create_re.content.kinetics.base.DirectionalAxisKineticBlock.AXIS_ALONG_FIRST_COORDINATE;
-import static com.simibubi.create_re.content.kinetics.base.DirectionalKineticBlock.FACING;
+import static com.sakalti.create_re.content.kinetics.base.DirectionalAxisKineticBlock.AXIS_ALONG_FIRST_COORDINATE;
+import static com.sakalti.create_re.content.kinetics.base.DirectionalKineticBlock.FACING;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.AllPartialModels;
-import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
-import com.simibubi.create_re.content.contraptions.render.ActorVisual;
-import com.simibubi.create_re.content.kinetics.base.IRotate;
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntityVisual;
-import com.simibubi.create_re.content.kinetics.base.RotatingInstance;
-import com.simibubi.create_re.foundation.render.AllInstanceTypes;
-import com.simibubi.create_re.foundation.render.VirtualRenderHelper;
-import com.simibubi.create_re.foundation.utility.AngleHelper;
-import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
-import com.simibubi.create_re.foundation.utility.NBTHelper;
-import com.simibubi.create_re.foundation.utility.VecHelper;
-import com.simibubi.create_re.foundation.virtualWorld.VirtualRenderWorld;
+import com.sakalti.create_re.AllPartialModels;
+import com.sakalti.create_re.content.contraptions.behaviour.MovementContext;
+import com.sakalti.create_re.content.contraptions.render.ActorVisual;
+import com.sakalti.create_re.content.kinetics.base.IRotate;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntityVisual;
+import com.sakalti.create_re.content.kinetics.base.RotatingInstance;
+import com.sakalti.create_re.foundation.render.AllInstanceTypes;
+import com.sakalti.create_re.foundation.render.VirtualRenderHelper;
+import com.sakalti.create_re.foundation.utility.AngleHelper;
+import com.sakalti.create_re.foundation.utility.AnimationTickHolder;
+import com.sakalti.create_re.foundation.utility.NBTHelper;
+import com.sakalti.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.foundation.virtualWorld.VirtualRenderWorld;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
 import dev.engine_room.flywheel.lib.instance.InstanceTypes;

@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.equipment.zapper;
+package com.sakalti.create_re.content.equipment.zapper;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.utility;
+package com.sakalti.create_re.foundation.utility;
 
 import java.text.NumberFormat;
 import java.util.Locale;

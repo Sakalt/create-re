@@ -1,10 +1,10 @@
-package com.simibubi.create_re.content.contraptions.pulley;
+package com.sakalti.create_re.content.contraptions.pulley;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllShapes;
-import com.simibubi.create_re.content.kinetics.base.HorizontalAxisKineticBlock;
-import com.simibubi.create_re.foundation.block.IBE;
+import com.sakalti.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllShapes;
+import com.sakalti.create_re.content.kinetics.base.HorizontalAxisKineticBlock;
+import com.sakalti.create_re.foundation.block.IBE;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

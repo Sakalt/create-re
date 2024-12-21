@@ -1,10 +1,10 @@
-package com.simibubi.create_re.foundation.gui.widget;
+package com.sakalti.create_re.foundation.gui.widget;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.simibubi.create_re.foundation.utility.Components;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;

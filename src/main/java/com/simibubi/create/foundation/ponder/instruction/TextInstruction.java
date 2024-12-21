@@ -1,9 +1,9 @@
-package com.simibubi.create_re.foundation.ponder.instruction;
+package com.sakalti.create_re.foundation.ponder.instruction;
 
-import com.simibubi.create_re.foundation.ponder.PonderScene;
-import com.simibubi.create_re.foundation.ponder.Selection;
-import com.simibubi.create_re.foundation.ponder.element.OutlinerElement;
-import com.simibubi.create_re.foundation.ponder.element.TextWindowElement;
+import com.sakalti.create_re.foundation.ponder.PonderScene;
+import com.sakalti.create_re.foundation.ponder.Selection;
+import com.sakalti.create_re.foundation.ponder.element.OutlinerElement;
+import com.sakalti.create_re.foundation.ponder.element.TextWindowElement;
 
 public class TextInstruction extends FadeInOutInstruction {
 

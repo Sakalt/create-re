@@ -1,13 +1,13 @@
-package com.simibubi.create_re.content.decoration.palettes;
+package com.sakalti.create_re.content.decoration.palettes;
 
-import static com.simibubi.create_re.foundation.data.TagGen.pickaxeOnly;
+import static com.sakalti.create_re.foundation.data.TagGen.pickaxeOnly;
 
 import java.util.Arrays;
 import java.util.function.Supplier;
 
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.foundation.data.CreateRegistrate;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.foundation.data.CreateRegistrate;
+import com.sakalti.create_re.foundation.utility.Lang;
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.builders.ItemBuilder;
 import com.tterrag.registrate.providers.DataGenContext;

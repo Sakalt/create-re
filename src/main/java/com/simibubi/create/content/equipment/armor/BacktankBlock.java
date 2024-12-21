@@ -1,16 +1,16 @@
-package com.simibubi.create_re.content.equipment.armor;
+package com.sakalti.create_re.content.equipment.armor;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
-import com.simibubi.create_re.AllEnchantments;
-import com.simibubi.create_re.AllShapes;
-import com.simibubi.create_re.content.kinetics.base.HorizontalKineticBlock;
-import com.simibubi.create_re.content.schematics.requirement.ISpecialBlockItemRequirement;
-import com.simibubi.create_re.content.schematics.requirement.ItemRequirement;
-import com.simibubi.create_re.content.schematics.requirement.ItemRequirement.ItemUseType;
-import com.simibubi.create_re.foundation.block.IBE;
+import com.sakalti.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.AllEnchantments;
+import com.sakalti.create_re.AllShapes;
+import com.sakalti.create_re.content.kinetics.base.HorizontalKineticBlock;
+import com.sakalti.create_re.content.schematics.requirement.ISpecialBlockItemRequirement;
+import com.sakalti.create_re.content.schematics.requirement.ItemRequirement;
+import com.sakalti.create_re.content.schematics.requirement.ItemRequirement.ItemUseType;
+import com.sakalti.create_re.foundation.block.IBE;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

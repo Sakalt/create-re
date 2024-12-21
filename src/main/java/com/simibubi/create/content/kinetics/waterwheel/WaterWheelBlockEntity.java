@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.kinetics.waterwheel;
+package com.sakalti.create_re.content.kinetics.waterwheel;
 
 import java.util.EnumMap;
 import java.util.HashSet;
@@ -6,13 +6,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import com.simibubi.create_re.content.kinetics.base.GeneratingKineticBlockEntity;
-import com.simibubi.create_re.content.kinetics.base.IRotate;
-import com.simibubi.create_re.foundation.advancement.AllAdvancements;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create_re.foundation.fluid.FluidHelper;
-import com.simibubi.create_re.foundation.utility.Iterate;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.content.kinetics.base.GeneratingKineticBlockEntity;
+import com.sakalti.create_re.content.kinetics.base.IRotate;
+import com.sakalti.create_re.foundation.advancement.AllAdvancements;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.fluid.FluidHelper;
+import com.sakalti.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

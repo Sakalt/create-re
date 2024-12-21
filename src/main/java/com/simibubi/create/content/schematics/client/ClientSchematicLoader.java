@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.schematics.client;
+package com.sakalti.create_re.content.schematics.client;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,13 +14,13 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
-import com.simibubi.create_re.AllPackets;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.content.schematics.packet.SchematicUploadPacket;
-import com.simibubi.create_re.foundation.utility.Components;
-import com.simibubi.create_re.foundation.utility.FilesHelper;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.AllPackets;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.content.schematics.packet.SchematicUploadPacket;
+import com.sakalti.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.utility.FilesHelper;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;

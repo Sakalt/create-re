@@ -1,4 +1,4 @@
-package com.simibubi.create_re.infrastructure.command;
+package com.sakalti.create_re.infrastructure.command;
 
 import java.util.Collection;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -7,8 +7,8 @@ import com.mojang.brigadier.arguments.FloatArgumentType;
 import com.mojang.brigadier.builder.ArgumentBuilder;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
-import com.simibubi.create_re.AllPackets;
-import com.simibubi.create_re.foundation.utility.CameraAngleAnimationService;
+import com.sakalti.create_re.AllPackets;
+import com.sakalti.create_re.foundation.utility.CameraAngleAnimationService;
 
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;

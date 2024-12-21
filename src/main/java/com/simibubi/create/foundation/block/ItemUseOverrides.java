@@ -1,11 +1,11 @@
-package com.simibubi.create_re.foundation.block;
+package com.sakalti.create_re.foundation.block;
 
 import java.util.HashSet;
 import java.util.Set;
 
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.foundation.utility.RegisteredObjects;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.foundation.utility.RegisteredObjects;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionResult;

@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.equipment.bell;
+package com.sakalti.create_re.content.equipment.bell;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import com.google.common.collect.Streams;
-import com.simibubi.create_re.content.equipment.bell.SoulParticle.ExpandingPerimeterData;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.content.equipment.bell.SoulParticle.ExpandingPerimeterData;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.EntityType;

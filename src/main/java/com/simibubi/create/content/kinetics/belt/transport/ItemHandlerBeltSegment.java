@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.kinetics.belt.transport;
+package com.sakalti.create_re.content.kinetics.belt.transport;
 
-import com.simibubi.create_re.foundation.item.ItemHelper;
+import com.sakalti.create_re.foundation.item.ItemHelper;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.items.IItemHandler;

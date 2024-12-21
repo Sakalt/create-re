@@ -1,12 +1,12 @@
-package com.simibubi.create_re.infrastructure.debugInfo;
+package com.sakalti.create_re.infrastructure.debugInfo;
 
 import java.util.List;
 import java.util.Objects;
 
-import com.simibubi.create_re.foundation.networking.SimplePacketBase;
-import com.simibubi.create_re.foundation.utility.DyeHelper;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.infrastructure.debugInfo.element.DebugInfoSection;
+import com.sakalti.create_re.foundation.networking.SimplePacketBase;
+import com.sakalti.create_re.foundation.utility.DyeHelper;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.infrastructure.debugInfo.element.DebugInfoSection;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.FriendlyByteBuf;

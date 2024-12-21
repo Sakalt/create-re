@@ -1,17 +1,17 @@
-package com.simibubi.create_re.content.logistics.funnel;
+package com.sakalti.create_re.content.logistics.funnel;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllShapes;
-import com.simibubi.create_re.content.kinetics.belt.BeltBlock;
-import com.simibubi.create_re.content.kinetics.belt.BeltSlope;
-import com.simibubi.create_re.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
-import com.simibubi.create_re.content.schematics.requirement.ISpecialBlockItemRequirement;
-import com.simibubi.create_re.content.schematics.requirement.ItemRequirement;
-import com.simibubi.create_re.foundation.advancement.AllAdvancements;
-import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.foundation.utility.VoxelShaper;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllShapes;
+import com.sakalti.create_re.content.kinetics.belt.BeltBlock;
+import com.sakalti.create_re.content.kinetics.belt.BeltSlope;
+import com.sakalti.create_re.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
+import com.sakalti.create_re.content.schematics.requirement.ISpecialBlockItemRequirement;
+import com.sakalti.create_re.content.schematics.requirement.ItemRequirement;
+import com.sakalti.create_re.foundation.advancement.AllAdvancements;
+import com.sakalti.create_re.foundation.block.ProperWaterloggedBlock;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.utility.VoxelShaper;
 import com.tterrag.registrate.util.entry.BlockEntry;
 
 import net.minecraft.core.BlockPos;

@@ -1,7 +1,7 @@
-package com.simibubi.create_re.content.schematics.client.tools;
+package com.sakalti.create_re.content.schematics.client.tools;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.foundation.render.SuperRenderTypeBuffer;
+import com.sakalti.create_re.foundation.render.SuperRenderTypeBuffer;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.world.phys.Vec3;

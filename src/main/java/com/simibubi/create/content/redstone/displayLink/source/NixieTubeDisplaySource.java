@@ -1,10 +1,10 @@
-package com.simibubi.create_re.content.redstone.displayLink.source;
+package com.sakalti.create_re.content.redstone.displayLink.source;
 
-import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkContext;
-import com.simibubi.create_re.content.redstone.displayLink.target.DisplayTargetStats;
-import com.simibubi.create_re.content.redstone.displayLink.target.NixieTubeDisplayTarget;
-import com.simibubi.create_re.content.redstone.nixieTube.NixieTubeBlockEntity;
-import com.simibubi.create_re.content.trains.display.FlapDisplaySection;
+import com.sakalti.create_re.content.redstone.displayLink.DisplayLinkContext;
+import com.sakalti.create_re.content.redstone.displayLink.target.DisplayTargetStats;
+import com.sakalti.create_re.content.redstone.displayLink.target.NixieTubeDisplayTarget;
+import com.sakalti.create_re.content.redstone.nixieTube.NixieTubeBlockEntity;
+import com.sakalti.create_re.content.trains.display.FlapDisplaySection;
 
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.world.level.block.entity.BlockEntity;

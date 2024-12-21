@@ -1,7 +1,7 @@
-package com.simibubi.create_re.foundation.gui.widget;
+package com.sakalti.create_re.foundation.gui.widget;
 
 import com.google.common.collect.ImmutableList;
-import com.simibubi.create_re.foundation.gui.AllGuiTextures;
+import com.sakalti.create_re.foundation.gui.AllGuiTextures;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;

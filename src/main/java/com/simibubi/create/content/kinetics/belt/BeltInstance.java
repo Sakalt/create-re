@@ -1,10 +1,10 @@
-package com.simibubi.create_re.content.kinetics.belt;
+package com.sakalti.create_re.content.kinetics.belt;
 
 import org.joml.Quaternionf;
 import org.joml.Quaternionfc;
 
-import com.simibubi.create_re.content.kinetics.base.KineticInstance;
-import com.simibubi.create_re.foundation.block.render.SpriteShiftEntry;
+import com.sakalti.create_re.content.kinetics.base.KineticInstance;
+import com.sakalti.create_re.foundation.block.render.SpriteShiftEntry;
 
 import dev.engine_room.flywheel.api.instance.InstanceHandle;
 import dev.engine_room.flywheel.api.instance.InstanceType;

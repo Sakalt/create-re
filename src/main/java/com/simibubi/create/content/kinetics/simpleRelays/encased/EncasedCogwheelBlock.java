@@ -1,23 +1,23 @@
-package com.simibubi.create_re.content.kinetics.simpleRelays.encased;
+package com.sakalti.create_re.content.kinetics.simpleRelays.encased;
 
 import java.util.function.Supplier;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.content.contraptions.ITransformableBlock;
-import com.simibubi.create_re.content.contraptions.StructureTransform;
-import com.simibubi.create_re.content.decoration.encasing.EncasedBlock;
-import com.simibubi.create_re.content.kinetics.base.IRotate;
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create_re.content.kinetics.base.RotatedPillarKineticBlock;
-import com.simibubi.create_re.content.kinetics.simpleRelays.CogWheelBlock;
-import com.simibubi.create_re.content.kinetics.simpleRelays.ICogWheel;
-import com.simibubi.create_re.content.kinetics.simpleRelays.SimpleKineticBlockEntity;
-import com.simibubi.create_re.content.schematics.requirement.ISpecialBlockItemRequirement;
-import com.simibubi.create_re.content.schematics.requirement.ItemRequirement;
-import com.simibubi.create_re.foundation.block.IBE;
-import com.simibubi.create_re.foundation.utility.Iterate;
-import com.simibubi.create_re.foundation.utility.VoxelShaper;
+import com.sakalti.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.content.contraptions.ITransformableBlock;
+import com.sakalti.create_re.content.contraptions.StructureTransform;
+import com.sakalti.create_re.content.decoration.encasing.EncasedBlock;
+import com.sakalti.create_re.content.kinetics.base.IRotate;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntity;
+import com.sakalti.create_re.content.kinetics.base.RotatedPillarKineticBlock;
+import com.sakalti.create_re.content.kinetics.simpleRelays.CogWheelBlock;
+import com.sakalti.create_re.content.kinetics.simpleRelays.ICogWheel;
+import com.sakalti.create_re.content.kinetics.simpleRelays.SimpleKineticBlockEntity;
+import com.sakalti.create_re.content.schematics.requirement.ISpecialBlockItemRequirement;
+import com.sakalti.create_re.content.schematics.requirement.ItemRequirement;
+import com.sakalti.create_re.foundation.block.IBE;
+import com.sakalti.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.foundation.utility.VoxelShaper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

@@ -1,10 +1,10 @@
-package com.simibubi.create_re.content.kinetics.base;
+package com.sakalti.create_re.content.kinetics.base;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create_re.content.equipment.goggles.GogglesItem;
-import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
-import com.simibubi.create_re.foundation.utility.Color;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.content.equipment.goggles.GogglesItem;
+import com.sakalti.create_re.foundation.utility.AnimationTickHolder;
+import com.sakalti.create_re.foundation.utility.Color;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.client.Camera;
 import net.minecraft.client.Minecraft;

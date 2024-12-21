@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.outliner;
+package com.sakalti.create_re.foundation.outliner;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -11,10 +11,10 @@ import org.joml.Vector4f;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create_re.AllSpecialTextures;
-import com.simibubi.create_re.foundation.render.RenderTypes;
-import com.simibubi.create_re.foundation.render.SuperRenderTypeBuffer;
-import com.simibubi.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.AllSpecialTextures;
+import com.sakalti.create_re.foundation.render.RenderTypes;
+import com.sakalti.create_re.foundation.render.SuperRenderTypeBuffer;
+import com.sakalti.create_re.foundation.utility.Iterate;
 
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.BlockPos;

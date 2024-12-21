@@ -1,10 +1,10 @@
-package com.simibubi.create_re.content.kinetics.gauge;
+package com.sakalti.create_re.content.kinetics.gauge;
 
 import java.util.List;
 
-import com.simibubi.create_re.content.equipment.goggles.IHaveGoggleInformation;
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.content.equipment.goggles.IHaveGoggleInformation;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntity;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

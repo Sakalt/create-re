@@ -1,10 +1,10 @@
-package com.simibubi.create_re.content.kinetics.fan;
+package com.sakalti.create_re.content.kinetics.fan;
 
 import javax.annotation.Nonnull;
 
-import com.simibubi.create_re.content.kinetics.fan.processing.AllFanProcessingTypes;
-import com.simibubi.create_re.content.kinetics.fan.processing.FanProcessingType;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.content.kinetics.fan.processing.AllFanProcessingTypes;
+import com.sakalti.create_re.content.kinetics.fan.processing.FanProcessingType;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.Particle;

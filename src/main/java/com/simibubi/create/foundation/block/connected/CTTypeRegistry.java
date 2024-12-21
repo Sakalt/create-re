@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.block.connected;
+package com.sakalti.create_re.foundation.block.connected;
 
 import java.util.HashMap;
 import java.util.Map;

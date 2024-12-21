@@ -1,8 +1,8 @@
-package com.simibubi.create_re.content.kinetics.saw;
+package com.sakalti.create_re.content.kinetics.saw;
 
-import com.simibubi.create_re.AllPartialModels;
-import com.simibubi.create_re.content.kinetics.base.SingleRotatingVisual;
-import com.simibubi.create_re.foundation.render.VirtualRenderHelper;
+import com.sakalti.create_re.AllPartialModels;
+import com.sakalti.create_re.content.kinetics.base.SingleRotatingVisual;
+import com.sakalti.create_re.foundation.render.VirtualRenderHelper;
 
 import dev.engine_room.flywheel.api.model.Model;
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;

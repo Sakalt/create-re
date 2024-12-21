@@ -1,11 +1,11 @@
-package com.simibubi.create_re.content.kinetics.fan;
+package com.sakalti.create_re.content.kinetics.fan;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
-import com.simibubi.create_re.AllShapes;
-import com.simibubi.create_re.foundation.block.IBE;
-import com.simibubi.create_re.foundation.block.WrenchableDirectionalBlock;
+import com.sakalti.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.AllShapes;
+import com.sakalti.create_re.foundation.block.IBE;
+import com.sakalti.create_re.foundation.block.WrenchableDirectionalBlock;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;

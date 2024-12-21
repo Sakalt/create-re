@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.processing.sequenced;
+package com.sakalti.create_re.content.processing.sequenced;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import com.simibubi.create_re.content.processing.recipe.ProcessingOutput;
+import com.sakalti.create_re.content.processing.recipe.ProcessingOutput;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;

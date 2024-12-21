@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.mixin;
+package com.sakalti.create_re.foundation.mixin;
 
 import java.util.List;
 import java.util.Set;
@@ -7,7 +7,7 @@ import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
 
-import com.simibubi.create_re.compat.Mods;
+import com.sakalti.create_re.compat.Mods;
 
 public class CreateMixinPlugin implements IMixinConfigPlugin {
 

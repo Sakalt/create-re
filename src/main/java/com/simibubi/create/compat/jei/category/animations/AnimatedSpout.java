@@ -1,4 +1,4 @@
-package com.simibubi.create_re.compat.jei.category.animations;
+package com.sakalti.create_re.compat.jei.category.animations;
 
 import java.util.List;
 
@@ -6,11 +6,11 @@ import com.mojang.blaze3d.platform.Lighting;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.Tesselator;
 import com.mojang.math.Axis;
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllPartialModels;
-import com.simibubi.create_re.foundation.fluid.FluidRenderer;
-import com.simibubi.create_re.foundation.gui.UIRenderHelper;
-import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllPartialModels;
+import com.sakalti.create_re.foundation.fluid.FluidRenderer;
+import com.sakalti.create_re.foundation.gui.UIRenderHelper;
+import com.sakalti.create_re.foundation.utility.AnimationTickHolder;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.renderer.LightTexture;

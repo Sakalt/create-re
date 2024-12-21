@@ -1,10 +1,10 @@
-package com.simibubi.create_re.foundation.config.ui;
+package com.sakalti.create_re.foundation.config.ui;
 
 import org.lwjgl.glfw.GLFW;
 
 import com.mojang.blaze3d.platform.InputConstants;
-import com.simibubi.create_re.foundation.gui.Theme;
-import com.simibubi.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.gui.Theme;
+import com.sakalti.create_re.foundation.utility.Components;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;

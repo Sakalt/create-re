@@ -1,9 +1,9 @@
-package com.simibubi.create_re.infrastructure.command;
+package com.sakalti.create_re.infrastructure.command;
 
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.arguments.FloatArgumentType;
 import com.mojang.brigadier.builder.ArgumentBuilder;
-import com.simibubi.create_re.AllPackets;
+import com.sakalti.create_re.AllPackets;
 
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;

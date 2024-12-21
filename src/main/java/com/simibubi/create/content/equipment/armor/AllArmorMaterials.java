@@ -1,10 +1,10 @@
-package com.simibubi.create_re.content.equipment.armor;
+package com.sakalti.create_re.content.equipment.armor;
 
 import java.util.function.Supplier;
 
 import com.google.common.base.Suppliers;
-import com.simibubi.create_re.AllSoundEvents;
-import com.simibubi.create_re.Create;
+import com.sakalti.create_re.AllSoundEvents;
+import com.sakalti.create_re.Create;
 
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.item.ArmorItem.Type;

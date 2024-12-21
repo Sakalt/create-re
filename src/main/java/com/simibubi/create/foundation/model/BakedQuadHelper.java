@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.model;
+package com.sakalti.create_re.foundation.model;
 
 import java.util.Arrays;
 

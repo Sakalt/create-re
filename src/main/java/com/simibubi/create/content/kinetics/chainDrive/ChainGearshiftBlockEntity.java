@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.kinetics.chainDrive;
+package com.sakalti.create_re.content.kinetics.chainDrive;
 
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

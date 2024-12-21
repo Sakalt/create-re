@@ -1,8 +1,8 @@
-package com.simibubi.create_re.compat.computercraft.implementation.peripherals;
+package com.sakalti.create_re.compat.computercraft.implementation.peripherals;
 
 import org.jetbrains.annotations.NotNull;
 
-import com.simibubi.create_re.content.kinetics.gauge.SpeedGaugeBlockEntity;
+import com.sakalti.create_re.content.kinetics.gauge.SpeedGaugeBlockEntity;
 
 import dan200.computercraft.api.lua.LuaFunction;
 

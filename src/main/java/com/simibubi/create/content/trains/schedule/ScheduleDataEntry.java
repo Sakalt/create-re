@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.trains.schedule;
+package com.sakalti.create_re.content.trains.schedule;
 
 import net.minecraft.nbt.CompoundTag;
 

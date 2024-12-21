@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.equipment.bell;
+package com.sakalti.create_re.content.equipment.bell;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create_re.AllShapes;
-import com.simibubi.create_re.foundation.block.IBE;
+import com.sakalti.create_re.AllShapes;
+import com.sakalti.create_re.foundation.block.IBE;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

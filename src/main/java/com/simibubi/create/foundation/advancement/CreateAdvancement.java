@@ -1,11 +1,11 @@
-package com.simibubi.create_re.foundation.advancement;
+package com.sakalti.create_re.foundation.advancement;
 
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import java.util.function.UnaryOperator;
 
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.foundation.utility.Components;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.foundation.utility.Components;
 import com.tterrag.registrate.util.entry.ItemProviderEntry;
 
 import net.minecraft.advancements.Advancement;

@@ -1,11 +1,11 @@
-package com.simibubi.create_re.content.decoration.copycat;
+package com.sakalti.create_re.content.decoration.copycat;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.simibubi.create_re.foundation.model.BakedModelHelper;
-import com.simibubi.create_re.foundation.model.BakedQuadHelper;
-import com.simibubi.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.foundation.model.BakedModelHelper;
+import com.sakalti.create_re.foundation.model.BakedQuadHelper;
+import com.sakalti.create_re.foundation.utility.Iterate;
 
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.block.model.BakedQuad;

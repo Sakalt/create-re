@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.decoration.copycat;
+package com.sakalti.create_re.content.decoration.copycat;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,9 +6,9 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.foundation.model.BakedModelWrapperWithData;
-import com.simibubi.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.foundation.model.BakedModelWrapperWithData;
+import com.sakalti.create_re.foundation.utility.Iterate;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;

@@ -1,16 +1,16 @@
-package com.simibubi.create_re.content.kinetics.deployer;
+package com.sakalti.create_re.content.kinetics.deployer;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllRecipeTypes;
-import com.simibubi.create_re.content.processing.recipe.ProcessingOutput;
-import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder;
-import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
-import com.simibubi.create_re.foundation.advancement.AllAdvancements;
-import com.simibubi.create_re.foundation.advancement.CreateAdvancement;
-import com.simibubi.create_re.foundation.utility.BlockHelper;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllRecipeTypes;
+import com.sakalti.create_re.content.processing.recipe.ProcessingOutput;
+import com.sakalti.create_re.content.processing.recipe.ProcessingRecipeBuilder;
+import com.sakalti.create_re.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
+import com.sakalti.create_re.foundation.advancement.AllAdvancements;
+import com.sakalti.create_re.foundation.advancement.CreateAdvancement;
+import com.sakalti.create_re.foundation.utility.BlockHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;

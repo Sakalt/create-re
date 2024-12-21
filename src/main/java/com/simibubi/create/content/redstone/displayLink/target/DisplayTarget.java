@@ -1,11 +1,11 @@
-package com.simibubi.create_re.content.redstone.displayLink.target;
+package com.sakalti.create_re.content.redstone.displayLink.target;
 
 import java.util.List;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.content.redstone.displayLink.DisplayBehaviour;
-import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkContext;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.content.redstone.displayLink.DisplayBehaviour;
+import com.sakalti.create_re.content.redstone.displayLink.DisplayLinkContext;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

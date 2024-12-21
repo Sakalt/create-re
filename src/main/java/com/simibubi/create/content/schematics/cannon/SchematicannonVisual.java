@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.schematics.cannon;
+package com.sakalti.create_re.content.schematics.cannon;
 
 import java.util.function.Consumer;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.AllPartialModels;
+import com.sakalti.create_re.AllPartialModels;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.visual.DynamicVisual;

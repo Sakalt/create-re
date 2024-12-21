@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.decoration.palettes;
+package com.sakalti.create_re.content.decoration.palettes;
 
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.state.BlockState;

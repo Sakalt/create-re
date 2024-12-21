@@ -1,10 +1,10 @@
-package com.simibubi.create_re.content.redstone.displayLink.source;
+package com.sakalti.create_re.content.redstone.displayLink.source;
 
 import java.util.stream.Stream;
 
-import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkContext;
-import com.simibubi.create_re.foundation.gui.ModularGuiLineBuilder;
-import com.simibubi.create_re.foundation.utility.IntAttached;
+import com.sakalti.create_re.content.redstone.displayLink.DisplayLinkContext;
+import com.sakalti.create_re.foundation.gui.ModularGuiLineBuilder;
+import com.sakalti.create_re.foundation.utility.IntAttached;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;

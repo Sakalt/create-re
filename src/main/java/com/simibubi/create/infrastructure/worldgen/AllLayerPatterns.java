@@ -1,6 +1,6 @@
-package com.simibubi.create_re.infrastructure.worldgen;
+package com.sakalti.create_re.infrastructure.worldgen;
 
-import com.simibubi.create_re.content.decoration.palettes.AllPaletteStoneTypes;
+import com.sakalti.create_re.content.decoration.palettes.AllPaletteStoneTypes;
 import com.tterrag.registrate.util.nullness.NonNullSupplier;
 
 import net.minecraft.world.level.block.Blocks;

@@ -1,10 +1,10 @@
-package com.simibubi.create_re.foundation.item;
+package com.sakalti.create_re.foundation.item;
 
 import java.util.Map;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create_re.foundation.mixin.accessor.HumanoidArmorLayerAccessor;
+import com.sakalti.create_re.foundation.mixin.accessor.HumanoidArmorLayerAccessor;
 
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.Model;

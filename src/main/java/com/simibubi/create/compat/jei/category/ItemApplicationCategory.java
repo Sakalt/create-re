@@ -1,4 +1,4 @@
-package com.simibubi.create_re.compat.jei.category;
+package com.sakalti.create_re.compat.jei.category;
 
 import java.util.List;
 import java.util.Optional;
@@ -7,12 +7,12 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import com.simibubi.create_re.compat.jei.category.animations.AnimatedKinetics;
-import com.simibubi.create_re.content.kinetics.deployer.ItemApplicationRecipe;
-import com.simibubi.create_re.content.processing.recipe.ProcessingOutput;
-import com.simibubi.create_re.foundation.gui.AllGuiTextures;
-import com.simibubi.create_re.foundation.gui.element.GuiGameElement;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.compat.jei.category.animations.AnimatedKinetics;
+import com.sakalti.create_re.content.kinetics.deployer.ItemApplicationRecipe;
+import com.sakalti.create_re.content.processing.recipe.ProcessingOutput;
+import com.sakalti.create_re.foundation.gui.AllGuiTextures;
+import com.sakalti.create_re.foundation.gui.element.GuiGameElement;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;

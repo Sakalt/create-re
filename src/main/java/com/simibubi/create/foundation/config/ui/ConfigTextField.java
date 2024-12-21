@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.config.ui;
+package com.sakalti.create_re.foundation.config.ui;
 
 import net.minecraft.client.gui.Font;
 

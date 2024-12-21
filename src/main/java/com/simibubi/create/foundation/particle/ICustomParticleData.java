@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.particle;
+package com.sakalti.create_re.foundation.particle;
 
 import com.mojang.serialization.Codec;
 

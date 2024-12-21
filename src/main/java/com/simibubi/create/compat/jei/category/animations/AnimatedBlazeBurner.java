@@ -1,14 +1,14 @@
-package com.simibubi.create_re.compat.jei.category.animations;
+package com.sakalti.create_re.compat.jei.category.animations;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllPartialModels;
-import com.simibubi.create_re.AllSpriteShifts;
-import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock.HeatLevel;
-import com.simibubi.create_re.foundation.block.render.SpriteShiftEntry;
-import com.simibubi.create_re.foundation.render.CachedBufferer;
-import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllPartialModels;
+import com.sakalti.create_re.AllSpriteShifts;
+import com.sakalti.create_re.content.processing.burner.BlazeBurnerBlock.HeatLevel;
+import com.sakalti.create_re.foundation.block.render.SpriteShiftEntry;
+import com.sakalti.create_re.foundation.render.CachedBufferer;
+import com.sakalti.create_re.foundation.utility.AnimationTickHolder;
 
 import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 import net.minecraft.client.Minecraft;

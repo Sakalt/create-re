@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.mixin;
+package com.sakalti.create_re.foundation.mixin;
 
 import javax.annotation.Nullable;
 
@@ -6,7 +6,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
-import com.simibubi.create_re.infrastructure.gametest.CreateTestFunction;
+import com.sakalti.create_re.infrastructure.gametest.CreateTestFunction;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.gametest.framework.GameTestRegistry;

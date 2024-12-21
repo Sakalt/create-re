@@ -1,15 +1,15 @@
-package com.simibubi.create_re.content.equipment.zapper.terrainzapper;
+package com.sakalti.create_re.content.equipment.zapper.terrainzapper;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
 
-import com.simibubi.create_re.content.equipment.zapper.PlacementPatterns;
-import com.simibubi.create_re.content.equipment.zapper.ZapperItem;
-import com.simibubi.create_re.foundation.gui.ScreenOpener;
-import com.simibubi.create_re.foundation.item.render.SimpleCustomRenderer;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.sakalti.create_re.content.equipment.zapper.PlacementPatterns;
+import com.sakalti.create_re.content.equipment.zapper.ZapperItem;
+import com.sakalti.create_re.foundation.gui.ScreenOpener;
+import com.sakalti.create_re.foundation.item.render.SimpleCustomRenderer;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

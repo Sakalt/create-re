@@ -1,4 +1,4 @@
-package com.simibubi.create_re.infrastructure.worldgen;
+package com.sakalti.create_re.infrastructure.worldgen;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ import javax.annotation.Nullable;
 import com.google.common.collect.ImmutableList;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import com.simibubi.create_re.foundation.utility.Couple;
+import com.sakalti.create_re.foundation.utility.Couple;
 import com.tterrag.registrate.util.nullness.NonNullSupplier;
 
 import net.minecraft.tags.BlockTags;

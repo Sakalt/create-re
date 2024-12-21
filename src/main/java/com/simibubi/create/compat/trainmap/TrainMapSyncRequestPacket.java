@@ -1,6 +1,6 @@
-package com.simibubi.create_re.compat.trainmap;
+package com.sakalti.create_re.compat.trainmap;
 
-import com.simibubi.create_re.foundation.networking.SimplePacketBase;
+import com.sakalti.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraftforge.network.NetworkEvent.Context;

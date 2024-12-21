@@ -1,12 +1,12 @@
-package com.simibubi.create_re.content.equipment.zapper.terrainzapper;
+package com.sakalti.create_re.content.equipment.zapper.terrainzapper;
 
 import java.util.List;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create_re.content.equipment.zapper.ZapperItem;
-import com.simibubi.create_re.foundation.gui.AllIcons;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.content.equipment.zapper.ZapperItem;
+import com.sakalti.create_re.foundation.gui.AllIcons;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

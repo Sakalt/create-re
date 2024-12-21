@@ -1,7 +1,7 @@
-package com.simibubi.create_re.content.logistics.depot;
+package com.sakalti.create_re.content.logistics.depot;
 
-import com.simibubi.create_re.foundation.utility.AngleHelper;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.foundation.utility.AngleHelper;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

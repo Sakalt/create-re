@@ -1,11 +1,11 @@
-package com.simibubi.create_re.compat.jei.category.animations;
+package com.sakalti.create_re.compat.jei.category.animations;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllPartialModels;
-import com.simibubi.create_re.content.kinetics.deployer.DeployerBlock;
-import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllPartialModels;
+import com.sakalti.create_re.content.kinetics.deployer.DeployerBlock;
+import com.sakalti.create_re.foundation.utility.AnimationTickHolder;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.core.Direction;

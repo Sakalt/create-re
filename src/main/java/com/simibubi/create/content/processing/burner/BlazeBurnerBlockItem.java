@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.processing.burner;
+package com.sakalti.create_re.content.processing.burner;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,10 +7,10 @@ import java.util.Optional;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllTags.AllEntityTags;
-import com.simibubi.create_re.foundation.utility.RegisteredObjects;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllTags.AllEntityTags;
+import com.sakalti.create_re.foundation.utility.RegisteredObjects;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;

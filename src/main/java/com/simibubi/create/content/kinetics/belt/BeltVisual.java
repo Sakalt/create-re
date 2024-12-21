@@ -1,17 +1,17 @@
-package com.simibubi.create_re.content.kinetics.belt;
+package com.sakalti.create_re.content.kinetics.belt;
 
 import java.util.ArrayList;
 import java.util.function.Consumer;
 
 import org.joml.Quaternionf;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllPartialModels;
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntityVisual;
-import com.simibubi.create_re.content.kinetics.base.RotatingInstance;
-import com.simibubi.create_re.foundation.block.render.SpriteShiftEntry;
-import com.simibubi.create_re.foundation.render.AllInstanceTypes;
-import com.simibubi.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllPartialModels;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntityVisual;
+import com.sakalti.create_re.content.kinetics.base.RotatingInstance;
+import com.sakalti.create_re.foundation.block.render.SpriteShiftEntry;
+import com.sakalti.create_re.foundation.render.AllInstanceTypes;
+import com.sakalti.create_re.foundation.utility.Iterate;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.instance.Instancer;

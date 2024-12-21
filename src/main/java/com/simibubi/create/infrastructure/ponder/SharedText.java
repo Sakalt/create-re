@@ -1,7 +1,7 @@
-package com.simibubi.create_re.infrastructure.ponder;
+package com.sakalti.create_re.infrastructure.ponder;
 
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.foundation.ponder.PonderLocalization;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.foundation.ponder.PonderLocalization;
 
 public class SharedText {
 	public static void gatherText() {

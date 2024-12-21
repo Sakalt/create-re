@@ -1,11 +1,11 @@
-package com.simibubi.create_re.infrastructure.command;
+package com.sakalti.create_re.infrastructure.command;
 
 import java.util.UUID;
 
 import com.mojang.brigadier.builder.ArgumentBuilder;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.content.trains.entity.Train;
-import com.simibubi.create_re.foundation.utility.Components;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.content.trains.entity.Train;
+import com.sakalti.create_re.foundation.utility.Components;
 
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;

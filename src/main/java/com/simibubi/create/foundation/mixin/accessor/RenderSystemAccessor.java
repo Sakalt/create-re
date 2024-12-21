@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.mixin.accessor;
+package com.sakalti.create_re.foundation.mixin.accessor;
 
 import org.joml.Vector3f;
 import org.spongepowered.asm.mixin.Mixin;

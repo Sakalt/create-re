@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.contraptions;
+package com.sakalti.create_re.content.contraptions;
 
-import com.simibubi.create_re.foundation.networking.SimplePacketBase;
+import com.sakalti.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;

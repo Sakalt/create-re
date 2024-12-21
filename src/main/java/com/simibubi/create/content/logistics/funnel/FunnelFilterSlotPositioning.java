@@ -1,10 +1,10 @@
-package com.simibubi.create_re.content.logistics.funnel;
+package com.sakalti.create_re.content.logistics.funnel;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.content.logistics.funnel.BeltFunnelBlock.Shape;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBoxTransform;
-import com.simibubi.create_re.foundation.utility.AngleHelper;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.content.logistics.funnel.BeltFunnelBlock.Shape;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.ValueBoxTransform;
+import com.sakalti.create_re.foundation.utility.AngleHelper;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import dev.engine_room.flywheel.lib.transform.TransformStack;
 import net.minecraft.core.Direction;

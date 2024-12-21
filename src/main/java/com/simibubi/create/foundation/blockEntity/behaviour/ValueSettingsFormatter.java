@@ -1,11 +1,11 @@
-package com.simibubi.create_re.foundation.blockEntity.behaviour;
+package com.sakalti.create_re.foundation.blockEntity.behaviour;
 
 import java.util.function.Function;
 
-import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueSettingsBehaviour.ValueSettings;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.scrollValue.INamedIconOptions;
-import com.simibubi.create_re.foundation.gui.AllIcons;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.ValueSettingsBehaviour.ValueSettings;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.scrollValue.INamedIconOptions;
+import com.sakalti.create_re.foundation.gui.AllIcons;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import net.minecraft.network.chat.MutableComponent;
 

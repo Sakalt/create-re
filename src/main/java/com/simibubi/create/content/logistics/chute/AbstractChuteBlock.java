@@ -1,16 +1,16 @@
-package com.simibubi.create_re.content.logistics.chute;
+package com.sakalti.create_re.content.logistics.chute;
 
 import java.util.function.Consumer;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
-import com.simibubi.create_re.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
-import com.simibubi.create_re.foundation.advancement.AdvancementBehaviour;
-import com.simibubi.create_re.foundation.block.IBE;
-import com.simibubi.create_re.foundation.block.render.ReducedDestroyEffects;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.content.equipment.wrench.IWrenchable;
+import com.sakalti.create_re.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
+import com.sakalti.create_re.foundation.advancement.AdvancementBehaviour;
+import com.sakalti.create_re.foundation.block.IBE;
+import com.sakalti.create_re.foundation.block.render.ReducedDestroyEffects;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.utility.Iterate;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

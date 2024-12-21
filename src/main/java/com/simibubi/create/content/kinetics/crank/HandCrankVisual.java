@@ -1,11 +1,11 @@
-package com.simibubi.create_re.content.kinetics.crank;
+package com.sakalti.create_re.content.kinetics.crank;
 
 import java.util.function.Consumer;
 
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntityVisual;
-import com.simibubi.create_re.content.kinetics.base.RotatingInstance;
-import com.simibubi.create_re.foundation.render.AllInstanceTypes;
-import com.simibubi.create_re.foundation.render.VirtualRenderHelper;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntityVisual;
+import com.sakalti.create_re.content.kinetics.base.RotatingInstance;
+import com.sakalti.create_re.foundation.render.AllInstanceTypes;
+import com.sakalti.create_re.foundation.render.VirtualRenderHelper;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.model.Model;

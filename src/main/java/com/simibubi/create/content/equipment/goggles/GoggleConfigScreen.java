@@ -1,14 +1,14 @@
-package com.simibubi.create_re.content.equipment.goggles;
+package com.sakalti.create_re.content.equipment.goggles;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.foundation.gui.AbstractSimiScreen;
-import com.simibubi.create_re.foundation.gui.element.GuiGameElement;
-import com.simibubi.create_re.foundation.utility.Components;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.foundation.gui.AbstractSimiScreen;
+import com.sakalti.create_re.foundation.gui.element.GuiGameElement;
+import com.sakalti.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.GuiGraphics;

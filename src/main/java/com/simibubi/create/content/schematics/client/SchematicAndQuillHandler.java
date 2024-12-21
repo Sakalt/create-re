@@ -1,25 +1,25 @@
-package com.simibubi.create_re.content.schematics.client;
+package com.sakalti.create_re.content.schematics.client;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.AllKeys;
-import com.simibubi.create_re.AllPackets;
-import com.simibubi.create_re.AllSpecialTextures;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.CreateClient;
-import com.simibubi.create_re.content.schematics.SchematicExport;
-import com.simibubi.create_re.content.schematics.SchematicExport.SchematicExportResult;
-import com.simibubi.create_re.content.schematics.packet.InstantSchematicPacket;
-import com.simibubi.create_re.foundation.gui.ScreenOpener;
-import com.simibubi.create_re.foundation.outliner.Outliner;
-import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.foundation.utility.RaycastHelper;
-import com.simibubi.create_re.foundation.utility.RaycastHelper.PredicateTraceResult;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.AllKeys;
+import com.sakalti.create_re.AllPackets;
+import com.sakalti.create_re.AllSpecialTextures;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.CreateClient;
+import com.sakalti.create_re.content.schematics.SchematicExport;
+import com.sakalti.create_re.content.schematics.SchematicExport.SchematicExportResult;
+import com.sakalti.create_re.content.schematics.packet.InstantSchematicPacket;
+import com.sakalti.create_re.foundation.gui.ScreenOpener;
+import com.sakalti.create_re.foundation.outliner.Outliner;
+import com.sakalti.create_re.foundation.utility.AnimationTickHolder;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.utility.RaycastHelper;
+import com.sakalti.create_re.foundation.utility.RaycastHelper.PredicateTraceResult;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;

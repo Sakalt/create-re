@@ -1,7 +1,7 @@
-package com.simibubi.create_re.content.schematics.cannon;
+package com.sakalti.create_re.content.schematics.cannon;
 
-import com.simibubi.create_re.AllMenuTypes;
-import com.simibubi.create_re.foundation.gui.menu.MenuBase;
+import com.sakalti.create_re.AllMenuTypes;
+import com.sakalti.create_re.foundation.gui.menu.MenuBase;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;

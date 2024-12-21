@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.equipment.potatoCannon;
+package com.sakalti.create_re.content.equipment.potatoCannon;
 
 import java.util.List;
 import java.util.Optional;
@@ -7,19 +7,19 @@ import java.util.function.Predicate;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create_re.AllEnchantments;
-import com.simibubi.create_re.AllEntityTypes;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.CreateClient;
-import com.simibubi.create_re.content.equipment.armor.BacktankUtil;
-import com.simibubi.create_re.content.equipment.zapper.ShootableGadgetItemMethods;
-import com.simibubi.create_re.foundation.item.CustomArmPoseItem;
-import com.simibubi.create_re.foundation.item.render.SimpleCustomRenderer;
-import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
-import com.simibubi.create_re.foundation.utility.Components;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.foundation.utility.VecHelper;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.AllEnchantments;
+import com.sakalti.create_re.AllEntityTypes;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.CreateClient;
+import com.sakalti.create_re.content.equipment.armor.BacktankUtil;
+import com.sakalti.create_re.content.equipment.zapper.ShootableGadgetItemMethods;
+import com.sakalti.create_re.foundation.item.CustomArmPoseItem;
+import com.sakalti.create_re.foundation.item.render.SimpleCustomRenderer;
+import com.sakalti.create_re.foundation.utility.AnimationTickHolder;
+import com.sakalti.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;

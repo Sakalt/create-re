@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.item;
+package com.sakalti.create_re.foundation.item;
 
 import static net.minecraft.ChatFormatting.DARK_GRAY;
 import static net.minecraft.ChatFormatting.GRAY;
@@ -8,19 +8,19 @@ import java.util.List;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.content.equipment.goggles.GogglesItem;
-import com.simibubi.create_re.content.kinetics.BlockStressValues;
-import com.simibubi.create_re.content.kinetics.base.IRotate;
-import com.simibubi.create_re.content.kinetics.base.IRotate.StressImpact;
-import com.simibubi.create_re.content.kinetics.crank.ValveHandleBlock;
-import com.simibubi.create_re.content.kinetics.steamEngine.SteamEngineBlock;
-import com.simibubi.create_re.foundation.utility.Components;
-import com.simibubi.create_re.foundation.utility.Couple;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.foundation.utility.LangBuilder;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
-import com.simibubi.create_re.infrastructure.config.CKinetics;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.content.equipment.goggles.GogglesItem;
+import com.sakalti.create_re.content.kinetics.BlockStressValues;
+import com.sakalti.create_re.content.kinetics.base.IRotate;
+import com.sakalti.create_re.content.kinetics.base.IRotate.StressImpact;
+import com.sakalti.create_re.content.kinetics.crank.ValveHandleBlock;
+import com.sakalti.create_re.content.kinetics.steamEngine.SteamEngineBlock;
+import com.sakalti.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.utility.Couple;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.utility.LangBuilder;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.infrastructure.config.CKinetics;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Player;

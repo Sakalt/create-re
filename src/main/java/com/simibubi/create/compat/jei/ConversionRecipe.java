@@ -1,12 +1,12 @@
-package com.simibubi.create_re.compat.jei;
+package com.sakalti.create_re.compat.jei;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create_re.AllRecipeTypes;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.content.processing.recipe.ProcessingRecipe;
-import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder;
-import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
+import com.sakalti.create_re.AllRecipeTypes;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.content.processing.recipe.ProcessingRecipe;
+import com.sakalti.create_re.content.processing.recipe.ProcessingRecipeBuilder;
+import com.sakalti.create_re.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;

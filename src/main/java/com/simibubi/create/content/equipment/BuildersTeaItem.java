@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.equipment;
+package com.sakalti.create_re.content.equipment;
 
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.server.level.ServerPlayer;

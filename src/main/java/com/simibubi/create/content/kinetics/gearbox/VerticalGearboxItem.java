@@ -1,10 +1,10 @@
-package com.simibubi.create_re.content.kinetics.gearbox;
+package com.sakalti.create_re.content.kinetics.gearbox;
 
 import java.util.Map;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.content.kinetics.base.IRotate;
-import com.simibubi.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.content.kinetics.base.IRotate;
+import com.sakalti.create_re.foundation.utility.Iterate;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

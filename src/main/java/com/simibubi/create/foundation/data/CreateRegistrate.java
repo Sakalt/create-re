@@ -1,6 +1,6 @@
-package com.simibubi.create_re.foundation.data;
+package com.sakalti.create_re.foundation.data;
 
-import static com.simibubi.create_re.foundation.data.TagGen.pickaxeOnly;
+import static com.sakalti.create_re.foundation.data.TagGen.pickaxeOnly;
 
 import java.util.Collections;
 import java.util.IdentityHashMap;
@@ -12,13 +12,13 @@ import java.util.function.Supplier;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create_re.CreateClient;
-import com.simibubi.create_re.content.decoration.encasing.CasingConnectivity;
-import com.simibubi.create_re.content.fluids.VirtualFluid;
-import com.simibubi.create_re.foundation.block.connected.CTModel;
-import com.simibubi.create_re.foundation.block.connected.ConnectedTextureBehaviour;
-import com.simibubi.create_re.foundation.item.TooltipModifier;
-import com.simibubi.create_re.foundation.utility.RegisteredObjects;
+import com.sakalti.create_re.CreateClient;
+import com.sakalti.create_re.content.decoration.encasing.CasingConnectivity;
+import com.sakalti.create_re.content.fluids.VirtualFluid;
+import com.sakalti.create_re.foundation.block.connected.CTModel;
+import com.sakalti.create_re.foundation.block.connected.ConnectedTextureBehaviour;
+import com.sakalti.create_re.foundation.item.TooltipModifier;
+import com.sakalti.create_re.foundation.utility.RegisteredObjects;
 import com.tterrag.registrate.AbstractRegistrate;
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.builders.BlockEntityBuilder.BlockEntityFactory;

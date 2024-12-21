@@ -1,8 +1,8 @@
-package com.simibubi.create_re.infrastructure.config;
+package com.sakalti.create_re.infrastructure.config;
 
-import com.simibubi.create_re.content.contraptions.ContraptionData;
-import com.simibubi.create_re.content.contraptions.ContraptionMovementSetting;
-import com.simibubi.create_re.foundation.config.ConfigBase;
+import com.sakalti.create_re.content.contraptions.ContraptionData;
+import com.sakalti.create_re.content.contraptions.ContraptionMovementSetting;
+import com.sakalti.create_re.foundation.config.ConfigBase;
 
 public class CKinetics extends ConfigBase {
 

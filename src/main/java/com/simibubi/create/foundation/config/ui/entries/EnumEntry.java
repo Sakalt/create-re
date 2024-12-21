@@ -1,15 +1,15 @@
-package com.simibubi.create_re.foundation.config.ui.entries;
+package com.sakalti.create_re.foundation.config.ui.entries;
 
 import java.util.Locale;
 
-import com.simibubi.create_re.foundation.config.ui.ConfigScreen;
-import com.simibubi.create_re.foundation.gui.AllIcons;
-import com.simibubi.create_re.foundation.gui.Theme;
-import com.simibubi.create_re.foundation.gui.UIRenderHelper;
-import com.simibubi.create_re.foundation.gui.element.BoxElement;
-import com.simibubi.create_re.foundation.gui.element.DelegatedStencilElement;
-import com.simibubi.create_re.foundation.gui.element.TextStencilElement;
-import com.simibubi.create_re.foundation.gui.widget.BoxWidget;
+import com.sakalti.create_re.foundation.config.ui.ConfigScreen;
+import com.sakalti.create_re.foundation.gui.AllIcons;
+import com.sakalti.create_re.foundation.gui.Theme;
+import com.sakalti.create_re.foundation.gui.UIRenderHelper;
+import com.sakalti.create_re.foundation.gui.element.BoxElement;
+import com.sakalti.create_re.foundation.gui.element.DelegatedStencilElement;
+import com.sakalti.create_re.foundation.gui.element.TextStencilElement;
+import com.sakalti.create_re.foundation.gui.widget.BoxWidget;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;

@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.networking;
+package com.sakalti.create_re.foundation.networking;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraftforge.network.NetworkEvent.Context;

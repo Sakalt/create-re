@@ -1,9 +1,9 @@
-package com.simibubi.create_re.foundation.item.render;
+package com.sakalti.create_re.foundation.item.render;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create_re.foundation.render.RenderTypes;
-import com.simibubi.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.foundation.render.RenderTypes;
+import com.sakalti.create_re.foundation.utility.Iterate;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.MultiBufferSource;

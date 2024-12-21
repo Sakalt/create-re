@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.equipment.armor;
+package com.sakalti.create_re.content.equipment.armor;
 
-import com.simibubi.create_re.content.kinetics.base.SingleRotatingVisual;
+import com.sakalti.create_re.content.kinetics.base.SingleRotatingVisual;
 
 import dev.engine_room.flywheel.api.model.Model;
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;

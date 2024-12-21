@@ -1,31 +1,31 @@
-package com.simibubi.create_re.content.logistics.funnel;
+package com.sakalti.create_re.content.logistics.funnel;
 
 import java.lang.ref.WeakReference;
 import java.util.List;
 
 import org.apache.commons.lang3.mutable.MutableBoolean;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllPackets;
-import com.simibubi.create_re.AllSoundEvents;
-import com.simibubi.create_re.content.equipment.goggles.IHaveHoveringInformation;
-import com.simibubi.create_re.content.kinetics.belt.BeltBlockEntity;
-import com.simibubi.create_re.content.kinetics.belt.BeltHelper;
-import com.simibubi.create_re.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
-import com.simibubi.create_re.content.kinetics.belt.transport.TransportedItemStack;
-import com.simibubi.create_re.content.logistics.funnel.BeltFunnelBlock.Shape;
-import com.simibubi.create_re.foundation.advancement.AllAdvancements;
-import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.inventory.VersionedInventoryTrackerBehaviour;
-import com.simibubi.create_re.foundation.item.ItemHelper.ExtractionCountMode;
-import com.simibubi.create_re.foundation.utility.BlockFace;
-import com.simibubi.create_re.foundation.utility.VecHelper;
-import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
-import com.simibubi.create_re.foundation.utility.animation.LerpedFloat.Chaser;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllPackets;
+import com.sakalti.create_re.AllSoundEvents;
+import com.sakalti.create_re.content.equipment.goggles.IHaveHoveringInformation;
+import com.sakalti.create_re.content.kinetics.belt.BeltBlockEntity;
+import com.sakalti.create_re.content.kinetics.belt.BeltHelper;
+import com.sakalti.create_re.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
+import com.sakalti.create_re.content.kinetics.belt.transport.TransportedItemStack;
+import com.sakalti.create_re.content.logistics.funnel.BeltFunnelBlock.Shape;
+import com.sakalti.create_re.foundation.advancement.AllAdvancements;
+import com.sakalti.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.inventory.VersionedInventoryTrackerBehaviour;
+import com.sakalti.create_re.foundation.item.ItemHelper.ExtractionCountMode;
+import com.sakalti.create_re.foundation.utility.BlockFace;
+import com.sakalti.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.foundation.utility.animation.LerpedFloat;
+import com.sakalti.create_re.foundation.utility.animation.LerpedFloat.Chaser;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
 
 import dev.engine_room.flywheel.lib.visualization.VisualizationHelper;
 import net.minecraft.core.BlockPos;

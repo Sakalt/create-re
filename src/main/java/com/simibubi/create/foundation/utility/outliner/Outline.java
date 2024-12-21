@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.utility.outliner;
+package com.sakalti.create_re.foundation.utility.outliner;
 
 import java.util.Optional;
 
@@ -8,12 +8,12 @@ import org.joml.Matrix3f;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create_re.AllSpecialTextures;
-import com.simibubi.create_re.foundation.render.RenderTypes;
-import com.simibubi.create_re.foundation.render.SuperRenderTypeBuffer;
-import com.simibubi.create_re.foundation.utility.AngleHelper;
-import com.simibubi.create_re.foundation.utility.Color;
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.AllSpecialTextures;
+import com.sakalti.create_re.foundation.render.RenderTypes;
+import com.sakalti.create_re.foundation.render.SuperRenderTypeBuffer;
+import com.sakalti.create_re.foundation.utility.AngleHelper;
+import com.sakalti.create_re.foundation.utility.Color;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import dev.engine_room.flywheel.lib.transform.TransformStack;
 import net.minecraft.client.renderer.LightTexture;

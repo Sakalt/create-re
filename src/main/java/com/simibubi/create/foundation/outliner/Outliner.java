@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.outliner;
+package com.sakalti.create_re.foundation.outliner;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -7,10 +7,10 @@ import java.util.Map;
 import java.util.Optional;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBox;
-import com.simibubi.create_re.foundation.outliner.LineOutline.EndChasingLineOutline;
-import com.simibubi.create_re.foundation.outliner.Outline.OutlineParams;
-import com.simibubi.create_re.foundation.render.SuperRenderTypeBuffer;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.ValueBox;
+import com.sakalti.create_re.foundation.outliner.LineOutline.EndChasingLineOutline;
+import com.sakalti.create_re.foundation.outliner.Outline.OutlineParams;
+import com.sakalti.create_re.foundation.render.SuperRenderTypeBuffer;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.Mth;

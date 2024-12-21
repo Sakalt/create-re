@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.recipe;
+package com.sakalti.create_re.foundation.recipe;
 
 import java.util.Collections;
 import java.util.List;
@@ -20,7 +20,7 @@ import net.minecraft.world.level.Level;
  * conditions can be split off into an initial search for caching intermediate
  * results.
  * 
- * @author simibubi
+ * @author sakalti
  *
  */
 public class RecipeFinder {

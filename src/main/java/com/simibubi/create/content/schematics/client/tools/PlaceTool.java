@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.schematics.client.tools;
+package com.sakalti.create_re.content.schematics.client.tools;
 
 public class PlaceTool extends SchematicToolBase {
 

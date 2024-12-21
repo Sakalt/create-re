@@ -1,14 +1,14 @@
-package com.simibubi.create_re.foundation.block.connected;
+package com.sakalti.create_re.foundation.block.connected;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import com.simibubi.create_re.content.decoration.copycat.CopycatBlock;
-import com.simibubi.create_re.foundation.block.connected.ConnectedTextureBehaviour.CTContext;
-import com.simibubi.create_re.foundation.model.BakedModelWrapperWithData;
-import com.simibubi.create_re.foundation.model.BakedQuadHelper;
-import com.simibubi.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.content.decoration.copycat.CopycatBlock;
+import com.sakalti.create_re.foundation.block.connected.ConnectedTextureBehaviour.CTContext;
+import com.sakalti.create_re.foundation.model.BakedModelWrapperWithData;
+import com.sakalti.create_re.foundation.model.BakedQuadHelper;
+import com.sakalti.create_re.foundation.utility.Iterate;
 
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.block.model.BakedQuad;

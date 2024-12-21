@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.trains.track;
+package com.sakalti.create_re.content.trains.track;
 
-import com.simibubi.create_re.foundation.blockEntity.SyncedBlockEntity;
+import com.sakalti.create_re.foundation.blockEntity.SyncedBlockEntity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntityType;

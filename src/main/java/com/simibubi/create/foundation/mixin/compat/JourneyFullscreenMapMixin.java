@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.mixin.compat;
+package com.sakalti.create_re.foundation.mixin.compat;
 
 import java.awt.geom.Point2D;
 
@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.At.Shift;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import com.simibubi.create_re.compat.trainmap.JourneyTrainMap;
+import com.sakalti.create_re.compat.trainmap.JourneyTrainMap;
 
 import journeymap.client.render.map.GridRenderer;
 import journeymap.client.ui.fullscreen.Fullscreen;

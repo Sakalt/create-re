@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.processing.sequenced;
+package com.sakalti.create_re.content.processing.sequenced;
 
-import com.simibubi.create_re.foundation.utility.Color;
+import com.sakalti.create_re.foundation.utility.Color;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.item.Item;

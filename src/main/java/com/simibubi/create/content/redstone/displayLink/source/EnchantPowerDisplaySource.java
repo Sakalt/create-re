@@ -1,8 +1,8 @@
-package com.simibubi.create_re.content.redstone.displayLink.source;
+package com.sakalti.create_re.content.redstone.displayLink.source;
 
-import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkContext;
-import com.simibubi.create_re.content.redstone.displayLink.target.DisplayTargetStats;
-import com.simibubi.create_re.foundation.utility.Components;
+import com.sakalti.create_re.content.redstone.displayLink.DisplayLinkContext;
+import com.sakalti.create_re.content.redstone.displayLink.target.DisplayTargetStats;
+import com.sakalti.create_re.foundation.utility.Components;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.MutableComponent;

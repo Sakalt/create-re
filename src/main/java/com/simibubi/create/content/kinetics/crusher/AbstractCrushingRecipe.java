@@ -1,8 +1,8 @@
-package com.simibubi.create_re.content.kinetics.crusher;
+package com.sakalti.create_re.content.kinetics.crusher;
 
-import com.simibubi.create_re.content.processing.recipe.ProcessingRecipe;
-import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
-import com.simibubi.create_re.foundation.recipe.IRecipeTypeInfo;
+import com.sakalti.create_re.content.processing.recipe.ProcessingRecipe;
+import com.sakalti.create_re.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
+import com.sakalti.create_re.foundation.recipe.IRecipeTypeInfo;
 
 import net.minecraftforge.items.wrapper.RecipeWrapper;
 

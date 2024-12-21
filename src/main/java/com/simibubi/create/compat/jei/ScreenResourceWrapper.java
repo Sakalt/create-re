@@ -1,6 +1,6 @@
-package com.simibubi.create_re.compat.jei;
+package com.sakalti.create_re.compat.jei;
 
-import com.simibubi.create_re.foundation.gui.AllGuiTextures;
+import com.sakalti.create_re.foundation.gui.AllGuiTextures;
 
 import mezz.jei.api.gui.drawable.IDrawable;
 import net.minecraft.client.gui.GuiGraphics;

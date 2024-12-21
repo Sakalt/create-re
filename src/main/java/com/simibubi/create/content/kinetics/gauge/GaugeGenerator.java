@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.kinetics.gauge;
+package com.sakalti.create_re.content.kinetics.gauge;
 
-import com.simibubi.create_re.foundation.data.DirectionalAxisBlockStateGen;
+import com.sakalti.create_re.foundation.data.DirectionalAxisBlockStateGen;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 

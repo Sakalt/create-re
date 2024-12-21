@@ -1,10 +1,10 @@
-package com.simibubi.create_re.foundation.data;
+package com.sakalti.create_re.foundation.data;
 
 import java.util.stream.Stream;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import com.simibubi.create_re.foundation.data.recipe.Mods;
+import com.sakalti.create_re.foundation.data.recipe.Mods;
 
 import net.minecraft.world.item.crafting.Ingredient;
 

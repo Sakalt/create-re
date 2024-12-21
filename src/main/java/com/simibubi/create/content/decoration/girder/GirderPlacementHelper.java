@@ -1,14 +1,14 @@
-package com.simibubi.create_re.content.decoration.girder;
+package com.sakalti.create_re.content.decoration.girder;
 
 import java.util.List;
 import java.util.function.Predicate;
 
 import com.google.common.base.Predicates;
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.content.equipment.extendoGrip.ExtendoGripItem;
-import com.simibubi.create_re.foundation.placement.IPlacementHelper;
-import com.simibubi.create_re.foundation.placement.PlacementOffset;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.content.equipment.extendoGrip.ExtendoGripItem;
+import com.sakalti.create_re.foundation.placement.IPlacementHelper;
+import com.sakalti.create_re.foundation.placement.PlacementOffset;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

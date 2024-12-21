@@ -1,8 +1,8 @@
-package com.simibubi.create_re.content.contraptions.bearing;
+package com.sakalti.create_re.content.contraptions.bearing;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
-import com.simibubi.create_re.foundation.block.IBE;
-import com.simibubi.create_re.foundation.utility.Couple;
+import com.sakalti.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.foundation.block.IBE;
+import com.sakalti.create_re.foundation.utility.Couple;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;

@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.kinetics.gauge;
+package com.sakalti.create_re.content.kinetics.gauge;
 
 import java.util.Arrays;
 
-import com.simibubi.create_re.AllShapes;
-import com.simibubi.create_re.foundation.utility.VoxelShaper;
+import com.sakalti.create_re.AllShapes;
+import com.sakalti.create_re.foundation.utility.VoxelShaper;
 
 import net.minecraft.core.Direction;
 import net.minecraft.world.phys.Vec3;

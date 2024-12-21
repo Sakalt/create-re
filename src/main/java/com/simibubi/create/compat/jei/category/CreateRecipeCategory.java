@@ -1,4 +1,4 @@
-package com.simibubi.create_re.compat.jei.category;
+package com.sakalti.create_re.compat.jei.category;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,12 +10,12 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import org.jetbrains.annotations.NotNull;
 
-import com.simibubi.create_re.AllFluids;
-import com.simibubi.create_re.content.fluids.potion.PotionFluidHandler;
-import com.simibubi.create_re.content.processing.recipe.ProcessingOutput;
-import com.simibubi.create_re.foundation.gui.AllGuiTextures;
-import com.simibubi.create_re.foundation.utility.Components;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.AllFluids;
+import com.sakalti.create_re.content.fluids.potion.PotionFluidHandler;
+import com.sakalti.create_re.content.processing.recipe.ProcessingOutput;
+import com.sakalti.create_re.foundation.gui.AllGuiTextures;
+import com.sakalti.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import mezz.jei.api.forge.ForgeTypes;
 import mezz.jei.api.gui.drawable.IDrawable;

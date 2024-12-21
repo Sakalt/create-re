@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.redstone.link.controller;
+package com.sakalti.create_re.content.redstone.link.controller;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;

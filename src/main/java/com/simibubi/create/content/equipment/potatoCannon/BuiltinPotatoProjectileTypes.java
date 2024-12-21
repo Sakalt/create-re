@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.equipment.potatoCannon;
+package com.sakalti.create_re.content.equipment.potatoCannon;
 
 import java.util.UUID;
 import java.util.function.BiPredicate;
@@ -7,10 +7,10 @@ import java.util.function.Supplier;
 
 import com.mojang.authlib.GameProfile;
 import com.mojang.datafixers.util.Pair;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.foundation.mixin.accessor.FallingBlockEntityAccessor;
-import com.simibubi.create_re.foundation.utility.WorldAttached;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.foundation.mixin.accessor.FallingBlockEntityAccessor;
+import com.sakalti.create_re.foundation.utility.WorldAttached;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

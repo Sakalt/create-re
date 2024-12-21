@@ -1,10 +1,10 @@
-package com.simibubi.create_re.content.kinetics.transmission;
+package com.sakalti.create_re.content.kinetics.transmission;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
-import com.simibubi.create_re.content.kinetics.RotationPropagator;
-import com.simibubi.create_re.content.kinetics.base.AbstractEncasedShaftBlock;
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create_re.foundation.block.IBE;
+import com.sakalti.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.content.kinetics.RotationPropagator;
+import com.sakalti.create_re.content.kinetics.base.AbstractEncasedShaftBlock;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntity;
+import com.sakalti.create_re.foundation.block.IBE;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;

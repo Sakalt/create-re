@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.kinetics.transmission.sequencer;
+package com.sakalti.create_re.content.kinetics.transmission.sequencer;
 
 import java.util.Vector;
 
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntity;
+import com.sakalti.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;

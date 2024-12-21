@@ -1,12 +1,12 @@
-package com.simibubi.create_re.content.kinetics.belt;
+package com.sakalti.create_re.content.kinetics.belt;
 
 import static net.minecraft.world.level.block.Block.box;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import com.simibubi.create_re.AllShapes;
-import com.simibubi.create_re.foundation.utility.VoxelShaper;
+import com.sakalti.create_re.AllShapes;
+import com.sakalti.create_re.foundation.utility.VoxelShaper;
 
 import net.minecraft.core.Direction;
 import net.minecraft.core.Direction.Axis;

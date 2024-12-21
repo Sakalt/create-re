@@ -1,21 +1,21 @@
-package com.simibubi.create_re.content.kinetics.belt.item;
+package com.sakalti.create_re.content.kinetics.belt.item;
 
 import java.util.LinkedList;
 import java.util.List;
 
 import javax.annotation.Nonnull;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create_re.content.kinetics.belt.BeltBlock;
-import com.simibubi.create_re.content.kinetics.belt.BeltPart;
-import com.simibubi.create_re.content.kinetics.belt.BeltSlope;
-import com.simibubi.create_re.content.kinetics.simpleRelays.AbstractSimpleShaftBlock;
-import com.simibubi.create_re.content.kinetics.simpleRelays.ShaftBlock;
-import com.simibubi.create_re.foundation.advancement.AllAdvancements;
-import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
-import com.simibubi.create_re.foundation.utility.VecHelper;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntity;
+import com.sakalti.create_re.content.kinetics.belt.BeltBlock;
+import com.sakalti.create_re.content.kinetics.belt.BeltPart;
+import com.sakalti.create_re.content.kinetics.belt.BeltSlope;
+import com.sakalti.create_re.content.kinetics.simpleRelays.AbstractSimpleShaftBlock;
+import com.sakalti.create_re.content.kinetics.simpleRelays.ShaftBlock;
+import com.sakalti.create_re.foundation.advancement.AllAdvancements;
+import com.sakalti.create_re.foundation.block.ProperWaterloggedBlock;
+import com.sakalti.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

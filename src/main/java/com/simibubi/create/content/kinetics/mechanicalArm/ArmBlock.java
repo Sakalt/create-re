@@ -1,14 +1,14 @@
-package com.simibubi.create_re.content.kinetics.mechanicalArm;
+package com.sakalti.create_re.content.kinetics.mechanicalArm;
 
 import org.apache.commons.lang3.mutable.MutableBoolean;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.AllShapes;
-import com.simibubi.create_re.content.kinetics.base.KineticBlock;
-import com.simibubi.create_re.content.kinetics.mechanicalArm.ArmBlockEntity.Phase;
-import com.simibubi.create_re.content.kinetics.simpleRelays.ICogWheel;
-import com.simibubi.create_re.foundation.block.IBE;
+import com.sakalti.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.AllShapes;
+import com.sakalti.create_re.content.kinetics.base.KineticBlock;
+import com.sakalti.create_re.content.kinetics.mechanicalArm.ArmBlockEntity.Phase;
+import com.sakalti.create_re.content.kinetics.simpleRelays.ICogWheel;
+import com.sakalti.create_re.foundation.block.IBE;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

@@ -1,6 +1,6 @@
-package com.simibubi.create_re.compat.curios;
+package com.sakalti.create_re.compat.curios;
 
-import com.simibubi.create_re.AllItems;
+import com.sakalti.create_re.AllItems;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.geom.builders.LayerDefinition;

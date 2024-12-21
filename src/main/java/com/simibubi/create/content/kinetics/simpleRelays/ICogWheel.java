@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.kinetics.simpleRelays;
+package com.sakalti.create_re.content.kinetics.simpleRelays;
 
-import com.simibubi.create_re.content.kinetics.base.IRotate;
+import com.sakalti.create_re.content.kinetics.base.IRotate;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;

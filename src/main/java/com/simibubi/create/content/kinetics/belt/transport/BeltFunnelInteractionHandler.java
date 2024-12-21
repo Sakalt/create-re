@@ -1,12 +1,12 @@
-package com.simibubi.create_re.content.kinetics.belt.transport;
+package com.sakalti.create_re.content.kinetics.belt.transport;
 
-import com.simibubi.create_re.content.kinetics.belt.BeltHelper;
-import com.simibubi.create_re.content.logistics.funnel.BeltFunnelBlock;
-import com.simibubi.create_re.content.logistics.funnel.BeltFunnelBlock.Shape;
-import com.simibubi.create_re.content.logistics.funnel.FunnelBlockEntity;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
-import com.simibubi.create_re.foundation.item.ItemHelper.ExtractionCountMode;
+import com.sakalti.create_re.content.kinetics.belt.BeltHelper;
+import com.sakalti.create_re.content.logistics.funnel.BeltFunnelBlock;
+import com.sakalti.create_re.content.logistics.funnel.BeltFunnelBlock.Shape;
+import com.sakalti.create_re.content.logistics.funnel.FunnelBlockEntity;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
+import com.sakalti.create_re.foundation.item.ItemHelper.ExtractionCountMode;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.trains.graph;
+package com.sakalti.create_re.content.trains.graph;
 
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.content.trains.signal.TrackEdgePoint;
-import com.simibubi.create_re.foundation.utility.Couple;
-import com.simibubi.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.content.trains.signal.TrackEdgePoint;
+import com.sakalti.create_re.foundation.utility.Couple;
+import com.sakalti.create_re.foundation.utility.Iterate;
 
 public class EdgePointManager {
 

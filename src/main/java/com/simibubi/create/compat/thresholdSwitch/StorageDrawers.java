@@ -1,7 +1,7 @@
-package com.simibubi.create_re.compat.thresholdSwitch;
+package com.sakalti.create_re.compat.thresholdSwitch;
 
-import com.simibubi.create_re.compat.Mods;
-import com.simibubi.create_re.foundation.utility.RegisteredObjects;
+import com.sakalti.create_re.compat.Mods;
+import com.sakalti.create_re.foundation.utility.RegisteredObjects;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.items.IItemHandler;

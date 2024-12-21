@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.schematics;
+package com.sakalti.create_re.content.schematics;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -13,16 +13,16 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.content.schematics.SchematicExport.SchematicExportResult;
-import com.simibubi.create_re.content.schematics.table.SchematicTableBlockEntity;
-import com.simibubi.create_re.foundation.utility.Components;
-import com.simibubi.create_re.foundation.utility.FilesHelper;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
-import com.simibubi.create_re.infrastructure.config.CSchematics;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.content.schematics.SchematicExport.SchematicExportResult;
+import com.sakalti.create_re.content.schematics.table.SchematicTableBlockEntity;
+import com.sakalti.create_re.foundation.utility.Components;
+import com.sakalti.create_re.foundation.utility.FilesHelper;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.infrastructure.config.CSchematics;
 
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.minecraft.ChatFormatting;

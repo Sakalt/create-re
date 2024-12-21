@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.kinetics.mechanicalArm;
+package com.sakalti.create_re.content.kinetics.mechanicalArm;
 
 import java.util.ArrayList;
 import java.util.HashMap;

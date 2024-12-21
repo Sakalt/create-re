@@ -1,11 +1,11 @@
-package com.simibubi.create_re.compat.computercraft.implementation.peripherals;
+package com.sakalti.create_re.compat.computercraft.implementation.peripherals;
 
 import org.jetbrains.annotations.NotNull;
 
-import com.simibubi.create_re.content.kinetics.transmission.sequencer.Instruction;
-import com.simibubi.create_re.content.kinetics.transmission.sequencer.InstructionSpeedModifiers;
-import com.simibubi.create_re.content.kinetics.transmission.sequencer.SequencedGearshiftBlockEntity;
-import com.simibubi.create_re.content.kinetics.transmission.sequencer.SequencerInstructions;
+import com.sakalti.create_re.content.kinetics.transmission.sequencer.Instruction;
+import com.sakalti.create_re.content.kinetics.transmission.sequencer.InstructionSpeedModifiers;
+import com.sakalti.create_re.content.kinetics.transmission.sequencer.SequencedGearshiftBlockEntity;
+import com.sakalti.create_re.content.kinetics.transmission.sequencer.SequencerInstructions;
 
 import dan200.computercraft.api.lua.IArguments;
 import dan200.computercraft.api.lua.LuaException;

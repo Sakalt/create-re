@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.legacy;
+package com.sakalti.create_re.content.legacy;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.util.Mth;

@@ -1,7 +1,7 @@
-package com.simibubi.create_re.content.trains.schedule;
+package com.sakalti.create_re.content.trains.schedule;
 
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.foundation.networking.SimplePacketBase;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;

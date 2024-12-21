@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.equipment.toolbox;
+package com.sakalti.create_re.content.equipment.toolbox;
 
-import static com.simibubi.create_re.content.equipment.toolbox.ToolboxInventory.STACKS_PER_COMPARTMENT;
+import static com.sakalti.create_re.content.equipment.toolbox.ToolboxInventory.STACKS_PER_COMPARTMENT;
 
-import com.simibubi.create_re.AllMenuTypes;
-import com.simibubi.create_re.foundation.gui.menu.MenuBase;
+import com.sakalti.create_re.AllMenuTypes;
+import com.sakalti.create_re.foundation.gui.menu.MenuBase;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;

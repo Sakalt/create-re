@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.recipe;
+package com.sakalti.create_re.foundation.recipe;
 
 import java.util.ArrayList;
 import java.util.List;

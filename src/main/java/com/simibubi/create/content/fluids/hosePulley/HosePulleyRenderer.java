@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.fluids.hosePulley;
+package com.sakalti.create_re.content.fluids.hosePulley;
 
-import com.simibubi.create_re.AllPartialModels;
-import com.simibubi.create_re.content.contraptions.pulley.AbstractPulleyRenderer;
-import com.simibubi.create_re.foundation.render.CachedBufferer;
-import com.simibubi.create_re.foundation.render.SuperByteBuffer;
+import com.sakalti.create_re.AllPartialModels;
+import com.sakalti.create_re.content.contraptions.pulley.AbstractPulleyRenderer;
+import com.sakalti.create_re.foundation.render.CachedBufferer;
+import com.sakalti.create_re.foundation.render.SuperByteBuffer;
 
 import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;

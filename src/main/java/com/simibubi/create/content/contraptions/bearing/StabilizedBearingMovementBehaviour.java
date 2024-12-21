@@ -1,22 +1,22 @@
-package com.simibubi.create_re.content.contraptions.bearing;
+package com.sakalti.create_re.content.contraptions.bearing;
 
 import javax.annotation.Nullable;
 
 import org.joml.Quaternionf;
 
 import com.mojang.math.Axis;
-import com.simibubi.create_re.AllPartialModels;
-import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity;
-import com.simibubi.create_re.content.contraptions.ControlledContraptionEntity;
-import com.simibubi.create_re.content.contraptions.OrientedContraptionEntity;
-import com.simibubi.create_re.content.contraptions.behaviour.MovementBehaviour;
-import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
-import com.simibubi.create_re.content.contraptions.render.ActorVisual;
-import com.simibubi.create_re.content.contraptions.render.ContraptionMatrices;
-import com.simibubi.create_re.foundation.render.CachedBufferer;
-import com.simibubi.create_re.foundation.render.SuperByteBuffer;
-import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
-import com.simibubi.create_re.foundation.virtualWorld.VirtualRenderWorld;
+import com.sakalti.create_re.AllPartialModels;
+import com.sakalti.create_re.content.contraptions.AbstractContraptionEntity;
+import com.sakalti.create_re.content.contraptions.ControlledContraptionEntity;
+import com.sakalti.create_re.content.contraptions.OrientedContraptionEntity;
+import com.sakalti.create_re.content.contraptions.behaviour.MovementBehaviour;
+import com.sakalti.create_re.content.contraptions.behaviour.MovementContext;
+import com.sakalti.create_re.content.contraptions.render.ActorVisual;
+import com.sakalti.create_re.content.contraptions.render.ContraptionMatrices;
+import com.sakalti.create_re.foundation.render.CachedBufferer;
+import com.sakalti.create_re.foundation.render.SuperByteBuffer;
+import com.sakalti.create_re.foundation.utility.AnimationTickHolder;
+import com.sakalti.create_re.foundation.virtualWorld.VirtualRenderWorld;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
 import dev.engine_room.flywheel.api.visualization.VisualizationManager;

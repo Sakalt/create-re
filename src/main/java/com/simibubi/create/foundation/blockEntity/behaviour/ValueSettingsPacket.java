@@ -1,10 +1,10 @@
-package com.simibubi.create_re.foundation.blockEntity.behaviour;
+package com.sakalti.create_re.foundation.blockEntity.behaviour;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueSettingsBehaviour.ValueSettings;
-import com.simibubi.create_re.foundation.networking.BlockEntityConfigurationPacket;
+import com.sakalti.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.ValueSettingsBehaviour.ValueSettings;
+import com.sakalti.create_re.foundation.networking.BlockEntityConfigurationPacket;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.mixin;
+package com.sakalti.create_re.foundation.mixin;
 
 import java.util.Collection;
 

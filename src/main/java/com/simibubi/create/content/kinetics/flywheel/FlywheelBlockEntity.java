@@ -1,8 +1,8 @@
-package com.simibubi.create_re.content.kinetics.flywheel;
+package com.sakalti.create_re.content.kinetics.flywheel;
 
-import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
-import com.simibubi.create_re.foundation.utility.animation.LerpedFloat.Chaser;
+import com.sakalti.create_re.content.kinetics.base.KineticBlockEntity;
+import com.sakalti.create_re.foundation.utility.animation.LerpedFloat;
+import com.sakalti.create_re.foundation.utility.animation.LerpedFloat.Chaser;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

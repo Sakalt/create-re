@@ -1,8 +1,8 @@
-package com.simibubi.create_re.content.kinetics.mixer;
+package com.sakalti.create_re.content.kinetics.mixer;
 
-import com.simibubi.create_re.AllRecipeTypes;
-import com.simibubi.create_re.content.processing.basin.BasinRecipe;
-import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
+import com.sakalti.create_re.AllRecipeTypes;
+import com.sakalti.create_re.content.processing.basin.BasinRecipe;
+import com.sakalti.create_re.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
 
 public class MixingRecipe extends BasinRecipe {
 

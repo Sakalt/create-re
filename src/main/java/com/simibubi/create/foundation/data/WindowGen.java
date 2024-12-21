@@ -1,21 +1,21 @@
-package com.simibubi.create_re.foundation.data;
+package com.sakalti.create_re.foundation.data;
 
-import static com.simibubi.create_re.Create.REGISTRATE;
-import static com.simibubi.create_re.foundation.data.CreateRegistrate.connectedTextures;
+import static com.sakalti.create_re.Create.REGISTRATE;
+import static com.sakalti.create_re.foundation.data.CreateRegistrate.connectedTextures;
 
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-import com.simibubi.create_re.AllSpriteShifts;
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.content.decoration.palettes.ConnectedGlassBlock;
-import com.simibubi.create_re.content.decoration.palettes.ConnectedGlassPaneBlock;
-import com.simibubi.create_re.content.decoration.palettes.GlassPaneBlock;
-import com.simibubi.create_re.content.decoration.palettes.WindowBlock;
-import com.simibubi.create_re.foundation.block.connected.CTSpriteShiftEntry;
-import com.simibubi.create_re.foundation.block.connected.ConnectedTextureBehaviour;
-import com.simibubi.create_re.foundation.block.connected.GlassPaneCTBehaviour;
-import com.simibubi.create_re.foundation.block.connected.HorizontalCTBehaviour;
+import com.sakalti.create_re.AllSpriteShifts;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.content.decoration.palettes.ConnectedGlassBlock;
+import com.sakalti.create_re.content.decoration.palettes.ConnectedGlassPaneBlock;
+import com.sakalti.create_re.content.decoration.palettes.GlassPaneBlock;
+import com.sakalti.create_re.content.decoration.palettes.WindowBlock;
+import com.sakalti.create_re.foundation.block.connected.CTSpriteShiftEntry;
+import com.sakalti.create_re.foundation.block.connected.ConnectedTextureBehaviour;
+import com.sakalti.create_re.foundation.block.connected.GlassPaneCTBehaviour;
+import com.sakalti.create_re.foundation.block.connected.HorizontalCTBehaviour;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 import com.tterrag.registrate.providers.RegistrateRecipeProvider;

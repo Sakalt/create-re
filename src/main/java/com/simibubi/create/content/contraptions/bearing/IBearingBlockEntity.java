@@ -1,8 +1,8 @@
-package com.simibubi.create_re.content.contraptions.bearing;
+package com.sakalti.create_re.content.contraptions.bearing;
 
-import com.simibubi.create_re.content.contraptions.DirectionalExtenderScrollOptionSlot;
-import com.simibubi.create_re.content.contraptions.IControlContraption;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBoxTransform;
+import com.sakalti.create_re.content.contraptions.DirectionalExtenderScrollOptionSlot;
+import com.sakalti.create_re.content.contraptions.IControlContraption;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.ValueBoxTransform;
 
 import net.minecraft.core.Direction.Axis;
 

@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.utility;
+package com.sakalti.create_re.foundation.utility;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -8,7 +8,7 @@ import java.util.function.UnaryOperator;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create_re.AllBlockEntityTypes;
+import com.sakalti.create_re.AllBlockEntityTypes;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;

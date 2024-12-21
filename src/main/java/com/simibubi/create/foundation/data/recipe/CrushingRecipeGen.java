@@ -1,26 +1,26 @@
-package com.simibubi.create_re.foundation.data.recipe;
+package com.sakalti.create_re.foundation.data.recipe;
 
-import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.ALUMINUM;
-import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.LEAD;
-import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.NICKEL;
-import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.OSMIUM;
-import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.PLATINUM;
-import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.QUICKSILVER;
-import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.SILVER;
-import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.TIN;
-import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.URANIUM;
+import static com.sakalti.create_re.foundation.data.recipe.CompatMetals.ALUMINUM;
+import static com.sakalti.create_re.foundation.data.recipe.CompatMetals.LEAD;
+import static com.sakalti.create_re.foundation.data.recipe.CompatMetals.NICKEL;
+import static com.sakalti.create_re.foundation.data.recipe.CompatMetals.OSMIUM;
+import static com.sakalti.create_re.foundation.data.recipe.CompatMetals.PLATINUM;
+import static com.sakalti.create_re.foundation.data.recipe.CompatMetals.QUICKSILVER;
+import static com.sakalti.create_re.foundation.data.recipe.CompatMetals.SILVER;
+import static com.sakalti.create_re.foundation.data.recipe.CompatMetals.TIN;
+import static com.sakalti.create_re.foundation.data.recipe.CompatMetals.URANIUM;
 
 import java.util.function.Supplier;
 import java.util.function.UnaryOperator;
 
-import com.simibubi.create_re.AllBlocks;
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.AllRecipeTypes;
-import com.simibubi.create_re.AllTags;
-import com.simibubi.create_re.content.decoration.palettes.AllPaletteStoneTypes;
-import com.simibubi.create_re.content.processing.recipe.ProcessingRecipe;
-import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.AllBlocks;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.AllRecipeTypes;
+import com.sakalti.create_re.AllTags;
+import com.sakalti.create_re.content.decoration.palettes.AllPaletteStoneTypes;
+import com.sakalti.create_re.content.processing.recipe.ProcessingRecipe;
+import com.sakalti.create_re.content.processing.recipe.ProcessingRecipeBuilder;
+import com.sakalti.create_re.foundation.utility.Lang;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;

@@ -1,21 +1,21 @@
-package com.simibubi.create_re.content.contraptions.bearing;
+package com.sakalti.create_re.content.contraptions.bearing;
 
 import java.util.List;
 
-import com.simibubi.create_re.AllSoundEvents;
-import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity;
-import com.simibubi.create_re.content.contraptions.AssemblyException;
-import com.simibubi.create_re.content.contraptions.ControlledContraptionEntity;
-import com.simibubi.create_re.content.contraptions.IDisplayAssemblyExceptions;
-import com.simibubi.create_re.content.kinetics.base.GeneratingKineticBlockEntity;
-import com.simibubi.create_re.content.kinetics.transmission.sequencer.SequencerInstructions;
-import com.simibubi.create_re.foundation.advancement.AllAdvancements;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.scrollValue.ScrollOptionBehaviour;
-import com.simibubi.create_re.foundation.item.TooltipHelper;
-import com.simibubi.create_re.foundation.utility.AngleHelper;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.foundation.utility.ServerSpeedProvider;
+import com.sakalti.create_re.AllSoundEvents;
+import com.sakalti.create_re.content.contraptions.AbstractContraptionEntity;
+import com.sakalti.create_re.content.contraptions.AssemblyException;
+import com.sakalti.create_re.content.contraptions.ControlledContraptionEntity;
+import com.sakalti.create_re.content.contraptions.IDisplayAssemblyExceptions;
+import com.sakalti.create_re.content.kinetics.base.GeneratingKineticBlockEntity;
+import com.sakalti.create_re.content.kinetics.transmission.sequencer.SequencerInstructions;
+import com.sakalti.create_re.foundation.advancement.AllAdvancements;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.scrollValue.ScrollOptionBehaviour;
+import com.sakalti.create_re.foundation.item.TooltipHelper;
+import com.sakalti.create_re.foundation.utility.AngleHelper;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.foundation.utility.ServerSpeedProvider;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

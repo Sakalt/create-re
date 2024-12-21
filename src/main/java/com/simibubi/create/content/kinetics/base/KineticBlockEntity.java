@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.kinetics.base;
+package com.sakalti.create_re.content.kinetics.base;
 
 import static net.minecraft.ChatFormatting.GOLD;
 import static net.minecraft.ChatFormatting.GRAY;
@@ -7,25 +7,25 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.content.equipment.goggles.IHaveGoggleInformation;
-import com.simibubi.create_re.content.equipment.goggles.IHaveHoveringInformation;
-import com.simibubi.create_re.content.kinetics.BlockStressValues;
-import com.simibubi.create_re.content.kinetics.KineticNetwork;
-import com.simibubi.create_re.content.kinetics.RotationPropagator;
-import com.simibubi.create_re.content.kinetics.base.IRotate.SpeedLevel;
-import com.simibubi.create_re.content.kinetics.base.IRotate.StressImpact;
-import com.simibubi.create_re.content.kinetics.gearbox.GearboxBlock;
-import com.simibubi.create_re.content.kinetics.simpleRelays.ICogWheel;
-import com.simibubi.create_re.content.kinetics.transmission.sequencer.SequencedGearshiftBlockEntity.SequenceContext;
-import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create_re.foundation.item.TooltipHelper;
-import com.simibubi.create_re.foundation.item.TooltipHelper.Palette;
-import com.simibubi.create_re.foundation.sound.SoundScapes;
-import com.simibubi.create_re.foundation.sound.SoundScapes.AmbienceGroup;
-import com.simibubi.create_re.foundation.utility.Lang;
-import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.content.equipment.goggles.IHaveGoggleInformation;
+import com.sakalti.create_re.content.equipment.goggles.IHaveHoveringInformation;
+import com.sakalti.create_re.content.kinetics.BlockStressValues;
+import com.sakalti.create_re.content.kinetics.KineticNetwork;
+import com.sakalti.create_re.content.kinetics.RotationPropagator;
+import com.sakalti.create_re.content.kinetics.base.IRotate.SpeedLevel;
+import com.sakalti.create_re.content.kinetics.base.IRotate.StressImpact;
+import com.sakalti.create_re.content.kinetics.gearbox.GearboxBlock;
+import com.sakalti.create_re.content.kinetics.simpleRelays.ICogWheel;
+import com.sakalti.create_re.content.kinetics.transmission.sequencer.SequencedGearshiftBlockEntity.SequenceContext;
+import com.sakalti.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.item.TooltipHelper;
+import com.sakalti.create_re.foundation.item.TooltipHelper.Palette;
+import com.sakalti.create_re.foundation.sound.SoundScapes;
+import com.sakalti.create_re.foundation.sound.SoundScapes.AmbienceGroup;
+import com.sakalti.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.infrastructure.config.AllConfigs;
 
 import dev.engine_room.flywheel.lib.visualization.VisualizationHelper;
 import net.minecraft.ChatFormatting;

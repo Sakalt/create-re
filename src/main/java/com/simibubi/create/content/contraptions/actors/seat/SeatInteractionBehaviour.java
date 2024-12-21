@@ -1,8 +1,8 @@
-package com.simibubi.create_re.content.contraptions.actors.seat;
+package com.sakalti.create_re.content.contraptions.actors.seat;
 
-import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity;
-import com.simibubi.create_re.content.contraptions.Contraption;
-import com.simibubi.create_re.content.contraptions.behaviour.MovingInteractionBehaviour;
+import com.sakalti.create_re.content.contraptions.AbstractContraptionEntity;
+import com.sakalti.create_re.content.contraptions.Contraption;
+import com.sakalti.create_re.content.contraptions.behaviour.MovingInteractionBehaviour;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;

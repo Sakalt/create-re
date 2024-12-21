@@ -1,10 +1,10 @@
-package com.simibubi.create_re.foundation.data.recipe;
+package com.sakalti.create_re.foundation.data.recipe;
 
 import java.util.List;
 
-import com.simibubi.create_re.AllItems;
-import com.simibubi.create_re.AllRecipeTypes;
-import com.simibubi.create_re.AllTags;
+import com.sakalti.create_re.AllItems;
+import com.sakalti.create_re.AllRecipeTypes;
+import com.sakalti.create_re.AllTags;
 import com.tterrag.registrate.util.entry.ItemEntry;
 
 import net.minecraft.data.PackOutput;

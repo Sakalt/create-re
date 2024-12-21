@@ -1,8 +1,8 @@
-package com.simibubi.create_re.compat.computercraft;
+package com.sakalti.create_re.compat.computercraft;
 
-import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BehaviourType;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BehaviourType;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraftforge.common.capabilities.Capability;

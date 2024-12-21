@@ -1,8 +1,8 @@
-package com.simibubi.create_re.content.redstone.thresholdSwitch;
+package com.sakalti.create_re.content.redstone.thresholdSwitch;
 
-import com.simibubi.create_re.Create;
-import com.simibubi.create_re.foundation.data.SpecialBlockStateGen;
-import com.simibubi.create_re.foundation.utility.Lang;
+import com.sakalti.create_re.Create;
+import com.sakalti.create_re.foundation.data.SpecialBlockStateGen;
+import com.sakalti.create_re.foundation.utility.Lang;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 

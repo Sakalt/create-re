@@ -1,8 +1,8 @@
-package com.simibubi.create_re.foundation.blockEntity.behaviour.inventory;
+package com.sakalti.create_re.foundation.blockEntity.behaviour.inventory;
 
-import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BehaviourType;
-import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.sakalti.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BehaviourType;
+import com.sakalti.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
 
 import net.minecraftforge.items.IItemHandler;
 

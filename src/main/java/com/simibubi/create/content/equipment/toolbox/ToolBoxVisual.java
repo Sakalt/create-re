@@ -1,9 +1,9 @@
-package com.simibubi.create_re.content.equipment.toolbox;
+package com.sakalti.create_re.content.equipment.toolbox;
 
 import java.util.function.Consumer;
 
-import com.simibubi.create_re.AllPartialModels;
-import com.simibubi.create_re.foundation.utility.Iterate;
+import com.sakalti.create_re.AllPartialModels;
+import com.sakalti.create_re.foundation.utility.Iterate;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.instance.Instancer;

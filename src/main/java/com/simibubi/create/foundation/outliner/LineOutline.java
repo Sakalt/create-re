@@ -1,12 +1,12 @@
-package com.simibubi.create_re.foundation.outliner;
+package com.sakalti.create_re.foundation.outliner;
 
 import org.joml.Vector3d;
 import org.joml.Vector4f;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create_re.foundation.render.RenderTypes;
-import com.simibubi.create_re.foundation.render.SuperRenderTypeBuffer;
+import com.sakalti.create_re.foundation.render.RenderTypes;
+import com.sakalti.create_re.foundation.render.SuperRenderTypeBuffer;
 
 import net.minecraft.util.Mth;
 import net.minecraft.world.phys.Vec3;

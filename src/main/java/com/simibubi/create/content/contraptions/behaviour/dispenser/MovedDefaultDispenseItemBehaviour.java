@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.contraptions.behaviour.dispenser;
+package com.sakalti.create_re.content.contraptions.behaviour.dispenser;
 
-import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
+import com.sakalti.create_re.content.contraptions.behaviour.MovementContext;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

@@ -1,4 +1,4 @@
-package com.simibubi.create_re.content.kinetics.base;
+package com.sakalti.create_re.content.kinetics.base;
 
 import javax.annotation.Nullable;
 

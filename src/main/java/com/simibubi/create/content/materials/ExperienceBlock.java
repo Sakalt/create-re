@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.materials;
+package com.sakalti.create_re.content.materials;
 
-import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.sakalti.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;

@@ -1,4 +1,4 @@
-package com.simibubi.create_re.foundation.collision;
+package com.sakalti.create_re.foundation.collision;
 
 import static java.lang.Math.abs;
 import static java.lang.Math.signum;

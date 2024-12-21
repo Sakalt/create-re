@@ -1,6 +1,6 @@
-package com.simibubi.create_re.content.kinetics.gearbox;
+package com.sakalti.create_re.content.kinetics.gearbox;
 
-import com.simibubi.create_re.content.kinetics.base.DirectionalShaftHalvesBlockEntity;
+import com.sakalti.create_re.content.kinetics.base.DirectionalShaftHalvesBlockEntity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntityType;

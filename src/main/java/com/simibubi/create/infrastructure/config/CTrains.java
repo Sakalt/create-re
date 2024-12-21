@@ -1,6 +1,6 @@
-package com.simibubi.create_re.infrastructure.config;
+package com.sakalti.create_re.infrastructure.config;
 
-import com.simibubi.create_re.foundation.config.ConfigBase;
+import com.sakalti.create_re.foundation.config.ConfigBase;
 
 public class CTrains extends ConfigBase {
 
