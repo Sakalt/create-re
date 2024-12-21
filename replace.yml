@@ -1,0 +1,31 @@
+name: 置き換える
+
+on:
+  push:
+    branches:
+      - 1.21  # または任意のブランチ
+
+jobs:
+  replace-text:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: リポジトリのチェックアウト
+        uses: actions/checkout@v3
+
+      - name: ファイル内置き換え
+        run: |
+          # すべてのファイルを対象にして検索・置き換え
+          find . -type f \( -name "*.java" -or -name "*.txt" -or -name "*.md" -or -name "*.json" \) | while read file; do
+            sed -i 's/simibubi/sakalti/g' "$file"
+          done
+
+      - name: 変更をコミット
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add .
+          git commit -m "'置き換え"
+          git push https://github.com/${{ github.repository }}.git HEAD:${{ github.ref }} --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.SECRET_TOKEN }}
