@@ -3,7 +3,7 @@ name: undergardensをswamplandsに置き換える
 on:
   push:
     branches:
-      - 1.21  # または任意のブランチ
+      -　mc1.20.1/dev  # または任意のブランチ
 
 jobs:
   replace-text:
