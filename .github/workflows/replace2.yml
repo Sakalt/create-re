@@ -3,7 +3,7 @@ name: 置き換える
 on:
   push:
     branches:
-      -　main  # または任意のブランチ
+      -　"main"  # または任意のブランチ
 
 jobs:
   replace-text:
