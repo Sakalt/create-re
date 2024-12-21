@@ -17,7 +17,7 @@ jobs:
         run: mkdir -p src/main/java/com/sakalti/create_re
 
       - name: ファイルを移動
-        run: mv src/main/java/com/simibubi/create src/main/java/com/sakalti/create_re
+        run: mv src/main/java/com/sakalti/create_re/create src/main/java/com/sakalti/create_re
 
       - name: 変更をコミット
         run: |
