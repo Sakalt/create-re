@@ -13,9 +13,11 @@ jobs:
       - name: リポジトリのチェックアウト
         uses: actions/checkout@v3
 
-      - name: ファイル内のundergardensをswamplandsに置き換え
-        run: |
-          mv "src/main/java/com/simibubi/create" "src/main/java/com/sakalti/create_re"
+      - name: ターゲットディレクトリを作成
+        run: mkdir -p src/main/java/com/sakalti/create_re
+
+      - name: ファイルを移動
+        run: mv src/main/java/com/simibubi/create src/main/java/com/sakalti/create_re
 
       - name: 変更をコミット
         run: |
