@@ -1,7 +1,7 @@
 {
-  "parent": "create:block/connected_glass_pane/noside",
+  "parent": "create_re:block/connected_glass_pane/noside",
   "textures": {
     "edge": "minecraft:block/mangrove_planks",
-    "pane": "create:block/palettes/mangrove_window"
+    "pane": "create_re:block/palettes/mangrove_window"
   }
 }

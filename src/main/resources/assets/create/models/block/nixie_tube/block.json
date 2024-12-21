@@ -3,14 +3,14 @@
 	"loader": "forge:composite",
 	"parent": "block/block",
 	"textures": {
-		"0": "create:block/nixie_tube",
-		"particle": "create:block/nixie_tube"
+		"0": "create_re:block/nixie_tube",
+		"particle": "create_re:block/nixie_tube"
 	},
 	"children": {
 		"connectors": {
 			"render_type": "minecraft:solid",
 			"textures": {
-				"0": "create:block/nixie_tube"
+				"0": "create_re:block/nixie_tube"
 			},
 			"elements": [
 				{
@@ -46,7 +46,7 @@
 		"tubes": {
 			"render_type": "minecraft:translucent",
 			"textures": {
-				"0": "create:block/nixie_tube"
+				"0": "create_re:block/nixie_tube"
 			},
 			"elements": [
 				{

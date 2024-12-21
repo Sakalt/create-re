@@ -1,9 +1,9 @@
 {
   "values": [
-    "create:andesite_bars",
-    "create:brass_bars",
-    "create:copper_bars",
-    "create:industrial_iron_block",
+    "create_re:andesite_bars",
+    "create_re:brass_bars",
+    "create_re:copper_bars",
+    "create_re:industrial_iron_block",
     "minecraft:redstone_wire",
     "minecraft:redstone_torch",
     "minecraft:repeater",

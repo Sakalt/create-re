@@ -1,3 +1,3 @@
 {
-  "parent": "create:block/smart_chute/block"
+  "parent": "create_re:block/smart_chute/block"
 }

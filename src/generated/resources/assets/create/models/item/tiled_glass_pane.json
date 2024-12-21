@@ -1,7 +1,7 @@
 {
-  "parent": "create:item/pane",
+  "parent": "create_re:item/pane",
   "textures": {
     "edge": "minecraft:block/glass_pane_top",
-    "pane": "create:block/palettes/tiled_glass"
+    "pane": "create_re:block/palettes/tiled_glass"
   }
 }

@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.blockEntity;
+package com.simibubi.create_re.foundation.blockEntity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -19,7 +19,7 @@ public abstract class CachedRenderBBBlockEntity extends SyncedBlockEntity {
 	@OnlyIn(Dist.CLIENT)
 	public AABB getRenderBoundingBox() {
 		if (renderBoundingBox == null) {
-			renderBoundingBox = createRenderBoundingBox();
+			renderBoundingBox = create_reRenderBoundingBox();
 		}
 		return renderBoundingBox;
 	}
@@ -28,7 +28,7 @@ public abstract class CachedRenderBBBlockEntity extends SyncedBlockEntity {
 		renderBoundingBox = null;
 	}
 
-	protected AABB createRenderBoundingBox() {
+	protected AABB create_reRenderBoundingBox() {
 		return super.getRenderBoundingBox();
 	}
 

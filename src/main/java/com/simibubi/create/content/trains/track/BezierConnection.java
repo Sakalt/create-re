@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.track;
+package com.simibubi.create_re.content.trains.track;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -6,12 +6,12 @@ import java.util.Map;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.PoseStack.Pose;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.Pair;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.Pair;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import dev.engine_room.flywheel.lib.transform.TransformStack;
 import net.minecraft.core.BlockPos;
@@ -139,11 +139,11 @@ public class BezierConnection implements Iterable<BezierConnection.Segment> {
 	}
 
 	public BezierConnection(FriendlyByteBuf buffer) {
-		this(Couple.create(buffer::readBlockPos), Couple.create(() -> VecHelper.read(buffer)),
-			Couple.create(() -> VecHelper.read(buffer)), Couple.create(() -> VecHelper.read(buffer)),
+		this(Couple.create_re(buffer::readBlockPos), Couple.create_re(() -> VecHelper.read(buffer)),
+			Couple.create_re(() -> VecHelper.read(buffer)), Couple.create_re(() -> VecHelper.read(buffer)),
 			buffer.readBoolean(), buffer.readBoolean(), TrackMaterial.deserialize(buffer.readUtf()));
 		if (buffer.readBoolean())
-			smoothing = Couple.create(buffer::readVarInt);
+			smoothing = Couple.create_re(buffer::readVarInt);
 	}
 
 	public void write(FriendlyByteBuf buffer) {
@@ -527,7 +527,7 @@ public class BezierConnection implements Iterable<BezierConnection.Segment> {
 			boolean end = i == 0 || i == segmentCount;
 
 			SegmentAngles angles = bakedSegments[i] = new SegmentAngles();
-			Couple<Vec3> railOffsets = Couple.create(segment.position.add(segment.normal.scale(.965f)),
+			Couple<Vec3> railOffsets = Couple.create_re(segment.position.add(segment.normal.scale(.965f)),
 				segment.position.subtract(segment.normal.scale(.965f)));
 			Vec3 railMiddle = railOffsets.getFirst()
 				.add(railOffsets.getSecond())
@@ -544,7 +544,7 @@ public class BezierConnection implements Iterable<BezierConnection.Segment> {
 				.scale(.5);
 			Vec3 tieAngles = TrackRenderer.getModelAngles(segment.normal, railMiddle.subtract(prevMiddle));
 			angles.lightPosition = BlockPos.containing(railMiddle);
-			angles.railTransforms = Couple.create(null, null);
+			angles.railTransforms = Couple.create_re(null, null);
 
 			PoseStack poseStack = new PoseStack();
 			TransformStack.of(poseStack)
@@ -611,15 +611,15 @@ public class BezierConnection implements Iterable<BezierConnection.Segment> {
 				.scale(.5));
 
 			Couple<Couple<Vec3>> offsets =
-				Couple.create(Couple.create(leftTop, rightTop), Couple.create(leftBottom, rightBottom));
+				Couple.create_re(Couple.create_re(leftTop, rightTop), Couple.create_re(leftBottom, rightBottom));
 
 			if (previousOffsets == null) {
 				previousOffsets = offsets;
 				continue;
 			}
 
-			angles.beams = Couple.create(null, null);
-			angles.beamCaps = Couple.create(Couple.create(null, null), Couple.create(null, null));
+			angles.beams = Couple.create_re(null, null);
+			angles.beamCaps = Couple.create_re(Couple.create_re(null, null), Couple.create_re(null, null));
 			float scale = end ? 2.3f : 2.2f;
 
 			for (boolean first : Iterate.trueAndFalse) {

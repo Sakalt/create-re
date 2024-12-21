@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "create:zinc_ore"
+              "name": "create_re:zinc_ore"
             },
             {
               "type": "minecraft:item",
@@ -38,7 +38,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "create:raw_zinc"
+              "name": "create_re:raw_zinc"
             }
           ]
         }
@@ -46,5 +46,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/zinc_ore"
+  "random_sequence": "create_re:blocks/zinc_ore"
 }

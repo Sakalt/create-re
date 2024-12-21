@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "create:block/palettes/small_rose_quartz_tiles"
+    "all": "create_re:block/palettes/small_rose_quartz_tiles"
   }
 }

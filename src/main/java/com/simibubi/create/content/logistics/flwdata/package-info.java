@@ -1,5 +1,5 @@
 @ParametersAreNonnullByDefault @MethodsReturnNonnullByDefault
-package com.simibubi.create.content.logistics.flwdata;
+package com.simibubi.create_re.content.logistics.flwdata;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 

@@ -1,5 +1,5 @@
 {
-  "type": "create:mixing",
+  "type": "create_re:mixing",
   "ingredients": [
     {
       "item": "minecraft:andesite"
@@ -10,7 +10,7 @@
   ],
   "results": [
     {
-      "item": "create:andesite_alloy"
+      "item": "create_re:andesite_alloy"
     }
   ]
 }

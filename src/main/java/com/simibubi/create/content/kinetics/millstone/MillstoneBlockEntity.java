@@ -1,17 +1,17 @@
-package com.simibubi.create.content.kinetics.millstone;
+package com.simibubi.create_re.content.kinetics.millstone;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.item.ItemHelper;
-import com.simibubi.create.foundation.sound.SoundScapes;
-import com.simibubi.create.foundation.sound.SoundScapes.AmbienceGroup;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllRecipeTypes;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.item.ItemHelper;
+import com.simibubi.create_re.foundation.sound.SoundScapes;
+import com.simibubi.create_re.foundation.sound.SoundScapes.AmbienceGroup;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

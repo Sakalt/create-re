@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:mechanical_press"
+          "name": "create_re:mechanical_press"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/mechanical_press"
+  "random_sequence": "create_re:blocks/mechanical_press"
 }

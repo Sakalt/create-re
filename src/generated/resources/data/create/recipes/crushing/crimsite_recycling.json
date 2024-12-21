@@ -1,15 +1,15 @@
 {
-  "type": "create:crushing",
+  "type": "create_re:crushing",
   "ingredients": [
     {
-      "tag": "create:stone_types/crimsite"
+      "tag": "create_re:stone_types/crimsite"
     }
   ],
   "processingTime": 250,
   "results": [
     {
       "chance": 0.4,
-      "item": "create:crushed_raw_iron"
+      "item": "create_re:crushed_raw_iron"
     },
     {
       "chance": 0.4,

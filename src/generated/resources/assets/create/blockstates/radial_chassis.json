@@ -2,7 +2,7 @@
   "multipart": [
     {
       "apply": {
-        "model": "create:block/radial_chassis/base",
+        "model": "create_re:block/radial_chassis/base",
         "x": 90,
         "y": 90
       },
@@ -12,7 +12,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis/base"
+        "model": "create_re:block/radial_chassis/base"
       },
       "when": {
         "axis": "y"
@@ -20,7 +20,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis/base",
+        "model": "create_re:block/radial_chassis/base",
         "x": 90
       },
       "when": {
@@ -29,7 +29,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis_side_x_sticky",
+        "model": "create_re:block/radial_chassis_side_x_sticky",
         "x": 180
       },
       "when": {
@@ -39,7 +39,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis_side_y_sticky"
+        "model": "create_re:block/radial_chassis_side_y_sticky"
       },
       "when": {
         "axis": "y",
@@ -48,7 +48,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis_side_x_sticky",
+        "model": "create_re:block/radial_chassis_side_x_sticky",
         "x": 180,
         "y": 90
       },
@@ -59,7 +59,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis_side_x",
+        "model": "create_re:block/radial_chassis_side_x",
         "x": 180
       },
       "when": {
@@ -69,7 +69,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis_side_y"
+        "model": "create_re:block/radial_chassis_side_y"
       },
       "when": {
         "axis": "y",
@@ -78,7 +78,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis_side_x",
+        "model": "create_re:block/radial_chassis_side_x",
         "x": 180,
         "y": 90
       },
@@ -89,7 +89,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis_side_x_sticky",
+        "model": "create_re:block/radial_chassis_side_x_sticky",
         "x": 90
       },
       "when": {
@@ -99,7 +99,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis_side_y_sticky",
+        "model": "create_re:block/radial_chassis_side_y_sticky",
         "y": 90
       },
       "when": {
@@ -109,7 +109,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis_side_z_sticky",
+        "model": "create_re:block/radial_chassis_side_z_sticky",
         "y": 180
       },
       "when": {
@@ -119,7 +119,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis_side_x",
+        "model": "create_re:block/radial_chassis_side_x",
         "x": 90
       },
       "when": {
@@ -129,7 +129,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis_side_y",
+        "model": "create_re:block/radial_chassis_side_y",
         "y": 90
       },
       "when": {
@@ -139,7 +139,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis_side_z",
+        "model": "create_re:block/radial_chassis_side_z",
         "y": 180
       },
       "when": {
@@ -149,7 +149,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis_side_x_sticky"
+        "model": "create_re:block/radial_chassis_side_x_sticky"
       },
       "when": {
         "axis": "x",
@@ -158,7 +158,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis_side_y_sticky",
+        "model": "create_re:block/radial_chassis_side_y_sticky",
         "y": 180
       },
       "when": {
@@ -168,7 +168,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis_side_x_sticky",
+        "model": "create_re:block/radial_chassis_side_x_sticky",
         "y": 90
       },
       "when": {
@@ -178,7 +178,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis_side_x"
+        "model": "create_re:block/radial_chassis_side_x"
       },
       "when": {
         "axis": "x",
@@ -187,7 +187,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis_side_y",
+        "model": "create_re:block/radial_chassis_side_y",
         "y": 180
       },
       "when": {
@@ -197,7 +197,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis_side_x",
+        "model": "create_re:block/radial_chassis_side_x",
         "y": 90
       },
       "when": {
@@ -207,7 +207,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis_side_x_sticky",
+        "model": "create_re:block/radial_chassis_side_x_sticky",
         "x": 270
       },
       "when": {
@@ -217,7 +217,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis_side_y_sticky",
+        "model": "create_re:block/radial_chassis_side_y_sticky",
         "y": 270
       },
       "when": {
@@ -227,7 +227,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis_side_z_sticky"
+        "model": "create_re:block/radial_chassis_side_z_sticky"
       },
       "when": {
         "axis": "z",
@@ -236,7 +236,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis_side_x",
+        "model": "create_re:block/radial_chassis_side_x",
         "x": 270
       },
       "when": {
@@ -246,7 +246,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis_side_y",
+        "model": "create_re:block/radial_chassis_side_y",
         "y": 270
       },
       "when": {
@@ -256,7 +256,7 @@
     },
     {
       "apply": {
-        "model": "create:block/radial_chassis_side_z"
+        "model": "create_re:block/radial_chassis_side_z"
       },
       "when": {
         "axis": "z",

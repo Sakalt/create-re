@@ -1,12 +1,12 @@
-package com.simibubi.create.content.redstone.rail;
+package com.simibubi.create_re.content.redstone.rail;
 
 import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
@@ -42,7 +42,7 @@ import net.minecraft.world.phys.Vec3;
 public class ControllerRailBlock extends BaseRailBlock implements IWrenchable {
 
 	public static final EnumProperty<RailShape> SHAPE = BlockStateProperties.RAIL_SHAPE_STRAIGHT;
-	public static final BooleanProperty BACKWARDS = BooleanProperty.create("backwards");
+	public static final BooleanProperty BACKWARDS = BooleanProperty.create_re("backwards");
 	public static final IntegerProperty POWER = BlockStateProperties.POWER;
 
 	public ControllerRailBlock(Properties properties) {
@@ -134,7 +134,7 @@ public class ControllerRailBlock extends BaseRailBlock implements IWrenchable {
 	}
 
 	@Override
-	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> p_206840_1_) {
+	protected void create_reBlockStateDefinition(StateDefinition.Builder<Block, BlockState> p_206840_1_) {
 		p_206840_1_.add(SHAPE, POWER, BACKWARDS, WATERLOGGED);
 	}
 

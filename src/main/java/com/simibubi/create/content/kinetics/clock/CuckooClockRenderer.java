@@ -1,13 +1,13 @@
-package com.simibubi.create.content.kinetics.clock;
+package com.simibubi.create_re.content.kinetics.clock;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntityRenderer;
-import com.simibubi.create.content.kinetics.clock.CuckooClockBlockEntity.Animation;
-import com.simibubi.create.foundation.render.CachedBufferer;
-import com.simibubi.create.foundation.render.SuperByteBuffer;
-import com.simibubi.create.foundation.utility.AngleHelper;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntityRenderer;
+import com.simibubi.create_re.content.kinetics.clock.CuckooClockBlockEntity.Animation;
+import com.simibubi.create_re.foundation.render.CachedBufferer;
+import com.simibubi.create_re.foundation.render.SuperByteBuffer;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
 
 import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 import net.minecraft.client.renderer.MultiBufferSource;

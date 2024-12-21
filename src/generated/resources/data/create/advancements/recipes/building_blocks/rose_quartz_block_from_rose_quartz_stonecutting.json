@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:rose_quartz"
+              "create_re:rose_quartz"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:rose_quartz_block_from_rose_quartz_stonecutting"
+        "recipe": "create_re:rose_quartz_block_from_rose_quartz_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:rose_quartz_block_from_rose_quartz_stonecutting"
+      "create_re:rose_quartz_block_from_rose_quartz_stonecutting"
     ]
   },
   "sends_telemetry_event": false

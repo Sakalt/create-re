@@ -1,8 +1,8 @@
-package com.simibubi.create.content.logistics.crate;
+package com.simibubi.create_re.content.logistics.crate;
 
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
-import com.simibubi.create.foundation.block.WrenchableDirectionalBlock;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.foundation.block.WrenchableDirectionalBlock;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;

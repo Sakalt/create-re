@@ -1,15 +1,15 @@
-package com.simibubi.create.content.trains.entity;
+package com.simibubi.create_re.content.trains.entity;
 
 import java.util.Map.Entry;
 
-import com.simibubi.create.content.trains.graph.DimensionPalette;
-import com.simibubi.create.content.trains.graph.TrackEdge;
-import com.simibubi.create.content.trains.graph.TrackGraph;
-import com.simibubi.create.content.trains.graph.TrackGraphLocation;
-import com.simibubi.create.content.trains.graph.TrackNode;
-import com.simibubi.create.content.trains.graph.TrackNodeLocation;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.content.trains.graph.DimensionPalette;
+import com.simibubi.create_re.content.trains.graph.TrackEdge;
+import com.simibubi.create_re.content.trains.graph.TrackGraph;
+import com.simibubi.create_re.content.trains.graph.TrackGraphLocation;
+import com.simibubi.create_re.content.trains.graph.TrackNode;
+import com.simibubi.create_re.content.trains.graph.TrackNodeLocation;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.Tag;
@@ -30,7 +30,7 @@ public class TrainMigration {
 		fallback = point.edge.getPosition(null, t);
 		curve = point.edge.isTurn();
 		positionOnOldEdge = point.position;
-		locations = Couple.create(point.node1.getLocation(), point.node2.getLocation());
+		locations = Couple.create_re(point.node1.getLocation(), point.node2.getLocation());
 	}
 
 	public TrackGraphLocation tryMigratingTo(TrackGraph graph) {
@@ -90,7 +90,7 @@ public class TrainMigration {
 
 				TrackGraphLocation graphLocation = new TrackGraphLocation();
 				graphLocation.graph = graph;
-				graphLocation.edge = Couple.create(loc, newNode2.getLocation());
+				graphLocation.edge = Couple.create_re(loc, newNode2.getLocation());
 				graphLocation.position = position;
 				return graphLocation;
 			}

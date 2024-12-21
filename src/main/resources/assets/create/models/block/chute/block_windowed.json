@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"3": "create:block/chute",
-		"4": "create:block/chute_hole",
-		"particle": "create:block/industrial_iron_block"
+		"3": "create_re:block/chute",
+		"4": "create_re:block/chute_hole",
+		"particle": "create_re:block/industrial_iron_block"
 	},
 	"elements": [
 		{

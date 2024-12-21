@@ -1,16 +1,16 @@
-package com.simibubi.create.content.trains.entity;
+package com.simibubi.create_re.content.trains.entity;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.content.trains.bogey.AbstractBogeyBlock;
-import com.simibubi.create.foundation.networking.SimplePacketBase;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.content.trains.bogey.AbstractBogeyBlock;
+import com.simibubi.create_re.foundation.networking.SimplePacketBase;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;
@@ -46,7 +46,7 @@ public class TrainPacket extends SimplePacketBase {
 
 		int size = buffer.readVarInt();
 		for (int i = 0; i < size; i++) {
-			Couple<CarriageBogey> bogies = Couple.create(null, null);
+			Couple<CarriageBogey> bogies = Couple.create_re(null, null);
 			for (boolean isFirst : Iterate.trueAndFalse) {
 				if (!isFirst && !buffer.readBoolean())
 					continue;

@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:lime_valve_handle"
+          "name": "create_re:lime_valve_handle"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/lime_valve_handle"
+  "random_sequence": "create_re:blocks/lime_valve_handle"
 }

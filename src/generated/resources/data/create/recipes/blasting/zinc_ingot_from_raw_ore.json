@@ -6,5 +6,5 @@
   "ingredient": {
     "tag": "forge:raw_materials/zinc"
   },
-  "result": "create:zinc_ingot"
+  "result": "create_re:zinc_ingot"
 }

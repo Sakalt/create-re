@@ -1,15 +1,15 @@
-package com.simibubi.create.infrastructure.ponder.scenes;
+package com.simibubi.create_re.infrastructure.ponder.scenes;
 
-import com.simibubi.create.content.redstone.smartObserver.SmartObserverBlockEntity;
-import com.simibubi.create.content.redstone.thresholdSwitch.ThresholdSwitchBlock;
-import com.simibubi.create.foundation.ponder.ElementLink;
-import com.simibubi.create.foundation.ponder.PonderPalette;
-import com.simibubi.create.foundation.ponder.SceneBuilder;
-import com.simibubi.create.foundation.ponder.SceneBuildingUtil;
-import com.simibubi.create.foundation.ponder.Selection;
-import com.simibubi.create.foundation.ponder.element.InputWindowElement;
-import com.simibubi.create.foundation.ponder.element.WorldSectionElement;
-import com.simibubi.create.foundation.utility.Pointing;
+import com.simibubi.create_re.content.redstone.smartObserver.SmartObserverBlockEntity;
+import com.simibubi.create_re.content.redstone.thresholdSwitch.ThresholdSwitchBlock;
+import com.simibubi.create_re.foundation.ponder.ElementLink;
+import com.simibubi.create_re.foundation.ponder.PonderPalette;
+import com.simibubi.create_re.foundation.ponder.SceneBuilder;
+import com.simibubi.create_re.foundation.ponder.SceneBuildingUtil;
+import com.simibubi.create_re.foundation.ponder.Selection;
+import com.simibubi.create_re.foundation.ponder.element.InputWindowElement;
+import com.simibubi.create_re.foundation.ponder.element.WorldSectionElement;
+import com.simibubi.create_re.foundation.utility.Pointing;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -139,7 +139,7 @@ public class DetectorScenes {
 			.placeNearTarget();
 		scene.idle(60);
 
-		scene.world.createItemOnBelt(util.grid.at(3, 1, 1), Direction.EAST, amethystItem);
+		scene.world.create_reItemOnBelt(util.grid.at(3, 1, 1), Direction.EAST, amethystItem);
 		scene.idle(15);
 
 		scene.world.toggleRedstonePower(util.select.position(observerPos));
@@ -170,7 +170,7 @@ public class DetectorScenes {
 		scene.idle(60);
 
 		for (int i = 0; i < 3; i++) {
-			scene.world.createItemOnBelt(util.grid.at(3, 1, 1), Direction.EAST, amethystItem);
+			scene.world.create_reItemOnBelt(util.grid.at(3, 1, 1), Direction.EAST, amethystItem);
 
 			scene.world.toggleRedstonePower(util.select.position(observerPos));
 			scene.effects.indicateRedstone(observerPos.above()
@@ -231,7 +231,7 @@ public class DetectorScenes {
 		ItemStack ironIngot = new ItemStack(Items.IRON_INGOT, 32);
 
 		for (int i = 0; i < 5; i++) {
-			scene.world.createItemOnBelt(util.grid.at(3, 0, 0), Direction.NORTH, ironIngot);
+			scene.world.create_reItemOnBelt(util.grid.at(3, 0, 0), Direction.NORTH, ironIngot);
 			scene.idle(10);
 			scene.world.removeItemsFromBelt(util.grid.at(3, 0, 2));
 			scene.world.flapFunnel(util.grid.at(3, 1, 2), false);
@@ -241,7 +241,7 @@ public class DetectorScenes {
 		}
 
 		scene.addLazyKeyframe();
-		scene.world.createItemOnBelt(util.grid.at(3, 0, 0), Direction.NORTH, ironIngot);
+		scene.world.create_reItemOnBelt(util.grid.at(3, 0, 0), Direction.NORTH, ironIngot);
 		scene.world.removeItemsFromBelt(util.grid.at(3, 0, 2));
 		scene.world.multiplyKineticSpeed(util.select.everywhere(), 1 / 8f);
 		scene.idle(10);
@@ -276,7 +276,7 @@ public class DetectorScenes {
 		scene.world.multiplyKineticSpeed(util.select.everywhere(), 8f);
 		for (int i = 0; i < 5; i++) {
 			scene.idle(10);
-			scene.world.createItemOnBelt(util.grid.at(3, 0, 4), Direction.NORTH, ironIngot);
+			scene.world.create_reItemOnBelt(util.grid.at(3, 0, 4), Direction.NORTH, ironIngot);
 			if (i % 3 == 1)
 				scene.world.modifyBlock(switchPos,
 					s -> s.setValue(ThresholdSwitchBlock.LEVEL, s.getValue(ThresholdSwitchBlock.LEVEL) - 1), false);
@@ -296,7 +296,7 @@ public class DetectorScenes {
 
 		for (int i = 0; i < 3; i++) {
 			scene.idle(10);
-			scene.world.createItemOnBelt(util.grid.at(3, 0, 4), Direction.NORTH, ironIngot);
+			scene.world.create_reItemOnBelt(util.grid.at(3, 0, 4), Direction.NORTH, ironIngot);
 			if (i % 3 == 2)
 				scene.world.modifyBlock(switchPos,
 					s -> s.setValue(ThresholdSwitchBlock.LEVEL, s.getValue(ThresholdSwitchBlock.LEVEL) - 1), false);

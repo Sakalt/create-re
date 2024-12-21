@@ -3,10 +3,10 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "create:stressometer"
+      "item": "create_re:stressometer"
     }
   ],
   "result": {
-    "item": "create:speedometer"
+    "item": "create_re:speedometer"
   }
 }

@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.data.recipe;
+package com.simibubi.create_re.foundation.data.recipe;
 
 import java.util.function.Consumer;
 

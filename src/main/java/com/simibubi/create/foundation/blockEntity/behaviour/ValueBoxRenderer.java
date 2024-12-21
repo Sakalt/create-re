@@ -1,9 +1,9 @@
-package com.simibubi.create.foundation.blockEntity.behaviour;
+package com.simibubi.create_re.foundation.blockEntity.behaviour;
 
 import org.joml.Matrix3f;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.content.kinetics.simpleRelays.AbstractSimpleShaftBlock;
+import com.simibubi.create_re.content.kinetics.simpleRelays.AbstractSimpleShaftBlock;
 
 import dev.engine_room.flywheel.lib.transform.TransformStack;
 import net.minecraft.client.Minecraft;

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "create:item/sweet_roll"
+    "layer0": "create_re:item/sweet_roll"
   }
 }

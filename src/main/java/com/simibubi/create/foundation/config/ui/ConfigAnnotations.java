@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.config.ui;
+package com.simibubi.create_re.foundation.config.ui;
 
 public class ConfigAnnotations {
 

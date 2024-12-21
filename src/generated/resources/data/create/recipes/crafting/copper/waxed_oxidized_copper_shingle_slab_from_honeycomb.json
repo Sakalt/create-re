@@ -3,13 +3,13 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "create:oxidized_copper_shingle_slab"
+      "item": "create_re:oxidized_copper_shingle_slab"
     },
     {
       "item": "minecraft:honeycomb"
     }
   ],
   "result": {
-    "item": "create:waxed_oxidized_copper_shingle_slab"
+    "item": "create_re:waxed_oxidized_copper_shingle_slab"
   }
 }

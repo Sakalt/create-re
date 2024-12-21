@@ -1,15 +1,15 @@
-package com.simibubi.create.infrastructure.ponder.scenes;
+package com.simibubi.create_re.infrastructure.ponder.scenes;
 
-import com.simibubi.create.AllItems;
-import com.simibubi.create.foundation.gui.AllIcons;
-import com.simibubi.create.foundation.ponder.ElementLink;
-import com.simibubi.create.foundation.ponder.PonderPalette;
-import com.simibubi.create.foundation.ponder.SceneBuilder;
-import com.simibubi.create.foundation.ponder.SceneBuildingUtil;
-import com.simibubi.create.foundation.ponder.Selection;
-import com.simibubi.create.foundation.ponder.element.InputWindowElement;
-import com.simibubi.create.foundation.ponder.element.WorldSectionElement;
-import com.simibubi.create.foundation.utility.Pointing;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.foundation.gui.AllIcons;
+import com.simibubi.create_re.foundation.ponder.ElementLink;
+import com.simibubi.create_re.foundation.ponder.PonderPalette;
+import com.simibubi.create_re.foundation.ponder.SceneBuilder;
+import com.simibubi.create_re.foundation.ponder.SceneBuildingUtil;
+import com.simibubi.create_re.foundation.ponder.Selection;
+import com.simibubi.create_re.foundation.ponder.element.InputWindowElement;
+import com.simibubi.create_re.foundation.ponder.element.WorldSectionElement;
+import com.simibubi.create_re.foundation.utility.Pointing;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -96,7 +96,7 @@ public class ItemVaultScenes {
 
 			scene.idle(5);
 			if (i < junk.length)
-				scene.world.createItemOnBeltLike(util.grid.at(0, 1, 3), Direction.SOUTH, junk[i]);
+				scene.world.create_reItemOnBeltLike(util.grid.at(0, 1, 3), Direction.SOUTH, junk[i]);
 			scene.idle(9);
 		}
 
@@ -112,7 +112,7 @@ public class ItemVaultScenes {
 			.pointAt(util.vector.topOf(2, 1, 1));
 
 		for (int i = 0; i < junk.length; i++) {
-			scene.world.createItemOnBeltLike(util.grid.at(2, 1, 1), Direction.EAST, junk[i]);
+			scene.world.create_reItemOnBeltLike(util.grid.at(2, 1, 1), Direction.EAST, junk[i]);
 			scene.idle(18);
 		}
 

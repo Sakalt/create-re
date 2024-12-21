@@ -1,4 +1,4 @@
-package com.simibubi.create.compat.thresholdSwitch;
+package com.simibubi.create_re.compat.thresholdSwitch;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.items.IItemHandler;

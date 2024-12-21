@@ -1,14 +1,14 @@
-package com.simibubi.create.content.equipment.wrench;
+package com.simibubi.create_re.content.equipment.wrench;
 
 import java.util.function.Consumer;
 
 import javax.annotation.Nonnull;
 
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.AllTags;
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.item.render.SimpleCustomRenderer;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.AllTags;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.item.render.SimpleCustomRenderer;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
@@ -93,7 +93,7 @@ public class WrenchItem extends Item {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void initializeClient(Consumer<IClientItemExtensions> consumer) {
-		consumer.accept(SimpleCustomRenderer.create(this, new WrenchItemRenderer()));
+		consumer.accept(SimpleCustomRenderer.create_re(this, new WrenchItemRenderer()));
 	}
 
 }

@@ -1,9 +1,9 @@
-package com.simibubi.create.content.contraptions.glue;
+package com.simibubi.create_re.content.contraptions.glue;
 
 import java.util.Set;
 
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.networking.SimplePacketBase;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;

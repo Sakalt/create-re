@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "create:furnace_minecart_contraption"
+      "item": "create_re:furnace_minecart_contraption"
     }
   ],
   "result": {

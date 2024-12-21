@@ -1,7 +1,7 @@
-package com.simibubi.create.content.equipment.bell;
+package com.simibubi.create_re.content.equipment.bell;
 
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.foundation.networking.SimplePacketBase;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;

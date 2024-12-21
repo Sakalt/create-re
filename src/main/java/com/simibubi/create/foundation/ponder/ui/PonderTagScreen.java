@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.ponder.ui;
+package com.simibubi.create_re.foundation.ponder.ui;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,18 +7,18 @@ import java.util.Objects;
 import com.mojang.blaze3d.platform.Window;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.gui.ScreenOpener;
-import com.simibubi.create.foundation.gui.Theme;
-import com.simibubi.create.foundation.gui.UIRenderHelper;
-import com.simibubi.create.foundation.gui.element.BoxElement;
-import com.simibubi.create.foundation.ponder.PonderChapter;
-import com.simibubi.create.foundation.ponder.PonderLocalization;
-import com.simibubi.create.foundation.ponder.PonderRegistry;
-import com.simibubi.create.foundation.ponder.PonderTag;
-import com.simibubi.create.foundation.utility.FontHelper;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.gui.ScreenOpener;
+import com.simibubi.create_re.foundation.gui.Theme;
+import com.simibubi.create_re.foundation.gui.UIRenderHelper;
+import com.simibubi.create_re.foundation.gui.element.BoxElement;
+import com.simibubi.create_re.foundation.ponder.PonderChapter;
+import com.simibubi.create_re.foundation.ponder.PonderLocalization;
+import com.simibubi.create_re.foundation.ponder.PonderRegistry;
+import com.simibubi.create_re.foundation.ponder.PonderTag;
+import com.simibubi.create_re.foundation.utility.FontHelper;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.events.GuiEventListener;

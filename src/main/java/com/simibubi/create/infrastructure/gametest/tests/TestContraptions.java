@@ -1,17 +1,17 @@
-package com.simibubi.create.infrastructure.gametest.tests;
+package com.simibubi.create_re.infrastructure.gametest.tests;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllEntityTypes;
-import com.simibubi.create.content.contraptions.Contraption;
-import com.simibubi.create.content.contraptions.bearing.MechanicalBearingBlockEntity;
-import com.simibubi.create.content.contraptions.elevator.ElevatorPulleyBlockEntity;
-import com.simibubi.create.content.kinetics.transmission.sequencer.SequencedGearshiftBlock;
-import com.simibubi.create.infrastructure.gametest.CreateGameTestHelper;
-import com.simibubi.create.infrastructure.gametest.GameTestGroup;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllEntityTypes;
+import com.simibubi.create_re.content.contraptions.Contraption;
+import com.simibubi.create_re.content.contraptions.bearing.MechanicalBearingBlockEntity;
+import com.simibubi.create_re.content.contraptions.elevator.ElevatorPulleyBlockEntity;
+import com.simibubi.create_re.content.kinetics.transmission.sequencer.SequencedGearshiftBlock;
+import com.simibubi.create_re.infrastructure.gametest.CreateGameTestHelper;
+import com.simibubi.create_re.infrastructure.gametest.GameTestGroup;
 
 import it.unimi.dsi.fastutil.objects.Object2LongMap;
 import net.minecraft.core.BlockPos;

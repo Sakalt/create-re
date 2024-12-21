@@ -1,8 +1,8 @@
 {
-  "type": "create:emptying",
+  "type": "create_re:emptying",
   "ingredients": [
     {
-      "item": "create:builders_tea"
+      "item": "create_re:builders_tea"
     }
   ],
   "results": [
@@ -11,7 +11,7 @@
     },
     {
       "amount": 250,
-      "fluid": "create:tea"
+      "fluid": "create_re:tea"
     }
   ]
 }

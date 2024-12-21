@@ -3,13 +3,13 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "create:copper_casing"
+      "item": "create_re:copper_casing"
     },
     {
-      "item": "create:chute"
+      "item": "create_re:chute"
     }
   ],
   "result": {
-    "item": "create:portable_fluid_interface"
+    "item": "create_re:portable_fluid_interface"
   }
 }

@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "create:block/gearbox",
-		"1": "create:block/funnel/andesite_funnel_frame",
-		"particle": "create:block/gearbox"
+		"0": "create_re:block/gearbox",
+		"1": "create_re:block/funnel/andesite_funnel_frame",
+		"particle": "create_re:block/gearbox"
 	},
 	"elements": [
 		{

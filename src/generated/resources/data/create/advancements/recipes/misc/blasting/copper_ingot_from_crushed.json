@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:crushed_raw_copper"
+              "create_re:crushed_raw_copper"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:blasting/copper_ingot_from_crushed"
+        "recipe": "create_re:blasting/copper_ingot_from_crushed"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:blasting/copper_ingot_from_crushed"
+      "create_re:blasting/copper_ingot_from_crushed"
     ]
   },
   "sends_telemetry_event": false

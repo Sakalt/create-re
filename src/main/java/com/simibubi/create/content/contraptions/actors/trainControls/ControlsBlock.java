@@ -1,9 +1,9 @@
-package com.simibubi.create.content.contraptions.actors.trainControls;
+package com.simibubi.create_re.content.contraptions.actors.trainControls;
 
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.content.contraptions.ContraptionWorld;
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
-import com.simibubi.create.foundation.block.ProperWaterloggedBlock;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.content.contraptions.ContraptionWorld;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -22,8 +22,8 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class ControlsBlock extends HorizontalDirectionalBlock implements IWrenchable, ProperWaterloggedBlock {
 
-	public static final BooleanProperty OPEN = BooleanProperty.create("open");
-	public static final BooleanProperty VIRTUAL = BooleanProperty.create("virtual");
+	public static final BooleanProperty OPEN = BooleanProperty.create_re("open");
+	public static final BooleanProperty VIRTUAL = BooleanProperty.create_re("virtual");
 
 	public ControlsBlock(Properties p_54120_) {
 		super(p_54120_);
@@ -33,8 +33,8 @@ public class ControlsBlock extends HorizontalDirectionalBlock implements IWrench
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
-		super.createBlockStateDefinition(pBuilder.add(FACING, OPEN, WATERLOGGED, VIRTUAL));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
+		super.create_reBlockStateDefinition(pBuilder.add(FACING, OPEN, WATERLOGGED, VIRTUAL));
 	}
 
 	@Override

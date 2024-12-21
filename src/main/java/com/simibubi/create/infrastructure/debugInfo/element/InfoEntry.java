@@ -1,4 +1,4 @@
-package com.simibubi.create.infrastructure.debugInfo.element;
+package com.simibubi.create_re.infrastructure.debugInfo.element;
 
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
@@ -6,8 +6,8 @@ import java.util.stream.Stream;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create.infrastructure.debugInfo.DebugInformation;
-import com.simibubi.create.infrastructure.debugInfo.InfoProvider;
+import com.simibubi.create_re.infrastructure.debugInfo.DebugInformation;
+import com.simibubi.create_re.infrastructure.debugInfo.InfoProvider;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Player;

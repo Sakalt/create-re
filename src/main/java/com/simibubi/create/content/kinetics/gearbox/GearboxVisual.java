@@ -1,14 +1,14 @@
-package com.simibubi.create.content.kinetics.gearbox;
+package com.simibubi.create_re.content.kinetics.gearbox;
 
 import java.util.EnumMap;
 import java.util.Map;
 import java.util.function.Consumer;
 
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntityVisual;
-import com.simibubi.create.content.kinetics.base.RotatingInstance;
-import com.simibubi.create.foundation.render.AllInstanceTypes;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntityVisual;
+import com.simibubi.create_re.content.kinetics.base.RotatingInstance;
+import com.simibubi.create_re.foundation.render.AllInstanceTypes;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
@@ -42,7 +42,7 @@ public class GearboxVisual extends KineticBlockEntityVisual<GearboxBlockEntity> 
 				continue;
 
 			RotatingInstance key = instancerProvider().instancer(AllInstanceTypes.ROTATING, Models.partial(AllPartialModels.SHAFT_HALF, direction))
-					.createInstance();
+					.create_reInstance();
 
 			key.setRotationAxis(axis)
 					.setRotationalSpeed(getSpeed(direction))

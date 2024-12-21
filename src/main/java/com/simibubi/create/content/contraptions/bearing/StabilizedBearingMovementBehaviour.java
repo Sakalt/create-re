@@ -1,22 +1,22 @@
-package com.simibubi.create.content.contraptions.bearing;
+package com.simibubi.create_re.content.contraptions.bearing;
 
 import javax.annotation.Nullable;
 
 import org.joml.Quaternionf;
 
 import com.mojang.math.Axis;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.contraptions.AbstractContraptionEntity;
-import com.simibubi.create.content.contraptions.ControlledContraptionEntity;
-import com.simibubi.create.content.contraptions.OrientedContraptionEntity;
-import com.simibubi.create.content.contraptions.behaviour.MovementBehaviour;
-import com.simibubi.create.content.contraptions.behaviour.MovementContext;
-import com.simibubi.create.content.contraptions.render.ActorVisual;
-import com.simibubi.create.content.contraptions.render.ContraptionMatrices;
-import com.simibubi.create.foundation.render.CachedBufferer;
-import com.simibubi.create.foundation.render.SuperByteBuffer;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.virtualWorld.VirtualRenderWorld;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity;
+import com.simibubi.create_re.content.contraptions.ControlledContraptionEntity;
+import com.simibubi.create_re.content.contraptions.OrientedContraptionEntity;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementBehaviour;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
+import com.simibubi.create_re.content.contraptions.render.ActorVisual;
+import com.simibubi.create_re.content.contraptions.render.ContraptionMatrices;
+import com.simibubi.create_re.foundation.render.CachedBufferer;
+import com.simibubi.create_re.foundation.render.SuperByteBuffer;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.virtualWorld.VirtualRenderWorld;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
 import dev.engine_room.flywheel.api.visualization.VisualizationManager;
@@ -79,7 +79,7 @@ public class StabilizedBearingMovementBehaviour implements MovementBehaviour {
 
 	@Nullable
 	@Override
-	public ActorVisual createVisual(VisualizationContext visualizationContext, VirtualRenderWorld simulationWorld,
+	public ActorVisual create_reVisual(VisualizationContext visualizationContext, VirtualRenderWorld simulationWorld,
 		MovementContext movementContext) {
 		return new StabilizedBearingVisual(visualizationContext, simulationWorld, movementContext);
 	}

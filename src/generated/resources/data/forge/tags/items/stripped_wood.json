@@ -1,6 +1,6 @@
 {
   "values": [
-    "#create:vanilla_stripped_wood",
-    "#create:modded_stripped_wood"
+    "#create_re:vanilla_stripped_wood",
+    "#create_re:modded_stripped_wood"
   ]
 }

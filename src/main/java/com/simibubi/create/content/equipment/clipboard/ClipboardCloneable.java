@@ -1,4 +1,4 @@
-package com.simibubi.create.content.equipment.clipboard;
+package com.simibubi.create_re.content.equipment.clipboard;
 
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;

@@ -1,4 +1,4 @@
-package com.simibubi.create.content.contraptions.mounted;
+package com.simibubi.create_re.content.contraptions.mounted;
 
 import java.util.List;
 
@@ -6,20 +6,20 @@ import javax.annotation.Nullable;
 
 import org.apache.commons.lang3.tuple.MutablePair;
 
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllMovementBehaviours;
-import com.simibubi.create.content.contraptions.AbstractContraptionEntity;
-import com.simibubi.create.content.contraptions.Contraption;
-import com.simibubi.create.content.contraptions.ContraptionData;
-import com.simibubi.create.content.contraptions.ContraptionMovementSetting;
-import com.simibubi.create.content.contraptions.OrientedContraptionEntity;
-import com.simibubi.create.content.contraptions.actors.psi.PortableStorageInterfaceMovement;
-import com.simibubi.create.content.contraptions.behaviour.MovementContext;
-import com.simibubi.create.content.kinetics.deployer.DeployerFakePlayer;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllMovementBehaviours;
+import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity;
+import com.simibubi.create_re.content.contraptions.Contraption;
+import com.simibubi.create_re.content.contraptions.ContraptionData;
+import com.simibubi.create_re.content.contraptions.ContraptionMovementSetting;
+import com.simibubi.create_re.content.contraptions.OrientedContraptionEntity;
+import com.simibubi.create_re.content.contraptions.actors.psi.PortableStorageInterfaceMovement;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
+import com.simibubi.create_re.content.kinetics.deployer.DeployerFakePlayer;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
@@ -119,7 +119,7 @@ public class MinecartContraptionItem extends Item {
 				}
 			}
 
-			AbstractMinecart abstractminecartentity = AbstractMinecart.createMinecart(world, d0, d1 + d3, d2,
+			AbstractMinecart abstractminecartentity = AbstractMinecart.create_reMinecart(world, d0, d1 + d3, d2,
 				((MinecartContraptionItem) stack.getItem()).minecartType);
 			if (stack.hasCustomHoverName())
 				abstractminecartentity.setCustomName(stack.getHoverName());
@@ -157,7 +157,7 @@ public class MinecartContraptionItem extends Item {
 				}
 
 				AbstractMinecart abstractminecartentity =
-					AbstractMinecart.createMinecart(world, (double) blockpos.getX() + 0.5D,
+					AbstractMinecart.create_reMinecart(world, (double) blockpos.getX() + 0.5D,
 						(double) blockpos.getY() + 0.0625D + d0, (double) blockpos.getZ() + 0.5D, this.minecartType);
 				if (itemstack.hasCustomHoverName())
 					abstractminecartentity.setCustomName(itemstack.getHoverName());
@@ -182,8 +182,8 @@ public class MinecartContraptionItem extends Item {
 
 			Contraption mountedContraption = Contraption.fromNBT(world, contraptionTag, false);
 			OrientedContraptionEntity contraptionEntity =
-				newFacing == null ? OrientedContraptionEntity.create(world, mountedContraption, intialOrientation)
-					: OrientedContraptionEntity.createAtYaw(world, mountedContraption, intialOrientation,
+				newFacing == null ? OrientedContraptionEntity.create_re(world, mountedContraption, intialOrientation)
+					: OrientedContraptionEntity.create_reAtYaw(world, mountedContraption, intialOrientation,
 						newFacing.toYRot());
 
 			contraptionEntity.startRiding(cart);
@@ -194,7 +194,7 @@ public class MinecartContraptionItem extends Item {
 
 	@Override
 	public String getDescriptionId(ItemStack stack) {
-		return "item.create.minecart_contraption";
+		return "item.create_re.minecart_contraption";
 	}
 
 	@SubscribeEvent
@@ -246,7 +246,7 @@ public class MinecartContraptionItem extends Item {
 			if (AllMovementBehaviours.getBehaviour(pair.left.state())instanceof PortableStorageInterfaceMovement psim)
 				psim.reset(pair.right);
 
-		ItemStack generatedStack = create(type, oce).setHoverName(entity.getCustomName());
+		ItemStack generatedStack = create_re(type, oce).setHoverName(entity.getCustomName());
 
 		if (ContraptionData.isTooLargeForPickup(generatedStack.serializeNBT())) {
 			MutableComponent message = Lang.translateDirect("contraption.minecart_contraption_too_big")
@@ -267,7 +267,7 @@ public class MinecartContraptionItem extends Item {
 		event.setCanceled(true);
 	}
 
-	public static ItemStack create(Type type, OrientedContraptionEntity entity) {
+	public static ItemStack create_re(Type type, OrientedContraptionEntity entity) {
 		ItemStack stack = ItemStack.EMPTY;
 
 		switch (type) {

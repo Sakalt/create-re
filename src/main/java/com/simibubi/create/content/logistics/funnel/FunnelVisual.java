@@ -1,12 +1,12 @@
-package com.simibubi.create.content.logistics.funnel;
+package com.simibubi.create_re.content.logistics.funnel;
 
 import java.util.ArrayList;
 import java.util.function.Consumer;
 
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.logistics.flwdata.FlapInstance;
-import com.simibubi.create.foundation.render.AllInstanceTypes;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.logistics.flwdata.FlapInstance;
+import com.simibubi.create_re.foundation.render.AllInstanceTypes;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.instance.Instancer;
@@ -48,7 +48,7 @@ public class FunnelVisual extends AbstractBlockEntityVisual<FunnelBlockEntity> i
             float intensity = segment == 3 ? 1.5f : segment + 1;
             float segmentOffset = -3.05f / 16f * segment + 0.075f / 16f;
 
-            FlapInstance key = model.createInstance();
+            FlapInstance key = model.create_reInstance();
 
             key.setPosition(getVisualPosition())
 					.setSegmentOffset(segmentOffset, 0, -blockEntity.getFlapOffset())

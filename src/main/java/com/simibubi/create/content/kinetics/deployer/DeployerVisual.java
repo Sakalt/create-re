@@ -1,16 +1,16 @@
-package com.simibubi.create.content.kinetics.deployer;
+package com.simibubi.create_re.content.kinetics.deployer;
 
-import static com.simibubi.create.content.kinetics.base.DirectionalAxisKineticBlock.AXIS_ALONG_FIRST_COORDINATE;
-import static com.simibubi.create.content.kinetics.base.DirectionalKineticBlock.FACING;
+import static com.simibubi.create_re.content.kinetics.base.DirectionalAxisKineticBlock.AXIS_ALONG_FIRST_COORDINATE;
+import static com.simibubi.create_re.content.kinetics.base.DirectionalKineticBlock.FACING;
 
 import java.util.function.Consumer;
 
 import org.joml.Quaternionf;
 
 import com.mojang.math.Axis;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.kinetics.base.ShaftVisual;
-import com.simibubi.create.foundation.utility.AngleHelper;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.kinetics.base.ShaftVisual;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.visual.DynamicVisual;
@@ -52,11 +52,11 @@ public class DeployerVisual extends ShaftVisual<DeployerBlockEntity> implements 
         xRot = facing == Direction.UP ? 270 : facing == Direction.DOWN ? 90 : 0;
         zRot = rotatePole ? 90 : 0;
 
-        pole = instancerProvider().instancer(InstanceTypes.ORIENTED, Models.partial(AllPartialModels.DEPLOYER_POLE)).createInstance();
+        pole = instancerProvider().instancer(InstanceTypes.ORIENTED, Models.partial(AllPartialModels.DEPLOYER_POLE)).create_reInstance();
 
 		currentHand = this.blockEntity.getHandPose();
 
-		hand = instancerProvider().instancer(InstanceTypes.ORIENTED, Models.partial(currentHand)).createInstance();
+		hand = instancerProvider().instancer(InstanceTypes.ORIENTED, Models.partial(currentHand)).create_reInstance();
 
 		progress = getProgress(partialTick);
 		updateRotation(pole, hand, yRot, xRot, zRot);

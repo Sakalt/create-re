@@ -1,6 +1,6 @@
 {
   "values": [
-    "create:flowing_chocolate",
-    "create:chocolate"
+    "create_re:flowing_chocolate",
+    "create_re:chocolate"
   ]
 }

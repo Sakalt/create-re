@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains;
+package com.simibubi.create_re.content.trains;
 
 import java.util.Locale;
 
@@ -6,8 +6,8 @@ import com.mojang.brigadier.StringReader;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import com.simibubi.create.AllParticleTypes;
-import com.simibubi.create.foundation.particle.ICustomParticleData;
+import com.simibubi.create_re.AllParticleTypes;
+import com.simibubi.create_re.foundation.particle.ICustomParticleData;
 
 import net.minecraft.client.particle.ParticleProvider;
 import net.minecraft.core.particles.ParticleOptions;
@@ -18,7 +18,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class CubeParticleData implements ParticleOptions, ICustomParticleData<CubeParticleData> {
 
-	public static final Codec<CubeParticleData> CODEC = RecordCodecBuilder.create(i -> 
+	public static final Codec<CubeParticleData> CODEC = RecordCodecBuilder.create_re(i -> 
 		i.group(
 			Codec.FLOAT.fieldOf("r").forGetter(p -> p.r),
 			Codec.FLOAT.fieldOf("g").forGetter(p -> p.g),

@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/cube",
 	"textures": {
-		"3": "create:block/cuckoo_clock"
+		"3": "create_re:block/cuckoo_clock"
 	},
 	"elements": [
 		{

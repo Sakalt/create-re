@@ -1,11 +1,11 @@
-package com.simibubi.create.content.redstone.displayLink.source;
+package com.simibubi.create_re.content.redstone.displayLink.source;
 
-import com.simibubi.create.content.kinetics.gauge.StressGaugeBlockEntity;
-import com.simibubi.create.content.redstone.displayLink.DisplayLinkContext;
-import com.simibubi.create.content.trains.display.FlapDisplayBlockEntity;
-import com.simibubi.create.foundation.gui.ModularGuiLineBuilder;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.LangBuilder;
+import com.simibubi.create_re.content.kinetics.gauge.StressGaugeBlockEntity;
+import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkContext;
+import com.simibubi.create_re.content.trains.display.FlapDisplayBlockEntity;
+import com.simibubi.create_re.foundation.gui.ModularGuiLineBuilder;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.LangBuilder;
 
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraftforge.api.distmarker.Dist;

@@ -4,7 +4,7 @@
   "group": "small_dripstone_brick_stairs",
   "key": {
     "X": {
-      "item": "create:small_dripstone_bricks"
+      "item": "create_re:small_dripstone_bricks"
     }
   },
   "pattern": [
@@ -14,7 +14,7 @@
   ],
   "result": {
     "count": 4,
-    "item": "create:small_dripstone_brick_stairs"
+    "item": "create_re:small_dripstone_brick_stairs"
   },
   "show_notification": true
 }

@@ -1,9 +1,9 @@
-package com.simibubi.create.content.redstone.contact;
+package com.simibubi.create_re.content.redstone.contact;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.contraptions.elevator.ElevatorColumn;
-import com.simibubi.create.content.contraptions.elevator.ElevatorColumn.ColumnCoords;
-import com.simibubi.create.foundation.utility.BlockHelper;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.contraptions.elevator.ElevatorColumn;
+import com.simibubi.create_re.content.contraptions.elevator.ElevatorColumn.ColumnCoords;
+import com.simibubi.create_re.foundation.utility.BlockHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

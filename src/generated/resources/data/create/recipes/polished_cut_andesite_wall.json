@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "X": {
-      "item": "create:polished_cut_andesite"
+      "item": "create_re:polished_cut_andesite"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 6,
-    "item": "create:polished_cut_andesite_wall"
+    "item": "create_re:polished_cut_andesite_wall"
   },
   "show_notification": true
 }

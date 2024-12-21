@@ -1,7 +1,7 @@
 {
-  "parent": "create:item/pane",
+  "parent": "create_re:item/pane",
   "textures": {
-    "edge": "create:block/palettes/ornate_iron_window_pane_top",
-    "pane": "create:block/palettes/ornate_iron_window"
+    "edge": "create_re:block/palettes/ornate_iron_window_pane_top",
+    "pane": "create_re:block/palettes/ornate_iron_window"
   }
 }

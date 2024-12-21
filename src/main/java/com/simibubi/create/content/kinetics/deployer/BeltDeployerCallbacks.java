@@ -1,24 +1,24 @@
-package com.simibubi.create.content.kinetics.deployer;
+package com.simibubi.create_re.content.kinetics.deployer;
 
-import static com.simibubi.create.content.kinetics.base.DirectionalKineticBlock.FACING;
+import static com.simibubi.create_re.content.kinetics.base.DirectionalKineticBlock.FACING;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.equipment.sandPaper.SandPaperPolishingRecipe;
-import com.simibubi.create.content.kinetics.belt.BeltHelper;
-import com.simibubi.create.content.kinetics.belt.behaviour.BeltProcessingBehaviour.ProcessingResult;
-import com.simibubi.create.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour;
-import com.simibubi.create.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour.TransportedResult;
-import com.simibubi.create.content.kinetics.belt.transport.TransportedItemStack;
-import com.simibubi.create.content.kinetics.deployer.DeployerBlockEntity.Mode;
-import com.simibubi.create.content.kinetics.deployer.DeployerBlockEntity.State;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.advancement.CreateAdvancement;
-import com.simibubi.create.foundation.recipe.RecipeApplier;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.equipment.sandPaper.SandPaperPolishingRecipe;
+import com.simibubi.create_re.content.kinetics.belt.BeltHelper;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.BeltProcessingBehaviour.ProcessingResult;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour.TransportedResult;
+import com.simibubi.create_re.content.kinetics.belt.transport.TransportedItemStack;
+import com.simibubi.create_re.content.kinetics.deployer.DeployerBlockEntity.Mode;
+import com.simibubi.create_re.content.kinetics.deployer.DeployerBlockEntity.State;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.advancement.CreateAdvancement;
+import com.simibubi.create_re.foundation.recipe.RecipeApplier;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -156,16 +156,16 @@ public class BeltDeployerCallbacks {
 		blockEntity.sendData();
 	}
 
-	private static void awardAdvancements(DeployerBlockEntity blockEntity, ItemStack created) {
+	private static void awardAdvancements(DeployerBlockEntity blockEntity, ItemStack create_red) {
 		CreateAdvancement advancement = null;
 
-		if (AllBlocks.ANDESITE_CASING.isIn(created))
+		if (AllBlocks.ANDESITE_CASING.isIn(create_red))
 			advancement = AllAdvancements.ANDESITE_CASING;
-		else if (AllBlocks.BRASS_CASING.isIn(created))
+		else if (AllBlocks.BRASS_CASING.isIn(create_red))
 			advancement = AllAdvancements.BRASS_CASING;
-		else if (AllBlocks.COPPER_CASING.isIn(created))
+		else if (AllBlocks.COPPER_CASING.isIn(create_red))
 			advancement = AllAdvancements.COPPER_CASING;
-		else if (AllBlocks.RAILWAY_CASING.isIn(created))
+		else if (AllBlocks.RAILWAY_CASING.isIn(create_red))
 			advancement = AllAdvancements.TRAIN_CASING;
 		else
 			return;

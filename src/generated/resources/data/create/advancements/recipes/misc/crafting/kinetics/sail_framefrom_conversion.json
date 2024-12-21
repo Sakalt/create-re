@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:white_sail"
+              "create_re:white_sail"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/kinetics/sail_framefrom_conversion"
+        "recipe": "create_re:crafting/kinetics/sail_framefrom_conversion"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/kinetics/sail_framefrom_conversion"
+      "create_re:crafting/kinetics/sail_framefrom_conversion"
     ]
   },
   "sends_telemetry_event": false

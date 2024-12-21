@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.ponder;
+package com.simibubi.create_re.foundation.ponder;
 
 import java.util.Optional;
 import java.util.UUID;
@@ -9,67 +9,67 @@ import java.util.function.UnaryOperator;
 
 import org.joml.Vector3f;
 
-import com.simibubi.create.content.contraptions.actors.trainControls.ControlsBlock;
-import com.simibubi.create.content.contraptions.glue.SuperGlueItem;
-import com.simibubi.create.content.fluids.pump.PumpBlockEntity;
-import com.simibubi.create.content.kinetics.base.IRotate.SpeedLevel;
-import com.simibubi.create.content.kinetics.base.KineticBlock;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.kinetics.base.RotationIndicatorParticleData;
-import com.simibubi.create.content.kinetics.belt.BeltBlockEntity;
-import com.simibubi.create.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
-import com.simibubi.create.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour;
-import com.simibubi.create.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour.TransportedResult;
-import com.simibubi.create.content.kinetics.crafter.ConnectedInputHandler;
-import com.simibubi.create.content.kinetics.crafter.MechanicalCrafterBlockEntity;
-import com.simibubi.create.content.kinetics.gauge.SpeedGaugeBlockEntity;
-import com.simibubi.create.content.kinetics.mechanicalArm.ArmBlockEntity;
-import com.simibubi.create.content.logistics.funnel.FunnelBlockEntity;
-import com.simibubi.create.content.processing.burner.BlazeBurnerBlockEntity;
-import com.simibubi.create.content.redstone.displayLink.DisplayLinkBlockEntity;
-import com.simibubi.create.content.trains.display.FlapDisplayBlockEntity;
-import com.simibubi.create.content.trains.signal.SignalBlockEntity;
-import com.simibubi.create.content.trains.signal.SignalBlockEntity.SignalState;
-import com.simibubi.create.content.trains.station.StationBlockEntity;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.ponder.element.AnimatedSceneElement;
-import com.simibubi.create.foundation.ponder.element.BeltItemElement;
-import com.simibubi.create.foundation.ponder.element.EntityElement;
-import com.simibubi.create.foundation.ponder.element.InputWindowElement;
-import com.simibubi.create.foundation.ponder.element.MinecartElement;
-import com.simibubi.create.foundation.ponder.element.MinecartElement.MinecartConstructor;
-import com.simibubi.create.foundation.ponder.element.ParrotElement;
-import com.simibubi.create.foundation.ponder.element.ParrotElement.ParrotPose;
-import com.simibubi.create.foundation.ponder.element.ParrotElement.SpinOnComponentPose;
-import com.simibubi.create.foundation.ponder.element.TextWindowElement;
-import com.simibubi.create.foundation.ponder.element.WorldSectionElement;
-import com.simibubi.create.foundation.ponder.instruction.AnimateBlockEntityInstruction;
-import com.simibubi.create.foundation.ponder.instruction.AnimateMinecartInstruction;
-import com.simibubi.create.foundation.ponder.instruction.AnimateParrotInstruction;
-import com.simibubi.create.foundation.ponder.instruction.AnimateWorldSectionInstruction;
-import com.simibubi.create.foundation.ponder.instruction.BlockEntityDataInstruction;
-import com.simibubi.create.foundation.ponder.instruction.ChaseAABBInstruction;
-import com.simibubi.create.foundation.ponder.instruction.CreateMinecartInstruction;
-import com.simibubi.create.foundation.ponder.instruction.CreateParrotInstruction;
-import com.simibubi.create.foundation.ponder.instruction.DelayInstruction;
-import com.simibubi.create.foundation.ponder.instruction.DisplayWorldSectionInstruction;
-import com.simibubi.create.foundation.ponder.instruction.EmitParticlesInstruction;
-import com.simibubi.create.foundation.ponder.instruction.EmitParticlesInstruction.Emitter;
-import com.simibubi.create.foundation.ponder.instruction.FadeOutOfSceneInstruction;
-import com.simibubi.create.foundation.ponder.instruction.HighlightValueBoxInstruction;
-import com.simibubi.create.foundation.ponder.instruction.KeyframeInstruction;
-import com.simibubi.create.foundation.ponder.instruction.LineInstruction;
-import com.simibubi.create.foundation.ponder.instruction.MarkAsFinishedInstruction;
-import com.simibubi.create.foundation.ponder.instruction.MovePoiInstruction;
-import com.simibubi.create.foundation.ponder.instruction.OutlineSelectionInstruction;
-import com.simibubi.create.foundation.ponder.instruction.PonderInstruction;
-import com.simibubi.create.foundation.ponder.instruction.ReplaceBlocksInstruction;
-import com.simibubi.create.foundation.ponder.instruction.RotateSceneInstruction;
-import com.simibubi.create.foundation.ponder.instruction.ShowInputInstruction;
-import com.simibubi.create.foundation.ponder.instruction.TextInstruction;
-import com.simibubi.create.foundation.utility.Color;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.content.contraptions.actors.trainControls.ControlsBlock;
+import com.simibubi.create_re.content.contraptions.glue.SuperGlueItem;
+import com.simibubi.create_re.content.fluids.pump.PumpBlockEntity;
+import com.simibubi.create_re.content.kinetics.base.IRotate.SpeedLevel;
+import com.simibubi.create_re.content.kinetics.base.KineticBlock;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.kinetics.base.RotationIndicatorParticleData;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlockEntity;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour.TransportedResult;
+import com.simibubi.create_re.content.kinetics.crafter.ConnectedInputHandler;
+import com.simibubi.create_re.content.kinetics.crafter.MechanicalCrafterBlockEntity;
+import com.simibubi.create_re.content.kinetics.gauge.SpeedGaugeBlockEntity;
+import com.simibubi.create_re.content.kinetics.mechanicalArm.ArmBlockEntity;
+import com.simibubi.create_re.content.logistics.funnel.FunnelBlockEntity;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlockEntity;
+import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkBlockEntity;
+import com.simibubi.create_re.content.trains.display.FlapDisplayBlockEntity;
+import com.simibubi.create_re.content.trains.signal.SignalBlockEntity;
+import com.simibubi.create_re.content.trains.signal.SignalBlockEntity.SignalState;
+import com.simibubi.create_re.content.trains.station.StationBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.ponder.element.AnimatedSceneElement;
+import com.simibubi.create_re.foundation.ponder.element.BeltItemElement;
+import com.simibubi.create_re.foundation.ponder.element.EntityElement;
+import com.simibubi.create_re.foundation.ponder.element.InputWindowElement;
+import com.simibubi.create_re.foundation.ponder.element.MinecartElement;
+import com.simibubi.create_re.foundation.ponder.element.MinecartElement.MinecartConstructor;
+import com.simibubi.create_re.foundation.ponder.element.ParrotElement;
+import com.simibubi.create_re.foundation.ponder.element.ParrotElement.ParrotPose;
+import com.simibubi.create_re.foundation.ponder.element.ParrotElement.SpinOnComponentPose;
+import com.simibubi.create_re.foundation.ponder.element.TextWindowElement;
+import com.simibubi.create_re.foundation.ponder.element.WorldSectionElement;
+import com.simibubi.create_re.foundation.ponder.instruction.AnimateBlockEntityInstruction;
+import com.simibubi.create_re.foundation.ponder.instruction.AnimateMinecartInstruction;
+import com.simibubi.create_re.foundation.ponder.instruction.AnimateParrotInstruction;
+import com.simibubi.create_re.foundation.ponder.instruction.AnimateWorldSectionInstruction;
+import com.simibubi.create_re.foundation.ponder.instruction.BlockEntityDataInstruction;
+import com.simibubi.create_re.foundation.ponder.instruction.ChaseAABBInstruction;
+import com.simibubi.create_re.foundation.ponder.instruction.CreateMinecartInstruction;
+import com.simibubi.create_re.foundation.ponder.instruction.CreateParrotInstruction;
+import com.simibubi.create_re.foundation.ponder.instruction.DelayInstruction;
+import com.simibubi.create_re.foundation.ponder.instruction.DisplayWorldSectionInstruction;
+import com.simibubi.create_re.foundation.ponder.instruction.EmitParticlesInstruction;
+import com.simibubi.create_re.foundation.ponder.instruction.EmitParticlesInstruction.Emitter;
+import com.simibubi.create_re.foundation.ponder.instruction.FadeOutOfSceneInstruction;
+import com.simibubi.create_re.foundation.ponder.instruction.HighlightValueBoxInstruction;
+import com.simibubi.create_re.foundation.ponder.instruction.KeyframeInstruction;
+import com.simibubi.create_re.foundation.ponder.instruction.LineInstruction;
+import com.simibubi.create_re.foundation.ponder.instruction.MarkAsFinishedInstruction;
+import com.simibubi.create_re.foundation.ponder.instruction.MovePoiInstruction;
+import com.simibubi.create_re.foundation.ponder.instruction.OutlineSelectionInstruction;
+import com.simibubi.create_re.foundation.ponder.instruction.PonderInstruction;
+import com.simibubi.create_re.foundation.ponder.instruction.ReplaceBlocksInstruction;
+import com.simibubi.create_re.foundation.ponder.instruction.RotateSceneInstruction;
+import com.simibubi.create_re.foundation.ponder.instruction.ShowInputInstruction;
+import com.simibubi.create_re.foundation.ponder.instruction.TextInstruction;
+import com.simibubi.create_re.foundation.utility.Color;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -347,14 +347,14 @@ public class SceneBuilder {
 		}
 
 		public void indicateRedstone(BlockPos pos) {
-			createRedstoneParticles(pos, 0xFF0000, 10);
+			create_reRedstoneParticles(pos, 0xFF0000, 10);
 		}
 
 		public void indicateSuccess(BlockPos pos) {
-			createRedstoneParticles(pos, 0x80FFaa, 10);
+			create_reRedstoneParticles(pos, 0x80FFaa, 10);
 		}
 
-		public void createRedstoneParticles(BlockPos pos, int color, int amount) {
+		public void create_reRedstoneParticles(BlockPos pos, int color, int amount) {
 			Vector3f rgb = new Color(color).asVectorF();
 			addInstruction(new EmitParticlesInstruction(VecHelper.getCenterOf(pos),
 				Emitter.withinBlockSpace(new DustParticleOptions(rgb, 1), Vec3.ZERO), amount, 2));
@@ -426,17 +426,17 @@ public class SceneBuilder {
 	public class SpecialInstructions {
 
 		public ElementLink<ParrotElement> birbOnTurntable(BlockPos pos) {
-			return createBirb(VecHelper.getCenterOf(pos), () -> new SpinOnComponentPose(pos));
+			return create_reBirb(VecHelper.getCenterOf(pos), () -> new SpinOnComponentPose(pos));
 		}
 
 		public ElementLink<ParrotElement> birbOnSpinnyShaft(BlockPos pos) {
-			return createBirb(VecHelper.getCenterOf(pos)
+			return create_reBirb(VecHelper.getCenterOf(pos)
 				.add(0, 0.5, 0), () -> new SpinOnComponentPose(pos));
 		}
 
-		public ElementLink<ParrotElement> createBirb(Vec3 location, Supplier<? extends ParrotPose> pose) {
+		public ElementLink<ParrotElement> create_reBirb(Vec3 location, Supplier<? extends ParrotPose> pose) {
 			ElementLink<ParrotElement> link = new ElementLink<>(ParrotElement.class);
-			ParrotElement parrot = ParrotElement.create(location, pose);
+			ParrotElement parrot = ParrotElement.create_re(location, pose);
 			addInstruction(new CreateParrotInstruction(10, Direction.DOWN, parrot));
 			addInstruction(scene -> scene.linkElement(parrot, link));
 			return link;
@@ -469,7 +469,7 @@ public class SceneBuilder {
 			addInstruction(AnimateParrotInstruction.move(link, offset, duration));
 		}
 
-		public ElementLink<MinecartElement> createCart(Vec3 location, float angle, MinecartConstructor type) {
+		public ElementLink<MinecartElement> create_reCart(Vec3 location, float angle, MinecartConstructor type) {
 			ElementLink<MinecartElement> link = new ElementLink<>(MinecartElement.class);
 			MinecartElement cart = new MinecartElement(location, angle, type);
 			addInstruction(new CreateMinecartInstruction(10, Direction.DOWN, cart));
@@ -529,7 +529,7 @@ public class SceneBuilder {
 			DisplayWorldSectionInstruction instruction =
 				new DisplayWorldSectionInstruction(15, fadeInDirection, selection, Optional.empty());
 			addInstruction(instruction);
-			return instruction.createLink(scene);
+			return instruction.create_reLink(scene);
 		}
 
 		public ElementLink<WorldSectionElement> showIndependentSection(Selection selection, Direction fadeInDirection,
@@ -537,14 +537,14 @@ public class SceneBuilder {
 			DisplayWorldSectionInstruction instruction =
 				new DisplayWorldSectionInstruction(fadeInDuration, fadeInDirection, selection, Optional.empty());
 			addInstruction(instruction);
-			return instruction.createLink(scene);
+			return instruction.create_reLink(scene);
 		}
 
 		public ElementLink<WorldSectionElement> showIndependentSectionImmediately(Selection selection) {
 			DisplayWorldSectionInstruction instruction =
 				new DisplayWorldSectionInstruction(0, Direction.DOWN, selection, Optional.empty());
 			addInstruction(instruction);
-			return instruction.createLink(scene);
+			return instruction.create_reLink(scene);
 		}
 
 		public void hideSection(Selection selection, Direction fadeOutDirection) {
@@ -696,7 +696,7 @@ public class SceneBuilder {
 			});
 		}
 
-		public ElementLink<EntityElement> createEntity(Function<Level, Entity> factory) {
+		public ElementLink<EntityElement> create_reEntity(Function<Level, Entity> factory) {
 			ElementLink<EntityElement> link = new ElementLink<>(EntityElement.class, UUID.randomUUID());
 			addInstruction(scene -> {
 				PonderWorld world = scene.getWorld();
@@ -709,15 +709,15 @@ public class SceneBuilder {
 			return link;
 		}
 
-		public ElementLink<EntityElement> createItemEntity(Vec3 location, Vec3 motion, ItemStack stack) {
-			return createEntity(world -> {
+		public ElementLink<EntityElement> create_reItemEntity(Vec3 location, Vec3 motion, ItemStack stack) {
+			return create_reEntity(world -> {
 				ItemEntity itemEntity = new ItemEntity(world, location.x, location.y, location.z, stack);
 				itemEntity.setDeltaMovement(motion);
 				return itemEntity;
 			});
 		}
 
-		public void createItemOnBeltLike(BlockPos location, Direction insertionSide, ItemStack stack) {
+		public void create_reItemOnBeltLike(BlockPos location, Direction insertionSide, ItemStack stack) {
 			addInstruction(scene -> {
 				PonderWorld world = scene.getWorld();
 				BlockEntity blockEntity = world.getBlockEntity(location);
@@ -732,7 +732,7 @@ public class SceneBuilder {
 			flapFunnel(location.above(), true);
 		}
 
-		public ElementLink<BeltItemElement> createItemOnBelt(BlockPos beltLocation, Direction insertionSide,
+		public ElementLink<BeltItemElement> create_reItemOnBelt(BlockPos beltLocation, Direction insertionSide,
 			ItemStack stack) {
 			ElementLink<BeltItemElement> link = new ElementLink<>(BeltItemElement.class);
 			addInstruction(scene -> {

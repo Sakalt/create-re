@@ -1,4 +1,4 @@
-package com.simibubi.create.content.logistics.tunnel;
+package com.simibubi.create_re.content.logistics.tunnel;
 
 import java.util.EnumMap;
 import java.util.HashSet;
@@ -9,15 +9,15 @@ import java.util.Set;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.content.logistics.funnel.BeltFunnelBlock;
-import com.simibubi.create.content.logistics.tunnel.BeltTunnelBlock.Shape;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat.Chaser;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.content.logistics.funnel.BeltFunnelBlock;
+import com.simibubi.create_re.content.logistics.tunnel.BeltTunnelBlock.Shape;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat.Chaser;
 
 import dev.engine_room.flywheel.lib.visualization.VisualizationHelper;
 import net.minecraft.core.BlockPos;
@@ -102,7 +102,7 @@ public class BeltTunnelBlockEntity extends SmartBlockEntity {
 			if (!newFlaps.contains(d))
 				flaps.remove(d);
 			else if (!flaps.containsKey(d))
-				flaps.put(d, createChasingFlap());
+				flaps.put(d, create_reChasingFlap());
 
 		// Backwards compat
 		if (!compound.contains("Sides") && compound.contains("Flaps"))
@@ -112,7 +112,7 @@ public class BeltTunnelBlockEntity extends SmartBlockEntity {
 			DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> VisualizationHelper.queueUpdate(this));
 	}
 
-	private LerpedFloat createChasingFlap() {
+	private LerpedFloat create_reChasingFlap() {
 		return LerpedFloat.linear()
 			.startWithValue(.25f)
 			.chase(0, .05f, Chaser.EXP);
@@ -146,7 +146,7 @@ public class BeltTunnelBlockEntity extends SmartBlockEntity {
 					&& nextState.getValue(BeltFunnelBlock.HORIZONTAL_FACING) == direction.getOpposite())
 					continue;
 
-			flaps.put(direction, createChasingFlap());
+			flaps.put(direction, create_reChasingFlap());
 		}
 		sendData();
 	}

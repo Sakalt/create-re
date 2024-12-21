@@ -1,8 +1,8 @@
-package com.simibubi.create.content.trains.station;
+package com.simibubi.create_re.content.trains.station;
 
 import java.util.List;
 
-import com.simibubi.create.foundation.mixin.accessor.FontAccessor;
+import com.simibubi.create_re.foundation.mixin.accessor.FontAccessor;
 
 import org.joml.Matrix4f;
 
@@ -20,7 +20,7 @@ public class NoShadowFontWrapper extends Font {
 	private Font wrapped;
 
 	public NoShadowFontWrapper(Font wrapped) {
-		super(((FontAccessor) wrapped).create$getFonts(), false);
+		super(((FontAccessor) wrapped).create_re$getFonts(), false);
 		this.wrapped = wrapped;
 	}
 

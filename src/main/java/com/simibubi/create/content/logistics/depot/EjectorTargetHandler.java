@@ -1,16 +1,16 @@
-package com.simibubi.create.content.logistics.depot;
+package com.simibubi.create_re.content.logistics.depot;
 
 import org.joml.Vector3f;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.Color;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.Color;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;

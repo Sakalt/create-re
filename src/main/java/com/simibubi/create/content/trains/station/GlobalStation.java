@@ -1,13 +1,13 @@
-package com.simibubi.create.content.trains.station;
+package com.simibubi.create_re.content.trains.station;
 
 import java.lang.ref.WeakReference;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.content.trains.entity.Train;
-import com.simibubi.create.content.trains.graph.DimensionPalette;
-import com.simibubi.create.content.trains.graph.TrackNode;
-import com.simibubi.create.content.trains.signal.SingleBlockEntityEdgePoint;
+import com.simibubi.create_re.content.trains.entity.Train;
+import com.simibubi.create_re.content.trains.graph.DimensionPalette;
+import com.simibubi.create_re.content.trains.graph.TrackNode;
+import com.simibubi.create_re.content.trains.signal.SingleBlockEntityEdgePoint;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;

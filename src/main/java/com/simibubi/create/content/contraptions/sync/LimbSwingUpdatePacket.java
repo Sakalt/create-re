@@ -1,6 +1,6 @@
-package com.simibubi.create.content.contraptions.sync;
+package com.simibubi.create_re.content.contraptions.sync;
 
-import com.simibubi.create.foundation.networking.SimplePacketBase;
+import com.simibubi.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;

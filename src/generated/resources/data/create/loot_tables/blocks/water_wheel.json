@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:water_wheel"
+          "name": "create_re:water_wheel"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/water_wheel"
+  "random_sequence": "create_re:blocks/water_wheel"
 }

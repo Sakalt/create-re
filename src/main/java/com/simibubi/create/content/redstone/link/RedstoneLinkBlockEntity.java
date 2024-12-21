@@ -1,13 +1,13 @@
-package com.simibubi.create.content.redstone.link;
+package com.simibubi.create_re.content.redstone.link;
 
 import java.util.List;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.ValueBoxTransform;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBoxTransform;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -32,11 +32,11 @@ public class RedstoneLinkBlockEntity extends SmartBlockEntity {
 
 	@Override
 	public void addBehavioursDeferred(List<BlockEntityBehaviour> behaviours) {
-		createLink();
+		create_reLink();
 		behaviours.add(link);
 	}
 
-	protected void createLink() {
+	protected void create_reLink() {
 		Pair<ValueBoxTransform, ValueBoxTransform> slots =
 			ValueBoxTransform.Dual.makeSlots(RedstoneLinkFrequencySlot::new);
 		link = transmitter ? LinkBehaviour.transmitter(this, slots, this::getSignal)
@@ -87,7 +87,7 @@ public class RedstoneLinkBlockEntity extends SmartBlockEntity {
 			transmitter = isTransmitterBlock();
 			LinkBehaviour prevlink = link;
 			removeBehaviour(LinkBehaviour.TYPE);
-			createLink();
+			create_reLink();
 			link.copyItemsFrom(prevlink);
 			attachBehaviourLate(link);
 		}

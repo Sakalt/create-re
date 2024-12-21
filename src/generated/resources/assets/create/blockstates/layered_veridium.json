@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/layered_veridium"
+      "model": "create_re:block/layered_veridium"
     }
   }
 }

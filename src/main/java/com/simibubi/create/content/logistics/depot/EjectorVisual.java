@@ -1,9 +1,9 @@
-package com.simibubi.create.content.logistics.depot;
+package com.simibubi.create_re.content.logistics.depot;
 
 import java.util.function.Consumer;
 
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.kinetics.base.ShaftVisual;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.kinetics.base.ShaftVisual;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.visual.DynamicVisual;
@@ -22,7 +22,7 @@ public class EjectorVisual extends ShaftVisual<EjectorBlockEntity> implements Si
 	public EjectorVisual(VisualizationContext dispatcher, EjectorBlockEntity blockEntity, float partialTick) {
 		super(dispatcher, blockEntity, partialTick);
 
-		plate = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.EJECTOR_TOP)).createInstance();
+		plate = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.EJECTOR_TOP)).create_reInstance();
 
 		pivotPlate(getLidProgress(partialTick));
 	}

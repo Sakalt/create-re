@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"1": "create:block/belt_offset"
+		"1": "create_re:block/belt_offset"
 	},
 	"elements": [
 		{

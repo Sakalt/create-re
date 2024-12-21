@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.item.render;
+package com.simibubi.create_re.foundation.item.render;
 
 import java.util.IdentityHashMap;
 import java.util.Map;

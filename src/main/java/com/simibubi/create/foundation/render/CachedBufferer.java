@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.render;
+package com.simibubi.create_re.foundation.render;
 
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.FACING;
 
@@ -7,9 +7,9 @@ import java.util.function.Supplier;
 import org.apache.commons.lang3.tuple.Pair;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.foundation.render.SuperByteBufferCache.Compartment;
-import com.simibubi.create.foundation.utility.AngleHelper;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.foundation.render.SuperByteBufferCache.Compartment;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
 
 import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 import dev.engine_room.flywheel.lib.transform.TransformStack;

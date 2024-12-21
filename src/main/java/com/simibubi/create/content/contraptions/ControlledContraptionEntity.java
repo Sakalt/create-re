@@ -1,14 +1,14 @@
-package com.simibubi.create.content.contraptions;
+package com.simibubi.create_re.content.contraptions;
 
-import static com.simibubi.create.foundation.utility.AngleHelper.angleLerp;
+import static com.simibubi.create_re.foundation.utility.AngleHelper.angleLerp;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.AllEntityTypes;
-import com.simibubi.create.content.contraptions.bearing.BearingContraption;
-import com.simibubi.create.content.contraptions.behaviour.MovementBehaviour;
-import com.simibubi.create.content.contraptions.behaviour.MovementContext;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllEntityTypes;
+import com.simibubi.create_re.content.contraptions.bearing.BearingContraption;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementBehaviour;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import dev.engine_room.flywheel.lib.transform.TransformStack;
 import net.minecraft.core.BlockPos;
@@ -43,7 +43,7 @@ public class ControlledContraptionEntity extends AbstractContraptionEntity {
 		super(type, world);
 	}
 
-	public static ControlledContraptionEntity create(Level world, IControlContraption controller,
+	public static ControlledContraptionEntity create_re(Level world, IControlContraption controller,
 		Contraption contraption) {
 		ControlledContraptionEntity entity =
 			new ControlledContraptionEntity(AllEntityTypes.CONTROLLED_CONTRAPTION.get(), world);

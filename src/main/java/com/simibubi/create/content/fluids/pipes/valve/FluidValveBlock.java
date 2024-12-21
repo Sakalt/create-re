@@ -1,16 +1,16 @@
-package com.simibubi.create.content.fluids.pipes.valve;
+package com.simibubi.create_re.content.fluids.pipes.valve;
 
 import javax.annotation.Nonnull;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.content.fluids.FluidPropagator;
-import com.simibubi.create.content.fluids.pipes.FluidPipeBlock;
-import com.simibubi.create.content.fluids.pipes.IAxisPipe;
-import com.simibubi.create.content.kinetics.base.DirectionalAxisKineticBlock;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.block.ProperWaterloggedBlock;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.content.fluids.FluidPropagator;
+import com.simibubi.create_re.content.fluids.pipes.FluidPipeBlock;
+import com.simibubi.create_re.content.fluids.pipes.IAxisPipe;
+import com.simibubi.create_re.content.kinetics.base.DirectionalAxisKineticBlock;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -37,7 +37,7 @@ import net.minecraft.world.ticks.TickPriority;
 public class FluidValveBlock extends DirectionalAxisKineticBlock
 	implements IAxisPipe, IBE<FluidValveBlockEntity>, ProperWaterloggedBlock {
 
-	public static final BooleanProperty ENABLED = BooleanProperty.create("enabled");
+	public static final BooleanProperty ENABLED = BooleanProperty.create_re("enabled");
 
 	public FluidValveBlock(Properties properties) {
 		super(properties);
@@ -52,8 +52,8 @@ public class FluidValveBlock extends DirectionalAxisKineticBlock
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
-		super.createBlockStateDefinition(builder.add(ENABLED, WATERLOGGED));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
+		super.create_reBlockStateDefinition(builder.add(ENABLED, WATERLOGGED));
 	}
 
 	@Override

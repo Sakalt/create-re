@@ -1,16 +1,16 @@
-package com.simibubi.create.content.redstone.displayLink.source;
+package com.simibubi.create_re.content.redstone.displayLink.source;
 
 import java.util.List;
 
 import com.google.common.collect.ImmutableList;
-import com.simibubi.create.content.redstone.displayLink.DisplayLinkContext;
-import com.simibubi.create.content.redstone.displayLink.target.DisplayTargetStats;
-import com.simibubi.create.content.trains.display.FlapDisplayBlockEntity;
-import com.simibubi.create.content.trains.display.FlapDisplayLayout;
-import com.simibubi.create.content.trains.display.FlapDisplaySection;
-import com.simibubi.create.foundation.gui.ModularGuiLineBuilder;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkContext;
+import com.simibubi.create_re.content.redstone.displayLink.target.DisplayTargetStats;
+import com.simibubi.create_re.content.trains.display.FlapDisplayBlockEntity;
+import com.simibubi.create_re.content.trains.display.FlapDisplayLayout;
+import com.simibubi.create_re.content.trains.display.FlapDisplaySection;
+import com.simibubi.create_re.foundation.gui.ModularGuiLineBuilder;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.MutableComponent;
@@ -78,7 +78,7 @@ public abstract class SingleLineDisplaySource extends DisplaySource {
 		if (!allowsLabeling(context)) {
 			if (!layout.isLayout(layoutKey))
 				layout.configure(layoutKey,
-					ImmutableList.of(createSectionForValue(context, flapDisplay.getMaxCharCount())));
+					ImmutableList.of(create_reSectionForValue(context, flapDisplay.getMaxCharCount())));
 			return;
 		}
 
@@ -88,7 +88,7 @@ public abstract class SingleLineDisplaySource extends DisplaySource {
 		if (label.isEmpty()) {
 			if (!layout.isLayout(layoutKey))
 				layout.configure(layoutKey,
-					ImmutableList.of(createSectionForValue(context, flapDisplay.getMaxCharCount())));
+					ImmutableList.of(create_reSectionForValue(context, flapDisplay.getMaxCharCount())));
 			return;
 		}
 
@@ -102,7 +102,7 @@ public abstract class SingleLineDisplaySource extends DisplaySource {
 
 		if (label.length() + 1 < maxCharCount)
 			layout.configure(layoutName,
-				ImmutableList.of(labelSection, createSectionForValue(context, maxCharCount - label.length() - 1)));
+				ImmutableList.of(labelSection, create_reSectionForValue(context, maxCharCount - label.length() - 1)));
 		else
 			layout.configure(layoutName, ImmutableList.of(labelSection));
 	}
@@ -111,7 +111,7 @@ public abstract class SingleLineDisplaySource extends DisplaySource {
 		return "Default";
 	}
 
-	protected FlapDisplaySection createSectionForValue(DisplayLinkContext context, int size) {
+	protected FlapDisplaySection create_reSectionForValue(DisplayLinkContext context, int size) {
 		return new FlapDisplaySection(size * FlapDisplaySection.MONOSPACE, "alphabet", false, false);
 	}
 

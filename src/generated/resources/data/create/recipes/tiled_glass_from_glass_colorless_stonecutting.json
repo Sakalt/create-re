@@ -4,5 +4,5 @@
   "ingredient": {
     "tag": "forge:glass/colorless"
   },
-  "result": "create:tiled_glass"
+  "result": "create_re:tiled_glass"
 }

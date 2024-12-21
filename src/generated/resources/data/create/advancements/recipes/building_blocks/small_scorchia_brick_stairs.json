@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:small_scorchia_bricks"
+              "create_re:small_scorchia_bricks"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:small_scorchia_brick_stairs"
+        "recipe": "create_re:small_scorchia_brick_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:small_scorchia_brick_stairs"
+      "create_re:small_scorchia_brick_stairs"
     ]
   },
   "sends_telemetry_event": false

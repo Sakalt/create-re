@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.item;
+package com.simibubi.create_re.foundation.item;
 
 import static net.minecraft.ChatFormatting.DARK_GRAY;
 import static net.minecraft.ChatFormatting.GRAY;
@@ -15,9 +15,9 @@ import org.apache.commons.lang3.tuple.Pair;
 import org.jetbrains.annotations.Nullable;
 
 import com.google.common.collect.ImmutableList;
-import com.simibubi.create.foundation.item.TooltipHelper.Palette;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.item.TooltipHelper.Palette;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.Screen;
@@ -32,12 +32,12 @@ public record ItemDescription(ImmutableList<Component> lines, ImmutableList<Comp
 	private static final Map<Item, Supplier<String>> CUSTOM_TOOLTIP_KEYS = new IdentityHashMap<>();
 
 	@Nullable
-	public static ItemDescription create(Item item, Palette palette) {
-		return create(getTooltipTranslationKey(item), palette);
+	public static ItemDescription create_re(Item item, Palette palette) {
+		return create_re(getTooltipTranslationKey(item), palette);
 	}
 
 	@Nullable
-	public static ItemDescription create(String translationKey, Palette palette) {
+	public static ItemDescription create_re(String translationKey, Palette palette) {
 		if (!canFillBuilder(translationKey + ".summary")) {
 			return null;
 		}
@@ -231,7 +231,7 @@ public record ItemDescription(ImmutableList<Component> lines, ImmutableList<Comp
 		@Override
 		public void modify(ItemTooltipEvent context) {
 			if (checkLocale()) {
-				description = create(item, palette);
+				description = create_re(item, palette);
 			}
 			if (description == null) {
 				return;

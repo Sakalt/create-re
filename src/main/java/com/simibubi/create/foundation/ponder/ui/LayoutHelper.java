@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.ponder.ui;
+package com.simibubi.create_re.foundation.ponder.ui;
 
 import net.minecraft.client.renderer.Rect2i;
 

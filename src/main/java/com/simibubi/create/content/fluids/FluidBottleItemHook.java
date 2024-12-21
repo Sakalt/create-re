@@ -1,7 +1,7 @@
-package com.simibubi.create.content.fluids;
+package com.simibubi.create_re.content.fluids;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.FluidTags;

@@ -1,8 +1,8 @@
-package com.simibubi.create.content.contraptions.behaviour.dispenser;
+package com.simibubi.create_re.content.contraptions.behaviour.dispenser;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.content.contraptions.behaviour.MovementContext;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;

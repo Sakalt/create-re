@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:dough"
+              "create_re:dough"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:campfire_cooking/bread"
+        "recipe": "create_re:campfire_cooking/bread"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:campfire_cooking/bread"
+      "create_re:campfire_cooking/bread"
     ]
   },
   "sends_telemetry_event": false

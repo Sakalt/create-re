@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:andesite_casing"
+          "name": "create_re:andesite_casing"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/andesite_casing"
+  "random_sequence": "create_re:blocks/andesite_casing"
 }

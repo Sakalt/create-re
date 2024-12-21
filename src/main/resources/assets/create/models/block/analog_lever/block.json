@@ -3,7 +3,7 @@
 	"parent": "block/block",
 	"ambientocclusion": false,
 	"textures": {
-		"4": "create:block/analog_lever",
+		"4": "create_re:block/analog_lever",
 		"particle": "block/lever"
 	},
 	"elements": [

@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:andesite_casing"
+              "create_re:andesite_casing"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/kinetics/clutch"
+        "recipe": "create_re:crafting/kinetics/clutch"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/kinetics/clutch"
+      "create_re:crafting/kinetics/clutch"
     ]
   },
   "sends_telemetry_event": false

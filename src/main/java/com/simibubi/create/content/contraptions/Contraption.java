@@ -1,7 +1,7 @@
-package com.simibubi.create.content.contraptions;
+package com.simibubi.create_re.content.contraptions;
 
-import static com.simibubi.create.content.contraptions.piston.MechanicalPistonBlock.isExtensionPole;
-import static com.simibubi.create.content.contraptions.piston.MechanicalPistonBlock.isPistonHead;
+import static com.simibubi.create_re.content.contraptions.piston.MechanicalPistonBlock.isExtensionPole;
+import static com.simibubi.create_re.content.contraptions.piston.MechanicalPistonBlock.isPistonHead;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -27,57 +27,57 @@ import org.apache.commons.lang3.tuple.Pair;
 
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllInteractionBehaviours;
-import com.simibubi.create.AllMovementBehaviours;
-import com.simibubi.create.content.contraptions.actors.contraptionControls.ContraptionControlsMovement;
-import com.simibubi.create.content.contraptions.actors.harvester.HarvesterMovementBehaviour;
-import com.simibubi.create.content.contraptions.actors.seat.SeatBlock;
-import com.simibubi.create.content.contraptions.actors.seat.SeatEntity;
-import com.simibubi.create.content.contraptions.actors.trainControls.ControlsBlock;
-import com.simibubi.create.content.contraptions.bearing.MechanicalBearingBlock;
-import com.simibubi.create.content.contraptions.bearing.StabilizedContraption;
-import com.simibubi.create.content.contraptions.bearing.WindmillBearingBlock;
-import com.simibubi.create.content.contraptions.bearing.WindmillBearingBlockEntity;
-import com.simibubi.create.content.contraptions.behaviour.MovementBehaviour;
-import com.simibubi.create.content.contraptions.behaviour.MovementContext;
-import com.simibubi.create.content.contraptions.behaviour.MovingInteractionBehaviour;
-import com.simibubi.create.content.contraptions.chassis.AbstractChassisBlock;
-import com.simibubi.create.content.contraptions.chassis.ChassisBlockEntity;
-import com.simibubi.create.content.contraptions.chassis.StickerBlock;
-import com.simibubi.create.content.contraptions.gantry.GantryCarriageBlock;
-import com.simibubi.create.content.contraptions.glue.SuperGlueEntity;
-import com.simibubi.create.content.contraptions.piston.MechanicalPistonBlock;
-import com.simibubi.create.content.contraptions.piston.MechanicalPistonBlock.PistonState;
-import com.simibubi.create.content.contraptions.piston.MechanicalPistonHeadBlock;
-import com.simibubi.create.content.contraptions.piston.PistonExtensionPoleBlock;
-import com.simibubi.create.content.contraptions.pulley.PulleyBlock;
-import com.simibubi.create.content.contraptions.pulley.PulleyBlock.MagnetBlock;
-import com.simibubi.create.content.contraptions.pulley.PulleyBlock.RopeBlock;
-import com.simibubi.create.content.contraptions.pulley.PulleyBlockEntity;
-import com.simibubi.create.content.decoration.slidingDoor.SlidingDoorBlock;
-import com.simibubi.create.content.kinetics.base.BlockBreakingMovementBehaviour;
-import com.simibubi.create.content.kinetics.base.IRotate;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.kinetics.belt.BeltBlock;
-import com.simibubi.create.content.kinetics.gantry.GantryShaftBlock;
-import com.simibubi.create.content.kinetics.simpleRelays.ShaftBlock;
-import com.simibubi.create.content.kinetics.steamEngine.PoweredShaftBlockEntity;
-import com.simibubi.create.content.logistics.crate.CreativeCrateBlockEntity;
-import com.simibubi.create.content.redstone.contact.RedstoneContactBlock;
-import com.simibubi.create.content.trains.bogey.AbstractBogeyBlock;
-import com.simibubi.create.foundation.blockEntity.IMultiBlockEntityContainer;
-import com.simibubi.create.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
-import com.simibubi.create.foundation.utility.BBHelper;
-import com.simibubi.create.foundation.utility.BlockFace;
-import com.simibubi.create.foundation.utility.BlockHelper;
-import com.simibubi.create.foundation.utility.ICoordinate;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.NBTProcessors;
-import com.simibubi.create.foundation.utility.UniqueLinkedList;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllInteractionBehaviours;
+import com.simibubi.create_re.AllMovementBehaviours;
+import com.simibubi.create_re.content.contraptions.actors.contraptionControls.ContraptionControlsMovement;
+import com.simibubi.create_re.content.contraptions.actors.harvester.HarvesterMovementBehaviour;
+import com.simibubi.create_re.content.contraptions.actors.seat.SeatBlock;
+import com.simibubi.create_re.content.contraptions.actors.seat.SeatEntity;
+import com.simibubi.create_re.content.contraptions.actors.trainControls.ControlsBlock;
+import com.simibubi.create_re.content.contraptions.bearing.MechanicalBearingBlock;
+import com.simibubi.create_re.content.contraptions.bearing.StabilizedContraption;
+import com.simibubi.create_re.content.contraptions.bearing.WindmillBearingBlock;
+import com.simibubi.create_re.content.contraptions.bearing.WindmillBearingBlockEntity;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementBehaviour;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
+import com.simibubi.create_re.content.contraptions.behaviour.MovingInteractionBehaviour;
+import com.simibubi.create_re.content.contraptions.chassis.AbstractChassisBlock;
+import com.simibubi.create_re.content.contraptions.chassis.ChassisBlockEntity;
+import com.simibubi.create_re.content.contraptions.chassis.StickerBlock;
+import com.simibubi.create_re.content.contraptions.gantry.GantryCarriageBlock;
+import com.simibubi.create_re.content.contraptions.glue.SuperGlueEntity;
+import com.simibubi.create_re.content.contraptions.piston.MechanicalPistonBlock;
+import com.simibubi.create_re.content.contraptions.piston.MechanicalPistonBlock.PistonState;
+import com.simibubi.create_re.content.contraptions.piston.MechanicalPistonHeadBlock;
+import com.simibubi.create_re.content.contraptions.piston.PistonExtensionPoleBlock;
+import com.simibubi.create_re.content.contraptions.pulley.PulleyBlock;
+import com.simibubi.create_re.content.contraptions.pulley.PulleyBlock.MagnetBlock;
+import com.simibubi.create_re.content.contraptions.pulley.PulleyBlock.RopeBlock;
+import com.simibubi.create_re.content.contraptions.pulley.PulleyBlockEntity;
+import com.simibubi.create_re.content.decoration.slidingDoor.SlidingDoorBlock;
+import com.simibubi.create_re.content.kinetics.base.BlockBreakingMovementBehaviour;
+import com.simibubi.create_re.content.kinetics.base.IRotate;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlock;
+import com.simibubi.create_re.content.kinetics.gantry.GantryShaftBlock;
+import com.simibubi.create_re.content.kinetics.simpleRelays.ShaftBlock;
+import com.simibubi.create_re.content.kinetics.steamEngine.PoweredShaftBlockEntity;
+import com.simibubi.create_re.content.logistics.crate.CreativeCrateBlockEntity;
+import com.simibubi.create_re.content.redstone.contact.RedstoneContactBlock;
+import com.simibubi.create_re.content.trains.bogey.AbstractBogeyBlock;
+import com.simibubi.create_re.foundation.blockEntity.IMultiBlockEntityContainer;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
+import com.simibubi.create_re.foundation.utility.BBHelper;
+import com.simibubi.create_re.foundation.utility.BlockFace;
+import com.simibubi.create_re.foundation.utility.BlockHelper;
+import com.simibubi.create_re.foundation.utility.ICoordinate;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.NBTProcessors;
+import com.simibubi.create_re.foundation.utility.UniqueLinkedList;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -181,7 +181,7 @@ public abstract class Contraption {
 		stabilizedSubContraptions = new HashMap<>();
 		simplifiedEntityColliders = Optional.empty();
 		storage = new MountedStorageManager();
-		capturedMultiblocks = ArrayListMultimap.create();
+		capturedMultiblocks = ArrayListMultimap.create_re();
 	}
 
 	public ContraptionWorld getContraptionWorld() {
@@ -257,14 +257,14 @@ public abstract class Contraption {
 				continue;
 			}
 			subContraption.removeBlocksFromWorld(world, BlockPos.ZERO);
-			OrientedContraptionEntity movedContraption = OrientedContraptionEntity.create(world, subContraption, face);
+			OrientedContraptionEntity movedContraption = OrientedContraptionEntity.create_re(world, subContraption, face);
 			BlockPos anchor = blockFace.getConnectedPos();
 			movedContraption.setPos(anchor.getX() + .5f, anchor.getY(), anchor.getZ() + .5f);
 			world.addFreshEntity(movedContraption);
 			stabilizedSubContraptions.put(movedContraption.getUUID(), new BlockFace(toLocalPos(pos), face));
 		}
 
-		storage.createHandlers();
+		storage.create_reHandlers();
 		gatherBBsOffThread();
 	}
 
@@ -354,7 +354,7 @@ public abstract class Contraption {
 				if (!visited.contains(pos.relative(d)))
 					frontier.add(pos.relative(d));
 
-		// Bearings potentially create stabilized sub-contraptions
+		// Bearings potentially create_re stabilized sub-contraptions
 		if (AllBlocks.MECHANICAL_BEARING.has(state))
 			moveBearing(pos, frontier, visited, state);
 
@@ -625,7 +625,7 @@ public abstract class Contraption {
 		CompoundTag compoundnbt = getBlockEntityNBT(world, pos);
 		BlockEntity blockEntity = world.getBlockEntity(pos);
 		if (blockEntity instanceof PoweredShaftBlockEntity)
-			blockEntity = AllBlockEntityTypes.BRACKETED_KINETIC.create(pos, blockstate);
+			blockEntity = AllBlockEntityTypes.BRACKETED_KINETIC.create_re(pos, blockstate);
 		return Pair.of(new StructureBlockInfo(pos, blockstate, compoundnbt), blockEntity);
 	}
 
@@ -831,7 +831,7 @@ public abstract class Contraption {
 		nbt.put("Seats", NBTHelper.writeCompoundList(getSeats(), NbtUtils::writeBlockPos));
 		nbt.put("Passengers", NBTHelper.writeCompoundList(getSeatMapping().entrySet(), e -> {
 			CompoundTag tag = new CompoundTag();
-			tag.put("Id", NbtUtils.createUUID(e.getKey()));
+			tag.put("Id", NbtUtils.create_reUUID(e.getKey()));
 			tag.putInt("Seat", e.getValue());
 			return tag;
 		}));

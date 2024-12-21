@@ -1,6 +1,6 @@
 {
   "values": [
-    "create:copper_diving_boots",
-    "create:netherite_diving_boots"
+    "create_re:copper_diving_boots",
+    "create_re:netherite_diving_boots"
   ]
 }

@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.gui.element;
+package com.simibubi.create_re.foundation.gui.element;
 
 import javax.annotation.Nonnull;
 

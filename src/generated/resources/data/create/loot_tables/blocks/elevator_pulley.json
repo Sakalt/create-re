@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:elevator_pulley"
+          "name": "create_re:elevator_pulley"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/elevator_pulley"
+  "random_sequence": "create_re:blocks/elevator_pulley"
 }

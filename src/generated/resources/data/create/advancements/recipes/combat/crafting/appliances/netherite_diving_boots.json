@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:copper_diving_boots"
+              "create_re:copper_diving_boots"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/appliances/netherite_diving_boots"
+        "recipe": "create_re:crafting/appliances/netherite_diving_boots"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/appliances/netherite_diving_boots"
+      "create_re:crafting/appliances/netherite_diving_boots"
     ]
   },
   "sends_telemetry_event": false

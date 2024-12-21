@@ -3,10 +3,10 @@
 	"ambientocclusion": false,
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "create:block/portal_track",
-		"2": "create:block/portal_track_mip",
-		"3": "create:block/standard_track",
-		"particle": "create:block/palettes/stone_types/polished/andesite_cut_polished"
+		"1": "create_re:block/portal_track",
+		"2": "create_re:block/portal_track_mip",
+		"3": "create_re:block/standard_track",
+		"particle": "create_re:block/palettes/stone_types/polished/andesite_cut_polished"
 	},
 	"elements": [
 		{

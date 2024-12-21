@@ -1,4 +1,4 @@
-package com.simibubi.create.content.logistics.filter;
+package com.simibubi.create_re.content.logistics.filter;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,12 +6,12 @@ import java.util.List;
 
 import javax.annotation.Nonnull;
 
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllKeys;
-import com.simibubi.create.content.logistics.filter.AttributeFilterMenu.WhitelistMode;
-import com.simibubi.create.foundation.item.ItemHelper;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllKeys;
+import com.simibubi.create_re.content.logistics.filter.AttributeFilterMenu.WhitelistMode;
+import com.simibubi.create_re.foundation.item.ItemHelper;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
@@ -161,12 +161,12 @@ public class FilterItem extends Item implements MenuProvider {
 	}
 
 	@Override
-	public AbstractContainerMenu createMenu(int id, Inventory inv, Player player) {
+	public AbstractContainerMenu create_reMenu(int id, Inventory inv, Player player) {
 		ItemStack heldItem = player.getMainHandItem();
 		if (type == FilterType.REGULAR)
-			return FilterMenu.create(id, inv, heldItem);
+			return FilterMenu.create_re(id, inv, heldItem);
 		if (type == FilterType.ATTRIBUTE)
-			return AttributeFilterMenu.create(id, inv, heldItem);
+			return AttributeFilterMenu.create_re(id, inv, heldItem);
 		return null;
 	}
 

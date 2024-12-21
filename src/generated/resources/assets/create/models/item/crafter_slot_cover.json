@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "create:item/crafter_slot_cover"
+    "layer0": "create_re:item/crafter_slot_cover"
   }
 }

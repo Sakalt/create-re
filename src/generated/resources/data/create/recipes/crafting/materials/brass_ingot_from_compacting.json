@@ -12,7 +12,7 @@
     "###"
   ],
   "result": {
-    "item": "create:brass_ingot"
+    "item": "create_re:brass_ingot"
   },
   "show_notification": true
 }

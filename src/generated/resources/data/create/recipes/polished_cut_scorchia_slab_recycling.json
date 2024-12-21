@@ -3,13 +3,13 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "create:polished_cut_scorchia_slab"
+      "item": "create_re:polished_cut_scorchia_slab"
     },
     {
-      "item": "create:polished_cut_scorchia_slab"
+      "item": "create_re:polished_cut_scorchia_slab"
     }
   ],
   "result": {
-    "item": "create:polished_cut_scorchia"
+    "item": "create_re:polished_cut_scorchia"
   }
 }

@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"textures": {
-		"0": "create:block/clipboard_model_blank",
-		"1": "create:block/belt/andesite_belt_casing",
-		"particle": "create:block/clipboard_model_blank"
+		"0": "create_re:block/clipboard_model_blank",
+		"1": "create_re:block/belt/andesite_belt_casing",
+		"particle": "create_re:block/clipboard_model_blank"
 	},
 	"elements": [
 		{

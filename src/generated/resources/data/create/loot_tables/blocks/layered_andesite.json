@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:layered_andesite"
+          "name": "create_re:layered_andesite"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/layered_andesite"
+  "random_sequence": "create_re:blocks/layered_andesite"
 }

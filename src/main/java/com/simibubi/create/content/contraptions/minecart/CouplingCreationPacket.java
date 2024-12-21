@@ -1,6 +1,6 @@
-package com.simibubi.create.content.contraptions.minecart;
+package com.simibubi.create_re.content.contraptions.minecart;
 
-import com.simibubi.create.foundation.networking.SimplePacketBase;
+import com.simibubi.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.server.level.ServerPlayer;

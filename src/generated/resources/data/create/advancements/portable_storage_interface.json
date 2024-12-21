@@ -1,25 +1,25 @@
 {
-  "parent": "create:contraption_actors",
+  "parent": "create_re:contraption_actors",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:portable_storage_interface_builtin"
+      "trigger": "create_re:portable_storage_interface_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.portable_storage_interface.desc"
+      "translate": "advancement.create_re.portable_storage_interface.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:portable_storage_interface"
+      "item": "create_re:portable_storage_interface"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.portable_storage_interface"
+      "translate": "advancement.create_re.portable_storage_interface"
     }
   },
   "requirements": [

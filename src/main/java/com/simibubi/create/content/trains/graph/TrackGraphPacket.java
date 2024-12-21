@@ -1,10 +1,10 @@
-package com.simibubi.create.content.trains.graph;
+package com.simibubi.create_re.content.trains.graph;
 
 import java.util.UUID;
 
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.content.trains.GlobalRailwayManager;
-import com.simibubi.create.foundation.networking.SimplePacketBase;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.content.trains.GlobalRailwayManager;
+import com.simibubi.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraftforge.network.NetworkEvent.Context;
 

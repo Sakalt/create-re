@@ -1,6 +1,6 @@
-package com.simibubi.create.content.trains.bogey;
+package com.simibubi.create_re.content.trains.bogey;
 
-import com.simibubi.create.AllBogeyStyles;
+import com.simibubi.create_re.AllBogeyStyles;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntityType;

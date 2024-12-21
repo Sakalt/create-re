@@ -1,14 +1,14 @@
-package com.simibubi.create.content.fluids.pipes;
+package com.simibubi.create_re.content.fluids.pipes;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
-import com.simibubi.create.content.fluids.FluidPropagator;
-import com.simibubi.create.foundation.advancement.AdvancementBehaviour;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.block.ProperWaterloggedBlock;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.VoxelShaper;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.content.fluids.FluidPropagator;
+import com.simibubi.create_re.foundation.advancement.AdvancementBehaviour;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.VoxelShaper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -44,7 +44,7 @@ public class SmartFluidPipeBlock extends FaceAttachedHorizontalDirectionalBlock
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
 		builder.add(FACE, FACING, WATERLOGGED);
 	}
 

@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.graph;
+package com.simibubi.create_re.content.trains.graph;
 
 import java.util.Collection;
 import java.util.Map;
@@ -6,13 +6,13 @@ import java.util.Map.Entry;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.content.trains.graph.TrackNodeLocation.DiscoveredLocation;
-import com.simibubi.create.content.trains.track.BezierConnection;
-import com.simibubi.create.content.trains.track.BezierTrackPointLocation;
-import com.simibubi.create.content.trains.track.ITrackBlock;
-import com.simibubi.create.content.trains.track.TrackBlockEntity;
-import com.simibubi.create.foundation.utility.Couple;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.trains.graph.TrackNodeLocation.DiscoveredLocation;
+import com.simibubi.create_re.content.trains.track.BezierConnection;
+import com.simibubi.create_re.content.trains.track.BezierTrackPointLocation;
+import com.simibubi.create_re.content.trains.track.ITrackBlock;
+import com.simibubi.create_re.content.trains.track.TrackBlockEntity;
+import com.simibubi.create_re.foundation.utility.Couple;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction.AxisDirection;
@@ -52,7 +52,7 @@ public class TrackGraphHelper {
 						continue;
 
 					TrackGraphLocation graphLocation = new TrackGraphLocation();
-					graphLocation.edge = Couple.create(node.getLocation(), backNode.getLocation());
+					graphLocation.edge = Couple.create_re(node.getLocation(), backNode.getLocation());
 					graphLocation.position = 0;
 					graphLocation.graph = graph;
 					return graphLocation;
@@ -138,7 +138,7 @@ public class TrackGraphHelper {
 				/ 2.0;
 
 		TrackGraphLocation graphLocation = new TrackGraphLocation();
-		graphLocation.edge = Couple.create(backNode.getLocation(), frontNode.getLocation());
+		graphLocation.edge = Couple.create_re(backNode.getLocation(), frontNode.getLocation());
 		graphLocation.position = position;
 		graphLocation.graph = graph;
 		return graphLocation;
@@ -178,7 +178,7 @@ public class TrackGraphHelper {
 
 			TrackGraphLocation graphLocation = new TrackGraphLocation();
 			graphLocation.graph = graph;
-			graphLocation.edge = Couple.create(location, targetLoc);
+			graphLocation.edge = Couple.create_re(location, targetLoc);
 			graphLocation.position = (targetBezier.segment() + 1) / 2f;
 			if (targetDirection == AxisDirection.POSITIVE) {
 				graphLocation.edge = graphLocation.edge.swap();

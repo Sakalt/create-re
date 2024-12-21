@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "create:block/whistle",
-		"particle": "create:block/whistle_particle"
+		"0": "create_re:block/whistle",
+		"particle": "create_re:block/whistle_particle"
 	},
 	"elements": [
 		{

@@ -1,9 +1,9 @@
-package com.simibubi.create.content.contraptions.pulley;
+package com.simibubi.create_re.content.contraptions.pulley;
 
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.foundation.render.VirtualRenderHelper;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.foundation.render.VirtualRenderHelper;
 
 import dev.engine_room.flywheel.api.instance.Instancer;
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;

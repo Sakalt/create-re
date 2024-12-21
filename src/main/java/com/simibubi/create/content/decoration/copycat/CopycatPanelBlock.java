@@ -1,13 +1,13 @@
-package com.simibubi.create.content.decoration.copycat;
+package com.simibubi.create_re.content.decoration.copycat;
 
 import java.util.List;
 import java.util.function.Predicate;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.foundation.placement.IPlacementHelper;
-import com.simibubi.create.foundation.placement.PlacementHelpers;
-import com.simibubi.create.foundation.placement.PlacementOffset;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.foundation.placement.IPlacementHelper;
+import com.simibubi.create_re.foundation.placement.PlacementHelpers;
+import com.simibubi.create_re.foundation.placement.PlacementOffset;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
@@ -150,8 +150,8 @@ public class CopycatPanelBlock extends WaterloggedCopycatBlock {
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
-		super.createBlockStateDefinition(pBuilder.add(FACING));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
+		super.create_reBlockStateDefinition(pBuilder.add(FACING));
 	}
 
 	@Override

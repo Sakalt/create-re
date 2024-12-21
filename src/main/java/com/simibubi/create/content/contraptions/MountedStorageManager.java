@@ -1,4 +1,4 @@
-package com.simibubi.create.content.contraptions;
+package com.simibubi.create_re.content.contraptions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,11 +9,11 @@ import java.util.TreeMap;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
-import com.simibubi.create.content.contraptions.Contraption.ContraptionInvWrapper;
-import com.simibubi.create.content.fluids.tank.FluidTankBlockEntity;
-import com.simibubi.create.foundation.fluid.CombinedTankWrapper;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.NBTHelper;
+import com.simibubi.create_re.content.contraptions.Contraption.ContraptionInvWrapper;
+import com.simibubi.create_re.content.fluids.tank.FluidTankBlockEntity;
+import com.simibubi.create_re.foundation.fluid.CombinedTankWrapper;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -56,7 +56,7 @@ public class MountedStorageManager {
 		fluidStorage.forEach((pos, mfs) -> mfs.tick(entity, pos, entity.level().isClientSide));
 	}
 
-	public void createHandlers() {
+	public void create_reHandlers() {
 		Collection<MountedStorage> itemHandlers = storage.values();
 
 		inventory = wrapItems(itemHandlers.stream()
@@ -252,7 +252,7 @@ public class MountedStorageManager {
 			&& player.distanceToSqr(contraption.entity.toGlobalVector(Vec3.atCenterOf(localPos), 0)) < 64;
 		Component name = info != null ? info.state().getBlock()
 			.getName() : Components.literal("Container");
-		player.openMenu(MountedStorageInteraction.createMenuProvider(name, handler, slotCount, stillValid));
+		player.openMenu(MountedStorageInteraction.create_reMenuProvider(name, handler, slotCount, stillValid));
 
 		Vec3 soundPos = contraption.entity.toGlobalVector(Vec3.atCenterOf(localPos), 0);
 		player.level().playSound(null, BlockPos.containing(soundPos), SoundEvents.BARREL_OPEN, SoundSource.BLOCKS, 0.75f, 1f);

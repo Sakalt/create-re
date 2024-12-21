@@ -1,11 +1,11 @@
-package com.simibubi.create.content.redstone.displayLink.source;
+package com.simibubi.create_re.content.redstone.displayLink.source;
 
-import com.simibubi.create.content.redstone.displayLink.DisplayLinkBlock;
-import com.simibubi.create.content.redstone.displayLink.DisplayLinkBlockEntity;
-import com.simibubi.create.content.redstone.displayLink.DisplayLinkContext;
-import com.simibubi.create.content.redstone.displayLink.target.DisplayTargetStats;
-import com.simibubi.create.foundation.gui.ModularGuiLineBuilder;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkBlock;
+import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkBlockEntity;
+import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkContext;
+import com.simibubi.create_re.content.redstone.displayLink.target.DisplayTargetStats;
+import com.simibubi.create_re.foundation.gui.ModularGuiLineBuilder;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.FloatTag;

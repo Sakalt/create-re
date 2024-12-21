@@ -1,11 +1,11 @@
-package com.simibubi.create.compat.jei.category.animations;
+package com.simibubi.create_re.compat.jei.category.animations;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.foundation.gui.CustomLightingSettings;
-import com.simibubi.create.foundation.gui.ILightingSettings;
-import com.simibubi.create.foundation.gui.element.GuiGameElement;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.foundation.gui.CustomLightingSettings;
+import com.simibubi.create_re.foundation.gui.ILightingSettings;
+import com.simibubi.create_re.foundation.gui.element.GuiGameElement;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
 
 import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 import mezz.jei.api.gui.drawable.IDrawable;

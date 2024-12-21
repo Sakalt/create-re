@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"1": "create:block/hat_test",
-		"5": "create:block/mechanical_arm",
-		"particle": "create:block/hat_test"
+		"1": "create_re:block/hat_test",
+		"5": "create_re:block/mechanical_arm",
+		"particle": "create_re:block/hat_test"
 	},
 	"elements": [
 		{

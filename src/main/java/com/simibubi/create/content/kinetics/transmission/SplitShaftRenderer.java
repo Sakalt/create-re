@@ -1,13 +1,13 @@
-package com.simibubi.create.content.kinetics.transmission;
+package com.simibubi.create_re.content.kinetics.transmission;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.kinetics.base.IRotate;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntityRenderer;
-import com.simibubi.create.foundation.render.CachedBufferer;
-import com.simibubi.create.foundation.render.SuperByteBuffer;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.kinetics.base.IRotate;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntityRenderer;
+import com.simibubi.create_re.foundation.render.CachedBufferer;
+import com.simibubi.create_re.foundation.render.SuperByteBuffer;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationManager;
 import net.minecraft.client.renderer.MultiBufferSource;

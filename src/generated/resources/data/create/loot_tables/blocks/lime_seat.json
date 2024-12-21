@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:lime_seat"
+          "name": "create_re:lime_seat"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/lime_seat"
+  "random_sequence": "create_re:blocks/lime_seat"
 }

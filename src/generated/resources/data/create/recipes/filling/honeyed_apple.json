@@ -1,5 +1,5 @@
 {
-  "type": "create:filling",
+  "type": "create_re:filling",
   "ingredients": [
     {
       "item": "minecraft:apple"
@@ -11,7 +11,7 @@
   ],
   "results": [
     {
-      "item": "create:honeyed_apple"
+      "item": "create_re:honeyed_apple"
     }
   ]
 }

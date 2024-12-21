@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:crimsite"
+          "name": "create_re:crimsite"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/crimsite"
+  "random_sequence": "create_re:blocks/crimsite"
 }

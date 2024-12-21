@@ -1,11 +1,11 @@
-package com.simibubi.create.infrastructure.ponder;
+package com.simibubi.create_re.infrastructure.ponder;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.Create;
-import com.simibubi.create.compat.Mods;
-import com.simibubi.create.foundation.ponder.PonderRegistry;
-import com.simibubi.create.foundation.ponder.PonderTag;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.compat.Mods;
+import com.simibubi.create_re.foundation.ponder.PonderRegistry;
+import com.simibubi.create_re.foundation.ponder.PonderTag;
 
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Items;
@@ -17,78 +17,78 @@ public class AllPonderTags {
 
 	public static final PonderTag
 
-	KINETIC_RELAYS = create("kinetic_relays").item(AllBlocks.COGWHEEL.get())
+	KINETIC_RELAYS = create_re("kinetic_relays").item(AllBlocks.COGWHEEL.get())
 		.defaultLang("Kinetic Blocks", "Components which help relaying Rotational Force elsewhere")
 		.addToIndex(),
 
-		KINETIC_SOURCES = create("kinetic_sources").item(AllBlocks.WATER_WHEEL.get())
+		KINETIC_SOURCES = create_re("kinetic_sources").item(AllBlocks.WATER_WHEEL.get())
 			.defaultLang("Kinetic Sources", "Components which generate Rotational Force")
 			.addToIndex(),
 
-		KINETIC_APPLIANCES = create("kinetic_appliances").item(AllBlocks.MECHANICAL_PRESS.get())
+		KINETIC_APPLIANCES = create_re("kinetic_appliances").item(AllBlocks.MECHANICAL_PRESS.get())
 			.defaultLang("Kinetic Appliances", "Components which make use of Rotational Force")
 			.addToIndex(),
 
-		FLUIDS = create("fluids").item(AllBlocks.FLUID_PIPE.get())
+		FLUIDS = create_re("fluids").item(AllBlocks.FLUID_PIPE.get())
 			.defaultLang("Fluid Manipulators", "Components which help relaying and making use of Fluids")
 			.addToIndex(),
 
-		LOGISTICS = create("logistics").item(Blocks.CHEST)
+		LOGISTICS = create_re("logistics").item(Blocks.CHEST)
 			.defaultLang("Item Transportation", "Components which help moving items around")
 			.addToIndex(),
 
-		REDSTONE = create("redstone").item(Items.REDSTONE)
+		REDSTONE = create_re("redstone").item(Items.REDSTONE)
 			.defaultLang("Logic Components", "Components which help with redstone engineering")
 			.addToIndex(),
 
-		DECORATION = create("decoration").item(Items.ROSE_BUSH)
+		DECORATION = create_re("decoration").item(Items.ROSE_BUSH)
 			.defaultLang("Aesthetics", "Components used mostly for decorative purposes"),
 
-		CREATIVE = create("creative").item(AllBlocks.CREATIVE_CRATE.get())
+		CREATIVE = create_re("creative").item(AllBlocks.CREATIVE_CRATE.get())
 			.defaultLang("Creative Mode", "Components not usually available for Survival Mode")
 			.addToIndex(),
 
-		MOVEMENT_ANCHOR = create("movement_anchor").item(AllBlocks.MECHANICAL_PISTON.get())
+		MOVEMENT_ANCHOR = create_re("movement_anchor").item(AllBlocks.MECHANICAL_PISTON.get())
 			.defaultLang("Movement Anchors",
 				"Components which allow the creation of moving contraptions, animating an attached structure in a variety of ways")
 			.addToIndex(),
 
-		CONTRAPTION_ACTOR = create("contraption_actor").item(AllBlocks.MECHANICAL_HARVESTER.get())
+		CONTRAPTION_ACTOR = create_re("contraption_actor").item(AllBlocks.MECHANICAL_HARVESTER.get())
 			.defaultLang("Contraption Actors",
 				"Components which expose special behaviour when attached to a moving contraption")
 			.addToIndex(),
 
-		CONTRAPTION_ASSEMBLY = create("contraption_assembly").item(AllItems.SUPER_GLUE.get())
+		CONTRAPTION_ASSEMBLY = create_re("contraption_assembly").item(AllItems.SUPER_GLUE.get())
 			.defaultLang("Block Attachment Utility",
 				"Tools and Components used to assemble structures moved as an animated Contraption")
 			.addToIndex(),
 
-		SAILS = create("windmill_sails").item(AllBlocks.WINDMILL_BEARING.get(), true, true)
+		SAILS = create_re("windmill_sails").item(AllBlocks.WINDMILL_BEARING.get(), true, true)
 			.defaultLang("Sails for Windmill Bearings",
 				"Blocks that count towards the strength of a Windmill Contraption when assembled. Each of these have equal efficiency in doing so."),
 
-		ARM_TARGETS = create("arm_targets").item(AllBlocks.MECHANICAL_ARM.get(), true, true)
+		ARM_TARGETS = create_re("arm_targets").item(AllBlocks.MECHANICAL_ARM.get(), true, true)
 			.defaultLang("Targets for Mechanical Arms",
 				"Components which can be selected as inputs or outputs to the Mechanical Arm"),
 
-		TRAIN_RELATED = create("train_related").item(AllBlocks.TRACK.get())
+		TRAIN_RELATED = create_re("train_related").item(AllBlocks.TRACK.get())
 			.defaultLang("Railway Equipment", "Components used in the construction or management of Train Contraptions")
 			.addToIndex(),
 
-		RECENTLY_UPDATED = create("recently_updated").item(AllBlocks.CLIPBOARD.get())
+		RECENTLY_UPDATED = create_re("recently_updated").item(AllBlocks.CLIPBOARD.get())
 			.defaultLang("Recent Changes",
 				"Components that have been added or changed significantly in the latest versions of Create")
 			.addToIndex(),
 
-		DISPLAY_SOURCES = create("display_sources").item(AllBlocks.DISPLAY_LINK.get(), true, true)
+		DISPLAY_SOURCES = create_re("display_sources").item(AllBlocks.DISPLAY_LINK.get(), true, true)
 			.defaultLang("Sources for Display Links",
 				"Components or Blocks which offer some data that can be read with a Display Link"),
 
-		DISPLAY_TARGETS = create("display_targets").item(AllBlocks.DISPLAY_LINK.get(), true, true)
+		DISPLAY_TARGETS = create_re("display_targets").item(AllBlocks.DISPLAY_LINK.get(), true, true)
 			.defaultLang("Targets for Display Links",
 				"Components or Blocks which can process and display the data received from a Display Link");
 
-	private static PonderTag create(String id) {
+	private static PonderTag create_re(String id) {
 		return new PonderTag(Create.asResource(id));
 	}
 

@@ -1,18 +1,18 @@
 {
-  "type": "create:mechanical_crafting",
+  "type": "create_re:mechanical_crafting",
   "acceptMirrored": true,
   "key": {
     "C": {
       "tag": "forge:ingots/copper"
     },
     "L": {
-      "item": "create:andesite_alloy"
+      "item": "create_re:andesite_alloy"
     },
     "R": {
-      "item": "create:precision_mechanism"
+      "item": "create_re:precision_mechanism"
     },
     "S": {
-      "item": "create:fluid_pipe"
+      "item": "create_re:fluid_pipe"
     }
   },
   "pattern": [
@@ -20,6 +20,6 @@
     "CC   "
   ],
   "result": {
-    "item": "create:potato_cannon"
+    "item": "create_re:potato_cannon"
   }
 }

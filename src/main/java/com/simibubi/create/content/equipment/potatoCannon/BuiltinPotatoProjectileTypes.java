@@ -1,4 +1,4 @@
-package com.simibubi.create.content.equipment.potatoCannon;
+package com.simibubi.create_re.content.equipment.potatoCannon;
 
 import java.util.UUID;
 import java.util.function.BiPredicate;
@@ -7,10 +7,10 @@ import java.util.function.Supplier;
 
 import com.mojang.authlib.GameProfile;
 import com.mojang.datafixers.util.Pair;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.mixin.accessor.FallingBlockEntityAccessor;
-import com.simibubi.create.foundation.utility.WorldAttached;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.mixin.accessor.FallingBlockEntityAccessor;
+import com.simibubi.create_re.foundation.utility.WorldAttached;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -55,10 +55,10 @@ public class BuiltinPotatoProjectileTypes {
 
 	public static final PotatoCannonProjectileType
 
-	FALLBACK = create("fallback").damage(0)
+	FALLBACK = create_re("fallback").damage(0)
 		.register(),
 
-		POTATO = create("potato").damage(5)
+		POTATO = create_re("potato").damage(5)
 			.reloadTicks(15)
 			.velocity(1.25f)
 			.knockback(1.5f)
@@ -66,7 +66,7 @@ public class BuiltinPotatoProjectileTypes {
 			.onBlockHit(plantCrop(Blocks.POTATOES))
 			.registerAndAssign(Items.POTATO),
 
-		BAKED_POTATO = create("baked_potato").damage(5)
+		BAKED_POTATO = create_re("baked_potato").damage(5)
 			.reloadTicks(15)
 			.velocity(1.25f)
 			.knockback(0.5f)
@@ -74,7 +74,7 @@ public class BuiltinPotatoProjectileTypes {
 			.preEntityHit(setFire(3))
 			.registerAndAssign(Items.BAKED_POTATO),
 
-		CARROT = create("carrot").damage(4)
+		CARROT = create_re("carrot").damage(4)
 			.reloadTicks(12)
 			.velocity(1.45f)
 			.knockback(0.3f)
@@ -83,7 +83,7 @@ public class BuiltinPotatoProjectileTypes {
 			.onBlockHit(plantCrop(Blocks.CARROTS))
 			.registerAndAssign(Items.CARROT),
 
-		GOLDEN_CARROT = create("golden_carrot").damage(12)
+		GOLDEN_CARROT = create_re("golden_carrot").damage(12)
 			.reloadTicks(15)
 			.velocity(1.45f)
 			.knockback(0.5f)
@@ -91,7 +91,7 @@ public class BuiltinPotatoProjectileTypes {
 			.soundPitch(1.5f)
 			.registerAndAssign(Items.GOLDEN_CARROT),
 
-		SWEET_BERRIES = create("sweet_berry").damage(3)
+		SWEET_BERRIES = create_re("sweet_berry").damage(3)
 			.reloadTicks(10)
 			.knockback(0.1f)
 			.velocity(1.05f)
@@ -100,7 +100,7 @@ public class BuiltinPotatoProjectileTypes {
 			.soundPitch(1.25f)
 			.registerAndAssign(Items.SWEET_BERRIES),
 
-		GLOW_BERRIES = create("glow_berry").damage(2)
+		GLOW_BERRIES = create_re("glow_berry").damage(2)
 			.reloadTicks(10)
 			.knockback(0.05f)
 			.velocity(1.05f)
@@ -110,7 +110,7 @@ public class BuiltinPotatoProjectileTypes {
 			.onEntityHit(potion(MobEffects.GLOWING, 1, 200, false))
 			.registerAndAssign(Items.GLOW_BERRIES),
 
-		CHOCOLATE_BERRIES = create("chocolate_berry").damage(4)
+		CHOCOLATE_BERRIES = create_re("chocolate_berry").damage(4)
 			.reloadTicks(10)
 			.knockback(0.2f)
 			.velocity(1.05f)
@@ -119,7 +119,7 @@ public class BuiltinPotatoProjectileTypes {
 			.soundPitch(1.25f)
 			.registerAndAssign(AllItems.CHOCOLATE_BERRIES.get()),
 
-		POISON_POTATO = create("poison_potato").damage(5)
+		POISON_POTATO = create_re("poison_potato").damage(5)
 			.reloadTicks(15)
 			.knockback(0.05f)
 			.velocity(1.25f)
@@ -127,7 +127,7 @@ public class BuiltinPotatoProjectileTypes {
 			.onEntityHit(potion(MobEffects.POISON, 1, 160, true))
 			.registerAndAssign(Items.POISONOUS_POTATO),
 
-		CHORUS_FRUIT = create("chorus_fruit").damage(3)
+		CHORUS_FRUIT = create_re("chorus_fruit").damage(3)
 			.reloadTicks(15)
 			.velocity(1.20f)
 			.knockback(0.05f)
@@ -135,7 +135,7 @@ public class BuiltinPotatoProjectileTypes {
 			.onEntityHit(chorusTeleport(20))
 			.registerAndAssign(Items.CHORUS_FRUIT),
 
-		APPLE = create("apple").damage(5)
+		APPLE = create_re("apple").damage(5)
 			.reloadTicks(10)
 			.velocity(1.45f)
 			.knockback(0.5f)
@@ -143,7 +143,7 @@ public class BuiltinPotatoProjectileTypes {
 			.soundPitch(1.1f)
 			.registerAndAssign(Items.APPLE),
 
-		HONEYED_APPLE = create("honeyed_apple").damage(6)
+		HONEYED_APPLE = create_re("honeyed_apple").damage(6)
 			.reloadTicks(15)
 			.velocity(1.35f)
 			.knockback(0.1f)
@@ -152,7 +152,7 @@ public class BuiltinPotatoProjectileTypes {
 			.onEntityHit(potion(MobEffects.MOVEMENT_SLOWDOWN, 2, 160, true))
 			.registerAndAssign(AllItems.HONEYED_APPLE.get()),
 
-		GOLDEN_APPLE = create("golden_apple").damage(1)
+		GOLDEN_APPLE = create_re("golden_apple").damage(1)
 			.reloadTicks(100)
 			.velocity(1.45f)
 			.knockback(0.05f)
@@ -174,7 +174,7 @@ public class BuiltinPotatoProjectileTypes {
 			})
 			.registerAndAssign(Items.GOLDEN_APPLE),
 
-		ENCHANTED_GOLDEN_APPLE = create("enchanted_golden_apple").damage(1)
+		ENCHANTED_GOLDEN_APPLE = create_re("enchanted_golden_apple").damage(1)
 			.reloadTicks(100)
 			.velocity(1.45f)
 			.knockback(0.05f)
@@ -183,7 +183,7 @@ public class BuiltinPotatoProjectileTypes {
 			.onEntityHit(foodEffects(Foods.ENCHANTED_GOLDEN_APPLE, false))
 			.registerAndAssign(Items.ENCHANTED_GOLDEN_APPLE),
 
-		BEETROOT = create("beetroot").damage(2)
+		BEETROOT = create_re("beetroot").damage(2)
 			.reloadTicks(5)
 			.velocity(1.6f)
 			.knockback(0.1f)
@@ -191,7 +191,7 @@ public class BuiltinPotatoProjectileTypes {
 			.soundPitch(1.6f)
 			.registerAndAssign(Items.BEETROOT),
 
-		MELON_SLICE = create("melon_slice").damage(3)
+		MELON_SLICE = create_re("melon_slice").damage(3)
 			.reloadTicks(8)
 			.knockback(0.1f)
 			.velocity(1.45f)
@@ -199,7 +199,7 @@ public class BuiltinPotatoProjectileTypes {
 			.soundPitch(1.5f)
 			.registerAndAssign(Items.MELON_SLICE),
 
-		GLISTERING_MELON = create("glistering_melon").damage(5)
+		GLISTERING_MELON = create_re("glistering_melon").damage(5)
 			.reloadTicks(8)
 			.knockback(0.1f)
 			.velocity(1.45f)
@@ -208,7 +208,7 @@ public class BuiltinPotatoProjectileTypes {
 			.onEntityHit(potion(MobEffects.GLOWING, 1, 100, true))
 			.registerAndAssign(Items.GLISTERING_MELON_SLICE),
 
-		MELON_BLOCK = create("melon_block").damage(8)
+		MELON_BLOCK = create_re("melon_block").damage(8)
 			.reloadTicks(20)
 			.knockback(2.0f)
 			.velocity(0.95f)
@@ -217,7 +217,7 @@ public class BuiltinPotatoProjectileTypes {
 			.onBlockHit(placeBlockOnGround(Blocks.MELON))
 			.registerAndAssign(Blocks.MELON),
 
-		PUMPKIN_BLOCK = create("pumpkin_block").damage(6)
+		PUMPKIN_BLOCK = create_re("pumpkin_block").damage(6)
 			.reloadTicks(15)
 			.knockback(2.0f)
 			.velocity(0.95f)
@@ -226,7 +226,7 @@ public class BuiltinPotatoProjectileTypes {
 			.onBlockHit(placeBlockOnGround(Blocks.PUMPKIN))
 			.registerAndAssign(Blocks.PUMPKIN),
 
-		PUMPKIN_PIE = create("pumpkin_pie").damage(7)
+		PUMPKIN_PIE = create_re("pumpkin_pie").damage(7)
 			.reloadTicks(15)
 			.knockback(0.05f)
 			.velocity(1.1f)
@@ -235,7 +235,7 @@ public class BuiltinPotatoProjectileTypes {
 			.soundPitch(1.1f)
 			.registerAndAssign(Items.PUMPKIN_PIE),
 
-		CAKE = create("cake").damage(8)
+		CAKE = create_re("cake").damage(8)
 			.reloadTicks(15)
 			.knockback(0.1f)
 			.velocity(1.1f)
@@ -244,7 +244,7 @@ public class BuiltinPotatoProjectileTypes {
 			.soundPitch(1.0f)
 			.registerAndAssign(Items.CAKE),
 
-		BLAZE_CAKE = create("blaze_cake").damage(15)
+		BLAZE_CAKE = create_re("blaze_cake").damage(15)
 			.reloadTicks(20)
 			.knockback(0.3f)
 			.velocity(1.1f)
@@ -256,7 +256,7 @@ public class BuiltinPotatoProjectileTypes {
 
 	;
 
-	private static PotatoCannonProjectileType.Builder create(String name) {
+	private static PotatoCannonProjectileType.Builder create_re(String name) {
 		return new PotatoCannonProjectileType.Builder(Create.asResource(name));
 	}
 
@@ -359,7 +359,7 @@ public class BuiltinPotatoProjectileTypes {
 				if (!world.isEmptyBlock(placePos.below()))
 					y = Math.max(y, placePos.getY());
 
-				FallingBlockEntity falling = FallingBlockEntityAccessor.create$callInit(level, placePos.getX() + 0.5, y,
+				FallingBlockEntity falling = FallingBlockEntityAccessor.create_re$callInit(level, placePos.getX() + 0.5, y,
 					placePos.getZ() + 0.5, block.get().defaultBlockState());
 				falling.time = 1;
 				world.addFreshEntity(falling);

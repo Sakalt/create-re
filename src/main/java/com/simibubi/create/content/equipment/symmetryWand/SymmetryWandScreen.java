@@ -1,25 +1,25 @@
-package com.simibubi.create.content.equipment.symmetryWand;
+package com.simibubi.create_re.content.equipment.symmetryWand;
 
 import org.joml.Vector3f;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.content.equipment.symmetryWand.mirror.CrossPlaneMirror;
-import com.simibubi.create.content.equipment.symmetryWand.mirror.EmptyMirror;
-import com.simibubi.create.content.equipment.symmetryWand.mirror.PlaneMirror;
-import com.simibubi.create.content.equipment.symmetryWand.mirror.SymmetryMirror;
-import com.simibubi.create.content.equipment.symmetryWand.mirror.TriplePlaneMirror;
-import com.simibubi.create.foundation.gui.AbstractSimiScreen;
-import com.simibubi.create.foundation.gui.AllGuiTextures;
-import com.simibubi.create.foundation.gui.AllIcons;
-import com.simibubi.create.foundation.gui.element.GuiGameElement;
-import com.simibubi.create.foundation.gui.widget.IconButton;
-import com.simibubi.create.foundation.gui.widget.Label;
-import com.simibubi.create.foundation.gui.widget.ScrollInput;
-import com.simibubi.create.foundation.gui.widget.SelectionScrollInput;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.content.equipment.symmetryWand.mirror.CrossPlaneMirror;
+import com.simibubi.create_re.content.equipment.symmetryWand.mirror.EmptyMirror;
+import com.simibubi.create_re.content.equipment.symmetryWand.mirror.PlaneMirror;
+import com.simibubi.create_re.content.equipment.symmetryWand.mirror.SymmetryMirror;
+import com.simibubi.create_re.content.equipment.symmetryWand.mirror.TriplePlaneMirror;
+import com.simibubi.create_re.foundation.gui.AbstractSimiScreen;
+import com.simibubi.create_re.foundation.gui.AllGuiTextures;
+import com.simibubi.create_re.foundation.gui.AllIcons;
+import com.simibubi.create_re.foundation.gui.element.GuiGameElement;
+import com.simibubi.create_re.foundation.gui.widget.IconButton;
+import com.simibubi.create_re.foundation.gui.widget.Label;
+import com.simibubi.create_re.foundation.gui.widget.ScrollInput;
+import com.simibubi.create_re.foundation.gui.widget.SelectionScrollInput;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;

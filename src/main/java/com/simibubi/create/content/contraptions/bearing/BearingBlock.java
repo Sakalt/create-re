@@ -1,6 +1,6 @@
-package com.simibubi.create.content.contraptions.bearing;
+package com.simibubi.create_re.content.contraptions.bearing;
 
-import com.simibubi.create.content.kinetics.base.DirectionalKineticBlock;
+import com.simibubi.create_re.content.kinetics.base.DirectionalKineticBlock;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

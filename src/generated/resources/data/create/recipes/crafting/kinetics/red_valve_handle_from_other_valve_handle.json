@@ -6,10 +6,10 @@
       "tag": "forge:dyes/red"
     },
     {
-      "tag": "create:valve_handles"
+      "tag": "create_re:valve_handles"
     }
   ],
   "result": {
-    "item": "create:red_valve_handle"
+    "item": "create_re:red_valve_handle"
   }
 }

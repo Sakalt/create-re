@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "create:item/crafting_blueprint"
+    "layer0": "create_re:item/crafting_blueprint"
   }
 }

@@ -1,11 +1,11 @@
-package com.simibubi.create.content.schematics.cannon;
+package com.simibubi.create_re.content.schematics.cannon;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.item.ItemHelper;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.item.ItemHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;

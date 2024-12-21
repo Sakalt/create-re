@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:nixie_tube"
+          "name": "create_re:nixie_tube"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/gray_nixie_tube"
+  "random_sequence": "create_re:blocks/gray_nixie_tube"
 }

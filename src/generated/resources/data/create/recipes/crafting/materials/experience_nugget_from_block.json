@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "create:experience_block"
+      "item": "create_re:experience_block"
     }
   ],
   "result": {
     "count": 9,
-    "item": "create:experience_nugget"
+    "item": "create_re:experience_nugget"
   }
 }

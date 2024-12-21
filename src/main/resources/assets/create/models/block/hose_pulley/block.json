@@ -2,11 +2,11 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"3": "create:block/encased_pipe",
-		"4": "create:block/copper_gearbox",
-		"7": "create:block/copper_underside",
-		"8": "create:block/copper_plating",
-		"particle": "create:block/copper_plating"
+		"3": "create_re:block/encased_pipe",
+		"4": "create_re:block/copper_gearbox",
+		"7": "create_re:block/copper_underside",
+		"8": "create_re:block/copper_plating",
+		"particle": "create_re:block/copper_plating"
 	},
 	"elements": [
 		{

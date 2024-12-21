@@ -1,15 +1,15 @@
-package com.simibubi.create.content.trains.entity;
+package com.simibubi.create_re.content.trains.entity;
 
 import java.util.UUID;
 
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.contraptions.ContraptionRelocationPacket;
-import com.simibubi.create.content.trains.track.BezierTrackPointLocation;
-import com.simibubi.create.foundation.networking.SimplePacketBase;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.contraptions.ContraptionRelocationPacket;
+import com.simibubi.create_re.content.trains.track.BezierTrackPointLocation;
+import com.simibubi.create_re.foundation.networking.SimplePacketBase;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;

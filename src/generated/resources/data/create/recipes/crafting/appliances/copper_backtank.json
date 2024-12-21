@@ -3,13 +3,13 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "create:andesite_alloy"
+      "item": "create_re:andesite_alloy"
     },
     "B": {
       "tag": "forge:storage_blocks/copper"
     },
     "G": {
-      "item": "create:shaft"
+      "item": "create_re:shaft"
     },
     "P": {
       "tag": "forge:ingots/copper"
@@ -21,7 +21,7 @@
     " P "
   ],
   "result": {
-    "item": "create:copper_backtank"
+    "item": "create_re:copper_backtank"
   },
   "show_notification": true
 }

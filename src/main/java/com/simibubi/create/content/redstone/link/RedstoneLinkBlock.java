@@ -1,10 +1,10 @@
-package com.simibubi.create.content.redstone.link;
+package com.simibubi.create_re.content.redstone.link;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.block.WrenchableDirectionalBlock;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.block.WrenchableDirectionalBlock;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -32,7 +32,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class RedstoneLinkBlock extends WrenchableDirectionalBlock implements IBE<RedstoneLinkBlockEntity> {
 
 	public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
-	public static final BooleanProperty RECEIVER = BooleanProperty.create("receiver");
+	public static final BooleanProperty RECEIVER = BooleanProperty.create_re("receiver");
 
 	public RedstoneLinkBlock(Properties properties) {
 		super(properties);
@@ -117,9 +117,9 @@ public class RedstoneLinkBlock extends WrenchableDirectionalBlock implements IBE
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
 		builder.add(POWERED, RECEIVER);
-		super.createBlockStateDefinition(builder);
+		super.create_reBlockStateDefinition(builder);
 	}
 
 	@Override

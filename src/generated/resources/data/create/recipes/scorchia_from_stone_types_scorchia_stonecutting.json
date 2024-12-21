@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 1,
   "ingredient": {
-    "tag": "create:stone_types/scorchia"
+    "tag": "create_re:stone_types/scorchia"
   },
-  "result": "create:scorchia"
+  "result": "create_re:scorchia"
 }

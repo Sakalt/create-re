@@ -1,10 +1,10 @@
-package com.simibubi.create.content.contraptions;
+package com.simibubi.create_re.content.contraptions;
 
 import java.util.function.BiPredicate;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.foundation.blockEntity.behaviour.CenteredSideValueBoxTransform;
-import com.simibubi.create.foundation.utility.AngleHelper;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.CenteredSideValueBoxTransform;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
 
 import dev.engine_room.flywheel.lib.transform.TransformStack;
 import net.minecraft.core.Direction;

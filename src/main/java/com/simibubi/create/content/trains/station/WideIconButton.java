@@ -1,8 +1,8 @@
-package com.simibubi.create.content.trains.station;
+package com.simibubi.create_re.content.trains.station;
 
-import com.simibubi.create.foundation.gui.AllGuiTextures;
-import com.simibubi.create.foundation.gui.element.ScreenElement;
-import com.simibubi.create.foundation.gui.widget.IconButton;
+import com.simibubi.create_re.foundation.gui.AllGuiTextures;
+import com.simibubi.create_re.foundation.gui.element.ScreenElement;
+import com.simibubi.create_re.foundation.gui.widget.IconButton;
 
 import net.minecraft.client.gui.GuiGraphics;
 

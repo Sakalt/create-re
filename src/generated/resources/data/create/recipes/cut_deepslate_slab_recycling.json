@@ -3,13 +3,13 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "create:cut_deepslate_slab"
+      "item": "create_re:cut_deepslate_slab"
     },
     {
-      "item": "create:cut_deepslate_slab"
+      "item": "create_re:cut_deepslate_slab"
     }
   ],
   "result": {
-    "item": "create:cut_deepslate"
+    "item": "create_re:cut_deepslate"
   }
 }

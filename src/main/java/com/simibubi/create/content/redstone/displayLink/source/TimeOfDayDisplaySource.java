@@ -1,13 +1,13 @@
-package com.simibubi.create.content.redstone.displayLink.source;
+package com.simibubi.create_re.content.redstone.displayLink.source;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.content.kinetics.clock.CuckooClockBlockEntity;
-import com.simibubi.create.content.redstone.displayLink.DisplayLinkContext;
-import com.simibubi.create.content.redstone.displayLink.target.DisplayTargetStats;
-import com.simibubi.create.content.trains.display.FlapDisplaySection;
-import com.simibubi.create.foundation.gui.ModularGuiLineBuilder;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.kinetics.clock.CuckooClockBlockEntity;
+import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkContext;
+import com.simibubi.create_re.content.redstone.displayLink.target.DisplayTargetStats;
+import com.simibubi.create_re.content.trains.display.FlapDisplaySection;
+import com.simibubi.create_re.foundation.gui.ModularGuiLineBuilder;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.server.level.ServerLevel;
@@ -61,7 +61,7 @@ public class TimeOfDayDisplaySource extends SingleLineDisplaySource {
 	}
 
 	@Override
-	protected FlapDisplaySection createSectionForValue(DisplayLinkContext context, int size) {
+	protected FlapDisplaySection create_reSectionForValue(DisplayLinkContext context, int size) {
 		return new FlapDisplaySection(size * FlapDisplaySection.MONOSPACE, "instant", false, false);
 	}
 

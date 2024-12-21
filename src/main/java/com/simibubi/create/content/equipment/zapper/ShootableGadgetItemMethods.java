@@ -1,9 +1,9 @@
-package com.simibubi.create.content.equipment.zapper;
+package com.simibubi.create_re.content.equipment.zapper;
 
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-import com.simibubi.create.AllPackets;
+import com.simibubi.create_re.AllPackets;
 
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;

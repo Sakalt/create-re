@@ -1,11 +1,11 @@
-package com.simibubi.create.content.fluids.pipes.valve;
+package com.simibubi.create_re.content.fluids.pipes.valve;
 
 import java.util.function.Consumer;
 
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntityRenderer;
-import com.simibubi.create.content.kinetics.base.ShaftVisual;
-import com.simibubi.create.foundation.utility.AngleHelper;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntityRenderer;
+import com.simibubi.create_re.content.kinetics.base.ShaftVisual;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.visual.DynamicVisual;
@@ -41,7 +41,7 @@ public class FluidValveVisual extends ShaftVisual<FluidValveBlockEntity> impleme
         pointerRotationOffset = twist ? 90 : 0;
         settled = false;
 
-        pointer = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.FLUID_VALVE_POINTER)).createInstance();
+        pointer = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.FLUID_VALVE_POINTER)).create_reInstance();
 
 		transformPointer(partialTick);
 	}

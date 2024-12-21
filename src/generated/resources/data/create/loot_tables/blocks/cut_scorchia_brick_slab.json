@@ -11,7 +11,7 @@
               "add": false,
               "conditions": [
                 {
-                  "block": "create:cut_scorchia_brick_slab",
+                  "block": "create_re:cut_scorchia_brick_slab",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "type": "double"
@@ -25,11 +25,11 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "create:cut_scorchia_brick_slab"
+          "name": "create_re:cut_scorchia_brick_slab"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/cut_scorchia_brick_slab"
+  "random_sequence": "create_re:blocks/cut_scorchia_brick_slab"
 }

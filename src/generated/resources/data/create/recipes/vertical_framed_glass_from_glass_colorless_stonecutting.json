@@ -4,5 +4,5 @@
   "ingredient": {
     "tag": "forge:glass/colorless"
   },
-  "result": "create:vertical_framed_glass"
+  "result": "create_re:vertical_framed_glass"
 }

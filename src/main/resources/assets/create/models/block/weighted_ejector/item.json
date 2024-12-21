@@ -3,14 +3,14 @@
 	"parent": "block/block",
 	"textures": {
 		"0": "block/stripped_spruce_log_top",
-		"1": "create:block/axis",
+		"1": "create_re:block/axis",
 		"2": "block/stripped_spruce_log",
-		"3": "create:block/weighted_ejector_casing",
-		"4": "create:block/weighted_ejector_top",
-		"5": "create:block/weighted_ejector_inner",
-		"6": "create:block/axis_top",
-		"7": "create:block/andesite_casing",
-		"particle": "create:block/weighted_ejector_top"
+		"3": "create_re:block/weighted_ejector_casing",
+		"4": "create_re:block/weighted_ejector_top",
+		"5": "create_re:block/weighted_ejector_inner",
+		"6": "create_re:block/axis_top",
+		"7": "create_re:block/andesite_casing",
+		"particle": "create_re:block/weighted_ejector_top"
 	},
 	"elements": [
 		{

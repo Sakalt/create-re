@@ -1,6 +1,6 @@
-package com.simibubi.create.content.contraptions;
+package com.simibubi.create_re.content.contraptions;
 
-import com.simibubi.create.foundation.utility.worldWrappers.WrappedWorld;
+import com.simibubi.create_re.foundation.utility.worldWrappers.WrappedWorld;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvent;

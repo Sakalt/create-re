@@ -1,7 +1,7 @@
 {
   "values": [
-    "create:andesite_alloy",
-    "create:zinc_ingot",
-    "create:brass_ingot"
+    "create_re:andesite_alloy",
+    "create_re:zinc_ingot",
+    "create_re:brass_ingot"
   ]
 }

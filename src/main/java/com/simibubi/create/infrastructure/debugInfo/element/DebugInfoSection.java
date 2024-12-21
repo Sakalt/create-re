@@ -1,4 +1,4 @@
-package com.simibubi.create.infrastructure.debugInfo.element;
+package com.simibubi.create_re.infrastructure.debugInfo.element;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -8,15 +8,15 @@ import java.util.function.Supplier;
 import org.jetbrains.annotations.Nullable;
 
 import com.google.common.collect.ImmutableList;
-import com.simibubi.create.infrastructure.debugInfo.DebugInformation;
-import com.simibubi.create.infrastructure.debugInfo.InfoProvider;
+import com.simibubi.create_re.infrastructure.debugInfo.DebugInformation;
+import com.simibubi.create_re.infrastructure.debugInfo.InfoProvider;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Player;
 
 /**
  * A section for organizing debug information. Can contain both information and other sections.
- * To create one, use the {@link #builder(String) builder} method.
+ * To create_re one, use the {@link #builder(String) builder} method.
  */
 public record DebugInfoSection(String name, ImmutableList<InfoElement> elements) implements InfoElement {
 	@Override

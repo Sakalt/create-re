@@ -1,25 +1,25 @@
 {
-  "parent": "create:backtank",
+  "parent": "create_re:backtank",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:chained_drain_builtin"
+      "trigger": "create_re:chained_drain_builtin"
     }
   },
   "display": {
     "announce_to_chat": true,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.chained_drain.desc"
+      "translate": "advancement.create_re.chained_drain.desc"
     },
     "frame": "goal",
     "hidden": true,
     "icon": {
-      "item": "create:item_drain"
+      "item": "create_re:item_drain"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.chained_drain"
+      "translate": "advancement.create_re.chained_drain"
     }
   },
   "requirements": [

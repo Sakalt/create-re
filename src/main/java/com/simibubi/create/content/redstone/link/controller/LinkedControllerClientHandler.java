@@ -1,4 +1,4 @@
-package com.simibubi.create.content.redstone.link.controller;
+package com.simibubi.create_re.content.redstone.link.controller;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -10,18 +10,18 @@ import org.lwjgl.glfw.GLFW;
 
 import com.mojang.blaze3d.platform.InputConstants;
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.content.redstone.link.LinkBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.item.TooltipHelper;
-import com.simibubi.create.foundation.item.TooltipHelper.Palette;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.ControlsUtil;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.content.redstone.link.LinkBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.item.TooltipHelper;
+import com.simibubi.create_re.foundation.item.TooltipHelper.Palette;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.ControlsUtil;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.KeyMapping;

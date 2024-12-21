@@ -1,8 +1,8 @@
-package com.simibubi.create.infrastructure.command;
+package com.simibubi.create_re.infrastructure.command;
 
-import com.simibubi.create.AllSpecialTextures;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.foundation.networking.SimplePacketBase;
+import com.simibubi.create_re.AllSpecialTextures;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;

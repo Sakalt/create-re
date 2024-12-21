@@ -1,29 +1,29 @@
-package com.simibubi.create.content.kinetics.mechanicalArm;
+package com.simibubi.create_re.content.kinetics.mechanicalArm;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.content.contraptions.ITransformableBlockEntity;
-import com.simibubi.create.content.contraptions.StructureTransform;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.kinetics.mechanicalArm.AllArmInteractionPointTypes.JukeboxPoint;
-import com.simibubi.create.content.kinetics.mechanicalArm.ArmInteractionPoint.Mode;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.CenteredSideValueBoxTransform;
-import com.simibubi.create.foundation.blockEntity.behaviour.scrollValue.INamedIconOptions;
-import com.simibubi.create.foundation.blockEntity.behaviour.scrollValue.ScrollOptionBehaviour;
-import com.simibubi.create.foundation.gui.AllIcons;
-import com.simibubi.create.foundation.item.TooltipHelper;
-import com.simibubi.create.foundation.utility.AngleHelper;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.contraptions.ITransformableBlockEntity;
+import com.simibubi.create_re.content.contraptions.StructureTransform;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.kinetics.mechanicalArm.AllArmInteractionPointTypes.JukeboxPoint;
+import com.simibubi.create_re.content.kinetics.mechanicalArm.ArmInteractionPoint.Mode;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.CenteredSideValueBoxTransform;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.scrollValue.INamedIconOptions;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.scrollValue.ScrollOptionBehaviour;
+import com.simibubi.create_re.foundation.gui.AllIcons;
+import com.simibubi.create_re.foundation.item.TooltipHelper;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import dev.engine_room.flywheel.lib.visualization.VisualizationHelper;
 import net.minecraft.core.BlockPos;
@@ -173,8 +173,8 @@ public class ArmBlockEntity extends KineticBlockEntity implements ITransformable
 	}
 
 	@Override
-	protected AABB createRenderBoundingBox() {
-		return super.createRenderBoundingBox().inflate(3);
+	protected AABB create_reRenderBoundingBox() {
+		return super.create_reRenderBoundingBox().inflate(3);
 	}
 
 	private boolean checkForMusicAmong(List<ArmInteractionPoint> list) {

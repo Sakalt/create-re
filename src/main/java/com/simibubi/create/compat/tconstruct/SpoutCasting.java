@@ -1,11 +1,11 @@
-package com.simibubi.create.compat.tconstruct;
+package com.simibubi.create_re.compat.tconstruct;
 
-import com.simibubi.create.api.behaviour.BlockSpoutingBehaviour;
-import com.simibubi.create.compat.Mods;
-import com.simibubi.create.content.fluids.spout.SpoutBlockEntity;
-import com.simibubi.create.foundation.fluid.FluidHelper;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.api.behaviour.BlockSpoutingBehaviour;
+import com.simibubi.create_re.compat.Mods;
+import com.simibubi.create_re.content.fluids.spout.SpoutBlockEntity;
+import com.simibubi.create_re.foundation.fluid.FluidHelper;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

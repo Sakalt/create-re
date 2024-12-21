@@ -4,8 +4,8 @@
         "srcrgb": "srcalpha",
         "dstrgb": "1-srcalpha"
     },
-    "vertex": "create:glowing_shader",
-    "fragment": "create:glowing_shader",
+    "vertex": "create_re:glowing_shader",
+    "fragment": "create_re:glowing_shader",
     "attributes": [
         "Position",
         "Color",

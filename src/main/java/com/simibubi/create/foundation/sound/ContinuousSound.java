@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.sound;
+package com.simibubi.create_re.foundation.sound;
 
 import net.minecraft.client.resources.sounds.AbstractTickableSoundInstance;
 import net.minecraft.client.resources.sounds.SoundInstance;
@@ -12,7 +12,7 @@ public class ContinuousSound extends AbstractTickableSoundInstance {
 	private float relativeVolume;
 
 	protected ContinuousSound(SoundEvent event, SoundScape scape, float sharedPitch, float relativeVolume) {
-		super(event, SoundSource.AMBIENT, SoundInstance.createUnseededRandom());
+		super(event, SoundSource.AMBIENT, SoundInstance.create_reUnseededRandom());
 		this.scape = scape;
 		this.sharedPitch = sharedPitch;
 		this.relativeVolume = relativeVolume;

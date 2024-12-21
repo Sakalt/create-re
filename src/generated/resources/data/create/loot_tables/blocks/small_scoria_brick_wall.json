@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:small_scoria_brick_wall"
+          "name": "create_re:small_scoria_brick_wall"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/small_scoria_brick_wall"
+  "random_sequence": "create_re:blocks/small_scoria_brick_wall"
 }

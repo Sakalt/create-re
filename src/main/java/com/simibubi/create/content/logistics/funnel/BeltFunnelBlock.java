@@ -1,17 +1,17 @@
-package com.simibubi.create.content.logistics.funnel;
+package com.simibubi.create_re.content.logistics.funnel;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.content.kinetics.belt.BeltBlock;
-import com.simibubi.create.content.kinetics.belt.BeltSlope;
-import com.simibubi.create.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
-import com.simibubi.create.content.schematics.requirement.ISpecialBlockItemRequirement;
-import com.simibubi.create.content.schematics.requirement.ItemRequirement;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.block.ProperWaterloggedBlock;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.VoxelShaper;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlock;
+import com.simibubi.create_re.content.kinetics.belt.BeltSlope;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
+import com.simibubi.create_re.content.schematics.requirement.ISpecialBlockItemRequirement;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.VoxelShaper;
 import com.tterrag.registrate.util.entry.BlockEntry;
 
 import net.minecraft.core.BlockPos;
@@ -41,7 +41,7 @@ public class BeltFunnelBlock extends AbstractHorizontalFunnelBlock implements IS
 
 	private BlockEntry<? extends FunnelBlock> parent;
 
-	public static final EnumProperty<Shape> SHAPE = EnumProperty.create("shape", Shape.class);
+	public static final EnumProperty<Shape> SHAPE = EnumProperty.create_re("shape", Shape.class);
 
 	public enum Shape implements StringRepresentable {
 		RETRACTED(AllShapes.BELT_FUNNEL_RETRACTED),
@@ -68,8 +68,8 @@ public class BeltFunnelBlock extends AbstractHorizontalFunnelBlock implements IS
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> p_206840_1_) {
-		super.createBlockStateDefinition(p_206840_1_.add(SHAPE));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> p_206840_1_) {
+		super.create_reBlockStateDefinition(p_206840_1_.add(SHAPE));
 	}
 
 	public boolean isOfSameType(FunnelBlock otherFunnel) {

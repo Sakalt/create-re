@@ -1,4 +1,4 @@
-package com.simibubi.create.content.contraptions.behaviour;
+package com.simibubi.create_re.content.contraptions.behaviour;
 
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.util.RandomSource;

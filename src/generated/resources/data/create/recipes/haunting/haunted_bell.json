@@ -1,13 +1,13 @@
 {
-  "type": "create:haunting",
+  "type": "create_re:haunting",
   "ingredients": [
     {
-      "item": "create:peculiar_bell"
+      "item": "create_re:peculiar_bell"
     }
   ],
   "results": [
     {
-      "item": "create:haunted_bell"
+      "item": "create_re:haunted_bell"
     }
   ]
 }

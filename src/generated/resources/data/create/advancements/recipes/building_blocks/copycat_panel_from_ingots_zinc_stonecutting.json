@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:copycat_panel_from_ingots_zinc_stonecutting"
+        "recipe": "create_re:copycat_panel_from_ingots_zinc_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:copycat_panel_from_ingots_zinc_stonecutting"
+      "create_re:copycat_panel_from_ingots_zinc_stonecutting"
     ]
   },
   "sends_telemetry_event": false

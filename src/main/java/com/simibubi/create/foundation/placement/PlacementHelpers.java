@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.placement;
+package com.simibubi.create_re.foundation.placement;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,13 +14,13 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.Tesselator;
 import com.mojang.blaze3d.vertex.VertexFormat;
 import com.mojang.math.Axis;
-import com.simibubi.create.foundation.gui.AllGuiTextures;
-import com.simibubi.create.foundation.utility.AngleHelper;
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat.Chaser;
-import com.simibubi.create.infrastructure.config.AllConfigs;
-import com.simibubi.create.infrastructure.config.CClient;
+import com.simibubi.create_re.foundation.gui.AllGuiTextures;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat.Chaser;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.infrastructure.config.CClient;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;

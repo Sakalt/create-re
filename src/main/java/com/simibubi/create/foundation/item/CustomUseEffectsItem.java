@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.item;
+package com.simibubi.create_re.foundation.item;
 
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.LivingEntity;

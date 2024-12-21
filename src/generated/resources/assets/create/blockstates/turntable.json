@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/turntable"
+      "model": "create_re:block/turntable"
     }
   }
 }

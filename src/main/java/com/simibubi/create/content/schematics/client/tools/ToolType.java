@@ -1,11 +1,11 @@
-package com.simibubi.create.content.schematics.client.tools;
+package com.simibubi.create_re.content.schematics.client.tools;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import com.simibubi.create.foundation.gui.AllIcons;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.gui.AllIcons;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;

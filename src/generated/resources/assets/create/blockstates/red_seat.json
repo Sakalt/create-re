@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/red_seat"
+      "model": "create_re:block/red_seat"
     }
   }
 }

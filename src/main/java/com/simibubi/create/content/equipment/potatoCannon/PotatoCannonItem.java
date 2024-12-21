@@ -1,4 +1,4 @@
-package com.simibubi.create.content.equipment.potatoCannon;
+package com.simibubi.create_re.content.equipment.potatoCannon;
 
 import java.util.List;
 import java.util.Optional;
@@ -7,19 +7,19 @@ import java.util.function.Predicate;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create.AllEnchantments;
-import com.simibubi.create.AllEntityTypes;
-import com.simibubi.create.Create;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.content.equipment.armor.BacktankUtil;
-import com.simibubi.create.content.equipment.zapper.ShootableGadgetItemMethods;
-import com.simibubi.create.foundation.item.CustomArmPoseItem;
-import com.simibubi.create.foundation.item.render.SimpleCustomRenderer;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllEnchantments;
+import com.simibubi.create_re.AllEntityTypes;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.content.equipment.armor.BacktankUtil;
+import com.simibubi.create_re.content.equipment.zapper.ShootableGadgetItemMethods;
+import com.simibubi.create_re.foundation.item.CustomArmPoseItem;
+import com.simibubi.create_re.foundation.item.render.SimpleCustomRenderer;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
@@ -142,7 +142,7 @@ public class PotatoCannonItem extends ProjectileWeaponItem implements CustomArmP
 			float sprayChange = 360f / projectileType.getSplit();
 
 			for (int i = 0; i < projectileType.getSplit(); i++) {
-				PotatoProjectileEntity projectile = AllEntityTypes.POTATO_PROJECTILE.create(world);
+				PotatoProjectileEntity projectile = AllEntityTypes.POTATO_PROJECTILE.create_re(world);
 				projectile.setItem(itemStack);
 				projectile.setEnchantmentEffectsFromCannon(stack);
 
@@ -291,7 +291,7 @@ public class PotatoCannonItem extends ProjectileWeaponItem implements CustomArmP
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void initializeClient(Consumer<IClientItemExtensions> consumer) {
-		consumer.accept(SimpleCustomRenderer.create(this, new PotatoCannonItemRenderer()));
+		consumer.accept(SimpleCustomRenderer.create_re(this, new PotatoCannonItemRenderer()));
 	}
 
 }

@@ -11,14 +11,14 @@
               "condition": "minecraft:survives_explosion"
             },
             {
-              "block": "create:blaze_burner",
+              "block": "create_re:blaze_burner",
               "condition": "minecraft:block_state_property",
               "properties": {
                 "blaze": "none"
               }
             }
           ],
-          "name": "create:empty_blaze_burner"
+          "name": "create_re:empty_blaze_burner"
         },
         {
           "type": "minecraft:item",
@@ -27,14 +27,14 @@
               "condition": "minecraft:survives_explosion"
             },
             {
-              "block": "create:blaze_burner",
+              "block": "create_re:blaze_burner",
               "condition": "minecraft:block_state_property",
               "properties": {
                 "blaze": "smouldering"
               }
             }
           ],
-          "name": "create:blaze_burner"
+          "name": "create_re:blaze_burner"
         },
         {
           "type": "minecraft:item",
@@ -43,14 +43,14 @@
               "condition": "minecraft:survives_explosion"
             },
             {
-              "block": "create:blaze_burner",
+              "block": "create_re:blaze_burner",
               "condition": "minecraft:block_state_property",
               "properties": {
                 "blaze": "fading"
               }
             }
           ],
-          "name": "create:blaze_burner"
+          "name": "create_re:blaze_burner"
         },
         {
           "type": "minecraft:item",
@@ -59,14 +59,14 @@
               "condition": "minecraft:survives_explosion"
             },
             {
-              "block": "create:blaze_burner",
+              "block": "create_re:blaze_burner",
               "condition": "minecraft:block_state_property",
               "properties": {
                 "blaze": "kindled"
               }
             }
           ],
-          "name": "create:blaze_burner"
+          "name": "create_re:blaze_burner"
         },
         {
           "type": "minecraft:item",
@@ -75,18 +75,18 @@
               "condition": "minecraft:survives_explosion"
             },
             {
-              "block": "create:blaze_burner",
+              "block": "create_re:blaze_burner",
               "condition": "minecraft:block_state_property",
               "properties": {
                 "blaze": "seething"
               }
             }
           ],
-          "name": "create:blaze_burner"
+          "name": "create_re:blaze_burner"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/blaze_burner"
+  "random_sequence": "create_re:blocks/blaze_burner"
 }

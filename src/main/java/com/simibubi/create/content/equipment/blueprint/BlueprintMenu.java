@@ -1,10 +1,10 @@
-package com.simibubi.create.content.equipment.blueprint;
+package com.simibubi.create_re.content.equipment.blueprint;
 
 import java.util.Optional;
 
-import com.simibubi.create.AllMenuTypes;
-import com.simibubi.create.content.equipment.blueprint.BlueprintEntity.BlueprintSection;
-import com.simibubi.create.foundation.gui.menu.GhostItemMenu;
+import com.simibubi.create_re.AllMenuTypes;
+import com.simibubi.create_re.content.equipment.blueprint.BlueprintEntity.BlueprintSection;
+import com.simibubi.create_re.foundation.gui.menu.GhostItemMenu;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.FriendlyByteBuf;
@@ -37,7 +37,7 @@ public class BlueprintMenu extends GhostItemMenu<BlueprintSection> {
 		super(type, id, inv, section);
 	}
 
-	public static BlueprintMenu create(int id, Inventory inv, BlueprintSection section) {
+	public static BlueprintMenu create_re(int id, Inventory inv, BlueprintSection section) {
 		return new BlueprintMenu(AllMenuTypes.CRAFTING_BLUEPRINT.get(), id, inv, section);
 	}
 
@@ -110,7 +110,7 @@ public class BlueprintMenu extends GhostItemMenu<BlueprintSection> {
 	}
 
 	@Override
-	protected ItemStackHandler createGhostInventory() {
+	protected ItemStackHandler create_reGhostInventory() {
 		return contentHolder.getItems();
 	}
 
@@ -126,7 +126,7 @@ public class BlueprintMenu extends GhostItemMenu<BlueprintSection> {
 
 	@Override
 	@OnlyIn(Dist.CLIENT)
-	protected BlueprintSection createOnClient(FriendlyByteBuf extraData) {
+	protected BlueprintSection create_reOnClient(FriendlyByteBuf extraData) {
 		int entityID = extraData.readVarInt();
 		int section = extraData.readVarInt();
 		Entity entityByID = Minecraft.getInstance().level.getEntity(entityID);

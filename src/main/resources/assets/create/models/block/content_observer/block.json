@@ -2,12 +2,12 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "create:block/smart_observer",
-		"2": "create:block/smart_observer_front",
-		"4": "create:block/smart_observer_top",
-		"6": "create:block/smart_observer_bottom",
-		"7": "create:block/smart_observer_side",
-		"particle": "create:block/smart_observer"
+		"0": "create_re:block/smart_observer",
+		"2": "create_re:block/smart_observer_front",
+		"4": "create_re:block/smart_observer_top",
+		"6": "create_re:block/smart_observer_bottom",
+		"7": "create_re:block/smart_observer_side",
+		"particle": "create_re:block/smart_observer"
 	},
 	"elements": [
 		{

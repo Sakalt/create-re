@@ -1,20 +1,20 @@
-package com.simibubi.create.content.redstone.link;
+package com.simibubi.create_re.content.redstone.link;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.datafixers.util.Pair;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.ValueBox;
-import com.simibubi.create.foundation.blockEntity.behaviour.ValueBoxRenderer;
-import com.simibubi.create.foundation.blockEntity.behaviour.ValueBoxTransform;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBox;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBoxRenderer;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBoxTransform;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;

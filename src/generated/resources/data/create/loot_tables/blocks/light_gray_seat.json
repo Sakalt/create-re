@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:light_gray_seat"
+          "name": "create_re:light_gray_seat"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/light_gray_seat"
+  "random_sequence": "create_re:blocks/light_gray_seat"
 }

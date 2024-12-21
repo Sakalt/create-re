@@ -1,14 +1,14 @@
-package com.simibubi.create.content.contraptions.elevator;
+package com.simibubi.create_re.content.contraptions.elevator;
 
 import java.util.List;
 
-import com.simibubi.create.content.contraptions.elevator.ElevatorColumn.ColumnCoords;
-import com.simibubi.create.content.decoration.slidingDoor.DoorControlBehaviour;
-import com.simibubi.create.content.redstone.displayLink.DisplayLinkBlock;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.NBTHelper;
+import com.simibubi.create_re.content.contraptions.elevator.ElevatorColumn.ColumnCoords;
+import com.simibubi.create_re.content.decoration.slidingDoor.DoorControlBehaviour;
+import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkBlock;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
@@ -152,7 +152,7 @@ public class ElevatorContactBlockEntity extends SmartBlockEntity {
 	}
 
 	public Couple<String> getNames() {
-		return Couple.create(shortName, longName);
+		return Couple.create_re(shortName, longName);
 	}
 
 }

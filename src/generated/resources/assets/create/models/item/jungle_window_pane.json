@@ -1,7 +1,7 @@
 {
-  "parent": "create:item/pane",
+  "parent": "create_re:item/pane",
   "textures": {
     "edge": "minecraft:block/jungle_planks",
-    "pane": "create:block/palettes/jungle_window"
+    "pane": "create_re:block/palettes/jungle_window"
   }
 }

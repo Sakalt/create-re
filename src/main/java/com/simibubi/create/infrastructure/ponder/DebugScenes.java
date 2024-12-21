@@ -1,23 +1,23 @@
-package com.simibubi.create.infrastructure.ponder;
+package com.simibubi.create_re.infrastructure.ponder;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.kinetics.base.IRotate.SpeedLevel;
-import com.simibubi.create.content.kinetics.base.RotationIndicatorParticleData;
-import com.simibubi.create.foundation.item.ItemHelper;
-import com.simibubi.create.foundation.ponder.ElementLink;
-import com.simibubi.create.foundation.ponder.PonderPalette;
-import com.simibubi.create.foundation.ponder.PonderStoryBoardEntry.PonderStoryBoard;
-import com.simibubi.create.foundation.ponder.SceneBuilder;
-import com.simibubi.create.foundation.ponder.SceneBuildingUtil;
-import com.simibubi.create.foundation.ponder.Selection;
-import com.simibubi.create.foundation.ponder.element.BeltItemElement;
-import com.simibubi.create.foundation.ponder.element.InputWindowElement;
-import com.simibubi.create.foundation.ponder.element.ParrotElement.DancePose;
-import com.simibubi.create.foundation.ponder.element.ParrotElement.FacePointOfInterestPose;
-import com.simibubi.create.foundation.ponder.element.WorldSectionElement;
-import com.simibubi.create.foundation.ponder.instruction.EmitParticlesInstruction.Emitter;
-import com.simibubi.create.foundation.utility.Pointing;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.kinetics.base.IRotate.SpeedLevel;
+import com.simibubi.create_re.content.kinetics.base.RotationIndicatorParticleData;
+import com.simibubi.create_re.foundation.item.ItemHelper;
+import com.simibubi.create_re.foundation.ponder.ElementLink;
+import com.simibubi.create_re.foundation.ponder.PonderPalette;
+import com.simibubi.create_re.foundation.ponder.PonderStoryBoardEntry.PonderStoryBoard;
+import com.simibubi.create_re.foundation.ponder.SceneBuilder;
+import com.simibubi.create_re.foundation.ponder.SceneBuildingUtil;
+import com.simibubi.create_re.foundation.ponder.Selection;
+import com.simibubi.create_re.foundation.ponder.element.BeltItemElement;
+import com.simibubi.create_re.foundation.ponder.element.InputWindowElement;
+import com.simibubi.create_re.foundation.ponder.element.ParrotElement.DancePose;
+import com.simibubi.create_re.foundation.ponder.element.ParrotElement.FacePointOfInterestPose;
+import com.simibubi.create_re.foundation.ponder.element.WorldSectionElement;
+import com.simibubi.create_re.foundation.ponder.instruction.EmitParticlesInstruction.Emitter;
+import com.simibubi.create_re.foundation.utility.Pointing;
 import com.tterrag.registrate.util.entry.ItemEntry;
 
 import net.minecraft.core.BlockPos;
@@ -112,7 +112,7 @@ public class DebugScenes {
 		scene.showBasePlate();
 		scene.idle(10);
 		Vec3 parrotPos = util.vector.topOf(1, 0, 1);
-		scene.special.createBirb(parrotPos, FacePointOfInterestPose::new);
+		scene.special.create_reBirb(parrotPos, FacePointOfInterestPose::new);
 		scene.world.showSection(util.select.layersFrom(1), Direction.DOWN);
 		scene.overlay.showText(1000)
 			.text("Fluid rendering test.")
@@ -294,10 +294,10 @@ public class DebugScenes {
 			.pointAt(util.vector.topOf(pos));
 
 		scene.idle(10);
-		scene.special.createBirb(util.vector.topOf(0, 1, 2), DancePose::new);
+		scene.special.create_reBirb(util.vector.topOf(0, 1, 2), DancePose::new);
 		scene.idle(10);
 
-		scene.special.createBirb(util.vector.centerOf(3, 1, 3)
+		scene.special.create_reBirb(util.vector.centerOf(3, 1, 3)
 			.add(0, 0.25f, 0), FacePointOfInterestPose::new);
 		scene.idle(20);
 
@@ -401,20 +401,20 @@ public class DebugScenes {
 		ItemStack copperItem = new ItemStack(Items.COPPER_INGOT);
 
 		for (int z = 4; z >= 2; z--) {
-			scene.world.createItemEntity(util.vector.centerOf(0, 4, z), Vec3.ZERO, brassItem.copy());
+			scene.world.create_reItemEntity(util.vector.centerOf(0, 4, z), Vec3.ZERO, brassItem.copy());
 			scene.idle(10);
 		}
 
 		BlockPos beltPos = util.grid.at(2, 1, 3);
 		ElementLink<BeltItemElement> itemOnBelt =
-			scene.world.createItemOnBelt(beltPos, Direction.EAST, copperItem.copy());
+			scene.world.create_reItemOnBelt(beltPos, Direction.EAST, copperItem.copy());
 
 		scene.idle(10);
 		scene.world.stallBeltItem(itemOnBelt, true);
 		scene.idle(5);
 		scene.overlay.showText(40)
 			.colored(PonderPalette.FAST)
-			.text("Belt Items can only be force-stalled on the belt they were created on.")
+			.text("Belt Items can only be force-stalled on the belt they were create_red on.")
 			.pointAt(util.vector.topOf(2, 1, 2));
 		scene.idle(45);
 		scene.world.stallBeltItem(itemOnBelt, false);

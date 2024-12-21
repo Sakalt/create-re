@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "create:block/axis_top",
-		"1": "create:block/cogwheel_axis",
-		"particle": "create:block/axis_top"
+		"0": "create_re:block/axis_top",
+		"1": "create_re:block/cogwheel_axis",
+		"particle": "create_re:block/axis_top"
 	},
 	"elements": [
 		{

@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.utility;
+package com.simibubi.create_re.foundation.utility;
 
 import java.util.Map;
 
@@ -51,25 +51,25 @@ public class DyeHelper {
 	public static final Map<DyeColor, Couple<Integer>> DYE_TABLE = new ImmutableMap.Builder<DyeColor, Couple<Integer>>()
 	
 	// DyeColor, ( Front RGB, Back RGB )
-	.put(DyeColor.BLACK, Couple.create(0x45403B, 0x21201F))
-	.put(DyeColor.RED, Couple.create(0xB13937, 0x632737))
-	.put(DyeColor.GREEN, Couple.create(0x208A46, 0x1D6045))
-	.put(DyeColor.BROWN, Couple.create(0xAC855C, 0x68533E))
+	.put(DyeColor.BLACK, Couple.create_re(0x45403B, 0x21201F))
+	.put(DyeColor.RED, Couple.create_re(0xB13937, 0x632737))
+	.put(DyeColor.GREEN, Couple.create_re(0x208A46, 0x1D6045))
+	.put(DyeColor.BROWN, Couple.create_re(0xAC855C, 0x68533E))
 	
-	.put(DyeColor.BLUE, Couple.create(0x5391E1, 0x504B90))
-	.put(DyeColor.GRAY, Couple.create(0x5D666F, 0x313538))
-	.put(DyeColor.LIGHT_GRAY, Couple.create(0x95969B, 0x707070))
-	.put(DyeColor.PURPLE, Couple.create(0x9F54AE, 0x63366C))
+	.put(DyeColor.BLUE, Couple.create_re(0x5391E1, 0x504B90))
+	.put(DyeColor.GRAY, Couple.create_re(0x5D666F, 0x313538))
+	.put(DyeColor.LIGHT_GRAY, Couple.create_re(0x95969B, 0x707070))
+	.put(DyeColor.PURPLE, Couple.create_re(0x9F54AE, 0x63366C))
 	
-	.put(DyeColor.CYAN, Couple.create(0x3EABB4, 0x3C7872))
-	.put(DyeColor.PINK, Couple.create(0xD5A8CB, 0xB86B95))
-	.put(DyeColor.LIME, Couple.create(0xA3DF55, 0x4FB16F))
-	.put(DyeColor.YELLOW, Couple.create(0xE6D756, 0xE9AC29))
+	.put(DyeColor.CYAN, Couple.create_re(0x3EABB4, 0x3C7872))
+	.put(DyeColor.PINK, Couple.create_re(0xD5A8CB, 0xB86B95))
+	.put(DyeColor.LIME, Couple.create_re(0xA3DF55, 0x4FB16F))
+	.put(DyeColor.YELLOW, Couple.create_re(0xE6D756, 0xE9AC29))
 	
-	.put(DyeColor.LIGHT_BLUE, Couple.create(0x69CED2, 0x508AA5))
-	.put(DyeColor.ORANGE, Couple.create(0xEE9246, 0xD94927))
-	.put(DyeColor.MAGENTA, Couple.create(0xF062B0, 0xC04488))
-	.put(DyeColor.WHITE, Couple.create(0xEDEAE5, 0xBBB6B0))
+	.put(DyeColor.LIGHT_BLUE, Couple.create_re(0x69CED2, 0x508AA5))
+	.put(DyeColor.ORANGE, Couple.create_re(0xEE9246, 0xD94927))
+	.put(DyeColor.MAGENTA, Couple.create_re(0xF062B0, 0xC04488))
+	.put(DyeColor.WHITE, Couple.create_re(0xEDEAE5, 0xBBB6B0))
 	
 	.build();
 

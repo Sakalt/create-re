@@ -3,13 +3,13 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "create:andesite_alloy"
+      "item": "create_re:andesite_alloy"
     },
     "C": {
-      "item": "create:brass_casing"
+      "item": "create_re:brass_casing"
     },
     "I": {
-      "item": "create:precision_mechanism"
+      "item": "create_re:precision_mechanism"
     },
     "L": {
       "tag": "forge:plates/brass"
@@ -21,7 +21,7 @@
     "IC "
   ],
   "result": {
-    "item": "create:mechanical_arm"
+    "item": "create_re:mechanical_arm"
   },
   "show_notification": true
 }

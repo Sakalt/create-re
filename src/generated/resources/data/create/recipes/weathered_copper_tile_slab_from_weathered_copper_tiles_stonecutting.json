@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 2,
   "ingredient": {
-    "item": "create:weathered_copper_tiles"
+    "item": "create_re:weathered_copper_tiles"
   },
-  "result": "create:weathered_copper_tile_slab"
+  "result": "create_re:weathered_copper_tile_slab"
 }

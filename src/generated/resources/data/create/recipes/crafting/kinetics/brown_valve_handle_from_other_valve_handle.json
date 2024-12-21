@@ -6,10 +6,10 @@
       "tag": "forge:dyes/brown"
     },
     {
-      "tag": "create:valve_handles"
+      "tag": "create_re:valve_handles"
     }
   ],
   "result": {
-    "item": "create:brown_valve_handle"
+    "item": "create_re:brown_valve_handle"
   }
 }

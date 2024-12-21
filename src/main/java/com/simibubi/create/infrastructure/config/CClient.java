@@ -1,7 +1,7 @@
-package com.simibubi.create.infrastructure.config;
+package com.simibubi.create_re.infrastructure.config;
 
-import com.simibubi.create.foundation.config.ConfigBase;
-import com.simibubi.create.foundation.config.ui.ConfigAnnotations;
+import com.simibubi.create_re.foundation.config.ConfigBase;
+import com.simibubi.create_re.foundation.config.ui.ConfigAnnotations;
 
 public class CClient extends ConfigBase {
 
@@ -137,7 +137,7 @@ public class CClient extends ConfigBase {
 		static String ignoreFabulousWarning = "Setting this to true will prevent Create from sending you a warning when playing with Fabulous graphics enabled";
 		static String rotatewhenSeated = "Disable to prevent being rotated while seated on a Moving Contraption";
 		static String overlay = "Settings for the Goggle Overlay";
-		static String overlayOffset = "Offset the overlay from goggle- and hover- information by this many pixels on the respective axis; Use /create overlay";
+		static String overlayOffset = "Offset the overlay from goggle- and hover- information by this many pixels on the respective axis; Use /create_re overlay";
 		static String overlayCustomColor = "Enable this to use your custom colors for the Goggle- and Hover- Overlay";
 		static String[] overlayBackgroundColor = new String[]{
 				"The custom background color to use for the Goggle- and Hover- Overlays, if enabled",

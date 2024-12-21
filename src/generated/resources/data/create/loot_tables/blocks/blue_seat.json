@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:blue_seat"
+          "name": "create_re:blue_seat"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/blue_seat"
+  "random_sequence": "create_re:blocks/blue_seat"
 }

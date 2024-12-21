@@ -1,14 +1,14 @@
-package com.simibubi.create.compat.jei.category;
+package com.simibubi.create_re.compat.jei.category;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.compat.jei.ConversionRecipe;
-import com.simibubi.create.foundation.gui.AllGuiTextures;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.compat.jei.ConversionRecipe;
+import com.simibubi.create_re.foundation.gui.AllGuiTextures;
 
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.ingredient.IRecipeSlotsView;
@@ -22,10 +22,10 @@ public class MysteriousItemConversionCategory extends CreateRecipeCategory<Conve
 	public static final List<ConversionRecipe> RECIPES = new ArrayList<>();
 
 	static {
-		RECIPES.add(ConversionRecipe.create(AllItems.EMPTY_BLAZE_BURNER.asStack(), AllBlocks.BLAZE_BURNER.asStack()));
-		RECIPES.add(ConversionRecipe.create(AllBlocks.PECULIAR_BELL.asStack(), AllBlocks.HAUNTED_BELL.asStack()));
-//		RECIPES.add(ConversionRecipe.create(AllItems.CHROMATIC_COMPOUND.asStack(), AllItems.SHADOW_STEEL.asStack()));
-//		RECIPES.add(ConversionRecipe.create(AllItems.CHROMATIC_COMPOUND.asStack(), AllItems.REFINED_RADIANCE.asStack()));
+		RECIPES.add(ConversionRecipe.create_re(AllItems.EMPTY_BLAZE_BURNER.asStack(), AllBlocks.BLAZE_BURNER.asStack()));
+		RECIPES.add(ConversionRecipe.create_re(AllBlocks.PECULIAR_BELL.asStack(), AllBlocks.HAUNTED_BELL.asStack()));
+//		RECIPES.add(ConversionRecipe.create_re(AllItems.CHROMATIC_COMPOUND.asStack(), AllItems.SHADOW_STEEL.asStack()));
+//		RECIPES.add(ConversionRecipe.create_re(AllItems.CHROMATIC_COMPOUND.asStack(), AllItems.REFINED_RADIANCE.asStack()));
 	}
 
 	public MysteriousItemConversionCategory(Info<ConversionRecipe> info) {

@@ -1,4 +1,4 @@
-package com.simibubi.create.infrastructure.command;
+package com.simibubi.create_re.infrastructure.command;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import com.mojang.brigadier.Command;
 import com.mojang.brigadier.builder.ArgumentBuilder;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.brigadier.exceptions.Dynamic2CommandExceptionType;
-import com.simibubi.create.content.contraptions.glue.SuperGlueEntity;
-import com.simibubi.create.foundation.utility.Components;
+import com.simibubi.create_re.content.contraptions.glue.SuperGlueEntity;
+import com.simibubi.create_re.foundation.utility.Components;
 
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
@@ -63,12 +63,12 @@ public class CloneCommand {
 
 		int i = sourceArea.getXSpan() * sourceArea.getYSpan() * sourceArea.getZSpan();
 		if (i > 32768)
-			throw CLONE_TOO_BIG_EXCEPTION.create(32768, i);
+			throw CLONE_TOO_BIG_EXCEPTION.create_re(32768, i);
 
 		ServerLevel world = source.getLevel();
 
 		if (!world.hasChunksAt(begin, end) || !world.hasChunksAt(destination, destinationEnd))
-			throw BlockPosArgument.ERROR_NOT_LOADED.create();
+			throw BlockPosArgument.ERROR_NOT_LOADED.create_re();
 
 		BlockPos diffToTarget = new BlockPos(destinationArea.minX() - sourceArea.minX(),
 			destinationArea.minY() - sourceArea.minY(), destinationArea.minZ() - sourceArea.minZ());

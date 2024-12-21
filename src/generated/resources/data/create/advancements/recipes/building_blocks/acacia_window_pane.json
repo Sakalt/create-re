@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:acacia_window"
+              "create_re:acacia_window"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:acacia_window_pane"
+        "recipe": "create_re:acacia_window_pane"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:acacia_window_pane"
+      "create_re:acacia_window_pane"
     ]
   },
   "sends_telemetry_event": false

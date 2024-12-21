@@ -1,14 +1,14 @@
-package com.simibubi.create.content.decoration.steamWhistle;
+package com.simibubi.create_re.content.decoration.steamWhistle;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.content.decoration.steamWhistle.WhistleExtenderBlock.WhistleExtenderShape;
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
-import com.simibubi.create.content.fluids.tank.FluidTankBlock;
-import com.simibubi.create.foundation.advancement.AdvancementBehaviour;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.content.decoration.steamWhistle.WhistleExtenderBlock.WhistleExtenderShape;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.content.fluids.tank.FluidTankBlock;
+import com.simibubi.create_re.foundation.advancement.AdvancementBehaviour;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -49,9 +49,9 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class WhistleBlock extends Block implements IBE<WhistleBlockEntity>, IWrenchable {
 
 	public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
-	public static final BooleanProperty WALL = BooleanProperty.create("wall");
+	public static final BooleanProperty WALL = BooleanProperty.create_re("wall");
 	public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
-	public static final EnumProperty<WhistleSize> SIZE = EnumProperty.create("size", WhistleSize.class);
+	public static final EnumProperty<WhistleSize> SIZE = EnumProperty.create_re("size", WhistleSize.class);
 
 	public static enum WhistleSize implements StringRepresentable {
 
@@ -88,8 +88,8 @@ public class WhistleBlock extends Block implements IBE<WhistleBlockEntity>, IWre
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
-		super.createBlockStateDefinition(pBuilder.add(FACING, POWERED, SIZE, WALL));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
+		super.create_reBlockStateDefinition(pBuilder.add(FACING, POWERED, SIZE, WALL));
 	}
 
 	@Override

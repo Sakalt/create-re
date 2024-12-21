@@ -1,5 +1,5 @@
 {
-  "feature": "create:striated_ores_overworld",
+  "feature": "create_re:striated_ores_overworld",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
@@ -21,7 +21,7 @@
       }
     },
     {
-      "type": "create:config_filter"
+      "type": "create_re:config_filter"
     }
   ]
 }

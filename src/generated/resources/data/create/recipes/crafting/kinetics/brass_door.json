@@ -6,10 +6,10 @@
       "tag": "minecraft:wooden_doors"
     },
     {
-      "item": "create:brass_casing"
+      "item": "create_re:brass_casing"
     }
   ],
   "result": {
-    "item": "create:brass_door"
+    "item": "create_re:brass_door"
   }
 }

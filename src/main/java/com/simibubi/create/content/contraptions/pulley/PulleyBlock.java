@@ -1,10 +1,10 @@
-package com.simibubi.create.content.contraptions.pulley;
+package com.simibubi.create_re.content.contraptions.pulley;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.content.kinetics.base.HorizontalAxisKineticBlock;
-import com.simibubi.create.foundation.block.IBE;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.content.kinetics.base.HorizontalAxisKineticBlock;
+import com.simibubi.create_re.foundation.block.IBE;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -136,9 +136,9 @@ public class PulleyBlock extends HorizontalAxisKineticBlock implements IBE<Pulle
         }
 
         @Override
-        protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
+        protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
             builder.add(BlockStateProperties.WATERLOGGED);
-            super.createBlockStateDefinition(builder);
+            super.create_reBlockStateDefinition(builder);
         }
 
         @Override

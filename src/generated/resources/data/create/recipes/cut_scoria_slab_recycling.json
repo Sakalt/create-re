@@ -3,13 +3,13 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "create:cut_scoria_slab"
+      "item": "create_re:cut_scoria_slab"
     },
     {
-      "item": "create:cut_scoria_slab"
+      "item": "create_re:cut_scoria_slab"
     }
   ],
   "result": {
-    "item": "create:cut_scoria"
+    "item": "create_re:cut_scoria"
   }
 }

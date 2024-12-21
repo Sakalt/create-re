@@ -1,8 +1,8 @@
 {
-  "parent": "create:block/bars/post",
+  "parent": "create_re:block/bars/post",
   "textures": {
-    "bars": "create:block/bars/andesite_bars",
-    "edge": "create:block/bars/andesite_bars_edge",
-    "particle": "create:block/bars/andesite_bars"
+    "bars": "create_re:block/bars/andesite_bars",
+    "edge": "create_re:block/bars/andesite_bars_edge",
+    "particle": "create_re:block/bars/andesite_bars"
   }
 }

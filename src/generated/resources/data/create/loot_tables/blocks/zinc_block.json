@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:zinc_block"
+          "name": "create_re:zinc_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/zinc_block"
+  "random_sequence": "create_re:blocks/zinc_block"
 }

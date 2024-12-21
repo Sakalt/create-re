@@ -1,26 +1,26 @@
-package com.simibubi.create.content.kinetics.press;
+package com.simibubi.create_re.content.kinetics.press;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.AllTags;
-import com.simibubi.create.content.kinetics.belt.transport.TransportedItemStack;
-import com.simibubi.create.content.kinetics.crafter.MechanicalCraftingRecipe;
-import com.simibubi.create.content.kinetics.press.PressingBehaviour.Mode;
-import com.simibubi.create.content.kinetics.press.PressingBehaviour.PressingBehaviourSpecifics;
-import com.simibubi.create.content.processing.basin.BasinBlockEntity;
-import com.simibubi.create.content.processing.basin.BasinOperatingBlockEntity;
-import com.simibubi.create.content.processing.sequenced.SequencedAssemblyRecipe;
-import com.simibubi.create.foundation.advancement.AdvancementBehaviour;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.advancement.CreateAdvancement;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.item.ItemHelper;
-import com.simibubi.create.foundation.item.SmartInventory;
-import com.simibubi.create.foundation.recipe.RecipeApplier;
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllRecipeTypes;
+import com.simibubi.create_re.AllTags;
+import com.simibubi.create_re.content.kinetics.belt.transport.TransportedItemStack;
+import com.simibubi.create_re.content.kinetics.crafter.MechanicalCraftingRecipe;
+import com.simibubi.create_re.content.kinetics.press.PressingBehaviour.Mode;
+import com.simibubi.create_re.content.kinetics.press.PressingBehaviour.PressingBehaviourSpecifics;
+import com.simibubi.create_re.content.processing.basin.BasinBlockEntity;
+import com.simibubi.create_re.content.processing.basin.BasinOperatingBlockEntity;
+import com.simibubi.create_re.content.processing.sequenced.SequencedAssemblyRecipe;
+import com.simibubi.create_re.foundation.advancement.AdvancementBehaviour;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.advancement.CreateAdvancement;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.item.ItemHelper;
+import com.simibubi.create_re.foundation.item.SmartInventory;
+import com.simibubi.create_re.foundation.recipe.RecipeApplier;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;
@@ -51,7 +51,7 @@ public class MechanicalPressBlockEntity extends BasinOperatingBlockEntity implem
 	}
 
 	@Override
-	protected AABB createRenderBoundingBox() {
+	protected AABB create_reRenderBoundingBox() {
 		return new AABB(worldPosition).expandTowards(0, -1.5, 0)
 			.expandTowards(0, 1, 0);
 	}
@@ -132,11 +132,11 @@ public class MechanicalPressBlockEntity extends BasinOperatingBlockEntity implem
 				recipe.get())) {
 				if (itemCreated.isEmpty())
 					itemCreated = result.copy();
-				ItemEntity created =
+				ItemEntity create_red =
 					new ItemEntity(level, itemEntity.getX(), itemEntity.getY(), itemEntity.getZ(), result);
-				created.setDefaultPickUpDelay();
-				created.setDeltaMovement(VecHelper.offsetRandomly(Vec3.ZERO, level.random, .05f));
-				level.addFreshEntity(created);
+				create_red.setDefaultPickUpDelay();
+				create_red.setDeltaMovement(VecHelper.offsetRandomly(Vec3.ZERO, level.random, .05f));
+				level.addFreshEntity(create_red);
 			}
 			item.shrink(1);
 		}
@@ -157,9 +157,9 @@ public class MechanicalPressBlockEntity extends BasinOperatingBlockEntity implem
 		List<ItemStack> outputs = RecipeApplier.applyRecipeOn(level,
 			canProcessInBulk() ? input.stack : ItemHandlerHelper.copyStackWithSize(input.stack, 1), recipe.get());
 
-		for (ItemStack created : outputs) {
-			if (!created.isEmpty()) {
-				onItemPressed(created);
+		for (ItemStack create_red : outputs) {
+			if (!create_red.isEmpty()) {
+				onItemPressed(create_red);
 				break;
 			}
 		}

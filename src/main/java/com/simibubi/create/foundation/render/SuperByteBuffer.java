@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.render;
+package com.simibubi.create_re.foundation.render;
 
 import org.jetbrains.annotations.Nullable;
 import org.joml.Matrix3f;
@@ -12,9 +12,9 @@ import org.joml.Vector4f;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create.foundation.block.render.SpriteShiftEntry;
-import com.simibubi.create.foundation.mixin.accessor.RenderSystemAccessor;
-import com.simibubi.create.foundation.utility.Color;
+import com.simibubi.create_re.foundation.block.render.SpriteShiftEntry;
+import com.simibubi.create_re.foundation.mixin.accessor.RenderSystemAccessor;
+import com.simibubi.create_re.foundation.utility.Color;
 
 import dev.engine_room.flywheel.lib.transform.TransformStack;
 import dev.engine_room.flywheel.lib.util.ShadersModHandler;
@@ -110,8 +110,8 @@ public class SuperByteBuffer implements TransformStack<SuperByteBuffer> {
 		int nextShadeSwapVertex = shadeSwapIndex < shadeSwapVertices.length ? shadeSwapVertices[shadeSwapIndex] : -1;
 		float unshadedDiffuse = 1;
 		if (applyDiffuse) {
-			lightDir0.set(RenderSystemAccessor.create$getShaderLightDirections()[0]).normalize();
-			lightDir1.set(RenderSystemAccessor.create$getShaderLightDirections()[1]).normalize();
+			lightDir0.set(RenderSystemAccessor.create_re$getShaderLightDirections()[0]).normalize();
+			lightDir1.set(RenderSystemAccessor.create_re$getShaderLightDirections()[1]).normalize();
 			if (shadeSwapVertices.length > 0) {
 				normal.set(0, 1, 0);
 				normal.mul(normalMat);

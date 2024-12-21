@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:gearbox"
+          "name": "create_re:gearbox"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/gearbox"
+  "random_sequence": "create_re:blocks/gearbox"
 }

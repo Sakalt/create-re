@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:mechanical_saw"
+          "name": "create_re:mechanical_saw"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/mechanical_saw"
+  "random_sequence": "create_re:blocks/mechanical_saw"
 }

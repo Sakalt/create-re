@@ -1,11 +1,11 @@
-package com.simibubi.create.content.processing.sequenced;
+package com.simibubi.create_re.content.processing.sequenced;
 
 import java.util.List;
 import java.util.Set;
 import java.util.function.Supplier;
 
-import com.simibubi.create.compat.jei.category.sequencedAssembly.SequencedAssemblySubCategory;
-import com.simibubi.create.foundation.fluid.FluidIngredient;
+import com.simibubi.create_re.compat.jei.category.sequencedAssembly.SequencedAssemblySubCategory;
+import com.simibubi.create_re.foundation.fluid.FluidIngredient;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.crafting.Ingredient;

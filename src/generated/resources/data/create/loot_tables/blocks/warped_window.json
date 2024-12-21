@@ -21,11 +21,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:warped_window"
+          "name": "create_re:warped_window"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/warped_window"
+  "random_sequence": "create_re:blocks/warped_window"
 }

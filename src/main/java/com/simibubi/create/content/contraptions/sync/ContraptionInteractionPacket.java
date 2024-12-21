@@ -1,7 +1,7 @@
-package com.simibubi.create.content.contraptions.sync;
+package com.simibubi.create_re.content.contraptions.sync;
 
-import com.simibubi.create.content.contraptions.AbstractContraptionEntity;
-import com.simibubi.create.foundation.networking.SimplePacketBase;
+import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity;
+import com.simibubi.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

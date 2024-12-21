@@ -6,10 +6,10 @@
       "tag": "minecraft:wooden_doors"
     },
     {
-      "item": "create:railway_casing"
+      "item": "create_re:railway_casing"
     }
   ],
   "result": {
-    "item": "create:train_door"
+    "item": "create_re:train_door"
   }
 }

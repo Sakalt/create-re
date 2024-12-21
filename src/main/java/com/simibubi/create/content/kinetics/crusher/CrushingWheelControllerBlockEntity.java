@@ -1,23 +1,23 @@
-package com.simibubi.create.content.kinetics.crusher;
+package com.simibubi.create_re.content.kinetics.crusher;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
-import com.simibubi.create.content.processing.recipe.ProcessingInventory;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipe;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.damageTypes.CreateDamageSources;
-import com.simibubi.create.foundation.item.ItemHelper;
-import com.simibubi.create.foundation.sound.SoundScapes;
-import com.simibubi.create.foundation.sound.SoundScapes.AmbienceGroup;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllRecipeTypes;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
+import com.simibubi.create_re.content.processing.recipe.ProcessingInventory;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipe;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.damageTypes.CreateDamageSources;
+import com.simibubi.create_re.foundation.item.ItemHelper;
+import com.simibubi.create_re.foundation.sound.SoundScapes;
+import com.simibubi.create_re.foundation.sound.SoundScapes.AmbienceGroup;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -324,7 +324,7 @@ public class CrushingWheelControllerBlockEntity extends SmartBlockEntity {
 	@Override
 	public void write(CompoundTag compound, boolean clientPacket) {
 		if (hasEntity())
-			compound.put("Entity", NbtUtils.createUUID(entityUUID));
+			compound.put("Entity", NbtUtils.create_reUUID(entityUUID));
 		compound.put("Inventory", inventory.serializeNBT());
 		compound.putFloat("Speed", crushingspeed);
 		super.write(compound, clientPacket);

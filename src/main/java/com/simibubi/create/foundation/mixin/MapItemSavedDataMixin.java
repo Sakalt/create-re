@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.mixin;
+package com.simibubi.create_re.foundation.mixin;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -15,9 +15,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import com.google.common.collect.Maps;
-import com.simibubi.create.content.trains.station.StationBlockEntity;
-import com.simibubi.create.content.trains.station.StationMapData;
-import com.simibubi.create.content.trains.station.StationMarker;
+import com.simibubi.create_re.content.trains.station.StationBlockEntity;
+import com.simibubi.create_re.content.trains.station.StationMapData;
+import com.simibubi.create_re.content.trains.station.StationMarker;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
@@ -31,7 +31,7 @@ import net.minecraft.world.level.saveddata.maps.MapItemSavedData;
 @Mixin(MapItemSavedData.class)
 public class MapItemSavedDataMixin implements StationMapData {
 	@Unique
-	private static final String STATION_MARKERS_KEY = "create:stations";
+	private static final String STATION_MARKERS_KEY = "create_re:stations";
 
 	@Shadow
 	@Final
@@ -53,13 +53,13 @@ public class MapItemSavedDataMixin implements StationMapData {
 	private int trackedDecorationCount;
 
 	@Unique
-	private final Map<String, StationMarker> create$stationMarkers = Maps.newHashMap();
+	private final Map<String, StationMarker> create_re$stationMarkers = Maps.newHashMap();
 
 	@Inject(
 			method = "load(Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/world/level/saveddata/maps/MapItemSavedData;",
 			at = @At("RETURN")
 	)
-	private static void create$onLoad(CompoundTag compound, CallbackInfoReturnable<MapItemSavedData> cir) {
+	private static void create_re$onLoad(CompoundTag compound, CallbackInfoReturnable<MapItemSavedData> cir) {
 		MapItemSavedData mapData = cir.getReturnValue();
 		StationMapData stationMapData = (StationMapData) mapData;
 
@@ -74,9 +74,9 @@ public class MapItemSavedDataMixin implements StationMapData {
 			method = "save(Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/nbt/CompoundTag;",
 			at = @At("RETURN")
 	)
-	public void create$onSave(CompoundTag compound, CallbackInfoReturnable<CompoundTag> cir) {
+	public void create_re$onSave(CompoundTag compound, CallbackInfoReturnable<CompoundTag> cir) {
 		ListTag listTag = new ListTag();
-		for (StationMarker stationMarker : create$stationMarkers.values()) {
+		for (StationMarker stationMarker : create_re$stationMarkers.values()) {
 			listTag.add(stationMarker.save());
 		}
 		compound.put(STATION_MARKERS_KEY, listTag);
@@ -84,7 +84,7 @@ public class MapItemSavedDataMixin implements StationMapData {
 
 	@Override
 	public void addStationMarker(StationMarker marker) {
-		create$stationMarkers.put(marker.getId(), marker);
+		create_re$stationMarkers.put(marker.getId(), marker);
 
 		int scaleMultiplier = 1 << scale;
 		float localX = (marker.getTarget().getX() - centerX) / (float) scaleMultiplier;
@@ -144,7 +144,7 @@ public class MapItemSavedDataMixin implements StationMapData {
 		if (marker == null)
 			return false;
 
-		if (create$stationMarkers.remove(marker.getId(), marker)) {
+		if (create_re$stationMarkers.remove(marker.getId(), marker)) {
 			removeDecoration(marker.getId());
 			return true;
 		}
@@ -161,13 +161,13 @@ public class MapItemSavedDataMixin implements StationMapData {
 			method = "checkBanners(Lnet/minecraft/world/level/BlockGetter;II)V",
 			at = @At("RETURN")
 	)
-	public void create$onCheckBanners(BlockGetter blockGetter, int x, int z, CallbackInfo ci) {
-		create$checkStations(blockGetter, x, z);
+	public void create_re$onCheckBanners(BlockGetter blockGetter, int x, int z, CallbackInfo ci) {
+		create_re$checkStations(blockGetter, x, z);
 	}
 
 	@Unique
-	private void create$checkStations(BlockGetter blockGetter, int x, int z) {
-		Iterator<StationMarker> iterator = create$stationMarkers.values().iterator();
+	private void create_re$checkStations(BlockGetter blockGetter, int x, int z) {
+		Iterator<StationMarker> iterator = create_re$stationMarkers.values().iterator();
 		List<StationMarker> newMarkers = new ArrayList<>();
 
 		while (iterator.hasNext()) {

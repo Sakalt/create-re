@@ -1,32 +1,32 @@
-package com.simibubi.create.content.redstone.displayLink;
+package com.simibubi.create_re.content.redstone.displayLink;
 
 import java.util.Collections;
 import java.util.List;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.content.redstone.displayLink.source.DisplaySource;
-import com.simibubi.create.content.redstone.displayLink.source.SingleLineDisplaySource;
-import com.simibubi.create.content.redstone.displayLink.target.DisplayTarget;
-import com.simibubi.create.content.redstone.displayLink.target.DisplayTargetStats;
-import com.simibubi.create.foundation.gui.AbstractSimiScreen;
-import com.simibubi.create.foundation.gui.AllGuiTextures;
-import com.simibubi.create.foundation.gui.AllIcons;
-import com.simibubi.create.foundation.gui.ModularGuiLine;
-import com.simibubi.create.foundation.gui.ModularGuiLineBuilder;
-import com.simibubi.create.foundation.gui.ScreenOpener;
-import com.simibubi.create.foundation.gui.element.GuiGameElement;
-import com.simibubi.create.foundation.gui.widget.AbstractSimiWidget;
-import com.simibubi.create.foundation.gui.widget.ElementWidget;
-import com.simibubi.create.foundation.gui.widget.IconButton;
-import com.simibubi.create.foundation.gui.widget.Label;
-import com.simibubi.create.foundation.gui.widget.ScrollInput;
-import com.simibubi.create.foundation.gui.widget.SelectionScrollInput;
-import com.simibubi.create.foundation.ponder.ui.PonderTagScreen;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.infrastructure.ponder.AllPonderTags;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.content.redstone.displayLink.source.DisplaySource;
+import com.simibubi.create_re.content.redstone.displayLink.source.SingleLineDisplaySource;
+import com.simibubi.create_re.content.redstone.displayLink.target.DisplayTarget;
+import com.simibubi.create_re.content.redstone.displayLink.target.DisplayTargetStats;
+import com.simibubi.create_re.foundation.gui.AbstractSimiScreen;
+import com.simibubi.create_re.foundation.gui.AllGuiTextures;
+import com.simibubi.create_re.foundation.gui.AllIcons;
+import com.simibubi.create_re.foundation.gui.ModularGuiLine;
+import com.simibubi.create_re.foundation.gui.ModularGuiLineBuilder;
+import com.simibubi.create_re.foundation.gui.ScreenOpener;
+import com.simibubi.create_re.foundation.gui.element.GuiGameElement;
+import com.simibubi.create_re.foundation.gui.widget.AbstractSimiWidget;
+import com.simibubi.create_re.foundation.gui.widget.ElementWidget;
+import com.simibubi.create_re.foundation.gui.widget.IconButton;
+import com.simibubi.create_re.foundation.gui.widget.Label;
+import com.simibubi.create_re.foundation.gui.widget.ScrollInput;
+import com.simibubi.create_re.foundation.gui.widget.SelectionScrollInput;
+import com.simibubi.create_re.foundation.ponder.ui.PonderTagScreen;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.infrastructure.ponder.AllPonderTags;
 
 import dev.engine_room.flywheel.lib.transform.TransformStack;
 import net.minecraft.ChatFormatting;
@@ -69,7 +69,7 @@ public class DisplayLinkScreen extends AbstractSimiScreen {
 		this.background = AllGuiTextures.DATA_GATHERER;
 		this.blockEntity = be;
 		sources = Collections.emptyList();
-		configWidgets = Couple.create(ModularGuiLine::new);
+		configWidgets = Couple.create_re(ModularGuiLine::new);
 		target = null;
 	}
 

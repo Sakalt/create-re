@@ -1,9 +1,9 @@
-package com.simibubi.create.content.redstone.contact;
+package com.simibubi.create_re.content.redstone.contact;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.contraptions.behaviour.MovementBehaviour;
-import com.simibubi.create.content.contraptions.behaviour.MovementContext;
-import com.simibubi.create.content.contraptions.elevator.ElevatorContraption;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementBehaviour;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
+import com.simibubi.create_re.content.contraptions.elevator.ElevatorContraption;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

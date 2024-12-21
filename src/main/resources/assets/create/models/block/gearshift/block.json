@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "create:block/gearshift_off",
-		"1": "create:block/gearbox",
-		"2": "create:block/funnel/andesite_funnel_frame",
-		"particle": "create:block/gearshift_off"
+		"0": "create_re:block/gearshift_off",
+		"1": "create_re:block/gearbox",
+		"2": "create_re:block/funnel/andesite_funnel_frame",
+		"particle": "create_re:block/gearshift_off"
 	},
 	"elements": [
 		{

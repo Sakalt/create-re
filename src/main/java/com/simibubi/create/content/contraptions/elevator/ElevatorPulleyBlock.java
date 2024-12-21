@@ -1,9 +1,9 @@
-package com.simibubi.create.content.contraptions.elevator;
+package com.simibubi.create_re.content.contraptions.elevator;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.content.kinetics.base.HorizontalKineticBlock;
-import com.simibubi.create.foundation.block.IBE;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.content.kinetics.base.HorizontalKineticBlock;
+import com.simibubi.create_re.foundation.block.IBE;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

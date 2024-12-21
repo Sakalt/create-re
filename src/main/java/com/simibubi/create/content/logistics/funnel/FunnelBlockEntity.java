@@ -1,31 +1,31 @@
-package com.simibubi.create.content.logistics.funnel;
+package com.simibubi.create_re.content.logistics.funnel;
 
 import java.lang.ref.WeakReference;
 import java.util.List;
 
 import org.apache.commons.lang3.mutable.MutableBoolean;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.content.equipment.goggles.IHaveHoveringInformation;
-import com.simibubi.create.content.kinetics.belt.BeltBlockEntity;
-import com.simibubi.create.content.kinetics.belt.BeltHelper;
-import com.simibubi.create.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
-import com.simibubi.create.content.kinetics.belt.transport.TransportedItemStack;
-import com.simibubi.create.content.logistics.funnel.BeltFunnelBlock.Shape;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.inventory.VersionedInventoryTrackerBehaviour;
-import com.simibubi.create.foundation.item.ItemHelper.ExtractionCountMode;
-import com.simibubi.create.foundation.utility.BlockFace;
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat.Chaser;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.content.equipment.goggles.IHaveHoveringInformation;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlockEntity;
+import com.simibubi.create_re.content.kinetics.belt.BeltHelper;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
+import com.simibubi.create_re.content.kinetics.belt.transport.TransportedItemStack;
+import com.simibubi.create_re.content.logistics.funnel.BeltFunnelBlock.Shape;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.inventory.VersionedInventoryTrackerBehaviour;
+import com.simibubi.create_re.foundation.item.ItemHelper.ExtractionCountMode;
+import com.simibubi.create_re.foundation.utility.BlockFace;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat.Chaser;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import dev.engine_room.flywheel.lib.visualization.VisualizationHelper;
 import net.minecraft.core.BlockPos;
@@ -59,7 +59,7 @@ public class FunnelBlockEntity extends SmartBlockEntity implements IHaveHovering
 	public FunnelBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state) {
 		super(type, pos, state);
 		extractionCooldown = 0;
-		flap = createChasingFlap();
+		flap = create_reChasingFlap();
 	}
 
 	public Mode determineCurrentMode() {
@@ -372,7 +372,7 @@ public class FunnelBlockEntity extends SmartBlockEntity implements IHaveHovering
 		award(AllAdvancements.FUNNEL);
 	}
 
-	private LerpedFloat createChasingFlap() {
+	private LerpedFloat create_reChasingFlap() {
 		return LerpedFloat.linear()
 			.startWithValue(.25f)
 			.chase(0, .05f, Chaser.EXP);

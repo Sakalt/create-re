@@ -1,14 +1,14 @@
-package com.simibubi.create.compat.curios;
+package com.simibubi.create_re.compat.curios;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllTags;
-import com.simibubi.create.content.equipment.armor.BacktankUtil;
-import com.simibubi.create.content.equipment.goggles.GogglesItem;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllTags;
+import com.simibubi.create_re.content.equipment.armor.BacktankUtil;
+import com.simibubi.create_re.content.equipment.goggles.GogglesItem;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;

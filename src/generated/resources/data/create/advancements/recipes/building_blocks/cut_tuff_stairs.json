@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:cut_tuff"
+              "create_re:cut_tuff"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:cut_tuff_stairs"
+        "recipe": "create_re:cut_tuff_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:cut_tuff_stairs"
+      "create_re:cut_tuff_stairs"
     ]
   },
   "sends_telemetry_event": false

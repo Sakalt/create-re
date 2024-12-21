@@ -4,7 +4,7 @@
   "cookingtime": 200,
   "experience": 0.1,
   "ingredient": {
-    "item": "create:crushed_raw_zinc"
+    "item": "create_re:crushed_raw_zinc"
   },
-  "result": "create:zinc_ingot"
+  "result": "create_re:zinc_ingot"
 }

@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"4": "create:block/controls_frame",
-		"1_7": "create:block/controls",
-		"particle": "create:block/bogey/particle"
+		"4": "create_re:block/controls_frame",
+		"1_7": "create_re:block/controls",
+		"particle": "create_re:block/bogey/particle"
 	},
 	"elements": [
 		{

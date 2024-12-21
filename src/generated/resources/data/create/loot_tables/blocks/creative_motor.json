@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:creative_motor"
+          "name": "create_re:creative_motor"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/creative_motor"
+  "random_sequence": "create_re:blocks/creative_motor"
 }

@@ -4,7 +4,7 @@
   "group": "polished_cut_crimsite_slab",
   "key": {
     "X": {
-      "item": "create:polished_cut_crimsite"
+      "item": "create_re:polished_cut_crimsite"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 6,
-    "item": "create:polished_cut_crimsite_slab"
+    "item": "create_re:polished_cut_crimsite_slab"
   },
   "show_notification": true
 }

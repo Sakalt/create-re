@@ -3,14 +3,14 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "create:electron_tube"
+      "item": "create_re:electron_tube"
     },
     {
-      "item": "create:electron_tube"
+      "item": "create_re:electron_tube"
     }
   ],
   "result": {
     "count": 4,
-    "item": "create:nixie_tube"
+    "item": "create_re:nixie_tube"
   }
 }

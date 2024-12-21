@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "create:item/wheat_flour"
+    "layer0": "create_re:item/wheat_flour"
   }
 }

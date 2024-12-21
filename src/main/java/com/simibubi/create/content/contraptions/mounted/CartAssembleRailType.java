@@ -1,9 +1,9 @@
-package com.simibubi.create.content.contraptions.mounted;
+package com.simibubi.create_re.content.contraptions.mounted;
 
 import java.util.function.Supplier;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.foundation.utility.Lang;
 import com.tterrag.registrate.util.entry.BlockEntry;
 
 import net.minecraft.util.StringRepresentable;

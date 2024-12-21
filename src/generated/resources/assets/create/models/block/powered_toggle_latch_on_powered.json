@@ -1,6 +1,6 @@
 {
-  "parent": "create:block/diodes/latch_on",
+  "parent": "create_re:block/diodes/latch_on",
   "textures": {
-    "top": "create:block/diodes/powered_toggle_latch/powered_powering"
+    "top": "create_re:block/diodes/powered_toggle_latch/powered_powering"
   }
 }

@@ -1,12 +1,12 @@
-package com.simibubi.create.content.contraptions.actors.harvester;
+package com.simibubi.create_re.content.contraptions.actors.harvester;
 
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.contraptions.behaviour.MovementContext;
-import com.simibubi.create.content.contraptions.render.ActorVisual;
-import com.simibubi.create.foundation.utility.AngleHelper;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.foundation.virtualWorld.VirtualRenderWorld;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
+import com.simibubi.create_re.content.contraptions.render.ActorVisual;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.foundation.virtualWorld.VirtualRenderWorld;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
 import dev.engine_room.flywheel.lib.instance.InstanceTypes;
@@ -38,7 +38,7 @@ public class HarvesterActorVisual extends ActorVisual {
         facing = state.getValue(BlockStateProperties.HORIZONTAL_FACING);
 
         harvester = instancerProvider.instancer(InstanceTypes.TRANSFORMED, Models.partial(getRollingPartial()))
-				.createInstance();
+				.create_reInstance();
 
         horizontalAngle = facing.toYRot() + ((facing.getAxis() == Direction.Axis.X) ? 180 : 0);
 

@@ -1,10 +1,10 @@
-package com.simibubi.create.content.fluids.tank;
+package com.simibubi.create_re.content.fluids.tank;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create.api.connectivity.ConnectivityHandler;
-import com.simibubi.create.foundation.block.connected.CTSpriteShiftEntry;
-import com.simibubi.create.foundation.block.connected.HorizontalCTBehaviour;
+import com.simibubi.create_re.api.connectivity.ConnectivityHandler;
+import com.simibubi.create_re.foundation.block.connected.CTSpriteShiftEntry;
+import com.simibubi.create_re.foundation.block.connected.HorizontalCTBehaviour;
 
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.core.BlockPos;

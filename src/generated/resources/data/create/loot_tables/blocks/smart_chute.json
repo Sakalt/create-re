@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:smart_chute"
+          "name": "create_re:smart_chute"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/smart_chute"
+  "random_sequence": "create_re:blocks/smart_chute"
 }

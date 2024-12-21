@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/oxidized_copper_tiles"
+      "model": "create_re:block/oxidized_copper_tiles"
     }
   }
 }

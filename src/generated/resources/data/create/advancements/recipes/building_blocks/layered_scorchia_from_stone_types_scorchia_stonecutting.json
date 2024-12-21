@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "create:stone_types/scorchia"
+            "tag": "create_re:stone_types/scorchia"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:layered_scorchia_from_stone_types_scorchia_stonecutting"
+        "recipe": "create_re:layered_scorchia_from_stone_types_scorchia_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:layered_scorchia_from_stone_types_scorchia_stonecutting"
+      "create_re:layered_scorchia_from_stone_types_scorchia_stonecutting"
     ]
   },
   "sends_telemetry_event": false

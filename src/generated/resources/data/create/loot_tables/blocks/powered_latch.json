@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:powered_latch"
+          "name": "create_re:powered_latch"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/powered_latch"
+  "random_sequence": "create_re:blocks/powered_latch"
 }

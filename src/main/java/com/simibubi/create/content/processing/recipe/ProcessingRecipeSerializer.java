@@ -1,13 +1,13 @@
-package com.simibubi.create.content.processing.recipe;
+package com.simibubi.create_re.content.processing.recipe;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeFactory;
-import com.simibubi.create.foundation.fluid.FluidHelper;
-import com.simibubi.create.foundation.fluid.FluidIngredient;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeFactory;
+import com.simibubi.create_re.foundation.fluid.FluidHelper;
+import com.simibubi.create_re.foundation.fluid.FluidIngredient;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.NonNullList;
@@ -54,10 +54,10 @@ public class ProcessingRecipeSerializer<T extends ProcessingRecipe<?>> implement
 
 	protected T readFromJson(ResourceLocation recipeId, JsonObject json) {
 		ProcessingRecipeBuilder<T> builder = new ProcessingRecipeBuilder<>(factory, recipeId);
-		NonNullList<Ingredient> ingredients = NonNullList.create();
-		NonNullList<FluidIngredient> fluidIngredients = NonNullList.create();
-		NonNullList<ProcessingOutput> results = NonNullList.create();
-		NonNullList<FluidStack> fluidResults = NonNullList.create();
+		NonNullList<Ingredient> ingredients = NonNullList.create_re();
+		NonNullList<FluidIngredient> fluidIngredients = NonNullList.create_re();
+		NonNullList<ProcessingOutput> results = NonNullList.create_re();
+		NonNullList<FluidStack> fluidResults = NonNullList.create_re();
 
 		for (JsonElement je : GsonHelper.getAsJsonArray(json, "ingredients")) {
 			if (FluidIngredient.isFluidIngredient(je))
@@ -113,10 +113,10 @@ public class ProcessingRecipeSerializer<T extends ProcessingRecipe<?>> implement
 	}
 
 	protected T readFromBuffer(ResourceLocation recipeId, FriendlyByteBuf buffer) {
-		NonNullList<Ingredient> ingredients = NonNullList.create();
-		NonNullList<FluidIngredient> fluidIngredients = NonNullList.create();
-		NonNullList<ProcessingOutput> results = NonNullList.create();
-		NonNullList<FluidStack> fluidResults = NonNullList.create();
+		NonNullList<Ingredient> ingredients = NonNullList.create_re();
+		NonNullList<FluidIngredient> fluidIngredients = NonNullList.create_re();
+		NonNullList<ProcessingOutput> results = NonNullList.create_re();
+		NonNullList<FluidStack> fluidResults = NonNullList.create_re();
 
 		int size = buffer.readVarInt();
 		for (int i = 0; i < size; i++)

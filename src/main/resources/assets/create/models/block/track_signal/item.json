@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "create:block/signal_box",
-		"1": "create:block/signal_box_top",
-		"1_2": "create:block/indicator/6"
+		"0": "create_re:block/signal_box",
+		"1": "create_re:block/signal_box_top",
+		"1_2": "create_re:block/indicator/6"
 	},
 	"elements": [
 		{

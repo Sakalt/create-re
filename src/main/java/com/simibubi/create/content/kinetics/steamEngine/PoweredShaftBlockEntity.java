@@ -1,10 +1,10 @@
-package com.simibubi.create.content.kinetics.steamEngine;
+package com.simibubi.create_re.content.kinetics.steamEngine;
 
 import java.util.List;
 
-import com.simibubi.create.content.kinetics.BlockStressValues;
-import com.simibubi.create.content.kinetics.base.GeneratingKineticBlockEntity;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.content.kinetics.BlockStressValues;
+import com.simibubi.create_re.content.kinetics.base.GeneratingKineticBlockEntity;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction.Axis;

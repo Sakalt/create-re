@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:item_drain"
+          "name": "create_re:item_drain"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/item_drain"
+  "random_sequence": "create_re:blocks/item_drain"
 }

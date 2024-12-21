@@ -1,5 +1,5 @@
 {
-  "type": "create:item_application",
+  "type": "create_re:item_application",
   "ingredients": [
     {
       "tag": "forge:stripped_wood"
@@ -10,7 +10,7 @@
   ],
   "results": [
     {
-      "item": "create:copper_casing"
+      "item": "create_re:copper_casing"
     }
   ]
 }

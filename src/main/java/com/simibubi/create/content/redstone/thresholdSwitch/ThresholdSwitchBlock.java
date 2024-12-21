@@ -1,10 +1,10 @@
-package com.simibubi.create.content.redstone.thresholdSwitch;
+package com.simibubi.create_re.content.redstone.thresholdSwitch;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.redstone.DirectedDirectionalBlock;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.gui.ScreenOpener;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.redstone.DirectedDirectionalBlock;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.gui.ScreenOpener;
 
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.core.BlockPos;
@@ -37,7 +37,7 @@ import net.minecraftforge.items.IItemHandler;
 
 public class ThresholdSwitchBlock extends DirectedDirectionalBlock implements IBE<ThresholdSwitchBlockEntity> {
 
-	public static final IntegerProperty LEVEL = IntegerProperty.create("level", 0, 5);
+	public static final IntegerProperty LEVEL = IntegerProperty.create_re("level", 0, 5);
 
 	public ThresholdSwitchBlock(Properties p_i48377_1_) {
 		super(p_i48377_1_);
@@ -78,8 +78,8 @@ public class ThresholdSwitchBlock extends DirectedDirectionalBlock implements IB
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
-		super.createBlockStateDefinition(builder.add(LEVEL));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
+		super.create_reBlockStateDefinition(builder.add(LEVEL));
 	}
 
 	@Override

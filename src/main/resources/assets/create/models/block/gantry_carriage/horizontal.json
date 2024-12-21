@@ -2,13 +2,13 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "create:block/axis",
-		"6": "create:block/pinion_bottom",
-		"8": "create:block/bearing_top",
-		"9": "create:block/windmill_bearing_side",
-		"10": "create:block/pinion",
-		"opening": "create:block/gearbox",
-		"particle": "create:block/andesite_casing"
+		"0": "create_re:block/axis",
+		"6": "create_re:block/pinion_bottom",
+		"8": "create_re:block/bearing_top",
+		"9": "create_re:block/windmill_bearing_side",
+		"10": "create_re:block/pinion",
+		"opening": "create_re:block/gearbox",
+		"particle": "create_re:block/andesite_casing"
 	},
 	"elements": [
 		{

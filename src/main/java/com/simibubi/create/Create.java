@@ -1,4 +1,4 @@
-package com.simibubi.create;
+package com.simibubi.create_re;
 
 import java.util.Random;
 
@@ -7,37 +7,37 @@ import org.slf4j.Logger;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.mojang.logging.LogUtils;
-import com.simibubi.create.api.behaviour.BlockSpoutingBehaviour;
-import com.simibubi.create.compat.Mods;
-import com.simibubi.create.compat.computercraft.ComputerCraftProxy;
-import com.simibubi.create.compat.curios.Curios;
-import com.simibubi.create.content.contraptions.ContraptionMovementSetting;
-import com.simibubi.create.content.decoration.palettes.AllPaletteBlocks;
-import com.simibubi.create.content.equipment.potatoCannon.BuiltinPotatoProjectileTypes;
-import com.simibubi.create.content.fluids.tank.BoilerHeaters;
-import com.simibubi.create.content.kinetics.TorquePropagator;
-import com.simibubi.create.content.kinetics.fan.processing.AllFanProcessingTypes;
-import com.simibubi.create.content.kinetics.mechanicalArm.AllArmInteractionPointTypes;
-import com.simibubi.create.content.redstone.displayLink.AllDisplayBehaviours;
-import com.simibubi.create.content.redstone.link.RedstoneLinkNetworkHandler;
-import com.simibubi.create.content.schematics.ServerSchematicLoader;
-import com.simibubi.create.content.trains.GlobalRailwayManager;
-import com.simibubi.create.content.trains.bogey.BogeySizes;
-import com.simibubi.create.content.trains.track.AllPortalTracks;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.advancement.AllTriggers;
-import com.simibubi.create.foundation.block.CopperRegistries;
-import com.simibubi.create.foundation.data.CreateRegistrate;
-import com.simibubi.create.foundation.item.ItemDescription;
-import com.simibubi.create.foundation.item.KineticStats;
-import com.simibubi.create.foundation.item.TooltipHelper.Palette;
-import com.simibubi.create.foundation.item.TooltipModifier;
-import com.simibubi.create.foundation.utility.AttachedRegistry;
-import com.simibubi.create.infrastructure.command.ServerLagger;
-import com.simibubi.create.infrastructure.config.AllConfigs;
-import com.simibubi.create.infrastructure.data.CreateDatagen;
-import com.simibubi.create.infrastructure.worldgen.AllFeatures;
-import com.simibubi.create.infrastructure.worldgen.AllPlacementModifiers;
+import com.simibubi.create_re.api.behaviour.BlockSpoutingBehaviour;
+import com.simibubi.create_re.compat.Mods;
+import com.simibubi.create_re.compat.computercraft.ComputerCraftProxy;
+import com.simibubi.create_re.compat.curios.Curios;
+import com.simibubi.create_re.content.contraptions.ContraptionMovementSetting;
+import com.simibubi.create_re.content.decoration.palettes.AllPaletteBlocks;
+import com.simibubi.create_re.content.equipment.potatoCannon.BuiltinPotatoProjectileTypes;
+import com.simibubi.create_re.content.fluids.tank.BoilerHeaters;
+import com.simibubi.create_re.content.kinetics.TorquePropagator;
+import com.simibubi.create_re.content.kinetics.fan.processing.AllFanProcessingTypes;
+import com.simibubi.create_re.content.kinetics.mechanicalArm.AllArmInteractionPointTypes;
+import com.simibubi.create_re.content.redstone.displayLink.AllDisplayBehaviours;
+import com.simibubi.create_re.content.redstone.link.RedstoneLinkNetworkHandler;
+import com.simibubi.create_re.content.schematics.ServerSchematicLoader;
+import com.simibubi.create_re.content.trains.GlobalRailwayManager;
+import com.simibubi.create_re.content.trains.bogey.BogeySizes;
+import com.simibubi.create_re.content.trains.track.AllPortalTracks;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.advancement.AllTriggers;
+import com.simibubi.create_re.foundation.block.CopperRegistries;
+import com.simibubi.create_re.foundation.data.CreateRegistrate;
+import com.simibubi.create_re.foundation.item.ItemDescription;
+import com.simibubi.create_re.foundation.item.KineticStats;
+import com.simibubi.create_re.foundation.item.TooltipHelper.Palette;
+import com.simibubi.create_re.foundation.item.TooltipModifier;
+import com.simibubi.create_re.foundation.utility.AttachedRegistry;
+import com.simibubi.create_re.infrastructure.command.ServerLagger;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.infrastructure.data.CreateDatagen;
+import com.simibubi.create_re.infrastructure.worldgen.AllFeatures;
+import com.simibubi.create_re.infrastructure.worldgen.AllPlacementModifiers;
 
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -58,7 +58,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 @Mod(Create.ID)
 public class Create {
 
-	public static final String ID = "create";
+	public static final String ID = "create_re";
 	public static final String NAME = "Create";
 	public static final String VERSION = "0.5.2-experimental";
 
@@ -66,23 +66,23 @@ public class Create {
 
 	public static final Gson GSON = new GsonBuilder().setPrettyPrinting()
 		.disableHtmlEscaping()
-		.create();
+		.create_re();
 
-	/** Use the {@link Random} of a local {@link Level} or {@link Entity} or create one */
+	/** Use the {@link Random} of a local {@link Level} or {@link Entity} or create_re one */
 	@Deprecated
 	public static final Random RANDOM = new Random();
 
 	/**
-	 * <b>Other mods should not use this field!</b> If you are an addon developer, create your own instance of
+	 * <b>Other mods should not use this field!</b> If you are an addon developer, create_re your own instance of
 	 * {@link CreateRegistrate}.
 	 */
-	public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(ID)
+	public static final CreateRegistrate REGISTRATE = CreateRegistrate.create_re(ID)
 		.defaultCreativeTab((ResourceKey<CreativeModeTab>) null);
 
 	static {
 		REGISTRATE.setTooltipModifierFactory(item -> {
 			return new ItemDescription.Modifier(item, Palette.STANDARD_CREATE)
-				.andThen(TooltipModifier.mapNull(KineticStats.create(item)));
+				.andThen(TooltipModifier.mapNull(KineticStats.create_re(item)));
 		});
 	}
 

@@ -6,10 +6,10 @@
       "tag": "forge:plates/gold"
     },
     "D": {
-      "item": "create:depot"
+      "item": "create_re:depot"
     },
     "I": {
-      "item": "create:cogwheel"
+      "item": "create_re:cogwheel"
     }
   },
   "pattern": [
@@ -18,7 +18,7 @@
     "I"
   ],
   "result": {
-    "item": "create:weighted_ejector"
+    "item": "create_re:weighted_ejector"
   },
   "show_notification": true
 }

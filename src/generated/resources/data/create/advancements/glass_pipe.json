@@ -1,25 +1,25 @@
 {
-  "parent": "create:mechanical_pump_0",
+  "parent": "create_re:mechanical_pump_0",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:glass_pipe_builtin"
+      "trigger": "create_re:glass_pipe_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.glass_pipe.desc"
+      "translate": "advancement.create_re.glass_pipe.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:fluid_pipe"
+      "item": "create_re:fluid_pipe"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.glass_pipe"
+      "translate": "advancement.create_re.glass_pipe"
     }
   },
   "requirements": [

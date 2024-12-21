@@ -1,17 +1,17 @@
-package com.simibubi.create.infrastructure.ponder.scenes.trains;
+package com.simibubi.create_re.infrastructure.ponder.scenes.trains;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.trains.observer.TrackObserverBlockEntity;
-import com.simibubi.create.foundation.ponder.ElementLink;
-import com.simibubi.create.foundation.ponder.PonderPalette;
-import com.simibubi.create.foundation.ponder.SceneBuilder;
-import com.simibubi.create.foundation.ponder.SceneBuildingUtil;
-import com.simibubi.create.foundation.ponder.Selection;
-import com.simibubi.create.foundation.ponder.element.InputWindowElement;
-import com.simibubi.create.foundation.ponder.element.ParrotElement;
-import com.simibubi.create.foundation.ponder.element.ParrotElement.FacePointOfInterestPose;
-import com.simibubi.create.foundation.ponder.element.WorldSectionElement;
-import com.simibubi.create.foundation.utility.Pointing;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.trains.observer.TrackObserverBlockEntity;
+import com.simibubi.create_re.foundation.ponder.ElementLink;
+import com.simibubi.create_re.foundation.ponder.PonderPalette;
+import com.simibubi.create_re.foundation.ponder.SceneBuilder;
+import com.simibubi.create_re.foundation.ponder.SceneBuildingUtil;
+import com.simibubi.create_re.foundation.ponder.Selection;
+import com.simibubi.create_re.foundation.ponder.element.InputWindowElement;
+import com.simibubi.create_re.foundation.ponder.element.ParrotElement;
+import com.simibubi.create_re.foundation.ponder.element.ParrotElement.FacePointOfInterestPose;
+import com.simibubi.create_re.foundation.ponder.element.WorldSectionElement;
+import com.simibubi.create_re.foundation.utility.Pointing;
 
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.ItemStack;
@@ -82,7 +82,7 @@ public class TrackObserverScenes {
 		scene.world.moveSection(trainInstance1, util.vector.of(-16, 0, 0), 80);
 		scene.world.animateBogey(util.grid.at(5, 2, 7), 16, 80);
 		ElementLink<ParrotElement> birb =
-			scene.special.createBirb(util.vector.centerOf(12, 3, 7), FacePointOfInterestPose::new);
+			scene.special.create_reBirb(util.vector.centerOf(12, 3, 7), FacePointOfInterestPose::new);
 		scene.special.moveParrot(birb, util.vector.of(-16, 0, 0), 80);
 		scene.idle(10);
 
@@ -126,7 +126,7 @@ public class TrackObserverScenes {
 		scene.world.moveSection(trainInstance1, util.vector.of(6, 0, 0), 0);
 		scene.world.moveSection(trainInstance1, util.vector.of(-16, 0, 0), 80);
 		scene.world.animateBogey(util.grid.at(5, 2, 7), 16, 80);
-		birb = scene.special.createBirb(util.vector.centerOf(12, 3, 7), FacePointOfInterestPose::new);
+		birb = scene.special.create_reBirb(util.vector.centerOf(12, 3, 7), FacePointOfInterestPose::new);
 		scene.special.moveParrot(birb, util.vector.of(-16, 0, 0), 80);
 		scene.idle(10);
 
@@ -146,7 +146,7 @@ public class TrackObserverScenes {
 		scene.world.moveSection(trainInstance1, util.vector.of(6, 0, 0), 0);
 		scene.world.moveSection(trainInstance1, util.vector.of(-16, 0, 0), 80);
 		scene.world.animateBogey(util.grid.at(5, 2, 7), 16, 80);
-		birb = scene.special.createBirb(util.vector.centerOf(12, 3, 7), FacePointOfInterestPose::new);
+		birb = scene.special.create_reBirb(util.vector.centerOf(12, 3, 7), FacePointOfInterestPose::new);
 		scene.special.moveParrot(birb, util.vector.of(-16, 0, 0), 80);
 		scene.idle(10);
 

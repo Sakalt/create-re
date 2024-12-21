@@ -1,25 +1,25 @@
 {
-  "parent": "create:andesite_alloy",
+  "parent": "create_re:andesite_alloy",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:andesite_casing_builtin"
+      "trigger": "create_re:andesite_casing_builtin"
     }
   },
   "display": {
     "announce_to_chat": true,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.andesite_casing.desc"
+      "translate": "advancement.create_re.andesite_casing.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:andesite_casing"
+      "item": "create_re:andesite_casing"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.andesite_casing"
+      "translate": "advancement.create_re.andesite_casing"
     }
   },
   "requirements": [

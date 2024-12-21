@@ -1,9 +1,9 @@
-package com.simibubi.create.content.schematics.cannon;
+package com.simibubi.create_re.content.schematics.cannon;
 
 import java.util.function.Consumer;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.AllPartialModels;
+import com.simibubi.create_re.AllPartialModels;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.visual.DynamicVisual;
@@ -24,8 +24,8 @@ public class SchematicannonVisual extends AbstractBlockEntityVisual<Schematicann
     public SchematicannonVisual(VisualizationContext context, SchematicannonBlockEntity blockEntity, float partialTick) {
         super(context, blockEntity, partialTick);
 
-        connector = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.SCHEMATICANNON_CONNECTOR)).createInstance();
-        pipe = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.SCHEMATICANNON_PIPE)).createInstance();
+        connector = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.SCHEMATICANNON_CONNECTOR)).create_reInstance();
+        pipe = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.SCHEMATICANNON_PIPE)).create_reInstance();
 	}
 
     @Override

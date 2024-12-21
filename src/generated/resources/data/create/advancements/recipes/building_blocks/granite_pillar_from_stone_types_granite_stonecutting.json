@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "create:stone_types/granite"
+            "tag": "create_re:stone_types/granite"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:granite_pillar_from_stone_types_granite_stonecutting"
+        "recipe": "create_re:granite_pillar_from_stone_types_granite_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:granite_pillar_from_stone_types_granite_stonecutting"
+      "create_re:granite_pillar_from_stone_types_granite_stonecutting"
     ]
   },
   "sends_telemetry_event": false

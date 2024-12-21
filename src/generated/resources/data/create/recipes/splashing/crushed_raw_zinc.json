@@ -1,14 +1,14 @@
 {
-  "type": "create:splashing",
+  "type": "create_re:splashing",
   "ingredients": [
     {
-      "item": "create:crushed_raw_zinc"
+      "item": "create_re:crushed_raw_zinc"
     }
   ],
   "results": [
     {
       "count": 9,
-      "item": "create:zinc_nugget"
+      "item": "create_re:zinc_nugget"
     },
     {
       "chance": 0.25,

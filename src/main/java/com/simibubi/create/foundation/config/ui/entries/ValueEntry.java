@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.config.ui.entries;
+package com.simibubi.create_re.foundation.config.ui.entries;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,17 +9,17 @@ import java.util.stream.Collectors;
 import javax.annotation.Nonnull;
 
 import com.google.common.base.Predicates;
-import com.simibubi.create.foundation.config.ui.ConfigAnnotations;
-import com.simibubi.create.foundation.config.ui.ConfigHelper;
-import com.simibubi.create.foundation.config.ui.ConfigScreen;
-import com.simibubi.create.foundation.config.ui.ConfigScreenList;
-import com.simibubi.create.foundation.gui.AllIcons;
-import com.simibubi.create.foundation.gui.element.DelegatedStencilElement;
-import com.simibubi.create.foundation.gui.widget.BoxWidget;
-import com.simibubi.create.foundation.item.TooltipHelper;
-import com.simibubi.create.foundation.item.TooltipHelper.Palette;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.foundation.config.ui.ConfigAnnotations;
+import com.simibubi.create_re.foundation.config.ui.ConfigHelper;
+import com.simibubi.create_re.foundation.config.ui.ConfigScreen;
+import com.simibubi.create_re.foundation.config.ui.ConfigScreenList;
+import com.simibubi.create_re.foundation.gui.AllIcons;
+import com.simibubi.create_re.foundation.gui.element.DelegatedStencilElement;
+import com.simibubi.create_re.foundation.gui.widget.BoxWidget;
+import com.simibubi.create_re.foundation.item.TooltipHelper;
+import com.simibubi.create_re.foundation.item.TooltipHelper.Palette;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.GuiGraphics;

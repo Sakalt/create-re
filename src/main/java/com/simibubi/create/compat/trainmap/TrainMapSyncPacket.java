@@ -1,13 +1,13 @@
-package com.simibubi.create.compat.trainmap;
+package com.simibubi.create_re.compat.trainmap;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-import com.simibubi.create.compat.trainmap.TrainMapSync.TrainMapSyncEntry;
-import com.simibubi.create.content.trains.graph.DimensionPalette;
-import com.simibubi.create.foundation.networking.SimplePacketBase;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.compat.trainmap.TrainMapSync.TrainMapSyncEntry;
+import com.simibubi.create_re.content.trains.graph.DimensionPalette;
+import com.simibubi.create_re.foundation.networking.SimplePacketBase;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraftforge.network.NetworkEvent.Context;

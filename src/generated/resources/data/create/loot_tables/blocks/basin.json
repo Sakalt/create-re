@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:basin"
+          "name": "create_re:basin"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/basin"
+  "random_sequence": "create_re:blocks/basin"
 }

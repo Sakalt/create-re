@@ -1,14 +1,14 @@
-package com.simibubi.create.content.kinetics.simpleRelays.encased;
+package com.simibubi.create_re.content.kinetics.simpleRelays.encased;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.kinetics.base.IRotate;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntityRenderer;
-import com.simibubi.create.content.kinetics.simpleRelays.BracketedKineticBlockEntityRenderer;
-import com.simibubi.create.content.kinetics.simpleRelays.SimpleKineticBlockEntity;
-import com.simibubi.create.foundation.render.CachedBufferer;
-import com.simibubi.create.foundation.render.SuperByteBuffer;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.kinetics.base.IRotate;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntityRenderer;
+import com.simibubi.create_re.content.kinetics.simpleRelays.BracketedKineticBlockEntityRenderer;
+import com.simibubi.create_re.content.kinetics.simpleRelays.SimpleKineticBlockEntity;
+import com.simibubi.create_re.foundation.render.CachedBufferer;
+import com.simibubi.create_re.foundation.render.SuperByteBuffer;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationManager;
 import net.minecraft.client.renderer.MultiBufferSource;

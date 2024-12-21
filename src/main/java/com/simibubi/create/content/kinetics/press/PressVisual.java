@@ -1,13 +1,13 @@
-package com.simibubi.create.content.kinetics.press;
+package com.simibubi.create_re.content.kinetics.press;
 
 import java.util.function.Consumer;
 
 import org.joml.Quaternionf;
 
 import com.mojang.math.Axis;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.kinetics.base.ShaftVisual;
-import com.simibubi.create.foundation.utility.AngleHelper;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.kinetics.base.ShaftVisual;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.visual.DynamicVisual;
@@ -25,7 +25,7 @@ public class PressVisual extends ShaftVisual<MechanicalPressBlockEntity> impleme
 		super(context, blockEntity, partialTick);
 
 		pressHead = instancerProvider().instancer(InstanceTypes.ORIENTED, Models.partial(AllPartialModels.MECHANICAL_PRESS_HEAD))
-				.createInstance();
+				.create_reInstance();
 
 		Quaternionf q = Axis.YP
 			.rotationDegrees(AngleHelper.horizontalAngle(blockState.getValue(MechanicalPressBlock.HORIZONTAL_FACING)));

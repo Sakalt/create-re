@@ -1,7 +1,7 @@
-package com.simibubi.create.foundation.gui.element;
+package com.simibubi.create_re.foundation.gui.element;
 
-import com.simibubi.create.foundation.gui.UIRenderHelper;
-import com.simibubi.create.foundation.utility.Color;
+import com.simibubi.create_re.foundation.gui.UIRenderHelper;
+import com.simibubi.create_re.foundation.utility.Color;
 
 import net.minecraft.client.gui.GuiGraphics;
 

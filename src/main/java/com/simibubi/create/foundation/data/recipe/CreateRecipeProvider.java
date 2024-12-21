@@ -1,13 +1,13 @@
-package com.simibubi.create.foundation.data.recipe;
+package com.simibubi.create_re.foundation.data.recipe;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllTags;
-import com.simibubi.create.Create;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllTags;
+import com.simibubi.create_re.Create;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.FinishedRecipe;

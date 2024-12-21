@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:stressometer"
+          "name": "create_re:stressometer"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/stressometer"
+  "random_sequence": "create_re:blocks/stressometer"
 }

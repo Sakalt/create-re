@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "create:block/contact_front",
-		"1": "create:block/elevator_contact_side",
-		"3": "create:block/rose_quartz_lamp",
-		"particle": "create:block/elevator_contact_side"
+		"0": "create_re:block/contact_front",
+		"1": "create_re:block/elevator_contact_side",
+		"3": "create_re:block/rose_quartz_lamp",
+		"particle": "create_re:block/elevator_contact_side"
 	},
 	"elements": [
 		{

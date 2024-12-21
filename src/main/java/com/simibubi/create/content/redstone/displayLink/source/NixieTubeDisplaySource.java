@@ -1,10 +1,10 @@
-package com.simibubi.create.content.redstone.displayLink.source;
+package com.simibubi.create_re.content.redstone.displayLink.source;
 
-import com.simibubi.create.content.redstone.displayLink.DisplayLinkContext;
-import com.simibubi.create.content.redstone.displayLink.target.DisplayTargetStats;
-import com.simibubi.create.content.redstone.displayLink.target.NixieTubeDisplayTarget;
-import com.simibubi.create.content.redstone.nixieTube.NixieTubeBlockEntity;
-import com.simibubi.create.content.trains.display.FlapDisplaySection;
+import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkContext;
+import com.simibubi.create_re.content.redstone.displayLink.target.DisplayTargetStats;
+import com.simibubi.create_re.content.redstone.displayLink.target.NixieTubeDisplayTarget;
+import com.simibubi.create_re.content.redstone.nixieTube.NixieTubeBlockEntity;
+import com.simibubi.create_re.content.trains.display.FlapDisplaySection;
 
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -47,10 +47,10 @@ public class NixieTubeDisplaySource extends SingleLineDisplaySource {
 	}
 
 	@Override
-	protected FlapDisplaySection createSectionForValue(DisplayLinkContext context, int size) {
+	protected FlapDisplaySection create_reSectionForValue(DisplayLinkContext context, int size) {
 		if (isNumeric(context))
 			return new FlapDisplaySection(size * FlapDisplaySection.MONOSPACE, "numeric", false, false);
-		return super.createSectionForValue(context, size);
+		return super.create_reSectionForValue(context, size);
 	}
 
 	protected boolean isNumeric(DisplayLinkContext context) {

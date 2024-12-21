@@ -1,6 +1,6 @@
-package com.simibubi.create.foundation.utility.animation;
+package com.simibubi.create_re.foundation.utility.animation;
 
-import com.simibubi.create.foundation.utility.AngleHelper;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.util.Mth;

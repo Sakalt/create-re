@@ -1,4 +1,4 @@
-package com.simibubi.create.infrastructure.debugInfo;
+package com.simibubi.create_re.infrastructure.debugInfo;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -10,11 +10,11 @@ import javax.annotation.Nullable;
 
 import com.google.common.collect.ImmutableMap;
 import com.mojang.blaze3d.platform.GlUtil;
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.mixin.accessor.SystemReportAccessor;
-import com.simibubi.create.infrastructure.debugInfo.element.DebugInfoSection;
-import com.simibubi.create.infrastructure.debugInfo.element.InfoElement;
-import com.simibubi.create.infrastructure.debugInfo.element.InfoEntry;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.mixin.accessor.SystemReportAccessor;
+import com.simibubi.create_re.infrastructure.debugInfo.element.DebugInfoSection;
+import com.simibubi.create_re.infrastructure.debugInfo.element.InfoElement;
+import com.simibubi.create_re.infrastructure.debugInfo.element.InfoEntry;
 
 import dev.engine_room.flywheel.api.Flywheel;
 import dev.engine_room.flywheel.api.backend.Backend;
@@ -31,7 +31,7 @@ import oshi.SystemInfo;
 
 /**
  * Allows for providing easily accessible debugging information.
- * This info can be retrieved with the "/create debuginfo" command.
+ * This info can be retrieved with the "/create_re debuginfo" command.
  * This command copies all information to the clipboard, formatted for a GitHub issue.
  * Addons are welcome to add their own sections. Registration must occur synchronously.
  */

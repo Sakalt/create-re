@@ -1,12 +1,12 @@
-package com.simibubi.create.content.kinetics.crank;
+package com.simibubi.create_re.content.kinetics.crank;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.content.kinetics.base.GeneratingKineticBlockEntity;
-import com.simibubi.create.foundation.render.CachedBufferer;
-import com.simibubi.create.foundation.render.SuperByteBuffer;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.content.kinetics.base.GeneratingKineticBlockEntity;
+import com.simibubi.create_re.foundation.render.CachedBufferer;
+import com.simibubi.create_re.foundation.render.SuperByteBuffer;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
 
 import dev.engine_room.flywheel.api.model.Model;
 import dev.engine_room.flywheel.lib.model.Models;

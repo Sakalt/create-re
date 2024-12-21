@@ -1,10 +1,10 @@
-package com.simibubi.create.content.contraptions.actors.roller;
+package com.simibubi.create_re.content.contraptions.actors.roller;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-import com.simibubi.create.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Couple;
 
 import net.minecraft.core.BlockPos;
 
@@ -14,7 +14,7 @@ public class PaveTask {
 	private Map<Couple<Integer>, Float> heightValues = new HashMap<>();
 	
 	public PaveTask(double h1, double h2) {
-		horizontalInterval = Couple.create(h1, h2);
+		horizontalInterval = Couple.create_re(h1, h2);
 	}
 	
 	public Couple<Double> getHorizontalInterval() {
@@ -22,7 +22,7 @@ public class PaveTask {
 	}
 	
 	public void put(int x, int z, float y) {
-		heightValues.put(Couple.create(x, z), y);
+		heightValues.put(Couple.create_re(x, z), y);
 	}
 	
 	public float get(Couple<Integer> coords) {

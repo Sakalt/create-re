@@ -1,16 +1,16 @@
-package com.simibubi.create.content.logistics.tunnel;
+package com.simibubi.create_re.content.logistics.tunnel;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
-import com.simibubi.create.content.kinetics.belt.BeltBlock;
-import com.simibubi.create.content.kinetics.belt.BeltSlope;
-import com.simibubi.create.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
-import com.simibubi.create.content.logistics.funnel.BeltFunnelBlock;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.worldWrappers.WrappedWorld;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlock;
+import com.simibubi.create_re.content.kinetics.belt.BeltSlope;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
+import com.simibubi.create_re.content.logistics.funnel.BeltFunnelBlock;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.worldWrappers.WrappedWorld;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -38,7 +38,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class BeltTunnelBlock extends Block implements IBE<BeltTunnelBlockEntity>, IWrenchable {
 
-	public static final Property<Shape> SHAPE = EnumProperty.create("shape", Shape.class);
+	public static final Property<Shape> SHAPE = EnumProperty.create_re("shape", Shape.class);
 	public static final Property<Axis> HORIZONTAL_AXIS = BlockStateProperties.HORIZONTAL_AXIS;
 
 	public BeltTunnelBlock(Properties properties) {
@@ -226,9 +226,9 @@ public class BeltTunnelBlock extends Block implements IBE<BeltTunnelBlockEntity>
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
 		builder.add(HORIZONTAL_AXIS, SHAPE);
-		super.createBlockStateDefinition(builder);
+		super.create_reBlockStateDefinition(builder);
 	}
 
 	@Override

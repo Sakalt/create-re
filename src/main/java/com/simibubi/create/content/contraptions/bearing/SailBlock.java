@@ -1,4 +1,4 @@
-package com.simibubi.create.content.contraptions.bearing;
+package com.simibubi.create_re.content.contraptions.bearing;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -8,14 +8,14 @@ import java.util.function.Predicate;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.foundation.block.WrenchableDirectionalBlock;
-import com.simibubi.create.foundation.placement.IPlacementHelper;
-import com.simibubi.create.foundation.placement.PlacementHelpers;
-import com.simibubi.create.foundation.placement.PlacementOffset;
-import com.simibubi.create.foundation.utility.BlockHelper;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.foundation.block.WrenchableDirectionalBlock;
+import com.simibubi.create_re.foundation.placement.IPlacementHelper;
+import com.simibubi.create_re.foundation.placement.PlacementHelpers;
+import com.simibubi.create_re.foundation.placement.PlacementOffset;
+import com.simibubi.create_re.foundation.utility.BlockHelper;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;

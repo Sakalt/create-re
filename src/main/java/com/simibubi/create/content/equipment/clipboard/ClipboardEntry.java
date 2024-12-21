@@ -1,9 +1,9 @@
-package com.simibubi.create.content.equipment.clipboard;
+package com.simibubi.create_re.content.equipment.clipboard;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.simibubi.create.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.Tag;

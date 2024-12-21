@@ -1,4 +1,4 @@
-package com.simibubi.create.content.schematics;
+package com.simibubi.create_re.content.schematics;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -9,12 +9,12 @@ import java.util.Set;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.blockEntity.IMultiBlockEntityContainer;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.utility.BBHelper;
-import com.simibubi.create.foundation.utility.NBTProcessors;
-import com.simibubi.create.foundation.utility.worldWrappers.WrappedWorld;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.blockEntity.IMultiBlockEntityContainer;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.utility.BBHelper;
+import com.simibubi.create_re.foundation.utility.NBTProcessors;
+import com.simibubi.create_re.foundation.utility.worldWrappers.WrappedWorld;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -111,7 +111,7 @@ public class SchematicWorld extends WrappedWorld implements ServerLevelAccessor 
 				}
 				return blockEntity;
 			} catch (Exception e) {
-				Create.LOGGER.debug("Could not create BlockEntity of block " + blockState, e);
+				Create.LOGGER.debug("Could not create_re BlockEntity of block " + blockState, e);
 			}
 		}
 		return null;

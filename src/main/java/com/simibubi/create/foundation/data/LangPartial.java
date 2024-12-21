@@ -1,7 +1,7 @@
-package com.simibubi.create.foundation.data;
+package com.simibubi.create_re.foundation.data;
 
 import com.google.gson.JsonElement;
-import com.simibubi.create.foundation.utility.FilesHelper;
+import com.simibubi.create_re.foundation.utility.FilesHelper;
 import com.tterrag.registrate.AbstractRegistrate;
 import com.tterrag.registrate.providers.ProviderType;
 

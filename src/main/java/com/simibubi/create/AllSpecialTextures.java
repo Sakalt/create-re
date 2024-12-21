@@ -1,4 +1,4 @@
-package com.simibubi.create;
+package com.simibubi.create_re;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 

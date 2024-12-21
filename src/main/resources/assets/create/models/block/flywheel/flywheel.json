@@ -2,9 +2,9 @@
 	"parent": "block/block",
 	"ambientocclusion": false,
 	"textures": {
-		"0": "create:block/flywheel",
-		"1": "create:block/axis",
-		"2": "create:block/axis_top",
-		"particle": "create:block/flywheel"
+		"0": "create_re:block/flywheel",
+		"1": "create_re:block/axis",
+		"2": "create_re:block/axis_top",
+		"particle": "create_re:block/flywheel"
 	}
 }

@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:experience_block"
+          "name": "create_re:experience_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/experience_block"
+  "random_sequence": "create_re:blocks/experience_block"
 }

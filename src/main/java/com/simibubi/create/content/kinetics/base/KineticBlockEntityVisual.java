@@ -1,8 +1,8 @@
-package com.simibubi.create.content.kinetics.base;
+package com.simibubi.create_re.content.kinetics.base;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.kinetics.simpleRelays.ICogWheel;
-import com.simibubi.create.content.kinetics.simpleRelays.ShaftBlock;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.kinetics.simpleRelays.ICogWheel;
+import com.simibubi.create_re.content.kinetics.simpleRelays.ShaftBlock;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
 import dev.engine_room.flywheel.lib.visual.AbstractBlockEntityVisual;

@@ -1,9 +1,9 @@
-package com.simibubi.create.content.contraptions.behaviour.dispenser;
+package com.simibubi.create_re.content.contraptions.behaviour.dispenser;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.content.contraptions.behaviour.MovementContext;
-import com.simibubi.create.foundation.mixin.accessor.AbstractProjectileDispenseBehaviorAccessor;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
+import com.simibubi.create_re.foundation.mixin.accessor.AbstractProjectileDispenseBehaviorAccessor;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.dispenser.AbstractProjectileDispenseBehavior;
@@ -51,17 +51,17 @@ public abstract class MovedProjectileDispenserBehaviour extends MovedDefaultDisp
 		return new MovedProjectileDispenserBehaviour() {
 			@Override
 			protected Projectile getProjectileEntity(Level world, double x, double y, double z, ItemStack itemStack) {
-				return accessor.create$callGetProjectile(world, new SimplePos(x, y, z), itemStack);
+				return accessor.create_re$callGetProjectile(world, new SimplePos(x, y, z), itemStack);
 			}
 
 			@Override
 			protected float getProjectileInaccuracy() {
-				return accessor.create$callGetUncertainty();
+				return accessor.create_re$callGetUncertainty();
 			}
 
 			@Override
 			protected float getProjectileVelocity() {
-				return accessor.create$callGetPower();
+				return accessor.create_re$callGetPower();
 			}
 		};
 	}

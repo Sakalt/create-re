@@ -1,5 +1,5 @@
 {
-  "type": "create:sequenced_assembly",
+  "type": "create_re:sequenced_assembly",
   "ingredient": {
     "tag": "forge:plates/gold"
   },
@@ -7,19 +7,19 @@
   "results": [
     {
       "chance": 120.0,
-      "item": "create:precision_mechanism"
+      "item": "create_re:precision_mechanism"
     },
     {
       "chance": 8.0,
-      "item": "create:golden_sheet"
+      "item": "create_re:golden_sheet"
     },
     {
       "chance": 8.0,
-      "item": "create:andesite_alloy"
+      "item": "create_re:andesite_alloy"
     },
     {
       "chance": 5.0,
-      "item": "create:cogwheel"
+      "item": "create_re:cogwheel"
     },
     {
       "chance": 3.0,
@@ -27,11 +27,11 @@
     },
     {
       "chance": 2.0,
-      "item": "create:shaft"
+      "item": "create_re:shaft"
     },
     {
       "chance": 2.0,
-      "item": "create:crushed_raw_gold"
+      "item": "create_re:crushed_raw_gold"
     },
     {
       "item": "minecraft:iron_ingot"
@@ -42,42 +42,42 @@
   ],
   "sequence": [
     {
-      "type": "create:deploying",
+      "type": "create_re:deploying",
       "ingredients": [
         {
-          "item": "create:incomplete_precision_mechanism"
+          "item": "create_re:incomplete_precision_mechanism"
         },
         {
-          "item": "create:cogwheel"
+          "item": "create_re:cogwheel"
         }
       ],
       "results": [
         {
-          "item": "create:incomplete_precision_mechanism"
+          "item": "create_re:incomplete_precision_mechanism"
         }
       ]
     },
     {
-      "type": "create:deploying",
+      "type": "create_re:deploying",
       "ingredients": [
         {
-          "item": "create:incomplete_precision_mechanism"
+          "item": "create_re:incomplete_precision_mechanism"
         },
         {
-          "item": "create:large_cogwheel"
+          "item": "create_re:large_cogwheel"
         }
       ],
       "results": [
         {
-          "item": "create:incomplete_precision_mechanism"
+          "item": "create_re:incomplete_precision_mechanism"
         }
       ]
     },
     {
-      "type": "create:deploying",
+      "type": "create_re:deploying",
       "ingredients": [
         {
-          "item": "create:incomplete_precision_mechanism"
+          "item": "create_re:incomplete_precision_mechanism"
         },
         {
           "tag": "forge:nuggets/iron"
@@ -85,12 +85,12 @@
       ],
       "results": [
         {
-          "item": "create:incomplete_precision_mechanism"
+          "item": "create_re:incomplete_precision_mechanism"
         }
       ]
     }
   ],
   "transitionalItem": {
-    "item": "create:incomplete_precision_mechanism"
+    "item": "create_re:incomplete_precision_mechanism"
   }
 }

@@ -1,10 +1,10 @@
-package com.simibubi.create.compat.jei;
+package com.simibubi.create_re.compat.jei;
 
 import java.util.function.Supplier;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.foundation.gui.element.GuiGameElement;
+import com.simibubi.create_re.foundation.gui.element.GuiGameElement;
 
 import mezz.jei.api.gui.drawable.IDrawable;
 import net.minecraft.client.gui.GuiGraphics;

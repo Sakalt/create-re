@@ -1,16 +1,16 @@
-package com.simibubi.create.content.decoration.girder;
+package com.simibubi.create_re.content.decoration.girder;
 
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.WATERLOGGED;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
-import com.simibubi.create.content.kinetics.base.HorizontalAxisKineticBlock;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.schematics.requirement.ISpecialBlockItemRequirement;
-import com.simibubi.create.content.schematics.requirement.ItemRequirement;
-import com.simibubi.create.foundation.block.IBE;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.content.kinetics.base.HorizontalAxisKineticBlock;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.schematics.requirement.ISpecialBlockItemRequirement;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement;
+import com.simibubi.create_re.foundation.block.IBE;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -51,8 +51,8 @@ public class GirderEncasedShaftBlock extends HorizontalAxisKineticBlock
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
-		super.createBlockStateDefinition(builder.add(TOP, BOTTOM, WATERLOGGED));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
+		super.create_reBlockStateDefinition(builder.add(TOP, BOTTOM, WATERLOGGED));
 	}
 
 	@Override

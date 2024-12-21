@@ -1,8 +1,8 @@
 {
-	"parent": "create:block/elevator_contact/block",
+	"parent": "create_re:block/elevator_contact/block",
 	"textures": {
-		"1": "create:block/elevator_contact_side_dim",
-		"3": "create:block/rose_quartz_lamp_dim",
-		"particle": "create:block/elevator_contact_side_dim"
+		"1": "create_re:block/elevator_contact_side_dim",
+		"3": "create_re:block/rose_quartz_lamp_dim",
+		"particle": "create_re:block/elevator_contact_side_dim"
 	}
 }

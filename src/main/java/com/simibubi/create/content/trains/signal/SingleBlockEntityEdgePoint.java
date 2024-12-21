@@ -1,6 +1,6 @@
-package com.simibubi.create.content.trains.signal;
+package com.simibubi.create_re.content.trains.signal;
 
-import com.simibubi.create.content.trains.graph.DimensionPalette;
+import com.simibubi.create_re.content.trains.graph.DimensionPalette;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

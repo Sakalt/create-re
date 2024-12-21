@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:empty_schematic"
+              "create_re:empty_schematic"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/schematics/schematicannon"
+        "recipe": "create_re:crafting/schematics/schematicannon"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/schematics/schematicannon"
+      "create_re:crafting/schematics/schematicannon"
     ]
   },
   "sends_telemetry_event": false

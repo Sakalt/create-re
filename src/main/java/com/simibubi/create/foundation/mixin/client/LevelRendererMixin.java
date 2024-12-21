@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.mixin.client;
+package com.simibubi.create_re.foundation.mixin.client;
 
 import java.util.Set;
 import java.util.SortedSet;
@@ -13,8 +13,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
 import com.google.common.collect.Sets;
-import com.simibubi.create.foundation.block.render.BlockDestructionProgressExtension;
-import com.simibubi.create.foundation.block.render.MultiPosDestructionHandler;
+import com.simibubi.create_re.foundation.block.render.BlockDestructionProgressExtension;
+import com.simibubi.create_re.foundation.block.render.MultiPosDestructionHandler;
 
 import it.unimi.dsi.fastutil.longs.Long2ObjectMap;
 import net.minecraft.client.multiplayer.ClientLevel;
@@ -34,7 +34,7 @@ public class LevelRendererMixin {
 	private Long2ObjectMap<SortedSet<BlockDestructionProgress>> destructionProgress;
 
 	@Inject(method = "destroyBlockProgress(ILnet/minecraft/core/BlockPos;I)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/server/level/BlockDestructionProgress;updateTick(I)V", shift = Shift.AFTER), locals = LocalCapture.CAPTURE_FAILHARD)
-	private void create$onDestroyBlockProgress(int breakerId, BlockPos pos, int progress, CallbackInfo ci, BlockDestructionProgress progressObj) {
+	private void create_re$onDestroyBlockProgress(int breakerId, BlockPos pos, int progress, CallbackInfo ci, BlockDestructionProgress progressObj) {
 		BlockState state = level.getBlockState(pos);
 		IClientBlockExtensions properties = IClientBlockExtensions.of(state);
 		if (properties instanceof MultiPosDestructionHandler handler) {
@@ -50,7 +50,7 @@ public class LevelRendererMixin {
 	}
 
 	@Inject(method = "removeProgress(Lnet/minecraft/server/level/BlockDestructionProgress;)V", at = @At("RETURN"))
-	private void create$onRemoveProgress(BlockDestructionProgress progress, CallbackInfo ci) {
+	private void create_re$onRemoveProgress(BlockDestructionProgress progress, CallbackInfo ci) {
 		Set<BlockPos> extraPositions = ((BlockDestructionProgressExtension) progress).getExtraPositions();
 		if (extraPositions != null) {
 			for (BlockPos extraPos : extraPositions) {

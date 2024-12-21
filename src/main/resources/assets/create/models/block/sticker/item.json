@@ -5,8 +5,8 @@
 		"0": "block/piston_bottom",
 		"1": "block/piston_inner",
 		"2": "block/piston_side",
-		"3": "create:block/sticker",
-		"4": "create:block/sticker_side",
+		"3": "create_re:block/sticker",
+		"4": "create_re:block/sticker_side",
 		"particle": "block/piston_bottom"
 	},
 	"elements": [

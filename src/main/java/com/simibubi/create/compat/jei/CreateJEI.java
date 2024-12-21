@@ -1,4 +1,4 @@
-package com.simibubi.create.compat.jei;
+package com.simibubi.create_re.compat.jei;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -13,63 +13,63 @@ import java.util.function.Supplier;
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllFluids;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.Create;
-import com.simibubi.create.compat.jei.category.BlockCuttingCategory;
-import com.simibubi.create.compat.jei.category.BlockCuttingCategory.CondensedBlockCuttingRecipe;
-import com.simibubi.create.compat.jei.category.CreateRecipeCategory;
-import com.simibubi.create.compat.jei.category.CrushingCategory;
-import com.simibubi.create.compat.jei.category.DeployingCategory;
-import com.simibubi.create.compat.jei.category.FanBlastingCategory;
-import com.simibubi.create.compat.jei.category.FanHauntingCategory;
-import com.simibubi.create.compat.jei.category.FanSmokingCategory;
-import com.simibubi.create.compat.jei.category.FanWashingCategory;
-import com.simibubi.create.compat.jei.category.ItemApplicationCategory;
-import com.simibubi.create.compat.jei.category.ItemDrainCategory;
-import com.simibubi.create.compat.jei.category.MechanicalCraftingCategory;
-import com.simibubi.create.compat.jei.category.MillingCategory;
-import com.simibubi.create.compat.jei.category.MixingCategory;
-import com.simibubi.create.compat.jei.category.MysteriousItemConversionCategory;
-import com.simibubi.create.compat.jei.category.PackingCategory;
-import com.simibubi.create.compat.jei.category.PolishingCategory;
-import com.simibubi.create.compat.jei.category.PressingCategory;
-import com.simibubi.create.compat.jei.category.ProcessingViaFanCategory;
-import com.simibubi.create.compat.jei.category.SawingCategory;
-import com.simibubi.create.compat.jei.category.SequencedAssemblyCategory;
-import com.simibubi.create.compat.jei.category.SpoutCategory;
-import com.simibubi.create.content.equipment.blueprint.BlueprintScreen;
-import com.simibubi.create.content.equipment.sandPaper.SandPaperPolishingRecipe;
-import com.simibubi.create.content.fluids.potion.PotionFluid;
-import com.simibubi.create.content.fluids.potion.PotionMixingRecipes;
-import com.simibubi.create.content.fluids.transfer.EmptyingRecipe;
-import com.simibubi.create.content.fluids.transfer.FillingRecipe;
-import com.simibubi.create.content.kinetics.crafter.MechanicalCraftingRecipe;
-import com.simibubi.create.content.kinetics.crusher.AbstractCrushingRecipe;
-import com.simibubi.create.content.kinetics.deployer.DeployerApplicationRecipe;
-import com.simibubi.create.content.kinetics.deployer.ItemApplicationRecipe;
-import com.simibubi.create.content.kinetics.deployer.ManualApplicationRecipe;
-import com.simibubi.create.content.kinetics.fan.processing.HauntingRecipe;
-import com.simibubi.create.content.kinetics.fan.processing.SplashingRecipe;
-import com.simibubi.create.content.kinetics.press.MechanicalPressBlockEntity;
-import com.simibubi.create.content.kinetics.press.PressingRecipe;
-import com.simibubi.create.content.kinetics.saw.CuttingRecipe;
-import com.simibubi.create.content.kinetics.saw.SawBlockEntity;
-import com.simibubi.create.content.logistics.filter.AbstractFilterScreen;
-import com.simibubi.create.content.processing.basin.BasinRecipe;
-import com.simibubi.create.content.processing.sequenced.SequencedAssemblyRecipe;
-import com.simibubi.create.content.redstone.link.controller.LinkedControllerScreen;
-import com.simibubi.create.content.trains.schedule.ScheduleScreen;
-import com.simibubi.create.foundation.config.ConfigBase.ConfigBool;
-import com.simibubi.create.foundation.data.recipe.LogStrippingFakeRecipes;
-import com.simibubi.create.foundation.gui.menu.AbstractSimiContainerScreen;
-import com.simibubi.create.foundation.item.ItemHelper;
-import com.simibubi.create.foundation.recipe.IRecipeTypeInfo;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.infrastructure.config.AllConfigs;
-import com.simibubi.create.infrastructure.config.CRecipes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllFluids;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllRecipeTypes;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.compat.jei.category.BlockCuttingCategory;
+import com.simibubi.create_re.compat.jei.category.BlockCuttingCategory.CondensedBlockCuttingRecipe;
+import com.simibubi.create_re.compat.jei.category.CreateRecipeCategory;
+import com.simibubi.create_re.compat.jei.category.CrushingCategory;
+import com.simibubi.create_re.compat.jei.category.DeployingCategory;
+import com.simibubi.create_re.compat.jei.category.FanBlastingCategory;
+import com.simibubi.create_re.compat.jei.category.FanHauntingCategory;
+import com.simibubi.create_re.compat.jei.category.FanSmokingCategory;
+import com.simibubi.create_re.compat.jei.category.FanWashingCategory;
+import com.simibubi.create_re.compat.jei.category.ItemApplicationCategory;
+import com.simibubi.create_re.compat.jei.category.ItemDrainCategory;
+import com.simibubi.create_re.compat.jei.category.MechanicalCraftingCategory;
+import com.simibubi.create_re.compat.jei.category.MillingCategory;
+import com.simibubi.create_re.compat.jei.category.MixingCategory;
+import com.simibubi.create_re.compat.jei.category.MysteriousItemConversionCategory;
+import com.simibubi.create_re.compat.jei.category.PackingCategory;
+import com.simibubi.create_re.compat.jei.category.PolishingCategory;
+import com.simibubi.create_re.compat.jei.category.PressingCategory;
+import com.simibubi.create_re.compat.jei.category.ProcessingViaFanCategory;
+import com.simibubi.create_re.compat.jei.category.SawingCategory;
+import com.simibubi.create_re.compat.jei.category.SequencedAssemblyCategory;
+import com.simibubi.create_re.compat.jei.category.SpoutCategory;
+import com.simibubi.create_re.content.equipment.blueprint.BlueprintScreen;
+import com.simibubi.create_re.content.equipment.sandPaper.SandPaperPolishingRecipe;
+import com.simibubi.create_re.content.fluids.potion.PotionFluid;
+import com.simibubi.create_re.content.fluids.potion.PotionMixingRecipes;
+import com.simibubi.create_re.content.fluids.transfer.EmptyingRecipe;
+import com.simibubi.create_re.content.fluids.transfer.FillingRecipe;
+import com.simibubi.create_re.content.kinetics.crafter.MechanicalCraftingRecipe;
+import com.simibubi.create_re.content.kinetics.crusher.AbstractCrushingRecipe;
+import com.simibubi.create_re.content.kinetics.deployer.DeployerApplicationRecipe;
+import com.simibubi.create_re.content.kinetics.deployer.ItemApplicationRecipe;
+import com.simibubi.create_re.content.kinetics.deployer.ManualApplicationRecipe;
+import com.simibubi.create_re.content.kinetics.fan.processing.HauntingRecipe;
+import com.simibubi.create_re.content.kinetics.fan.processing.SplashingRecipe;
+import com.simibubi.create_re.content.kinetics.press.MechanicalPressBlockEntity;
+import com.simibubi.create_re.content.kinetics.press.PressingRecipe;
+import com.simibubi.create_re.content.kinetics.saw.CuttingRecipe;
+import com.simibubi.create_re.content.kinetics.saw.SawBlockEntity;
+import com.simibubi.create_re.content.logistics.filter.AbstractFilterScreen;
+import com.simibubi.create_re.content.processing.basin.BasinRecipe;
+import com.simibubi.create_re.content.processing.sequenced.SequencedAssemblyRecipe;
+import com.simibubi.create_re.content.redstone.link.controller.LinkedControllerScreen;
+import com.simibubi.create_re.content.trains.schedule.ScheduleScreen;
+import com.simibubi.create_re.foundation.config.ConfigBase.ConfigBool;
+import com.simibubi.create_re.foundation.data.recipe.LogStrippingFakeRecipes;
+import com.simibubi.create_re.foundation.gui.menu.AbstractSimiContainerScreen;
+import com.simibubi.create_re.foundation.item.ItemHelper;
+import com.simibubi.create_re.foundation.recipe.IRecipeTypeInfo;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.infrastructure.config.CRecipes;
 
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
@@ -253,7 +253,7 @@ public class CreateJEI implements IModPlugin {
 
 		item_application = builder(ItemApplicationRecipe.class)
 				.addTypedRecipes(AllRecipeTypes.ITEM_APPLICATION)
-				.addRecipes(LogStrippingFakeRecipes::createRecipes)
+				.addRecipes(LogStrippingFakeRecipes::create_reRecipes)
 				.itemIcon(AllItems.BRASS_HAND.get())
 				.emptyBackground(177, 60)
 				.build("item_application", ItemApplicationCategory::new),
@@ -342,7 +342,7 @@ public class CreateJEI implements IModPlugin {
 
 		allCategories.forEach(c -> c.registerRecipes(registration));
 
-		registration.addRecipes(RecipeTypes.CRAFTING, ToolboxColoringRecipeMaker.createRecipes().toList());
+		registration.addRecipes(RecipeTypes.CRAFTING, ToolboxColoringRecipeMaker.create_reRecipes().toList());
 	}
 
 	@Override
@@ -525,7 +525,7 @@ public class CreateJEI implements IModPlugin {
 			CreateRecipeCategory.Info<T> info = new CreateRecipeCategory.Info<>(
 					new mezz.jei.api.recipe.RecipeType<>(Create.asResource(name), recipeClass),
 					Lang.translateDirect("recipe." + name), background, icon, recipesSupplier, catalysts);
-			CreateRecipeCategory<T> category = factory.create(info);
+			CreateRecipeCategory<T> category = factory.create_re(info);
 			allCategories.add(category);
 			return category;
 		}

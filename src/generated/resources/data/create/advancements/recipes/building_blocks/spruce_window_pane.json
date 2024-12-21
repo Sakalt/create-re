@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:spruce_window"
+              "create_re:spruce_window"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:spruce_window_pane"
+        "recipe": "create_re:spruce_window_pane"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:spruce_window_pane"
+      "create_re:spruce_window_pane"
     ]
   },
   "sends_telemetry_event": false

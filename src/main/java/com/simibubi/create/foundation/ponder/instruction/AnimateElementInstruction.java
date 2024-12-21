@@ -1,11 +1,11 @@
-package com.simibubi.create.foundation.ponder.instruction;
+package com.simibubi.create_re.foundation.ponder.instruction;
 
 import java.util.function.BiConsumer;
 import java.util.function.Function;
 
-import com.simibubi.create.foundation.ponder.ElementLink;
-import com.simibubi.create.foundation.ponder.PonderScene;
-import com.simibubi.create.foundation.ponder.element.PonderSceneElement;
+import com.simibubi.create_re.foundation.ponder.ElementLink;
+import com.simibubi.create_re.foundation.ponder.PonderScene;
+import com.simibubi.create_re.foundation.ponder.element.PonderSceneElement;
 
 import net.minecraft.world.phys.Vec3;
 

@@ -1,4 +1,4 @@
-package com.simibubi.create.compat.jei.category;
+package com.simibubi.create_re.compat.jei.category;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,17 +7,17 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import org.apache.commons.lang3.mutable.MutableInt;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.processing.basin.BasinRecipe;
-import com.simibubi.create.content.processing.burner.BlazeBurnerBlock.HeatLevel;
-import com.simibubi.create.content.processing.recipe.HeatCondition;
-import com.simibubi.create.content.processing.recipe.ProcessingOutput;
-import com.simibubi.create.foundation.fluid.FluidIngredient;
-import com.simibubi.create.foundation.gui.AllGuiTextures;
-import com.simibubi.create.foundation.item.ItemHelper;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.processing.basin.BasinRecipe;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock.HeatLevel;
+import com.simibubi.create_re.content.processing.recipe.HeatCondition;
+import com.simibubi.create_re.content.processing.recipe.ProcessingOutput;
+import com.simibubi.create_re.foundation.fluid.FluidIngredient;
+import com.simibubi.create_re.foundation.gui.AllGuiTextures;
+import com.simibubi.create_re.foundation.item.ItemHelper;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import mezz.jei.api.forge.ForgeTypes;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;

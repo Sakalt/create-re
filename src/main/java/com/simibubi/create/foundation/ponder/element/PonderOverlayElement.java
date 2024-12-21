@@ -1,7 +1,7 @@
-package com.simibubi.create.foundation.ponder.element;
+package com.simibubi.create_re.foundation.ponder.element;
 
-import com.simibubi.create.foundation.ponder.PonderScene;
-import com.simibubi.create.foundation.ponder.ui.PonderUI;
+import com.simibubi.create_re.foundation.ponder.PonderScene;
+import com.simibubi.create_re.foundation.ponder.ui.PonderUI;
 
 import net.minecraft.client.gui.GuiGraphics;
 

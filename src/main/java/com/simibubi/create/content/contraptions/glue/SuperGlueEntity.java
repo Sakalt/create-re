@@ -1,22 +1,22 @@
-package com.simibubi.create.content.contraptions.glue;
+package com.simibubi.create_re.content.contraptions.glue;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllEntityTypes;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.content.contraptions.BlockMovementChecks;
-import com.simibubi.create.content.contraptions.bearing.BearingBlock;
-import com.simibubi.create.content.contraptions.chassis.AbstractChassisBlock;
-import com.simibubi.create.content.kinetics.base.DirectionalKineticBlock;
-import com.simibubi.create.content.schematics.requirement.ISpecialEntityItemRequirement;
-import com.simibubi.create.content.schematics.requirement.ItemRequirement;
-import com.simibubi.create.content.schematics.requirement.ItemRequirement.ItemUseType;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllEntityTypes;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.content.contraptions.BlockMovementChecks;
+import com.simibubi.create_re.content.contraptions.bearing.BearingBlock;
+import com.simibubi.create_re.content.contraptions.chassis.AbstractChassisBlock;
+import com.simibubi.create_re.content.kinetics.base.DirectionalKineticBlock;
+import com.simibubi.create_re.content.schematics.requirement.ISpecialEntityItemRequirement;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement.ItemUseType;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

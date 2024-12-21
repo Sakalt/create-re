@@ -1,13 +1,13 @@
-package com.simibubi.create.content.trains.bogey;
+package com.simibubi.create_re.content.trains.bogey;
 
-import static com.simibubi.create.content.trains.entity.CarriageBogey.UPSIDE_DOWN_KEY;
+import static com.simibubi.create_re.content.trains.entity.CarriageBogey.UPSIDE_DOWN_KEY;
 
 import org.jetbrains.annotations.NotNull;
 
-import com.simibubi.create.AllBogeyStyles;
-import com.simibubi.create.foundation.blockEntity.CachedRenderBBBlockEntity;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat;
+import com.simibubi.create_re.AllBogeyStyles;
+import com.simibubi.create_re.foundation.blockEntity.CachedRenderBBBlockEntity;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
@@ -31,7 +31,7 @@ public abstract class AbstractBogeyBlockEntity extends CachedRenderBBBlockEntity
 
 	public CompoundTag getBogeyData() {
 		if (this.bogeyData == null || !this.bogeyData.contains(BOGEY_STYLE_KEY))
-			this.bogeyData = this.createBogeyData();
+			this.bogeyData = this.create_reBogeyData();
 		return this.bogeyData;
 	}
 
@@ -74,11 +74,11 @@ public abstract class AbstractBogeyBlockEntity extends CachedRenderBBBlockEntity
 		if (pTag.contains(BOGEY_DATA_KEY))
 			this.bogeyData = pTag.getCompound(BOGEY_DATA_KEY);
 		else
-			this.bogeyData = this.createBogeyData();
+			this.bogeyData = this.create_reBogeyData();
 		super.load(pTag);
 	}
 
-	private CompoundTag createBogeyData() {
+	private CompoundTag create_reBogeyData() {
 		CompoundTag nbt = new CompoundTag();
 		NBTHelper.writeResourceLocation(nbt, BOGEY_STYLE_KEY, getDefaultStyle().id);
 		boolean upsideDown = false;
@@ -89,8 +89,8 @@ public abstract class AbstractBogeyBlockEntity extends CachedRenderBBBlockEntity
 	}
 
 	@Override
-	protected AABB createRenderBoundingBox() {
-		return super.createRenderBoundingBox().inflate(2);
+	protected AABB create_reRenderBoundingBox() {
+		return super.create_reRenderBoundingBox().inflate(2);
 	}
 
 	// Ponder

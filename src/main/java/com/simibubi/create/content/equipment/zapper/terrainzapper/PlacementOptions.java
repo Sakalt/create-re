@@ -1,7 +1,7 @@
-package com.simibubi.create.content.equipment.zapper.terrainzapper;
+package com.simibubi.create_re.content.equipment.zapper.terrainzapper;
 
-import com.simibubi.create.foundation.gui.AllIcons;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.gui.AllIcons;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 public enum PlacementOptions {
 

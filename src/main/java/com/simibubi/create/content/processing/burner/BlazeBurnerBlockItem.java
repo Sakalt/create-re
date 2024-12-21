@@ -1,4 +1,4 @@
-package com.simibubi.create.content.processing.burner;
+package com.simibubi.create_re.content.processing.burner;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,10 +7,10 @@ import java.util.Optional;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllTags.AllEntityTags;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllTags.AllEntityTags;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
@@ -63,7 +63,7 @@ public class BlazeBurnerBlockItem extends BlockItem {
 
 	@Override
 	public String getDescriptionId() {
-		return hasCapturedBlaze() ? super.getDescriptionId() : "item.create." + RegisteredObjects.getKeyOrThrow(this).getPath();
+		return hasCapturedBlaze() ? super.getDescriptionId() : "item.create_re." + RegisteredObjects.getKeyOrThrow(this).getPath();
 	}
 
 	@Override

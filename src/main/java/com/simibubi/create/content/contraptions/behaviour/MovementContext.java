@@ -1,10 +1,10 @@
-package com.simibubi.create.content.contraptions.behaviour;
+package com.simibubi.create_re.content.contraptions.behaviour;
 
 import java.util.function.UnaryOperator;
 
-import com.simibubi.create.content.contraptions.Contraption;
-import com.simibubi.create.content.logistics.filter.FilterItemStack;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.content.contraptions.Contraption;
+import com.simibubi.create_re.content.logistics.filter.FilterItemStack;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

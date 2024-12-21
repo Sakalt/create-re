@@ -1,6 +1,6 @@
-package com.simibubi.create.content.decoration.copycat;
+package com.simibubi.create_re.content.decoration.copycat;
 
-import com.simibubi.create.content.decoration.palettes.GlassPaneBlock;
+import com.simibubi.create_re.content.decoration.palettes.GlassPaneBlock;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.IronBarsBlock;

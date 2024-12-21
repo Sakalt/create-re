@@ -1,7 +1,7 @@
-package com.simibubi.create.content.redstone.link.controller;
+package com.simibubi.create_re.content.redstone.link.controller;
 
-import com.simibubi.create.content.redstone.link.LinkBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.content.redstone.link.LinkBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;

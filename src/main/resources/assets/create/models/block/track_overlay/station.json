@@ -4,9 +4,9 @@
 	"ambientocclusion": false,
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "create:block/track_station_indicator",
-		"1_2": "create:block/depot_top",
-		"particle": "create:block/track_station_indicator"
+		"1": "create_re:block/track_station_indicator",
+		"1_2": "create_re:block/depot_top",
+		"particle": "create_re:block/track_station_indicator"
 	},
 	"elements": [
 		{

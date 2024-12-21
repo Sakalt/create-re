@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.item;
+package com.simibubi.create_re.foundation.item;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ import javax.annotation.Nullable;
 
 import org.apache.commons.lang3.mutable.MutableInt;
 
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;

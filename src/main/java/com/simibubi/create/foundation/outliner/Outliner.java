@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.outliner;
+package com.simibubi.create_re.foundation.outliner;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -7,10 +7,10 @@ import java.util.Map;
 import java.util.Optional;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.foundation.blockEntity.behaviour.ValueBox;
-import com.simibubi.create.foundation.outliner.LineOutline.EndChasingLineOutline;
-import com.simibubi.create.foundation.outliner.Outline.OutlineParams;
-import com.simibubi.create.foundation.render.SuperRenderTypeBuffer;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBox;
+import com.simibubi.create_re.foundation.outliner.LineOutline.EndChasingLineOutline;
+import com.simibubi.create_re.foundation.outliner.Outline.OutlineParams;
+import com.simibubi.create_re.foundation.render.SuperRenderTypeBuffer;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.Mth;
@@ -54,21 +54,21 @@ public class Outliner {
 	}
 
 	public OutlineParams showAABB(Object slot, AABB bb, int ttl) {
-		createAABBOutlineIfMissing(slot, bb);
+		create_reAABBOutlineIfMissing(slot, bb);
 		ChasingAABBOutline outline = getAndRefreshAABB(slot, ttl);
 		outline.prevBB = outline.targetBB = outline.bb = bb;
 		return outline.getParams();
 	}
 
 	public OutlineParams showAABB(Object slot, AABB bb) {
-		createAABBOutlineIfMissing(slot, bb);
+		create_reAABBOutlineIfMissing(slot, bb);
 		ChasingAABBOutline outline = getAndRefreshAABB(slot);
 		outline.prevBB = outline.targetBB = outline.bb = bb;
 		return outline.getParams();
 	}
 
 	public OutlineParams chaseAABB(Object slot, AABB bb) {
-		createAABBOutlineIfMissing(slot, bb);
+		create_reAABBOutlineIfMissing(slot, bb);
 		ChasingAABBOutline outline = getAndRefreshAABB(slot);
 		outline.targetBB = bb;
 		return outline.getParams();
@@ -117,7 +117,7 @@ public class Outliner {
 		outlines.put(slot, new OutlineEntry(outline));
 	}
 
-	private void createAABBOutlineIfMissing(Object slot, AABB bb) {
+	private void create_reAABBOutlineIfMissing(Object slot, AABB bb) {
 		if (!outlines.containsKey(slot) || !(outlines.get(slot).outline instanceof AABBOutline)) {
 			ChasingAABBOutline outline = new ChasingAABBOutline(bb);
 			addOutline(slot, outline);

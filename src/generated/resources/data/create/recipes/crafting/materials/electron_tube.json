@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "L": {
-      "item": "create:polished_rose_quartz"
+      "item": "create_re:polished_rose_quartz"
     },
     "N": {
       "tag": "forge:plates/iron"
@@ -14,7 +14,7 @@
     "N"
   ],
   "result": {
-    "item": "create:electron_tube"
+    "item": "create_re:electron_tube"
   },
   "show_notification": true
 }

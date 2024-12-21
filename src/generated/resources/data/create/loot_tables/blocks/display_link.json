@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:display_link"
+          "name": "create_re:display_link"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/display_link"
+  "random_sequence": "create_re:blocks/display_link"
 }

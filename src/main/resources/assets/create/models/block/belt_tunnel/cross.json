@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"top": "create:block/tunnel/brass_tunnel_top",
-		"direction": "create:block/funnel/brass_funnel_neutral",
-		"frame": "create:block/funnel/brass_funnel_frame",
-		"particle": "create:block/brass_block"
+		"top": "create_re:block/tunnel/brass_tunnel_top",
+		"direction": "create_re:block/funnel/brass_funnel_neutral",
+		"frame": "create_re:block/funnel/brass_funnel_frame",
+		"particle": "create_re:block/brass_block"
 	},
 	"elements": [
 		{

@@ -1,9 +1,9 @@
-package com.simibubi.create.content.contraptions.minecart;
+package com.simibubi.create_re.content.contraptions.minecart;
 
-import com.simibubi.create.content.contraptions.minecart.capability.MinecartController;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.content.contraptions.minecart.capability.MinecartController;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.BlockTags;
@@ -37,7 +37,7 @@ public class CouplingPhysics {
 		if (!MinecartSim2020.canAddMotion(carts.get(false)) && MinecartSim2020.canAddMotion(carts.get(true)))
 			carts = carts.swap();
 
-		Couple<Vec3> corrections = Couple.create(null, null);
+		Couple<Vec3> corrections = Couple.create_re(null, null);
 		Couple<Float> maxSpeed = carts.map(AbstractMinecart::getMaxCartSpeedOnRail);
 		boolean firstLoop = true;
 		for (boolean current : new boolean[] { true, false, true }) {
@@ -96,7 +96,7 @@ public class CouplingPhysics {
 		
 		// Assuming Minecarts will never move faster than 1 block/tick
 		Couple<Vec3> motions = carts.map(Entity::getDeltaMovement);
-		motions.replaceWithParams(VecHelper::clamp, Couple.create(1f, 1f));
+		motions.replaceWithParams(VecHelper::clamp, Couple.create_re(1f, 1f));
 		Couple<Vec3> nextPositions = carts.map(MinecartSim2020::predictNextPositionOf);
 
 		Couple<RailShape> shapes = carts.mapWithContext((minecart, current) -> {

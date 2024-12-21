@@ -1,12 +1,12 @@
-package com.simibubi.create.content.redstone.diodes;
+package com.simibubi.create_re.content.redstone.diodes;
 
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.ValueBoxTransform;
-import com.simibubi.create.foundation.blockEntity.behaviour.ValueSettingsBoard;
-import com.simibubi.create.foundation.blockEntity.behaviour.ValueSettingsFormatter;
-import com.simibubi.create.foundation.blockEntity.behaviour.scrollValue.ScrollValueBehaviour;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBoxTransform;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueSettingsBoard;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueSettingsFormatter;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.scrollValue.ScrollValueBehaviour;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -23,7 +23,7 @@ public class BrassDiodeScrollValueBehaviour extends ScrollValueBehaviour {
 	}
 
 	@Override
-	public ValueSettingsBoard createBoard(Player player, BlockHitResult hitResult) {
+	public ValueSettingsBoard create_reBoard(Player player, BlockHitResult hitResult) {
 		return new ValueSettingsBoard(label, 60, 10,
 			Lang.translatedOptions("generic.unit", "ticks", "seconds", "minutes"),
 			new ValueSettingsFormatter(this::formatSettings));

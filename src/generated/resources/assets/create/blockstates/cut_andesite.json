@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/cut_andesite"
+      "model": "create_re:block/cut_andesite"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_column",
   "textures": {
-    "end": "create:block/radial_chassis_end",
-    "side": "create:block/radial_chassis_side"
+    "end": "create_re:block/radial_chassis_end",
+    "side": "create_re:block/radial_chassis_side"
   }
 }

@@ -1,14 +1,14 @@
-package com.simibubi.create.content.kinetics.mechanicalArm;
+package com.simibubi.create_re.content.kinetics.mechanicalArm;
 
 import org.apache.commons.lang3.mutable.MutableBoolean;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.content.kinetics.base.KineticBlock;
-import com.simibubi.create.content.kinetics.mechanicalArm.ArmBlockEntity.Phase;
-import com.simibubi.create.content.kinetics.simpleRelays.ICogWheel;
-import com.simibubi.create.foundation.block.IBE;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.content.kinetics.base.KineticBlock;
+import com.simibubi.create_re.content.kinetics.mechanicalArm.ArmBlockEntity.Phase;
+import com.simibubi.create_re.content.kinetics.simpleRelays.ICogWheel;
+import com.simibubi.create_re.foundation.block.IBE;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -31,7 +31,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class ArmBlock extends KineticBlock implements IBE<ArmBlockEntity>, ICogWheel {
 
-	public static final BooleanProperty CEILING = BooleanProperty.create("ceiling");
+	public static final BooleanProperty CEILING = BooleanProperty.create_re("ceiling");
 
 	public ArmBlock(Properties properties) {
 		super(properties);
@@ -39,8 +39,8 @@ public class ArmBlock extends KineticBlock implements IBE<ArmBlockEntity>, ICogW
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> p_206840_1_) {
-		super.createBlockStateDefinition(p_206840_1_.add(CEILING));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> p_206840_1_) {
+		super.create_reBlockStateDefinition(p_206840_1_.add(CEILING));
 	}
 
 	@Override

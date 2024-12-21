@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:brass_ingot"
+              "create_re:brass_ingot"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/materials/brass_nugget_from_decompacting"
+        "recipe": "create_re:crafting/materials/brass_nugget_from_decompacting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/materials/brass_nugget_from_decompacting"
+      "create_re:crafting/materials/brass_nugget_from_decompacting"
     ]
   },
   "sends_telemetry_event": false

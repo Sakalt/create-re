@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.virtualWorld;
+package com.simibubi.create_re.foundation.virtualWorld;
 
 import java.util.function.BooleanSupplier;
 

@@ -1,23 +1,23 @@
-package com.simibubi.create.content.contraptions.bearing;
+package com.simibubi.create_re.content.contraptions.bearing;
 
 import java.util.List;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import com.simibubi.create.content.contraptions.AbstractContraptionEntity;
-import com.simibubi.create.content.contraptions.AssemblyException;
-import com.simibubi.create.content.contraptions.ControlledContraptionEntity;
-import com.simibubi.create.content.contraptions.IDisplayAssemblyExceptions;
-import com.simibubi.create.content.contraptions.bearing.ClockworkContraption.HandType;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.scrollValue.INamedIconOptions;
-import com.simibubi.create.foundation.blockEntity.behaviour.scrollValue.ScrollOptionBehaviour;
-import com.simibubi.create.foundation.gui.AllIcons;
-import com.simibubi.create.foundation.utility.AngleHelper;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.ServerSpeedProvider;
+import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity;
+import com.simibubi.create_re.content.contraptions.AssemblyException;
+import com.simibubi.create_re.content.contraptions.ControlledContraptionEntity;
+import com.simibubi.create_re.content.contraptions.IDisplayAssemblyExceptions;
+import com.simibubi.create_re.content.contraptions.bearing.ClockworkContraption.HandType;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.scrollValue.INamedIconOptions;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.scrollValue.ScrollOptionBehaviour;
+import com.simibubi.create_re.foundation.gui.AllIcons;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.ServerSpeedProvider;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -236,7 +236,7 @@ public class ClockworkBearingBlockEntity extends KineticBlockEntity
 
 		contraption.getLeft()
 			.removeBlocksFromWorld(level, BlockPos.ZERO);
-		hourHand = ControlledContraptionEntity.create(level, this, contraption.getLeft());
+		hourHand = ControlledContraptionEntity.create_re(level, this, contraption.getLeft());
 		hourHand.setPos(anchor.getX(), anchor.getY(), anchor.getZ());
 		hourHand.setRotationAxis(direction.getAxis());
 		level.addFreshEntity(hourHand);
@@ -249,7 +249,7 @@ public class ClockworkBearingBlockEntity extends KineticBlockEntity
 			anchor = worldPosition.relative(direction, contraption.getRight().offset + 1);
 			contraption.getRight()
 				.removeBlocksFromWorld(level, BlockPos.ZERO);
-			minuteHand = ControlledContraptionEntity.create(level, this, contraption.getRight());
+			minuteHand = ControlledContraptionEntity.create_re(level, this, contraption.getRight());
 			minuteHand.setPos(anchor.getX(), anchor.getY(), anchor.getZ());
 			minuteHand.setRotationAxis(direction.getAxis());
 			level.addFreshEntity(minuteHand);

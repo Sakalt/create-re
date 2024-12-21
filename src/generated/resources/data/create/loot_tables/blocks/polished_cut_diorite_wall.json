@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:polished_cut_diorite_wall"
+          "name": "create_re:polished_cut_diorite_wall"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/polished_cut_diorite_wall"
+  "random_sequence": "create_re:blocks/polished_cut_diorite_wall"
 }

@@ -1,12 +1,12 @@
-package com.simibubi.create.content.kinetics.belt;
+package com.simibubi.create_re.content.kinetics.belt;
 
 import static net.minecraft.world.level.block.Block.box;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.foundation.utility.VoxelShaper;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.foundation.utility.VoxelShaper;
 
 import net.minecraft.core.Direction;
 import net.minecraft.core.Direction.Axis;
@@ -50,7 +50,7 @@ public class BeltShapes {
 	 * |-1          #  #  #  #  #                                |   |   |           |   |                                            |   |   |                                            |          |
 	 * |-2          #  #  #  #                                   |   |   |           |   |                                            |   |   |                                            |          |
 	 * |-3          #  #  #                                          |  slice used   |                                                    |                                                           |
-	 * |-4          #  #                                             |  to create    |                                                    |                                                           |
+	 * |-4          #  #                                             |  to create_re    |                                                    |                                                           |
 	 * |-5          #                                                |  the stairs   |                                                    |                                                           |
 	 * |                                  x 1 to 14                  |               |                                                    |                                                           |
 	 */
@@ -160,17 +160,17 @@ public class BeltShapes {
 	public static VoxelShape getShape(BlockState state) {
 		if (cache.containsKey(state))
 			return cache.get(state);
-		VoxelShape createdShape = Shapes.or(getBeltShape(state), getCasingShape(state));
-		cache.put(state, createdShape);
-		return createdShape;
+		VoxelShape create_redShape = Shapes.or(getBeltShape(state), getCasingShape(state));
+		cache.put(state, create_redShape);
+		return create_redShape;
 	}
 
 	public static VoxelShape getCollisionShape(BlockState state) {
 		if (collisionCache.containsKey(state))
 			return collisionCache.get(state);
-		VoxelShape createdShape = Shapes.joinUnoptimized(AllShapes.BELT_COLLISION_MASK, getShape(state), BooleanOp.AND);
-		collisionCache.put(state, createdShape);
-		return createdShape;
+		VoxelShape create_redShape = Shapes.joinUnoptimized(AllShapes.BELT_COLLISION_MASK, getShape(state), BooleanOp.AND);
+		collisionCache.put(state, create_redShape);
+		return create_redShape;
 	}
 
 	private static VoxelShape getBeltShape(BlockState state) {

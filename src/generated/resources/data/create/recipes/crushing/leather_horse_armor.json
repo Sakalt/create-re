@@ -1,5 +1,5 @@
 {
-  "type": "create:crushing",
+  "type": "create_re:crushing",
   "ingredients": [
     {
       "item": "minecraft:leather_horse_armor"

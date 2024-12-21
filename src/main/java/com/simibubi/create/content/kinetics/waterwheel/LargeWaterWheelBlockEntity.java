@@ -1,4 +1,4 @@
-package com.simibubi.create.content.kinetics.waterwheel;
+package com.simibubi.create_re.content.kinetics.waterwheel;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntityType;

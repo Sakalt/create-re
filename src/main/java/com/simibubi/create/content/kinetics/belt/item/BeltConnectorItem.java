@@ -1,21 +1,21 @@
-package com.simibubi.create.content.kinetics.belt.item;
+package com.simibubi.create_re.content.kinetics.belt.item;
 
 import java.util.LinkedList;
 import java.util.List;
 
 import javax.annotation.Nonnull;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.kinetics.belt.BeltBlock;
-import com.simibubi.create.content.kinetics.belt.BeltPart;
-import com.simibubi.create.content.kinetics.belt.BeltSlope;
-import com.simibubi.create.content.kinetics.simpleRelays.AbstractSimpleShaftBlock;
-import com.simibubi.create.content.kinetics.simpleRelays.ShaftBlock;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.block.ProperWaterloggedBlock;
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlock;
+import com.simibubi.create_re.content.kinetics.belt.BeltPart;
+import com.simibubi.create_re.content.kinetics.belt.BeltSlope;
+import com.simibubi.create_re.content.kinetics.simpleRelays.AbstractSimpleShaftBlock;
+import com.simibubi.create_re.content.kinetics.simpleRelays.ShaftBlock;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -85,7 +85,7 @@ public class BeltConnectorItem extends BlockItem {
 				return InteractionResult.FAIL;
 
 			if (firstPulley != null && !firstPulley.equals(pos)) {
-				createBelts(world, firstPulley, pos);
+				create_reBelts(world, firstPulley, pos);
 				AllAdvancements.BELT.awardTo(playerEntity);
 				if (!playerEntity.isCreative())
 					context.getItemInHand()
@@ -110,7 +110,7 @@ public class BeltConnectorItem extends BlockItem {
 		return InteractionResult.SUCCESS;
 	}
 
-	public static void createBelts(Level world, BlockPos start, BlockPos end) {
+	public static void create_reBelts(Level world, BlockPos start, BlockPos end) {
 		world.playSound(null, BlockPos.containing(VecHelper.getCenterOf(start.offset(end))
 			.scale(.5f)), SoundEvents.WOOL_PLACE, SoundSource.BLOCKS, 0.5F, 1F);
 

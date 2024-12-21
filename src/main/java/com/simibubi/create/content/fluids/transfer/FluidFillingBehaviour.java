@@ -1,4 +1,4 @@
-package com.simibubi.create.content.fluids.transfer;
+package com.simibubi.create_re.content.fluids.transfer;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -6,13 +6,13 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BehaviourType;
-import com.simibubi.create.foundation.fluid.FluidHelper;
-import com.simibubi.create.foundation.utility.BBHelper;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BehaviourType;
+import com.simibubi.create_re.foundation.fluid.FluidHelper;
+import com.simibubi.create_re.foundation.utility.BBHelper;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import it.unimi.dsi.fastutil.PriorityQueue;
 import it.unimi.dsi.fastutil.objects.ObjectHeapPriorityQueue;
@@ -199,7 +199,7 @@ public class FluidFillingBehaviour extends FluidManipulationBehaviour {
 						if (!blockEntity.isVirtual())
 							world.setBlock(currentPos, FluidHelper.convertToStill(fluid)
 								.defaultFluidState()
-								.createLegacyBlock(), 2 | 16);
+								.create_reLegacyBlock(), 2 | 16);
 					}
 
 					LevelTickAccess<Fluid> pendingFluidTicks = world.getFluidTicks();

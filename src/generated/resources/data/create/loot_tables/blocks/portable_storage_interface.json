@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:portable_storage_interface"
+          "name": "create_re:portable_storage_interface"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/portable_storage_interface"
+  "random_sequence": "create_re:blocks/portable_storage_interface"
 }

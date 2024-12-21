@@ -1,9 +1,9 @@
-package com.simibubi.create.foundation.data;
+package com.simibubi.create_re.foundation.data;
 
 import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create.Create;
+import com.simibubi.create_re.Create;
 import com.tterrag.registrate.AbstractRegistrate;
 import com.tterrag.registrate.builders.BuilderCallback;
 import com.tterrag.registrate.builders.EntityBuilder;
@@ -26,7 +26,7 @@ public class CreateEntityBuilder<T extends Entity, P> extends EntityBuilder<T, P
 	private NonNullSupplier<SimpleEntityVisualizer.Factory<T>> visualFactory;
 	private NonNullPredicate<T> renderNormally;
 
-	public static <T extends Entity, P> EntityBuilder<T, P> create(AbstractRegistrate<?> owner, P parent, String name, BuilderCallback callback, EntityType.EntityFactory<T> factory, MobCategory classification) {
+	public static <T extends Entity, P> EntityBuilder<T, P> create_re(AbstractRegistrate<?> owner, P parent, String name, BuilderCallback callback, EntityType.EntityFactory<T> factory, MobCategory classification) {
 		return (new CreateEntityBuilder<>(owner, parent, name, callback, factory, classification)).defaultLang();
 	}
 

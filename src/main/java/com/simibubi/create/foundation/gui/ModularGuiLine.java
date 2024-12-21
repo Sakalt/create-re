@@ -1,13 +1,13 @@
-package com.simibubi.create.foundation.gui;
+package com.simibubi.create_re.foundation.gui;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
 
-import com.simibubi.create.foundation.gui.widget.ScrollInput;
-import com.simibubi.create.foundation.gui.widget.TooltipArea;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.foundation.gui.widget.ScrollInput;
+import com.simibubi.create_re.foundation.gui.widget.TooltipArea;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.AbstractWidget;

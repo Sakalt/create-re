@@ -9,7 +9,7 @@
       "tag": "forge:stone"
     },
     "I": {
-      "item": "create:shaft"
+      "item": "create_re:shaft"
     }
   },
   "pattern": [
@@ -18,7 +18,7 @@
     "I"
   ],
   "result": {
-    "item": "create:windmill_bearing"
+    "item": "create_re:windmill_bearing"
   },
   "show_notification": true
 }

@@ -1,12 +1,12 @@
-package com.simibubi.create.foundation.ponder;
+package com.simibubi.create_re.foundation.ponder;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.BiConsumer;
 
 import com.google.gson.JsonObject;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.infrastructure.ponder.PonderIndex;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.infrastructure.ponder.PonderIndex;
 import com.tterrag.registrate.AbstractRegistrate;
 
 import net.minecraft.client.resources.language.I18n;
@@ -25,7 +25,7 @@ public class PonderLocalization {
 	}
 
 	public static void registerTag(ResourceLocation key, String enUS, String description) {
-		TAG.put(key, Couple.create(enUS, description));
+		TAG.put(key, Couple.create_re(enUS, description));
 	}
 
 	public static void registerChapter(ResourceLocation key, String enUS) {

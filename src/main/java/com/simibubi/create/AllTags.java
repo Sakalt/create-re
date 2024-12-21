@@ -1,14 +1,14 @@
-package com.simibubi.create;
+package com.simibubi.create_re;
 
-import static com.simibubi.create.AllTags.NameSpace.CURIOS;
-import static com.simibubi.create.AllTags.NameSpace.FORGE;
-import static com.simibubi.create.AllTags.NameSpace.MOD;
-import static com.simibubi.create.AllTags.NameSpace.QUARK;
-import static com.simibubi.create.AllTags.NameSpace.TIC;
+import static com.simibubi.create_re.AllTags.NameSpace.CURIOS;
+import static com.simibubi.create_re.AllTags.NameSpace.FORGE;
+import static com.simibubi.create_re.AllTags.NameSpace.MOD;
+import static com.simibubi.create_re.AllTags.NameSpace.QUARK;
+import static com.simibubi.create_re.AllTags.NameSpace.TIC;
 
 import java.util.Collections;
 
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -33,7 +33,7 @@ public class AllTags {
 	public static <T> TagKey<T> optionalTag(IForgeRegistry<T> registry,
 		ResourceLocation id) {
 		return registry.tags()
-			.createOptionalTagKey(id, Collections.emptySet());
+			.create_reOptionalTagKey(id, Collections.emptySet());
 	}
 
 	public static <T> TagKey<T> forgeTag(IForgeRegistry<T> registry, String path) {
@@ -139,7 +139,7 @@ public class AllTags {
 			if (optional) {
 				tag = optionalTag(ForgeRegistries.BLOCKS, id);
 			} else {
-				tag = BlockTags.create(id);
+				tag = BlockTags.create_re(id);
 			}
 			this.alwaysDatagen = alwaysDatagen;
 		}
@@ -223,7 +223,7 @@ public class AllTags {
 			if (optional) {
 				tag = optionalTag(ForgeRegistries.ITEMS, id);
 			} else {
-				tag = ItemTags.create(id);
+				tag = ItemTags.create_re(id);
 			}
 			this.alwaysDatagen = alwaysDatagen;
 		}
@@ -279,7 +279,7 @@ public class AllTags {
 			if (optional) {
 				tag = optionalTag(ForgeRegistries.FLUIDS, id);
 			} else {
-				tag = FluidTags.create(id);
+				tag = FluidTags.create_re(id);
 			}
 			this.alwaysDatagen = alwaysDatagen;
 		}
@@ -328,7 +328,7 @@ public class AllTags {
 			if (optional) {
 				tag = optionalTag(ForgeRegistries.ENTITY_TYPES, id);
 			} else {
-				tag = TagKey.create(Registries.ENTITY_TYPE, id);
+				tag = TagKey.create_re(Registries.ENTITY_TYPE, id);
 			}
 			this.alwaysDatagen = alwaysDatagen;
 		}
@@ -375,7 +375,7 @@ public class AllTags {
 			if (optional) {
 				tag = optionalTag(ForgeRegistries.RECIPE_SERIALIZERS, id);
 			} else {
-				tag = TagKey.create(Registries.RECIPE_SERIALIZER, id);
+				tag = TagKey.create_re(Registries.RECIPE_SERIALIZER, id);
 			}
 			this.alwaysDatagen = alwaysDatagen;
 		}

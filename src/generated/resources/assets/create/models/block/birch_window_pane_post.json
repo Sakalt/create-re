@@ -1,7 +1,7 @@
 {
-  "parent": "create:block/connected_glass_pane/post",
+  "parent": "create_re:block/connected_glass_pane/post",
   "textures": {
     "edge": "minecraft:block/birch_planks",
-    "pane": "create:block/palettes/birch_window"
+    "pane": "create_re:block/palettes/birch_window"
   }
 }

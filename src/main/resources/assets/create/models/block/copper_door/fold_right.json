@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "create:block/copper_door_side",
-		"2": "create:block/copper_door_top",
-		"3": "create:block/copper_door_bottom",
-		"particle": "create:block/copper_casing"
+		"0": "create_re:block/copper_door_side",
+		"2": "create_re:block/copper_door_top",
+		"3": "create_re:block/copper_door_bottom",
+		"particle": "create_re:block/copper_casing"
 	},
 	"elements": [
 		{

@@ -1,25 +1,25 @@
 {
-  "parent": "create:compacting",
+  "parent": "create_re:compacting",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:belt_builtin"
+      "trigger": "create_re:belt_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.belt.desc"
+      "translate": "advancement.create_re.belt.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:belt_connector"
+      "item": "create_re:belt_connector"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.belt"
+      "translate": "advancement.create_re.belt"
     }
   },
   "requirements": [

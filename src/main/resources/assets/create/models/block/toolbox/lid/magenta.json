@@ -1,6 +1,6 @@
 {
-	"parent": "create:block/toolbox/lid/brown",
+	"parent": "create_re:block/toolbox/lid/brown",
 	"textures": {
-		"0": "create:block/toolbox/magenta"
+		"0": "create_re:block/toolbox/magenta"
 	}
 }

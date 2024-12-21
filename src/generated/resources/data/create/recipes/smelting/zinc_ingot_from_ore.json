@@ -6,5 +6,5 @@
   "ingredient": {
     "tag": "forge:ores/zinc"
   },
-  "result": "create:zinc_ingot"
+  "result": "create_re:zinc_ingot"
 }

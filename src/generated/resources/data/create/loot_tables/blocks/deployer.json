@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:deployer"
+          "name": "create_re:deployer"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/deployer"
+  "random_sequence": "create_re:blocks/deployer"
 }

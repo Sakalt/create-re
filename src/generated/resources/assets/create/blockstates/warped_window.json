@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/warped_window"
+      "model": "create_re:block/warped_window"
     }
   }
 }

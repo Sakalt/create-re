@@ -1,8 +1,8 @@
 {
-  "type": "create:mixing",
+  "type": "create_re:mixing",
   "ingredients": [
     {
-      "type": "create:block_tag_ingredient",
+      "type": "create_re:block_tag_ingredient",
       "tag": "minecraft:convertable_to_mud"
     },
     {

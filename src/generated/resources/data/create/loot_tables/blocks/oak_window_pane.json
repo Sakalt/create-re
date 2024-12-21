@@ -21,11 +21,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:oak_window_pane"
+          "name": "create_re:oak_window_pane"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/oak_window_pane"
+  "random_sequence": "create_re:blocks/oak_window_pane"
 }

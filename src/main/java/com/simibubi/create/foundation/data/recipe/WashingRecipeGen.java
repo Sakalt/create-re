@@ -1,19 +1,19 @@
-package com.simibubi.create.foundation.data.recipe;
+package com.simibubi.create_re.foundation.data.recipe;
 
-import static com.simibubi.create.foundation.data.recipe.CompatMetals.ALUMINUM;
-import static com.simibubi.create.foundation.data.recipe.CompatMetals.LEAD;
-import static com.simibubi.create.foundation.data.recipe.CompatMetals.NICKEL;
-import static com.simibubi.create.foundation.data.recipe.CompatMetals.OSMIUM;
-import static com.simibubi.create.foundation.data.recipe.CompatMetals.PLATINUM;
-import static com.simibubi.create.foundation.data.recipe.CompatMetals.QUICKSILVER;
-import static com.simibubi.create.foundation.data.recipe.CompatMetals.SILVER;
-import static com.simibubi.create.foundation.data.recipe.CompatMetals.TIN;
-import static com.simibubi.create.foundation.data.recipe.CompatMetals.URANIUM;
+import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.ALUMINUM;
+import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.LEAD;
+import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.NICKEL;
+import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.OSMIUM;
+import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.PLATINUM;
+import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.QUICKSILVER;
+import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.SILVER;
+import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.TIN;
+import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.URANIUM;
 
 import java.util.function.Supplier;
 
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllRecipeTypes;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllRecipeTypes;
 import com.tterrag.registrate.util.entry.ItemEntry;
 
 import net.minecraft.data.PackOutput;
@@ -31,21 +31,21 @@ public class WashingRecipeGen extends ProcessingRecipeGen {
 
 	GeneratedRecipe
 
-	WOOL = create("wool", b -> b.require(ItemTags.WOOL)
+	WOOL = create_re("wool", b -> b.require(ItemTags.WOOL)
 		.output(Items.WHITE_WOOL)),
 
-		STAINED_GLASS = create("stained_glass", b -> b.require(Tags.Items.STAINED_GLASS)
+		STAINED_GLASS = create_re("stained_glass", b -> b.require(Tags.Items.STAINED_GLASS)
 			.output(Items.GLASS)),
-		STAINED_GLASS_PANE = create("stained_glass_pane", b -> b.require(Tags.Items.STAINED_GLASS_PANES)
+		STAINED_GLASS_PANE = create_re("stained_glass_pane", b -> b.require(Tags.Items.STAINED_GLASS_PANES)
 			.output(Items.GLASS_PANE)),
 
-		GRAVEL = create(() -> Blocks.GRAVEL, b -> b.output(.25f, Items.FLINT)
+		GRAVEL = create_re(() -> Blocks.GRAVEL, b -> b.output(.25f, Items.FLINT)
 			.output(.125f, Items.IRON_NUGGET)),
-		SOUL_SAND = create(() -> Blocks.SOUL_SAND, b -> b.output(.125f, Items.QUARTZ, 4)
+		SOUL_SAND = create_re(() -> Blocks.SOUL_SAND, b -> b.output(.125f, Items.QUARTZ, 4)
 			.output(.02f, Items.GOLD_NUGGET)),
-		RED_SAND = create(() -> Blocks.RED_SAND, b -> b.output(.125f, Items.GOLD_NUGGET, 3)
+		RED_SAND = create_re(() -> Blocks.RED_SAND, b -> b.output(.125f, Items.GOLD_NUGGET, 3)
 			.output(.05f, Items.DEAD_BUSH)),
-		SAND = create(() -> Blocks.SAND, b -> b.output(.25f, Items.CLAY_BALL)),
+		SAND = create_re(() -> Blocks.SAND, b -> b.output(.25f, Items.CLAY_BALL)),
 
 		CRUSHED_COPPER = crushedOre(AllItems.CRUSHED_COPPER, AllItems.COPPER_NUGGET::get, () -> Items.CLAY_BALL, .5f),
 		CRUSHED_ZINC = crushedOre(AllItems.CRUSHED_ZINC, AllItems.ZINC_NUGGET::get, () -> Items.GUNPOWDER, .25f),
@@ -81,23 +81,23 @@ public class WashingRecipeGen extends ProcessingRecipeGen {
 		CYAN_CONCRETE = convert(Blocks.CYAN_CONCRETE_POWDER, Blocks.CYAN_CONCRETE),
 		BLACK_CONCRETE = convert(Blocks.BLACK_CONCRETE_POWDER, Blocks.BLACK_CONCRETE),
 
-		FLOUR = create("wheat_flour", b -> b.require(I.wheatFlour())
+		FLOUR = create_re("wheat_flour", b -> b.require(I.wheatFlour())
 			.output(AllItems.DOUGH.get())),
 
 		// Atmospheric
-		ATMO_SAND = create("atmospheric/arid_sand", b -> b.require(Mods.ATM, "arid_sand")
+		ATMO_SAND = create_re("atmospheric/arid_sand", b -> b.require(Mods.ATM, "arid_sand")
 				.output(.25f, Items.CLAY_BALL, 1)
 				.output(0.05f, Mods.ATM, "aloe_kernels", 1)
 				.whenModLoaded(Mods.ATM.getId())),
 
-		ATMO_RED_SAND = create("atmospheric/red_arid_sand", b -> b.require(Mods.ATM, "red_arid_sand")
+		ATMO_RED_SAND = create_re("atmospheric/red_arid_sand", b -> b.require(Mods.ATM, "red_arid_sand")
 				.output(.125f, Items.CLAY_BALL, 4)
 				.output(0.05f, Mods.ATM, "aloe_kernels", 1)
 				.whenModLoaded(Mods.ATM.getId())),
 
 		// Oh The Biomes You'll Go
 
-		BYG = create("byg/cryptic_magma_block", b -> b.require(Mods.BYG, "cryptic_magma_block")
+		BYG = create_re("byg/cryptic_magma_block", b -> b.require(Mods.BYG, "cryptic_magma_block")
 				.output(Blocks.OBSIDIAN).whenModLoaded(Mods.BYG.getId())),
 
 		// Endergetic
@@ -123,12 +123,12 @@ public class WashingRecipeGen extends ProcessingRecipeGen {
 	;
 
 	public GeneratedRecipe convert(Block block, Block result) {
-		return create(() -> block, b -> b.output(result));
+		return create_re(() -> block, b -> b.output(result));
 	}
 
 	public GeneratedRecipe crushedOre(ItemEntry<Item> crushed, Supplier<ItemLike> nugget, Supplier<ItemLike> secondary,
 		float secondaryChance) {
-		return create(crushed::get, b -> b.output(nugget.get(), 9)
+		return create_re(crushed::get, b -> b.output(nugget.get(), 9)
 			.output(secondaryChance, secondary.get(), 1));
 	}
 
@@ -136,7 +136,7 @@ public class WashingRecipeGen extends ProcessingRecipeGen {
 		for (Mods mod : metal.getMods()) {
 			String metalName = metal.getName(mod);
 			ResourceLocation nugget = mod.nuggetOf(metalName);
-			create(mod.getId() + "/" + crushed.getId()
+			create_re(mod.getId() + "/" + crushed.getId()
 				.getPath(),
 				b -> b.withItemIngredients(Ingredient.of(crushed::get))
 					.output(1, nugget, 9)
@@ -146,7 +146,7 @@ public class WashingRecipeGen extends ProcessingRecipeGen {
 	}
 
 	public GeneratedRecipe simpleModded(Mods mod, String input, String output) {
-		return create(mod.getId() + "/" + output, b -> b.require(mod, input)
+		return create_re(mod.getId() + "/" + output, b -> b.require(mod, input)
 				.output(mod, output).whenModLoaded(mod.getId()));
 	}
 

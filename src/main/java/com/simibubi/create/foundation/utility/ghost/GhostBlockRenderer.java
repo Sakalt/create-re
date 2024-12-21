@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.utility.ghost;
+package com.simibubi.create_re.foundation.utility.ghost;
 
 import java.util.List;
 
@@ -6,9 +6,9 @@ import javax.annotation.Nullable;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create.foundation.placement.PlacementHelpers;
-import com.simibubi.create.foundation.render.SuperRenderTypeBuffer;
-import com.simibubi.create.foundation.render.VirtualRenderHelper;
+import com.simibubi.create_re.foundation.placement.PlacementHelpers;
+import com.simibubi.create_re.foundation.render.SuperRenderTypeBuffer;
+import com.simibubi.create_re.foundation.render.VirtualRenderHelper;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.LevelRenderer;
@@ -60,7 +60,7 @@ public abstract class GhostBlockRenderer {
 			ms.pushPose();
 			ms.translate(pos.getX() - camera.x, pos.getY() - camera.y, pos.getZ() - camera.z);
 
-			for (RenderType layer : model.getRenderTypes(state, RandomSource.create(42L), VirtualRenderHelper.VIRTUAL_DATA)) {
+			for (RenderType layer : model.getRenderTypes(state, RandomSource.create_re(42L), VirtualRenderHelper.VIRTUAL_DATA)) {
 				VertexConsumer vb = buffer.getEarlyBuffer(layer);
 				renderer.renderModel(ms.last(), vb, state, model, 1f, 1f, 1f, LightTexture.FULL_BRIGHT, OverlayTexture.NO_OVERLAY,
 					VirtualRenderHelper.VIRTUAL_DATA, layer);
@@ -104,7 +104,7 @@ public abstract class GhostBlockRenderer {
 		public void renderModel(PoseStack.Pose pose, VertexConsumer consumer,
 			@Nullable BlockState state, BakedModel model, float red, float green, float blue,
 			float alpha, int packedLight, int packedOverlay, ModelData modelData, RenderType renderType) {
-			RandomSource random = RandomSource.create();
+			RandomSource random = RandomSource.create_re();
 
 			for (Direction direction : Direction.values()) {
 				random.setSeed(42L);

@@ -1,7 +1,7 @@
-package com.simibubi.create.content.kinetics.crafter;
+package com.simibubi.create_re.content.kinetics.crafter;
 
 import com.google.gson.JsonObject;
-import com.simibubi.create.AllRecipeTypes;
+import com.simibubi.create_re.AllRecipeTypes;
 
 import net.minecraft.core.NonNullList;
 import net.minecraft.network.FriendlyByteBuf;

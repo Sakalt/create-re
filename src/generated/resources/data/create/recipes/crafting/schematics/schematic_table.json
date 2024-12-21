@@ -15,7 +15,7 @@
     " S "
   ],
   "result": {
-    "item": "create:schematic_table"
+    "item": "create_re:schematic_table"
   },
   "show_notification": true
 }

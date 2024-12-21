@@ -1,10 +1,10 @@
-package com.simibubi.create.foundation.item;
+package com.simibubi.create_re.foundation.item;
 
 import java.util.function.Consumer;
 
 import javax.annotation.Nonnull;
 
-import com.simibubi.create.foundation.blockEntity.SyncedBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.SyncedBlockEntity;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.item.ItemStack;

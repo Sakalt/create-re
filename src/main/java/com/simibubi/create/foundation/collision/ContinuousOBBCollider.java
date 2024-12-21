@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.collision;
+package com.simibubi.create_re.foundation.collision;
 
 import static java.lang.Math.abs;
 import static java.lang.Math.signum;
@@ -149,7 +149,7 @@ public class ContinuousOBBCollider extends OBBCollider {
 		}
 
 		public Vec3 getCollisionNormal() {
-			return normalAxis == null ? null : createSeparationVec(normalSeparation, normalAxis);
+			return normalAxis == null ? null : create_reSeparationVec(normalSeparation, normalAxis);
 		}
 
 		public Vec3 getCollisionPosition() {
@@ -159,7 +159,7 @@ public class ContinuousOBBCollider extends OBBCollider {
 		public Vec3 asSeparationVec(double obbStepHeight) {
 			if (isDiscreteCollision) {
 				if (stepSeparation <= obbStepHeight)
-					return createSeparationVec(stepSeparation, stepSeparationAxis);
+					return create_reSeparationVec(stepSeparation, stepSeparationAxis);
 				return super.asSeparationVec();
 			}
 			double t = getTimeOfImpact();

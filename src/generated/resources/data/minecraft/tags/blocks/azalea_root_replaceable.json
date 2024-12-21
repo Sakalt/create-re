@@ -1,11 +1,11 @@
 {
   "values": [
-    "create:asurine",
-    "create:crimsite",
-    "create:limestone",
-    "create:ochrum",
-    "create:scoria",
-    "create:scorchia",
-    "create:veridium"
+    "create_re:asurine",
+    "create_re:crimsite",
+    "create_re:limestone",
+    "create_re:ochrum",
+    "create_re:scoria",
+    "create_re:scorchia",
+    "create_re:veridium"
   ]
 }

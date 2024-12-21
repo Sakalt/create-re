@@ -3,10 +3,10 @@
 	"parent": "block/block",
 	"texture_size": [32, 32],
 	"textures": {
-		"5": "create:block/millstone",
-		"particle": "create:block/axis",
-		"1_0": "create:block/axis",
-		"1_1": "create:block/axis_top"
+		"5": "create_re:block/millstone",
+		"particle": "create_re:block/axis",
+		"1_0": "create_re:block/axis",
+		"1_1": "create_re:block/axis_top"
 	},
 	"elements": [
 		{

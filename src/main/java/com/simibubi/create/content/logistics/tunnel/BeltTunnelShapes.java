@@ -1,8 +1,8 @@
-package com.simibubi.create.content.logistics.tunnel;
+package com.simibubi.create_re.content.logistics.tunnel;
 
 import static net.minecraft.world.level.block.Block.box;
 
-import com.simibubi.create.foundation.utility.VoxelShaper;
+import com.simibubi.create_re.foundation.utility.VoxelShaper;
 
 import net.minecraft.core.Direction;
 import net.minecraft.core.Direction.Axis;

@@ -3,9 +3,9 @@
 	"parent": "block/block",
 	"ambientocclusion": false,
 	"textures": {
-		"18": "create:block/deployer",
-		"mechanical_press_head": "create:block/mechanical_press_head",
-		"mechanical_press_pole": "create:block/mechanical_press_pole"
+		"18": "create_re:block/deployer",
+		"mechanical_press_head": "create_re:block/mechanical_press_head",
+		"mechanical_press_pole": "create_re:block/mechanical_press_pole"
 	},
 	"elements": [
 		{

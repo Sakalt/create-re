@@ -1,6 +1,6 @@
-package com.simibubi.create.content.equipment.bell;
+package com.simibubi.create_re.content.equipment.bell;
 
-import com.simibubi.create.AllPartialModels;
+import com.simibubi.create_re.AllPartialModels;
 
 import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 import net.minecraft.core.BlockPos;

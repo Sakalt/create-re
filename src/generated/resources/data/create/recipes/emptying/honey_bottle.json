@@ -1,5 +1,5 @@
 {
-  "type": "create:emptying",
+  "type": "create_re:emptying",
   "ingredients": [
     {
       "item": "minecraft:honey_bottle"
@@ -11,7 +11,7 @@
     },
     {
       "amount": 250,
-      "fluid": "create:honey"
+      "fluid": "create_re:honey"
     }
   ]
 }

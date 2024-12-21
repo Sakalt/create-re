@@ -1,9 +1,9 @@
 {
   "values": [
-    "create:andesite_door",
-    "create:brass_door",
-    "create:copper_door",
-    "create:train_door",
-    "create:framed_glass_door"
+    "create_re:andesite_door",
+    "create_re:brass_door",
+    "create_re:copper_door",
+    "create_re:train_door",
+    "create_re:framed_glass_door"
   ]
 }

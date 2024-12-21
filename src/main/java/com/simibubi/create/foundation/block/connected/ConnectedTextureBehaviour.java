@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.block.connected;
+package com.simibubi.create_re.foundation.block.connected;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;

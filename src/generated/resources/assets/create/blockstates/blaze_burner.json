@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/blaze_burner/block"
+      "model": "create_re:block/blaze_burner/block"
     }
   }
 }

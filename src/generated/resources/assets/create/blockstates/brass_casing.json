@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/brass_casing"
+      "model": "create_re:block/brass_casing"
     }
   }
 }

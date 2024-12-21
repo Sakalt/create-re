@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:diorite_pillar"
+          "name": "create_re:diorite_pillar"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/diorite_pillar"
+  "random_sequence": "create_re:blocks/diorite_pillar"
 }

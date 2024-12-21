@@ -1,6 +1,6 @@
-package com.simibubi.create.content.kinetics.belt;
+package com.simibubi.create_re.content.kinetics.belt;
 
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.util.StringRepresentable;
 

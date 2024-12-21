@@ -1,8 +1,8 @@
 {
-  "type": "create:deploying",
+  "type": "create_re:deploying",
   "ingredients": [
     {
-      "item": "create:exposed_copper_tiles"
+      "item": "create_re:exposed_copper_tiles"
     },
     {
       "item": "minecraft:honeycomb_block"
@@ -11,7 +11,7 @@
   "keepHeldItem": true,
   "results": [
     {
-      "item": "create:waxed_exposed_copper_tiles"
+      "item": "create_re:waxed_exposed_copper_tiles"
     }
   ]
 }

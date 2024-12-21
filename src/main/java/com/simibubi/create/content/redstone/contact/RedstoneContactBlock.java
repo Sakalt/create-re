@@ -1,13 +1,13 @@
-package com.simibubi.create.content.redstone.contact;
+package com.simibubi.create_re.content.redstone.contact;
 
 import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.contraptions.elevator.ElevatorColumn;
-import com.simibubi.create.content.contraptions.elevator.ElevatorColumn.ColumnCoords;
-import com.simibubi.create.foundation.block.WrenchableDirectionalBlock;
-import com.simibubi.create.foundation.utility.BlockHelper;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.contraptions.elevator.ElevatorColumn;
+import com.simibubi.create_re.content.contraptions.elevator.ElevatorColumn.ColumnCoords;
+import com.simibubi.create_re.foundation.block.WrenchableDirectionalBlock;
+import com.simibubi.create_re.foundation.utility.BlockHelper;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
@@ -41,9 +41,9 @@ public class RedstoneContactBlock extends WrenchableDirectionalBlock {
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
 		builder.add(POWERED);
-		super.createBlockStateDefinition(builder);
+		super.create_reBlockStateDefinition(builder);
 	}
 
 	@Override

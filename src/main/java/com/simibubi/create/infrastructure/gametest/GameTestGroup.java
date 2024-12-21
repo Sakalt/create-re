@@ -1,11 +1,11 @@
-package com.simibubi.create.infrastructure.gametest;
+package com.simibubi.create_re.infrastructure.gametest;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import com.simibubi.create.Create;
+import com.simibubi.create_re.Create;
 
 /**
  * Allows for test method declarations to be concise by moving subdirectories and namespaces to the class level.

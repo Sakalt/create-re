@@ -1,6 +1,6 @@
-package com.simibubi.create.foundation.ponder;
+package com.simibubi.create_re.foundation.ponder;
 
-import com.simibubi.create.foundation.utility.Color;
+import com.simibubi.create_re.foundation.utility.Color;
 
 public enum PonderPalette {
 

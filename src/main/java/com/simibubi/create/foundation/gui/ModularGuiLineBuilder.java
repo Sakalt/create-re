@@ -1,14 +1,14 @@
-package com.simibubi.create.foundation.gui;
+package com.simibubi.create_re.foundation.gui;
 
 import java.util.function.BiConsumer;
 
-import com.simibubi.create.foundation.gui.widget.Label;
-import com.simibubi.create.foundation.gui.widget.ScrollInput;
-import com.simibubi.create.foundation.gui.widget.SelectionScrollInput;
-import com.simibubi.create.foundation.gui.widget.TooltipArea;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.foundation.gui.widget.Label;
+import com.simibubi.create_re.foundation.gui.widget.ScrollInput;
+import com.simibubi.create_re.foundation.gui.widget.SelectionScrollInput;
+import com.simibubi.create_re.foundation.gui.widget.TooltipArea;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.components.EditBox;
@@ -42,7 +42,7 @@ public class ModularGuiLineBuilder {
 	}
 
 	public ModularGuiLineBuilder customArea(int x, int width) {
-		target.customBoxes.add(Couple.create(x, width));
+		target.customBoxes.add(Couple.create_re(x, width));
 		return this;
 	}
 

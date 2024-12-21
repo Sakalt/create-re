@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/spruce_window"
+      "model": "create_re:block/spruce_window"
     }
   }
 }

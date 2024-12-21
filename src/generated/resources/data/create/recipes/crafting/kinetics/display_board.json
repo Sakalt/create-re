@@ -3,10 +3,10 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "create:electron_tube"
+      "item": "create_re:electron_tube"
     },
     "P": {
-      "item": "create:andesite_alloy"
+      "item": "create_re:andesite_alloy"
     }
   },
   "pattern": [
@@ -14,7 +14,7 @@
   ],
   "result": {
     "count": 2,
-    "item": "create:display_board"
+    "item": "create_re:display_board"
   },
   "show_notification": true
 }

@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:adjustable_chain_gearshift"
+          "name": "create_re:adjustable_chain_gearshift"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/adjustable_chain_gearshift"
+  "random_sequence": "create_re:blocks/adjustable_chain_gearshift"
 }

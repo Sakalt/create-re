@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "create:block/gearbox",
-		"4": "create:block/crushing_wheel_plates",
-		"5": "create:block/millstone",
-		"particle": "create:block/palettes/stone_types/cap/andesite_cut_cap"
+		"0": "create_re:block/gearbox",
+		"4": "create_re:block/crushing_wheel_plates",
+		"5": "create_re:block/millstone",
+		"particle": "create_re:block/palettes/stone_types/cap/andesite_cut_cap"
 	},
 	"elements": [
 		{

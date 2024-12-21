@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.fluid;
+package com.simibubi.create_re.foundation.fluid;
 
 import java.util.function.Consumer;
 

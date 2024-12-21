@@ -1,6 +1,6 @@
-package com.simibubi.create.foundation.blockEntity.behaviour.scrollValue;
+package com.simibubi.create_re.foundation.blockEntity.behaviour.scrollValue;
 
-import com.simibubi.create.foundation.gui.AllIcons;
+import com.simibubi.create_re.foundation.gui.AllIcons;
 
 public interface INamedIconOptions {
 	AllIcons getIcon();

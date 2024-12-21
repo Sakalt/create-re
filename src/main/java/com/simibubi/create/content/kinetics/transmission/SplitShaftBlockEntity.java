@@ -1,6 +1,6 @@
-package com.simibubi.create.content.kinetics.transmission;
+package com.simibubi.create_re.content.kinetics.transmission;
 
-import com.simibubi.create.content.kinetics.base.DirectionalShaftHalvesBlockEntity;
+import com.simibubi.create_re.content.kinetics.base.DirectionalShaftHalvesBlockEntity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

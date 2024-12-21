@@ -1,13 +1,13 @@
-package com.simibubi.create.content.logistics.vault;
+package com.simibubi.create_re.content.logistics.vault;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.api.connectivity.ConnectivityHandler;
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.item.ItemHelper;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.api.connectivity.ConnectivityHandler;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.item.ItemHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -37,7 +37,7 @@ import net.minecraftforge.common.util.ForgeSoundType;
 public class ItemVaultBlock extends Block implements IWrenchable, IBE<ItemVaultBlockEntity> {
 
 	public static final Property<Axis> HORIZONTAL_AXIS = BlockStateProperties.HORIZONTAL_AXIS;
-	public static final BooleanProperty LARGE = BooleanProperty.create("large");
+	public static final BooleanProperty LARGE = BooleanProperty.create_re("large");
 
 	public ItemVaultBlock(Properties p_i48440_1_) {
 		super(p_i48440_1_);
@@ -45,9 +45,9 @@ public class ItemVaultBlock extends Block implements IWrenchable, IBE<ItemVaultB
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
 		pBuilder.add(HORIZONTAL_AXIS, LARGE);
-		super.createBlockStateDefinition(pBuilder);
+		super.create_reBlockStateDefinition(pBuilder);
 	}
 
 	@Override

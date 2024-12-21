@@ -1,4 +1,4 @@
-package com.simibubi.create.content.contraptions.elevator;
+package com.simibubi.create_re.content.contraptions.elevator;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -9,12 +9,12 @@ import java.util.Objects;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.foundation.utility.BlockHelper;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.IntAttached;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.WorldAttached;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.foundation.utility.BlockHelper;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.IntAttached;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.WorldAttached;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

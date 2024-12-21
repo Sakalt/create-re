@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:weathered_copper_tile_stairs"
+        "recipe": "create_re:weathered_copper_tile_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -12,7 +12,7 @@
         "items": [
           {
             "items": [
-              "create:weathered_copper_tiles"
+              "create_re:weathered_copper_tiles"
             ]
           }
         ]
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:weathered_copper_tile_stairs"
+      "create_re:weathered_copper_tile_stairs"
     ]
   },
   "sends_telemetry_event": false

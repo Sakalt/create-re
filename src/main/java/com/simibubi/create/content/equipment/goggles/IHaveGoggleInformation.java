@@ -1,12 +1,12 @@
-package com.simibubi.create.content.equipment.goggles;
+package com.simibubi.create_re.content.equipment.goggles;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.simibubi.create.AllItems;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.LangBuilder;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.LangBuilder;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;

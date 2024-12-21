@@ -4,7 +4,7 @@
   "group": "cut_veridium_slab",
   "key": {
     "X": {
-      "item": "create:cut_veridium"
+      "item": "create_re:cut_veridium"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 6,
-    "item": "create:cut_veridium_slab"
+    "item": "create_re:cut_veridium_slab"
   },
   "show_notification": true
 }

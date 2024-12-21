@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:electron_tube"
+              "create_re:electron_tube"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/kinetics/deployer"
+        "recipe": "create_re:crafting/kinetics/deployer"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/kinetics/deployer"
+      "create_re:crafting/kinetics/deployer"
     ]
   },
   "sends_telemetry_event": false

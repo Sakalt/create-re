@@ -1,7 +1,7 @@
-package com.simibubi.create.content.trains.station;
+package com.simibubi.create_re.content.trains.station;
 
-import com.simibubi.create.content.decoration.slidingDoor.DoorControl;
-import com.simibubi.create.foundation.networking.BlockEntityConfigurationPacket;
+import com.simibubi.create_re.content.decoration.slidingDoor.DoorControl;
+import com.simibubi.create_re.foundation.networking.BlockEntityConfigurationPacket;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;

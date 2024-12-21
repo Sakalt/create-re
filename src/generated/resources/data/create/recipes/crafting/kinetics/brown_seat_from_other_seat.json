@@ -6,10 +6,10 @@
       "tag": "forge:dyes/brown"
     },
     {
-      "tag": "create:seats"
+      "tag": "create_re:seats"
     }
   ],
   "result": {
-    "item": "create:brown_seat"
+    "item": "create_re:brown_seat"
   }
 }

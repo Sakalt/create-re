@@ -1,12 +1,12 @@
-package com.simibubi.create.content.kinetics.crusher;
+package com.simibubi.create_re.content.kinetics.crusher;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.item.ItemHelper;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.item.ItemHelper;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -43,7 +43,7 @@ public class CrushingWheelControllerBlock extends DirectionalBlock implements IB
 		super(p_i48440_1_);
 	}
 
-	public static final BooleanProperty VALID = BooleanProperty.create("valid");
+	public static final BooleanProperty VALID = BooleanProperty.create_re("valid");
 
 	@Override
 	public boolean canBeReplaced(BlockState state, BlockPlaceContext useContext) {
@@ -56,10 +56,10 @@ public class CrushingWheelControllerBlock extends DirectionalBlock implements IB
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
 		builder.add(VALID);
 		builder.add(FACING);
-		super.createBlockStateDefinition(builder);
+		super.create_reBlockStateDefinition(builder);
 	}
 
 	public void entityInside(BlockState state, Level worldIn, BlockPos pos, Entity entityIn) {

@@ -1,25 +1,25 @@
 {
-  "parent": "create:drain",
+  "parent": "create_re:drain",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:steam_engine_builtin"
+      "trigger": "create_re:steam_engine_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.steam_engine.desc"
+      "translate": "advancement.create_re.steam_engine.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:steam_engine"
+      "item": "create_re:steam_engine"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.steam_engine"
+      "translate": "advancement.create_re.steam_engine"
     }
   },
   "requirements": [

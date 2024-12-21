@@ -1,17 +1,17 @@
-package com.simibubi.create.foundation.ponder.element;
+package com.simibubi.create_re.foundation.ponder.element;
 
 import java.util.List;
 import java.util.function.Supplier;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.foundation.gui.Theme;
-import com.simibubi.create.foundation.gui.element.BoxElement;
-import com.simibubi.create.foundation.ponder.PonderLocalization;
-import com.simibubi.create.foundation.ponder.PonderPalette;
-import com.simibubi.create.foundation.ponder.PonderScene;
-import com.simibubi.create.foundation.ponder.PonderScene.SceneTransform;
-import com.simibubi.create.foundation.ponder.ui.PonderUI;
-import com.simibubi.create.foundation.utility.Color;
+import com.simibubi.create_re.foundation.gui.Theme;
+import com.simibubi.create_re.foundation.gui.element.BoxElement;
+import com.simibubi.create_re.foundation.ponder.PonderLocalization;
+import com.simibubi.create_re.foundation.ponder.PonderPalette;
+import com.simibubi.create_re.foundation.ponder.PonderScene;
+import com.simibubi.create_re.foundation.ponder.PonderScene.SceneTransform;
+import com.simibubi.create_re.foundation.ponder.ui.PonderUI;
+import com.simibubi.create_re.foundation.utility.Color;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.FormattedText;

@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.mixin.accessor;
+package com.simibubi.create_re.foundation.mixin.accessor;
 
 import java.util.Map;
 
@@ -14,17 +14,17 @@ import net.minecraft.world.entity.EquipmentSlot;
 @Mixin(HumanoidArmorLayer.class)
 public interface HumanoidArmorLayerAccessor {
 	@Accessor("ARMOR_LOCATION_CACHE")
-	static Map<String, ResourceLocation> create$getArmorLocationCache() {
+	static Map<String, ResourceLocation> create_re$getArmorLocationCache() {
 		throw new RuntimeException();
 	}
 
 	@Accessor("innerModel")
-	HumanoidModel<?> create$getInnerModel();
+	HumanoidModel<?> create_re$getInnerModel();
 
 	@Accessor("outerModel")
-	HumanoidModel<?> create$getOuterModel();
+	HumanoidModel<?> create_re$getOuterModel();
 
 	@Invoker("setPartVisibility")
-	void create$callSetPartVisibility(HumanoidModel<?> model, EquipmentSlot slot);
+	void create_re$callSetPartVisibility(HumanoidModel<?> model, EquipmentSlot slot);
 	
 }

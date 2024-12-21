@@ -1,4 +1,4 @@
-package com.simibubi.create;
+package com.simibubi.create_re;
 
 import java.util.ArrayList;
 import java.util.EnumMap;
@@ -6,10 +6,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.simibubi.create.content.fluids.FluidTransportBehaviour;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.content.fluids.FluidTransportBehaviour;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 import net.minecraft.core.Direction;
@@ -215,7 +215,7 @@ public class AllPartialModels {
 
 	private static void putFoldingDoor(String path) {
 		FOLDING_DOORS.put(Create.asResource(path),
-			Couple.create(block(path + "/fold_left"), block(path + "/fold_right")));
+			Couple.create_re(block(path + "/fold_left"), block(path + "/fold_right")));
 	}
 
 	private static PartialModel block(String path) {

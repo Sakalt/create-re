@@ -1,6 +1,6 @@
-package com.simibubi.create.content.trains.track;
+package com.simibubi.create_re.content.trains.track;
 
-import static com.simibubi.create.content.trains.track.TrackMaterialFactory.make;
+import static com.simibubi.create_re.content.trains.track.TrackMaterialFactory.make;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,9 +10,9 @@ import java.util.function.Supplier;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.Create;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.Create;
 import com.tterrag.registrate.util.nullness.NonNullSupplier;
 
 import dev.engine_room.flywheel.lib.model.baked.PartialModel;
@@ -94,9 +94,9 @@ public class TrackMaterial {
 		return new ItemStack(getBlock(), count);
 	}
 
-	public TrackBlock createBlock(BlockBehaviour.Properties properties) {
+	public TrackBlock create_reBlock(BlockBehaviour.Properties properties) {
 		return (this.customFactory != null ? this.customFactory : this.trackType.factory)
-				.create(properties, this);
+				.create_re(properties, this);
 	}
 
 	public boolean isFromMod(String modId) {
@@ -142,7 +142,7 @@ public class TrackMaterial {
 	public static class TrackType {
 		@FunctionalInterface
 		public interface TrackBlockFactory {
-			TrackBlock create(BlockBehaviour.Properties properties, TrackMaterial material);
+			TrackBlock create_re(BlockBehaviour.Properties properties, TrackMaterial material);
 		}
 
 		public static final TrackType STANDARD = new TrackType(Create.asResource("standard"), TrackBlock::new);

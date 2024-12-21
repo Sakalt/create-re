@@ -1,5 +1,5 @@
 {
-  "type": "create:mixing",
+  "type": "create_re:mixing",
   "heatRequirement": "heated",
   "ingredients": [
     {
@@ -9,7 +9,7 @@
   "results": [
     {
       "amount": 1000,
-      "fluid": "create:honey"
+      "fluid": "create_re:honey"
     }
   ]
 }

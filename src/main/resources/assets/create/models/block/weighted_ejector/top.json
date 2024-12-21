@@ -3,10 +3,10 @@
 	"textures": {
 		"0": "block/stripped_spruce_log_top",
 		"2": "block/stripped_spruce_log",
-		"3": "create:block/weighted_ejector_casing",
-		"4": "create:block/weighted_ejector_top",
-		"5": "create:block/weighted_ejector_inner",
-		"particle": "create:block/weighted_ejector_top"
+		"3": "create_re:block/weighted_ejector_casing",
+		"4": "create_re:block/weighted_ejector_top",
+		"5": "create_re:block/weighted_ejector_inner",
+		"particle": "create_re:block/weighted_ejector_top"
 	},
 	"elements": [
 		{

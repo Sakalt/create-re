@@ -1,9 +1,9 @@
-package com.simibubi.create.content.trains.track;
+package com.simibubi.create_re.content.trains.track;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.foundation.block.ProperWaterloggedBlock;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -54,8 +54,8 @@ public class FakeTrackBlock extends Block implements EntityBlock, ProperWaterlog
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
-		super.createBlockStateDefinition(pBuilder.add(WATERLOGGED));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
+		super.create_reBlockStateDefinition(pBuilder.add(WATERLOGGED));
 	}
 	
 	@Override
@@ -88,7 +88,7 @@ public class FakeTrackBlock extends Block implements EntityBlock, ProperWaterlog
 
 	@Override
 	public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
-		return AllBlockEntityTypes.FAKE_TRACK.create(pPos, pState);
+		return AllBlockEntityTypes.FAKE_TRACK.create_re(pPos, pState);
 	}
 	
 	@Override

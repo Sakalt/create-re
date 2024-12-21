@@ -1,20 +1,20 @@
-package com.simibubi.create.content.decoration.palettes;
+package com.simibubi.create_re.content.decoration.palettes;
 
-import static com.simibubi.create.Create.REGISTRATE;
-import static com.simibubi.create.foundation.data.WindowGen.customWindowBlock;
-import static com.simibubi.create.foundation.data.WindowGen.customWindowPane;
-import static com.simibubi.create.foundation.data.WindowGen.framedGlass;
-import static com.simibubi.create.foundation.data.WindowGen.framedGlassPane;
-import static com.simibubi.create.foundation.data.WindowGen.woodenWindowBlock;
-import static com.simibubi.create.foundation.data.WindowGen.woodenWindowPane;
+import static com.simibubi.create_re.Create.REGISTRATE;
+import static com.simibubi.create_re.foundation.data.WindowGen.customWindowBlock;
+import static com.simibubi.create_re.foundation.data.WindowGen.customWindowPane;
+import static com.simibubi.create_re.foundation.data.WindowGen.framedGlass;
+import static com.simibubi.create_re.foundation.data.WindowGen.framedGlassPane;
+import static com.simibubi.create_re.foundation.data.WindowGen.woodenWindowBlock;
+import static com.simibubi.create_re.foundation.data.WindowGen.woodenWindowPane;
 
-import com.simibubi.create.AllCreativeModeTabs;
-import com.simibubi.create.AllSpriteShifts;
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.block.connected.HorizontalCTBehaviour;
-import com.simibubi.create.foundation.block.connected.SimpleCTBehaviour;
-import com.simibubi.create.foundation.data.BlockStateGen;
-import com.simibubi.create.foundation.data.WindowGen;
+import com.simibubi.create_re.AllCreativeModeTabs;
+import com.simibubi.create_re.AllSpriteShifts;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.block.connected.HorizontalCTBehaviour;
+import com.simibubi.create_re.foundation.block.connected.SimpleCTBehaviour;
+import com.simibubi.create_re.foundation.data.BlockStateGen;
+import com.simibubi.create_re.foundation.data.WindowGen;
 import com.tterrag.registrate.util.DataIngredient;
 import com.tterrag.registrate.util.entry.BlockEntry;
 

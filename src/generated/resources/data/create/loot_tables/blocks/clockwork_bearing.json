@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:clockwork_bearing"
+          "name": "create_re:clockwork_bearing"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/clockwork_bearing"
+  "random_sequence": "create_re:blocks/clockwork_bearing"
 }

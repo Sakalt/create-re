@@ -1,15 +1,15 @@
-package com.simibubi.create.content.equipment.wrench;
+package com.simibubi.create_re.content.equipment.wrench;
 
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.kinetics.base.DirectionalAxisKineticBlock;
-import com.simibubi.create.content.kinetics.base.DirectionalKineticBlock;
-import com.simibubi.create.content.kinetics.base.GeneratingKineticBlockEntity;
-import com.simibubi.create.content.kinetics.base.HorizontalAxisKineticBlock;
-import com.simibubi.create.content.kinetics.base.HorizontalKineticBlock;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.kinetics.base.RotatedPillarKineticBlock;
-import com.simibubi.create.foundation.utility.VoxelShaper;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.kinetics.base.DirectionalAxisKineticBlock;
+import com.simibubi.create_re.content.kinetics.base.DirectionalKineticBlock;
+import com.simibubi.create_re.content.kinetics.base.GeneratingKineticBlockEntity;
+import com.simibubi.create_re.content.kinetics.base.HorizontalAxisKineticBlock;
+import com.simibubi.create_re.content.kinetics.base.HorizontalKineticBlock;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.kinetics.base.RotatedPillarKineticBlock;
+import com.simibubi.create_re.foundation.utility.VoxelShaper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

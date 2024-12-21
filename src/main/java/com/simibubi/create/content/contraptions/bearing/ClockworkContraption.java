@@ -1,4 +1,4 @@
-package com.simibubi.create.content.contraptions.bearing;
+package com.simibubi.create_re.content.contraptions.bearing;
 
 import java.util.HashSet;
 import java.util.Queue;
@@ -6,10 +6,10 @@ import java.util.Set;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import com.simibubi.create.content.contraptions.AssemblyException;
-import com.simibubi.create.content.contraptions.Contraption;
-import com.simibubi.create.content.contraptions.ContraptionType;
-import com.simibubi.create.foundation.utility.NBTHelper;
+import com.simibubi.create_re.content.contraptions.AssemblyException;
+import com.simibubi.create_re.content.contraptions.Contraption;
+import com.simibubi.create_re.content.contraptions.ContraptionType;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

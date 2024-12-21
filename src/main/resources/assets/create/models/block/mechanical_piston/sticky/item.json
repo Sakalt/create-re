@@ -1,5 +1,5 @@
 {
-	"parent": "create:block/mechanical_piston/normal/item",
+	"parent": "create_re:block/mechanical_piston/normal/item",
     "textures": {
         "5": "block/piston_top_sticky"
     }

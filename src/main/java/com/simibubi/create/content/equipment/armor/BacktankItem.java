@@ -1,12 +1,12 @@
-package com.simibubi.create.content.equipment.armor;
+package com.simibubi.create_re.content.equipment.armor;
 
 import java.util.Locale;
 import java.util.function.Supplier;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create.content.equipment.armor.CapacityEnchantment.ICapacityEnchantable;
-import com.simibubi.create.foundation.item.LayeredArmorItem;
+import com.simibubi.create_re.content.equipment.armor.CapacityEnchantment.ICapacityEnchantable;
+import com.simibubi.create_re.foundation.item.LayeredArmorItem;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;

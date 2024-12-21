@@ -1,4 +1,4 @@
-package com.simibubi.create.content.kinetics.waterwheel;
+package com.simibubi.create_re.content.kinetics.waterwheel;
 
 import java.util.List;
 import java.util.Map;
@@ -7,16 +7,16 @@ import java.util.Optional;
 import javax.annotation.Nullable;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntityRenderer;
-import com.simibubi.create.foundation.model.BakedModelHelper;
-import com.simibubi.create.foundation.render.CachedBufferer;
-import com.simibubi.create.foundation.render.StitchedSprite;
-import com.simibubi.create.foundation.render.SuperByteBuffer;
-import com.simibubi.create.foundation.render.SuperByteBufferCache.Compartment;
-import com.simibubi.create.foundation.render.VirtualRenderHelper;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntityRenderer;
+import com.simibubi.create_re.foundation.model.BakedModelHelper;
+import com.simibubi.create_re.foundation.render.CachedBufferer;
+import com.simibubi.create_re.foundation.render.StitchedSprite;
+import com.simibubi.create_re.foundation.render.SuperByteBuffer;
+import com.simibubi.create_re.foundation.render.SuperByteBufferCache.Compartment;
+import com.simibubi.create_re.foundation.render.VirtualRenderHelper;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
 
 import it.unimi.dsi.fastutil.objects.Reference2ReferenceOpenHashMap;
 import net.minecraft.client.Minecraft;
@@ -150,7 +150,7 @@ public class WaterWheelRenderer<T extends WaterWheelBlockEntity> extends Kinetic
 			.getBlockModel(state);
 		if (model == null)
 			return null;
-		RandomSource random = RandomSource.create();
+		RandomSource random = RandomSource.create_re();
 		random.setSeed(42L);
 		List<BakedQuad> quads = model.getQuads(state, side, random, ModelData.EMPTY, null);
 		if (!quads.isEmpty()) {

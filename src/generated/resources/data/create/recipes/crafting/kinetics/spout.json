@@ -6,7 +6,7 @@
       "item": "minecraft:dried_kelp"
     },
     "T": {
-      "item": "create:copper_casing"
+      "item": "create_re:copper_casing"
     }
   },
   "pattern": [
@@ -14,7 +14,7 @@
     "P"
   ],
   "result": {
-    "item": "create:spout"
+    "item": "create_re:spout"
   },
   "show_notification": true
 }

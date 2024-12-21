@@ -1,12 +1,12 @@
-package com.simibubi.create.foundation.data.recipe;
+package com.simibubi.create_re.foundation.data.recipe;
 
 import java.util.function.UnaryOperator;
 
 import com.google.common.base.Supplier;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -19,7 +19,7 @@ public class MechanicalCraftingRecipeGen extends CreateRecipeProvider {
 
 	GeneratedRecipe
 
-	CRUSHING_WHEEL = create(AllBlocks.CRUSHING_WHEEL::get).returns(2)
+	CRUSHING_WHEEL = create_re(AllBlocks.CRUSHING_WHEEL::get).returns(2)
 		.recipe(b -> b.key('P', Ingredient.of(ItemTags.PLANKS))
 			.key('S', Ingredient.of(I.stone()))
 			.key('A', I.andesiteAlloy())
@@ -31,7 +31,7 @@ public class MechanicalCraftingRecipeGen extends CreateRecipeProvider {
 			.disallowMirrored()),
 
 		WAND_OF_SYMMETRY =
-			create(AllItems.WAND_OF_SYMMETRY::get).recipe(b -> b.key('E', Ingredient.of(Tags.Items.ENDER_PEARLS))
+			create_re(AllItems.WAND_OF_SYMMETRY::get).recipe(b -> b.key('E', Ingredient.of(Tags.Items.ENDER_PEARLS))
 				.key('G', Ingredient.of(Tags.Items.GLASS))
 				.key('P', I.precisionMechanism())
 				.key('O', Ingredient.of(Tags.Items.OBSIDIAN))
@@ -42,7 +42,7 @@ public class MechanicalCraftingRecipeGen extends CreateRecipeProvider {
 				.patternLine(" B ")
 				.patternLine(" O ")),
 		
-		EXTENDO_GRIP = create(AllItems.EXTENDO_GRIP::get).returns(1)
+		EXTENDO_GRIP = create_re(AllItems.EXTENDO_GRIP::get).returns(1)
 			.recipe(b -> b.key('L', Ingredient.of(I.brass()))
 				.key('R', I.precisionMechanism())
 				.key('H', AllItems.BRASS_HAND.get())
@@ -54,7 +54,7 @@ public class MechanicalCraftingRecipeGen extends CreateRecipeProvider {
 				.patternLine(" H ")
 				.disallowMirrored()),
 
-		POTATO_CANNON = create(AllItems.POTATO_CANNON::get).returns(1)
+		POTATO_CANNON = create_re(AllItems.POTATO_CANNON::get).returns(1)
 			.recipe(b -> b.key('L', I.andesiteAlloy())
 				.key('R', I.precisionMechanism())
 				.key('S', AllBlocks.FLUID_PIPE.get())
@@ -68,7 +68,7 @@ public class MechanicalCraftingRecipeGen extends CreateRecipeProvider {
 		super(p_i48262_1_);
 	}
 
-	GeneratedRecipeBuilder create(Supplier<ItemLike> result) {
+	GeneratedRecipeBuilder create_re(Supplier<ItemLike> result) {
 		return new GeneratedRecipeBuilder(result);
 	}
 

@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.recipe;
+package com.simibubi.create_re.foundation.recipe;
 
 import java.util.Collections;
 import java.util.List;

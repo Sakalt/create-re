@@ -1,11 +1,11 @@
-package com.simibubi.create.content.logistics.funnel;
+package com.simibubi.create_re.content.logistics.funnel;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.foundation.advancement.AdvancementBehaviour;
-import com.simibubi.create.foundation.block.ProperWaterloggedBlock;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.foundation.advancement.AdvancementBehaviour;
+import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -34,7 +34,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public abstract class FunnelBlock extends AbstractDirectionalFunnelBlock {
 
-	public static final BooleanProperty EXTRACTING = BooleanProperty.create("extracting");
+	public static final BooleanProperty EXTRACTING = BooleanProperty.create_re("extracting");
 
 	public FunnelBlock(Properties p_i48415_1_) {
 		super(p_i48415_1_);
@@ -61,8 +61,8 @@ public abstract class FunnelBlock extends AbstractDirectionalFunnelBlock {
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
-		super.createBlockStateDefinition(builder.add(EXTRACTING));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
+		super.create_reBlockStateDefinition(builder.add(EXTRACTING));
 	}
 	
 	@Override

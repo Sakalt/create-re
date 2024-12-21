@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "create:andesite_alloy_block"
+      "item": "create_re:andesite_alloy_block"
     }
   ],
   "result": {
     "count": 9,
-    "item": "create:andesite_alloy"
+    "item": "create_re:andesite_alloy"
   }
 }

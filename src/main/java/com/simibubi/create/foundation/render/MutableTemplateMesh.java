@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.render;
+package com.simibubi.create_re.foundation.render;
 
 public class MutableTemplateMesh extends TemplateMesh {
 	public MutableTemplateMesh(int[] data) {

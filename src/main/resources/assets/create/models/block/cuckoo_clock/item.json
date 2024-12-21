@@ -4,7 +4,7 @@
 	"textures": {
 		"1": "block/stripped_oak_log",
 		"2": "block/spruce_log",
-		"3": "create:block/cuckoo_clock",
+		"3": "create_re:block/cuckoo_clock",
 		"4": "block/spruce_log_top",
 		"particle": "block/stripped_spruce_log"
 	},

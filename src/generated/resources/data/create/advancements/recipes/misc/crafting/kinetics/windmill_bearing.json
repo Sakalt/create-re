@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:andesite_alloy"
+              "create_re:andesite_alloy"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/kinetics/windmill_bearing"
+        "recipe": "create_re:crafting/kinetics/windmill_bearing"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/kinetics/windmill_bearing"
+      "create_re:crafting/kinetics/windmill_bearing"
     ]
   },
   "sends_telemetry_event": false

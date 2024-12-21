@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:pulse_extender"
+          "name": "create_re:pulse_extender"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/pulse_extender"
+  "random_sequence": "create_re:blocks/pulse_extender"
 }

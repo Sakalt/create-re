@@ -1,5 +1,5 @@
 {
-  "type": "create:crushing",
+  "type": "create_re:crushing",
   "ingredients": [
     {
       "item": "minecraft:deepslate_copper_ore"
@@ -9,15 +9,15 @@
   "results": [
     {
       "count": 7,
-      "item": "create:crushed_raw_copper"
+      "item": "create_re:crushed_raw_copper"
     },
     {
       "chance": 0.25,
-      "item": "create:crushed_raw_copper"
+      "item": "create_re:crushed_raw_copper"
     },
     {
       "chance": 0.75,
-      "item": "create:experience_nugget"
+      "item": "create_re:experience_nugget"
     },
     {
       "chance": 0.125,

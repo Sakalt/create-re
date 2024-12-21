@@ -1,9 +1,9 @@
-package com.simibubi.create.content.fluids.transfer;
+package com.simibubi.create_re.content.fluids.transfer;
 
-import com.simibubi.create.AllFluids;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.fluids.potion.PotionFluidHandler;
-import com.simibubi.create.foundation.fluid.FluidHelper;
+import com.simibubi.create_re.AllFluids;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.fluids.potion.PotionFluidHandler;
+import com.simibubi.create_re.foundation.fluid.FluidHelper;
 
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;

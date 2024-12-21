@@ -1,16 +1,16 @@
 {
-  "parent": "create:glass_pipe",
+  "parent": "create_re:glass_pipe",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:water_supply_builtin"
+      "trigger": "create_re:water_supply_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.water_supply.desc"
+      "translate": "advancement.create_re.water_supply.desc"
     },
     "frame": "task",
     "hidden": false,
@@ -19,7 +19,7 @@
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.water_supply"
+      "translate": "advancement.create_re.water_supply"
     }
   },
   "requirements": [

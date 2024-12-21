@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "X": {
-      "item": "create:oxidized_copper_tiles"
+      "item": "create_re:oxidized_copper_tiles"
     }
   },
   "pattern": [
@@ -11,7 +11,7 @@
   ],
   "result": {
     "count": 6,
-    "item": "create:oxidized_copper_tile_slab"
+    "item": "create_re:oxidized_copper_tile_slab"
   },
   "show_notification": true
 }

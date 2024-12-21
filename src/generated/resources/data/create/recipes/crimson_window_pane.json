@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "create:crimson_window"
+      "item": "create_re:crimson_window"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 16,
-    "item": "create:crimson_window_pane"
+    "item": "create_re:crimson_window_pane"
   },
   "show_notification": true
 }

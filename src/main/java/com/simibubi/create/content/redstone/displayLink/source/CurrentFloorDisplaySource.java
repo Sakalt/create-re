@@ -1,9 +1,9 @@
-package com.simibubi.create.content.redstone.displayLink.source;
+package com.simibubi.create_re.content.redstone.displayLink.source;
 
-import com.simibubi.create.content.contraptions.elevator.ElevatorContactBlockEntity;
-import com.simibubi.create.content.redstone.displayLink.DisplayLinkContext;
-import com.simibubi.create.content.redstone.displayLink.target.DisplayTargetStats;
-import com.simibubi.create.foundation.utility.Components;
+import com.simibubi.create_re.content.contraptions.elevator.ElevatorContactBlockEntity;
+import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkContext;
+import com.simibubi.create_re.content.redstone.displayLink.target.DisplayTargetStats;
+import com.simibubi.create_re.foundation.utility.Components;
 
 import net.minecraft.network.chat.MutableComponent;
 

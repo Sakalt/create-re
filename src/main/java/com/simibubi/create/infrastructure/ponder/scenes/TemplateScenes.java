@@ -1,7 +1,7 @@
-package com.simibubi.create.infrastructure.ponder.scenes;
+package com.simibubi.create_re.infrastructure.ponder.scenes;
 
-import com.simibubi.create.foundation.ponder.SceneBuilder;
-import com.simibubi.create.foundation.ponder.SceneBuildingUtil;
+import com.simibubi.create_re.foundation.ponder.SceneBuilder;
+import com.simibubi.create_re.foundation.ponder.SceneBuildingUtil;
 
 import net.minecraft.core.Direction;
 

@@ -1,27 +1,27 @@
-package com.simibubi.create.infrastructure.ponder.scenes.fluid;
+package com.simibubi.create_re.infrastructure.ponder.scenes.fluid;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllFluids;
-import com.simibubi.create.content.fluids.FluidFX;
-import com.simibubi.create.content.fluids.pump.PumpBlock;
-import com.simibubi.create.content.fluids.spout.SpoutBlockEntity;
-import com.simibubi.create.content.fluids.tank.CreativeFluidTankBlockEntity;
-import com.simibubi.create.content.fluids.tank.CreativeFluidTankBlockEntity.CreativeSmartFluidTank;
-import com.simibubi.create.content.fluids.tank.FluidTankBlock;
-import com.simibubi.create.content.fluids.tank.FluidTankBlockEntity;
-import com.simibubi.create.content.redstone.nixieTube.NixieTubeBlockEntity;
-import com.simibubi.create.foundation.fluid.FluidHelper;
-import com.simibubi.create.foundation.gui.AllIcons;
-import com.simibubi.create.foundation.ponder.ElementLink;
-import com.simibubi.create.foundation.ponder.PonderPalette;
-import com.simibubi.create.foundation.ponder.SceneBuilder;
-import com.simibubi.create.foundation.ponder.SceneBuildingUtil;
-import com.simibubi.create.foundation.ponder.Selection;
-import com.simibubi.create.foundation.ponder.element.InputWindowElement;
-import com.simibubi.create.foundation.ponder.element.WorldSectionElement;
-import com.simibubi.create.foundation.ponder.instruction.EmitParticlesInstruction.Emitter;
-import com.simibubi.create.foundation.utility.Pointing;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllFluids;
+import com.simibubi.create_re.content.fluids.FluidFX;
+import com.simibubi.create_re.content.fluids.pump.PumpBlock;
+import com.simibubi.create_re.content.fluids.spout.SpoutBlockEntity;
+import com.simibubi.create_re.content.fluids.tank.CreativeFluidTankBlockEntity;
+import com.simibubi.create_re.content.fluids.tank.CreativeFluidTankBlockEntity.CreativeSmartFluidTank;
+import com.simibubi.create_re.content.fluids.tank.FluidTankBlock;
+import com.simibubi.create_re.content.fluids.tank.FluidTankBlockEntity;
+import com.simibubi.create_re.content.redstone.nixieTube.NixieTubeBlockEntity;
+import com.simibubi.create_re.foundation.fluid.FluidHelper;
+import com.simibubi.create_re.foundation.gui.AllIcons;
+import com.simibubi.create_re.foundation.ponder.ElementLink;
+import com.simibubi.create_re.foundation.ponder.PonderPalette;
+import com.simibubi.create_re.foundation.ponder.SceneBuilder;
+import com.simibubi.create_re.foundation.ponder.SceneBuildingUtil;
+import com.simibubi.create_re.foundation.ponder.Selection;
+import com.simibubi.create_re.foundation.ponder.element.InputWindowElement;
+import com.simibubi.create_re.foundation.ponder.element.WorldSectionElement;
+import com.simibubi.create_re.foundation.ponder.instruction.EmitParticlesInstruction.Emitter;
+import com.simibubi.create_re.foundation.utility.Pointing;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -37,7 +37,7 @@ import net.minecraftforge.fluids.capability.IFluidHandler.FluidAction;
 public class FluidTankScenes {
 
 	public static void storage(SceneBuilder scene, SceneBuildingUtil util) {
-		RandomSource random = RandomSource.create();
+		RandomSource random = RandomSource.create_re();
 
 		scene.title("fluid_tank_storage", "Storing Fluids in Fluid Tanks");
 		scene.configureBasePlate(0, 0, 5);
@@ -196,13 +196,13 @@ public class FluidTankScenes {
 		ItemStack chocBucket = AllFluids.CHOCOLATE.get()
 			.getFluidType()
 			.getBucket(new FluidStack(FluidHelper.convertToStill(AllFluids.CHOCOLATE.get()), 1000));
-		scene.world.createItemOnBeltLike(util.grid.at(3, 1, 0), Direction.WEST, chocBucket);
+		scene.world.create_reItemOnBeltLike(util.grid.at(3, 1, 0), Direction.WEST, chocBucket);
 		scene.idle(40);
 		scene.world.modifyBlockEntityNBT(util.select.position(util.grid.at(4, 3, 0)), SpoutBlockEntity.class,
 			nbt -> nbt.putInt("ProcessingTicks", 20));
 		scene.idle(20);
 		scene.world.removeItemsFromBelt(util.grid.at(4, 1, 0));
-		scene.world.createItemOnBeltLike(util.grid.at(4, 1, 0), Direction.UP, chocBucket);
+		scene.world.create_reItemOnBeltLike(util.grid.at(4, 1, 0), Direction.UP, chocBucket);
 		for (int i = 0; i < 10; i++) {
 			scene.effects.emitParticles(util.vector.topOf(3, 1, 1)
 				.add(0, 1 / 16f, 0),

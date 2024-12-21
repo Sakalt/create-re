@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:experience_nugget"
+              "create_re:experience_nugget"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/materials/experience_block"
+        "recipe": "create_re:crafting/materials/experience_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/materials/experience_block"
+      "create_re:crafting/materials/experience_block"
     ]
   },
   "sends_telemetry_event": false

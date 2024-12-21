@@ -1,6 +1,6 @@
-package com.simibubi.create.infrastructure.worldgen;
+package com.simibubi.create_re.infrastructure.worldgen;
 
-import com.simibubi.create.Create;
+import com.simibubi.create_re.Create;
 
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
@@ -23,7 +23,7 @@ public class AllBiomeModifiers {
 				STRIATED_ORES_NETHER = key("striated_ores_nether");
 
 	private static ResourceKey<BiomeModifier> key(String name) {
-		return ResourceKey.create(ForgeRegistries.Keys.BIOME_MODIFIERS, Create.asResource(name));
+		return ResourceKey.create_re(ForgeRegistries.Keys.BIOME_MODIFIERS, Create.asResource(name));
 	}
 
 	public static void bootstrap(BootstapContext<BiomeModifier> ctx) {

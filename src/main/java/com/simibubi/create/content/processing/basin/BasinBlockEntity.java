@@ -1,4 +1,4 @@
-package com.simibubi.create.content.processing.basin;
+package com.simibubi.create_re.content.processing.basin;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -9,37 +9,37 @@ import java.util.Optional;
 import javax.annotation.Nonnull;
 
 import com.google.common.collect.ImmutableList;
-import com.simibubi.create.AllParticleTypes;
-import com.simibubi.create.AllTags;
-import com.simibubi.create.content.equipment.goggles.IHaveGoggleInformation;
-import com.simibubi.create.content.fluids.FluidFX;
-import com.simibubi.create.content.fluids.particle.FluidParticleData;
-import com.simibubi.create.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
-import com.simibubi.create.content.kinetics.mixer.MechanicalMixerBlockEntity;
-import com.simibubi.create.content.processing.burner.BlazeBurnerBlock;
-import com.simibubi.create.content.processing.burner.BlazeBurnerBlock.HeatLevel;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.ValueBoxTransform;
-import com.simibubi.create.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.fluid.SmartFluidTankBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.fluid.SmartFluidTankBehaviour.TankSegment;
-import com.simibubi.create.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
-import com.simibubi.create.foundation.fluid.CombinedTankWrapper;
-import com.simibubi.create.foundation.item.ItemHelper;
-import com.simibubi.create.foundation.item.SmartInventory;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.BlockHelper;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.IntAttached;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.LangBuilder;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat.Chaser;
+import com.simibubi.create_re.AllParticleTypes;
+import com.simibubi.create_re.AllTags;
+import com.simibubi.create_re.content.equipment.goggles.IHaveGoggleInformation;
+import com.simibubi.create_re.content.fluids.FluidFX;
+import com.simibubi.create_re.content.fluids.particle.FluidParticleData;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
+import com.simibubi.create_re.content.kinetics.mixer.MechanicalMixerBlockEntity;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock.HeatLevel;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBoxTransform;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.fluid.SmartFluidTankBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.fluid.SmartFluidTankBehaviour.TankSegment;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
+import com.simibubi.create_re.foundation.fluid.CombinedTankWrapper;
+import com.simibubi.create_re.foundation.item.ItemHelper;
+import com.simibubi.create_re.foundation.item.SmartInventory;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.BlockHelper;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.IntAttached;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.LangBuilder;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat.Chaser;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
@@ -115,8 +115,8 @@ public class BasinBlockEntity extends SmartBlockEntity implements IHaveGoggleInf
 		ingredientRotationSpeed = LerpedFloat.linear()
 			.startWithValue(0);
 
-		invs = Couple.create(inputInventory, outputInventory);
-		tanks = Couple.create(inputTank, outputTank);
+		invs = Couple.create_re(inputInventory, outputInventory);
+		tanks = Couple.create_re(inputTank, outputTank);
 		visualizedOutputItems = Collections.synchronizedList(new ArrayList<>());
 		visualizedOutputFluids = Collections.synchronizedList(new ArrayList<>());
 		disabledSpoutputs = new ArrayList<>();
@@ -337,7 +337,7 @@ public class BasinBlockEntity extends SmartBlockEntity implements IHaveGoggleInf
 	public void tick() {
 		super.tick();
 		if (level.isClientSide) {
-			createFluidParticles();
+			create_reFluidParticles();
 			tickVisualizedOutputs();
 			ingredientRotationSpeed.tickChaser();
 			ingredientRotation.setValue(ingredientRotation.getValue() + ingredientRotationSpeed.getValue());
@@ -635,11 +635,11 @@ public class BasinBlockEntity extends SmartBlockEntity implements IHaveGoggleInf
 		visualizedOutputItems.removeIf(IntAttached::isOrBelowZero);
 	}
 
-	private void createFluidParticles() {
+	private void create_reFluidParticles() {
 		RandomSource r = level.random;
 
 		if (!visualizedOutputFluids.isEmpty())
-			createOutputFluidParticles(r);
+			create_reOutputFluidParticles(r);
 
 		if (!areFluidsMoving && r.nextFloat() > 1 / 8f)
 			return;
@@ -664,7 +664,7 @@ public class BasinBlockEntity extends SmartBlockEntity implements IHaveGoggleInf
 		float surface = worldPosition.getY() + rim + space * fluidLevel + 1 / 32f;
 
 		if (areFluidsMoving) {
-			createMovingFluidParticles(surface, segments);
+			create_reMovingFluidParticles(surface, segments);
 			return;
 		}
 
@@ -683,7 +683,7 @@ public class BasinBlockEntity extends SmartBlockEntity implements IHaveGoggleInf
 		}
 	}
 
-	private void createOutputFluidParticles(RandomSource r) {
+	private void create_reOutputFluidParticles(RandomSource r) {
 		BlockState blockState = getBlockState();
 		if (!(blockState.getBlock() instanceof BasinBlock))
 			return;
@@ -707,7 +707,7 @@ public class BasinBlockEntity extends SmartBlockEntity implements IHaveGoggleInf
 		}
 	}
 
-	private void createMovingFluidParticles(float surface, int segments) {
+	private void create_reMovingFluidParticles(float surface, int segments) {
 		Vec3 pointer = new Vec3(1, 0, 0).scale(1 / 16f);
 		float interval = 360f / segments;
 		Vec3 centerOf = VecHelper.getCenterOf(worldPosition);

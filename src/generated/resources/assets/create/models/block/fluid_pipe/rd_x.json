@@ -1,5 +1,5 @@
 {
-  "parent": "create:block/fluid_pipe/core_x",
+  "parent": "create_re:block/fluid_pipe/core_x",
   "elements": [
     {
       "faces": {

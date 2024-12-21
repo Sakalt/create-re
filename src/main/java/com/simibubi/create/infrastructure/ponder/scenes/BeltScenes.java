@@ -1,32 +1,32 @@
-package com.simibubi.create.infrastructure.ponder.scenes;
+package com.simibubi.create_re.infrastructure.ponder.scenes;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.fluids.spout.SpoutBlockEntity;
-import com.simibubi.create.content.kinetics.belt.BeltBlock;
-import com.simibubi.create.content.kinetics.belt.BeltBlockEntity;
-import com.simibubi.create.content.kinetics.belt.BeltPart;
-import com.simibubi.create.content.kinetics.mechanicalArm.ArmBlockEntity.Phase;
-import com.simibubi.create.content.kinetics.press.MechanicalPressBlockEntity;
-import com.simibubi.create.content.kinetics.press.PressingBehaviour.Mode;
-import com.simibubi.create.content.kinetics.simpleRelays.ShaftBlock;
-import com.simibubi.create.foundation.ponder.ElementLink;
-import com.simibubi.create.foundation.ponder.PonderPalette;
-import com.simibubi.create.foundation.ponder.SceneBuilder;
-import com.simibubi.create.foundation.ponder.SceneBuildingUtil;
-import com.simibubi.create.foundation.ponder.Selection;
-import com.simibubi.create.foundation.ponder.element.EntityElement;
-import com.simibubi.create.foundation.ponder.element.InputWindowElement;
-import com.simibubi.create.foundation.ponder.element.ParrotElement;
-import com.simibubi.create.foundation.ponder.element.ParrotElement.FaceCursorPose;
-import com.simibubi.create.foundation.ponder.element.ParrotElement.FacePointOfInterestPose;
-import com.simibubi.create.foundation.ponder.element.WorldSectionElement;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.Pointing;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.fluids.spout.SpoutBlockEntity;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlock;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlockEntity;
+import com.simibubi.create_re.content.kinetics.belt.BeltPart;
+import com.simibubi.create_re.content.kinetics.mechanicalArm.ArmBlockEntity.Phase;
+import com.simibubi.create_re.content.kinetics.press.MechanicalPressBlockEntity;
+import com.simibubi.create_re.content.kinetics.press.PressingBehaviour.Mode;
+import com.simibubi.create_re.content.kinetics.simpleRelays.ShaftBlock;
+import com.simibubi.create_re.foundation.ponder.ElementLink;
+import com.simibubi.create_re.foundation.ponder.PonderPalette;
+import com.simibubi.create_re.foundation.ponder.SceneBuilder;
+import com.simibubi.create_re.foundation.ponder.SceneBuildingUtil;
+import com.simibubi.create_re.foundation.ponder.Selection;
+import com.simibubi.create_re.foundation.ponder.element.EntityElement;
+import com.simibubi.create_re.foundation.ponder.element.InputWindowElement;
+import com.simibubi.create_re.foundation.ponder.element.ParrotElement;
+import com.simibubi.create_re.foundation.ponder.element.ParrotElement.FaceCursorPose;
+import com.simibubi.create_re.foundation.ponder.element.ParrotElement.FacePointOfInterestPose;
+import com.simibubi.create_re.foundation.ponder.element.WorldSectionElement;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.Pointing;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -337,15 +337,15 @@ public class BeltScenes {
 
 		ItemStack stack = new ItemStack(Items.COPPER_BLOCK);
 		ElementLink<EntityElement> item =
-			scene.world.createItemEntity(util.vector.centerOf(0, 4, 2), util.vector.of(0, 0, 0), stack);
+			scene.world.create_reItemEntity(util.vector.centerOf(0, 4, 2), util.vector.of(0, 0, 0), stack);
 		scene.idle(13);
 		scene.world.modifyEntity(item, Entity::discard);
 		BlockPos beltEnd = util.grid.at(0, 1, 2);
-		scene.world.createItemOnBelt(beltEnd, Direction.DOWN, stack);
+		scene.world.create_reItemOnBelt(beltEnd, Direction.DOWN, stack);
 
 		scene.idle(20);
 
-		ElementLink<ParrotElement> parrot = scene.special.createBirb(util.vector.topOf(0, 1, 2)
+		ElementLink<ParrotElement> parrot = scene.special.create_reBirb(util.vector.topOf(0, 1, 2)
 			.add(0, -3 / 16f, 0), FacePointOfInterestPose::new);
 		scene.special.moveParrot(parrot, util.vector.of(1.78, 0, 0), 40);
 		scene.special.movePointOfInterest(util.grid.at(1, 1, 3));
@@ -356,13 +356,13 @@ public class BeltScenes {
 			.text("Moving belts will transport Items and other Entities");
 
 		scene.idle(20);
-		item = scene.world.createItemEntity(util.vector.centerOf(0, 4, 2), util.vector.of(0, 0, 0), stack);
+		item = scene.world.create_reItemEntity(util.vector.centerOf(0, 4, 2), util.vector.of(0, 0, 0), stack);
 		scene.special.movePointOfInterest(util.grid.at(0, 3, 2));
 		scene.idle(10);
 		scene.special.movePointOfInterest(beltEnd);
 		scene.idle(3);
 		scene.world.modifyEntity(item, Entity::discard);
-		scene.world.createItemOnBelt(beltEnd, Direction.DOWN, stack);
+		scene.world.create_reItemOnBelt(beltEnd, Direction.DOWN, stack);
 		scene.idle(8);
 
 		scene.special.movePointOfInterest(util.grid.at(3, 2, 1));
@@ -501,7 +501,7 @@ public class BeltScenes {
 		scene.overlay.showControls(new InputWindowElement(topOf, Pointing.DOWN).rightClick()
 			.withItem(new ItemStack(Items.COPPER_BLOCK)), 20);
 		scene.idle(7);
-		scene.world.createItemOnBeltLike(depotPos, Direction.NORTH, new ItemStack(Items.COPPER_BLOCK));
+		scene.world.create_reItemOnBeltLike(depotPos, Direction.NORTH, new ItemStack(Items.COPPER_BLOCK));
 		scene.idle(10);
 		scene.overlay.showText(70)
 			.attachKeyFrame()
@@ -523,13 +523,13 @@ public class BeltScenes {
 			.placeNearTarget()
 			.pointAt(util.vector.blockSurface(depotPos.above(2), Direction.WEST));
 		ItemStack bottle = new ItemStack(Items.BUCKET);
-		scene.world.createItemOnBeltLike(depotPos, Direction.NORTH, bottle);
+		scene.world.create_reItemOnBeltLike(depotPos, Direction.NORTH, bottle);
 		scene.idle(20);
 		scene.world.modifyBlockEntityNBT(util.select.position(depotPos.above(2)), SpoutBlockEntity.class,
 			nbt -> nbt.putInt("ProcessingTicks", 20));
 		scene.idle(20);
 		scene.world.removeItemsFromBelt(depotPos);
-		scene.world.createItemOnBeltLike(depotPos, Direction.UP, new ItemStack(Items.WATER_BUCKET));
+		scene.world.create_reItemOnBeltLike(depotPos, Direction.UP, new ItemStack(Items.WATER_BUCKET));
 		scene.world.modifyBlockEntityNBT(util.select.position(depotPos.above(2)), SpoutBlockEntity.class,
 			nbt -> nbt.putBoolean("Splash", true));
 		scene.idle(30);
@@ -544,7 +544,7 @@ public class BeltScenes {
 		BlockPos pressPos = depotPos.above(2)
 			.west();
 		ItemStack copper = new ItemStack(Items.COPPER_INGOT);
-		scene.world.createItemOnBeltLike(depotPos, Direction.NORTH, copper);
+		scene.world.create_reItemOnBeltLike(depotPos, Direction.NORTH, copper);
 		Vec3 depotCenter = util.vector.centerOf(depotPos);
 		scene.idle(10);
 
@@ -556,7 +556,7 @@ public class BeltScenes {
 			.makePressingParticleEffect(depotCenter.add(0, 8 / 16f, 0), copper));
 		scene.world.removeItemsFromBelt(depotPos);
 		ItemStack sheet = AllItems.COPPER_SHEET.asStack();
-		scene.world.createItemOnBeltLike(depotPos, Direction.UP, sheet);
+		scene.world.create_reItemOnBeltLike(depotPos, Direction.UP, sheet);
 
 		scene.idle(20);
 		scene.world.hideIndependentSection(spout, Direction.SOUTH);

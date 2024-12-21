@@ -1,6 +1,6 @@
-package com.simibubi.create.content.legacy;
+package com.simibubi.create_re.content.legacy;
 
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;

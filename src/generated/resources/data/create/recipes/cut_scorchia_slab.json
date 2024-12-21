@@ -4,7 +4,7 @@
   "group": "cut_scorchia_slab",
   "key": {
     "X": {
-      "item": "create:cut_scorchia"
+      "item": "create_re:cut_scorchia"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 6,
-    "item": "create:cut_scorchia_slab"
+    "item": "create_re:cut_scorchia_slab"
   },
   "show_notification": true
 }

@@ -1,11 +1,11 @@
-package com.simibubi.create.content.trains.entity;
+package com.simibubi.create_re.content.trains.entity;
 
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.AllSoundEvents.SoundEntry;
-import com.simibubi.create.content.trains.entity.Carriage.DimensionalCarriageEntity;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat.Chaser;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.AllSoundEvents.SoundEntry;
+import com.simibubi.create_re.content.trains.entity.Carriage.DimensionalCarriageEntity;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat.Chaser;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.sounds.AbstractTickableSoundInstance;
@@ -266,7 +266,7 @@ public class CarriageSounds {
 	class LoopingSound extends AbstractTickableSoundInstance {
 
 		protected LoopingSound(SoundEvent p_119606_, SoundSource p_119607_) {
-			super(p_119606_, p_119607_, SoundInstance.createUnseededRandom());
+			super(p_119606_, p_119607_, SoundInstance.create_reUnseededRandom());
 			attenuation = Attenuation.LINEAR;
 			looping = true;
 			delay = 0;

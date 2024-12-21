@@ -1,7 +1,7 @@
-package com.simibubi.create.content.contraptions;
+package com.simibubi.create_re.content.contraptions;
 
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

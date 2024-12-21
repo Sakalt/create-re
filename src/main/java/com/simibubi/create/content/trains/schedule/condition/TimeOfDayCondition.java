@@ -1,18 +1,18 @@
-package com.simibubi.create.content.trains.schedule.condition;
+package com.simibubi.create_re.content.trains.schedule.condition;
 
 import java.util.List;
 
 import org.apache.commons.lang3.mutable.MutableObject;
 
 import com.google.common.collect.ImmutableList;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.trains.entity.Train;
-import com.simibubi.create.foundation.gui.ModularGuiLineBuilder;
-import com.simibubi.create.foundation.gui.widget.Label;
-import com.simibubi.create.foundation.gui.widget.ScrollInput;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.trains.entity.Train;
+import com.simibubi.create_re.foundation.gui.ModularGuiLineBuilder;
+import com.simibubi.create_re.foundation.gui.widget.Label;
+import com.simibubi.create_re.foundation.gui.widget.ScrollInput;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.GuiGraphics;

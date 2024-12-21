@@ -1,10 +1,10 @@
-package com.simibubi.create.content.redstone;
+package com.simibubi.create_re.content.redstone;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.content.contraptions.ITransformableBlock;
-import com.simibubi.create.content.contraptions.StructureTransform;
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.content.contraptions.ITransformableBlock;
+import com.simibubi.create_re.content.contraptions.StructureTransform;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
 
 import net.minecraft.core.Direction;
 import net.minecraft.core.Direction.Axis;
@@ -19,7 +19,7 @@ import net.minecraft.world.level.block.state.properties.EnumProperty;
 
 public class DirectedDirectionalBlock extends HorizontalDirectionalBlock implements IWrenchable, ITransformableBlock {
 
-	public static final EnumProperty<AttachFace> TARGET = EnumProperty.create("target", AttachFace.class);
+	public static final EnumProperty<AttachFace> TARGET = EnumProperty.create_re("target", AttachFace.class);
 
 	public DirectedDirectionalBlock(Properties pProperties) {
 		super(pProperties);
@@ -27,8 +27,8 @@ public class DirectedDirectionalBlock extends HorizontalDirectionalBlock impleme
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
-		super.createBlockStateDefinition(pBuilder.add(TARGET, FACING));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
+		super.create_reBlockStateDefinition(pBuilder.add(TARGET, FACING));
 	}
 
 	@Nullable

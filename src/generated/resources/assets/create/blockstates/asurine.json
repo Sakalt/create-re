@@ -2,16 +2,16 @@
   "variants": {
     "": [
       {
-        "model": "create:block/asurine_natural_0"
+        "model": "create_re:block/asurine_natural_0"
       },
       {
-        "model": "create:block/asurine_natural_1"
+        "model": "create_re:block/asurine_natural_1"
       },
       {
-        "model": "create:block/asurine_natural_2"
+        "model": "create_re:block/asurine_natural_2"
       },
       {
-        "model": "create:block/asurine_natural_3"
+        "model": "create_re:block/asurine_natural_3"
       }
     ]
   }

@@ -1,12 +1,12 @@
-package com.simibubi.create.content.contraptions;
+package com.simibubi.create_re.content.contraptions;
 
 import java.util.Collection;
 import java.util.function.Supplier;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.foundation.utility.AttachedRegistry;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.foundation.utility.AttachedRegistry;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;

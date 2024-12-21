@@ -1,33 +1,33 @@
-package com.simibubi.create;
+package com.simibubi.create_re;
 
-import com.simibubi.create.content.contraptions.glue.SuperGlueSelectionHandler;
-import com.simibubi.create.content.contraptions.render.ContraptionRenderInfo;
-import com.simibubi.create.content.contraptions.render.ContraptionRenderInfoManager;
-import com.simibubi.create.content.decoration.encasing.CasingConnectivity;
-import com.simibubi.create.content.equipment.bell.SoulPulseEffectHandler;
-import com.simibubi.create.content.equipment.potatoCannon.PotatoCannonRenderHandler;
-import com.simibubi.create.content.equipment.zapper.ZapperRenderHandler;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntityRenderer;
-import com.simibubi.create.content.kinetics.waterwheel.WaterWheelRenderer;
-import com.simibubi.create.content.schematics.client.ClientSchematicLoader;
-import com.simibubi.create.content.schematics.client.SchematicAndQuillHandler;
-import com.simibubi.create.content.schematics.client.SchematicHandler;
-import com.simibubi.create.content.trains.GlobalRailwayManager;
-import com.simibubi.create.foundation.ClientResourceReloadListener;
-import com.simibubi.create.foundation.blockEntity.behaviour.ValueSettingsClient;
-import com.simibubi.create.foundation.gui.UIRenderHelper;
-import com.simibubi.create.foundation.outliner.Outliner;
-import com.simibubi.create.foundation.ponder.element.WorldSectionElement;
-import com.simibubi.create.foundation.render.AllInstanceTypes;
-import com.simibubi.create.foundation.render.CachedBufferer;
-import com.simibubi.create.foundation.render.StitchedSprite;
-import com.simibubi.create.foundation.render.SuperByteBufferCache;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.ModelSwapper;
-import com.simibubi.create.foundation.utility.ghost.GhostBlocks;
-import com.simibubi.create.infrastructure.config.AllConfigs;
-import com.simibubi.create.infrastructure.ponder.AllPonderTags;
-import com.simibubi.create.infrastructure.ponder.PonderIndex;
+import com.simibubi.create_re.content.contraptions.glue.SuperGlueSelectionHandler;
+import com.simibubi.create_re.content.contraptions.render.ContraptionRenderInfo;
+import com.simibubi.create_re.content.contraptions.render.ContraptionRenderInfoManager;
+import com.simibubi.create_re.content.decoration.encasing.CasingConnectivity;
+import com.simibubi.create_re.content.equipment.bell.SoulPulseEffectHandler;
+import com.simibubi.create_re.content.equipment.potatoCannon.PotatoCannonRenderHandler;
+import com.simibubi.create_re.content.equipment.zapper.ZapperRenderHandler;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntityRenderer;
+import com.simibubi.create_re.content.kinetics.waterwheel.WaterWheelRenderer;
+import com.simibubi.create_re.content.schematics.client.ClientSchematicLoader;
+import com.simibubi.create_re.content.schematics.client.SchematicAndQuillHandler;
+import com.simibubi.create_re.content.schematics.client.SchematicHandler;
+import com.simibubi.create_re.content.trains.GlobalRailwayManager;
+import com.simibubi.create_re.foundation.ClientResourceReloadListener;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueSettingsClient;
+import com.simibubi.create_re.foundation.gui.UIRenderHelper;
+import com.simibubi.create_re.foundation.outliner.Outliner;
+import com.simibubi.create_re.foundation.ponder.element.WorldSectionElement;
+import com.simibubi.create_re.foundation.render.AllInstanceTypes;
+import com.simibubi.create_re.foundation.render.CachedBufferer;
+import com.simibubi.create_re.foundation.render.StitchedSprite;
+import com.simibubi.create_re.foundation.render.SuperByteBufferCache;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.ModelSwapper;
+import com.simibubi.create_re.foundation.utility.ghost.GhostBlocks;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.infrastructure.ponder.AllPonderTags;
+import com.simibubi.create_re.infrastructure.ponder.PonderIndex;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.GraphicsStatus;
@@ -114,7 +114,7 @@ public class CreateClient {
 			.append(Components.literal(
 				" Some of Create's visual features will not be available while Fabulous graphics are enabled!"))
 			.withStyle(style -> style
-				.withClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/create dismissFabulousWarning"))
+				.withClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/create_re dismissFabulousWarning"))
 				.withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT,
 					Components.literal("Click here to disable this warning"))));
 

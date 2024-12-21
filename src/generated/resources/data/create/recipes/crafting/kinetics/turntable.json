@@ -6,7 +6,7 @@
       "tag": "minecraft:wooden_slabs"
     },
     "S": {
-      "item": "create:shaft"
+      "item": "create_re:shaft"
     }
   },
   "pattern": [
@@ -14,7 +14,7 @@
     "S"
   ],
   "result": {
-    "item": "create:turntable"
+    "item": "create_re:turntable"
   },
   "show_notification": true
 }

@@ -1,5 +1,5 @@
 {
-  "type": "create:crushing",
+  "type": "create_re:crushing",
   "conditions": [
     {
       "type": "forge:mod_loaded",
@@ -14,11 +14,11 @@
   "processingTime": 100,
   "results": [
     {
-      "item": "create:cinder_flour"
+      "item": "create_re:cinder_flour"
     },
     {
       "chance": 0.5,
-      "item": "create:cinder_flour"
+      "item": "create_re:cinder_flour"
     }
   ]
 }

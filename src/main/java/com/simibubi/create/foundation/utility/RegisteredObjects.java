@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.utility;
+package com.simibubi.create_re.foundation.utility;
 
 import org.jetbrains.annotations.NotNull;
 

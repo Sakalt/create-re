@@ -1,26 +1,26 @@
 {
-  "parent": "create:backtank",
+  "parent": "create_re:backtank",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:diving_suit_builtin"
+      "trigger": "create_re:diving_suit_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.diving_suit.desc"
+      "translate": "advancement.create_re.diving_suit.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:copper_diving_helmet",
+      "item": "create_re:copper_diving_helmet",
       "nbt": "{Damage:0}"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.diving_suit"
+      "translate": "advancement.create_re.diving_suit"
     }
   },
   "requirements": [

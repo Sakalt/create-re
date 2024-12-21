@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.outliner;
+package com.simibubi.create_re.foundation.outliner;
 
 import java.util.Optional;
 
@@ -7,9 +7,9 @@ import org.joml.Vector4f;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create.AllSpecialTextures;
-import com.simibubi.create.foundation.render.RenderTypes;
-import com.simibubi.create.foundation.render.SuperRenderTypeBuffer;
+import com.simibubi.create_re.AllSpecialTextures;
+import com.simibubi.create_re.foundation.render.RenderTypes;
+import com.simibubi.create_re.foundation.render.SuperRenderTypeBuffer;
 
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.Direction;

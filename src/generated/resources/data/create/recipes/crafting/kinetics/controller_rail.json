@@ -6,7 +6,7 @@
       "tag": "forge:ingots/gold"
     },
     "E": {
-      "item": "create:electron_tube"
+      "item": "create_re:electron_tube"
     },
     "S": {
       "tag": "forge:rods/wooden"
@@ -19,7 +19,7 @@
   ],
   "result": {
     "count": 6,
-    "item": "create:controller_rail"
+    "item": "create_re:controller_rail"
   },
   "show_notification": true
 }

@@ -6,10 +6,10 @@
       "tag": "forge:dyes/orange"
     },
     {
-      "tag": "create:seats"
+      "tag": "create_re:seats"
     }
   ],
   "result": {
-    "item": "create:orange_seat"
+    "item": "create_re:orange_seat"
   }
 }

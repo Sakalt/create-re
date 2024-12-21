@@ -1,12 +1,12 @@
-package com.simibubi.create.content.schematics;
+package com.simibubi.create_re.content.schematics;
 
 import java.util.Optional;
 
 import javax.annotation.Nullable;
 
 import com.mojang.serialization.Codec;
-import com.simibubi.create.AllStructureProcessorTypes;
-import com.simibubi.create.foundation.utility.NBTProcessors;
+import com.simibubi.create_re.AllStructureProcessorTypes;
+import com.simibubi.create_re.foundation.utility.NBTProcessors;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
@@ -49,7 +49,7 @@ public class SchematicProcessor extends StructureProcessor {
 			StructureTemplate.StructureEntityInfo info, StructurePlaceSettings settings, StructureTemplate template) {
 		return EntityType.by(info.nbt).flatMap(type -> {
 			if (world instanceof Level) {
-				Entity e = type.create((Level) world);
+				Entity e = type.create_re((Level) world);
 				if (e != null && !e.onlyOpCanSetNbt()) {
 					return Optional.of(info);
 				}

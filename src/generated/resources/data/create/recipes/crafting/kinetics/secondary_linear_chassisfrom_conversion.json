@@ -3,10 +3,10 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "create:linear_chassis"
+      "item": "create_re:linear_chassis"
     }
   ],
   "result": {
-    "item": "create:secondary_linear_chassis"
+    "item": "create_re:secondary_linear_chassis"
   }
 }

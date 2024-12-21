@@ -1,4 +1,4 @@
-package com.simibubi.create.content.redstone.link;
+package com.simibubi.create_re.content.redstone.link;
 
 import java.util.function.Function;
 import java.util.function.IntConsumer;
@@ -6,14 +6,14 @@ import java.util.function.IntSupplier;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.content.equipment.clipboard.ClipboardCloneable;
-import com.simibubi.create.content.redstone.link.RedstoneLinkNetworkHandler.Frequency;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BehaviourType;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.ValueBoxTransform;
-import com.simibubi.create.foundation.utility.Couple;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.equipment.clipboard.ClipboardCloneable;
+import com.simibubi.create_re.content.redstone.link.RedstoneLinkNetworkHandler.Frequency;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BehaviourType;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBoxTransform;
+import com.simibubi.create_re.foundation.utility.Couple;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -113,7 +113,7 @@ public class LinkBehaviour extends BlockEntityBehaviour implements IRedstoneLink
 
 	@Override
 	public Couple<Frequency> getNetworkKey() {
-		return Couple.create(frequencyFirst, frequencyLast);
+		return Couple.create_re(frequencyFirst, frequencyLast);
 	}
 
 	@Override

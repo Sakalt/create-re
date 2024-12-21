@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "create:block/copper_casing"
+    "all": "create_re:block/copper_casing"
   }
 }

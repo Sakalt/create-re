@@ -1,9 +1,9 @@
-package com.simibubi.create.content.redstone.diodes;
+package com.simibubi.create_re.content.redstone.diodes;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.foundation.blockEntity.behaviour.ValueBoxTransform;
-import com.simibubi.create.foundation.utility.AngleHelper;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBoxTransform;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import dev.engine_room.flywheel.lib.transform.TransformStack;
 import net.minecraft.world.level.block.state.BlockState;

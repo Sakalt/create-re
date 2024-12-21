@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:andesite_funnel"
+          "name": "create_re:andesite_funnel"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/andesite_belt_funnel"
+  "random_sequence": "create_re:blocks/andesite_belt_funnel"
 }

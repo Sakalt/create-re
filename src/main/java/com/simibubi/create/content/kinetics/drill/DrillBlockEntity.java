@@ -1,6 +1,6 @@
-package com.simibubi.create.content.kinetics.drill;
+package com.simibubi.create_re.content.kinetics.drill;
 
-import com.simibubi.create.content.kinetics.base.BlockBreakingKineticBlockEntity;
+import com.simibubi.create_re.content.kinetics.base.BlockBreakingKineticBlockEntity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntityType;

@@ -1,8 +1,8 @@
 {
-  "type": "create:crushing",
+  "type": "create_re:crushing",
   "ingredients": [
     {
-      "tag": "create:stone_types/tuff"
+      "tag": "create_re:stone_types/tuff"
     }
   ],
   "processingTime": 350,
@@ -17,11 +17,11 @@
     },
     {
       "chance": 0.1,
-      "item": "create:copper_nugget"
+      "item": "create_re:copper_nugget"
     },
     {
       "chance": 0.1,
-      "item": "create:zinc_nugget"
+      "item": "create_re:zinc_nugget"
     },
     {
       "chance": 0.1,

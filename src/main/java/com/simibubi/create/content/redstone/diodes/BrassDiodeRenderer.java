@@ -1,10 +1,10 @@
-package com.simibubi.create.content.redstone.diodes;
+package com.simibubi.create_re.content.redstone.diodes;
 
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.foundation.blockEntity.renderer.ColoredOverlayBlockEntityRenderer;
-import com.simibubi.create.foundation.render.CachedBufferer;
-import com.simibubi.create.foundation.render.SuperByteBuffer;
-import com.simibubi.create.foundation.utility.Color;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.foundation.blockEntity.renderer.ColoredOverlayBlockEntityRenderer;
+import com.simibubi.create_re.foundation.render.CachedBufferer;
+import com.simibubi.create_re.foundation.render.SuperByteBuffer;
+import com.simibubi.create_re.foundation.utility.Color;
 
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 

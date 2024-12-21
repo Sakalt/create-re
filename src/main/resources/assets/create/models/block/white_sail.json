@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "create:block/sail/canvas_white",
-		"1": "create:block/sail/frame",
+		"0": "create_re:block/sail/canvas_white",
+		"1": "create_re:block/sail/frame",
 		"particle": "#0"
 	},
 	"elements": [

@@ -1,11 +1,11 @@
-package com.simibubi.create.content.contraptions.actors.seat;
+package com.simibubi.create_re.content.contraptions.actors.seat;
 
-import com.simibubi.create.content.contraptions.AbstractContraptionEntity;
-import com.simibubi.create.content.contraptions.AbstractContraptionEntity.ContraptionRotationState;
-import com.simibubi.create.content.trains.entity.CarriageContraptionEntity;
-import com.simibubi.create.foundation.utility.AngleHelper;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity;
+import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity.ContraptionRotationState;
+import com.simibubi.create_re.content.trains.entity.CarriageContraptionEntity;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.Mth;

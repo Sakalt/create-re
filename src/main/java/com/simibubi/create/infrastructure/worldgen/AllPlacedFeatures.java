@@ -1,10 +1,10 @@
-package com.simibubi.create.infrastructure.worldgen;
+package com.simibubi.create_re.infrastructure.worldgen;
 
 import static net.minecraft.data.worldgen.placement.PlacementUtils.register;
 
 import java.util.List;
 
-import com.simibubi.create.Create;
+import com.simibubi.create_re.Create;
 
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
@@ -27,7 +27,7 @@ public class AllPlacedFeatures {
 				STRIATED_ORES_NETHER = key("striated_ores_nether");
 	
 	private static ResourceKey<PlacedFeature> key(String name) {
-		return ResourceKey.create(Registries.PLACED_FEATURE, Create.asResource(name));
+		return ResourceKey.create_re(Registries.PLACED_FEATURE, Create.asResource(name));
 	}
 
 	public static void bootstrap(BootstapContext<PlacedFeature> ctx) {

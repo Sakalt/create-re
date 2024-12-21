@@ -1,6 +1,6 @@
 {
   "values": [
-    "create:sand_paper",
-    "create:red_sand_paper"
+    "create_re:sand_paper",
+    "create_re:red_sand_paper"
   ]
 }

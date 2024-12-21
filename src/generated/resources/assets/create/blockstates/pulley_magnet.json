@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/rope_pulley/pulley_magnet"
+      "model": "create_re:block/rope_pulley/pulley_magnet"
     }
   }
 }

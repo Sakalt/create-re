@@ -1,8 +1,8 @@
 {
-	"parent": "create:block/water_wheel/textures",
+	"parent": "create_re:block/water_wheel/textures",
 	"loader": "forge:obj",
 	"flip_v": true,
-	"model": "create:models/block/water_wheel/water_wheel_item.obj",
+	"model": "create_re:models/block/water_wheel/water_wheel_item.obj",
 	"textures": {
 		"log": "block/spruce_log",
 		"planks": "block/spruce_planks"

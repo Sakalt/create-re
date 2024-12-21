@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:track_signal"
+          "name": "create_re:track_signal"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/track_signal"
+  "random_sequence": "create_re:blocks/track_signal"
 }

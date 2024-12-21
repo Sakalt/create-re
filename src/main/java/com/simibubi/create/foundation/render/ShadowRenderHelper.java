@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.render;
+package com.simibubi.create_re.foundation.render;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;

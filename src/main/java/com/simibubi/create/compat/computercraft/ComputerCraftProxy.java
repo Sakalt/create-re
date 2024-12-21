@@ -1,10 +1,10 @@
-package com.simibubi.create.compat.computercraft;
+package com.simibubi.create_re.compat.computercraft;
 
 import java.util.function.Function;
 
-import com.simibubi.create.compat.Mods;
-import com.simibubi.create.compat.computercraft.implementation.ComputerBehaviour;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.compat.Mods;
+import com.simibubi.create_re.compat.computercraft.implementation.ComputerBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
 
 public class ComputerCraftProxy {
 

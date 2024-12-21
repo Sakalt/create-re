@@ -1,22 +1,22 @@
-package com.simibubi.create.content.equipment.blueprint;
+package com.simibubi.create_re.content.equipment.blueprint;
 
-import static com.simibubi.create.foundation.gui.AllGuiTextures.PLAYER_INVENTORY;
+import static com.simibubi.create_re.foundation.gui.AllGuiTextures.PLAYER_INVENTORY;
 
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
 import com.google.common.collect.ImmutableList;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.logistics.filter.FilterScreenPacket;
-import com.simibubi.create.content.logistics.filter.FilterScreenPacket.Option;
-import com.simibubi.create.foundation.gui.AllGuiTextures;
-import com.simibubi.create.foundation.gui.AllIcons;
-import com.simibubi.create.foundation.gui.element.GuiGameElement;
-import com.simibubi.create.foundation.gui.menu.AbstractSimiContainerScreen;
-import com.simibubi.create.foundation.gui.widget.IconButton;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.logistics.filter.FilterScreenPacket;
+import com.simibubi.create_re.content.logistics.filter.FilterScreenPacket.Option;
+import com.simibubi.create_re.foundation.gui.AllGuiTextures;
+import com.simibubi.create_re.foundation.gui.AllIcons;
+import com.simibubi.create_re.foundation.gui.element.GuiGameElement;
+import com.simibubi.create_re.foundation.gui.menu.AbstractSimiContainerScreen;
+import com.simibubi.create_re.foundation.gui.widget.IconButton;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.GuiGraphics;

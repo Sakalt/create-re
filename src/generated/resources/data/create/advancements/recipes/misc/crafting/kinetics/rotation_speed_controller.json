@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:brass_casing"
+              "create_re:brass_casing"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/kinetics/rotation_speed_controller"
+        "recipe": "create_re:crafting/kinetics/rotation_speed_controller"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/kinetics/rotation_speed_controller"
+      "create_re:crafting/kinetics/rotation_speed_controller"
     ]
   },
   "sends_telemetry_event": false

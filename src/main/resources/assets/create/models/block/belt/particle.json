@@ -1,6 +1,6 @@
 {
 	"textures": {
-		"particle": "create:block/belt"
+		"particle": "create_re:block/belt"
 	},
 	"elements": [
 	]

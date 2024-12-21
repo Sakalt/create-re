@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:yellow_valve_handle"
+          "name": "create_re:yellow_valve_handle"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/yellow_valve_handle"
+  "random_sequence": "create_re:blocks/yellow_valve_handle"
 }

@@ -1,4 +1,4 @@
-package com.simibubi.create.content.fluids;
+package com.simibubi.create_re.content.fluids;
 
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.WATERLOGGED;
 
@@ -7,14 +7,14 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.AllFluids;
-import com.simibubi.create.content.fluids.pipes.VanillaFluidTargets;
-import com.simibubi.create.content.fluids.potion.PotionFluidHandler;
-import com.simibubi.create.foundation.advancement.AdvancementBehaviour;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.fluid.FluidHelper;
-import com.simibubi.create.foundation.utility.BlockFace;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllFluids;
+import com.simibubi.create_re.content.fluids.pipes.VanillaFluidTargets;
+import com.simibubi.create_re.content.fluids.potion.PotionFluidHandler;
+import com.simibubi.create_re.foundation.advancement.AdvancementBehaviour;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.fluid.FluidHelper;
+import com.simibubi.create_re.foundation.utility.BlockFace;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -168,7 +168,7 @@ public class OpenEndedPipe extends FlowSource {
 			world.scheduleTick(outputPos, Fluids.WATER, 1);
 			return stack;
 		}
-		world.setBlock(outputPos, fluidState.createLegacyBlock()
+		world.setBlock(outputPos, fluidState.create_reLegacyBlock()
 			.setValue(LiquidBlock.LEVEL, 14), 3);
 		return stack;
 	}
@@ -225,7 +225,7 @@ public class OpenEndedPipe extends FlowSource {
 
 		world.setBlock(outputPos, fluid.getFluid()
 			.defaultFluidState()
-			.createLegacyBlock(), 3);
+			.create_reLegacyBlock(), 3);
 		return true;
 	}
 

@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.damageTypes;
+package com.simibubi.create_re.foundation.damageTypes;
 
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;

@@ -1,5 +1,5 @@
 {
-  "type": "create:compacting",
+  "type": "create_re:compacting",
   "ingredients": [
     {
       "item": "minecraft:flint"

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/dark_oak_window"
+      "model": "create_re:block/dark_oak_window"
     }
   }
 }

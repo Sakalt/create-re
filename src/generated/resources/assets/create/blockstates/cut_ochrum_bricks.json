@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/cut_ochrum_bricks"
+      "model": "create_re:block/cut_ochrum_bricks"
     }
   }
 }

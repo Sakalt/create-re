@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/acacia_window"
+      "model": "create_re:block/acacia_window"
     }
   }
 }

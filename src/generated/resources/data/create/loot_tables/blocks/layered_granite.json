@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:layered_granite"
+          "name": "create_re:layered_granite"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/layered_granite"
+  "random_sequence": "create_re:blocks/layered_granite"
 }

@@ -1,13 +1,13 @@
 {
   "variants": {
     "type=bottom": {
-      "model": "create:block/polished_cut_scorchia_slab"
+      "model": "create_re:block/polished_cut_scorchia_slab"
     },
     "type=double": {
-      "model": "create:block/polished_cut_scorchia_slab_double"
+      "model": "create_re:block/polished_cut_scorchia_slab_double"
     },
     "type=top": {
-      "model": "create:block/polished_cut_scorchia_slab_top"
+      "model": "create_re:block/polished_cut_scorchia_slab_top"
     }
   }
 }

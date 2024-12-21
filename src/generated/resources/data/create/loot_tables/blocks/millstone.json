@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:millstone"
+          "name": "create_re:millstone"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/millstone"
+  "random_sequence": "create_re:blocks/millstone"
 }

@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.entity;
+package com.simibubi.create_re.content.trains.entity;
 
 import java.lang.ref.WeakReference;
 import java.util.Collection;
@@ -9,28 +9,28 @@ import java.util.Set;
 import java.util.UUID;
 
 import com.google.common.base.Strings;
-import com.simibubi.create.AllEntityDataSerializers;
-import com.simibubi.create.AllEntityTypes;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.Create;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.content.contraptions.ContraptionBlockChangedPacket;
-import com.simibubi.create.content.contraptions.OrientedContraptionEntity;
-import com.simibubi.create.content.contraptions.actors.trainControls.ControlsBlock;
-import com.simibubi.create.content.contraptions.behaviour.MovementBehaviour;
-import com.simibubi.create.content.contraptions.behaviour.MovementContext;
-import com.simibubi.create.content.trains.CubeParticleData;
-import com.simibubi.create.content.trains.TrainHUDUpdatePacket;
-import com.simibubi.create.content.trains.entity.Carriage.DimensionalCarriageEntity;
-import com.simibubi.create.content.trains.entity.TravellingPoint.SteerDirection;
-import com.simibubi.create.content.trains.graph.TrackGraph;
-import com.simibubi.create.content.trains.station.GlobalStation;
-import com.simibubi.create.foundation.utility.Color;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllEntityDataSerializers;
+import com.simibubi.create_re.AllEntityTypes;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.content.contraptions.ContraptionBlockChangedPacket;
+import com.simibubi.create_re.content.contraptions.OrientedContraptionEntity;
+import com.simibubi.create_re.content.contraptions.actors.trainControls.ControlsBlock;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementBehaviour;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
+import com.simibubi.create_re.content.trains.CubeParticleData;
+import com.simibubi.create_re.content.trains.TrainHUDUpdatePacket;
+import com.simibubi.create_re.content.trains.entity.Carriage.DimensionalCarriageEntity;
+import com.simibubi.create_re.content.trains.entity.TravellingPoint.SteerDirection;
+import com.simibubi.create_re.content.trains.graph.TrackGraph;
+import com.simibubi.create_re.content.trains.station.GlobalStation;
+import com.simibubi.create_re.foundation.utility.Color;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -167,7 +167,7 @@ public class CarriageContraptionEntity extends OrientedContraptionEntity {
 		return coord >= min && coord <= max;
 	}
 
-	public static CarriageContraptionEntity create(Level world, CarriageContraption contraption) {
+	public static CarriageContraptionEntity create_re(Level world, CarriageContraption contraption) {
 		CarriageContraptionEntity entity =
 			new CarriageContraptionEntity(AllEntityTypes.CARRIAGE_CONTRAPTION.get(), world);
 		entity.setContraption(contraption);
@@ -452,8 +452,8 @@ public class CarriageContraptionEntity extends OrientedContraptionEntity {
 		if (carriage != null) {
 			DimensionalCarriageEntity dce = carriage.getDimensional(level());
 			dce.pointsInitialised = false;
-			carriage.leadingBogey().couplingAnchors = Couple.create(null, null);
-			carriage.trailingBogey().couplingAnchors = Couple.create(null, null);
+			carriage.leadingBogey().couplingAnchors = Couple.create_re(null, null);
+			carriage.trailingBogey().couplingAnchors = Couple.create_re(null, null);
 		}
 		firstPositionUpdate = true;
 		if (sounds != null)
@@ -488,7 +488,7 @@ public class CarriageContraptionEntity extends OrientedContraptionEntity {
 	}
 
 	public Couple<Boolean> checkConductors() {
-		Couple<Boolean> sides = Couple.create(false, false);
+		Couple<Boolean> sides = Couple.create_re(false, false);
 		if (!(contraption instanceof CarriageContraption cc))
 			return sides;
 

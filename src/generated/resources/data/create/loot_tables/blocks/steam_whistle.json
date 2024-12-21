@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:steam_whistle"
+          "name": "create_re:steam_whistle"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/steam_whistle"
+  "random_sequence": "create_re:blocks/steam_whistle"
 }

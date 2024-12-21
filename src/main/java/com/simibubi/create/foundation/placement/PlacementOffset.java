@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.placement;
+package com.simibubi.create_re.foundation.placement;
 
 import java.util.function.Function;
 
@@ -126,7 +126,7 @@ public class PlacementOffset {
 			state = state.setValue(BlockStateProperties.WATERLOGGED, fluidState.getType() == Fluids.WATER);
 		}
 
-		BlockSnapshot snapshot = BlockSnapshot.create(world.dimension(), world, newPos);
+		BlockSnapshot snapshot = BlockSnapshot.create_re(world.dimension(), world, newPos);
 		world.setBlockAndUpdate(newPos, state);
 
 		BlockEvent.EntityPlaceEvent event = new BlockEvent.EntityPlaceEvent(snapshot, IPlacementHelper.ID, player);

@@ -1,14 +1,14 @@
 {
-  "type": "create:splashing",
+  "type": "create_re:splashing",
   "ingredients": [
     {
-      "item": "create:crushed_raw_copper"
+      "item": "create_re:crushed_raw_copper"
     }
   ],
   "results": [
     {
       "count": 9,
-      "item": "create:copper_nugget"
+      "item": "create_re:copper_nugget"
     },
     {
       "chance": 0.5,

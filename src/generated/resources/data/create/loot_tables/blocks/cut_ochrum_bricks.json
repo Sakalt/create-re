@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:cut_ochrum_bricks"
+          "name": "create_re:cut_ochrum_bricks"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/cut_ochrum_bricks"
+  "random_sequence": "create_re:blocks/cut_ochrum_bricks"
 }

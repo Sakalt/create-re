@@ -6,10 +6,10 @@
       "tag": "forge:plates/iron"
     },
     {
-      "item": "create:fluid_pipe"
+      "item": "create_re:fluid_pipe"
     }
   ],
   "result": {
-    "item": "create:fluid_valve"
+    "item": "create_re:fluid_valve"
   }
 }

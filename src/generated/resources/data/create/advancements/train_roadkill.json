@@ -1,16 +1,16 @@
 {
-  "parent": "create:track_signal",
+  "parent": "create_re:track_signal",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:train_roadkill_builtin"
+      "trigger": "create_re:train_roadkill_builtin"
     }
   },
   "display": {
     "announce_to_chat": true,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.train_roadkill.desc"
+      "translate": "advancement.create_re.train_roadkill.desc"
     },
     "frame": "goal",
     "hidden": true,
@@ -20,7 +20,7 @@
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.train_roadkill"
+      "translate": "advancement.create_re.train_roadkill"
     }
   },
   "requirements": [

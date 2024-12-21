@@ -3,13 +3,13 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "create:cut_granite_brick_slab"
+      "item": "create_re:cut_granite_brick_slab"
     },
     {
-      "item": "create:cut_granite_brick_slab"
+      "item": "create_re:cut_granite_brick_slab"
     }
   ],
   "result": {
-    "item": "create:cut_granite_bricks"
+    "item": "create_re:cut_granite_bricks"
   }
 }

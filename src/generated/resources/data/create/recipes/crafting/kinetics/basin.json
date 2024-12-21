@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "create:andesite_alloy"
+      "item": "create_re:andesite_alloy"
     }
   },
   "pattern": [
@@ -11,7 +11,7 @@
     "AAA"
   ],
   "result": {
-    "item": "create:basin"
+    "item": "create_re:basin"
   },
   "show_notification": true
 }

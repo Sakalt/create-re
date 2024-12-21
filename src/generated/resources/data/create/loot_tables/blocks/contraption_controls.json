@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:contraption_controls"
+          "name": "create_re:contraption_controls"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/contraption_controls"
+  "random_sequence": "create_re:blocks/contraption_controls"
 }

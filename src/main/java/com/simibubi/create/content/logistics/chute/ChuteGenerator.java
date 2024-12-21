@@ -1,8 +1,8 @@
-package com.simibubi.create.content.logistics.chute;
+package com.simibubi.create_re.content.logistics.chute;
 
-import com.simibubi.create.content.logistics.chute.ChuteBlock.Shape;
-import com.simibubi.create.foundation.data.AssetLookup;
-import com.simibubi.create.foundation.data.SpecialBlockStateGen;
+import com.simibubi.create_re.content.logistics.chute.ChuteBlock.Shape;
+import com.simibubi.create_re.foundation.data.AssetLookup;
+import com.simibubi.create_re.foundation.data.SpecialBlockStateGen;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 

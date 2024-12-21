@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:sail_frame"
+          "name": "create_re:sail_frame"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/sail_frame"
+  "random_sequence": "create_re:blocks/sail_frame"
 }

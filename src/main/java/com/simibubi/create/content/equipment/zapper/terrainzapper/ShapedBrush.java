@@ -1,4 +1,4 @@
-package com.simibubi.create.content.equipment.zapper.terrainzapper;
+package com.simibubi.create_re.content.equipment.zapper.terrainzapper;
 
 import java.util.Collection;
 import java.util.List;

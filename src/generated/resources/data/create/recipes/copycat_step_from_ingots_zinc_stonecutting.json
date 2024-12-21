@@ -4,5 +4,5 @@
   "ingredient": {
     "tag": "forge:ingots/zinc"
   },
-  "result": "create:copycat_step"
+  "result": "create_re:copycat_step"
 }

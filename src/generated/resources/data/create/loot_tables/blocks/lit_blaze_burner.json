@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:empty_blaze_burner"
+          "name": "create_re:empty_blaze_burner"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/lit_blaze_burner"
+  "random_sequence": "create_re:blocks/lit_blaze_burner"
 }

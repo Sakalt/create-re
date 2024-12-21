@@ -1,6 +1,6 @@
 {
   "values": [
-    "create:fan_fire",
-    "create:fan_lava"
+    "create_re:fan_fire",
+    "create_re:fan_lava"
   ]
 }

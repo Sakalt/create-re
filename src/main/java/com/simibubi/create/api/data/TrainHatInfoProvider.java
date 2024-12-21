@@ -1,10 +1,10 @@
-package com.simibubi.create.api.data;
+package com.simibubi.create_re.api.data;
 
 import com.mojang.serialization.JsonOps;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.trains.schedule.hat.TrainHatInfo;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.trains.schedule.hat.TrainHatInfo;
 
-import com.simibubi.create.content.trains.schedule.hat.TrainHatInfoReloadListener;
+import com.simibubi.create_re.content.trains.schedule.hat.TrainHatInfoReloadListener;
 
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataProvider;
@@ -23,10 +23,10 @@ public abstract class TrainHatInfoProvider implements DataProvider {
 	protected final Map<ResourceLocation, TrainHatInfo> trainHatOffsets = new HashMap<>();
 
 	public TrainHatInfoProvider(PackOutput output) {
-		this.path = output.createPathProvider(PackOutput.Target.RESOURCE_PACK, TrainHatInfoReloadListener.HAT_INFO_DIRECTORY);
+		this.path = output.create_rePathProvider(PackOutput.Target.RESOURCE_PACK, TrainHatInfoReloadListener.HAT_INFO_DIRECTORY);
 	}
 
-	protected abstract void createOffsets();
+	protected abstract void create_reOffsets();
 
 	protected void makeInfoFor(EntityType<?> type, Vec3 offset) {
 		this.makeInfoFor(type, offset, "", 0, 1.0F);
@@ -51,7 +51,7 @@ public abstract class TrainHatInfoProvider implements DataProvider {
 	@Override
 	public CompletableFuture<?> run(CachedOutput output) {
 		this.trainHatOffsets.clear();
-		this.createOffsets();
+		this.create_reOffsets();
 		return CompletableFuture.allOf(
 				this.trainHatOffsets.entrySet().stream().map(entry ->
 						DataProvider.saveStable(output,

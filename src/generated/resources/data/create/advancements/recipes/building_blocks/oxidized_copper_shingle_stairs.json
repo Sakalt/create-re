@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:oxidized_copper_shingles"
+              "create_re:oxidized_copper_shingles"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:oxidized_copper_shingle_stairs"
+        "recipe": "create_re:oxidized_copper_shingle_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:oxidized_copper_shingle_stairs"
+      "create_re:oxidized_copper_shingle_stairs"
     ]
   },
   "sends_telemetry_event": false

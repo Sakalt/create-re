@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:schedule"
+              "create_re:schedule"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/appliances/schedule_clear"
+        "recipe": "create_re:crafting/appliances/schedule_clear"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/appliances/schedule_clear"
+      "create_re:crafting/appliances/schedule_clear"
     ]
   },
   "sends_telemetry_event": false

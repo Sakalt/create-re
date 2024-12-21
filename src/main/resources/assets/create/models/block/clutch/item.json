@@ -2,12 +2,12 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "create:block/clutch_off",
-		"1": "create:block/gearbox",
-		"4": "create:block/funnel/andesite_funnel_frame",
-		"particle": "create:block/axis",
-		"1_0": "create:block/axis",
-		"1_1": "create:block/axis_top"
+		"0": "create_re:block/clutch_off",
+		"1": "create_re:block/gearbox",
+		"4": "create_re:block/funnel/andesite_funnel_frame",
+		"particle": "create_re:block/axis",
+		"1_0": "create_re:block/axis",
+		"1_1": "create_re:block/axis_top"
 	},
 	"elements": [
 		{

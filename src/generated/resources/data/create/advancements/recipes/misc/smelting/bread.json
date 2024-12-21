@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:dough"
+              "create_re:dough"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:smelting/bread"
+        "recipe": "create_re:smelting/bread"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:smelting/bread"
+      "create_re:smelting/bread"
     ]
   },
   "sends_telemetry_event": false

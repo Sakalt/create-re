@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/layered_granite"
+      "model": "create_re:block/layered_granite"
     }
   }
 }

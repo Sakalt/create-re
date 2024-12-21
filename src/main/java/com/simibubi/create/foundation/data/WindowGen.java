@@ -1,21 +1,21 @@
-package com.simibubi.create.foundation.data;
+package com.simibubi.create_re.foundation.data;
 
-import static com.simibubi.create.Create.REGISTRATE;
-import static com.simibubi.create.foundation.data.CreateRegistrate.connectedTextures;
+import static com.simibubi.create_re.Create.REGISTRATE;
+import static com.simibubi.create_re.foundation.data.CreateRegistrate.connectedTextures;
 
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-import com.simibubi.create.AllSpriteShifts;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.decoration.palettes.ConnectedGlassBlock;
-import com.simibubi.create.content.decoration.palettes.ConnectedGlassPaneBlock;
-import com.simibubi.create.content.decoration.palettes.GlassPaneBlock;
-import com.simibubi.create.content.decoration.palettes.WindowBlock;
-import com.simibubi.create.foundation.block.connected.CTSpriteShiftEntry;
-import com.simibubi.create.foundation.block.connected.ConnectedTextureBehaviour;
-import com.simibubi.create.foundation.block.connected.GlassPaneCTBehaviour;
-import com.simibubi.create.foundation.block.connected.HorizontalCTBehaviour;
+import com.simibubi.create_re.AllSpriteShifts;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.decoration.palettes.ConnectedGlassBlock;
+import com.simibubi.create_re.content.decoration.palettes.ConnectedGlassPaneBlock;
+import com.simibubi.create_re.content.decoration.palettes.GlassPaneBlock;
+import com.simibubi.create_re.content.decoration.palettes.WindowBlock;
+import com.simibubi.create_re.foundation.block.connected.CTSpriteShiftEntry;
+import com.simibubi.create_re.foundation.block.connected.ConnectedTextureBehaviour;
+import com.simibubi.create_re.foundation.block.connected.GlassPaneCTBehaviour;
+import com.simibubi.create_re.foundation.block.connected.HorizontalCTBehaviour;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 import com.tterrag.registrate.providers.RegistrateRecipeProvider;

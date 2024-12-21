@@ -1,6 +1,6 @@
-package com.simibubi.create.content.trains.signal;
+package com.simibubi.create_re.content.trains.signal;
 
-import com.simibubi.create.foundation.utility.Color;
+import com.simibubi.create_re.foundation.utility.Color;
 
 public enum EdgeGroupColor {
 

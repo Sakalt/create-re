@@ -1,4 +1,4 @@
-package com.simibubi.create.content.fluids.potion;
+package com.simibubi.create_re.content.fluids.potion;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -7,12 +7,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.content.fluids.potion.PotionFluid.BottleType;
-import com.simibubi.create.content.kinetics.mixer.MixingRecipe;
-import com.simibubi.create.content.processing.recipe.HeatCondition;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder;
-import com.simibubi.create.foundation.fluid.FluidIngredient;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.fluids.potion.PotionFluid.BottleType;
+import com.simibubi.create_re.content.kinetics.mixer.MixingRecipe;
+import com.simibubi.create_re.content.processing.recipe.HeatCondition;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder;
+import com.simibubi.create_re.foundation.fluid.FluidIngredient;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -31,10 +31,10 @@ public class PotionMixingRecipes {
 
 	public static final List<Item> SUPPORTED_CONTAINERS = List.of(Items.POTION, Items.SPLASH_POTION, Items.LINGERING_POTION);
 
-	public static final List<MixingRecipe> ALL = createRecipes();
+	public static final List<MixingRecipe> ALL = create_reRecipes();
 	public static final Map<Item, List<MixingRecipe>> BY_ITEM = sortRecipesByItem(ALL);
 
-	private static List<MixingRecipe> createRecipes() {
+	private static List<MixingRecipe> create_reRecipes() {
 		List<MixingRecipe> mixingRecipes = new ArrayList<>();
 
 		int recipeIndex = 0;
@@ -55,7 +55,7 @@ public class PotionMixingRecipes {
 				FluidStack fromFluid = PotionFluidHandler.getFluidFromPotion(mix.from.get(), bottleType, 1000);
 				FluidStack toFluid = PotionFluidHandler.getFluidFromPotion(mix.to.get(), bottleType, 1000);
 
-				mixingRecipes.add(createRecipe("potion_mixing_vanilla_" + recipeIndex++, mix.ingredient, fromFluid, toFluid));
+				mixingRecipes.add(create_reRecipe("potion_mixing_vanilla_" + recipeIndex++, mix.ingredient, fromFluid, toFluid));
 			}
 		}
 
@@ -80,7 +80,7 @@ public class PotionMixingRecipes {
 				FluidStack fromFluid = PotionFluidHandler.getFluidFromPotion(potion, fromBottleType, 1000);
 				FluidStack toFluid = PotionFluidHandler.getFluidFromPotion(potion, toBottleType, 1000);
 
-				mixingRecipes.add(createRecipe("potion_mixing_vanilla_" + recipeIndex++, ingredient, fromFluid, toFluid));
+				mixingRecipes.add(create_reRecipe("potion_mixing_vanilla_" + recipeIndex++, ingredient, fromFluid, toFluid));
 			}
 		}
 
@@ -107,7 +107,7 @@ public class PotionMixingRecipes {
 							outputFluid = PotionFluidHandler.getFluidFromPotionItem(output);
 						}
 						outputFluid.setAmount(1000);
-						mixingRecipes.add(createRecipe("potion_mixing_modded_" + recipeIndex++, ingredient, inputFluid, outputFluid));
+						mixingRecipes.add(create_reRecipe("potion_mixing_modded_" + recipeIndex++, ingredient, inputFluid, outputFluid));
 					}
 				}
 			}
@@ -116,7 +116,7 @@ public class PotionMixingRecipes {
 		return mixingRecipes;
 	}
 
-	private static MixingRecipe createRecipe(String id, Ingredient ingredient, FluidStack fromFluid, FluidStack toFluid) {
+	private static MixingRecipe create_reRecipe(String id, Ingredient ingredient, FluidStack fromFluid, FluidStack toFluid) {
 		return new ProcessingRecipeBuilder<>(MixingRecipe::new,
 				Create.asResource(id)).require(ingredient)
 				.require(FluidIngredient.fromFluidStack(fromFluid))

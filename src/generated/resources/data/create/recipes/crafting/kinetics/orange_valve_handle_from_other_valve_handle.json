@@ -6,10 +6,10 @@
       "tag": "forge:dyes/orange"
     },
     {
-      "tag": "create:valve_handles"
+      "tag": "create_re:valve_handles"
     }
   ],
   "result": {
-    "item": "create:orange_valve_handle"
+    "item": "create_re:orange_valve_handle"
   }
 }

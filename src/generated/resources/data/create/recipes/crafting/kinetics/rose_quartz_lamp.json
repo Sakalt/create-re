@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "create:polished_rose_quartz"
+      "item": "create_re:polished_rose_quartz"
     },
     {
       "tag": "forge:dusts/redstone"
@@ -13,6 +13,6 @@
     }
   ],
   "result": {
-    "item": "create:rose_quartz_lamp"
+    "item": "create_re:rose_quartz_lamp"
   }
 }

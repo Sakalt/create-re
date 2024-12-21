@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"2": "block/piston_side",
-		"3": "create:block/sticker",
+		"3": "create_re:block/sticker",
 		"particle": "block/piston_bottom"
 	},
 	"elements": [

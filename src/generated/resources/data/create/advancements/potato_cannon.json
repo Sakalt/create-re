@@ -1,26 +1,26 @@
 {
-  "parent": "create:display_link",
+  "parent": "create_re:display_link",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:potato_cannon_builtin"
+      "trigger": "create_re:potato_cannon_builtin"
     }
   },
   "display": {
     "announce_to_chat": true,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.potato_cannon.desc"
+      "translate": "advancement.create_re.potato_cannon.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:potato_cannon",
+      "item": "create_re:potato_cannon",
       "nbt": "{Damage:0}"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.potato_cannon"
+      "translate": "advancement.create_re.potato_cannon"
     }
   },
   "requirements": [

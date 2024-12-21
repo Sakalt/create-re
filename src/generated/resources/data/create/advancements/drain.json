@@ -1,25 +1,25 @@
 {
-  "parent": "create:spout",
+  "parent": "create_re:spout",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:drain_builtin"
+      "trigger": "create_re:drain_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.drain.desc"
+      "translate": "advancement.create_re.drain.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:item_drain"
+      "item": "create_re:item_drain"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.drain"
+      "translate": "advancement.create_re.drain"
     }
   },
   "requirements": [

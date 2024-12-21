@@ -1,9 +1,9 @@
-package com.simibubi.create.content.schematics.table;
+package com.simibubi.create_re.content.schematics.table;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.item.ItemHelper;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.item.ItemHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
@@ -32,9 +32,9 @@ public class SchematicTableBlock extends HorizontalDirectionalBlock implements I
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
 		builder.add(FACING);
-		super.createBlockStateDefinition(builder);
+		super.create_reBlockStateDefinition(builder);
 	}
 
 	@Override

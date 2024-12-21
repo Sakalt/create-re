@@ -1,11 +1,11 @@
-package com.simibubi.create.content.trains.display;
+package com.simibubi.create_re.content.trains.display;
 
 import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.lang3.mutable.MutableInt;
 
-import com.simibubi.create.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;

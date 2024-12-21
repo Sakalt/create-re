@@ -1,14 +1,14 @@
-package com.simibubi.create.content.trains.schedule.destination;
+package com.simibubi.create_re.content.trains.schedule.destination;
 
 import java.util.List;
 
 import com.google.common.collect.ImmutableList;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.gui.ModularGuiLineBuilder;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.gui.ModularGuiLineBuilder;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;

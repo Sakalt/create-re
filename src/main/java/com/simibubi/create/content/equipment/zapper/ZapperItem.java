@@ -1,4 +1,4 @@
-package com.simibubi.create.content.equipment.zapper;
+package com.simibubi.create_re.content.equipment.zapper;
 
 import java.util.List;
 
@@ -6,14 +6,14 @@ import javax.annotation.Nonnull;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.AllTags.AllBlockTags;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.foundation.item.CustomArmPoseItem;
-import com.simibubi.create.foundation.utility.BlockHelper;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.NBTProcessors;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.AllTags.AllBlockTags;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.foundation.item.CustomArmPoseItem;
+import com.simibubi.create_re.foundation.utility.BlockHelper;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.NBTProcessors;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.model.HumanoidModel.ArmPose;

@@ -1,11 +1,11 @@
-package com.simibubi.create.infrastructure.worldgen;
+package com.simibubi.create_re.infrastructure.worldgen;
 
 import static net.minecraft.data.worldgen.features.FeatureUtils.register;
 
 import java.util.List;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.Create;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.Create;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
@@ -25,7 +25,7 @@ public class AllConfiguredFeatures {
 				STRIATED_ORES_NETHER = key("striated_ores_nether");
 
 	private static ResourceKey<ConfiguredFeature<?, ?>> key(String name) {
-		return ResourceKey.create(Registries.CONFIGURED_FEATURE, Create.asResource(name));
+		return ResourceKey.create_re(Registries.CONFIGURED_FEATURE, Create.asResource(name));
 	}
 
 	public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> ctx) {

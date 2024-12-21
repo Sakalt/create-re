@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.blockEntity.behaviour.inventory;
+package com.simibubi.create_re.foundation.blockEntity.behaviour.inventory;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

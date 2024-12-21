@@ -1,22 +1,22 @@
-package com.simibubi.create.infrastructure.ponder.scenes;
+package com.simibubi.create_re.infrastructure.ponder.scenes;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.decoration.steamWhistle.WhistleBlock;
-import com.simibubi.create.content.decoration.steamWhistle.WhistleExtenderBlock;
-import com.simibubi.create.content.fluids.pump.PumpBlock;
-import com.simibubi.create.content.kinetics.simpleRelays.ShaftBlock;
-import com.simibubi.create.content.processing.burner.BlazeBurnerBlock;
-import com.simibubi.create.content.processing.burner.BlazeBurnerBlock.HeatLevel;
-import com.simibubi.create.foundation.ponder.ElementLink;
-import com.simibubi.create.foundation.ponder.PonderPalette;
-import com.simibubi.create.foundation.ponder.SceneBuilder;
-import com.simibubi.create.foundation.ponder.SceneBuildingUtil;
-import com.simibubi.create.foundation.ponder.Selection;
-import com.simibubi.create.foundation.ponder.element.InputWindowElement;
-import com.simibubi.create.foundation.ponder.element.WorldSectionElement;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.Pointing;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.decoration.steamWhistle.WhistleBlock;
+import com.simibubi.create_re.content.decoration.steamWhistle.WhistleExtenderBlock;
+import com.simibubi.create_re.content.fluids.pump.PumpBlock;
+import com.simibubi.create_re.content.kinetics.simpleRelays.ShaftBlock;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock.HeatLevel;
+import com.simibubi.create_re.foundation.ponder.ElementLink;
+import com.simibubi.create_re.foundation.ponder.PonderPalette;
+import com.simibubi.create_re.foundation.ponder.SceneBuilder;
+import com.simibubi.create_re.foundation.ponder.SceneBuildingUtil;
+import com.simibubi.create_re.foundation.ponder.Selection;
+import com.simibubi.create_re.foundation.ponder.element.InputWindowElement;
+import com.simibubi.create_re.foundation.ponder.element.WorldSectionElement;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Pointing;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -273,7 +273,7 @@ public class SteamScenes {
 		scene.overlay.showText(80)
 			.attachKeyFrame()
 			.colored(PonderPalette.BLUE)
-			.text("Clicking the engine with a Shaft creates the Kinetic Output")
+			.text("Clicking the engine with a Shaft create_res the Kinetic Output")
 			.pointAt(util.vector.centerOf(util.grid.at(1, 1, 3)))
 			.placeNearTarget();
 		scene.idle(90);
@@ -305,7 +305,7 @@ public class SteamScenes {
 		scene.idle(30);
 
 		scene.world.setKineticSpeed(engine1Shaft, 16);
-		scene.effects.createRedstoneParticles(util.grid.at(3, 2, 3), 0xFFFFFF, 10);
+		scene.effects.create_reRedstoneParticles(util.grid.at(3, 2, 3), 0xFFFFFF, 10);
 		scene.idle(40);
 
 		scene.overlay.showText(60)
@@ -338,7 +338,7 @@ public class SteamScenes {
 		scene.idle(5);
 
 		scene.world.setKineticSpeed(engine1Shaft, 64);
-		scene.effects.createRedstoneParticles(util.grid.at(3, 2, 3), 0xFFFFFF, 10);
+		scene.effects.create_reRedstoneParticles(util.grid.at(3, 2, 3), 0xFFFFFF, 10);
 		scene.idle(40);
 
 		scene.overlay.showText(80)

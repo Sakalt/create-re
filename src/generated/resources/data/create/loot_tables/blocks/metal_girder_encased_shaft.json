@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:metal_girder"
+          "name": "create_re:metal_girder"
         }
       ],
       "rolls": 1.0
@@ -26,11 +26,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:shaft"
+          "name": "create_re:shaft"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/metal_girder_encased_shaft"
+  "random_sequence": "create_re:blocks/metal_girder_encased_shaft"
 }

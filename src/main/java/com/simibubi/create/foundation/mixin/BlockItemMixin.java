@@ -1,8 +1,8 @@
-package com.simibubi.create.foundation.mixin;
+package com.simibubi.create_re.foundation.mixin;
 
-import com.simibubi.create.content.kinetics.deployer.DeployerFakePlayer;
+import com.simibubi.create_re.content.kinetics.deployer.DeployerFakePlayer;
 
-import com.simibubi.create.foundation.mixin.accessor.UseOnContextAccessor;
+import com.simibubi.create_re.foundation.mixin.accessor.UseOnContextAccessor;
 
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.BlockItem;
@@ -19,8 +19,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(BlockItem.class)
 public class BlockItemMixin {
 	@Inject(method = "place", at = @At("HEAD"), cancellable = true)
-	private void create$fixDeployerPlacement(BlockPlaceContext pContext, CallbackInfoReturnable<InteractionResult> cir) {
-		BlockState state = pContext.getLevel().getBlockState(((UseOnContextAccessor) pContext).create$getHitResult().getBlockPos());
+	private void create_re$fixDeployerPlacement(BlockPlaceContext pContext, CallbackInfoReturnable<InteractionResult> cir) {
+		BlockState state = pContext.getLevel().getBlockState(((UseOnContextAccessor) pContext).create_re$getHitResult().getBlockPos());
 		if (!state.canBeReplaced() && pContext.getPlayer() instanceof DeployerFakePlayer) {
 			cir.setReturnValue(InteractionResult.PASS);
 		}

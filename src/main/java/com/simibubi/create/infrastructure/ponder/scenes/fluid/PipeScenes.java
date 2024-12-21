@@ -1,27 +1,27 @@
-package com.simibubi.create.infrastructure.ponder.scenes.fluid;
+package com.simibubi.create_re.infrastructure.ponder.scenes.fluid;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllFluids;
-import com.simibubi.create.content.fluids.drain.ItemDrainBlockEntity;
-import com.simibubi.create.content.fluids.pipes.AxisPipeBlock;
-import com.simibubi.create.content.fluids.pipes.FluidPipeBlock;
-import com.simibubi.create.content.fluids.pipes.GlassFluidPipeBlock;
-import com.simibubi.create.content.fluids.pipes.SmartFluidPipeBlockEntity;
-import com.simibubi.create.content.fluids.pipes.valve.FluidValveBlock;
-import com.simibubi.create.content.fluids.pipes.valve.FluidValveBlockEntity;
-import com.simibubi.create.content.fluids.pump.PumpBlock;
-import com.simibubi.create.content.fluids.tank.FluidTankBlockEntity;
-import com.simibubi.create.content.processing.basin.BasinBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.fluid.SmartFluidTankBehaviour;
-import com.simibubi.create.foundation.fluid.FluidHelper;
-import com.simibubi.create.foundation.ponder.ElementLink;
-import com.simibubi.create.foundation.ponder.PonderPalette;
-import com.simibubi.create.foundation.ponder.SceneBuilder;
-import com.simibubi.create.foundation.ponder.SceneBuildingUtil;
-import com.simibubi.create.foundation.ponder.Selection;
-import com.simibubi.create.foundation.ponder.element.InputWindowElement;
-import com.simibubi.create.foundation.ponder.element.WorldSectionElement;
-import com.simibubi.create.foundation.utility.Pointing;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllFluids;
+import com.simibubi.create_re.content.fluids.drain.ItemDrainBlockEntity;
+import com.simibubi.create_re.content.fluids.pipes.AxisPipeBlock;
+import com.simibubi.create_re.content.fluids.pipes.FluidPipeBlock;
+import com.simibubi.create_re.content.fluids.pipes.GlassFluidPipeBlock;
+import com.simibubi.create_re.content.fluids.pipes.SmartFluidPipeBlockEntity;
+import com.simibubi.create_re.content.fluids.pipes.valve.FluidValveBlock;
+import com.simibubi.create_re.content.fluids.pipes.valve.FluidValveBlockEntity;
+import com.simibubi.create_re.content.fluids.pump.PumpBlock;
+import com.simibubi.create_re.content.fluids.tank.FluidTankBlockEntity;
+import com.simibubi.create_re.content.processing.basin.BasinBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.fluid.SmartFluidTankBehaviour;
+import com.simibubi.create_re.foundation.fluid.FluidHelper;
+import com.simibubi.create_re.foundation.ponder.ElementLink;
+import com.simibubi.create_re.foundation.ponder.PonderPalette;
+import com.simibubi.create_re.foundation.ponder.SceneBuilder;
+import com.simibubi.create_re.foundation.ponder.SceneBuildingUtil;
+import com.simibubi.create_re.foundation.ponder.Selection;
+import com.simibubi.create_re.foundation.ponder.element.InputWindowElement;
+import com.simibubi.create_re.foundation.ponder.element.WorldSectionElement;
+import com.simibubi.create_re.foundation.utility.Pointing;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -278,7 +278,7 @@ public class PipeScenes {
 		scene.world.showSectionAndMerge(waterTarget2S, Direction.UP, target);
 
 		scene.overlay.showText(60)
-			.text("...while spilling into empty spaces can create fluid sources")
+			.text("...while spilling into empty spaces can create_re fluid sources")
 			.attachKeyFrame()
 			.placeNearTarget()
 			.pointAt(util.vector.blockSurface(util.grid.at(3, 1, 2), Direction.NORTH));

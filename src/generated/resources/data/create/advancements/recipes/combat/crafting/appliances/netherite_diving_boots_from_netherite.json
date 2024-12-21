@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/appliances/netherite_diving_boots_from_netherite"
+        "recipe": "create_re:crafting/appliances/netherite_diving_boots_from_netherite"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/appliances/netherite_diving_boots_from_netherite"
+      "create_re:crafting/appliances/netherite_diving_boots_from_netherite"
     ]
   },
   "sends_telemetry_event": false

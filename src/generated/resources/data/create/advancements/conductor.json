@@ -1,25 +1,25 @@
 {
-  "parent": "create:train",
+  "parent": "create_re:train",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:conductor_builtin"
+      "trigger": "create_re:conductor_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.conductor.desc"
+      "translate": "advancement.create_re.conductor.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:schedule"
+      "item": "create_re:schedule"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.conductor"
+      "translate": "advancement.create_re.conductor"
     }
   },
   "requirements": [

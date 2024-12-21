@@ -1,17 +1,17 @@
-package com.simibubi.create.content.schematics.cannon;
+package com.simibubi.create_re.content.schematics.cannon;
 
 import java.util.Arrays;
 import java.util.Optional;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.kinetics.belt.BeltBlock;
-import com.simibubi.create.content.kinetics.belt.BeltBlockEntity;
-import com.simibubi.create.content.kinetics.belt.BeltBlockEntity.CasingType;
-import com.simibubi.create.content.kinetics.belt.BeltPart;
-import com.simibubi.create.content.kinetics.belt.BeltSlope;
-import com.simibubi.create.content.kinetics.belt.item.BeltConnectorItem;
-import com.simibubi.create.content.kinetics.simpleRelays.AbstractSimpleShaftBlock;
-import com.simibubi.create.foundation.utility.BlockHelper;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlock;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlockEntity;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlockEntity.CasingType;
+import com.simibubi.create_re.content.kinetics.belt.BeltPart;
+import com.simibubi.create_re.content.kinetics.belt.BeltSlope;
+import com.simibubi.create_re.content.kinetics.belt.item.BeltConnectorItem;
+import com.simibubi.create_re.content.kinetics.simpleRelays.AbstractSimpleShaftBlock;
+import com.simibubi.create_re.foundation.utility.BlockHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction.Axis;
@@ -174,7 +174,7 @@ public abstract class LaunchedItem {
 					.getAxis();
 			world.setBlockAndUpdate(target, AllBlocks.SHAFT.getDefaultState()
 				.setValue(AbstractSimpleShaftBlock.AXIS, axis));
-			BeltConnectorItem.createBelts(world, target,
+			BeltConnectorItem.create_reBelts(world, target,
 				target.offset(offset.getX() * i, offset.getY() * i, offset.getZ() * i));
 
 			for (int segment = 0; segment < length; segment++) {
@@ -204,7 +204,7 @@ public abstract class LaunchedItem {
 		public boolean update(Level world) {
 			if (deferredTag != null && entity == null) {
 				try {
-					Optional<Entity> loadEntityUnchecked = EntityType.create(deferredTag, world);
+					Optional<Entity> loadEntityUnchecked = EntityType.create_re(deferredTag, world);
 					if (!loadEntityUnchecked.isPresent())
 						return true;
 					entity = loadEntityUnchecked.get();

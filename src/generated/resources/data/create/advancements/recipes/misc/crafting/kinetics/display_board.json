@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:andesite_alloy"
+              "create_re:andesite_alloy"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/kinetics/display_board"
+        "recipe": "create_re:crafting/kinetics/display_board"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/kinetics/display_board"
+      "create_re:crafting/kinetics/display_board"
     ]
   },
   "sends_telemetry_event": false

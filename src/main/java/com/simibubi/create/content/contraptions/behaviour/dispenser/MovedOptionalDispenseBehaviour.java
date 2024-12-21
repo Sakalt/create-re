@@ -1,4 +1,4 @@
-package com.simibubi.create.content.contraptions.behaviour.dispenser;
+package com.simibubi.create_re.content.contraptions.behaviour.dispenser;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.LevelAccessor;

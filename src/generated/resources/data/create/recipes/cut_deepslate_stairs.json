@@ -4,7 +4,7 @@
   "group": "cut_deepslate_stairs",
   "key": {
     "X": {
-      "item": "create:cut_deepslate"
+      "item": "create_re:cut_deepslate"
     }
   },
   "pattern": [
@@ -14,7 +14,7 @@
   ],
   "result": {
     "count": 4,
-    "item": "create:cut_deepslate_stairs"
+    "item": "create_re:cut_deepslate_stairs"
   },
   "show_notification": true
 }

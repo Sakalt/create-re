@@ -1,4 +1,4 @@
-package com.simibubi.create.content.kinetics.steamEngine;
+package com.simibubi.create_re.content.kinetics.steamEngine;
 
 import org.joml.Quaternionf;
 import org.joml.Vector3f;
@@ -110,7 +110,7 @@ public class SteamJetParticle extends SimpleAnimatedParticle {
 			this.spriteSet = animatedSprite;
 		}
 
-		public Particle createParticle(SteamJetParticleData data, ClientLevel worldIn, double x, double y, double z,
+		public Particle create_reParticle(SteamJetParticleData data, ClientLevel worldIn, double x, double y, double z,
 			double xSpeed, double ySpeed, double zSpeed) {
 			return new SteamJetParticle(worldIn, data, x, y, z, xSpeed, ySpeed, zSpeed, this.spriteSet);
 		}

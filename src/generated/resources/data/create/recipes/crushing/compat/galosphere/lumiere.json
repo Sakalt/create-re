@@ -1,5 +1,5 @@
 {
-  "type": "create:crushing",
+  "type": "create_re:crushing",
   "conditions": [
     {
       "type": "forge:mod_loaded",
@@ -8,7 +8,7 @@
   ],
   "ingredients": [
     {
-      "tag": "create:stone_types/galosphere/lumiere"
+      "tag": "create_re:stone_types/galosphere/lumiere"
     }
   ],
   "processingTime": 300,

@@ -1,4 +1,4 @@
-package com.simibubi.create.infrastructure.command;
+package com.simibubi.create_re.infrastructure.command;
 
 import java.util.Collection;
 
@@ -6,8 +6,8 @@ import com.google.common.collect.ImmutableList;
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.builder.ArgumentBuilder;
 import com.mojang.brigadier.suggestion.SuggestionProvider;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.foundation.ponder.PonderRegistry;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.foundation.ponder.PonderRegistry;
 
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;

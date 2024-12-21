@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.track;
+package com.simibubi.create_re.content.trains.track;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -7,14 +7,14 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.api.event.TrackGraphMergeEvent;
-import com.simibubi.create.content.trains.GlobalRailwayManager;
-import com.simibubi.create.content.trains.graph.TrackGraph;
-import com.simibubi.create.content.trains.graph.TrackGraphSync;
-import com.simibubi.create.content.trains.graph.TrackNode;
-import com.simibubi.create.content.trains.graph.TrackNodeLocation.DiscoveredLocation;
-import com.simibubi.create.content.trains.signal.SignalPropagator;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.api.event.TrackGraphMergeEvent;
+import com.simibubi.create_re.content.trains.GlobalRailwayManager;
+import com.simibubi.create_re.content.trains.graph.TrackGraph;
+import com.simibubi.create_re.content.trains.graph.TrackGraphSync;
+import com.simibubi.create_re.content.trains.graph.TrackNode;
+import com.simibubi.create_re.content.trains.graph.TrackNodeLocation.DiscoveredLocation;
+import com.simibubi.create_re.content.trains.signal.SignalPropagator;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.Mth;
@@ -179,7 +179,7 @@ public class TrackPropagator {
 
 		frontier.clear();
 		Set<TrackNode> addedNodes = new HashSet<>();
-		graph.createNodeIfAbsent(startNode);
+		graph.create_reNodeIfAbsent(startNode);
 		frontier.add(new FrontierEntry(startNode, null, startNode));
 
 		// 3. Build up the graph via all connected nodes
@@ -197,7 +197,7 @@ public class TrackPropagator {
 				ends.remove(entry.prevNode);
 
 			if (isValidGraphNodeLocation(entry.currentNode, ends, first) && entry.currentNode != startNode) {
-				boolean nodeIsNew = graph.createNodeIfAbsent(entry.currentNode);
+				boolean nodeIsNew = graph.create_reNodeIfAbsent(entry.currentNode);
 				graph.connectNodes(reader, parentNode, entry.currentNode, entry.currentNode.getTurn());
 				addedNodes.add(graph.locateNode(entry.currentNode));
 				parentNode = entry.currentNode;

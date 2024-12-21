@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:limestone"
+          "name": "create_re:limestone"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/limestone"
+  "random_sequence": "create_re:blocks/limestone"
 }

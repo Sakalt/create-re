@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"5": "create:block/creative_casing",
-		"6": "create:block/creative_motor",
-		"particle": "create:block/creative_casing",
-		"1_0": "create:block/axis"
+		"5": "create_re:block/creative_casing",
+		"6": "create_re:block/creative_motor",
+		"particle": "create_re:block/creative_casing",
+		"1_0": "create_re:block/axis"
 	},
 	"elements": [
 		{

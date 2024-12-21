@@ -1,18 +1,18 @@
 {
-  "type": "create:filling",
+  "type": "create_re:filling",
   "ingredients": [
     {
       "item": "minecraft:glass_bottle"
     },
     {
       "amount": 250,
-      "fluid": "create:tea",
+      "fluid": "create_re:tea",
       "nbt": {}
     }
   ],
   "results": [
     {
-      "item": "create:builders_tea"
+      "item": "create_re:builders_tea"
     }
   ]
 }

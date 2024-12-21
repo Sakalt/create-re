@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:cart_assembler"
+          "name": "create_re:cart_assembler"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/cart_assembler"
+  "random_sequence": "create_re:blocks/cart_assembler"
 }

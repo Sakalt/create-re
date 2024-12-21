@@ -1,10 +1,10 @@
-package com.simibubi.create.content.redstone.analogLever;
+package com.simibubi.create_re.content.redstone.analogLever;
 
 import java.util.function.Consumer;
 
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.foundation.utility.AngleHelper;
-import com.simibubi.create.foundation.utility.Color;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
+import com.simibubi.create_re.foundation.utility.Color;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.visual.DynamicVisual;
@@ -31,9 +31,9 @@ public class AnalogLeverVisual extends AbstractBlockEntityVisual<AnalogLeverBloc
 		super(context, blockEntity, partialTick);
 
 		handle = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.ANALOG_LEVER_HANDLE))
-			.createInstance();
+			.create_reInstance();
 		indicator = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.ANALOG_LEVER_INDICATOR))
-			.createInstance();
+			.create_reInstance();
 
 		AttachFace face = blockState.getValue(AnalogLeverBlock.FACE);
 		rX = face == AttachFace.FLOOR ? 0 : face == AttachFace.WALL ? 90 : 180;

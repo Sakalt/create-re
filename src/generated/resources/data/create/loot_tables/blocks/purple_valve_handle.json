@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:purple_valve_handle"
+          "name": "create_re:purple_valve_handle"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/purple_valve_handle"
+  "random_sequence": "create_re:blocks/purple_valve_handle"
 }

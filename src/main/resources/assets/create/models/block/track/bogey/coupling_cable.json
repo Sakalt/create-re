@@ -1,6 +1,6 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "create:block/track/bogey/textures",
+	"parent": "create_re:block/track/bogey/textures",
 	"textures": {
 		"0": "#wheel"
 	},

@@ -1,10 +1,10 @@
-package com.simibubi.create.foundation.config.ui.entries;
+package com.simibubi.create_re.foundation.config.ui.entries;
 
-import com.simibubi.create.foundation.gui.AllIcons;
-import com.simibubi.create.foundation.gui.Theme;
-import com.simibubi.create.foundation.gui.UIRenderHelper;
-import com.simibubi.create.foundation.gui.element.RenderElement;
-import com.simibubi.create.foundation.gui.widget.BoxWidget;
+import com.simibubi.create_re.foundation.gui.AllIcons;
+import com.simibubi.create_re.foundation.gui.Theme;
+import com.simibubi.create_re.foundation.gui.UIRenderHelper;
+import com.simibubi.create_re.foundation.gui.element.RenderElement;
+import com.simibubi.create_re.foundation.gui.widget.BoxWidget;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraftforge.common.ForgeConfigSpec;

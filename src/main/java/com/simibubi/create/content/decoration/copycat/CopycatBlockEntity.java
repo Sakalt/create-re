@@ -1,18 +1,18 @@
-package com.simibubi.create.content.decoration.copycat;
+package com.simibubi.create_re.content.decoration.copycat;
 
 import java.util.List;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.contraptions.ITransformableBlockEntity;
-import com.simibubi.create.content.contraptions.StructureTransform;
-import com.simibubi.create.content.redstone.RoseQuartzLampBlock;
-import com.simibubi.create.content.schematics.requirement.ISpecialBlockEntityItemRequirement;
-import com.simibubi.create.content.schematics.requirement.ItemRequirement;
-import com.simibubi.create.content.schematics.requirement.ItemRequirement.ItemUseType;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.utility.IPartialSafeNBT;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.contraptions.ITransformableBlockEntity;
+import com.simibubi.create_re.content.contraptions.StructureTransform;
+import com.simibubi.create_re.content.redstone.RoseQuartzLampBlock;
+import com.simibubi.create_re.content.schematics.requirement.ISpecialBlockEntityItemRequirement;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement.ItemUseType;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.utility.IPartialSafeNBT;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

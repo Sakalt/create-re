@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:polished_cut_veridium"
+          "name": "create_re:polished_cut_veridium"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/polished_cut_veridium"
+  "random_sequence": "create_re:blocks/polished_cut_veridium"
 }

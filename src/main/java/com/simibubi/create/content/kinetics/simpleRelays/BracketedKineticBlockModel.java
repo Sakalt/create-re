@@ -1,11 +1,11 @@
-package com.simibubi.create.content.kinetics.simpleRelays;
+package com.simibubi.create_re.content.kinetics.simpleRelays;
 
 import java.util.Collections;
 import java.util.List;
 
-import com.simibubi.create.content.decoration.bracket.BracketedBlockEntityBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.render.VirtualRenderHelper;
+import com.simibubi.create_re.content.decoration.bracket.BracketedBlockEntityBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.render.VirtualRenderHelper;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;

@@ -1,12 +1,12 @@
-package com.simibubi.create.foundation.data;
+package com.simibubi.create_re.foundation.data;
 
-import static com.simibubi.create.AllInteractionBehaviours.interactionBehaviour;
-import static com.simibubi.create.AllMovementBehaviours.movementBehaviour;
-import static com.simibubi.create.foundation.data.BlockStateGen.axisBlock;
-import static com.simibubi.create.foundation.data.CreateRegistrate.casingConnectivity;
-import static com.simibubi.create.foundation.data.CreateRegistrate.connectedTextures;
-import static com.simibubi.create.foundation.data.TagGen.axeOrPickaxe;
-import static com.simibubi.create.foundation.data.TagGen.pickaxeOnly;
+import static com.simibubi.create_re.AllInteractionBehaviours.interactionBehaviour;
+import static com.simibubi.create_re.AllMovementBehaviours.movementBehaviour;
+import static com.simibubi.create_re.foundation.data.BlockStateGen.axisBlock;
+import static com.simibubi.create_re.foundation.data.CreateRegistrate.casingConnectivity;
+import static com.simibubi.create_re.foundation.data.CreateRegistrate.connectedTextures;
+import static com.simibubi.create_re.foundation.data.TagGen.axeOrPickaxe;
+import static com.simibubi.create_re.foundation.data.TagGen.pickaxeOnly;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,36 +14,36 @@ import java.util.function.Supplier;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllTags.AllBlockTags;
-import com.simibubi.create.AllTags.AllItemTags;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.contraptions.behaviour.DoorMovingInteraction;
-import com.simibubi.create.content.contraptions.behaviour.TrapdoorMovingInteraction;
-import com.simibubi.create.content.contraptions.piston.MechanicalPistonGenerator;
-import com.simibubi.create.content.decoration.MetalScaffoldingBlock;
-import com.simibubi.create.content.decoration.MetalScaffoldingBlockItem;
-import com.simibubi.create.content.decoration.MetalScaffoldingCTBehaviour;
-import com.simibubi.create.content.decoration.copycat.CopycatBlock;
-import com.simibubi.create.content.decoration.encasing.CasingBlock;
-import com.simibubi.create.content.decoration.encasing.EncasedCTBehaviour;
-import com.simibubi.create.content.decoration.slidingDoor.SlidingDoorBlock;
-import com.simibubi.create.content.decoration.slidingDoor.SlidingDoorMovementBehaviour;
-import com.simibubi.create.content.kinetics.BlockStressDefaults;
-import com.simibubi.create.content.kinetics.base.RotatedPillarKineticBlock;
-import com.simibubi.create.content.kinetics.crank.ValveHandleBlock;
-import com.simibubi.create.content.kinetics.simpleRelays.encased.EncasedCogCTBehaviour;
-import com.simibubi.create.content.kinetics.simpleRelays.encased.EncasedCogwheelBlock;
-import com.simibubi.create.content.kinetics.simpleRelays.encased.EncasedShaftBlock;
-import com.simibubi.create.content.logistics.tunnel.BeltTunnelBlock;
-import com.simibubi.create.content.logistics.tunnel.BeltTunnelBlock.Shape;
-import com.simibubi.create.content.logistics.tunnel.BeltTunnelItem;
-import com.simibubi.create.content.trains.bogey.AbstractBogeyBlock;
-import com.simibubi.create.content.trains.bogey.StandardBogeyBlock;
-import com.simibubi.create.foundation.block.ItemUseOverrides;
-import com.simibubi.create.foundation.block.connected.CTSpriteShiftEntry;
-import com.simibubi.create.foundation.block.connected.HorizontalCTBehaviour;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllTags.AllBlockTags;
+import com.simibubi.create_re.AllTags.AllItemTags;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.contraptions.behaviour.DoorMovingInteraction;
+import com.simibubi.create_re.content.contraptions.behaviour.TrapdoorMovingInteraction;
+import com.simibubi.create_re.content.contraptions.piston.MechanicalPistonGenerator;
+import com.simibubi.create_re.content.decoration.MetalScaffoldingBlock;
+import com.simibubi.create_re.content.decoration.MetalScaffoldingBlockItem;
+import com.simibubi.create_re.content.decoration.MetalScaffoldingCTBehaviour;
+import com.simibubi.create_re.content.decoration.copycat.CopycatBlock;
+import com.simibubi.create_re.content.decoration.encasing.CasingBlock;
+import com.simibubi.create_re.content.decoration.encasing.EncasedCTBehaviour;
+import com.simibubi.create_re.content.decoration.slidingDoor.SlidingDoorBlock;
+import com.simibubi.create_re.content.decoration.slidingDoor.SlidingDoorMovementBehaviour;
+import com.simibubi.create_re.content.kinetics.BlockStressDefaults;
+import com.simibubi.create_re.content.kinetics.base.RotatedPillarKineticBlock;
+import com.simibubi.create_re.content.kinetics.crank.ValveHandleBlock;
+import com.simibubi.create_re.content.kinetics.simpleRelays.encased.EncasedCogCTBehaviour;
+import com.simibubi.create_re.content.kinetics.simpleRelays.encased.EncasedCogwheelBlock;
+import com.simibubi.create_re.content.kinetics.simpleRelays.encased.EncasedShaftBlock;
+import com.simibubi.create_re.content.logistics.tunnel.BeltTunnelBlock;
+import com.simibubi.create_re.content.logistics.tunnel.BeltTunnelBlock.Shape;
+import com.simibubi.create_re.content.logistics.tunnel.BeltTunnelItem;
+import com.simibubi.create_re.content.trains.bogey.AbstractBogeyBlock;
+import com.simibubi.create_re.content.trains.bogey.StandardBogeyBlock;
+import com.simibubi.create_re.foundation.block.ItemUseOverrides;
+import com.simibubi.create_re.foundation.block.connected.CTSpriteShiftEntry;
+import com.simibubi.create_re.foundation.block.connected.HorizontalCTBehaviour;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.util.DataIngredient;
 import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
@@ -156,7 +156,7 @@ public class BuilderTransformers {
 			.tag(BlockTags.DOORS)
 			.tag(BlockTags.WOODEN_DOORS) // for villager AI
 			.tag(AllBlockTags.NON_DOUBLE_DOOR.tag)
-			.loot((lr, block) -> lr.add(block, lr.createDoorTable(block)))
+			.loot((lr, block) -> lr.add(block, lr.create_reDoorTable(block)))
 			.item()
 			.tag(ItemTags.DOORS)
 			.tag(AllItemTags.CONTRAPTION_CONTROLLED.tag)

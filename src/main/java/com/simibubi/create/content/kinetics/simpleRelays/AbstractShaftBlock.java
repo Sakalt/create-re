@@ -1,9 +1,9 @@
-package com.simibubi.create.content.kinetics.simpleRelays;
+package com.simibubi.create_re.content.kinetics.simpleRelays;
 
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.kinetics.base.RotatedPillarKineticBlock;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.block.ProperWaterloggedBlock;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.kinetics.base.RotatedPillarKineticBlock;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -53,8 +53,8 @@ public abstract class AbstractShaftBlock extends RotatedPillarKineticBlock
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
-		super.createBlockStateDefinition(builder.add(BlockStateProperties.WATERLOGGED));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
+		super.create_reBlockStateDefinition(builder.add(BlockStateProperties.WATERLOGGED));
 	}
 
 	@Override

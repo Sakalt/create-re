@@ -1,14 +1,14 @@
-package com.simibubi.create.content.logistics.chute;
+package com.simibubi.create_re.content.logistics.chute;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.logistics.funnel.FunnelBlock;
-import com.simibubi.create.foundation.block.ProperWaterloggedBlock;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.logistics.funnel.FunnelBlock;
+import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -40,7 +40,7 @@ import net.minecraft.world.phys.BlockHitResult;
 
 public class ChuteBlock extends AbstractChuteBlock implements ProperWaterloggedBlock {
 
-	public static final Property<Shape> SHAPE = EnumProperty.create("shape", Shape.class);
+	public static final Property<Shape> SHAPE = EnumProperty.create_re("shape", Shape.class);
 	public static final DirectionProperty FACING = BlockStateProperties.FACING_HOPPER;
 
 	public ChuteBlock(Properties p_i48440_1_) {
@@ -137,8 +137,8 @@ public class ChuteBlock extends AbstractChuteBlock implements ProperWaterloggedB
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> p_206840_1_) {
-		super.createBlockStateDefinition(p_206840_1_.add(SHAPE, FACING, WATERLOGGED));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> p_206840_1_) {
+		super.create_reBlockStateDefinition(p_206840_1_.add(SHAPE, FACING, WATERLOGGED));
 	}
 
 	@Override

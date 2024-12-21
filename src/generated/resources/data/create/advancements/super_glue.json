@@ -1,26 +1,26 @@
 {
-  "parent": "create:millstone",
+  "parent": "create_re:millstone",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:super_glue_builtin"
+      "trigger": "create_re:super_glue_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.super_glue.desc"
+      "translate": "advancement.create_re.super_glue.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:super_glue",
+      "item": "create_re:super_glue",
       "nbt": "{Damage:0}"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.super_glue"
+      "translate": "advancement.create_re.super_glue"
     }
   },
   "requirements": [

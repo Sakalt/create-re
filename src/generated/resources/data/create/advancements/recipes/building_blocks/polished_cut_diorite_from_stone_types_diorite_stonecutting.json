@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "create:stone_types/diorite"
+            "tag": "create_re:stone_types/diorite"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:polished_cut_diorite_from_stone_types_diorite_stonecutting"
+        "recipe": "create_re:polished_cut_diorite_from_stone_types_diorite_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:polished_cut_diorite_from_stone_types_diorite_stonecutting"
+      "create_re:polished_cut_diorite_from_stone_types_diorite_stonecutting"
     ]
   },
   "sends_telemetry_event": false

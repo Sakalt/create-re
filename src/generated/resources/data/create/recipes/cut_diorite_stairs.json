@@ -4,7 +4,7 @@
   "group": "cut_diorite_stairs",
   "key": {
     "X": {
-      "item": "create:cut_diorite"
+      "item": "create_re:cut_diorite"
     }
   },
   "pattern": [
@@ -14,7 +14,7 @@
   ],
   "result": {
     "count": 4,
-    "item": "create:cut_diorite_stairs"
+    "item": "create_re:cut_diorite_stairs"
   },
   "show_notification": true
 }

@@ -1,12 +1,12 @@
-package com.simibubi.create.content.kinetics.waterwheel;
+package com.simibubi.create_re.content.kinetics.waterwheel;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.kinetics.base.DirectionalKineticBlock;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.worldWrappers.WrappedWorld;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.kinetics.base.DirectionalKineticBlock;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.worldWrappers.WrappedWorld;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -128,7 +128,7 @@ public class WaterWheelBlock extends DirectionalKineticBlock implements IBE<Wate
 	}
 
 	public static Couple<Integer> getSpeedRange() {
-		return Couple.create(8, 8);
+		return Couple.create_re(8, 8);
 	}
 	
 	@Override

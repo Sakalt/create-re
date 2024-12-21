@@ -1,8 +1,8 @@
-package com.simibubi.create.content.contraptions;
+package com.simibubi.create_re.content.contraptions;
 
-import com.simibubi.create.foundation.blockEntity.behaviour.scrollValue.INamedIconOptions;
-import com.simibubi.create.foundation.gui.AllIcons;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.scrollValue.INamedIconOptions;
+import com.simibubi.create_re.foundation.gui.AllIcons;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.BlockPos;
 

@@ -1,14 +1,14 @@
-package com.simibubi.create.content.processing.basin;
+package com.simibubi.create_re.content.processing.basin;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.foundation.blockEntity.behaviour.fluid.SmartFluidTankBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.fluid.SmartFluidTankBehaviour.TankSegment;
-import com.simibubi.create.foundation.blockEntity.renderer.SmartBlockEntityRenderer;
-import com.simibubi.create.foundation.fluid.FluidRenderer;
-import com.simibubi.create.foundation.utility.AngleHelper;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.IntAttached;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.fluid.SmartFluidTankBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.fluid.SmartFluidTankBehaviour.TankSegment;
+import com.simibubi.create_re.foundation.blockEntity.renderer.SmartBlockEntityRenderer;
+import com.simibubi.create_re.foundation.fluid.FluidRenderer;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.IntAttached;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import dev.engine_room.flywheel.lib.transform.TransformStack;
 import net.minecraft.client.Minecraft;
@@ -48,7 +48,7 @@ public class BasinRenderer extends SmartBlockEntityRenderer<BasinBlockEntity> {
 		TransformStack.of(ms)
 			.rotateYDegrees(basin.ingredientRotation.getValue(partialTicks));
 
-		RandomSource r = RandomSource.create(pos.hashCode());
+		RandomSource r = RandomSource.create_re(pos.hashCode());
 		Vec3 baseVector = new Vec3(.125, level, 0);
 
 		IItemHandlerModifiable inv = basin.itemCapability.orElse(new ItemStackHandler());

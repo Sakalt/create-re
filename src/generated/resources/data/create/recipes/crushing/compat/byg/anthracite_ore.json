@@ -1,5 +1,5 @@
 {
-  "type": "create:crushing",
+  "type": "create_re:crushing",
   "conditions": [
     {
       "type": "forge:mod_loaded",
@@ -23,7 +23,7 @@
     },
     {
       "chance": 0.75,
-      "item": "create:experience_nugget"
+      "item": "create_re:experience_nugget"
     },
     {
       "chance": 0.125,

@@ -1,14 +1,14 @@
-package com.simibubi.create.content.trains.graph;
+package com.simibubi.create_re.content.trains.graph;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Supplier;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.content.trains.observer.TrackObserver;
-import com.simibubi.create.content.trains.signal.SignalBoundary;
-import com.simibubi.create.content.trains.signal.TrackEdgePoint;
-import com.simibubi.create.content.trains.station.GlobalStation;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.trains.observer.TrackObserver;
+import com.simibubi.create_re.content.trains.signal.SignalBoundary;
+import com.simibubi.create_re.content.trains.signal.TrackEdgePoint;
+import com.simibubi.create_re.content.trains.station.GlobalStation;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
@@ -37,7 +37,7 @@ public class EdgePointType<T extends TrackEdgePoint> {
 		this.factory = factory;
 	}
 
-	public T create() {
+	public T create_re() {
 		T t = factory.get();
 		t.setType(this);
 		return t;
@@ -50,7 +50,7 @@ public class EdgePointType<T extends TrackEdgePoint> {
 	public static TrackEdgePoint read(FriendlyByteBuf buffer, DimensionPalette dimensions) {
 		ResourceLocation type = buffer.readResourceLocation();
 		EdgePointType<?> edgePointType = TYPES.get(type);
-		TrackEdgePoint point = edgePointType.create();
+		TrackEdgePoint point = edgePointType.create_re();
 		point.read(buffer, dimensions);
 		return point;
 	}

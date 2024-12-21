@@ -1,4 +1,4 @@
-package com.simibubi.create.content.logistics.tunnel;
+package com.simibubi.create_re.content.logistics.tunnel;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -13,27 +13,27 @@ import javax.annotation.Nullable;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.equipment.goggles.IHaveGoggleInformation;
-import com.simibubi.create.content.kinetics.belt.BeltBlockEntity;
-import com.simibubi.create.content.kinetics.belt.BeltHelper;
-import com.simibubi.create.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
-import com.simibubi.create.content.logistics.funnel.BeltFunnelBlock;
-import com.simibubi.create.content.logistics.funnel.BeltFunnelBlock.Shape;
-import com.simibubi.create.content.logistics.funnel.FunnelBlock;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.filtering.SidedFilteringBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.scrollValue.INamedIconOptions;
-import com.simibubi.create.foundation.blockEntity.behaviour.scrollValue.ScrollOptionBehaviour;
-import com.simibubi.create.foundation.gui.AllIcons;
-import com.simibubi.create.foundation.utility.BlockHelper;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.equipment.goggles.IHaveGoggleInformation;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlockEntity;
+import com.simibubi.create_re.content.kinetics.belt.BeltHelper;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
+import com.simibubi.create_re.content.logistics.funnel.BeltFunnelBlock;
+import com.simibubi.create_re.content.logistics.funnel.BeltFunnelBlock.Shape;
+import com.simibubi.create_re.content.logistics.funnel.FunnelBlock;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.filtering.SidedFilteringBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.scrollValue.INamedIconOptions;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.scrollValue.ScrollOptionBehaviour;
+import com.simibubi.create_re.foundation.gui.AllIcons;
+import com.simibubi.create_re.foundation.utility.BlockHelper;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
@@ -84,7 +84,7 @@ public class BrassTunnelBlockEntity extends BeltTunnelBlockEntity implements IHa
 
 	public BrassTunnelBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state) {
 		super(type, pos, state);
-		distributionTargets = Couple.create(ArrayList::new);
+		distributionTargets = Couple.create_re(ArrayList::new);
 		syncSet = new HashSet<>();
 		stackToDistribute = ItemStack.EMPTY;
 		stackEnteredFrom = null;
@@ -451,7 +451,7 @@ public class BrassTunnelBlockEntity extends BeltTunnelBlockEntity implements IHa
 	@Override
 	public void initialize() {
 		if (filtering == null) {
-			filtering = createSidedFilter();
+			filtering = create_reSidedFilter();
 			attachBehaviourLate(filtering);
 		}
 		super.initialize();
@@ -558,11 +558,11 @@ public class BrassTunnelBlockEntity extends BeltTunnelBlockEntity implements IHa
 	@Override
 	public void addBehavioursDeferred(List<BlockEntityBehaviour> behaviours) {
 		super.addBehavioursDeferred(behaviours);
-		filtering = createSidedFilter();
+		filtering = create_reSidedFilter();
 		behaviours.add(filtering);
 	}
 
-	protected SidedFilteringBehaviour createSidedFilter() {
+	protected SidedFilteringBehaviour create_reSidedFilter() {
 		return new SidedFilteringBehaviour(this, new BrassTunnelFilterSlot(), this::makeFilter,
 			this::isValidFaceForFilter);
 	}

@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "create:birch_window"
+      "item": "create_re:birch_window"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 16,
-    "item": "create:birch_window_pane"
+    "item": "create_re:birch_window_pane"
   },
   "show_notification": true
 }

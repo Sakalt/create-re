@@ -1,7 +1,7 @@
-package com.simibubi.create.content.schematics.cannon;
+package com.simibubi.create_re.content.schematics.cannon;
 
-import com.simibubi.create.AllMenuTypes;
-import com.simibubi.create.foundation.gui.menu.MenuBase;
+import com.simibubi.create_re.AllMenuTypes;
+import com.simibubi.create_re.foundation.gui.menu.MenuBase;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
@@ -24,12 +24,12 @@ public class SchematicannonMenu extends MenuBase<SchematicannonBlockEntity> {
 		super(type, id, inv, be);
 	}
 
-	public static SchematicannonMenu create(int id, Inventory inv, SchematicannonBlockEntity be) {
+	public static SchematicannonMenu create_re(int id, Inventory inv, SchematicannonBlockEntity be) {
 		return new SchematicannonMenu(AllMenuTypes.SCHEMATICANNON.get(), id, inv, be);
 	}
 
 	@Override
-	protected SchematicannonBlockEntity createOnClient(FriendlyByteBuf extraData) {
+	protected SchematicannonBlockEntity create_reOnClient(FriendlyByteBuf extraData) {
 		ClientLevel world = Minecraft.getInstance().level;
 		BlockEntity blockEntity = world.getBlockEntity(extraData.readBlockPos());
 		if (blockEntity instanceof SchematicannonBlockEntity schematicannon) {

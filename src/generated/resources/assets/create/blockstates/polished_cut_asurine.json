@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/polished_cut_asurine"
+      "model": "create_re:block/polished_cut_asurine"
     }
   }
 }

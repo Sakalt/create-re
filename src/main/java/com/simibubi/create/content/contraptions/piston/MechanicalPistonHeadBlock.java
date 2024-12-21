@@ -1,11 +1,11 @@
-package com.simibubi.create.content.contraptions.piston;
+package com.simibubi.create_re.content.contraptions.piston;
 
-import static com.simibubi.create.content.contraptions.piston.MechanicalPistonBlock.isExtensionPole;
+import static com.simibubi.create_re.content.contraptions.piston.MechanicalPistonBlock.isExtensionPole;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.content.contraptions.piston.MechanicalPistonBlock.PistonState;
-import com.simibubi.create.foundation.block.WrenchableDirectionalBlock;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.content.contraptions.piston.MechanicalPistonBlock.PistonState;
+import com.simibubi.create_re.foundation.block.WrenchableDirectionalBlock;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -40,9 +40,9 @@ public class MechanicalPistonHeadBlock extends WrenchableDirectionalBlock implem
     }
 
     @Override
-    protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
+    protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
         builder.add(TYPE, BlockStateProperties.WATERLOGGED);
-        super.createBlockStateDefinition(builder);
+        super.create_reBlockStateDefinition(builder);
     }
 
     @Override

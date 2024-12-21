@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "create:block/zinc_ore"
+    "all": "create_re:block/zinc_ore"
   }
 }

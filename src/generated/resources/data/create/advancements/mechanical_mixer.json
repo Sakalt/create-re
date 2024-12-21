@@ -1,25 +1,25 @@
 {
-  "parent": "create:chute",
+  "parent": "create_re:chute",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:mechanical_mixer_builtin"
+      "trigger": "create_re:mechanical_mixer_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.mechanical_mixer.desc"
+      "translate": "advancement.create_re.mechanical_mixer.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:mechanical_mixer"
+      "item": "create_re:mechanical_mixer"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.mechanical_mixer"
+      "translate": "advancement.create_re.mechanical_mixer"
     }
   },
   "requirements": [

@@ -1,5 +1,5 @@
 {
-  "type": "create:splashing",
+  "type": "create_re:splashing",
   "conditions": [
     {
       "type": "forge:mod_loaded",
@@ -8,7 +8,7 @@
   ],
   "ingredients": [
     {
-      "item": "create:crushed_raw_aluminum"
+      "item": "create_re:crushed_raw_aluminum"
     }
   ],
   "results": [

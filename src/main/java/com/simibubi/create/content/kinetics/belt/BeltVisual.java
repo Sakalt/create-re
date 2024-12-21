@@ -1,17 +1,17 @@
-package com.simibubi.create.content.kinetics.belt;
+package com.simibubi.create_re.content.kinetics.belt;
 
 import java.util.ArrayList;
 import java.util.function.Consumer;
 
 import org.joml.Quaternionf;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntityVisual;
-import com.simibubi.create.content.kinetics.base.RotatingInstance;
-import com.simibubi.create.foundation.block.render.SpriteShiftEntry;
-import com.simibubi.create.foundation.render.AllInstanceTypes;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntityVisual;
+import com.simibubi.create_re.content.kinetics.base.RotatingInstance;
+import com.simibubi.create_re.foundation.block.render.SpriteShiftEntry;
+import com.simibubi.create_re.foundation.render.AllInstanceTypes;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.instance.Instancer;
@@ -67,7 +67,7 @@ public class BeltVisual extends KineticBlockEntityVisual<BeltBlockEntity> {
 
             Instancer<BeltInstance> beltModel = instancerProvider().instancer(AllInstanceTypes.BELT, Models.partial(beltPartial));
 
-            keys.add(setup(beltModel.createInstance(), bottom, spriteShift));
+            keys.add(setup(beltModel.create_reInstance(), bottom, spriteShift));
 
             if (diagonal) break;
         }
@@ -75,7 +75,7 @@ public class BeltVisual extends KineticBlockEntityVisual<BeltBlockEntity> {
         if (blockEntity.hasPulley()) {
             Instancer<RotatingInstance> pulleyModel = getPulleyModel();
 
-            pulleyKey = setup(pulleyModel.createInstance());
+            pulleyKey = setup(pulleyModel.create_reInstance());
         }
     }
 

@@ -1,18 +1,18 @@
-package com.simibubi.create.content.kinetics.base;
+package com.simibubi.create_re.content.kinetics.base;
 
 import org.apache.commons.lang3.ArrayUtils;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.kinetics.KineticDebugger;
-import com.simibubi.create.content.kinetics.simpleRelays.ICogWheel;
-import com.simibubi.create.foundation.blockEntity.renderer.SafeBlockEntityRenderer;
-import com.simibubi.create.foundation.render.CachedBufferer;
-import com.simibubi.create.foundation.render.SuperByteBuffer;
-import com.simibubi.create.foundation.render.SuperByteBufferCache;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.Color;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.kinetics.KineticDebugger;
+import com.simibubi.create_re.content.kinetics.simpleRelays.ICogWheel;
+import com.simibubi.create_re.foundation.blockEntity.renderer.SafeBlockEntityRenderer;
+import com.simibubi.create_re.foundation.render.CachedBufferer;
+import com.simibubi.create_re.foundation.render.SuperByteBuffer;
+import com.simibubi.create_re.foundation.render.SuperByteBufferCache;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.Color;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationManager;
 import net.minecraft.client.Minecraft;
@@ -61,7 +61,7 @@ public class KineticBlockEntityRenderer<T extends KineticBlockEntity> extends Sa
 		// TODO: this is not very clean
 		BakedModel model = Minecraft.getInstance()
 			.getBlockRenderer().getBlockModel(state);
-		ChunkRenderTypeSet typeSet = model.getRenderTypes(state, RandomSource.create(42L), ModelData.EMPTY);
+		ChunkRenderTypeSet typeSet = model.getRenderTypes(state, RandomSource.create_re(42L), ModelData.EMPTY);
 		for (RenderType type : REVERSED_CHUNK_BUFFER_LAYERS)
 			if (typeSet.contains(type))
 				return type;

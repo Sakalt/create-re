@@ -1,9 +1,9 @@
-package com.simibubi.create.content.equipment.toolbox;
+package com.simibubi.create_re.content.equipment.toolbox;
 
 import java.util.function.Consumer;
 
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.instance.Instancer;
@@ -30,9 +30,9 @@ public class ToolBoxVisual extends AbstractBlockEntityVisual<ToolboxBlockEntity>
 
 		Instancer<TransformedInstance> drawerModel = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.TOOLBOX_DRAWER));
 
-		drawers = new TransformedInstance[]{drawerModel.createInstance(), drawerModel.createInstance()};
+		drawers = new TransformedInstance[]{drawerModel.create_reInstance(), drawerModel.create_reInstance()};
 		lid = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.TOOLBOX_LIDS.get(blockEntity.getColor())))
-				.createInstance();
+				.create_reInstance();
 	}
 
 	@Override

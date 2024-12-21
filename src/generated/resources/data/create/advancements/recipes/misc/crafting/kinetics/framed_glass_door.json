@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:framed_glass"
+              "create_re:framed_glass"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/kinetics/framed_glass_door"
+        "recipe": "create_re:crafting/kinetics/framed_glass_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/kinetics/framed_glass_door"
+      "create_re:crafting/kinetics/framed_glass_door"
     ]
   },
   "sends_telemetry_event": false

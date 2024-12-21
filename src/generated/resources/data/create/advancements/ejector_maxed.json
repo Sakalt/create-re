@@ -1,25 +1,25 @@
 {
-  "parent": "create:windmill_maxed",
+  "parent": "create_re:windmill_maxed",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:ejector_maxed_builtin"
+      "trigger": "create_re:ejector_maxed_builtin"
     }
   },
   "display": {
     "announce_to_chat": true,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.ejector_maxed.desc"
+      "translate": "advancement.create_re.ejector_maxed.desc"
     },
     "frame": "goal",
     "hidden": false,
     "icon": {
-      "item": "create:weighted_ejector"
+      "item": "create_re:weighted_ejector"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.ejector_maxed"
+      "translate": "advancement.create_re.ejector_maxed"
     }
   },
   "requirements": [

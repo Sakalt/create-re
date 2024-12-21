@@ -1,22 +1,22 @@
-package com.simibubi.create.content.kinetics.belt;
+package com.simibubi.create_re.content.kinetics.belt;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.kinetics.belt.BeltBlockEntity.CasingType;
-import com.simibubi.create.content.kinetics.belt.item.BeltConnectorItem;
-import com.simibubi.create.content.kinetics.belt.transport.BeltInventory;
-import com.simibubi.create.content.kinetics.belt.transport.TransportedItemStack;
-import com.simibubi.create.foundation.block.ProperWaterloggedBlock;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlockEntity.CasingType;
+import com.simibubi.create_re.content.kinetics.belt.item.BeltConnectorItem;
+import com.simibubi.create_re.content.kinetics.belt.transport.BeltInventory;
+import com.simibubi.create_re.content.kinetics.belt.transport.TransportedItemStack;
+import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;

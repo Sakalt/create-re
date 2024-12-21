@@ -1,6 +1,6 @@
 {
-  "parent": "create:block/threshold_switch/block_floor",
+  "parent": "create_re:block/threshold_switch/block_floor",
   "textures": {
-    "level": "create:block/threshold_switch/level_2"
+    "level": "create_re:block/threshold_switch/level_2"
   }
 }

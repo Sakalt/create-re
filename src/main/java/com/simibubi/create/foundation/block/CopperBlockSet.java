@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.block;
+package com.simibubi.create_re.foundation.block;
 
 import java.util.EnumMap;
 import java.util.HashMap;
@@ -9,10 +9,10 @@ import java.util.function.Supplier;
 
 import org.apache.commons.lang3.ArrayUtils;
 
-import com.simibubi.create.foundation.data.TagGen;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.foundation.data.TagGen;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
 import com.tterrag.registrate.AbstractRegistrate;
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.providers.DataGenContext;
@@ -89,7 +89,7 @@ public class CopperBlockSet {
 					waxed ? this.entries.get(variant) : new BlockEntry<?>[WEATHER_STATE_COUNT * 2];
 				for (WeatherState state : WEATHER_STATES) {
 					int index = getIndex(state, waxed);
-					BlockEntry<?> entry = createEntry(registrate, variant, state, waxed);
+					BlockEntry<?> entry = create_reEntry(registrate, variant, state, waxed);
 					entries[index] = entry;
 
 					if (waxed) {
@@ -106,7 +106,7 @@ public class CopperBlockSet {
 		}
 	}
 
-	protected <T extends Block> BlockEntry<?> createEntry(AbstractRegistrate<?> registrate, Variant<T> variant,
+	protected <T extends Block> BlockEntry<?> create_reEntry(AbstractRegistrate<?> registrate, Variant<T> variant,
 		WeatherState state, boolean waxed) {
 		String name = "";
 		if (waxed) {
@@ -274,7 +274,7 @@ public class CopperBlockSet {
 		@Override
 		public void generateLootTable(RegistrateBlockLootTables lootTable, SlabBlock block, CopperBlockSet blocks,
 			WeatherState state, boolean waxed) {
-			lootTable.add(block, lootTable.createSlabItemTable(block));
+			lootTable.add(block, lootTable.create_reSlabItemTable(block));
 		}
 
 		@Override

@@ -1,11 +1,11 @@
-package com.simibubi.create.foundation.ponder.ui;
+package com.simibubi.create_re.foundation.ponder.ui;
 
 import java.util.function.BiConsumer;
 
-import com.simibubi.create.foundation.gui.Theme;
-import com.simibubi.create.foundation.gui.UIRenderHelper;
-import com.simibubi.create.foundation.gui.widget.AbstractSimiWidget;
-import com.simibubi.create.foundation.ponder.PonderChapter;
+import com.simibubi.create_re.foundation.gui.Theme;
+import com.simibubi.create_re.foundation.gui.UIRenderHelper;
+import com.simibubi.create_re.foundation.gui.widget.AbstractSimiWidget;
+import com.simibubi.create_re.foundation.ponder.PonderChapter;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;

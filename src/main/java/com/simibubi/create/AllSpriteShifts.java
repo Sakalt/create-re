@@ -1,17 +1,17 @@
-package com.simibubi.create;
+package com.simibubi.create_re;
 
 import java.util.Arrays;
 import java.util.EnumMap;
 import java.util.IdentityHashMap;
 import java.util.Map;
 
-import com.simibubi.create.foundation.block.connected.AllCTTypes;
-import com.simibubi.create.foundation.block.connected.CTSpriteShiftEntry;
-import com.simibubi.create.foundation.block.connected.CTSpriteShifter;
-import com.simibubi.create.foundation.block.connected.CTType;
-import com.simibubi.create.foundation.block.render.SpriteShiftEntry;
-import com.simibubi.create.foundation.block.render.SpriteShifter;
-import com.simibubi.create.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.block.connected.AllCTTypes;
+import com.simibubi.create_re.foundation.block.connected.CTSpriteShiftEntry;
+import com.simibubi.create_re.foundation.block.connected.CTSpriteShifter;
+import com.simibubi.create_re.foundation.block.connected.CTType;
+import com.simibubi.create_re.foundation.block.render.SpriteShiftEntry;
+import com.simibubi.create_re.foundation.block.render.SpriteShifter;
+import com.simibubi.create_re.foundation.utility.Couple;
 
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.state.properties.WoodType;
@@ -99,7 +99,7 @@ public class AllSpriteShifts {
 
 	private static Couple<CTSpriteShiftEntry> vault(String name) {
 		final String prefixed = "block/vault/vault_" + name;
-		return Couple.createWithContext(
+		return Couple.create_reWithContext(
 			medium -> CTSpriteShifter.getCT(AllCTTypes.RECTANGLE, Create.asResource(prefixed + "_small"),
 				Create.asResource(medium ? prefixed + "_medium" : prefixed + "_large")));
 	}

@@ -1,17 +1,17 @@
-package com.simibubi.create.content.contraptions.elevator;
+package com.simibubi.create_re.content.contraptions.elevator;
 
 import java.util.List;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.content.contraptions.AssemblyException;
-import com.simibubi.create.content.contraptions.ControlledContraptionEntity;
-import com.simibubi.create.content.contraptions.elevator.ElevatorColumn.ColumnCoords;
-import com.simibubi.create.content.contraptions.pulley.PulleyBlockEntity;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.content.contraptions.AssemblyException;
+import com.simibubi.create_re.content.contraptions.ControlledContraptionEntity;
+import com.simibubi.create_re.content.contraptions.elevator.ElevatorColumn.ColumnCoords;
+import com.simibubi.create_re.content.contraptions.pulley.PulleyBlockEntity;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -273,7 +273,7 @@ public class ElevatorPulleyBlockEntity extends PulleyBlockEntity {
 				.isEmpty()) {
 				offset = offsetOnSucess;
 				contraption.removeBlocksFromWorld(level, BlockPos.ZERO);
-				movedContraption = ControlledContraptionEntity.create(level, this, contraption);
+				movedContraption = ControlledContraptionEntity.create_re(level, this, contraption);
 				movedContraption.setPos(anchor.getX(), anchor.getY(), anchor.getZ());
 				contraption.maxContactY = worldPosition.getY() + contraption.contactYOffset - 1;
 				contraption.minContactY = contraption.maxContactY - maxLength;
@@ -284,7 +284,7 @@ public class ElevatorPulleyBlockEntity extends PulleyBlockEntity {
 				if (contraption.containsBlockBreakers())
 					award(AllAdvancements.CONTRAPTION_ACTORS);
 
-				for (BlockPos pos : contraption.createColliders(level, Direction.UP)) {
+				for (BlockPos pos : contraption.create_reColliders(level, Direction.UP)) {
 					if (pos.getY() != 0)
 						continue;
 					pos = pos.offset(anchor);

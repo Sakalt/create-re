@@ -1,8 +1,8 @@
-package com.simibubi.create.content.redstone.displayLink.source;
+package com.simibubi.create_re.content.redstone.displayLink.source;
 
-import com.simibubi.create.content.redstone.displayLink.DisplayLinkContext;
-import com.simibubi.create.content.trains.display.FlapDisplaySection;
-import com.simibubi.create.foundation.utility.Components;
+import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkContext;
+import com.simibubi.create_re.content.trains.display.FlapDisplaySection;
+import com.simibubi.create_re.foundation.utility.Components;
 
 import net.minecraft.network.chat.Component;
 
@@ -16,7 +16,7 @@ public abstract class NumericSingleLineDisplaySource extends SingleLineDisplaySo
 	}
 
 	@Override
-	protected FlapDisplaySection createSectionForValue(DisplayLinkContext context, int size) {
+	protected FlapDisplaySection create_reSectionForValue(DisplayLinkContext context, int size) {
 		return new FlapDisplaySection(size * FlapDisplaySection.MONOSPACE, "numeric", false, false);
 	}
 

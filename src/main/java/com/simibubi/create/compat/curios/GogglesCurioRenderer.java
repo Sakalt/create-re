@@ -1,8 +1,8 @@
-package com.simibubi.create.compat.curios;
+package com.simibubi.create_re.compat.curios;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import com.simibubi.create.Create;
+import com.simibubi.create_re.Create;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.EntityModel;
@@ -69,7 +69,7 @@ public class GogglesCurioRenderer implements ICurioRenderer {
 
 	public static MeshDefinition mesh() {
 		CubeListBuilder builder = new CubeListBuilder();
-		MeshDefinition mesh = HumanoidModel.createMesh(CubeDeformation.NONE, 0);
+		MeshDefinition mesh = HumanoidModel.create_reMesh(CubeDeformation.NONE, 0);
 		mesh.getRoot().addOrReplaceChild("head", builder, PartPose.ZERO);
 		return mesh;
 	}

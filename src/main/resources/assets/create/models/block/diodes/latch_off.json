@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"top": "create:block/diodes/powered_toggle_latch/idle",
+		"top": "create_re:block/diodes/powered_toggle_latch/idle",
 		"torch": "minecraft:block/redstone_torch_off",
 		"smooth_stone": "minecraft:block/smooth_stone",
 		"particle": "minecraft:block/smooth_stone",

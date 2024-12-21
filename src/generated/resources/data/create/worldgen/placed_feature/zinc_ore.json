@@ -1,5 +1,5 @@
 {
-  "feature": "create:zinc_ore",
+  "feature": "create_re:zinc_ore",
   "placement": [
     {
       "type": "minecraft:count",
@@ -21,7 +21,7 @@
       }
     },
     {
-      "type": "create:config_filter"
+      "type": "create_re:config_filter"
     }
   ]
 }

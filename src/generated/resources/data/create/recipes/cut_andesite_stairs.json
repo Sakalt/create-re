@@ -4,7 +4,7 @@
   "group": "cut_andesite_stairs",
   "key": {
     "X": {
-      "item": "create:cut_andesite"
+      "item": "create_re:cut_andesite"
     }
   },
   "pattern": [
@@ -14,7 +14,7 @@
   ],
   "result": {
     "count": 4,
-    "item": "create:cut_andesite_stairs"
+    "item": "create_re:cut_andesite_stairs"
   },
   "show_notification": true
 }

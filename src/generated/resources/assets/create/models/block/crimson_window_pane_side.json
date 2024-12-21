@@ -1,7 +1,7 @@
 {
-  "parent": "create:block/connected_glass_pane/side",
+  "parent": "create_re:block/connected_glass_pane/side",
   "textures": {
     "edge": "minecraft:block/crimson_planks",
-    "pane": "create:block/palettes/crimson_window"
+    "pane": "create_re:block/palettes/crimson_window"
   }
 }

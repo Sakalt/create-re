@@ -1,16 +1,16 @@
-package com.simibubi.create.content.contraptions.piston;
+package com.simibubi.create_re.content.contraptions.piston;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.content.contraptions.AssemblyException;
-import com.simibubi.create.content.contraptions.ContraptionCollider;
-import com.simibubi.create.content.contraptions.ControlledContraptionEntity;
-import com.simibubi.create.content.contraptions.DirectionalExtenderScrollOptionSlot;
-import com.simibubi.create.content.contraptions.piston.MechanicalPistonBlock.PistonState;
-import com.simibubi.create.content.kinetics.base.IRotate;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.blockEntity.behaviour.ValueBoxTransform;
-import com.simibubi.create.foundation.utility.ServerSpeedProvider;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.content.contraptions.AssemblyException;
+import com.simibubi.create_re.content.contraptions.ContraptionCollider;
+import com.simibubi.create_re.content.contraptions.ControlledContraptionEntity;
+import com.simibubi.create_re.content.contraptions.DirectionalExtenderScrollOptionSlot;
+import com.simibubi.create_re.content.contraptions.piston.MechanicalPistonBlock.PistonState;
+import com.simibubi.create_re.content.kinetics.base.IRotate;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBoxTransform;
+import com.simibubi.create_re.foundation.utility.ServerSpeedProvider;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -81,7 +81,7 @@ public class MechanicalPistonBlockEntity extends LinearActuatorBlockEntity {
 
 		BlockPos startPos = BlockPos.ZERO.relative(direction, contraption.initialExtensionProgress);
 		contraption.removeBlocksFromWorld(level, startPos);
-		movedContraption = ControlledContraptionEntity.create(getLevel(), this, contraption);
+		movedContraption = ControlledContraptionEntity.create_re(getLevel(), this, contraption);
 		resetContraptionToOffset();
 		forceMove = true;
 		level.addFreshEntity(movedContraption);

@@ -1,16 +1,16 @@
-package com.simibubi.create.content.contraptions.render;
+package com.simibubi.create_re.content.contraptions.render;
 
 import org.apache.commons.lang3.tuple.Pair;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.content.contraptions.Contraption;
-import com.simibubi.create.content.contraptions.Contraption.RenderedBlocks;
-import com.simibubi.create.content.contraptions.ContraptionWorld;
-import com.simibubi.create.foundation.render.ShadedBlockSbbBuilder;
-import com.simibubi.create.foundation.render.SuperByteBuffer;
-import com.simibubi.create.foundation.render.SuperByteBufferCache;
-import com.simibubi.create.foundation.virtualWorld.VirtualRenderWorld;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.content.contraptions.Contraption;
+import com.simibubi.create_re.content.contraptions.Contraption.RenderedBlocks;
+import com.simibubi.create_re.content.contraptions.ContraptionWorld;
+import com.simibubi.create_re.foundation.render.ShadedBlockSbbBuilder;
+import com.simibubi.create_re.foundation.render.SuperByteBuffer;
+import com.simibubi.create_re.foundation.render.SuperByteBufferCache;
+import com.simibubi.create_re.foundation.virtualWorld.VirtualRenderWorld;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationManager;
 import dev.engine_room.flywheel.lib.model.ModelUtil;
@@ -138,7 +138,7 @@ public class ContraptionRenderInfo {
 
 	private static class ThreadLocalObjects {
 		public final PoseStack poseStack = new PoseStack();
-		public final RandomSource random = RandomSource.createNewThreadLocalInstance();
+		public final RandomSource random = RandomSource.create_reNewThreadLocalInstance();
 		public final ShadedBlockSbbBuilder sbbBuilder = new ShadedBlockSbbBuilder();
 	}
 }

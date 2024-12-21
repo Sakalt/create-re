@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.utility;
+package com.simibubi.create_re.foundation.utility;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,17 +14,17 @@ import com.google.gson.JsonParser;
 import com.google.gson.internal.Streams;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import com.simibubi.create.Create;
+import com.simibubi.create_re.Create;
 
 import net.minecraft.nbt.CompoundTag;
 
 public class FilesHelper {
 
-	public static void createFolderIfMissing(String name) {
+	public static void create_reFolderIfMissing(String name) {
 		try {
-			Files.createDirectories(Paths.get(name));
+			Files.create_reDirectories(Paths.get(name));
 		} catch (IOException e) {
-			Create.LOGGER.warn("Could not create Folder: {}", name);
+			Create.LOGGER.warn("Could not create_re Folder: {}", name);
 		}
 	}
 

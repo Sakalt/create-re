@@ -1,30 +1,30 @@
-package com.simibubi.create.infrastructure.ponder.scenes;
+package com.simibubi.create_re.infrastructure.ponder.scenes;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.contraptions.chassis.StickerBlock;
-import com.simibubi.create.content.contraptions.chassis.StickerBlockEntity;
-import com.simibubi.create.content.equipment.clipboard.ClipboardOverrides;
-import com.simibubi.create.content.equipment.clipboard.ClipboardOverrides.ClipboardType;
-import com.simibubi.create.content.redstone.analogLever.AnalogLeverBlockEntity;
-import com.simibubi.create.content.redstone.diodes.BrassDiodeBlock;
-import com.simibubi.create.content.redstone.diodes.PoweredLatchBlock;
-import com.simibubi.create.content.redstone.diodes.PulseExtenderBlockEntity;
-import com.simibubi.create.content.redstone.diodes.PulseRepeaterBlockEntity;
-import com.simibubi.create.content.redstone.diodes.ToggleLatchBlock;
-import com.simibubi.create.content.redstone.link.RedstoneLinkBlock;
-import com.simibubi.create.content.redstone.link.RedstoneLinkBlockEntity;
-import com.simibubi.create.content.redstone.nixieTube.NixieTubeBlock;
-import com.simibubi.create.content.redstone.nixieTube.NixieTubeBlockEntity;
-import com.simibubi.create.foundation.ponder.ElementLink;
-import com.simibubi.create.foundation.ponder.PonderPalette;
-import com.simibubi.create.foundation.ponder.SceneBuilder;
-import com.simibubi.create.foundation.ponder.SceneBuildingUtil;
-import com.simibubi.create.foundation.ponder.Selection;
-import com.simibubi.create.foundation.ponder.element.InputWindowElement;
-import com.simibubi.create.foundation.ponder.element.ParrotElement;
-import com.simibubi.create.foundation.ponder.element.WorldSectionElement;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Pointing;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.contraptions.chassis.StickerBlock;
+import com.simibubi.create_re.content.contraptions.chassis.StickerBlockEntity;
+import com.simibubi.create_re.content.equipment.clipboard.ClipboardOverrides;
+import com.simibubi.create_re.content.equipment.clipboard.ClipboardOverrides.ClipboardType;
+import com.simibubi.create_re.content.redstone.analogLever.AnalogLeverBlockEntity;
+import com.simibubi.create_re.content.redstone.diodes.BrassDiodeBlock;
+import com.simibubi.create_re.content.redstone.diodes.PoweredLatchBlock;
+import com.simibubi.create_re.content.redstone.diodes.PulseExtenderBlockEntity;
+import com.simibubi.create_re.content.redstone.diodes.PulseRepeaterBlockEntity;
+import com.simibubi.create_re.content.redstone.diodes.ToggleLatchBlock;
+import com.simibubi.create_re.content.redstone.link.RedstoneLinkBlock;
+import com.simibubi.create_re.content.redstone.link.RedstoneLinkBlockEntity;
+import com.simibubi.create_re.content.redstone.nixieTube.NixieTubeBlock;
+import com.simibubi.create_re.content.redstone.nixieTube.NixieTubeBlockEntity;
+import com.simibubi.create_re.foundation.ponder.ElementLink;
+import com.simibubi.create_re.foundation.ponder.PonderPalette;
+import com.simibubi.create_re.foundation.ponder.SceneBuilder;
+import com.simibubi.create_re.foundation.ponder.SceneBuildingUtil;
+import com.simibubi.create_re.foundation.ponder.Selection;
+import com.simibubi.create_re.foundation.ponder.element.InputWindowElement;
+import com.simibubi.create_re.foundation.ponder.element.ParrotElement;
+import com.simibubi.create_re.foundation.ponder.element.WorldSectionElement;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Pointing;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -648,7 +648,7 @@ public class RedstoneScenes {
 		scene.idle(10);
 		scene.world.showSection(util.select.position(4, 1, 3), Direction.DOWN);
 		scene.idle(10);
-		scene.special.createBirb(util.vector.topOf(util.grid.at(0, 0, 3)), ParrotElement.DancePose::new);
+		scene.special.create_reBirb(util.vector.topOf(util.grid.at(0, 0, 3)), ParrotElement.DancePose::new);
 
 		scene.idle(20);
 		scene.overlay.showText(80)

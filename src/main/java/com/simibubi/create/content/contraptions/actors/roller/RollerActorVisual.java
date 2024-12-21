@@ -1,9 +1,9 @@
-package com.simibubi.create.content.contraptions.actors.roller;
+package com.simibubi.create_re.content.contraptions.actors.roller;
 
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.contraptions.actors.harvester.HarvesterActorVisual;
-import com.simibubi.create.content.contraptions.behaviour.MovementContext;
-import com.simibubi.create.foundation.virtualWorld.VirtualRenderWorld;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.contraptions.actors.harvester.HarvesterActorVisual;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
+import com.simibubi.create_re.foundation.virtualWorld.VirtualRenderWorld;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
 import dev.engine_room.flywheel.lib.instance.InstanceTypes;
@@ -21,7 +21,7 @@ public class RollerActorVisual extends HarvesterActorVisual {
 		super(visualizationContext, simulationWorld, movementContext);
 
 		frame = instancerProvider.instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.ROLLER_FRAME))
-			.createInstance();
+			.create_reInstance();
 		frame.light(localBlockLight(), 0);
 	}
 

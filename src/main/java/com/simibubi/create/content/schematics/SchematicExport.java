@@ -1,4 +1,4 @@
-package com.simibubi.create.content.schematics;
+package com.simibubi.create_re.content.schematics;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -8,9 +8,9 @@ import java.nio.file.StandardOpenOption;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.utility.FilesHelper;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.utility.FilesHelper;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
@@ -27,8 +27,8 @@ public class SchematicExport {
 
 	/**
 	 * Save a schematic to a file from a world.
-	 * @param dir the directory the schematic will be created in
-	 * @param fileName the ideal name of the schematic, may not be the name of the created file
+	 * @param dir the directory the schematic will be create_red in
+	 * @param fileName the ideal name of the schematic, may not be the name of the create_red file
 	 * @param overwrite whether overwriting an existing schematic is allowed
 	 * @param level the level where the schematic structure is placed
 	 * @param first the first corner of the schematic area
@@ -56,7 +56,7 @@ public class SchematicExport {
 		Path file = dir.resolve(fileName).toAbsolutePath();
 
 		try {
-			Files.createDirectories(dir);
+			Files.create_reDirectories(dir);
 			boolean overwritten = Files.deleteIfExists(file);
 			try (OutputStream out = Files.newOutputStream(file, StandardOpenOption.CREATE)) {
 				NbtIo.writeCompressed(data, out);

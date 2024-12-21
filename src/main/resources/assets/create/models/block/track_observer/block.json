@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "create:block/signal_box_top",
-		"1": "create:block/observer_box",
-		"2": "create:block/train_observer_top",
-		"particle": "create:block/observer_box"
+		"0": "create_re:block/signal_box_top",
+		"1": "create_re:block/observer_box",
+		"2": "create_re:block/train_observer_top",
+		"particle": "create_re:block/observer_box"
 	},
 	"elements": [
 		{

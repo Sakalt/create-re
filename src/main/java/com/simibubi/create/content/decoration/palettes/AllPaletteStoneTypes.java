@@ -1,14 +1,14 @@
-package com.simibubi.create.content.decoration.palettes;
+package com.simibubi.create_re.content.decoration.palettes;
 
-import static com.simibubi.create.content.decoration.palettes.PaletteBlockPattern.STANDARD_RANGE;
-import static com.simibubi.create.content.decoration.palettes.PaletteBlockPattern.VANILLA_RANGE;
+import static com.simibubi.create_re.content.decoration.palettes.PaletteBlockPattern.STANDARD_RANGE;
+import static com.simibubi.create_re.content.decoration.palettes.PaletteBlockPattern.VANILLA_RANGE;
 
 import java.util.function.Function;
 
-import com.simibubi.create.AllTags;
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.data.CreateRegistrate;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllTags;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.data.CreateRegistrate;
+import com.simibubi.create_re.foundation.utility.Lang;
 import com.tterrag.registrate.util.nullness.NonNullSupplier;
 
 import net.minecraft.tags.TagKey;

@@ -15,7 +15,7 @@
   ],
   "result": {
     "count": 2,
-    "item": "create:birch_window"
+    "item": "create_re:birch_window"
   },
   "show_notification": true
 }

@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:shadow_steel_casing"
+          "name": "create_re:shadow_steel_casing"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/shadow_steel_casing"
+  "random_sequence": "create_re:blocks/shadow_steel_casing"
 }

@@ -1,6 +1,6 @@
-package com.simibubi.create.content.contraptions.gantry;
+package com.simibubi.create_re.content.contraptions.gantry;
 
-import com.simibubi.create.foundation.networking.SimplePacketBase;
+import com.simibubi.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraftforge.api.distmarker.Dist;

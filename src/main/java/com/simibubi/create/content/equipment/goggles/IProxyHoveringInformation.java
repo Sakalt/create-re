@@ -1,4 +1,4 @@
-package com.simibubi.create.content.equipment.goggles;
+package com.simibubi.create_re.content.equipment.goggles;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;

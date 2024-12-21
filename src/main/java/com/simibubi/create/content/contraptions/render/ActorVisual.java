@@ -1,6 +1,6 @@
-package com.simibubi.create.content.contraptions.render;
+package com.simibubi.create_re.content.contraptions.render;
 
-import com.simibubi.create.content.contraptions.behaviour.MovementContext;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
 
 import dev.engine_room.flywheel.api.instance.InstancerProvider;
 import dev.engine_room.flywheel.api.visual.Visual;

@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:chute"
+              "create_re:chute"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/kinetics/smart_chute"
+        "recipe": "create_re:crafting/kinetics/smart_chute"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/kinetics/smart_chute"
+      "create_re:crafting/kinetics/smart_chute"
     ]
   },
   "sends_telemetry_event": false

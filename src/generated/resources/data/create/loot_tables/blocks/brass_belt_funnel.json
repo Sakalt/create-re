@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:brass_funnel"
+          "name": "create_re:brass_funnel"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/brass_belt_funnel"
+  "random_sequence": "create_re:blocks/brass_belt_funnel"
 }

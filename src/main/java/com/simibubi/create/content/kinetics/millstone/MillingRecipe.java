@@ -1,10 +1,10 @@
-package com.simibubi.create.content.kinetics.millstone;
+package com.simibubi.create_re.content.kinetics.millstone;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.content.kinetics.crusher.AbstractCrushingRecipe;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
+import com.simibubi.create_re.AllRecipeTypes;
+import com.simibubi.create_re.content.kinetics.crusher.AbstractCrushingRecipe;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
 
 import net.minecraft.world.level.Level;
 import net.minecraftforge.items.wrapper.RecipeWrapper;

@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.track;
+package com.simibubi.create_re.content.trains.track;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -6,22 +6,22 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import com.simibubi.create.AllSpecialTextures;
-import com.simibubi.create.AllTags;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.content.equipment.blueprint.BlueprintOverlayRenderer;
-import com.simibubi.create.foundation.block.ProperWaterloggedBlock;
-import com.simibubi.create.foundation.utility.AngleHelper;
-import com.simibubi.create.foundation.utility.BlockHelper;
-import com.simibubi.create.foundation.utility.Color;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.Pair;
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat.Chaser;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllSpecialTextures;
+import com.simibubi.create_re.AllTags;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.content.equipment.blueprint.BlueprintOverlayRenderer;
+import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
+import com.simibubi.create_re.foundation.utility.BlockHelper;
+import com.simibubi.create_re.foundation.utility.Color;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.Pair;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat.Chaser;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
@@ -199,9 +199,9 @@ public class TrackPlacement {
 			Vec3 offset2 = axis2.scale(info.end2Extent);
 			BlockPos targetPos1 = pos1.offset(BlockPos.containing(offset1));
 			BlockPos targetPos2 = pos2.offset(BlockPos.containing(offset2));
-			info.curve = new BezierConnection(Couple.create(targetPos1, targetPos2),
-				Couple.create(end1.add(offset1), end2.add(offset2)), Couple.create(normedAxis1, normedAxis2),
-				Couple.create(normal1, normal2), true, girder, TrackMaterial.fromItem(stack.getItem()));
+			info.curve = new BezierConnection(Couple.create_re(targetPos1, targetPos2),
+				Couple.create_re(end1.add(offset1), end2.add(offset2)), Couple.create_re(normedAxis1, normedAxis2),
+				Couple.create_re(normal1, normal2), true, girder, TrackMaterial.fromItem(stack.getItem()));
 		}
 
 		// S curve or Straight
@@ -359,9 +359,9 @@ public class TrackPlacement {
 		BlockPos targetPos2 = pos2.offset(BlockPos.containing(offset2));
 
 		info.curve = skipCurve ? null
-			: new BezierConnection(Couple.create(targetPos1, targetPos2),
-				Couple.create(end1.add(offset1), end2.add(offset2)), Couple.create(normedAxis1, normedAxis2),
-				Couple.create(normal1, normal2), true, girder, TrackMaterial.fromItem(stack.getItem()));
+			: new BezierConnection(Couple.create_re(targetPos1, targetPos2),
+				Couple.create_re(end1.add(offset1), end2.add(offset2)), Couple.create_re(normedAxis1, normedAxis2),
+				Couple.create_re(normal1, normal2), true, girder, TrackMaterial.fromItem(stack.getItem()));
 
 		info.valid = true;
 
@@ -638,7 +638,7 @@ public class TrackPlacement {
 			int lookAngle = (int) (22.5 + AngleHelper.deg(Mth.atan2(lookVec.z, lookVec.x)) % 360) / 8;
 
 			if (!pos.equals(hintPos) || lookAngle != hintAngle) {
-				hints = Couple.create(ArrayList::new);
+				hints = Couple.create_re(ArrayList::new);
 				hintAngle = lookAngle;
 				hintPos = pos;
 

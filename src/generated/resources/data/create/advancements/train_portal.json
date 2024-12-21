@@ -1,16 +1,16 @@
 {
-  "parent": "create:train_whistle",
+  "parent": "create_re:train_whistle",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:train_portal_builtin"
+      "trigger": "create_re:train_portal_builtin"
     }
   },
   "display": {
     "announce_to_chat": true,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.train_portal.desc"
+      "translate": "advancement.create_re.train_portal.desc"
     },
     "frame": "task",
     "hidden": false,
@@ -19,7 +19,7 @@
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.train_portal"
+      "translate": "advancement.create_re.train_portal"
     }
   },
   "requirements": [

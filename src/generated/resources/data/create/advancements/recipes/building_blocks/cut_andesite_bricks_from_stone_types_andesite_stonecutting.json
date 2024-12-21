@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "create:stone_types/andesite"
+            "tag": "create_re:stone_types/andesite"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:cut_andesite_bricks_from_stone_types_andesite_stonecutting"
+        "recipe": "create_re:cut_andesite_bricks_from_stone_types_andesite_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:cut_andesite_bricks_from_stone_types_andesite_stonecutting"
+      "create_re:cut_andesite_bricks_from_stone_types_andesite_stonecutting"
     ]
   },
   "sends_telemetry_event": false

@@ -1,5 +1,5 @@
 {
-  "type": "create:pressing",
+  "type": "create_re:pressing",
   "ingredients": [
     {
       "tag": "forge:ingots/gold"
@@ -7,7 +7,7 @@
   ],
   "results": [
     {
-      "item": "create:golden_sheet"
+      "item": "create_re:golden_sheet"
     }
   ]
 }

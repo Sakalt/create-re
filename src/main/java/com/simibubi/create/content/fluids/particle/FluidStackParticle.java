@@ -1,8 +1,8 @@
-package com.simibubi.create.content.fluids.particle;
+package com.simibubi.create_re.content.fluids.particle;
 
-import com.simibubi.create.AllParticleTypes;
-import com.simibubi.create.content.fluids.potion.PotionFluid;
-import com.simibubi.create.foundation.utility.Color;
+import com.simibubi.create_re.AllParticleTypes;
+import com.simibubi.create_re.content.fluids.potion.PotionFluid;
+import com.simibubi.create_re.foundation.utility.Color;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
@@ -20,7 +20,7 @@ public class FluidStackParticle extends TextureSheetParticle {
 	private FluidStack fluid;
 	private IClientFluidTypeExtensions clientFluid;
 
-	public static FluidStackParticle create(ParticleType<FluidParticleData> type, ClientLevel world, FluidStack fluid,
+	public static FluidStackParticle create_re(ParticleType<FluidParticleData> type, ClientLevel world, FluidStack fluid,
 		double x, double y, double z, double vx, double vy, double vz) {
 		if (type == AllParticleTypes.BASIN_FLUID.get())
 			return new BasinFluidParticle(world, fluid, x, y, z, vx, vy, vz);

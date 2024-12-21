@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.track;
+package com.simibubi.create_re.content.trains.track;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,8 +7,8 @@ import java.util.function.UnaryOperator;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create.foundation.model.BakedQuadHelper;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.foundation.model.BakedQuadHelper;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.block.model.BakedQuad;

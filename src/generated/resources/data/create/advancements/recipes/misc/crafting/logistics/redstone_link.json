@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:brass_casing"
+              "create_re:brass_casing"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/logistics/redstone_link"
+        "recipe": "create_re:crafting/logistics/redstone_link"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/logistics/redstone_link"
+      "create_re:crafting/logistics/redstone_link"
     ]
   },
   "sends_telemetry_event": false

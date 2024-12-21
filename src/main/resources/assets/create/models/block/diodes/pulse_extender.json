@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"4": "create:block/diodes/brass_diode_base",
-		"top": "create:block/diodes/pulse_extender/idle",
+		"4": "create_re:block/diodes/brass_diode_base",
+		"top": "create_re:block/diodes/pulse_extender/idle",
 		"torch": "block/redstone_torch_off",
-		"particle": "create:block/diodes/brass_diode_base"
+		"particle": "create_re:block/diodes/brass_diode_base"
 	},
 	"elements": [
 		{

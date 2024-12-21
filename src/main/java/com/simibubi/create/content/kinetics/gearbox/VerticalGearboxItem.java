@@ -1,10 +1,10 @@
-package com.simibubi.create.content.kinetics.gearbox;
+package com.simibubi.create_re.content.kinetics.gearbox;
 
 import java.util.Map;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.kinetics.base.IRotate;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.kinetics.base.IRotate;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -26,7 +26,7 @@ public class VerticalGearboxItem extends BlockItem {
 	
 	@Override
 	public String getDescriptionId() {
-		return "item.create.vertical_gearbox";
+		return "item.create_re.vertical_gearbox";
 	}
 
 	@Override

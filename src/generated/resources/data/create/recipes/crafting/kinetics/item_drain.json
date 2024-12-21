@@ -6,7 +6,7 @@
       "item": "minecraft:iron_bars"
     },
     "S": {
-      "item": "create:copper_casing"
+      "item": "create_re:copper_casing"
     }
   },
   "pattern": [
@@ -14,7 +14,7 @@
     "S"
   ],
   "result": {
-    "item": "create:item_drain"
+    "item": "create_re:item_drain"
   },
   "show_notification": true
 }

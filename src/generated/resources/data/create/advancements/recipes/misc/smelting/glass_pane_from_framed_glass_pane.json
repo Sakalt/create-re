@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:framed_glass_pane"
+              "create_re:framed_glass_pane"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:smelting/glass_pane_from_framed_glass_pane"
+        "recipe": "create_re:smelting/glass_pane_from_framed_glass_pane"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:smelting/glass_pane_from_framed_glass_pane"
+      "create_re:smelting/glass_pane_from_framed_glass_pane"
     ]
   },
   "sends_telemetry_event": false

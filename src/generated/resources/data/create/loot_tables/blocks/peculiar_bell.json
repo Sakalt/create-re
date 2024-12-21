@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:peculiar_bell"
+          "name": "create_re:peculiar_bell"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/peculiar_bell"
+  "random_sequence": "create_re:blocks/peculiar_bell"
 }

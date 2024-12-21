@@ -1,4 +1,4 @@
-package com.simibubi.create.content.redstone.thresholdSwitch;
+package com.simibubi.create_re.content.redstone.thresholdSwitch;
 
 public interface ThresholdSwitchObservable {
 	

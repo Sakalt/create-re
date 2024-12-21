@@ -1,7 +1,7 @@
-package com.simibubi.create.content.contraptions.actors.psi;
+package com.simibubi.create_re.content.contraptions.actors.psi;
 
-import com.simibubi.create.content.contraptions.Contraption;
-import com.simibubi.create.foundation.item.ItemHandlerWrapper;
+import com.simibubi.create_re.content.contraptions.Contraption;
+import com.simibubi.create_re.foundation.item.ItemHandlerWrapper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -19,7 +19,7 @@ public class PortableItemInterfaceBlockEntity extends PortableStorageInterfaceBl
 
 	public PortableItemInterfaceBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state) {
 		super(type, pos, state);
-		capability = createEmptyHandler();
+		capability = create_reEmptyHandler();
 	}
 
 	@Override
@@ -33,12 +33,12 @@ public class PortableItemInterfaceBlockEntity extends PortableStorageInterfaceBl
 	@Override
 	protected void stopTransferring() {
 		LazyOptional<IItemHandlerModifiable> oldCap = capability;
-		capability = createEmptyHandler();
+		capability = create_reEmptyHandler();
 		oldCap.invalidate();
 		super.stopTransferring();
 	}
 
-	private LazyOptional<IItemHandlerModifiable> createEmptyHandler() {
+	private LazyOptional<IItemHandlerModifiable> create_reEmptyHandler() {
 		return LazyOptional.of(() -> new InterfaceItemHandler(new ItemStackHandler(0)));
 	}
 

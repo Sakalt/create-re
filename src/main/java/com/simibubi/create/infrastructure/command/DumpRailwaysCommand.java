@@ -1,4 +1,4 @@
-package com.simibubi.create.infrastructure.command;
+package com.simibubi.create_re.infrastructure.command;
 
 import java.util.Collection;
 import java.util.List;
@@ -6,15 +6,15 @@ import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
 import com.mojang.brigadier.builder.ArgumentBuilder;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.trains.GlobalRailwayManager;
-import com.simibubi.create.content.trains.entity.Train;
-import com.simibubi.create.content.trains.graph.EdgePointType;
-import com.simibubi.create.content.trains.graph.TrackGraph;
-import com.simibubi.create.content.trains.schedule.ScheduleRuntime;
-import com.simibubi.create.content.trains.signal.SignalBoundary;
-import com.simibubi.create.content.trains.station.GlobalStation;
-import com.simibubi.create.foundation.utility.Components;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.trains.GlobalRailwayManager;
+import com.simibubi.create_re.content.trains.entity.Train;
+import com.simibubi.create_re.content.trains.graph.EdgePointType;
+import com.simibubi.create_re.content.trains.graph.TrackGraph;
+import com.simibubi.create_re.content.trains.schedule.ScheduleRuntime;
+import com.simibubi.create_re.content.trains.signal.SignalBoundary;
+import com.simibubi.create_re.content.trains.station.GlobalStation;
+import com.simibubi.create_re.foundation.utility.Components;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
@@ -128,7 +128,7 @@ public class DumpRailwaysCommand {
 						runtime.paused ? darkBlue : blue);
 				} else
 					chat.accept(" -> Idle, No Schedule", darkBlue);
-				chatRaw.accept(createDeleteButton(train));
+				chatRaw.accept(create_reDeleteButton(train));
 				chat.accept("", white);
 			}
 			if (trainCount > 5) {
@@ -140,7 +140,7 @@ public class DumpRailwaysCommand {
 		chat.accept("-+--------------------------------+-", white);
 	}
 
-	private static Component createDeleteButton(Train train) {
+	private static Component create_reDeleteButton(Train train) {
 		return ComponentUtils.wrapInSquareBrackets((Components.literal("Remove")).withStyle((p_180514_) -> {
 			return p_180514_.withColor(0xFFAD60)
 				.withClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/c killTrain " + train.id.toString()))

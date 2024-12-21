@@ -1,4 +1,4 @@
-package com.simibubi.create.content.schematics;
+package com.simibubi.create_re.content.schematics;
 
 import java.util.List;
 import java.util.function.BooleanSupplier;

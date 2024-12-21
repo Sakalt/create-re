@@ -1,9 +1,9 @@
-package com.simibubi.create.content.contraptions.behaviour.dispenser;
+package com.simibubi.create_re.content.contraptions.behaviour.dispenser;
 
 import java.util.HashMap;
 
-import com.simibubi.create.content.contraptions.behaviour.MovementContext;
-import com.simibubi.create.foundation.mixin.accessor.DispenserBlockAccessor;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
+import com.simibubi.create_re.foundation.mixin.accessor.DispenserBlockAccessor;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -31,7 +31,7 @@ public class DispenserMovementBehaviour extends DropperMovementBehaviour {
 	}
 
 	public static DispenseItemBehavior getDispenseMethod(ItemStack itemstack) {
-		return ((DispenserBlockAccessor) Blocks.DISPENSER).create$callGetDispenseMethod(itemstack);
+		return ((DispenserBlockAccessor) Blocks.DISPENSER).create_re$callGetDispenseMethod(itemstack);
 	}
 
 	@Override

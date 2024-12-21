@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "create:block/signal_glow",
-		"particle": "create:block/signal_glow"
+		"0": "create_re:block/signal_glow",
+		"particle": "create_re:block/signal_glow"
 	},
 	"elements": [
 		{

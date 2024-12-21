@@ -1,11 +1,11 @@
-package com.simibubi.create.content.logistics.funnel;
+package com.simibubi.create_re.content.logistics.funnel;
 
 import java.util.List;
 
-import com.simibubi.create.content.contraptions.behaviour.MovementBehaviour;
-import com.simibubi.create.content.contraptions.behaviour.MovementContext;
-import com.simibubi.create.content.logistics.filter.FilterItemStack;
-import com.simibubi.create.foundation.item.ItemHelper;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementBehaviour;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
+import com.simibubi.create_re.content.logistics.filter.FilterItemStack;
+import com.simibubi.create_re.foundation.item.ItemHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

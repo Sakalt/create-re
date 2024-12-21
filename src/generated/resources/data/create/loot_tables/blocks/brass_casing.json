@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:brass_casing"
+          "name": "create_re:brass_casing"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/brass_casing"
+  "random_sequence": "create_re:blocks/brass_casing"
 }

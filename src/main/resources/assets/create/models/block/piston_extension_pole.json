@@ -4,7 +4,7 @@
     "textures": {
 		"particle": "block/piston_top",
         "0": "block/piston_side",
-        "1": "create:block/pole_end"
+        "1": "create_re:block/pole_end"
     },
     "elements": [
         {

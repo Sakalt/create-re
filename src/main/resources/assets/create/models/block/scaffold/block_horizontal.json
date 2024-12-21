@@ -1,10 +1,10 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"inside": "create:block/scaffold/brass_scaffold_inside",
-		"particle": "create:block/scaffold/brass_scaffold",
-		"side": "create:block/scaffold/brass_scaffold",
-		"casing": "create:block/brass_casing"
+		"inside": "create_re:block/scaffold/brass_scaffold_inside",
+		"particle": "create_re:block/scaffold/brass_scaffold",
+		"side": "create_re:block/scaffold/brass_scaffold",
+		"casing": "create_re:block/brass_casing"
 	},
 	"elements": [
 		{

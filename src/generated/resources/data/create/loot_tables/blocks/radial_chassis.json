@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:radial_chassis"
+          "name": "create_re:radial_chassis"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/radial_chassis"
+  "random_sequence": "create_re:blocks/radial_chassis"
 }

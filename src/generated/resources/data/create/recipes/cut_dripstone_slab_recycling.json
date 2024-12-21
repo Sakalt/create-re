@@ -3,13 +3,13 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "create:cut_dripstone_slab"
+      "item": "create_re:cut_dripstone_slab"
     },
     {
-      "item": "create:cut_dripstone_slab"
+      "item": "create_re:cut_dripstone_slab"
     }
   ],
   "result": {
-    "item": "create:cut_dripstone"
+    "item": "create_re:cut_dripstone"
   }
 }

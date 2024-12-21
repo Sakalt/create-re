@@ -1,15 +1,15 @@
-package com.simibubi.create.content.kinetics.drill;
+package com.simibubi.create_re.content.kinetics.drill;
 
 import org.joml.Quaternionf;
 
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.contraptions.actors.ActorInstance;
-import com.simibubi.create.content.contraptions.behaviour.MovementContext;
-import com.simibubi.create.content.contraptions.render.ActorVisual;
-import com.simibubi.create.foundation.render.AllInstanceTypes;
-import com.simibubi.create.foundation.utility.AngleHelper;
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.foundation.virtualWorld.VirtualRenderWorld;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.contraptions.actors.ActorInstance;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
+import com.simibubi.create_re.content.contraptions.render.ActorVisual;
+import com.simibubi.create_re.foundation.render.AllInstanceTypes;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.foundation.virtualWorld.VirtualRenderWorld;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
 import dev.engine_room.flywheel.lib.model.Models;
@@ -39,7 +39,7 @@ public class DrillActorVisual extends ActorVisual {
             eulerY = facing.toYRot() + ((axis == Direction.Axis.X) ? 180 : 0);
 
 		drillHead = instancerProvider.instancer(AllInstanceTypes.ACTOR, Models.partial(AllPartialModels.DRILL_HEAD))
-				.createInstance();
+				.create_reInstance();
 
         drillHead.setPosition(context.localPos)
                  .setBlockLight(localBlockLight())

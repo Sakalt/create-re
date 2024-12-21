@@ -1,9 +1,9 @@
-package com.simibubi.create.content.kinetics.chainDrive;
+package com.simibubi.create_re.content.kinetics.chainDrive;
 
 import java.util.function.BiFunction;
 
-import com.simibubi.create.content.kinetics.chainDrive.ChainDriveBlock.Part;
-import com.simibubi.create.foundation.data.SpecialBlockStateGen;
+import com.simibubi.create_re.content.kinetics.chainDrive.ChainDriveBlock.Part;
+import com.simibubi.create_re.foundation.data.SpecialBlockStateGen;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 

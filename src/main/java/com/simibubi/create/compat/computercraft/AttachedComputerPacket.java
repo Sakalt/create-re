@@ -1,8 +1,8 @@
-package com.simibubi.create.compat.computercraft;
+package com.simibubi.create_re.compat.computercraft;
 
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.SyncedBlockEntity;
-import com.simibubi.create.foundation.networking.BlockEntityDataPacket;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.SyncedBlockEntity;
+import com.simibubi.create_re.foundation.networking.BlockEntityDataPacket;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;

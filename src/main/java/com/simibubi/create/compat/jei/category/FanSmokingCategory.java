@@ -1,8 +1,8 @@
-package com.simibubi.create.compat.jei.category;
+package com.simibubi.create_re.compat.jei.category;
 
-import com.simibubi.create.compat.jei.category.animations.AnimatedKinetics;
-import com.simibubi.create.foundation.gui.AllGuiTextures;
-import com.simibubi.create.foundation.gui.element.GuiGameElement;
+import com.simibubi.create_re.compat.jei.category.animations.AnimatedKinetics;
+import com.simibubi.create_re.foundation.gui.AllGuiTextures;
+import com.simibubi.create_re.foundation.gui.element.GuiGameElement;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.world.item.crafting.SmokingRecipe;

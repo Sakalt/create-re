@@ -1,20 +1,20 @@
-package com.simibubi.create.content.kinetics.deployer;
+package com.simibubi.create_re.content.kinetics.deployer;
 
 import java.util.List;
 import java.util.function.Predicate;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.content.kinetics.base.DirectionalAxisKineticBlock;
-import com.simibubi.create.content.processing.AssemblyOperatorUseContext;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.placement.IPlacementHelper;
-import com.simibubi.create.foundation.placement.PlacementHelpers;
-import com.simibubi.create.foundation.placement.PlacementOffset;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.content.kinetics.base.DirectionalAxisKineticBlock;
+import com.simibubi.create_re.content.processing.AssemblyOperatorUseContext;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.placement.IPlacementHelper;
+import com.simibubi.create_re.foundation.placement.PlacementHelpers;
+import com.simibubi.create_re.foundation.placement.PlacementOffset;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;

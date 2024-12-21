@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.data;
+package com.simibubi.create_re.foundation.data;
 
 import com.tterrag.registrate.AbstractRegistrate;
 import com.tterrag.registrate.builders.BuilderCallback;

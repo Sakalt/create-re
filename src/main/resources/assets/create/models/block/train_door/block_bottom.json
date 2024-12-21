@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "create:block/train_door_side",
-		"2": "create:block/train_door_bottom",
-		"particle": "create:block/train_trapdoor"
+		"0": "create_re:block/train_door_side",
+		"2": "create_re:block/train_door_bottom",
+		"particle": "create_re:block/train_trapdoor"
 	},
 	"elements": [
 		{

@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.blockEntity.behaviour;
+package com.simibubi.create_re.foundation.blockEntity.behaviour;
 
 import java.util.function.Consumer;
 
@@ -6,19 +6,19 @@ import org.lwjgl.glfw.GLFW;
 
 import com.mojang.blaze3d.platform.Window;
 import com.mojang.blaze3d.systems.RenderSystem;
-import com.simibubi.create.AllKeys;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.foundation.blockEntity.behaviour.ValueSettingsBehaviour.ValueSettings;
-import com.simibubi.create.foundation.blockEntity.behaviour.ValueSettingsFormatter.ScrollOptionSettingsFormatter;
-import com.simibubi.create.foundation.blockEntity.behaviour.scrollValue.ScrollValueHandler;
-import com.simibubi.create.foundation.gui.AbstractSimiScreen;
-import com.simibubi.create.foundation.gui.AllGuiTextures;
-import com.simibubi.create.foundation.gui.AllIcons;
-import com.simibubi.create.foundation.gui.UIRenderHelper;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllKeys;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueSettingsBehaviour.ValueSettings;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueSettingsFormatter.ScrollOptionSettingsFormatter;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.scrollValue.ScrollValueHandler;
+import com.simibubi.create_re.foundation.gui.AbstractSimiScreen;
+import com.simibubi.create_re.foundation.gui.AllGuiTextures;
+import com.simibubi.create_re.foundation.gui.AllIcons;
+import com.simibubi.create_re.foundation.gui.UIRenderHelper;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.resources.sounds.SimpleSoundInstance;

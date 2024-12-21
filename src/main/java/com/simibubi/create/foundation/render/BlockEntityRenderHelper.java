@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.render;
+package com.simibubi.create_re.foundation.render;
 
 import java.util.Iterator;
 
@@ -8,11 +8,11 @@ import org.joml.Matrix4f;
 import org.joml.Vector4f;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
-import com.simibubi.create.foundation.virtualWorld.VirtualRenderWorld;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.foundation.virtualWorld.VirtualRenderWorld;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationManager;
 import dev.engine_room.flywheel.lib.transform.TransformStack;

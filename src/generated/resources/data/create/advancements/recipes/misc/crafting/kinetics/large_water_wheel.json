@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:water_wheel"
+              "create_re:water_wheel"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/kinetics/large_water_wheel"
+        "recipe": "create_re:crafting/kinetics/large_water_wheel"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/kinetics/large_water_wheel"
+      "create_re:crafting/kinetics/large_water_wheel"
     ]
   },
   "sends_telemetry_event": false

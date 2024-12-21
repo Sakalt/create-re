@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "X": {
-      "item": "create:exposed_copper_shingles"
+      "item": "create_re:exposed_copper_shingles"
     }
   },
   "pattern": [
@@ -11,7 +11,7 @@
   ],
   "result": {
     "count": 6,
-    "item": "create:exposed_copper_shingle_slab"
+    "item": "create_re:exposed_copper_shingle_slab"
   },
   "show_notification": true
 }

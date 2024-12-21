@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/shadow_steel_casing"
+      "model": "create_re:block/shadow_steel_casing"
     }
   }
 }

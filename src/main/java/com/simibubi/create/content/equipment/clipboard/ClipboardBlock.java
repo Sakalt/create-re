@@ -1,14 +1,14 @@
-package com.simibubi.create.content.equipment.clipboard;
+package com.simibubi.create_re.content.equipment.clipboard;
 
 import java.util.List;
 
 import com.google.common.collect.ImmutableList;
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.block.ProperWaterloggedBlock;
-import com.simibubi.create.foundation.gui.ScreenOpener;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
+import com.simibubi.create_re.foundation.gui.ScreenOpener;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
@@ -44,7 +44,7 @@ import net.minecraftforge.fml.DistExecutor;
 public class ClipboardBlock extends FaceAttachedHorizontalDirectionalBlock
 	implements IBE<ClipboardBlockEntity>, IWrenchable, ProperWaterloggedBlock {
 
-	public static final BooleanProperty WRITTEN = BooleanProperty.create("written");
+	public static final BooleanProperty WRITTEN = BooleanProperty.create_re("written");
 
 	public ClipboardBlock(Properties pProperties) {
 		super(pProperties);
@@ -53,8 +53,8 @@ public class ClipboardBlock extends FaceAttachedHorizontalDirectionalBlock
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
-		super.createBlockStateDefinition(pBuilder.add(WRITTEN, FACE, FACING, WATERLOGGED));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
+		super.create_reBlockStateDefinition(pBuilder.add(WRITTEN, FACE, FACING, WATERLOGGED));
 	}
 
 	@Override

@@ -1,13 +1,13 @@
-package com.simibubi.create.content.contraptions.piston;
+package com.simibubi.create_re.content.contraptions.piston;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.content.kinetics.base.DirectionalAxisKineticBlock;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.content.kinetics.base.DirectionalAxisKineticBlock;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -36,7 +36,7 @@ import net.minecraftforge.common.Tags;
 
 public class MechanicalPistonBlock extends DirectionalAxisKineticBlock implements IBE<MechanicalPistonBlockEntity> {
 
-	public static final EnumProperty<PistonState> STATE = EnumProperty.create("state", PistonState.class);
+	public static final EnumProperty<PistonState> STATE = EnumProperty.create_re("state", PistonState.class);
 	protected boolean isSticky;
 
 	public static MechanicalPistonBlock normal(Properties properties) {
@@ -55,9 +55,9 @@ public class MechanicalPistonBlock extends DirectionalAxisKineticBlock implement
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
 		builder.add(STATE);
-		super.createBlockStateDefinition(builder);
+		super.create_reBlockStateDefinition(builder);
 	}
 
 	@Override

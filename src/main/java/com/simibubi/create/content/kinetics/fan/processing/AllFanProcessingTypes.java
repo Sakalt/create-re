@@ -1,4 +1,4 @@
-package com.simibubi.create.content.kinetics.fan.processing;
+package com.simibubi.create_re.content.kinetics.fan.processing;
 
 import java.util.Collections;
 import java.util.List;
@@ -8,18 +8,18 @@ import java.util.Optional;
 import org.jetbrains.annotations.Nullable;
 import org.joml.Vector3f;
 
-import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.AllTags.AllBlockTags;
-import com.simibubi.create.AllTags.AllFluidTags;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.kinetics.fan.processing.HauntingRecipe.HauntingWrapper;
-import com.simibubi.create.content.kinetics.fan.processing.SplashingRecipe.SplashingWrapper;
-import com.simibubi.create.content.processing.burner.BlazeBurnerBlock;
-import com.simibubi.create.content.processing.burner.LitBlazeBurnerBlock;
-import com.simibubi.create.foundation.damageTypes.CreateDamageSources;
-import com.simibubi.create.foundation.recipe.RecipeApplier;
-import com.simibubi.create.foundation.utility.Color;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllRecipeTypes;
+import com.simibubi.create_re.AllTags.AllBlockTags;
+import com.simibubi.create_re.AllTags.AllFluidTags;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.kinetics.fan.processing.HauntingRecipe.HauntingWrapper;
+import com.simibubi.create_re.content.kinetics.fan.processing.SplashingRecipe.SplashingWrapper;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock;
+import com.simibubi.create_re.content.processing.burner.LitBlazeBurnerBlock;
+import com.simibubi.create_re.foundation.damageTypes.CreateDamageSources;
+import com.simibubi.create_re.foundation.recipe.RecipeApplier;
+import com.simibubi.create_re.foundation.utility.Color;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import it.unimi.dsi.fastutil.objects.Object2ReferenceOpenHashMap;
 import net.minecraft.core.BlockPos;
@@ -343,7 +343,7 @@ public class AllFanProcessingTypes {
 				level.playSound(null, entity.blockPosition(), SoundEvents.GENERIC_EXTINGUISH_FIRE,
 					SoundSource.NEUTRAL, 1.25f, 0.65f);
 
-				SkeletonHorse skeletonHorse = EntityType.SKELETON_HORSE.create(level);
+				SkeletonHorse skeletonHorse = EntityType.SKELETON_HORSE.create_re(level);
 				CompoundTag serializeNBT = horse.saveWithoutId(new CompoundTag());
 				serializeNBT.remove("UUID");
 				if (!horse.getArmor()

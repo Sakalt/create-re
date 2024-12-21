@@ -1,6 +1,6 @@
-package com.simibubi.create.foundation.fluid;
+package com.simibubi.create_re.foundation.fluid;
 
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.capability.IFluidHandler;

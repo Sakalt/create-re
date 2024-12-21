@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:dark_oak_window"
+        "recipe": "create_re:dark_oak_window"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:dark_oak_window"
+      "create_re:dark_oak_window"
     ]
   },
   "sends_telemetry_event": false

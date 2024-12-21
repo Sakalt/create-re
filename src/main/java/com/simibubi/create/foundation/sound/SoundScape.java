@@ -1,13 +1,13 @@
-package com.simibubi.create.foundation.sound;
+package com.simibubi.create_re.foundation.sound;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.simibubi.create.foundation.sound.SoundScapes.AmbienceGroup;
-import com.simibubi.create.foundation.sound.SoundScapes.PitchGroup;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.foundation.sound.SoundScapes.AmbienceGroup;
+import com.simibubi.create_re.foundation.sound.SoundScapes.PitchGroup;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;

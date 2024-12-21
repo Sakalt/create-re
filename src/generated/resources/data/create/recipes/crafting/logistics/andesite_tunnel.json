@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "create:andesite_alloy"
+      "item": "create_re:andesite_alloy"
     },
     "K": {
       "item": "minecraft:dried_kelp"
@@ -15,7 +15,7 @@
   ],
   "result": {
     "count": 2,
-    "item": "create:andesite_tunnel"
+    "item": "create_re:andesite_tunnel"
   },
   "show_notification": true
 }

@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"3": "create:block/brass_block",
-		"4": "create:block/bogey/top",
-		"particle": "create:block/bogey/particle"
+		"3": "create_re:block/brass_block",
+		"4": "create_re:block/bogey/top",
+		"particle": "create_re:block/bogey/particle"
 	},
 	"elements": [
 		{

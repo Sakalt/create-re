@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:polished_cut_calcite"
+          "name": "create_re:polished_cut_calcite"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/polished_cut_calcite"
+  "random_sequence": "create_re:blocks/polished_cut_calcite"
 }

@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:rose_quartz_lamp"
+          "name": "create_re:rose_quartz_lamp"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/rose_quartz_lamp"
+  "random_sequence": "create_re:blocks/rose_quartz_lamp"
 }

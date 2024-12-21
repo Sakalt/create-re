@@ -1,4 +1,4 @@
-package com.simibubi.create.content.schematics.cannon;
+package com.simibubi.create_re.content.schematics.cannon;
 
 import java.util.Arrays;
 import java.util.LinkedHashSet;
@@ -7,27 +7,27 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.content.kinetics.belt.BeltBlock;
-import com.simibubi.create.content.kinetics.belt.BeltBlockEntity;
-import com.simibubi.create.content.kinetics.belt.BeltBlockEntity.CasingType;
-import com.simibubi.create.content.kinetics.belt.BeltPart;
-import com.simibubi.create.content.kinetics.belt.BeltSlope;
-import com.simibubi.create.content.kinetics.simpleRelays.AbstractSimpleShaftBlock;
-import com.simibubi.create.content.schematics.SchematicPrinter;
-import com.simibubi.create.content.schematics.requirement.ItemRequirement;
-import com.simibubi.create.content.schematics.requirement.ItemRequirement.ItemUseType;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.item.ItemHelper;
-import com.simibubi.create.foundation.item.ItemHelper.ExtractionCountMode;
-import com.simibubi.create.foundation.utility.BlockHelper;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.infrastructure.config.AllConfigs;
-import com.simibubi.create.infrastructure.config.CSchematics;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlock;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlockEntity;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlockEntity.CasingType;
+import com.simibubi.create_re.content.kinetics.belt.BeltPart;
+import com.simibubi.create_re.content.kinetics.belt.BeltSlope;
+import com.simibubi.create_re.content.kinetics.simpleRelays.AbstractSimpleShaftBlock;
+import com.simibubi.create_re.content.schematics.SchematicPrinter;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement.ItemUseType;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.item.ItemHelper;
+import com.simibubi.create_re.foundation.item.ItemHelper.ExtractionCountMode;
+import com.simibubi.create_re.foundation.utility.BlockHelper;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.infrastructure.config.CSchematics;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -719,8 +719,8 @@ public class SchematicannonBlockEntity extends SmartBlockEntity implements MenuP
 
 			dontUpdateChecklist = true;
 			ItemStack extractItem = inventory.extractItem(BookInput, 1, false);
-			ItemStack stack = AllBlocks.CLIPBOARD.isIn(extractItem) ? checklist.createWrittenClipboard()
-				: checklist.createWrittenBook();
+			ItemStack stack = AllBlocks.CLIPBOARD.isIn(extractItem) ? checklist.create_reWrittenClipboard()
+				: checklist.create_reWrittenBook();
 			stack.setCount(inventory.getStackInSlot(BookOutput)
 				.getCount() + 1);
 			inventory.setStackInSlot(BookOutput, stack);
@@ -823,8 +823,8 @@ public class SchematicannonBlockEntity extends SmartBlockEntity implements MenuP
 	}
 
 	@Override
-	public AbstractContainerMenu createMenu(int id, Inventory inv, Player player) {
-		return SchematicannonMenu.create(id, inv, this);
+	public AbstractContainerMenu create_reMenu(int id, Inventory inv, Player player) {
+		return SchematicannonMenu.create_re(id, inv, this);
 	}
 
 	@Override

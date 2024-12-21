@@ -1,23 +1,23 @@
-package com.simibubi.create.content.decoration.palettes;
+package com.simibubi.create_re.content.decoration.palettes;
 
-import static com.simibubi.create.content.decoration.palettes.PaletteBlockPartial.ALL_PARTIALS;
-import static com.simibubi.create.content.decoration.palettes.PaletteBlockPartial.FOR_POLISHED;
-import static com.simibubi.create.content.decoration.palettes.PaletteBlockPattern.PatternNameType.PREFIX;
-import static com.simibubi.create.content.decoration.palettes.PaletteBlockPattern.PatternNameType.SUFFIX;
-import static com.simibubi.create.content.decoration.palettes.PaletteBlockPattern.PatternNameType.WRAP;
+import static com.simibubi.create_re.content.decoration.palettes.PaletteBlockPartial.ALL_PARTIALS;
+import static com.simibubi.create_re.content.decoration.palettes.PaletteBlockPartial.FOR_POLISHED;
+import static com.simibubi.create_re.content.decoration.palettes.PaletteBlockPattern.PatternNameType.PREFIX;
+import static com.simibubi.create_re.content.decoration.palettes.PaletteBlockPattern.PatternNameType.SUFFIX;
+import static com.simibubi.create_re.content.decoration.palettes.PaletteBlockPattern.PatternNameType.WRAP;
 
 import java.util.Optional;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.block.connected.AllCTTypes;
-import com.simibubi.create.foundation.block.connected.CTSpriteShiftEntry;
-import com.simibubi.create.foundation.block.connected.CTSpriteShifter;
-import com.simibubi.create.foundation.block.connected.CTType;
-import com.simibubi.create.foundation.block.connected.ConnectedTextureBehaviour;
-import com.simibubi.create.foundation.block.connected.HorizontalCTBehaviour;
-import com.simibubi.create.foundation.block.connected.RotatedPillarCTBehaviour;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.block.connected.AllCTTypes;
+import com.simibubi.create_re.foundation.block.connected.CTSpriteShiftEntry;
+import com.simibubi.create_re.foundation.block.connected.CTSpriteShifter;
+import com.simibubi.create_re.foundation.block.connected.CTType;
+import com.simibubi.create_re.foundation.block.connected.ConnectedTextureBehaviour;
+import com.simibubi.create_re.foundation.block.connected.HorizontalCTBehaviour;
+import com.simibubi.create_re.foundation.block.connected.RotatedPillarCTBehaviour;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 import com.tterrag.registrate.providers.RegistrateRecipeProvider;
@@ -42,19 +42,19 @@ public class PaletteBlockPattern {
 	public static final PaletteBlockPattern
 
 	CUT =
-		create("cut", PREFIX, ALL_PARTIALS),
+		create_re("cut", PREFIX, ALL_PARTIALS),
 
-		BRICKS = create("cut_bricks", WRAP, ALL_PARTIALS).textures("brick"),
+		BRICKS = create_re("cut_bricks", WRAP, ALL_PARTIALS).textures("brick"),
 
-		SMALL_BRICKS = create("small_bricks", WRAP, ALL_PARTIALS).textures("small_brick"),
+		SMALL_BRICKS = create_re("small_bricks", WRAP, ALL_PARTIALS).textures("small_brick"),
 
-		POLISHED = create("polished_cut", PREFIX, FOR_POLISHED).textures("polished", "slab"),
+		POLISHED = create_re("polished_cut", PREFIX, FOR_POLISHED).textures("polished", "slab"),
 
-		LAYERED = create("layered", PREFIX).blockStateFactory(p -> p::cubeColumn)
+		LAYERED = create_re("layered", PREFIX).blockStateFactory(p -> p::cubeColumn)
 			.textures("layered", "cap")
 			.connectedTextures(v -> new HorizontalCTBehaviour(ct(v, CTs.LAYERED), ct(v, CTs.CAP))),
 
-		PILLAR = create("pillar", SUFFIX).blockStateFactory(p -> p::pillar)
+		PILLAR = create_re("pillar", SUFFIX).blockStateFactory(p -> p::pillar)
 			.block(ConnectedPillarBlock::new)
 			.textures("pillar", "cap")
 			.connectedTextures(v -> new RotatedPillarCTBehaviour(ct(v, CTs.PILLAR), ct(v, CTs.CAP)))
@@ -83,7 +83,7 @@ public class PaletteBlockPattern {
 	@OnlyIn(Dist.CLIENT)
 	private RenderType renderType;
 
-	private static PaletteBlockPattern create(String name, PatternNameType nameType,
+	private static PaletteBlockPattern create_re(String name, PatternNameType nameType,
 		PaletteBlockPartial<?>... partials) {
 		PaletteBlockPattern pattern = new PaletteBlockPattern();
 		pattern.id = name;
@@ -132,7 +132,7 @@ public class PaletteBlockPattern {
 			.accept(c, p);
 	}
 
-	public Optional<Supplier<ConnectedTextureBehaviour>> createCTBehaviour(String variant) {
+	public Optional<Supplier<ConnectedTextureBehaviour>> create_reCTBehaviour(String variant) {
 		return ctFactory.map(d -> () -> d.apply(variant));
 	}
 
@@ -163,7 +163,7 @@ public class PaletteBlockPattern {
 	public IBlockStateProvider cubeAll(String variant) {
 		ResourceLocation all = toLocation(variant, textures[0]);
 		return (ctx, prov) -> prov.simpleBlock(ctx.get(), prov.models()
-			.cubeAll(createName(variant), all));
+			.cubeAll(create_reName(variant), all));
 	}
 
 	public IBlockStateProvider cubeBottomTop(String variant) {
@@ -171,7 +171,7 @@ public class PaletteBlockPattern {
 		ResourceLocation bottom = toLocation(variant, textures[1]);
 		ResourceLocation top = toLocation(variant, textures[2]);
 		return (ctx, prov) -> prov.simpleBlock(ctx.get(), prov.models()
-			.cubeBottomTop(createName(variant), side, bottom, top));
+			.cubeBottomTop(create_reName(variant), side, bottom, top));
 	}
 
 	public IBlockStateProvider pillar(String variant) {
@@ -184,12 +184,12 @@ public class PaletteBlockPattern {
 				if (axis == Axis.Y)
 					return ConfiguredModel.builder()
 						.modelFile(prov.models()
-							.cubeColumn(createName(variant), side, end))
+							.cubeColumn(create_reName(variant), side, end))
 						.uvLock(false)
 						.build();
 				return ConfiguredModel.builder()
 					.modelFile(prov.models()
-						.cubeColumnHorizontal(createName(variant) + "_horizontal", side, end))
+						.cubeColumnHorizontal(create_reName(variant) + "_horizontal", side, end))
 					.uvLock(false)
 					.rotationX(90)
 					.rotationY(axis == Axis.X ? 90 : 0)
@@ -202,12 +202,12 @@ public class PaletteBlockPattern {
 		ResourceLocation side = toLocation(variant, textures[0]);
 		ResourceLocation end = toLocation(variant, textures[1]);
 		return (ctx, prov) -> prov.simpleBlock(ctx.get(), prov.models()
-			.cubeColumn(createName(variant), side, end));
+			.cubeColumn(create_reName(variant), side, end));
 	}
 
 	// Utility
 
-	protected String createName(String variant) {
+	protected String create_reName(String variant) {
 		if (nameType == WRAP) {
 			String[] split = id.split("_");
 			if (split.length == 2) {

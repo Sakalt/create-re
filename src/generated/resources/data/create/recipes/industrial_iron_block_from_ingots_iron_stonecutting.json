@@ -4,5 +4,5 @@
   "ingredient": {
     "tag": "forge:ingots/iron"
   },
-  "result": "create:industrial_iron_block"
+  "result": "create_re:industrial_iron_block"
 }

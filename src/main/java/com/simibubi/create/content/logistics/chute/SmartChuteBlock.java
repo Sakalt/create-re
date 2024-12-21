@@ -1,6 +1,6 @@
-package com.simibubi.create.content.logistics.chute;
+package com.simibubi.create_re.content.logistics.chute;
 
-import com.simibubi.create.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlockEntityTypes;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
@@ -60,8 +60,8 @@ public class SmartChuteBlock extends AbstractChuteBlock {
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> p_206840_1_) {
-		super.createBlockStateDefinition(p_206840_1_.add(POWERED));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> p_206840_1_) {
+		super.create_reBlockStateDefinition(p_206840_1_.add(POWERED));
 	}
 
 	@Override

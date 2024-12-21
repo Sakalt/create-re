@@ -1,11 +1,11 @@
-package com.simibubi.create.content.equipment.sandPaper;
+package com.simibubi.create_re.content.equipment.sandPaper;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import com.simibubi.create.foundation.item.render.CustomRenderedItemModel;
-import com.simibubi.create.foundation.item.render.CustomRenderedItemModelRenderer;
-import com.simibubi.create.foundation.item.render.PartialItemModelRenderer;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.item.render.CustomRenderedItemModel;
+import com.simibubi.create_re.foundation.item.render.CustomRenderedItemModelRenderer;
+import com.simibubi.create_re.foundation.item.render.PartialItemModelRenderer;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;

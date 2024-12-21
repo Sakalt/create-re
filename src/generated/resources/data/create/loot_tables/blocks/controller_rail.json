@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:controller_rail"
+          "name": "create_re:controller_rail"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/controller_rail"
+  "random_sequence": "create_re:blocks/controller_rail"
 }

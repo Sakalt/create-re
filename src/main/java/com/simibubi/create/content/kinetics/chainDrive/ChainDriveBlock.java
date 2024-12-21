@@ -1,14 +1,14 @@
-package com.simibubi.create.content.kinetics.chainDrive;
+package com.simibubi.create_re.content.kinetics.chainDrive;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.content.contraptions.ITransformableBlock;
-import com.simibubi.create.content.contraptions.StructureTransform;
-import com.simibubi.create.content.kinetics.base.DirectionalAxisKineticBlock;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.kinetics.base.RotatedPillarKineticBlock;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.content.contraptions.ITransformableBlock;
+import com.simibubi.create_re.content.contraptions.StructureTransform;
+import com.simibubi.create_re.content.kinetics.base.DirectionalAxisKineticBlock;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.kinetics.base.RotatedPillarKineticBlock;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -35,7 +35,7 @@ import net.minecraft.world.level.material.PushReaction;
 public class ChainDriveBlock extends RotatedPillarKineticBlock
 	implements IBE<KineticBlockEntity>, ITransformableBlock {
 
-	public static final Property<Part> PART = EnumProperty.create("part", Part.class);
+	public static final Property<Part> PART = EnumProperty.create_re("part", Part.class);
 	public static final BooleanProperty CONNECTED_ALONG_FIRST_COORDINATE =
 		DirectionalAxisKineticBlock.AXIS_ALONG_FIRST_COORDINATE;
 
@@ -55,8 +55,8 @@ public class ChainDriveBlock extends RotatedPillarKineticBlock
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
-		super.createBlockStateDefinition(builder.add(PART, CONNECTED_ALONG_FIRST_COORDINATE));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
+		super.create_reBlockStateDefinition(builder.add(PART, CONNECTED_ALONG_FIRST_COORDINATE));
 	}
 
 	@Override

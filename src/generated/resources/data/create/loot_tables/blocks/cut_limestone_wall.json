@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:cut_limestone_wall"
+          "name": "create_re:cut_limestone_wall"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/cut_limestone_wall"
+  "random_sequence": "create_re:blocks/cut_limestone_wall"
 }

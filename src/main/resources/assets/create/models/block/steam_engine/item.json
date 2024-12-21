@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "create:block/cam_linkage",
-		"1": "create:block/engine",
-		"particle": "create:block/copper_plating"
+		"0": "create_re:block/cam_linkage",
+		"1": "create_re:block/engine",
+		"particle": "create_re:block/copper_plating"
 	},
 	"elements": [
 		{

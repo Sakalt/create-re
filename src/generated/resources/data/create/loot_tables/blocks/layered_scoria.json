@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:layered_scoria"
+          "name": "create_re:layered_scoria"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/layered_scoria"
+  "random_sequence": "create_re:blocks/layered_scoria"
 }

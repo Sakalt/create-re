@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.track;
+package com.simibubi.create_re.content.trains.track;
 
 import java.util.List;
 import java.util.UUID;
@@ -6,26 +6,26 @@ import java.util.UUID;
 import javax.annotation.Nullable;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.contraptions.StructureTransform;
-import com.simibubi.create.content.schematics.SchematicWorld;
-import com.simibubi.create.content.trains.graph.DimensionPalette;
-import com.simibubi.create.content.trains.graph.EdgeData;
-import com.simibubi.create.content.trains.graph.EdgePointType;
-import com.simibubi.create.content.trains.graph.TrackEdge;
-import com.simibubi.create.content.trains.graph.TrackGraph;
-import com.simibubi.create.content.trains.graph.TrackGraphHelper;
-import com.simibubi.create.content.trains.graph.TrackGraphLocation;
-import com.simibubi.create.content.trains.graph.TrackNode;
-import com.simibubi.create.content.trains.signal.SingleBlockEntityEdgePoint;
-import com.simibubi.create.content.trains.signal.TrackEdgePoint;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BehaviourType;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.ponder.PonderWorld;
-import com.simibubi.create.foundation.render.CachedBufferer;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.contraptions.StructureTransform;
+import com.simibubi.create_re.content.schematics.SchematicWorld;
+import com.simibubi.create_re.content.trains.graph.DimensionPalette;
+import com.simibubi.create_re.content.trains.graph.EdgeData;
+import com.simibubi.create_re.content.trains.graph.EdgePointType;
+import com.simibubi.create_re.content.trains.graph.TrackEdge;
+import com.simibubi.create_re.content.trains.graph.TrackGraph;
+import com.simibubi.create_re.content.trains.graph.TrackGraphHelper;
+import com.simibubi.create_re.content.trains.graph.TrackGraphLocation;
+import com.simibubi.create_re.content.trains.graph.TrackNode;
+import com.simibubi.create_re.content.trains.signal.SingleBlockEntityEdgePoint;
+import com.simibubi.create_re.content.trains.signal.TrackEdgePoint;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BehaviourType;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.ponder.PonderWorld;
+import com.simibubi.create_re.foundation.render.CachedBufferer;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 import net.minecraft.client.renderer.LevelRenderer;
@@ -138,11 +138,11 @@ public class TrackTargetingBehaviour<T extends TrackEdgePoint> extends BlockEnti
 	public void tick() {
 		super.tick();
 		if (edgePoint == null)
-			edgePoint = createEdgePoint();
+			edgePoint = create_reEdgePoint();
 	}
 
 	@SuppressWarnings("unchecked")
-	public T createEdgePoint() {
+	public T create_reEdgePoint() {
 		Level level = getWorld();
 		boolean isClientSide = level.isClientSide;
 		if (migrationData == null || isClientSide)
@@ -169,7 +169,7 @@ public class TrackTargetingBehaviour<T extends TrackEdgePoint> extends BlockEnti
 		if (edge == null)
 			return null;
 
-		T point = edgePointType.create();
+		T point = edgePointType.create_re();
 		boolean front = getTargetDirection() == AxisDirection.POSITIVE;
 
 		prevDirection = edge.getDirectionAt(loc.position)

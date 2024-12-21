@@ -1,11 +1,11 @@
-package com.simibubi.create.foundation.utility;
+package com.simibubi.create_re.foundation.utility;
 
 import javax.annotation.Nullable;
 
 import org.joml.Quaternionf;
 import org.joml.Vector3f;
 
-import com.simibubi.create.foundation.mixin.accessor.GameRendererAccessor;
+import com.simibubi.create_re.foundation.mixin.accessor.GameRendererAccessor;
 
 import net.minecraft.client.Camera;
 import net.minecraft.client.Minecraft;
@@ -284,7 +284,7 @@ public class VecHelper {
 		}
 
 		// ----- adjust for fov -----
-		float fov = (float) ((GameRendererAccessor) mc.gameRenderer).create$callGetFov(ari, partialTicks, true);
+		float fov = (float) ((GameRendererAccessor) mc.gameRenderer).create_re$callGetFov(ari, partialTicks, true);
 
 		float half_height = (float) mc.getWindow()
 			.getGuiScaledHeight() / 2;

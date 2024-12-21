@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "X": {
-      "item": "create:cut_asurine"
+      "item": "create_re:cut_asurine"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 6,
-    "item": "create:cut_asurine_wall"
+    "item": "create_re:cut_asurine_wall"
   },
   "show_notification": true
 }

@@ -1,32 +1,32 @@
-package com.simibubi.create.infrastructure.ponder.scenes;
+package com.simibubi.create_re.infrastructure.ponder.scenes;
 
 import com.google.common.collect.ImmutableList;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.kinetics.deployer.DeployerBlockEntity;
-import com.simibubi.create.content.kinetics.millstone.MillstoneBlockEntity;
-import com.simibubi.create.content.kinetics.mixer.MechanicalMixerBlockEntity;
-import com.simibubi.create.content.kinetics.press.MechanicalPressBlockEntity;
-import com.simibubi.create.content.kinetics.press.PressingBehaviour.Mode;
-import com.simibubi.create.content.processing.basin.BasinBlock;
-import com.simibubi.create.content.processing.basin.BasinBlockEntity;
-import com.simibubi.create.content.processing.burner.BlazeBurnerBlock;
-import com.simibubi.create.content.processing.burner.BlazeBurnerBlock.HeatLevel;
-import com.simibubi.create.content.processing.burner.LitBlazeBurnerBlock;
-import com.simibubi.create.foundation.ponder.ElementLink;
-import com.simibubi.create.foundation.ponder.PonderPalette;
-import com.simibubi.create.foundation.ponder.SceneBuilder;
-import com.simibubi.create.foundation.ponder.SceneBuildingUtil;
-import com.simibubi.create.foundation.ponder.Selection;
-import com.simibubi.create.foundation.ponder.element.BeltItemElement;
-import com.simibubi.create.foundation.ponder.element.EntityElement;
-import com.simibubi.create.foundation.ponder.element.InputWindowElement;
-import com.simibubi.create.foundation.ponder.element.WorldSectionElement;
-import com.simibubi.create.foundation.ponder.instruction.EmitParticlesInstruction.Emitter;
-import com.simibubi.create.foundation.utility.IntAttached;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.Pointing;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.kinetics.deployer.DeployerBlockEntity;
+import com.simibubi.create_re.content.kinetics.millstone.MillstoneBlockEntity;
+import com.simibubi.create_re.content.kinetics.mixer.MechanicalMixerBlockEntity;
+import com.simibubi.create_re.content.kinetics.press.MechanicalPressBlockEntity;
+import com.simibubi.create_re.content.kinetics.press.PressingBehaviour.Mode;
+import com.simibubi.create_re.content.processing.basin.BasinBlock;
+import com.simibubi.create_re.content.processing.basin.BasinBlockEntity;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock.HeatLevel;
+import com.simibubi.create_re.content.processing.burner.LitBlazeBurnerBlock;
+import com.simibubi.create_re.foundation.ponder.ElementLink;
+import com.simibubi.create_re.foundation.ponder.PonderPalette;
+import com.simibubi.create_re.foundation.ponder.SceneBuilder;
+import com.simibubi.create_re.foundation.ponder.SceneBuildingUtil;
+import com.simibubi.create_re.foundation.ponder.Selection;
+import com.simibubi.create_re.foundation.ponder.element.BeltItemElement;
+import com.simibubi.create_re.foundation.ponder.element.EntityElement;
+import com.simibubi.create_re.foundation.ponder.element.InputWindowElement;
+import com.simibubi.create_re.foundation.ponder.element.WorldSectionElement;
+import com.simibubi.create_re.foundation.ponder.instruction.EmitParticlesInstruction.Emitter;
+import com.simibubi.create_re.foundation.utility.IntAttached;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.Pointing;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -91,7 +91,7 @@ public class ProcessingScenes {
 		Vec3 entitySpawn = util.vector.topOf(millstone.above(3));
 
 		ElementLink<EntityElement> entity1 =
-			scene.world.createItemEntity(entitySpawn, util.vector.of(0, 0.2, 0), itemStack);
+			scene.world.create_reItemEntity(entitySpawn, util.vector.of(0, 0.2, 0), itemStack);
 		scene.idle(18);
 		scene.world.modifyEntity(entity1, Entity::discard);
 		scene.world.modifyBlockEntity(millstone, MillstoneBlockEntity.class,
@@ -129,9 +129,9 @@ public class ProcessingScenes {
 		scene.idle(15);
 
 		BlockPos beltPos = util.grid.at(1, 1, 2);
-		scene.world.createItemOnBelt(beltPos, Direction.EAST, flour);
+		scene.world.create_reItemOnBelt(beltPos, Direction.EAST, flour);
 		scene.idle(15);
-		scene.world.createItemOnBelt(beltPos, Direction.EAST, new ItemStack(Items.WHEAT_SEEDS));
+		scene.world.create_reItemOnBelt(beltPos, Direction.EAST, new ItemStack(Items.WHEAT_SEEDS));
 		scene.idle(20);
 
 		scene.overlay.showText(50)
@@ -207,7 +207,7 @@ public class ProcessingScenes {
 		Vec3 entitySpawn = util.vector.topOf(center.above(2));
 
 		ElementLink<EntityElement> entity1 =
-			scene.world.createItemEntity(entitySpawn, util.vector.of(0, 0.2, 0), input);
+			scene.world.create_reItemEntity(entitySpawn, util.vector.of(0, 0.2, 0), input);
 		scene.idle(18);
 		scene.world.modifyEntity(entity1, Entity::discard);
 		Emitter blockSpace =
@@ -225,9 +225,9 @@ public class ProcessingScenes {
 			.placeNearTarget();
 		scene.idle(60);
 
-		scene.world.createItemEntity(centerTop.add(0, -1.4, 0), util.vector.of(0, 0, 0), output);
+		scene.world.create_reItemEntity(centerTop.add(0, -1.4, 0), util.vector.of(0, 0, 0), output);
 		scene.idle(10);
-		scene.world.createItemEntity(centerTop.add(0, -1.4, 0), util.vector.of(0, 0, 0), output);
+		scene.world.create_reItemEntity(centerTop.add(0, -1.4, 0), util.vector.of(0, 0, 0), output);
 		scene.overlay.showControls(new InputWindowElement(centerTop.add(0, -2, 0), Pointing.UP).withItem(output), 30);
 		scene.idle(40);
 
@@ -249,15 +249,15 @@ public class ProcessingScenes {
 
 		for (int i = 0; i < 5; i++) {
 			if (i < 4)
-				scene.world.createItemOnBelt(util.grid.at(4, 4, 2), Direction.EAST, input);
+				scene.world.create_reItemOnBelt(util.grid.at(4, 4, 2), Direction.EAST, input);
 			scene.idle(15);
 			if (i < 3)
-				scene.world.createItemOnBelt(util.grid.at(4, 4, 2), Direction.EAST, input);
+				scene.world.create_reItemOnBelt(util.grid.at(4, 4, 2), Direction.EAST, input);
 			scene.idle(15);
 			if (i > 0) {
-				scene.world.createItemOnBelt(center.below(), Direction.UP, output);
+				scene.world.create_reItemOnBelt(center.below(), Direction.UP, output);
 				scene.idle(15);
-				scene.world.createItemOnBelt(center.below(), Direction.UP, output);
+				scene.world.create_reItemOnBelt(center.below(), Direction.UP, output);
 			}
 			scene.world.removeItemsFromBelt(util.grid.at(3, 3, 2));
 			if (i < 4)
@@ -308,7 +308,7 @@ public class ProcessingScenes {
 			.text("The Input items can be dropped or placed on a Depot under the Press");
 		scene.idle(50);
 		ItemStack copper = new ItemStack(Items.COPPER_INGOT);
-		scene.world.createItemOnBeltLike(depotPos, Direction.NORTH, copper);
+		scene.world.create_reItemOnBeltLike(depotPos, Direction.NORTH, copper);
 		Vec3 depotCenter = util.vector.centerOf(depotPos.south());
 		scene.overlay.showControls(new InputWindowElement(depotCenter, Pointing.UP).withItem(copper), 30);
 		scene.idle(10);
@@ -321,7 +321,7 @@ public class ProcessingScenes {
 			.makePressingParticleEffect(depotCenter.add(0, 8 / 16f, 0), copper));
 		scene.world.removeItemsFromBelt(depotPos);
 		ItemStack sheet = AllItems.COPPER_SHEET.asStack();
-		scene.world.createItemOnBeltLike(depotPos, Direction.UP, sheet);
+		scene.world.create_reItemOnBeltLike(depotPos, Direction.UP, sheet);
 		scene.idle(10);
 		scene.overlay.showControls(new InputWindowElement(depotCenter, Pointing.UP).withItem(sheet), 50);
 		scene.idle(60);
@@ -340,9 +340,9 @@ public class ProcessingScenes {
 			.text("When items are provided on a belt...");
 		scene.idle(30);
 
-		ElementLink<BeltItemElement> ingot = scene.world.createItemOnBelt(beltPos, Direction.SOUTH, copper);
+		ElementLink<BeltItemElement> ingot = scene.world.create_reItemOnBelt(beltPos, Direction.SOUTH, copper);
 		scene.idle(15);
-		ElementLink<BeltItemElement> ingot2 = scene.world.createItemOnBelt(beltPos, Direction.SOUTH, copper);
+		ElementLink<BeltItemElement> ingot2 = scene.world.create_reItemOnBelt(beltPos, Direction.SOUTH, copper);
 		scene.idle(15);
 		scene.world.stallBeltItem(ingot, true);
 		scene.world.modifyBlockEntity(pressPos, type, pte -> pte.getPressingBehaviour()
@@ -358,7 +358,7 @@ public class ProcessingScenes {
 		scene.world.modifyBlockEntity(pressPos, type, pte -> pte.getPressingBehaviour()
 			.makePressingParticleEffect(depotCenter.add(0, 8 / 16f, 0), copper));
 		scene.world.removeItemsFromBelt(pressPos.below(2));
-		ingot = scene.world.createItemOnBelt(pressPos.below(2), Direction.UP, sheet);
+		ingot = scene.world.create_reItemOnBelt(pressPos.below(2), Direction.UP, sheet);
 		scene.world.stallBeltItem(ingot, true);
 		scene.idle(15);
 		scene.world.stallBeltItem(ingot, false);
@@ -370,7 +370,7 @@ public class ProcessingScenes {
 		scene.world.modifyBlockEntity(pressPos, type, pte -> pte.getPressingBehaviour()
 			.makePressingParticleEffect(depotCenter.add(0, 8 / 16f, 0), copper));
 		scene.world.removeItemsFromBelt(pressPos.below(2));
-		ingot2 = scene.world.createItemOnBelt(pressPos.below(2), Direction.UP, sheet);
+		ingot2 = scene.world.create_reItemOnBelt(pressPos.below(2), Direction.UP, sheet);
 		scene.world.stallBeltItem(ingot2, true);
 		scene.idle(15);
 		scene.world.stallBeltItem(ingot2, false);
@@ -415,8 +415,8 @@ public class ProcessingScenes {
 		scene.idle(30);
 		Class<MechanicalMixerBlockEntity> type = MechanicalMixerBlockEntity.class;
 		scene.world.modifyBlockEntity(pressPos, type, pte -> pte.startProcessingBasin());
-		scene.world.createItemOnBeltLike(basin, Direction.UP, red);
-		scene.world.createItemOnBeltLike(basin, Direction.UP, blue);
+		scene.world.create_reItemOnBeltLike(basin, Direction.UP, red);
+		scene.world.create_reItemOnBeltLike(basin, Direction.UP, blue);
 		scene.idle(80);
 		scene.world.modifyBlockEntityNBT(util.select.position(basin), BasinBlockEntity.class, nbt -> {
 			nbt.put("VisualizedItems",
@@ -424,7 +424,7 @@ public class ProcessingScenes {
 					.serializeNBT()));
 		});
 		scene.idle(4);
-		scene.world.createItemOnBelt(util.grid.at(1, 1, 1), Direction.UP, purple);
+		scene.world.create_reItemOnBelt(util.grid.at(1, 1, 1), Direction.UP, purple);
 		scene.idle(30);
 
 		scene.overlay.showText(80)
@@ -506,7 +506,7 @@ public class ProcessingScenes {
 					.serializeNBT()));
 		});
 		scene.idle(4);
-		scene.world.createItemOnBelt(util.grid.at(1, 1, 1), Direction.UP, copperBlock);
+		scene.world.create_reItemOnBelt(util.grid.at(1, 1, 1), Direction.UP, copperBlock);
 		scene.idle(30);
 
 		scene.overlay.showText(80)
@@ -532,7 +532,7 @@ public class ProcessingScenes {
 					.serializeNBT()));
 		});
 		scene.idle(4);
-		scene.world.createItemOnBelt(util.grid.at(1, 1, 1), Direction.UP, bark);
+		scene.world.create_reItemOnBelt(util.grid.at(1, 1, 1), Direction.UP, bark);
 		scene.idle(30);
 
 		scene.rotateCameraY(-30);
@@ -567,8 +567,8 @@ public class ProcessingScenes {
 		scene.idle(10);
 		BlockPos center = util.grid.at(2, 0, 2);
 
-		scene.world.createEntity(w -> {
-			Blaze blazeEntity = EntityType.BLAZE.create(w);
+		scene.world.create_reEntity(w -> {
+			Blaze blazeEntity = EntityType.BLAZE.create_re(w);
 			Vec3 v = util.vector.topOf(center);
 			blazeEntity.setPosRaw(v.x, v.y, v.z);
 			blazeEntity.setYRot(blazeEntity.yRotO = 180);
@@ -745,7 +745,7 @@ public class ProcessingScenes {
 
 		ItemStack stack = new ItemStack(Items.BRICK);
 		for (int i = 0; i < 4; i++) {
-			scene.world.createItemEntity(util.vector.centerOf(basinPos.above(3)), util.vector.of(0, 0, 0), stack);
+			scene.world.create_reItemEntity(util.vector.centerOf(basinPos.above(3)), util.vector.of(0, 0, 0), stack);
 			scene.idle(10);
 		}
 		scene.idle(10);
@@ -851,7 +851,7 @@ public class ProcessingScenes {
 
 		scene.overlay.showText(80)
 			.attachKeyFrame()
-			.text("Without output faucet, the Basin will retain items created in its processing")
+			.text("Without output faucet, the Basin will retain items create_red in its processing")
 			.pointAt(basinSide)
 			.placeNearTarget();
 		scene.idle(50);
@@ -891,7 +891,7 @@ public class ProcessingScenes {
 
 		scene.world.showSection(util.select.fromTo(2, 2, 5, 4, 1, 2), Direction.DOWN);
 		scene.rotateCameraY(70);
-		scene.world.createItemOnBelt(util.grid.at(2, 1, 2), Direction.WEST, block);
+		scene.world.create_reItemOnBelt(util.grid.at(2, 1, 2), Direction.WEST, block);
 		scene.idle(40);
 		scene.overlay.showText(70)
 			.text("Desired outputs will then have to be extracted from the basin")

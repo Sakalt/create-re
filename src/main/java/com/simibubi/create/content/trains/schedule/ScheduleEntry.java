@@ -1,11 +1,11 @@
-package com.simibubi.create.content.trains.schedule;
+package com.simibubi.create_re.content.trains.schedule;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.simibubi.create.content.trains.schedule.condition.ScheduleWaitCondition;
-import com.simibubi.create.content.trains.schedule.destination.ScheduleInstruction;
-import com.simibubi.create.foundation.utility.NBTHelper;
+import com.simibubi.create_re.content.trains.schedule.condition.ScheduleWaitCondition;
+import com.simibubi.create_re.content.trains.schedule.destination.ScheduleInstruction;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;

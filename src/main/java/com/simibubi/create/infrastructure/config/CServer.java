@@ -1,6 +1,6 @@
-package com.simibubi.create.infrastructure.config;
+package com.simibubi.create_re.infrastructure.config;
 
-import com.simibubi.create.foundation.config.ConfigBase;
+import com.simibubi.create_re.foundation.config.ConfigBase;
 
 public class CServer extends ConfigBase {
 

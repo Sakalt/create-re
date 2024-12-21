@@ -2,11 +2,11 @@
 	"parent": "block/block",
 	"loader": "forge:obj",
 	"flip_v": true,
-	"model": "create:models/block/mechanical_roller/item.obj",
+	"model": "create_re:models/block/mechanical_roller/item.obj",
 	"textures": {
-		"wheel": "create:block/roller_wheel",
-		"metal": "create:block/roller_metal",
-		"casing": "create:block/roller_casing"
+		"wheel": "create_re:block/roller_wheel",
+		"metal": "create_re:block/roller_metal",
+		"casing": "create_re:block/roller_casing"
 	},
 	"display": {
 		"thirdperson_righthand": {

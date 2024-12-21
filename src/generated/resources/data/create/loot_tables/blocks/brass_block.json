@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:brass_block"
+          "name": "create_re:brass_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/brass_block"
+  "random_sequence": "create_re:blocks/brass_block"
 }

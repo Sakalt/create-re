@@ -1,7 +1,7 @@
-package com.simibubi.create.content.contraptions.behaviour;
+package com.simibubi.create_re.content.contraptions.behaviour;
 
-import com.simibubi.create.content.equipment.bell.AbstractBellBlock;
-import com.simibubi.create.content.trains.entity.CarriageContraption;
+import com.simibubi.create_re.content.equipment.bell.AbstractBellBlock;
+import com.simibubi.create_re.content.trains.entity.CarriageContraption;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;

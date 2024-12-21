@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.schedule;
+package com.simibubi.create_re.content.trains.schedule;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -6,21 +6,21 @@ import java.util.List;
 import java.util.Objects;
 import java.util.regex.PatternSyntaxException;
 
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.trains.display.GlobalTrainDisplayData.TrainDeparturePrediction;
-import com.simibubi.create.content.trains.entity.Carriage;
-import com.simibubi.create.content.trains.entity.Train;
-import com.simibubi.create.content.trains.graph.DiscoveredPath;
-import com.simibubi.create.content.trains.graph.EdgePointType;
-import com.simibubi.create.content.trains.schedule.condition.ScheduleWaitCondition;
-import com.simibubi.create.content.trains.schedule.condition.ScheduledDelay;
-import com.simibubi.create.content.trains.schedule.destination.ChangeThrottleInstruction;
-import com.simibubi.create.content.trains.schedule.destination.ChangeTitleInstruction;
-import com.simibubi.create.content.trains.schedule.destination.DestinationInstruction;
-import com.simibubi.create.content.trains.schedule.destination.ScheduleInstruction;
-import com.simibubi.create.content.trains.station.GlobalStation;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.NBTHelper;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.trains.display.GlobalTrainDisplayData.TrainDeparturePrediction;
+import com.simibubi.create_re.content.trains.entity.Carriage;
+import com.simibubi.create_re.content.trains.entity.Train;
+import com.simibubi.create_re.content.trains.graph.DiscoveredPath;
+import com.simibubi.create_re.content.trains.graph.EdgePointType;
+import com.simibubi.create_re.content.trains.schedule.condition.ScheduleWaitCondition;
+import com.simibubi.create_re.content.trains.schedule.condition.ScheduledDelay;
+import com.simibubi.create_re.content.trains.schedule.destination.ChangeThrottleInstruction;
+import com.simibubi.create_re.content.trains.schedule.destination.ChangeTitleInstruction;
+import com.simibubi.create_re.content.trains.schedule.destination.DestinationInstruction;
+import com.simibubi.create_re.content.trains.schedule.destination.ScheduleInstruction;
+import com.simibubi.create_re.content.trains.station.GlobalStation;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.Tag;
@@ -267,7 +267,7 @@ public class ScheduleRuntime {
 		if (state == State.POST_TRANSIT || current >= entryCount) {
 			GlobalStation currentStation = train.getCurrentStation();
 			if (currentStation != null)
-				predictions.add(createPrediction(current, currentStation.name, currentTitle, 0));
+				predictions.add(create_rePrediction(current, currentStation.name, currentTitle, 0));
 			int departureTime = estimateStayDuration(current);
 			if (departureTime == INVALID)
 				accumulatedTime = INVALID;
@@ -291,7 +291,7 @@ public class ScheduleRuntime {
 				}
 
 				accumulatedTime += timeRemaining;
-				predictions.add(createPrediction(current, destination.name, currentTitle, accumulatedTime));
+				predictions.add(create_rePrediction(current, destination.name, currentTitle, accumulatedTime));
 
 				int departureTime = estimateStayDuration(current);
 				if (departureTime != INVALID)
@@ -333,7 +333,7 @@ public class ScheduleRuntime {
 		int departureTime = estimateStayDuration(index);
 
 		if (accumulatedTime < 0) {
-			predictions.add(createPrediction(index, filter.getFilter(), currentTitle, accumulatedTime));
+			predictions.add(create_rePrediction(index, filter.getFilter(), currentTitle, accumulatedTime));
 			return Math.min(accumulatedTime, departureTime);
 		}
 
@@ -343,7 +343,7 @@ public class ScheduleRuntime {
 		if (predictedTime == TBD)
 			accumulatedTime = TBD;
 
-		predictions.add(createPrediction(index, filter.getFilter(), currentTitle, accumulatedTime));
+		predictions.add(create_rePrediction(index, filter.getFilter(), currentTitle, accumulatedTime));
 
 		if (accumulatedTime != TBD)
 			accumulatedTime += departureTime;
@@ -375,7 +375,7 @@ public class ScheduleRuntime {
 		return INVALID;
 	}
 
-	private TrainDeparturePrediction createPrediction(int index, String destination, String currentTitle, int time) {
+	private TrainDeparturePrediction create_rePrediction(int index, String destination, String currentTitle, int time) {
 		if (time == INVALID)
 			return null;
 

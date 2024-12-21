@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:weighted_ejector"
+          "name": "create_re:weighted_ejector"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/weighted_ejector"
+  "random_sequence": "create_re:blocks/weighted_ejector"
 }

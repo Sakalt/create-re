@@ -1,7 +1,7 @@
 {
-  "parent": "create:block/connected_glass_pane/noside",
+  "parent": "create_re:block/connected_glass_pane/noside",
   "textures": {
-    "edge": "create:block/palettes/ornate_iron_window_pane_top",
-    "pane": "create:block/palettes/ornate_iron_window"
+    "edge": "create_re:block/palettes/ornate_iron_window_pane_top",
+    "pane": "create_re:block/palettes/ornate_iron_window"
   }
 }

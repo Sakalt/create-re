@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:exposed_copper_shingles"
+          "name": "create_re:exposed_copper_shingles"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/exposed_copper_shingles"
+  "random_sequence": "create_re:blocks/exposed_copper_shingles"
 }

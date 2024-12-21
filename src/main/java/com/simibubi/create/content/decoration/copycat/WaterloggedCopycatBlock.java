@@ -1,6 +1,6 @@
-package com.simibubi.create.content.decoration.copycat;
+package com.simibubi.create_re.content.decoration.copycat;
 
-import com.simibubi.create.foundation.block.ProperWaterloggedBlock;
+import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -19,8 +19,8 @@ public abstract class WaterloggedCopycatBlock extends CopycatBlock implements Pr
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
-		super.createBlockStateDefinition(pBuilder.add(WATERLOGGED));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
+		super.create_reBlockStateDefinition(pBuilder.add(WATERLOGGED));
 	}
 
 	@Override

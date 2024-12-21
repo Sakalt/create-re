@@ -1,12 +1,12 @@
-package com.simibubi.create.api.behaviour;
+package com.simibubi.create_re.api.behaviour;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Consumer;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.compat.tconstruct.SpoutCasting;
-import com.simibubi.create.content.fluids.spout.SpoutBlockEntity;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.compat.tconstruct.SpoutCasting;
+import com.simibubi.create_re.content.fluids.spout.SpoutBlockEntity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;

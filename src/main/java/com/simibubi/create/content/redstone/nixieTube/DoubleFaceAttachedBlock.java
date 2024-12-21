@@ -1,4 +1,4 @@
-package com.simibubi.create.content.redstone.nixieTube;
+package com.simibubi.create_re.content.redstone.nixieTube;
 
 import javax.annotation.Nullable;
 
@@ -32,7 +32,7 @@ public class DoubleFaceAttachedBlock extends HorizontalDirectionalBlock {
 	}
 
 	public static final EnumProperty<DoubleAttachFace> FACE =
-		EnumProperty.create("double_face", DoubleAttachFace.class);
+		EnumProperty.create_re("double_face", DoubleAttachFace.class);
 
 	public DoubleFaceAttachedBlock(BlockBehaviour.Properties p_53182_) {
 		super(p_53182_);

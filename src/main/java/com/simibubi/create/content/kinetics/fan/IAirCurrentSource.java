@@ -1,9 +1,9 @@
-package com.simibubi.create.content.kinetics.fan;
+package com.simibubi.create_re.content.kinetics.fan;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.infrastructure.config.AllConfigs;
-import com.simibubi.create.infrastructure.config.CKinetics;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.infrastructure.config.CKinetics;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;

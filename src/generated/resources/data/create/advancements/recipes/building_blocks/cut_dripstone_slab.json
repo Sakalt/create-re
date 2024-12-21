@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:cut_dripstone"
+              "create_re:cut_dripstone"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:cut_dripstone_slab"
+        "recipe": "create_re:cut_dripstone_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:cut_dripstone_slab"
+      "create_re:cut_dripstone_slab"
     ]
   },
   "sends_telemetry_event": false

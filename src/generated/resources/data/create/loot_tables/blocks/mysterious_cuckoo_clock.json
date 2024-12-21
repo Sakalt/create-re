@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:mysterious_cuckoo_clock"
+          "name": "create_re:mysterious_cuckoo_clock"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/mysterious_cuckoo_clock"
+  "random_sequence": "create_re:blocks/mysterious_cuckoo_clock"
 }

@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:polished_cut_crimsite"
+              "create_re:polished_cut_crimsite"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:polished_cut_crimsite_stairs"
+        "recipe": "create_re:polished_cut_crimsite_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:polished_cut_crimsite_stairs"
+      "create_re:polished_cut_crimsite_stairs"
     ]
   },
   "sends_telemetry_event": false

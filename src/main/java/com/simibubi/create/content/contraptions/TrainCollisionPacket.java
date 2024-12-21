@@ -1,8 +1,8 @@
-package com.simibubi.create.content.contraptions;
+package com.simibubi.create_re.content.contraptions;
 
-import com.simibubi.create.content.trains.entity.CarriageContraptionEntity;
-import com.simibubi.create.foundation.damageTypes.CreateDamageSources;
-import com.simibubi.create.foundation.networking.SimplePacketBase;
+import com.simibubi.create_re.content.trains.entity.CarriageContraptionEntity;
+import com.simibubi.create_re.foundation.damageTypes.CreateDamageSources;
+import com.simibubi.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.server.level.ServerPlayer;

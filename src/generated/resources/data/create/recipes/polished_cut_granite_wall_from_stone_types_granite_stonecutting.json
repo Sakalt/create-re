@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 1,
   "ingredient": {
-    "tag": "create:stone_types/granite"
+    "tag": "create_re:stone_types/granite"
   },
-  "result": "create:polished_cut_granite_wall"
+  "result": "create_re:polished_cut_granite_wall"
 }

@@ -1,11 +1,11 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "create:block/block",
+	"parent": "create_re:block/block",
 	"textures": {
-		"harvester": "create:block/harvester",
+		"harvester": "create_re:block/harvester",
 		"anvil": "block/anvil",
-		"particle": "create:block/andesite_casing_short",
-		"andesite_casing_short": "create:block/andesite_casing_short"
+		"particle": "create_re:block/andesite_casing_short",
+		"andesite_casing_short": "create_re:block/andesite_casing_short"
 	},
 	"elements": [
 		{

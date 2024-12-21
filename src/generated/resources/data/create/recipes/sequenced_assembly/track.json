@@ -1,20 +1,20 @@
 {
-  "type": "create:sequenced_assembly",
+  "type": "create_re:sequenced_assembly",
   "ingredient": {
-    "tag": "create:sleepers"
+    "tag": "create_re:sleepers"
   },
   "loops": 1,
   "results": [
     {
-      "item": "create:track"
+      "item": "create_re:track"
     }
   ],
   "sequence": [
     {
-      "type": "create:deploying",
+      "type": "create_re:deploying",
       "ingredients": [
         {
-          "item": "create:incomplete_track"
+          "item": "create_re:incomplete_track"
         },
         [
           {
@@ -27,15 +27,15 @@
       ],
       "results": [
         {
-          "item": "create:incomplete_track"
+          "item": "create_re:incomplete_track"
         }
       ]
     },
     {
-      "type": "create:deploying",
+      "type": "create_re:deploying",
       "ingredients": [
         {
-          "item": "create:incomplete_track"
+          "item": "create_re:incomplete_track"
         },
         [
           {
@@ -48,25 +48,25 @@
       ],
       "results": [
         {
-          "item": "create:incomplete_track"
+          "item": "create_re:incomplete_track"
         }
       ]
     },
     {
-      "type": "create:pressing",
+      "type": "create_re:pressing",
       "ingredients": [
         {
-          "item": "create:incomplete_track"
+          "item": "create_re:incomplete_track"
         }
       ],
       "results": [
         {
-          "item": "create:incomplete_track"
+          "item": "create_re:incomplete_track"
         }
       ]
     }
   ],
   "transitionalItem": {
-    "item": "create:incomplete_track"
+    "item": "create_re:incomplete_track"
   }
 }

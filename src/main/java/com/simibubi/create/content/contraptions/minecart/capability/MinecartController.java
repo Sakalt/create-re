@@ -1,4 +1,4 @@
-package com.simibubi.create.content.contraptions.minecart.capability;
+package com.simibubi.create_re.content.contraptions.minecart.capability;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -10,15 +10,15 @@ import javax.annotation.Nullable;
 
 import org.apache.commons.lang3.mutable.MutableBoolean;
 
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.contraptions.AbstractContraptionEntity;
-import com.simibubi.create.content.contraptions.OrientedContraptionEntity;
-import com.simibubi.create.content.contraptions.minecart.CouplingHandler;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity;
+import com.simibubi.create_re.content.contraptions.OrientedContraptionEntity;
+import com.simibubi.create_re.content.contraptions.minecart.CouplingHandler;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
@@ -60,8 +60,8 @@ public class MinecartController implements INBTSerializable<CompoundTag> {
 
 	public MinecartController(AbstractMinecart minecart) {
 		weakRef = new WeakReference<>(minecart);
-		stallData = Couple.create(Optional::empty);
-		couplings = Couple.create(Optional::empty);
+		stallData = Couple.create_re(Optional::empty);
+		couplings = Couple.create_re(Optional::empty);
 		needsEntryRefresh = true;
 	}
 
@@ -324,8 +324,8 @@ public class MinecartController implements INBTSerializable<CompoundTag> {
 		if (nbt.contains("ConnectedCoupling"))
 			connectedCD = Optional.of(CouplingData.read(nbt.getCompound("ConnectedCoupling")));
 
-		stallData = Couple.create(internalSD, externalSD);
-		couplings = Couple.create(mainCD, connectedCD);
+		stallData = Couple.create_re(internalSD, externalSD);
+		couplings = Couple.create_re(mainCD, connectedCD);
 		needsEntryRefresh = true;
 	}
 
@@ -367,8 +367,8 @@ public class MinecartController implements INBTSerializable<CompoundTag> {
 
 		CompoundTag serialize() {
 			CompoundTag nbt = new CompoundTag();
-			nbt.put("Main", NbtUtils.createUUID(mainCartID));
-			nbt.put("Connected", NbtUtils.createUUID(connectedCartID));
+			nbt.put("Main", NbtUtils.create_reUUID(mainCartID));
+			nbt.put("Connected", NbtUtils.create_reUUID(connectedCartID));
 			nbt.putFloat("Length", length);
 			nbt.putBoolean("Contraption", contraption);
 			return nbt;

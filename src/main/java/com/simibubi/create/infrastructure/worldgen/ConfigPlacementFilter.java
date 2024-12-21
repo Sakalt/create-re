@@ -1,7 +1,7 @@
-package com.simibubi.create.infrastructure.worldgen;
+package com.simibubi.create_re.infrastructure.worldgen;
 
 import com.mojang.serialization.Codec;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.RandomSource;

@@ -1,8 +1,8 @@
-package com.simibubi.create.content.redstone.displayLink.source;
+package com.simibubi.create_re.content.redstone.displayLink.source;
 
-import com.simibubi.create.content.redstone.displayLink.DisplayLinkContext;
-import com.simibubi.create.content.redstone.displayLink.target.DisplayTargetStats;
-import com.simibubi.create.foundation.utility.Components;
+import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkContext;
+import com.simibubi.create_re.content.redstone.displayLink.target.DisplayTargetStats;
+import com.simibubi.create_re.foundation.utility.Components;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.MutableComponent;
@@ -16,7 +16,7 @@ import net.minecraft.world.level.block.entity.EnchantmentTableBlockEntity;
 
 public class EnchantPowerDisplaySource extends NumericSingleLineDisplaySource {
 
-	protected static final RandomSource random = RandomSource.create();
+	protected static final RandomSource random = RandomSource.create_re();
 	protected static final ItemStack stack = new ItemStack(Items.DIAMOND_PICKAXE);
 
 	@Override

@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.entity;
+package com.simibubi.create_re.content.trains.entity;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -20,39 +20,39 @@ import javax.annotation.Nullable;
 import org.apache.commons.lang3.mutable.MutableBoolean;
 import org.apache.commons.lang3.mutable.MutableObject;
 
-import com.simibubi.create.AllMovementBehaviours;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.contraptions.behaviour.MovementBehaviour;
-import com.simibubi.create.content.logistics.filter.FilterItemStack;
-import com.simibubi.create.content.trains.bogey.AbstractBogeyBlockEntity;
-import com.simibubi.create.content.trains.entity.Carriage.DimensionalCarriageEntity;
-import com.simibubi.create.content.trains.entity.TravellingPoint.IEdgePointListener;
-import com.simibubi.create.content.trains.entity.TravellingPoint.SteerDirection;
-import com.simibubi.create.content.trains.graph.DimensionPalette;
-import com.simibubi.create.content.trains.graph.DiscoveredPath;
-import com.simibubi.create.content.trains.graph.EdgeData;
-import com.simibubi.create.content.trains.graph.EdgePointType;
-import com.simibubi.create.content.trains.graph.TrackEdge;
-import com.simibubi.create.content.trains.graph.TrackGraph;
-import com.simibubi.create.content.trains.graph.TrackGraphLocation;
-import com.simibubi.create.content.trains.graph.TrackNode;
-import com.simibubi.create.content.trains.observer.TrackObserver;
-import com.simibubi.create.content.trains.schedule.ScheduleRuntime;
-import com.simibubi.create.content.trains.schedule.ScheduleRuntime.State;
-import com.simibubi.create.content.trains.signal.SignalBlock.SignalType;
-import com.simibubi.create.content.trains.signal.SignalBoundary;
-import com.simibubi.create.content.trains.signal.SignalEdgeGroup;
-import com.simibubi.create.content.trains.station.GlobalStation;
-import com.simibubi.create.content.trains.station.StationBlockEntity;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.Pair;
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllMovementBehaviours;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementBehaviour;
+import com.simibubi.create_re.content.logistics.filter.FilterItemStack;
+import com.simibubi.create_re.content.trains.bogey.AbstractBogeyBlockEntity;
+import com.simibubi.create_re.content.trains.entity.Carriage.DimensionalCarriageEntity;
+import com.simibubi.create_re.content.trains.entity.TravellingPoint.IEdgePointListener;
+import com.simibubi.create_re.content.trains.entity.TravellingPoint.SteerDirection;
+import com.simibubi.create_re.content.trains.graph.DimensionPalette;
+import com.simibubi.create_re.content.trains.graph.DiscoveredPath;
+import com.simibubi.create_re.content.trains.graph.EdgeData;
+import com.simibubi.create_re.content.trains.graph.EdgePointType;
+import com.simibubi.create_re.content.trains.graph.TrackEdge;
+import com.simibubi.create_re.content.trains.graph.TrackGraph;
+import com.simibubi.create_re.content.trains.graph.TrackGraphLocation;
+import com.simibubi.create_re.content.trains.graph.TrackNode;
+import com.simibubi.create_re.content.trains.observer.TrackObserver;
+import com.simibubi.create_re.content.trains.schedule.ScheduleRuntime;
+import com.simibubi.create_re.content.trains.schedule.ScheduleRuntime.State;
+import com.simibubi.create_re.content.trains.signal.SignalBlock.SignalType;
+import com.simibubi.create_re.content.trains.signal.SignalBoundary;
+import com.simibubi.create_re.content.trains.signal.SignalEdgeGroup;
+import com.simibubi.create_re.content.trains.station.GlobalStation;
+import com.simibubi.create_re.content.trains.station.StationBlockEntity;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.Pair;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -1044,11 +1044,11 @@ public class Train {
 	}
 
 	public Couple<Couple<TrackNode>> getEndpointEdges() {
-		return Couple.create(carriages.get(0)
+		return Couple.create_re(carriages.get(0)
 			.getLeadingPoint(),
 			carriages.get(carriages.size() - 1)
 				.getTrailingPoint())
-			.map(tp -> Couple.create(tp.node1, tp.node2));
+			.map(tp -> Couple.create_re(tp.node1, tp.node2));
 	}
 
 	public static class Penalties {

@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.signal;
+package com.simibubi.create_re.content.trains.signal;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,18 +11,18 @@ import java.util.UUID;
 import java.util.function.Predicate;
 
 import com.google.common.base.Predicates;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.trains.entity.Train;
-import com.simibubi.create.content.trains.graph.EdgeData;
-import com.simibubi.create.content.trains.graph.EdgePointType;
-import com.simibubi.create.content.trains.graph.TrackEdge;
-import com.simibubi.create.content.trains.graph.TrackGraph;
-import com.simibubi.create.content.trains.graph.TrackGraphSync;
-import com.simibubi.create.content.trains.graph.TrackNode;
-import com.simibubi.create.content.trains.graph.TrackNodeLocation;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.trains.entity.Train;
+import com.simibubi.create_re.content.trains.graph.EdgeData;
+import com.simibubi.create_re.content.trains.graph.EdgePointType;
+import com.simibubi.create_re.content.trains.graph.TrackEdge;
+import com.simibubi.create_re.content.trains.graph.TrackGraph;
+import com.simibubi.create_re.content.trains.graph.TrackGraphSync;
+import com.simibubi.create_re.content.trains.graph.TrackNode;
+import com.simibubi.create_re.content.trains.graph.TrackNodeLocation;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 public class SignalPropagator {
 
@@ -54,7 +54,7 @@ public class SignalPropagator {
 
 	public static void notifySignalsOfNewNode(TrackGraph graph, TrackNode node) {
 		List<Couple<TrackNode>> frontier = new ArrayList<>();
-		frontier.add(Couple.create(node, null));
+		frontier.add(Couple.create_re(node, null));
 		walkSignals(graph, frontier, pair -> {
 			TrackNode node1 = pair.getFirst();
 			SignalBoundary boundary = pair.getSecond();
@@ -152,7 +152,7 @@ public class SignalPropagator {
 
 		// Search for any connected signals
 		List<Couple<TrackNode>> frontier = new ArrayList<>();
-		frontier.add(Couple.create(node2, node1));
+		frontier.add(Couple.create_re(node2, node1));
 		walkSignals(graph, frontier, boundaryCallback, nonBoundaryCallback, forCollection);
 	}
 
@@ -213,7 +213,7 @@ public class SignalPropagator {
 					continue EdgeWalk;
 				}
 
-				frontier.add(Couple.create(nextNode, currentNode));
+				frontier.add(Couple.create_re(nextNode, currentNode));
 			}
 		}
 	}

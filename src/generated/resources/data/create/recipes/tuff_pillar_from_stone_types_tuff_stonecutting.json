@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 1,
   "ingredient": {
-    "tag": "create:stone_types/tuff"
+    "tag": "create_re:stone_types/tuff"
   },
-  "result": "create:tuff_pillar"
+  "result": "create_re:tuff_pillar"
 }

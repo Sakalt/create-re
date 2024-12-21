@@ -1,21 +1,21 @@
 {
   "values": [
-    "create:copper_valve_handle",
-    "create:white_valve_handle",
-    "create:orange_valve_handle",
-    "create:magenta_valve_handle",
-    "create:light_blue_valve_handle",
-    "create:yellow_valve_handle",
-    "create:lime_valve_handle",
-    "create:pink_valve_handle",
-    "create:gray_valve_handle",
-    "create:light_gray_valve_handle",
-    "create:cyan_valve_handle",
-    "create:purple_valve_handle",
-    "create:blue_valve_handle",
-    "create:brown_valve_handle",
-    "create:green_valve_handle",
-    "create:red_valve_handle",
-    "create:black_valve_handle"
+    "create_re:copper_valve_handle",
+    "create_re:white_valve_handle",
+    "create_re:orange_valve_handle",
+    "create_re:magenta_valve_handle",
+    "create_re:light_blue_valve_handle",
+    "create_re:yellow_valve_handle",
+    "create_re:lime_valve_handle",
+    "create_re:pink_valve_handle",
+    "create_re:gray_valve_handle",
+    "create_re:light_gray_valve_handle",
+    "create_re:cyan_valve_handle",
+    "create_re:purple_valve_handle",
+    "create_re:blue_valve_handle",
+    "create_re:brown_valve_handle",
+    "create_re:green_valve_handle",
+    "create_re:red_valve_handle",
+    "create_re:black_valve_handle"
   ]
 }

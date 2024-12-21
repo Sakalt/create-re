@@ -1,7 +1,7 @@
-package com.simibubi.create.content.contraptions.render;
+package com.simibubi.create_re.content.contraptions.render;
 
-import com.simibubi.create.content.contraptions.Contraption;
-import com.simibubi.create.foundation.utility.WorldAttached;
+import com.simibubi.create_re.content.contraptions.Contraption;
+import com.simibubi.create_re.foundation.utility.WorldAttached;
 
 import dev.engine_room.flywheel.api.event.ReloadLevelRendererEvent;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;

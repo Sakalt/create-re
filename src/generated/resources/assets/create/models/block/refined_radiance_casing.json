@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "create:block/refined_radiance_casing"
+    "all": "create_re:block/refined_radiance_casing"
   }
 }

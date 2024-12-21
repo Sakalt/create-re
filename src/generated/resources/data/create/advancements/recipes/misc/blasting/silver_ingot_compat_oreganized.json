@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:crushed_raw_silver"
+              "create_re:crushed_raw_silver"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:blasting/silver_ingot_compat_oreganized"
+        "recipe": "create_re:blasting/silver_ingot_compat_oreganized"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:blasting/silver_ingot_compat_oreganized"
+      "create_re:blasting/silver_ingot_compat_oreganized"
     ]
   },
   "sends_telemetry_event": false

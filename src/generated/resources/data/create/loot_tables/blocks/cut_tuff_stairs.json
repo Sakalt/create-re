@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:cut_tuff_stairs"
+          "name": "create_re:cut_tuff_stairs"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/cut_tuff_stairs"
+  "random_sequence": "create_re:blocks/cut_tuff_stairs"
 }

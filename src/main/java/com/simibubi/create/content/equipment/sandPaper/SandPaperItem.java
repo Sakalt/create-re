@@ -1,14 +1,14 @@
-package com.simibubi.create.content.equipment.sandPaper;
+package com.simibubi.create_re.content.equipment.sandPaper;
 
 import java.util.function.Consumer;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.foundation.item.CustomUseEffectsItem;
-import com.simibubi.create.foundation.item.render.SimpleCustomRenderer;
-import com.simibubi.create.foundation.mixin.accessor.LivingEntityAccessor;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.foundation.item.CustomUseEffectsItem;
+import com.simibubi.create_re.foundation.item.render.SimpleCustomRenderer;
+import com.simibubi.create_re.foundation.mixin.accessor.LivingEntityAccessor;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
@@ -218,7 +218,7 @@ public class SandPaperItem extends Item implements CustomUseEffectsItem {
 		CompoundTag tag = stack.getOrCreateTag();
 		if (tag.contains("Polishing")) {
 			ItemStack polishing = ItemStack.of(tag.getCompound("Polishing"));
-			((LivingEntityAccessor) entity).create$callSpawnItemParticles(polishing, 1);
+			((LivingEntityAccessor) entity).create_re$callSpawnItemParticles(polishing, 1);
 		}
 
 		// After 6 ticks play the sound every 7th
@@ -252,7 +252,7 @@ public class SandPaperItem extends Item implements CustomUseEffectsItem {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void initializeClient(Consumer<IClientItemExtensions> consumer) {
-		consumer.accept(SimpleCustomRenderer.create(this, new SandPaperItemRenderer()));
+		consumer.accept(SimpleCustomRenderer.create_re(this, new SandPaperItemRenderer()));
 	}
 
 }

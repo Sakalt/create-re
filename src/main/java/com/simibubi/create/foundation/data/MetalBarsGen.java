@@ -1,6 +1,6 @@
-package com.simibubi.create.foundation.data;
+package com.simibubi.create_re.foundation.data;
 
-import static com.simibubi.create.Create.REGISTRATE;
+import static com.simibubi.create_re.Create.REGISTRATE;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.EAST;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.NORTH;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.SOUTH;
@@ -8,8 +8,8 @@ import static net.minecraft.world.level.block.state.properties.BlockStatePropert
 
 import java.util.function.Supplier;
 
-import com.simibubi.create.AllTags.AllBlockTags;
-import com.simibubi.create.Create;
+import com.simibubi.create_re.AllTags.AllBlockTags;
+import com.simibubi.create_re.Create;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 import com.tterrag.registrate.util.DataIngredient;
@@ -122,7 +122,7 @@ public class MetalBarsGen {
 			.texture("edge", edgeTexture);
 	}
 
-	public static BlockEntry<IronBarsBlock> createBars(String name, boolean specialEdge,
+	public static BlockEntry<IronBarsBlock> create_reBars(String name, boolean specialEdge,
 		Supplier<DataIngredient> ingredient, MapColor color) {
 		return REGISTRATE.block(name + "_bars", IronBarsBlock::new)
 			.addLayer(() -> RenderType::cutoutMipped)

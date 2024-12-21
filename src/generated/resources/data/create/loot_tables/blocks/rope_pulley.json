@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:rope_pulley"
+          "name": "create_re:rope_pulley"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/rope_pulley"
+  "random_sequence": "create_re:blocks/rope_pulley"
 }

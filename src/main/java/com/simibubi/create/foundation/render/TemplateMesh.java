@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.render;
+package com.simibubi.create_re.foundation.render;
 
 public class TemplateMesh {
 	public static final int INT_STRIDE = 9;

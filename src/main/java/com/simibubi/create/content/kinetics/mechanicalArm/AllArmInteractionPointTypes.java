@@ -1,4 +1,4 @@
-package com.simibubi.create.content.kinetics.mechanicalArm;
+package com.simibubi.create_re.content.kinetics.mechanicalArm;
 
 import java.util.Optional;
 import java.util.function.Function;
@@ -7,32 +7,32 @@ import javax.annotation.Nullable;
 
 import org.apache.commons.lang3.mutable.MutableBoolean;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.kinetics.belt.BeltBlock;
-import com.simibubi.create.content.kinetics.belt.BeltBlockEntity;
-import com.simibubi.create.content.kinetics.belt.BeltHelper;
-import com.simibubi.create.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour;
-import com.simibubi.create.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour.TransportedResult;
-import com.simibubi.create.content.kinetics.crafter.MechanicalCrafterBlock;
-import com.simibubi.create.content.kinetics.crafter.MechanicalCrafterBlockEntity;
-import com.simibubi.create.content.kinetics.deployer.DeployerBlock;
-import com.simibubi.create.content.kinetics.saw.SawBlock;
-import com.simibubi.create.content.logistics.chute.AbstractChuteBlock;
-import com.simibubi.create.content.logistics.funnel.AbstractFunnelBlock;
-import com.simibubi.create.content.logistics.funnel.BeltFunnelBlock;
-import com.simibubi.create.content.logistics.funnel.BeltFunnelBlock.Shape;
-import com.simibubi.create.content.logistics.funnel.FunnelBlock;
-import com.simibubi.create.content.logistics.funnel.FunnelBlockEntity;
-import com.simibubi.create.content.logistics.tunnel.BeltTunnelBlock;
-import com.simibubi.create.content.processing.basin.BasinBlock;
-import com.simibubi.create.content.processing.burner.BlazeBurnerBlock;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
-import com.simibubi.create.foundation.item.SmartInventory;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlock;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlockEntity;
+import com.simibubi.create_re.content.kinetics.belt.BeltHelper;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour.TransportedResult;
+import com.simibubi.create_re.content.kinetics.crafter.MechanicalCrafterBlock;
+import com.simibubi.create_re.content.kinetics.crafter.MechanicalCrafterBlockEntity;
+import com.simibubi.create_re.content.kinetics.deployer.DeployerBlock;
+import com.simibubi.create_re.content.kinetics.saw.SawBlock;
+import com.simibubi.create_re.content.logistics.chute.AbstractChuteBlock;
+import com.simibubi.create_re.content.logistics.funnel.AbstractFunnelBlock;
+import com.simibubi.create_re.content.logistics.funnel.BeltFunnelBlock;
+import com.simibubi.create_re.content.logistics.funnel.BeltFunnelBlock.Shape;
+import com.simibubi.create_re.content.logistics.funnel.FunnelBlock;
+import com.simibubi.create_re.content.logistics.funnel.FunnelBlockEntity;
+import com.simibubi.create_re.content.logistics.tunnel.BeltTunnelBlock;
+import com.simibubi.create_re.content.processing.basin.BasinBlock;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
+import com.simibubi.create_re.foundation.item.SmartInventory;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -102,7 +102,7 @@ public class AllArmInteractionPointTypes {
 		}
 
 		@Override
-		public ArmInteractionPoint createPoint(Level level, BlockPos pos, BlockState state) {
+		public ArmInteractionPoint create_rePoint(Level level, BlockPos pos, BlockState state) {
 			return new ArmInteractionPoint(this, level, pos, state);
 		}
 	}
@@ -119,7 +119,7 @@ public class AllArmInteractionPointTypes {
 		}
 
 		@Override
-		public ArmInteractionPoint createPoint(Level level, BlockPos pos, BlockState state) {
+		public ArmInteractionPoint create_rePoint(Level level, BlockPos pos, BlockState state) {
 			return new BeltPoint(this, level, pos, state);
 		}
 	}
@@ -135,7 +135,7 @@ public class AllArmInteractionPointTypes {
 		}
 
 		@Override
-		public ArmInteractionPoint createPoint(Level level, BlockPos pos, BlockState state) {
+		public ArmInteractionPoint create_rePoint(Level level, BlockPos pos, BlockState state) {
 			return new BlazeBurnerPoint(this, level, pos, state);
 		}
 	}
@@ -151,7 +151,7 @@ public class AllArmInteractionPointTypes {
 		}
 
 		@Override
-		public ArmInteractionPoint createPoint(Level level, BlockPos pos, BlockState state) {
+		public ArmInteractionPoint create_rePoint(Level level, BlockPos pos, BlockState state) {
 			return new TopFaceArmInteractionPoint(this, level, pos, state);
 		}
 	}
@@ -167,7 +167,7 @@ public class AllArmInteractionPointTypes {
 		}
 
 		@Override
-		public ArmInteractionPoint createPoint(Level level, BlockPos pos, BlockState state) {
+		public ArmInteractionPoint create_rePoint(Level level, BlockPos pos, BlockState state) {
 			return new CrafterPoint(this, level, pos, state);
 		}
 	}
@@ -183,7 +183,7 @@ public class AllArmInteractionPointTypes {
 		}
 
 		@Override
-		public ArmInteractionPoint createPoint(Level level, BlockPos pos, BlockState state) {
+		public ArmInteractionPoint create_rePoint(Level level, BlockPos pos, BlockState state) {
 			return new CrushingWheelPoint(this, level, pos, state);
 		}
 	}
@@ -199,7 +199,7 @@ public class AllArmInteractionPointTypes {
 		}
 
 		@Override
-		public ArmInteractionPoint createPoint(Level level, BlockPos pos, BlockState state) {
+		public ArmInteractionPoint create_rePoint(Level level, BlockPos pos, BlockState state) {
 			return new DeployerPoint(this, level, pos, state);
 		}
 	}
@@ -216,7 +216,7 @@ public class AllArmInteractionPointTypes {
 		}
 
 		@Override
-		public ArmInteractionPoint createPoint(Level level, BlockPos pos, BlockState state) {
+		public ArmInteractionPoint create_rePoint(Level level, BlockPos pos, BlockState state) {
 			return new DepotPoint(this, level, pos, state);
 		}
 	}
@@ -235,7 +235,7 @@ public class AllArmInteractionPointTypes {
 		}
 
 		@Override
-		public ArmInteractionPoint createPoint(Level level, BlockPos pos, BlockState state) {
+		public ArmInteractionPoint create_rePoint(Level level, BlockPos pos, BlockState state) {
 			return new FunnelPoint(this, level, pos, state);
 		}
 	}
@@ -251,7 +251,7 @@ public class AllArmInteractionPointTypes {
 		}
 
 		@Override
-		public ArmInteractionPoint createPoint(Level level, BlockPos pos, BlockState state) {
+		public ArmInteractionPoint create_rePoint(Level level, BlockPos pos, BlockState state) {
 			return new ArmInteractionPoint(this, level, pos, state);
 		}
 	}
@@ -268,7 +268,7 @@ public class AllArmInteractionPointTypes {
 		}
 
 		@Override
-		public ArmInteractionPoint createPoint(Level level, BlockPos pos, BlockState state) {
+		public ArmInteractionPoint create_rePoint(Level level, BlockPos pos, BlockState state) {
 			return new DepotPoint(this, level, pos, state);
 		}
 	}
@@ -284,7 +284,7 @@ public class AllArmInteractionPointTypes {
 		}
 
 		@Override
-		public ArmInteractionPoint createPoint(Level level, BlockPos pos, BlockState state) {
+		public ArmInteractionPoint create_rePoint(Level level, BlockPos pos, BlockState state) {
 			return new CampfirePoint(this, level, pos, state);
 		}
 	}
@@ -300,7 +300,7 @@ public class AllArmInteractionPointTypes {
 		}
 
 		@Override
-		public ArmInteractionPoint createPoint(Level level, BlockPos pos, BlockState state) {
+		public ArmInteractionPoint create_rePoint(Level level, BlockPos pos, BlockState state) {
 			return new ComposterPoint(this, level, pos, state);
 		}
 	}
@@ -316,7 +316,7 @@ public class AllArmInteractionPointTypes {
 		}
 
 		@Override
-		public ArmInteractionPoint createPoint(Level level, BlockPos pos, BlockState state) {
+		public ArmInteractionPoint create_rePoint(Level level, BlockPos pos, BlockState state) {
 			return new JukeboxPoint(this, level, pos, state);
 		}
 	}
@@ -332,7 +332,7 @@ public class AllArmInteractionPointTypes {
 		}
 
 		@Override
-		public ArmInteractionPoint createPoint(Level level, BlockPos pos, BlockState state) {
+		public ArmInteractionPoint create_rePoint(Level level, BlockPos pos, BlockState state) {
 			return new RespawnAnchorPoint(this, level, pos, state);
 		}
 	}

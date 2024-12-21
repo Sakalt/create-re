@@ -10,6 +10,6 @@ Added test classes must be added to the list in `CreateGameTests`. They must be 
 `@GameTestGroup` and given a structure path.
 
 #### Exporting Structures
-Structures can be quickly exported using the `/create test export` command (or `/c test export`).
+Structures can be quickly exported using the `/create_re test export` command (or `/c test export`).
 Select an area with the Schematic and Quill, and run it to quickly export a test structure
 directly to the correct directory.

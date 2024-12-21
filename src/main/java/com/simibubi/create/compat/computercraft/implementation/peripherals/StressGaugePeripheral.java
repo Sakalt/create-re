@@ -1,8 +1,8 @@
-package com.simibubi.create.compat.computercraft.implementation.peripherals;
+package com.simibubi.create_re.compat.computercraft.implementation.peripherals;
 
 import org.jetbrains.annotations.NotNull;
 
-import com.simibubi.create.content.kinetics.gauge.StressGaugeBlockEntity;
+import com.simibubi.create_re.content.kinetics.gauge.StressGaugeBlockEntity;
 
 import dan200.computercraft.api.lua.LuaFunction;
 

@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:andesite_alloy"
+              "create_re:andesite_alloy"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/kinetics/cuckoo_clock"
+        "recipe": "create_re:crafting/kinetics/cuckoo_clock"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/kinetics/cuckoo_clock"
+      "create_re:crafting/kinetics/cuckoo_clock"
     ]
   },
   "sends_telemetry_event": false

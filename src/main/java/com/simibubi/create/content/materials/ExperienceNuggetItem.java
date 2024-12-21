@@ -1,6 +1,6 @@
-package com.simibubi.create.content.materials;
+package com.simibubi.create_re.content.materials;
 
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.Direction.Axis;
 import net.minecraft.sounds.SoundEvents;

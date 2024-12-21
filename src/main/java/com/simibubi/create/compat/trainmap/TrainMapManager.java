@@ -1,4 +1,4 @@
-package com.simibubi.create.compat.trainmap;
+package com.simibubi.create_re.compat.trainmap;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,28 +10,28 @@ import java.util.UUID;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.compat.trainmap.TrainMapSync.SignalState;
-import com.simibubi.create.compat.trainmap.TrainMapSync.TrainMapSyncEntry;
-import com.simibubi.create.compat.trainmap.TrainMapSync.TrainState;
-import com.simibubi.create.content.trains.entity.Carriage;
-import com.simibubi.create.content.trains.entity.Train;
-import com.simibubi.create.content.trains.graph.EdgePointType;
-import com.simibubi.create.content.trains.graph.TrackEdge;
-import com.simibubi.create.content.trains.graph.TrackGraph;
-import com.simibubi.create.content.trains.graph.TrackNode;
-import com.simibubi.create.content.trains.graph.TrackNodeLocation;
-import com.simibubi.create.content.trains.station.GlobalStation;
-import com.simibubi.create.content.trains.track.BezierConnection;
-import com.simibubi.create.foundation.gui.AllGuiTextures;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.Pair;
-import com.simibubi.create.infrastructure.config.AllConfigs;
-import com.simibubi.create.infrastructure.config.CClient;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.compat.trainmap.TrainMapSync.SignalState;
+import com.simibubi.create_re.compat.trainmap.TrainMapSync.TrainMapSyncEntry;
+import com.simibubi.create_re.compat.trainmap.TrainMapSync.TrainState;
+import com.simibubi.create_re.content.trains.entity.Carriage;
+import com.simibubi.create_re.content.trains.entity.Train;
+import com.simibubi.create_re.content.trains.graph.EdgePointType;
+import com.simibubi.create_re.content.trains.graph.TrackEdge;
+import com.simibubi.create_re.content.trains.graph.TrackGraph;
+import com.simibubi.create_re.content.trains.graph.TrackNode;
+import com.simibubi.create_re.content.trains.graph.TrackNodeLocation;
+import com.simibubi.create_re.content.trains.station.GlobalStation;
+import com.simibubi.create_re.content.trains.track.BezierConnection;
+import com.simibubi.create_re.foundation.gui.AllGuiTextures;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.Pair;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.infrastructure.config.CClient;
 
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.minecraft.client.Minecraft;
@@ -244,7 +244,7 @@ public class TrainMapManager {
 				if (node.getLocation().dimension != TrainMapRenderer.INSTANCE.trackingDim)
 					continue;
 
-				TrackEdge edge = graph.getConnection(Couple.create(node, other));
+				TrackEdge edge = graph.getConnection(Couple.create_re(node, other));
 				if (edge == null)
 					continue;
 
@@ -520,7 +520,7 @@ public class TrainMapManager {
 							for (int zi = z - 2; zi <= z + 2; zi++) {
 								int alphaAt = map.alphaAt(xi, zi);
 								if (alphaAt > 0 && alphaAt != a)
-									collisions.add(Couple.create(xi, zi));
+									collisions.add(Couple.create_re(xi, zi));
 								int c = (xi - x) * (xi - x) + (zi - z) * (zi - z) > 2 ? portalFrameColor : portalColor;
 								if (alphaAt <= a) {
 									map.setPixel(xi, zi, markY(c, vec.y()));
@@ -585,7 +585,7 @@ public class TrainMapManager {
 
 								int alphaAt = map.alphaAt(x, z);
 								if (alphaAt > 0 && alphaAt != a)
-									collisions.add(Couple.create(x, z));
+									collisions.add(Couple.create_re(x, z));
 								if (alphaAt <= a) {
 									map.setPixel(x, z, markY(mainColor, y));
 								}
@@ -621,7 +621,7 @@ public class TrainMapManager {
 						for (int s = 0; s <= diff; s++) {
 							int alphaAt = map.alphaAt(x, z);
 							if (alphaAt > 0 && alphaAt != a)
-								collisions.add(Couple.create(x, z));
+								collisions.add(Couple.create_re(x, z));
 							if (alphaAt <= a) {
 								map.setPixel(x, z, markY(mainColor, y));
 							}
@@ -657,7 +657,7 @@ public class TrainMapManager {
 							if (!antialias) {
 								int alphaAt = map.alphaAt(x, z);
 								if (alphaAt > 0 && alphaAt != a)
-									collisions.add(Couple.create(x, z));
+									collisions.add(Couple.create_re(x, z));
 								if (alphaAt > a)
 									continue;
 
@@ -673,7 +673,7 @@ public class TrainMapManager {
 							if (mainColorBelowLeft || mainColorBelowRight) {
 								int alphaAt = map.alphaAt(x, z + 1);
 								if (alphaAt > 0 && alphaAt != a)
-									collisions.add(Couple.create(x, z));
+									collisions.add(Couple.create_re(x, z));
 								if (alphaAt >= a)
 									continue;
 

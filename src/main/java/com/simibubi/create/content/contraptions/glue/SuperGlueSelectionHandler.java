@@ -1,18 +1,18 @@
-package com.simibubi.create.content.contraptions.glue;
+package com.simibubi.create_re.content.contraptions.glue;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
 import com.google.common.base.Objects;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.AllSpecialTextures;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.content.contraptions.chassis.AbstractChassisBlock;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.RaycastHelper;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.AllSpecialTextures;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.content.contraptions.chassis.AbstractChassisBlock;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.RaycastHelper;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;

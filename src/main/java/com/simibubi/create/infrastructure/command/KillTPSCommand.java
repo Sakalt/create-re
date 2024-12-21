@@ -1,9 +1,9 @@
-package com.simibubi.create.infrastructure.command;
+package com.simibubi.create_re.infrastructure.command;
 
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.builder.ArgumentBuilder;
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;

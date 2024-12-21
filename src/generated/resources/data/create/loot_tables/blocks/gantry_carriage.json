@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:gantry_carriage"
+          "name": "create_re:gantry_carriage"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/gantry_carriage"
+  "random_sequence": "create_re:blocks/gantry_carriage"
 }

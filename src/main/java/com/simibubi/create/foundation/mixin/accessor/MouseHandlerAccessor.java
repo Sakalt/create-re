@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.mixin.accessor;
+package com.simibubi.create_re.foundation.mixin.accessor;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Accessor;
@@ -9,8 +9,8 @@ import net.minecraft.client.MouseHandler;
 public interface MouseHandlerAccessor {
 
 	@Accessor("xpos")
-	void create$setXPos(double xPos);
+	void create_re$setXPos(double xPos);
 
 	@Accessor("ypos")
-	void create$setYPos(double yPos);
+	void create_re$setYPos(double yPos);
 }

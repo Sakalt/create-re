@@ -1,13 +1,13 @@
-package com.simibubi.create.content.redstone.link.controller;
+package com.simibubi.create_re.content.redstone.link.controller;
 
 import java.util.ArrayList;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.content.schematics.requirement.ISpecialBlockItemRequirement;
-import com.simibubi.create.content.schematics.requirement.ItemRequirement;
-import com.simibubi.create.foundation.block.IBE;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.content.schematics.requirement.ISpecialBlockItemRequirement;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement;
+import com.simibubi.create_re.foundation.block.IBE;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;

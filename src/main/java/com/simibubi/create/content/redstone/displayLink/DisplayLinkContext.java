@@ -1,4 +1,4 @@
-package com.simibubi.create.content.redstone.displayLink;
+package com.simibubi.create_re.content.redstone.displayLink;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

@@ -1,5 +1,5 @@
 {
-  "parent": "create:burner",
+  "parent": "create_re:burner",
   "criteria": {
     "0": {
       "conditions": {
@@ -18,7 +18,7 @@
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.copper.desc"
+      "translate": "advancement.create_re.copper.desc"
     },
     "frame": "task",
     "hidden": false,
@@ -27,7 +27,7 @@
     },
     "show_toast": false,
     "title": {
-      "translate": "advancement.create.copper"
+      "translate": "advancement.create_re.copper"
     }
   },
   "requirements": [

@@ -1,25 +1,25 @@
 {
-  "parent": "create:ejector_maxed",
+  "parent": "create_re:ejector_maxed",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:pulley_maxed_builtin"
+      "trigger": "create_re:pulley_maxed_builtin"
     }
   },
   "display": {
     "announce_to_chat": true,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.pulley_maxed.desc"
+      "translate": "advancement.create_re.pulley_maxed.desc"
     },
     "frame": "goal",
     "hidden": false,
     "icon": {
-      "item": "create:rope_pulley"
+      "item": "create_re:rope_pulley"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.pulley_maxed"
+      "translate": "advancement.create_re.pulley_maxed"
     }
   },
   "requirements": [

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/cut_limestone"
+      "model": "create_re:block/cut_limestone"
     }
   }
 }

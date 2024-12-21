@@ -1,11 +1,11 @@
-package com.simibubi.create.compat.jei.category;
+package com.simibubi.create_re.compat.jei.category;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create.compat.jei.category.animations.AnimatedBlazeBurner;
-import com.simibubi.create.compat.jei.category.animations.AnimatedMixer;
-import com.simibubi.create.content.processing.basin.BasinRecipe;
-import com.simibubi.create.content.processing.recipe.HeatCondition;
+import com.simibubi.create_re.compat.jei.category.animations.AnimatedBlazeBurner;
+import com.simibubi.create_re.compat.jei.category.animations.AnimatedMixer;
+import com.simibubi.create_re.content.processing.basin.BasinRecipe;
+import com.simibubi.create_re.content.processing.recipe.HeatCondition;
 
 import mezz.jei.api.gui.ingredient.IRecipeSlotsView;
 import net.minecraft.client.gui.GuiGraphics;

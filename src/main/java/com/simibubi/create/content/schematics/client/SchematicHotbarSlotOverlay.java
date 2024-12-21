@@ -1,8 +1,8 @@
-package com.simibubi.create.content.schematics.client;
+package com.simibubi.create_re.content.schematics.client;
 
 import com.mojang.blaze3d.platform.Window;
 import com.mojang.blaze3d.systems.RenderSystem;
-import com.simibubi.create.foundation.gui.AllGuiTextures;
+import com.simibubi.create_re.foundation.gui.AllGuiTextures;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;

@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "create:raw_zinc_block"
+      "item": "create_re:raw_zinc_block"
     }
   ],
   "result": {
     "count": 9,
-    "item": "create:raw_zinc"
+    "item": "create_re:raw_zinc"
   }
 }

@@ -1,4 +1,4 @@
-package com.simibubi.create.content.equipment.armor;
+package com.simibubi.create_re.content.equipment.armor;
 
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ItemStack;

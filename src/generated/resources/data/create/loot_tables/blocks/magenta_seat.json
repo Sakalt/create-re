@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:magenta_seat"
+          "name": "create_re:magenta_seat"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/magenta_seat"
+  "random_sequence": "create_re:blocks/magenta_seat"
 }

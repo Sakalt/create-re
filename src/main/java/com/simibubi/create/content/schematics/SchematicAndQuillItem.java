@@ -1,11 +1,11 @@
-package com.simibubi.create.content.schematics;
+package com.simibubi.create_re.content.schematics;
 
 import java.util.Iterator;
 
-import com.simibubi.create.AllEntityTypes;
-import com.simibubi.create.content.contraptions.glue.SuperGlueEntity;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.AllEntityTypes;
+import com.simibubi.create_re.content.contraptions.glue.SuperGlueEntity;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

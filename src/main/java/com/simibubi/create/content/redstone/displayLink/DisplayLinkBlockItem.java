@@ -1,10 +1,10 @@
-package com.simibubi.create.content.redstone.displayLink;
+package com.simibubi.create_re.content.redstone.displayLink;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.content.redstone.displayLink.target.DisplayTarget;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.content.redstone.displayLink.target.DisplayTarget;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;

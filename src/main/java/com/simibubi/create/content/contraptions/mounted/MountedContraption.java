@@ -1,19 +1,19 @@
-package com.simibubi.create.content.contraptions.mounted;
+package com.simibubi.create_re.content.contraptions.mounted;
 
-import static com.simibubi.create.content.contraptions.mounted.CartAssemblerBlock.RAIL_SHAPE;
+import static com.simibubi.create_re.content.contraptions.mounted.CartAssemblerBlock.RAIL_SHAPE;
 
 import java.util.Queue;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.contraptions.AssemblyException;
-import com.simibubi.create.content.contraptions.Contraption;
-import com.simibubi.create.content.contraptions.ContraptionType;
-import com.simibubi.create.content.contraptions.mounted.CartAssemblerBlockEntity.CartMovementMode;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.contraptions.AssemblyException;
+import com.simibubi.create_re.content.contraptions.Contraption;
+import com.simibubi.create_re.content.contraptions.ContraptionType;
+import com.simibubi.create_re.content.contraptions.mounted.CartAssemblerBlockEntity.CartMovementMode;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -83,7 +83,7 @@ public class MountedContraption extends Contraption {
 			return pair;
 
 		Pair<StructureBlockInfo, BlockEntity> anchorSwap =
-			Pair.of(new StructureBlockInfo(pos, CartAssemblerBlock.createAnchor(capture.state()), null), pair.getValue());
+			Pair.of(new StructureBlockInfo(pos, CartAssemblerBlock.create_reAnchor(capture.state()), null), pair.getValue());
 		if (pos.equals(anchor) || connectedCart != null)
 			return anchorSwap;
 

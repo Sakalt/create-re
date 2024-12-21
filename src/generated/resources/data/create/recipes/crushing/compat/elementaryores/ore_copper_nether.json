@@ -1,5 +1,5 @@
 {
-  "type": "create:crushing",
+  "type": "create_re:crushing",
   "conditions": [
     {
       "type": "forge:mod_loaded",
@@ -15,15 +15,15 @@
   "results": [
     {
       "count": 5,
-      "item": "create:crushed_raw_copper"
+      "item": "create_re:crushed_raw_copper"
     },
     {
       "chance": 0.25,
-      "item": "create:crushed_raw_copper"
+      "item": "create_re:crushed_raw_copper"
     },
     {
       "chance": 0.75,
-      "item": "create:experience_nugget"
+      "item": "create_re:experience_nugget"
     },
     {
       "chance": 0.12,

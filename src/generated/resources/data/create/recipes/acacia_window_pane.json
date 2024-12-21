@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "create:acacia_window"
+      "item": "create_re:acacia_window"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 16,
-    "item": "create:acacia_window_pane"
+    "item": "create_re:acacia_window_pane"
   },
   "show_notification": true
 }

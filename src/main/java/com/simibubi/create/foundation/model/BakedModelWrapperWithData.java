@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.model;
+package com.simibubi.create_re.foundation.model;
 
 import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.core.BlockPos;

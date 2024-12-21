@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "X": {
-      "item": "create:weathered_copper_tiles"
+      "item": "create_re:weathered_copper_tiles"
     }
   },
   "pattern": [
@@ -13,7 +13,7 @@
   ],
   "result": {
     "count": 4,
-    "item": "create:weathered_copper_tile_stairs"
+    "item": "create_re:weathered_copper_tile_stairs"
   },
   "show_notification": true
 }

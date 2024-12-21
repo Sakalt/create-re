@@ -1,11 +1,11 @@
-package com.simibubi.create.content.equipment.clipboard;
+package com.simibubi.create_re.content.equipment.clipboard;
 
 import java.util.List;
 import java.util.UUID;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;

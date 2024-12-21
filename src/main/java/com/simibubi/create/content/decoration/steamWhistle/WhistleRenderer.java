@@ -1,12 +1,12 @@
-package com.simibubi.create.content.decoration.steamWhistle;
+package com.simibubi.create_re.content.decoration.steamWhistle;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.decoration.steamWhistle.WhistleBlock.WhistleSize;
-import com.simibubi.create.foundation.blockEntity.renderer.SafeBlockEntityRenderer;
-import com.simibubi.create.foundation.render.CachedBufferer;
-import com.simibubi.create.foundation.utility.AngleHelper;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.decoration.steamWhistle.WhistleBlock.WhistleSize;
+import com.simibubi.create_re.foundation.blockEntity.renderer.SafeBlockEntityRenderer;
+import com.simibubi.create_re.foundation.render.CachedBufferer;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
 
 import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 import net.minecraft.client.renderer.MultiBufferSource;

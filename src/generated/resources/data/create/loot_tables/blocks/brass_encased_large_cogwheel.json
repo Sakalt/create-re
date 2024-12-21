@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:large_cogwheel"
+          "name": "create_re:large_cogwheel"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/brass_encased_large_cogwheel"
+  "random_sequence": "create_re:blocks/brass_encased_large_cogwheel"
 }

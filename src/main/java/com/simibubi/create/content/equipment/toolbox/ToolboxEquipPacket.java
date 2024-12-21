@@ -1,6 +1,6 @@
-package com.simibubi.create.content.equipment.toolbox;
+package com.simibubi.create_re.content.equipment.toolbox;
 
-import com.simibubi.create.foundation.networking.SimplePacketBase;
+import com.simibubi.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

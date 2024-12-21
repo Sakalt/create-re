@@ -1,15 +1,15 @@
-package com.simibubi.create.content.contraptions.bearing;
+package com.simibubi.create_re.content.contraptions.bearing;
 
 import org.joml.Quaternionf;
 
 import com.mojang.math.Axis;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.contraptions.behaviour.MovementContext;
-import com.simibubi.create.content.contraptions.render.ActorVisual;
-import com.simibubi.create.content.kinetics.base.RotatingInstance;
-import com.simibubi.create.foundation.render.AllInstanceTypes;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.virtualWorld.VirtualRenderWorld;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
+import com.simibubi.create_re.content.contraptions.render.ActorVisual;
+import com.simibubi.create_re.content.kinetics.base.RotatingInstance;
+import com.simibubi.create_re.foundation.render.AllInstanceTypes;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.virtualWorld.VirtualRenderWorld;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
 import dev.engine_room.flywheel.lib.instance.InstanceTypes;
@@ -39,7 +39,7 @@ public class StabilizedBearingVisual extends ActorVisual {
 		blockOrientation = BearingVisual.getBlockStateOrientation(facing);
 
         topInstance = instancerProvider.instancer(InstanceTypes.ORIENTED, Models.partial(AllPartialModels.BEARING_TOP))
-				.createInstance();
+				.create_reInstance();
 
 		int blockLight = localBlockLight();
 		topInstance.position(movementContext.localPos)
@@ -47,7 +47,7 @@ public class StabilizedBearingVisual extends ActorVisual {
 				.light(blockLight, 0);
 
 		shaft = instancerProvider.instancer(AllInstanceTypes.ROTATING, Models.partial(AllPartialModels.SHAFT_HALF, blockState.getValue(BlockStateProperties.FACING).getOpposite()))
-				.createInstance();
+				.create_reInstance();
 
 		// not rotating so no need to set speed, axis, etc.
 		shaft.setPosition(movementContext.localPos)

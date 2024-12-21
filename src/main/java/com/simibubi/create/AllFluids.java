@@ -1,6 +1,6 @@
-package com.simibubi.create;
+package com.simibubi.create_re;
 
-import static com.simibubi.create.Create.REGISTRATE;
+import static com.simibubi.create_re.Create.REGISTRATE;
 
 import java.util.function.Consumer;
 import java.util.function.Supplier;
@@ -12,13 +12,13 @@ import org.joml.Vector3f;
 
 import com.mojang.blaze3d.shaders.FogShape;
 import com.mojang.blaze3d.systems.RenderSystem;
-import com.simibubi.create.AllTags.AllFluidTags;
-import com.simibubi.create.content.decoration.palettes.AllPaletteStoneTypes;
-import com.simibubi.create.content.fluids.VirtualFluid;
-import com.simibubi.create.content.fluids.potion.PotionFluid;
-import com.simibubi.create.content.fluids.potion.PotionFluid.PotionFluidType;
-import com.simibubi.create.foundation.utility.Color;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllTags.AllFluidTags;
+import com.simibubi.create_re.content.decoration.palettes.AllPaletteStoneTypes;
+import com.simibubi.create_re.content.fluids.VirtualFluid;
+import com.simibubi.create_re.content.fluids.potion.PotionFluid;
+import com.simibubi.create_re.content.fluids.potion.PotionFluid.PotionFluidType;
+import com.simibubi.create_re.foundation.utility.Color;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 import com.tterrag.registrate.builders.FluidBuilder.FluidTypeFactory;
 import com.tterrag.registrate.util.entry.FluidEntry;
 
@@ -57,7 +57,7 @@ public class AllFluids {
 
 	public static final FluidEntry<ForgeFlowingFluid.Flowing> HONEY =
 		REGISTRATE.standardFluid("honey",
-				SolidRenderedPlaceableFluidType.create(0xEAAE2F,
+				SolidRenderedPlaceableFluidType.create_re(0xEAAE2F,
 					() -> 1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF()))
 			.lang("Honey")
 			.properties(b -> b.viscosity(2000)
@@ -75,7 +75,7 @@ public class AllFluids {
 
 	public static final FluidEntry<ForgeFlowingFluid.Flowing> CHOCOLATE =
 		REGISTRATE.standardFluid("chocolate",
-			SolidRenderedPlaceableFluidType.create(0x622020,
+			SolidRenderedPlaceableFluidType.create_re(0x622020,
 				() -> 1f / 32f * AllConfigs.client().chocolateTransparencyMultiplier.getF()))
 			.lang("Chocolate")
 			.tag(AllTags.forgeFluidTag("chocolate"))
@@ -210,7 +210,7 @@ public class AllFluids {
 		private Vector3f fogColor;
 		private Supplier<Float> fogDistance;
 
-		public static FluidTypeFactory create(int fogColor, Supplier<Float> fogDistance) {
+		public static FluidTypeFactory create_re(int fogColor, Supplier<Float> fogDistance) {
 			return (p, s, f) -> {
 				SolidRenderedPlaceableFluidType fluidType = new SolidRenderedPlaceableFluidType(p, s, f);
 				fluidType.fogColor = new Color(fogColor, false).asVectorF();

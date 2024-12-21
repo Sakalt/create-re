@@ -1,16 +1,16 @@
-package com.simibubi.create;
+package com.simibubi.create_re;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.content.contraptions.behaviour.BellMovementBehaviour;
-import com.simibubi.create.content.contraptions.behaviour.CampfireMovementBehaviour;
-import com.simibubi.create.content.contraptions.behaviour.MovementBehaviour;
-import com.simibubi.create.content.contraptions.behaviour.dispenser.DispenserMovementBehaviour;
-import com.simibubi.create.content.contraptions.behaviour.dispenser.DropperMovementBehaviour;
-import com.simibubi.create.foundation.utility.AttachedRegistry;
+import com.simibubi.create_re.content.contraptions.behaviour.BellMovementBehaviour;
+import com.simibubi.create_re.content.contraptions.behaviour.CampfireMovementBehaviour;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementBehaviour;
+import com.simibubi.create_re.content.contraptions.behaviour.dispenser.DispenserMovementBehaviour;
+import com.simibubi.create_re.content.contraptions.behaviour.dispenser.DropperMovementBehaviour;
+import com.simibubi.create_re.foundation.utility.AttachedRegistry;
 import com.tterrag.registrate.util.nullness.NonNullConsumer;
 
 import net.minecraft.resources.ResourceLocation;

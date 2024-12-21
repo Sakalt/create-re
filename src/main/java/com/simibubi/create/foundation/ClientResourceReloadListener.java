@@ -1,9 +1,9 @@
-package com.simibubi.create.foundation;
+package com.simibubi.create_re.foundation;
 
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.content.kinetics.belt.BeltHelper;
-import com.simibubi.create.foundation.sound.SoundScapes;
-import com.simibubi.create.foundation.utility.LangNumberFormat;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.content.kinetics.belt.BeltHelper;
+import com.simibubi.create_re.foundation.sound.SoundScapes;
+import com.simibubi.create_re.foundation.utility.LangNumberFormat;
 
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.server.packs.resources.ResourceManagerReloadListener;

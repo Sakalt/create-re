@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:andesite_scaffolding"
+          "name": "create_re:andesite_scaffolding"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/andesite_scaffolding"
+  "random_sequence": "create_re:blocks/andesite_scaffolding"
 }

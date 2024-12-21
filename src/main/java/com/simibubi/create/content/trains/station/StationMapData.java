@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.station;
+package com.simibubi.create_re.content.trains.station;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.LevelAccessor;

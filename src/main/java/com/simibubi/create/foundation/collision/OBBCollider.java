@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.collision;
+package com.simibubi.create_re.foundation.collision;
 
 import static java.lang.Math.abs;
 import static java.lang.Math.signum;
@@ -83,10 +83,10 @@ public class OBBCollider {
 		public Vec3 asSeparationVec() {
 			double sep = separation;
 			Vec3 axis = this.axis;
-			return createSeparationVec(sep, axis);
+			return create_reSeparationVec(sep, axis);
 		}
 
-		protected Vec3 createSeparationVec(double sep, Vec3 axis) {
+		protected Vec3 create_reSeparationVec(double sep, Vec3 axis) {
 			return axis.normalize()
 				.scale(signum(sep) * (abs(sep) + 1E-4));
 		}

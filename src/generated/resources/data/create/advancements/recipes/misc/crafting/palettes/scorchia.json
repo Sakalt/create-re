@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:scoria"
+              "create_re:scoria"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/palettes/scorchia"
+        "recipe": "create_re:crafting/palettes/scorchia"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/palettes/scorchia"
+      "create_re:crafting/palettes/scorchia"
     ]
   },
   "sends_telemetry_event": false

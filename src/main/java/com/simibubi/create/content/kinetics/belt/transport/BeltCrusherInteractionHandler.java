@@ -1,8 +1,8 @@
-package com.simibubi.create.content.kinetics.belt.transport;
+package com.simibubi.create_re.content.kinetics.belt.transport;
 
-import com.simibubi.create.content.kinetics.belt.BeltHelper;
-import com.simibubi.create.content.kinetics.crusher.CrushingWheelControllerBlock;
-import com.simibubi.create.content.kinetics.crusher.CrushingWheelControllerBlockEntity;
+import com.simibubi.create_re.content.kinetics.belt.BeltHelper;
+import com.simibubi.create_re.content.kinetics.crusher.CrushingWheelControllerBlock;
+import com.simibubi.create_re.content.kinetics.crusher.CrushingWheelControllerBlockEntity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

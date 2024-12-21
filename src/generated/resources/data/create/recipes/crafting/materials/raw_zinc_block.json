@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "C": {
-      "item": "create:raw_zinc"
+      "item": "create_re:raw_zinc"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
     "CCC"
   ],
   "result": {
-    "item": "create:raw_zinc_block"
+    "item": "create_re:raw_zinc_block"
   },
   "show_notification": true
 }

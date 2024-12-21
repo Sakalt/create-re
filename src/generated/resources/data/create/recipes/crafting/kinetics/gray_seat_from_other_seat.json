@@ -6,10 +6,10 @@
       "tag": "forge:dyes/gray"
     },
     {
-      "tag": "create:seats"
+      "tag": "create_re:seats"
     }
   ],
   "result": {
-    "item": "create:gray_seat"
+    "item": "create_re:gray_seat"
   }
 }

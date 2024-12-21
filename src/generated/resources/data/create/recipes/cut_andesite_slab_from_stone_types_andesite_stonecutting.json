@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 2,
   "ingredient": {
-    "tag": "create:stone_types/andesite"
+    "tag": "create_re:stone_types/andesite"
   },
-  "result": "create:cut_andesite_slab"
+  "result": "create_re:cut_andesite_slab"
 }

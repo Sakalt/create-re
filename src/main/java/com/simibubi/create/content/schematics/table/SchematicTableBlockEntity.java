@@ -1,11 +1,11 @@
-package com.simibubi.create.content.schematics.table;
+package com.simibubi.create_re.content.schematics.table;
 
 import java.util.List;
 
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.utility.IInteractionChecker;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.utility.IInteractionChecker;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
@@ -107,8 +107,8 @@ public class SchematicTableBlockEntity extends SmartBlockEntity implements MenuP
 	}
 
 	@Override
-	public AbstractContainerMenu createMenu(int id, Inventory inv, Player player) {
-		return SchematicTableMenu.create(id, inv, this);
+	public AbstractContainerMenu create_reMenu(int id, Inventory inv, Player player) {
+		return SchematicTableMenu.create_re(id, inv, this);
 	}
 
 	@Override

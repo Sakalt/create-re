@@ -1,9 +1,9 @@
-package com.simibubi.create.content.fluids.tank;
+package com.simibubi.create_re.content.fluids.tank;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.api.connectivity.ConnectivityHandler;
-import com.simibubi.create.content.equipment.symmetryWand.SymmetryWandItem;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.api.connectivity.ConnectivityHandler;
+import com.simibubi.create_re.content.equipment.symmetryWand.SymmetryWandItem;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

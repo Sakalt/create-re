@@ -1,5 +1,5 @@
 {
-  "type": "create:pressing",
+  "type": "create_re:pressing",
   "ingredients": [
     {
       "tag": "forge:ingots/brass"
@@ -7,7 +7,7 @@
   ],
   "results": [
     {
-      "item": "create:brass_sheet"
+      "item": "create_re:brass_sheet"
     }
   ]
 }

@@ -1,4 +1,4 @@
-package com.simibubi.create.infrastructure.worldgen;
+package com.simibubi.create_re.infrastructure.worldgen;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ import javax.annotation.Nullable;
 import com.google.common.collect.ImmutableList;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import com.simibubi.create.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Couple;
 import com.tterrag.registrate.util.nullness.NonNullSupplier;
 
 import net.minecraft.tags.BlockTags;
@@ -76,7 +76,7 @@ public class LayerPattern {
 	}
 
 	public static class Layer {
-		public static final Codec<Layer> CODEC = RecordCodecBuilder.create(instance -> {
+		public static final Codec<Layer> CODEC = RecordCodecBuilder.create_re(instance -> {
 			return instance.group(
 				Codec.list(Codec.list(TargetBlockState.CODEC))
 					.fieldOf("targets")

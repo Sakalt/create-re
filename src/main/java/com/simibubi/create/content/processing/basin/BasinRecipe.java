@@ -1,4 +1,4 @@
-package com.simibubi.create.content.processing.basin;
+package com.simibubi.create_re.content.processing.basin;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -7,19 +7,19 @@ import java.util.List;
 
 import javax.annotation.Nonnull;
 
-import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.content.processing.burner.BlazeBurnerBlock.HeatLevel;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipe;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
-import com.simibubi.create.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.fluid.SmartFluidTankBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.fluid.SmartFluidTankBehaviour.TankSegment;
-import com.simibubi.create.foundation.fluid.FluidIngredient;
-import com.simibubi.create.foundation.item.SmartInventory;
-import com.simibubi.create.foundation.recipe.DummyCraftingContainer;
-import com.simibubi.create.foundation.recipe.IRecipeTypeInfo;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.AllRecipeTypes;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock.HeatLevel;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipe;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.fluid.SmartFluidTankBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.fluid.SmartFluidTankBehaviour.TankSegment;
+import com.simibubi.create_re.foundation.fluid.FluidIngredient;
+import com.simibubi.create_re.foundation.item.SmartInventory;
+import com.simibubi.create_re.foundation.recipe.DummyCraftingContainer;
+import com.simibubi.create_re.foundation.recipe.IRecipeTypeInfo;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.ItemStack;

@@ -1,4 +1,4 @@
-package com.simibubi.create.compat.trainmap;
+package com.simibubi.create_re.compat.trainmap;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -8,9 +8,9 @@ import org.joml.Matrix4f;
 import com.mojang.blaze3d.platform.NativeImage;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create.foundation.render.RenderTypes;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.infrastructure.config.CClient;
+import com.simibubi.create_re.foundation.render.RenderTypes;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.infrastructure.config.CClient;
 
 import it.unimi.dsi.fastutil.objects.Object2ObjectMap;
 import it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap;
@@ -153,7 +153,7 @@ public class TrainMapRenderer implements AutoCloseable {
 	}
 
 	public Couple<Integer> toSectionKey(int xCoord, int zCoord) {
-		return Couple.create(Mth.floor(xCoord / (float) WIDTH), Mth.floor(zCoord / (float) HEIGHT));
+		return Couple.create_re(Mth.floor(xCoord / (float) WIDTH), Mth.floor(zCoord / (float) HEIGHT));
 	}
 
 	public void resetData() {
@@ -189,7 +189,7 @@ public class TrainMapRenderer implements AutoCloseable {
 			texture = new DynamicTexture(128, 128, true);
 			linearFiltering = false;
 			location = textureManager
-				.register("create_trainmap/" + sectionKey.getFirst() + "_" + sectionKey.getSecond(), texture);
+				.register("create_re_trainmap/" + sectionKey.getFirst() + "_" + sectionKey.getSecond(), texture);
 			renderType = RenderTypes.TRAIN_MAP.apply(location, linearFiltering);
 			bounds = new Rect2i(sectionKey.getFirst() * WIDTH, sectionKey.getSecond() * HEIGHT, WIDTH, HEIGHT);
 		}

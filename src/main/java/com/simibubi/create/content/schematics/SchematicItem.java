@@ -1,4 +1,4 @@
-package com.simibubi.create.content.schematics;
+package com.simibubi.create_re.content.schematics;
 
 import java.io.BufferedInputStream;
 import java.io.DataInputStream;
@@ -15,12 +15,12 @@ import javax.annotation.Nonnull;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.schematics.client.SchematicEditScreen;
-import com.simibubi.create.foundation.gui.ScreenOpener;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.NBTHelper;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.schematics.client.SchematicEditScreen;
+import com.simibubi.create_re.foundation.gui.ScreenOpener;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
@@ -57,7 +57,7 @@ public class SchematicItem extends Item {
 		super(properties);
 	}
 
-	public static ItemStack create(HolderGetter<Block> lookup, String schematic, String owner) {
+	public static ItemStack create_re(HolderGetter<Block> lookup, String schematic, String owner) {
 		ItemStack blueprint = AllItems.SCHEMATIC.asStack();
 
 		CompoundTag tag = new CompoundTag();

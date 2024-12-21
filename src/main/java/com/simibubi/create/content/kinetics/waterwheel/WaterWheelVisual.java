@@ -1,12 +1,12 @@
-package com.simibubi.create.content.kinetics.waterwheel;
+package com.simibubi.create_re.content.kinetics.waterwheel;
 
 import java.util.function.Consumer;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntityVisual;
-import com.simibubi.create.content.kinetics.base.RotatingInstance;
-import com.simibubi.create.foundation.render.AllInstanceTypes;
-import com.simibubi.create.foundation.render.CachedBufferer;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntityVisual;
+import com.simibubi.create_re.content.kinetics.base.RotatingInstance;
+import com.simibubi.create_re.foundation.render.AllInstanceTypes;
+import com.simibubi.create_re.foundation.render.CachedBufferer;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.model.Model;
@@ -19,7 +19,7 @@ import net.minecraft.core.Direction.AxisDirection;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class WaterWheelVisual<T extends WaterWheelBlockEntity> extends KineticBlockEntityVisual<T> {
-	private static final ResourceReloadCache<WaterWheelModelKey, Model> MODEL_CACHE = new ResourceReloadCache<>(WaterWheelVisual::createModel);
+	private static final ResourceReloadCache<WaterWheelModelKey, Model> MODEL_CACHE = new ResourceReloadCache<>(WaterWheelVisual::create_reModel);
 
 	protected final boolean large;
 	protected BlockState lastMaterial;
@@ -43,7 +43,7 @@ public class WaterWheelVisual<T extends WaterWheelBlockEntity> extends KineticBl
 	private void setupInstance() {
 		lastMaterial = blockEntity.material;
 		rotatingModel = instancerProvider().instancer(AllInstanceTypes.ROTATING, MODEL_CACHE.get(new WaterWheelModelKey(large, blockState, blockEntity.material)))
-				.createInstance();
+				.create_reInstance();
 		setup(rotatingModel);
 	}
 
@@ -72,7 +72,7 @@ public class WaterWheelVisual<T extends WaterWheelBlockEntity> extends KineticBl
 		consumer.accept(rotatingModel);
 	}
 
-	private static Model createModel(WaterWheelModelKey key) {
+	private static Model create_reModel(WaterWheelModelKey key) {
 		BakedModel model = WaterWheelRenderer.generateModel(key);
 		BlockState state = key.state();
 		Direction dir;
@@ -82,7 +82,7 @@ public class WaterWheelVisual<T extends WaterWheelBlockEntity> extends KineticBl
 			dir = state.getValue(WaterWheelBlock.FACING);
 		}
 		PoseStack transform = CachedBufferer.rotateToFaceVertical(dir).get();
-		return BakedModelBuilder.create(model)
+		return BakedModelBuilder.create_re(model)
 				.poseStack(transform)
 				.build();
 	}

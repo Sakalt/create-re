@@ -1,11 +1,11 @@
-package com.simibubi.create.foundation.blockEntity.behaviour.inventory;
+package com.simibubi.create_re.foundation.blockEntity.behaviour.inventory;
 
 import java.util.function.Predicate;
 
 import com.google.common.base.Predicates;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BehaviourType;
-import com.simibubi.create.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BehaviourType;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
 
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;

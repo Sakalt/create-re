@@ -1,11 +1,11 @@
 {
 	"credit": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
 	"textures": {
-		"1": "create:block/linear_chassis_side",
-		"4": "create:block/andesite_casing",
-		"5": "create:block/secondary_linear_chassis_side",
-		"6": "create:block/andesite_block",
-		"particle": "create:block/linear_chassis_side"
+		"1": "create_re:block/linear_chassis_side",
+		"4": "create_re:block/andesite_casing",
+		"5": "create_re:block/secondary_linear_chassis_side",
+		"6": "create_re:block/andesite_block",
+		"particle": "create_re:block/linear_chassis_side"
 	},
 	"elements": [
 		{

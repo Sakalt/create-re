@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "create:block/glass_door_side",
-		"1": "create:block/palettes/framed_glass",
-		"particle": "create:block/palettes/framed_glass"
+		"0": "create_re:block/glass_door_side",
+		"1": "create_re:block/palettes/framed_glass",
+		"particle": "create_re:block/palettes/framed_glass"
 	},
 	"elements": [
 		{

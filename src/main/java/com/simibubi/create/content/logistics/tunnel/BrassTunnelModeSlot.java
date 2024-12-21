@@ -1,6 +1,6 @@
-package com.simibubi.create.content.logistics.tunnel;
+package com.simibubi.create_re.content.logistics.tunnel;
 
-import com.simibubi.create.foundation.blockEntity.behaviour.CenteredSideValueBoxTransform;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.CenteredSideValueBoxTransform;
 
 import net.minecraft.core.Direction;
 

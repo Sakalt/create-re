@@ -1,10 +1,10 @@
 {
-  "parent": "create:block/belt_tunnel/straight",
+  "parent": "create_re:block/belt_tunnel/straight",
   "textures": {
-    "direction": "create:block/funnel/andesite_funnel_neutral",
-    "frame": "create:block/funnel/andesite_funnel_frame",
+    "direction": "create_re:block/funnel/andesite_funnel_neutral",
+    "frame": "create_re:block/funnel/andesite_funnel_frame",
     "particle": "minecraft:block/polished_andesite",
-    "top": "create:block/tunnel/andesite_tunnel_top",
-    "tunnel": "create:block/tunnel/andesite_tunnel"
+    "top": "create_re:block/tunnel/andesite_tunnel_top",
+    "tunnel": "create_re:block/tunnel/andesite_tunnel"
   }
 }

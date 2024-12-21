@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/gray_seat"
+      "model": "create_re:block/gray_seat"
     }
   }
 }

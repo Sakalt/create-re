@@ -1,23 +1,23 @@
-package com.simibubi.create.infrastructure.gui;
+package com.simibubi.create_re.infrastructure.gui;
 
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.config.ui.BaseConfigScreen;
-import com.simibubi.create.foundation.gui.AbstractSimiScreen;
-import com.simibubi.create.foundation.gui.AllGuiTextures;
-import com.simibubi.create.foundation.gui.ScreenOpener;
-import com.simibubi.create.foundation.gui.element.BoxElement;
-import com.simibubi.create.foundation.gui.element.GuiGameElement;
-import com.simibubi.create.foundation.item.TooltipHelper;
-import com.simibubi.create.foundation.item.TooltipHelper.Palette;
-import com.simibubi.create.foundation.ponder.ui.PonderTagIndexScreen;
-import com.simibubi.create.foundation.utility.Color;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.config.ui.BaseConfigScreen;
+import com.simibubi.create_re.foundation.gui.AbstractSimiScreen;
+import com.simibubi.create_re.foundation.gui.AllGuiTextures;
+import com.simibubi.create_re.foundation.gui.ScreenOpener;
+import com.simibubi.create_re.foundation.gui.element.BoxElement;
+import com.simibubi.create_re.foundation.gui.element.GuiGameElement;
+import com.simibubi.create_re.foundation.item.TooltipHelper;
+import com.simibubi.create_re.foundation.item.TooltipHelper.Palette;
+import com.simibubi.create_re.foundation.ponder.ui.PonderTagIndexScreen;
+import com.simibubi.create_re.foundation.utility.Color;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import dev.engine_room.flywheel.lib.transform.TransformStack;
 import net.minecraft.ChatFormatting;
@@ -45,8 +45,8 @@ public class CreateMainMenuScreen extends AbstractSimiScreen {
 	private static final Component CURSEFORGE_TOOLTIP = Components.literal("CurseForge").withStyle(s -> s.withColor(0xFC785C).withBold(true));
 	private static final Component MODRINTH_TOOLTIP = Components.literal("Modrinth").withStyle(s -> s.withColor(0x3FD32B).withBold(true));
 
-	public static final String CURSEFORGE_LINK = "https://www.curseforge.com/minecraft/mc-mods/create";
-	public static final String MODRINTH_LINK = "https://modrinth.com/mod/create";
+	public static final String CURSEFORGE_LINK = "https://www.curseforge.com/minecraft/mc-mods/create_re";
+	public static final String MODRINTH_LINK = "https://modrinth.com/mod/create_re";
 	public static final String ISSUE_TRACKER_LINK = "https://github.com/Creators-of-Create/Create/issues";
 	public static final String SUPPORT_LINK = "https://github.com/Creators-of-Create/Create/wiki/Supporting-the-Project";
 
@@ -166,11 +166,11 @@ public class CreateMainMenuScreen extends AbstractSimiScreen {
 		addRenderableWidget(new PlatformIconButton(center - 100, yStart + 48 + -16, bShortWidth / 2, bHeight,
 			AllGuiTextures.CURSEFORGE_LOGO, 0.085f,
 			b -> linkTo(CURSEFORGE_LINK),
-			Tooltip.create(CURSEFORGE_TOOLTIP)));
+			Tooltip.create_re(CURSEFORGE_TOOLTIP)));
 		addRenderableWidget(new PlatformIconButton(center - 50, yStart + 48 + -16, bShortWidth / 2, bHeight,
 			AllGuiTextures.MODRINTH_LOGO, 0.0575f,
 			b -> linkTo(MODRINTH_LINK),
-			Tooltip.create(MODRINTH_TOOLTIP)));
+			Tooltip.create_re(MODRINTH_TOOLTIP)));
 
 		addRenderableWidget(Button.builder(Lang.translateDirect("menu.report_bugs"), $ -> linkTo(ISSUE_TRACKER_LINK))
 			.bounds(center + 2, yStart + 68, bShortWidth, bHeight)

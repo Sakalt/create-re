@@ -1,8 +1,8 @@
-package com.simibubi.create.content.contraptions.actors.psi;
+package com.simibubi.create_re.content.contraptions.actors.psi;
 
 import java.util.function.Consumer;
 
-import com.simibubi.create.foundation.utility.AngleHelper;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.instance.InstancerProvider;
@@ -36,9 +36,9 @@ public class PIInstance {
 	public void init(boolean lit) {
 		this.lit = lit;
 		middle = instancerProvider.instancer(InstanceTypes.TRANSFORMED, Models.partial(PortableStorageInterfaceRenderer.getMiddleForState(blockState, lit)))
-				.createInstance();
+				.create_reInstance();
 		top = instancerProvider.instancer(InstanceTypes.TRANSFORMED, Models.partial(PortableStorageInterfaceRenderer.getTopForState(blockState)))
-				.createInstance();
+				.create_reInstance();
 	}
 
 	public void beginFrame(float progress) {

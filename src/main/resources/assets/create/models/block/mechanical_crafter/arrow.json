@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"3": "create:block/crafter_thingies"
+		"3": "create_re:block/crafter_thingies"
 	},
 	"elements": [
 		{

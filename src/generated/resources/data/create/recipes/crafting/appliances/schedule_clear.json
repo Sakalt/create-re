@@ -3,10 +3,10 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "create:schedule"
+      "item": "create_re:schedule"
     }
   ],
   "result": {
-    "item": "create:schedule"
+    "item": "create_re:schedule"
   }
 }

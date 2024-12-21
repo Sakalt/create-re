@@ -1,8 +1,8 @@
-package com.simibubi.create.content.trains;
+package com.simibubi.create_re.content.trains;
 
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 public class CameraDistanceModifier {
 

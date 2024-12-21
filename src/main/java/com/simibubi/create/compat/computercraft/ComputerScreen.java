@@ -1,18 +1,18 @@
-package com.simibubi.create.compat.computercraft;
+package com.simibubi.create_re.compat.computercraft;
 
 import java.util.function.Supplier;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.compat.Mods;
-import com.simibubi.create.foundation.gui.AbstractSimiScreen;
-import com.simibubi.create.foundation.gui.AllGuiTextures;
-import com.simibubi.create.foundation.gui.AllIcons;
-import com.simibubi.create.foundation.gui.element.GuiGameElement;
-import com.simibubi.create.foundation.gui.widget.AbstractSimiWidget;
-import com.simibubi.create.foundation.gui.widget.ElementWidget;
-import com.simibubi.create.foundation.gui.widget.IconButton;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.compat.Mods;
+import com.simibubi.create_re.foundation.gui.AbstractSimiScreen;
+import com.simibubi.create_re.foundation.gui.AllGuiTextures;
+import com.simibubi.create_re.foundation.gui.AllIcons;
+import com.simibubi.create_re.foundation.gui.element.GuiGameElement;
+import com.simibubi.create_re.foundation.gui.widget.AbstractSimiWidget;
+import com.simibubi.create_re.foundation.gui.widget.ElementWidget;
+import com.simibubi.create_re.foundation.gui.widget.IconButton;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.Screen;

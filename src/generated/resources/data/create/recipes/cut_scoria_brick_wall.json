@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "X": {
-      "item": "create:cut_scoria_bricks"
+      "item": "create_re:cut_scoria_bricks"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 6,
-    "item": "create:cut_scoria_brick_wall"
+    "item": "create_re:cut_scoria_brick_wall"
   },
   "show_notification": true
 }

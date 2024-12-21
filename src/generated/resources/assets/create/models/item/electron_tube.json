@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "create:item/electron_tube"
+    "layer0": "create_re:item/electron_tube"
   }
 }

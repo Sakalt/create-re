@@ -3,10 +3,10 @@
   "category": "misc",
   "key": {
     "B": {
-      "item": "create:electron_tube"
+      "item": "create_re:electron_tube"
     },
     "C": {
-      "item": "create:brass_casing"
+      "item": "create_re:brass_casing"
     },
     "R": {
       "item": "minecraft:crafting_table"
@@ -19,7 +19,7 @@
   ],
   "result": {
     "count": 3,
-    "item": "create:mechanical_crafter"
+    "item": "create_re:mechanical_crafter"
   },
   "show_notification": true
 }

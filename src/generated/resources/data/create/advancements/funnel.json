@@ -1,25 +1,25 @@
 {
-  "parent": "create:belt",
+  "parent": "create_re:belt",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:funnel_builtin"
+      "trigger": "create_re:funnel_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.funnel.desc"
+      "translate": "advancement.create_re.funnel.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:andesite_funnel"
+      "item": "create_re:andesite_funnel"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.funnel"
+      "translate": "advancement.create_re.funnel"
     }
   },
   "requirements": [

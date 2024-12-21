@@ -6,7 +6,7 @@
       "tag": "forge:ingots/brass"
     },
     "E": {
-      "item": "create:electron_tube"
+      "item": "create_re:electron_tube"
     },
     "K": {
       "item": "minecraft:dried_kelp"
@@ -19,7 +19,7 @@
   ],
   "result": {
     "count": 2,
-    "item": "create:brass_tunnel"
+    "item": "create_re:brass_tunnel"
   },
   "show_notification": true
 }

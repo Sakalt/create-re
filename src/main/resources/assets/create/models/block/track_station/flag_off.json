@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "create:block/station",
-		"1": "create:block/indicator/0",
-		"particle": "create:block/station"
+		"0": "create_re:block/station",
+		"1": "create_re:block/indicator/0",
+		"particle": "create_re:block/station"
 	},
 	"elements": [
 		{

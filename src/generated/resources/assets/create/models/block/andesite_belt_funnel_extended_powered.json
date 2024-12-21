@@ -1,10 +1,10 @@
 {
-  "parent": "create:block/belt_funnel/block_extended",
+  "parent": "create_re:block/belt_funnel/block_extended",
   "textures": {
-    "base": "create:block/funnel/andesite_funnel",
-    "block": "create:block/andesite_block",
-    "direction": "create:block/funnel/andesite_funnel_neutral",
-    "particle": "create:block/andesite_block",
-    "redstone": "create:block/funnel/andesite_funnel_powered"
+    "base": "create_re:block/funnel/andesite_funnel",
+    "block": "create_re:block/andesite_block",
+    "direction": "create_re:block/funnel/andesite_funnel_neutral",
+    "particle": "create_re:block/andesite_block",
+    "redstone": "create_re:block/funnel/andesite_funnel_powered"
   }
 }

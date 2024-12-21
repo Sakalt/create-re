@@ -1,9 +1,9 @@
-package com.simibubi.create.content.kinetics.transmission.sequencer;
+package com.simibubi.create_re.content.kinetics.transmission.sequencer;
 
 import java.util.Vector;
 
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.foundation.utility.NBTHelper;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
@@ -106,13 +106,13 @@ public class Instruction {
 
 	public static Vector<Instruction> deserializeAll(ListTag list) {
 		if (list.isEmpty())
-			return createDefault();
+			return create_reDefault();
 		Vector<Instruction> instructions = new Vector<>(5);
 		list.forEach(inbt -> instructions.add(deserialize((CompoundTag) inbt)));
 		return instructions;
 	}
 
-	public static Vector<Instruction> createDefault() {
+	public static Vector<Instruction> create_reDefault() {
 		Vector<Instruction> instructions = new Vector<>(5);
 		instructions.add(new Instruction(SequencerInstructions.TURN_ANGLE, 90));
 		instructions.add(new Instruction(SequencerInstructions.END));

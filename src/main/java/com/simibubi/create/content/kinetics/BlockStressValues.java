@@ -1,12 +1,12 @@
-package com.simibubi.create.content.kinetics;
+package com.simibubi.create_re.content.kinetics;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;

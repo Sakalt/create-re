@@ -1,25 +1,25 @@
 {
-  "parent": "create:track_signal",
+  "parent": "create_re:track_signal",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:train_crash_builtin"
+      "trigger": "create_re:train_crash_builtin"
     }
   },
   "display": {
     "announce_to_chat": true,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.train_crash.desc"
+      "translate": "advancement.create_re.train_crash.desc"
     },
     "frame": "goal",
     "hidden": true,
     "icon": {
-      "item": "create:incomplete_track"
+      "item": "create_re:incomplete_track"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.train_crash"
+      "translate": "advancement.create_re.train_crash"
     }
   },
   "requirements": [

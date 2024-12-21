@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/mangrove_window"
+      "model": "create_re:block/mangrove_window"
     }
   }
 }

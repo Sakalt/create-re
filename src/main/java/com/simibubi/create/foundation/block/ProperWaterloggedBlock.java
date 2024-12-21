@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.block;
+package com.simibubi.create_re.foundation.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -12,7 +12,7 @@ import net.minecraft.world.level.material.Fluids;
 
 /**
  * Waterlog checklist: <br>
- * 1. createBlockStateDefinition -> add WATERLOGGED <br>
+ * 1. create_reBlockStateDefinition -> add WATERLOGGED <br>
  * 2. constructor -> default WATERLOGGED to false <br>
  * 3. getFluidState -> return fluidState <br>
  * 4. getStateForPlacement -> call withWater <br>
@@ -40,7 +40,7 @@ public interface ProperWaterloggedBlock extends SimpleWaterloggedBlock {
 			return null;
 		FluidState ifluidstate = level.getFluidState(pos);
 		if (placementState.isAir())
-			return ifluidstate.getType() == Fluids.WATER ? ifluidstate.createLegacyBlock() : placementState;
+			return ifluidstate.getType() == Fluids.WATER ? ifluidstate.create_reLegacyBlock() : placementState;
 		if (!(placementState.getBlock() instanceof SimpleWaterloggedBlock))
 			return placementState;
 		return placementState.setValue(BlockStateProperties.WATERLOGGED, ifluidstate.getType() == Fluids.WATER);

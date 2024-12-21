@@ -1,11 +1,11 @@
-package com.simibubi.create.foundation.data;
+package com.simibubi.create_re.foundation.data;
 
 import java.util.concurrent.CompletableFuture;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create.AllDamageTypes;
-import com.simibubi.create.Create;
+import com.simibubi.create_re.AllDamageTypes;
+import com.simibubi.create_re.Create;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;

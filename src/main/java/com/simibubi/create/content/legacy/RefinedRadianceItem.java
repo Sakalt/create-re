@@ -1,4 +1,4 @@
-package com.simibubi.create.content.legacy;
+package com.simibubi.create_re.content.legacy;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.item.ItemEntity;

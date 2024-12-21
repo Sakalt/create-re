@@ -1,6 +1,6 @@
-package com.simibubi.create.content.kinetics.deployer;
+package com.simibubi.create_re.content.kinetics.deployer;
 
-import static com.simibubi.create.content.kinetics.base.DirectionalKineticBlock.FACING;
+import static com.simibubi.create_re.content.kinetics.base.DirectionalKineticBlock.FACING;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,25 +10,25 @@ import java.util.UUID;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.content.equipment.sandPaper.SandPaperItem;
-import com.simibubi.create.content.equipment.sandPaper.SandPaperPolishingRecipe.SandPaperInv;
-import com.simibubi.create.content.kinetics.base.IRotate.StressImpact;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.kinetics.belt.behaviour.BeltProcessingBehaviour;
-import com.simibubi.create.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour;
-import com.simibubi.create.content.processing.sequenced.SequencedAssemblyRecipe;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
-import com.simibubi.create.foundation.item.TooltipHelper;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.AllRecipeTypes;
+import com.simibubi.create_re.content.equipment.sandPaper.SandPaperItem;
+import com.simibubi.create_re.content.equipment.sandPaper.SandPaperPolishingRecipe.SandPaperInv;
+import com.simibubi.create_re.content.kinetics.base.IRotate.StressImpact;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.BeltProcessingBehaviour;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour;
+import com.simibubi.create_re.content.processing.sequenced.SequencedAssemblyRecipe;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
+import com.simibubi.create_re.foundation.item.TooltipHelper;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
 
 import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 import net.minecraft.ChatFormatting;
@@ -140,7 +140,7 @@ public class DeployerBlockEntity extends KineticBlockEntity {
 			Vec3 initialPos = VecHelper.getCenterOf(worldPosition.relative(getBlockState().getValue(FACING)));
 			player.setPos(initialPos.x, initialPos.y, initialPos.z);
 		}
-		invHandler = LazyOptional.of(this::createHandler);
+		invHandler = LazyOptional.of(this::create_reHandler);
 	}
 
 	protected void onExtract(ItemStack stack) {
@@ -419,7 +419,7 @@ public class DeployerBlockEntity extends KineticBlockEntity {
 		super.writeSafe(tag);
 	}
 
-	private IItemHandlerModifiable createHandler() {
+	private IItemHandlerModifiable create_reHandler() {
 		return new DeployerItemHandler(this);
 	}
 
@@ -440,8 +440,8 @@ public class DeployerBlockEntity extends KineticBlockEntity {
 	}
 
 	@Override
-	protected AABB createRenderBoundingBox() {
-		return super.createRenderBoundingBox().inflate(3);
+	protected AABB create_reRenderBoundingBox() {
+		return super.create_reRenderBoundingBox().inflate(3);
 	}
 
 	public void discardPlayer() {

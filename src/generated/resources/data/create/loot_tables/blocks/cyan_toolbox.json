@@ -39,11 +39,11 @@
               "source": "block_entity"
             }
           ],
-          "name": "create:cyan_toolbox"
+          "name": "create_re:cyan_toolbox"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/cyan_toolbox"
+  "random_sequence": "create_re:blocks/cyan_toolbox"
 }

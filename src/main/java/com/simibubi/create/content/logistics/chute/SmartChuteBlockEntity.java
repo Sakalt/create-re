@@ -1,10 +1,10 @@
-package com.simibubi.create.content.logistics.chute;
+package com.simibubi.create_re.content.logistics.chute;
 
 import java.util.List;
 
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
-import com.simibubi.create.foundation.item.ItemHelper.ExtractionCountMode;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
+import com.simibubi.create_re.foundation.item.ItemHelper.ExtractionCountMode;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

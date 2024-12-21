@@ -1,6 +1,6 @@
 {
-  "parent": "create:block/gantry_shaft/block_start",
+  "parent": "create_re:block/gantry_shaft/block_start",
   "textures": {
-    "2": "create:block/gantry_shaft_powered"
+    "2": "create_re:block/gantry_shaft_powered"
   }
 }

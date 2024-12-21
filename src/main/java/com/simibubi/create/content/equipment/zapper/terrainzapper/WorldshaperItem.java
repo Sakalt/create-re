@@ -1,15 +1,15 @@
-package com.simibubi.create.content.equipment.zapper.terrainzapper;
+package com.simibubi.create_re.content.equipment.zapper.terrainzapper;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
 
-import com.simibubi.create.content.equipment.zapper.PlacementPatterns;
-import com.simibubi.create.content.equipment.zapper.ZapperItem;
-import com.simibubi.create.foundation.gui.ScreenOpener;
-import com.simibubi.create.foundation.item.render.SimpleCustomRenderer;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.NBTHelper;
+import com.simibubi.create_re.content.equipment.zapper.PlacementPatterns;
+import com.simibubi.create_re.content.equipment.zapper.ZapperItem;
+import com.simibubi.create_re.foundation.gui.ScreenOpener;
+import com.simibubi.create_re.foundation.item.render.SimpleCustomRenderer;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
@@ -99,7 +99,7 @@ public class WorldshaperItem extends ZapperItem {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void initializeClient(Consumer<IClientItemExtensions> consumer) {
-		consumer.accept(SimpleCustomRenderer.create(this, new WorldshaperItemRenderer()));
+		consumer.accept(SimpleCustomRenderer.create_re(this, new WorldshaperItemRenderer()));
 	}
 
 }

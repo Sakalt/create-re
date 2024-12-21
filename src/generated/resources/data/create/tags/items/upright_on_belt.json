@@ -1,9 +1,9 @@
 {
   "values": [
-    "create:blaze_cake_base",
-    "create:blaze_cake",
-    "create:creative_blaze_cake",
-    "create:builders_tea",
+    "create_re:blaze_cake_base",
+    "create_re:blaze_cake",
+    "create_re:creative_blaze_cake",
+    "create_re:builders_tea",
     "minecraft:glass_bottle",
     "minecraft:potion",
     "minecraft:splash_potion",

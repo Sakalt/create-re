@@ -1,10 +1,10 @@
-package com.simibubi.create.content.trains.graph;
+package com.simibubi.create_re.content.trains.graph;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import com.simibubi.create.content.trains.track.BezierConnection;
+import com.simibubi.create_re.content.trains.track.BezierConnection;
 
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.Level;

@@ -1,10 +1,10 @@
-package com.simibubi.create.content.kinetics.steamEngine;
+package com.simibubi.create_re.content.kinetics.steamEngine;
 
 import java.util.function.Consumer;
 
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntityRenderer;
-import com.simibubi.create.foundation.utility.AngleHelper;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntityRenderer;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.visual.DynamicVisual;
@@ -28,11 +28,11 @@ public class SteamEngineVisual extends AbstractBlockEntityVisual<SteamEngineBloc
 		super(context, blockEntity, partialTick);
 
 		piston = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.ENGINE_PISTON))
-				.createInstance();
+				.create_reInstance();
 		linkage = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.ENGINE_LINKAGE))
-				.createInstance();
+				.create_reInstance();
 		connector = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.ENGINE_CONNECTOR))
-				.createInstance();
+				.create_reInstance();
 	}
 
 	@Override

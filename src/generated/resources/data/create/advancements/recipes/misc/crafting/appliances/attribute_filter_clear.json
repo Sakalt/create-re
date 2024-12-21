@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:attribute_filter"
+              "create_re:attribute_filter"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/appliances/attribute_filter_clear"
+        "recipe": "create_re:crafting/appliances/attribute_filter_clear"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/appliances/attribute_filter_clear"
+      "create_re:crafting/appliances/attribute_filter_clear"
     ]
   },
   "sends_telemetry_event": false

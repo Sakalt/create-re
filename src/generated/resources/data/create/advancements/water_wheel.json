@@ -1,25 +1,25 @@
 {
-  "parent": "create:andesite_alloy",
+  "parent": "create_re:andesite_alloy",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:water_wheel_builtin"
+      "trigger": "create_re:water_wheel_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.water_wheel.desc"
+      "translate": "advancement.create_re.water_wheel.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:water_wheel"
+      "item": "create_re:water_wheel"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.water_wheel"
+      "translate": "advancement.create_re.water_wheel"
     }
   },
   "requirements": [

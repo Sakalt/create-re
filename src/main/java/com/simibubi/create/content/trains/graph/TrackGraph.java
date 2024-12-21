@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.graph;
+package com.simibubi.create_re.content.trains.graph;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -18,18 +18,18 @@ import java.util.stream.Collectors;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.content.trains.entity.Train;
-import com.simibubi.create.content.trains.graph.TrackNodeLocation.DiscoveredLocation;
-import com.simibubi.create.content.trains.signal.SignalEdgeGroup;
-import com.simibubi.create.content.trains.signal.TrackEdgePoint;
-import com.simibubi.create.content.trains.track.BezierConnection;
-import com.simibubi.create.content.trains.track.TrackMaterial;
-import com.simibubi.create.foundation.utility.Color;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.Pair;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.trains.entity.Train;
+import com.simibubi.create_re.content.trains.graph.TrackNodeLocation.DiscoveredLocation;
+import com.simibubi.create_re.content.trains.signal.SignalEdgeGroup;
+import com.simibubi.create_re.content.trains.signal.TrackEdgePoint;
+import com.simibubi.create_re.content.trains.track.BezierConnection;
+import com.simibubi.create_re.content.trains.track.TrackMaterial;
+import com.simibubi.create_re.foundation.utility.Color;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.Pair;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
@@ -133,7 +133,7 @@ public class TrackGraph {
 		return nodesById.get(netId);
 	}
 
-	public boolean createNodeIfAbsent(DiscoveredLocation location) {
+	public boolean create_reNodeIfAbsent(DiscoveredLocation location) {
 		if (!addNodeIfAbsent(new TrackNode(location, nextNodeId(), location.normal)))
 			return false;
 		TrackNode newNode = nodes.get(location);
@@ -430,7 +430,7 @@ public class TrackGraph {
 						edge.edgeData.addIntersection(this, id, s, otherNode1, otherNode2, t);
 						edge2.edgeData.addIntersection(this, id, edge.getLength() - s, otherNode1, otherNode2, t);
 						otherEdge.edgeData.addIntersection(graph, id, t, node1, node2, s);
-						TrackEdge otherEdge2 = graph.getConnection(Couple.create(otherNode2, otherNode1));
+						TrackEdge otherEdge2 = graph.getConnection(Couple.create_re(otherNode2, otherNode1));
 						if (otherEdge2 != null)
 							otherEdge2.edgeData.addIntersection(graph, id, otherEdge.getLength() - t, node1, node2, s);
 					}

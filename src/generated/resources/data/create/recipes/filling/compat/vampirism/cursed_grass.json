@@ -1,5 +1,5 @@
 {
-  "type": "create:filling",
+  "type": "create_re:filling",
   "conditions": [
     {
       "type": "forge:mod_loaded",

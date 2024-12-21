@@ -11,7 +11,7 @@
               "add": false,
               "conditions": [
                 {
-                  "block": "create:cut_ochrum_slab",
+                  "block": "create_re:cut_ochrum_slab",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "type": "double"
@@ -25,11 +25,11 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "create:cut_ochrum_slab"
+          "name": "create_re:cut_ochrum_slab"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/cut_ochrum_slab"
+  "random_sequence": "create_re:blocks/cut_ochrum_slab"
 }

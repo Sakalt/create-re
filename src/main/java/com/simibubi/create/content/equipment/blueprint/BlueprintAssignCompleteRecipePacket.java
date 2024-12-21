@@ -1,6 +1,6 @@
-package com.simibubi.create.content.equipment.blueprint;
+package com.simibubi.create_re.content.equipment.blueprint;
 
-import com.simibubi.create.foundation.networking.SimplePacketBase;
+import com.simibubi.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;

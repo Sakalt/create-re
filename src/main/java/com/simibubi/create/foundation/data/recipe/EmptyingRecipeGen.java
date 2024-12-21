@@ -1,8 +1,8 @@
-package com.simibubi.create.foundation.data.recipe;
+package com.simibubi.create_re.foundation.data.recipe;
 
-import com.simibubi.create.AllFluids;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllRecipeTypes;
+import com.simibubi.create_re.AllFluids;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllRecipeTypes;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Items;
@@ -17,25 +17,25 @@ public class EmptyingRecipeGen extends ProcessingRecipeGen {
 
 	GeneratedRecipe
 
-	HONEY_BOTTLE = create("honey_bottle", b -> b.require(Items.HONEY_BOTTLE)
+	HONEY_BOTTLE = create_re("honey_bottle", b -> b.require(Items.HONEY_BOTTLE)
 		.output(AllFluids.HONEY.get(), 250)
 		.output(Items.GLASS_BOTTLE)),
 
-		BUILDERS_TEA = create("builders_tea", b -> b.require(AllItems.BUILDERS_TEA.get())
+		BUILDERS_TEA = create_re("builders_tea", b -> b.require(AllItems.BUILDERS_TEA.get())
 			.output(AllFluids.TEA.get(), 250)
 			.output(Items.GLASS_BOTTLE)),
 
-		FD_MILK = create(Mods.FD.recipeId("milk_bottle"), b -> b.require(Mods.FD, "milk_bottle")
+		FD_MILK = create_re(Mods.FD.recipeId("milk_bottle"), b -> b.require(Mods.FD, "milk_bottle")
 			.output(ForgeMod.MILK.get(), 250)
 			.output(Items.GLASS_BOTTLE)
 			.whenModLoaded(Mods.FD.getId())),
 
-		AM_LAVA = create(Mods.AM.recipeId("lava_bottle"), b -> b.require(Mods.AM, "lava_bottle")
+		AM_LAVA = create_re(Mods.AM.recipeId("lava_bottle"), b -> b.require(Mods.AM, "lava_bottle")
 				.output(Items.GLASS_BOTTLE)
 				.output(Fluids.LAVA, 250)
 				.whenModLoaded(Mods.AM.getId())),
 
-		NEO_MILK = create(Mods.NEA.recipeId("milk_bottle"), b -> b.require(Mods.FD, "milk_bottle")
+		NEO_MILK = create_re(Mods.NEA.recipeId("milk_bottle"), b -> b.require(Mods.FD, "milk_bottle")
 				.output(ForgeMod.MILK.get(), 250)
 				.output(Items.GLASS_BOTTLE)
 				.whenModLoaded(Mods.NEA.getId()))

@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.blockEntity;
+package com.simibubi.create_re.foundation.blockEntity;
 
 import javax.annotation.Nullable;
 

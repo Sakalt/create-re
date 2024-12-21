@@ -1,25 +1,25 @@
 {
-  "parent": "create:encased_fan",
+  "parent": "create_re:encased_fan",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:fan_processing_builtin"
+      "trigger": "create_re:fan_processing_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.fan_processing.desc"
+      "translate": "advancement.create_re.fan_processing.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:propeller"
+      "item": "create_re:propeller"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.fan_processing"
+      "translate": "advancement.create_re.fan_processing"
     }
   },
   "requirements": [

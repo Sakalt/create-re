@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "create:stone_types/scoria"
+            "tag": "create_re:stone_types/scoria"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:small_scoria_brick_wall_from_stone_types_scoria_stonecutting"
+        "recipe": "create_re:small_scoria_brick_wall_from_stone_types_scoria_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:small_scoria_brick_wall_from_stone_types_scoria_stonecutting"
+      "create_re:small_scoria_brick_wall_from_stone_types_scoria_stonecutting"
     ]
   },
   "sends_telemetry_event": false

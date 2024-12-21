@@ -1,6 +1,6 @@
 {
   "values": [
-    "create:train_trapdoor",
-    "create:framed_glass_trapdoor"
+    "create_re:train_trapdoor",
+    "create_re:framed_glass_trapdoor"
   ]
 }

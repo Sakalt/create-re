@@ -2,8 +2,8 @@
 	"parent": "block/block",
     "ambientocclusion": false,
     "textures": {
-        "all": "create:block/experience_block",
-        "particle": "create:block/experience_block"
+        "all": "create_re:block/experience_block",
+        "particle": "create_re:block/experience_block"
     },
 	"elements": [
         {   "from": [ 0, 0, 0 ],

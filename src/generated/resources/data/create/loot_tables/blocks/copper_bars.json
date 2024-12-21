@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:copper_bars"
+          "name": "create_re:copper_bars"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/copper_bars"
+  "random_sequence": "create_re:blocks/copper_bars"
 }

@@ -1,7 +1,7 @@
-package com.simibubi.create.content.logistics.crate;
+package com.simibubi.create_re.content.logistics.crate;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.foundation.block.IBE;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.foundation.block.IBE;
 
 import net.minecraft.world.level.block.entity.BlockEntityType;
 

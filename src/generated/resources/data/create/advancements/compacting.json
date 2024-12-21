@@ -1,16 +1,16 @@
 {
-  "parent": "create:saw_processing",
+  "parent": "create_re:saw_processing",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:compacting_builtin"
+      "trigger": "create_re:compacting_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.compacting.desc"
+      "translate": "advancement.create_re.compacting.desc"
     },
     "frame": "task",
     "hidden": false,
@@ -19,7 +19,7 @@
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.compacting"
+      "translate": "advancement.create_re.compacting"
     }
   },
   "requirements": [

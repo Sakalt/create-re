@@ -1,4 +1,4 @@
-package com.simibubi.create.content.contraptions.mounted;
+package com.simibubi.create_re.content.contraptions.mounted;
 
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;

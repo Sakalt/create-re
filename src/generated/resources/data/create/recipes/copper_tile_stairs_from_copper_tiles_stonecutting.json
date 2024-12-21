@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 1,
   "ingredient": {
-    "item": "create:copper_tiles"
+    "item": "create_re:copper_tiles"
   },
-  "result": "create:copper_tile_stairs"
+  "result": "create_re:copper_tile_stairs"
 }

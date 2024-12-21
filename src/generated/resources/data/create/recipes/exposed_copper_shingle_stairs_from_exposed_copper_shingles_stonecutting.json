@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 1,
   "ingredient": {
-    "item": "create:exposed_copper_shingles"
+    "item": "create_re:exposed_copper_shingles"
   },
-  "result": "create:exposed_copper_shingle_stairs"
+  "result": "create_re:exposed_copper_shingle_stairs"
 }

@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.mixin.accessor;
+package com.simibubi.create_re.foundation.mixin.accessor;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Invoker;
@@ -10,5 +10,5 @@ import net.minecraft.world.level.block.DispenserBlock;
 @Mixin(DispenserBlock.class)
 public interface DispenserBlockAccessor {
 	@Invoker("getDispenseMethod")
-	DispenseItemBehavior create$callGetDispenseMethod(ItemStack stack);
+	DispenseItemBehavior create_re$callGetDispenseMethod(ItemStack stack);
 }

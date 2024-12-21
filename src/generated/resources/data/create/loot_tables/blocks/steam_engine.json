@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:steam_engine"
+          "name": "create_re:steam_engine"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/steam_engine"
+  "random_sequence": "create_re:blocks/steam_engine"
 }

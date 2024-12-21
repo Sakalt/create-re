@@ -1,4 +1,4 @@
-package com.simibubi.create.content.schematics.requirement;
+package com.simibubi.create_re.content.schematics.requirement;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;

@@ -1,7 +1,7 @@
 {
-  "parent": "create:item/pane",
+  "parent": "create_re:item/pane",
   "textures": {
     "edge": "minecraft:block/mangrove_planks",
-    "pane": "create:block/palettes/mangrove_window"
+    "pane": "create_re:block/palettes/mangrove_window"
   }
 }

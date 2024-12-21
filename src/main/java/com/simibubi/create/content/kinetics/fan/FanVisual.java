@@ -1,13 +1,13 @@
-package com.simibubi.create.content.kinetics.fan;
+package com.simibubi.create_re.content.kinetics.fan;
 
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.FACING;
 
 import java.util.function.Consumer;
 
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntityVisual;
-import com.simibubi.create.content.kinetics.base.RotatingInstance;
-import com.simibubi.create.foundation.render.AllInstanceTypes;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntityVisual;
+import com.simibubi.create_re.content.kinetics.base.RotatingInstance;
+import com.simibubi.create_re.foundation.render.AllInstanceTypes;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
@@ -29,9 +29,9 @@ public class FanVisual extends KineticBlockEntityVisual<EncasedFanBlockEntity> {
 		direction = blockState.getValue(FACING);
 
 		opposite = direction.getOpposite();
-		shaft = instancerProvider().instancer(AllInstanceTypes.ROTATING, Models.partial(AllPartialModels.SHAFT_HALF, opposite)).createInstance();
+		shaft = instancerProvider().instancer(AllInstanceTypes.ROTATING, Models.partial(AllPartialModels.SHAFT_HALF, opposite)).create_reInstance();
 		fan = instancerProvider().instancer(AllInstanceTypes.ROTATING, Models.partial(AllPartialModels.ENCASED_FAN_INNER, opposite))
-				.createInstance();
+				.create_reInstance();
 
 		setup(shaft);
 		setup(fan, getFanSpeed());

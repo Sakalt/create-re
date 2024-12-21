@@ -1,6 +1,6 @@
-package com.simibubi.create.foundation.data;
+package com.simibubi.create_re.foundation.data;
 
-import com.simibubi.create.Create;
+import com.simibubi.create_re.Create;
 import com.tterrag.registrate.builders.ItemBuilder;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.util.nullness.NonNullFunction;
@@ -13,12 +13,12 @@ import net.minecraftforge.client.model.generators.ModelFile;
 
 public class ModelGen {
 
-	public static ModelFile createOvergrown(DataGenContext<Block, ? extends Block> ctx, BlockStateProvider prov,
+	public static ModelFile create_reOvergrown(DataGenContext<Block, ? extends Block> ctx, BlockStateProvider prov,
 		ResourceLocation block, ResourceLocation overlay) {
-		return createOvergrown(ctx, prov, block, block, block, overlay);
+		return create_reOvergrown(ctx, prov, block, block, block, overlay);
 	}
 
-	public static ModelFile createOvergrown(DataGenContext<Block, ? extends Block> ctx, BlockStateProvider prov,
+	public static ModelFile create_reOvergrown(DataGenContext<Block, ? extends Block> ctx, BlockStateProvider prov,
 		ResourceLocation side, ResourceLocation top, ResourceLocation bottom, ResourceLocation overlay) {
 		return prov.models()
 			.withExistingParent(ctx.getName(), Create.asResource("block/overgrown"))

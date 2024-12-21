@@ -1,12 +1,12 @@
-package com.simibubi.create.compat.jei;
+package com.simibubi.create_re.compat.jei;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipe;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
+import com.simibubi.create_re.AllRecipeTypes;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipe;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
@@ -22,7 +22,7 @@ public class ConversionRecipe extends ProcessingRecipe<RecipeWrapper> {
 
 	static int counter = 0;
 
-	public static ConversionRecipe create(ItemStack from, ItemStack to) {
+	public static ConversionRecipe create_re(ItemStack from, ItemStack to) {
 		ResourceLocation recipeId = Create.asResource("conversion_" + counter++);
 		return new ProcessingRecipeBuilder<>(ConversionRecipe::new, recipeId)
 			.withItemIngredients(Ingredient.of(from))

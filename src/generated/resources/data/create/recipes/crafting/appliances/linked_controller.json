@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "P": {
-      "item": "create:redstone_link"
+      "item": "create_re:redstone_link"
     },
     "S": {
       "tag": "minecraft:wooden_buttons"
@@ -15,7 +15,7 @@
     "SSS"
   ],
   "result": {
-    "item": "create:linked_controller"
+    "item": "create_re:linked_controller"
   },
   "show_notification": true
 }

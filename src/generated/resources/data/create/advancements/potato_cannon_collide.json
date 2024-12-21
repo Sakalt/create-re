@@ -1,16 +1,16 @@
 {
-  "parent": "create:arm_many_targets",
+  "parent": "create_re:arm_many_targets",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:potato_cannon_collide_builtin"
+      "trigger": "create_re:potato_cannon_collide_builtin"
     }
   },
   "display": {
     "announce_to_chat": true,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.potato_cannon_collide.desc"
+      "translate": "advancement.create_re.potato_cannon_collide.desc"
     },
     "frame": "goal",
     "hidden": false,
@@ -19,7 +19,7 @@
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.potato_cannon_collide"
+      "translate": "advancement.create_re.potato_cannon_collide"
     }
   },
   "requirements": [

@@ -1,6 +1,6 @@
-package com.simibubi.create.compat.computercraft;
+package com.simibubi.create_re.compat.computercraft;
 
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
 
 public class FallbackComputerBehaviour extends AbstractComputerBehaviour {
 

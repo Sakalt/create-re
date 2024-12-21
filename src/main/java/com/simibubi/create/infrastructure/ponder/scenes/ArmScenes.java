@@ -1,18 +1,18 @@
-package com.simibubi.create.infrastructure.ponder.scenes;
+package com.simibubi.create_re.infrastructure.ponder.scenes;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.content.kinetics.crafter.MechanicalCrafterBlockEntity;
-import com.simibubi.create.content.kinetics.mechanicalArm.ArmBlockEntity.Phase;
-import com.simibubi.create.content.logistics.funnel.FunnelBlockEntity;
-import com.simibubi.create.foundation.ponder.ElementLink;
-import com.simibubi.create.foundation.ponder.PonderPalette;
-import com.simibubi.create.foundation.ponder.SceneBuilder;
-import com.simibubi.create.foundation.ponder.SceneBuildingUtil;
-import com.simibubi.create.foundation.ponder.Selection;
-import com.simibubi.create.foundation.ponder.element.InputWindowElement;
-import com.simibubi.create.foundation.ponder.element.WorldSectionElement;
-import com.simibubi.create.foundation.utility.Pointing;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.content.kinetics.crafter.MechanicalCrafterBlockEntity;
+import com.simibubi.create_re.content.kinetics.mechanicalArm.ArmBlockEntity.Phase;
+import com.simibubi.create_re.content.logistics.funnel.FunnelBlockEntity;
+import com.simibubi.create_re.foundation.ponder.ElementLink;
+import com.simibubi.create_re.foundation.ponder.PonderPalette;
+import com.simibubi.create_re.foundation.ponder.SceneBuilder;
+import com.simibubi.create_re.foundation.ponder.SceneBuildingUtil;
+import com.simibubi.create_re.foundation.ponder.Selection;
+import com.simibubi.create_re.foundation.ponder.element.InputWindowElement;
+import com.simibubi.create_re.foundation.ponder.element.WorldSectionElement;
+import com.simibubi.create_re.foundation.utility.Pointing;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -118,7 +118,7 @@ public class ArmScenes {
 		scene.world.showSection(util.select.fromTo(2, 1, 5, 2, 1, 3)
 			.add(util.select.position(2, 0, 5)), Direction.DOWN);
 		ItemStack copper = new ItemStack(Items.COPPER_INGOT);
-		scene.world.createItemOnBeltLike(inputDepot, Direction.SOUTH, copper);
+		scene.world.create_reItemOnBeltLike(inputDepot, Direction.SOUTH, copper);
 		scene.idle(10);
 
 		scene.world.setKineticSpeed(armSel, -48);
@@ -130,7 +130,7 @@ public class ArmScenes {
 		scene.idle(20);
 		scene.world.instructArm(armPos, Phase.MOVE_TO_OUTPUT, copper, 1);
 		scene.idle(24);
-		scene.world.createItemOnBeltLike(outputDepot, Direction.UP, copper);
+		scene.world.create_reItemOnBeltLike(outputDepot, Direction.UP, copper);
 		scene.world.instructArm(armPos, Phase.SEARCH_INPUTS, ItemStack.EMPTY, -1);
 		scene.idle(44);
 
@@ -159,7 +159,7 @@ public class ArmScenes {
 		inputDepot = util.grid.at(1, 3, 4);
 		outputDepot = util.grid.at(1, 1, 0);
 		copper = new ItemStack(Items.COPPER_BLOCK);
-		scene.world.createItemOnBeltLike(inputDepot, Direction.SOUTH, copper);
+		scene.world.create_reItemOnBeltLike(inputDepot, Direction.SOUTH, copper);
 		scene.idle(20);
 		scene.world.instructArm(armPos, Phase.MOVE_TO_INPUT, ItemStack.EMPTY, 2);
 		scene.idle(24);
@@ -168,7 +168,7 @@ public class ArmScenes {
 		scene.idle(20);
 		scene.world.instructArm(armPos, Phase.MOVE_TO_OUTPUT, copper, 0);
 		scene.idle(24);
-		scene.world.createItemOnBeltLike(outputDepot, Direction.UP, copper);
+		scene.world.create_reItemOnBeltLike(outputDepot, Direction.UP, copper);
 		scene.world.instructArm(armPos, Phase.SEARCH_INPUTS, ItemStack.EMPTY, -1);
 
 		scene.world.hideSection(util.select.fromTo(4, 2, 1, 4, 1, 1), Direction.UP);
@@ -223,7 +223,7 @@ public class ArmScenes {
 		inputDepot = util.grid.at(4, 1, 2);
 		scene.overlay
 			.showControls(new InputWindowElement(util.vector.topOf(inputDepot), Pointing.RIGHT).withItem(sword), 30);
-		scene.world.createItemOnBeltLike(inputDepot, Direction.SOUTH, sword);
+		scene.world.create_reItemOnBeltLike(inputDepot, Direction.SOUTH, sword);
 
 		scene.idle(20);
 		scene.world.instructArm(armPos, Phase.MOVE_TO_INPUT, ItemStack.EMPTY, 0);
@@ -270,8 +270,8 @@ public class ArmScenes {
 
 		ItemStack sand = new ItemStack(Items.SAND, 64);
 		ItemStack sulphur = new ItemStack(Items.GUNPOWDER, 64);
-		scene.world.createItemOnBeltLike(util.grid.at(2, 1, 4), Direction.SOUTH, sand);
-		scene.world.createItemOnBeltLike(util.grid.at(1, 1, 4), Direction.SOUTH, sulphur);
+		scene.world.create_reItemOnBeltLike(util.grid.at(2, 1, 4), Direction.SOUTH, sand);
+		scene.world.create_reItemOnBeltLike(util.grid.at(1, 1, 4), Direction.SOUTH, sulphur);
 
 		scene.overlay.showSelectionWithText(util.select.fromTo(2, 1, 4, 1, 1, 4), 60)
 			.text("Inputs")
@@ -419,7 +419,7 @@ public class ArmScenes {
 
 		ItemStack item = new ItemStack(Items.SNOWBALL);
 
-		scene.world.createItemOnBeltLike(depotPos, Direction.SOUTH, item);
+		scene.world.create_reItemOnBeltLike(depotPos, Direction.SOUTH, item);
 		scene.overlay.showText(60)
 			.attachKeyFrame()
 			.text("Whenever an Arm has to choose between multiple valid outputs...")
@@ -519,10 +519,10 @@ public class ArmScenes {
 			}
 
 			scene.world.instructArm(armPos, Phase.MOVE_TO_OUTPUT, item, index);
-			scene.world.createItemOnBeltLike(depotPos, Direction.SOUTH, item);
+			scene.world.create_reItemOnBeltLike(depotPos, Direction.SOUTH, item);
 			scene.idle(12);
 			scene.world.instructArm(armPos, Phase.SEARCH_INPUTS, ItemStack.EMPTY, -1);
-			scene.world.createItemOnBelt(util.grid.at(3 - index, 1, 2), Direction.UP, item);
+			scene.world.create_reItemOnBelt(util.grid.at(3 - index, 1, 2), Direction.UP, item);
 		}
 
 	}
@@ -547,7 +547,7 @@ public class ArmScenes {
 		BlockPos leverPos = util.grid.at(1, 1, 0);
 		ItemStack item = new ItemStack(Items.REDSTONE_ORE);
 
-		scene.world.createItemOnBeltLike(util.grid.at(4, 1, 1), Direction.SOUTH, item);
+		scene.world.create_reItemOnBeltLike(util.grid.at(4, 1, 1), Direction.SOUTH, item);
 
 		for (int i = 0; i < 3; i++) {
 			scene.idle(12);
@@ -602,10 +602,10 @@ public class ArmScenes {
 			}
 
 			scene.world.instructArm(armPos, Phase.MOVE_TO_OUTPUT, item, 0);
-			scene.world.createItemOnBeltLike(util.grid.at(4, 1, 1), Direction.SOUTH, item);
+			scene.world.create_reItemOnBeltLike(util.grid.at(4, 1, 1), Direction.SOUTH, item);
 			scene.idle(18);
 			scene.world.instructArm(armPos, Phase.SEARCH_INPUTS, ItemStack.EMPTY, -1);
-			scene.world.createItemOnBelt(util.grid.at(3, 1, 3), Direction.UP, item);
+			scene.world.create_reItemOnBelt(util.grid.at(3, 1, 3), Direction.UP, item);
 		}
 
 		scene.idle(5);

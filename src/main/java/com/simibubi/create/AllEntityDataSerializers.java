@@ -1,6 +1,6 @@
-package com.simibubi.create;
+package com.simibubi.create_re;
 
-import com.simibubi.create.content.trains.entity.CarriageSyncDataSerializer;
+import com.simibubi.create_re.content.trains.entity.CarriageSyncDataSerializer;
 
 import net.minecraft.network.syncher.EntityDataSerializer;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -10,7 +10,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 
 public class AllEntityDataSerializers {
-	private static final DeferredRegister<EntityDataSerializer<?>> REGISTER = DeferredRegister.create(ForgeRegistries.Keys.ENTITY_DATA_SERIALIZERS, Create.ID);
+	private static final DeferredRegister<EntityDataSerializer<?>> REGISTER = DeferredRegister.create_re(ForgeRegistries.Keys.ENTITY_DATA_SERIALIZERS, Create.ID);
 
 	public static final CarriageSyncDataSerializer CARRIAGE_DATA = new CarriageSyncDataSerializer();
 

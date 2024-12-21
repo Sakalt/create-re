@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.ponder.element;
+package com.simibubi.create_re.foundation.ponder.element;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,19 +9,19 @@ import java.util.function.Consumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.SheetedDecalTextureGenerator;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.foundation.outliner.AABBOutline;
-import com.simibubi.create.foundation.ponder.PonderScene;
-import com.simibubi.create.foundation.ponder.PonderWorld;
-import com.simibubi.create.foundation.ponder.Selection;
-import com.simibubi.create.foundation.render.BlockEntityRenderHelper;
-import com.simibubi.create.foundation.render.ShadedBlockSbbBuilder;
-import com.simibubi.create.foundation.render.SuperByteBuffer;
-import com.simibubi.create.foundation.render.SuperByteBufferCache;
-import com.simibubi.create.foundation.render.SuperRenderTypeBuffer;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.Pair;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.foundation.outliner.AABBOutline;
+import com.simibubi.create_re.foundation.ponder.PonderScene;
+import com.simibubi.create_re.foundation.ponder.PonderWorld;
+import com.simibubi.create_re.foundation.ponder.Selection;
+import com.simibubi.create_re.foundation.render.BlockEntityRenderHelper;
+import com.simibubi.create_re.foundation.render.ShadedBlockSbbBuilder;
+import com.simibubi.create_re.foundation.render.SuperByteBuffer;
+import com.simibubi.create_re.foundation.render.SuperByteBufferCache;
+import com.simibubi.create_re.foundation.render.SuperRenderTypeBuffer;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.Pair;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import dev.engine_room.flywheel.lib.model.ModelUtil;
 import dev.engine_room.flywheel.lib.transform.TransformStack;
@@ -453,7 +453,7 @@ public class WorldSectionElement extends AnimatedSceneElement {
 
 	private static class ThreadLocalObjects {
 		public final PoseStack poseStack = new PoseStack();
-		public final RandomSource random = RandomSource.createNewThreadLocalInstance();
+		public final RandomSource random = RandomSource.create_reNewThreadLocalInstance();
 		public final ShadedBlockSbbBuilder sbbBuilder = new ShadedBlockSbbBuilder();
 	}
 

@@ -1,10 +1,10 @@
-package com.simibubi.create.compat.jei.category.animations;
+package com.simibubi.create_re.compat.jei.category.animations;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.util.Mth;

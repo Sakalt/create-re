@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:cogwheel"
+          "name": "create_re:cogwheel"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/brass_encased_cogwheel"
+  "random_sequence": "create_re:blocks/brass_encased_cogwheel"
 }

@@ -1,18 +1,18 @@
-package com.simibubi.create.content.redstone.displayLink.source;
+package com.simibubi.create_re.content.redstone.displayLink.source;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-import com.simibubi.create.content.fluids.tank.BoilerData;
-import com.simibubi.create.content.fluids.tank.FluidTankBlockEntity;
-import com.simibubi.create.content.redstone.displayLink.DisplayLinkContext;
-import com.simibubi.create.content.redstone.displayLink.target.DisplayTargetStats;
-import com.simibubi.create.content.trains.display.FlapDisplayBlockEntity;
-import com.simibubi.create.content.trains.display.FlapDisplayLayout;
-import com.simibubi.create.content.trains.display.FlapDisplaySection;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.content.fluids.tank.BoilerData;
+import com.simibubi.create_re.content.fluids.tank.FluidTankBlockEntity;
+import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkContext;
+import com.simibubi.create_re.content.redstone.displayLink.target.DisplayTargetStats;
+import com.simibubi.create_re.content.trains.display.FlapDisplayBlockEntity;
+import com.simibubi.create_re.content.trains.display.FlapDisplayLayout;
+import com.simibubi.create_re.content.trains.display.FlapDisplaySection;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import joptsimple.internal.Strings;
 import net.minecraft.ChatFormatting;

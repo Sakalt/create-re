@@ -6,10 +6,10 @@
       "tag": "forge:dyes/magenta"
     },
     {
-      "tag": "create:seats"
+      "tag": "create_re:seats"
     }
   ],
   "result": {
-    "item": "create:magenta_seat"
+    "item": "create_re:magenta_seat"
   }
 }

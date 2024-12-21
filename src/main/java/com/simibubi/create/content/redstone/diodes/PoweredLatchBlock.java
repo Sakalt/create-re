@@ -1,4 +1,4 @@
-package com.simibubi.create.content.redstone.diodes;
+package com.simibubi.create_re.content.redstone.diodes;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -19,7 +19,7 @@ import net.minecraft.world.ticks.TickPriority;
 
 public class PoweredLatchBlock extends ToggleLatchBlock {
 
-	public static BooleanProperty POWERED_SIDE = BooleanProperty.create("powered_side");
+	public static BooleanProperty POWERED_SIDE = BooleanProperty.create_re("powered_side");
 
 	public PoweredLatchBlock(Properties properties) {
 		super(properties);
@@ -27,8 +27,8 @@ public class PoweredLatchBlock extends ToggleLatchBlock {
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
-		super.createBlockStateDefinition(builder.add(POWERED_SIDE));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
+		super.create_reBlockStateDefinition(builder.add(POWERED_SIDE));
 	}
 
 	@Override

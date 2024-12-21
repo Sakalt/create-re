@@ -6,10 +6,10 @@
       "tag": "minecraft:wooden_trapdoors"
     },
     {
-      "item": "create:framed_glass"
+      "item": "create_re:framed_glass"
     }
   ],
   "result": {
-    "item": "create:framed_glass_trapdoor"
+    "item": "create_re:framed_glass_trapdoor"
   }
 }

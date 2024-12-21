@@ -1,6 +1,6 @@
-package com.simibubi.create.content.redstone.diodes;
+package com.simibubi.create_re.content.redstone.diodes;
 
-import com.simibubi.create.AllItems;
+import com.simibubi.create_re.AllItems;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -21,7 +21,7 @@ import net.minecraft.world.phys.BlockHitResult;
 
 public class ToggleLatchBlock extends AbstractDiodeBlock {
 
-	public static BooleanProperty POWERING = BooleanProperty.create("powering");
+	public static BooleanProperty POWERING = BooleanProperty.create_re("powering");
 
 	public ToggleLatchBlock(Properties properties) {
 		super(properties);
@@ -30,7 +30,7 @@ public class ToggleLatchBlock extends AbstractDiodeBlock {
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
 		builder.add(POWERED, POWERING, FACING);
 	}
 

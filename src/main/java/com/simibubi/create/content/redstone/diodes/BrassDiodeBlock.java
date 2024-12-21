@@ -1,9 +1,9 @@
-package com.simibubi.create.content.redstone.diodes;
+package com.simibubi.create_re.content.redstone.diodes;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.foundation.block.IBE;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.foundation.block.IBE;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -23,8 +23,8 @@ import net.minecraft.world.phys.BlockHitResult;
 
 public class BrassDiodeBlock extends AbstractDiodeBlock implements IBE<BrassDiodeBlockEntity> {
 
-	public static final BooleanProperty POWERING = BooleanProperty.create("powering");
-	public static final BooleanProperty INVERTED = BooleanProperty.create("inverted");
+	public static final BooleanProperty POWERING = BooleanProperty.create_re("powering");
+	public static final BooleanProperty INVERTED = BooleanProperty.create_re("inverted");
 
 	public BrassDiodeBlock(Properties properties) {
 		super(properties);
@@ -56,9 +56,9 @@ public class BrassDiodeBlock extends AbstractDiodeBlock implements IBE<BrassDiod
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
 		builder.add(POWERED, POWERING, FACING, INVERTED);
-		super.createBlockStateDefinition(builder);
+		super.create_reBlockStateDefinition(builder);
 	}
 
 	@Override

@@ -1,11 +1,11 @@
-package com.simibubi.create.content.trains.schedule.destination;
+package com.simibubi.create_re.content.trains.schedule.destination;
 
 import java.util.function.Supplier;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.content.trains.schedule.Schedule;
-import com.simibubi.create.content.trains.schedule.ScheduleDataEntry;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.trains.schedule.Schedule;
+import com.simibubi.create_re.content.trains.schedule.ScheduleDataEntry;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;

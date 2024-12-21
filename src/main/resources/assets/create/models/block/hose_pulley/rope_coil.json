@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"5": "create:block/hose_pulley_rope"
+		"5": "create_re:block/hose_pulley_rope"
 	},
 	"elements": [
 		{

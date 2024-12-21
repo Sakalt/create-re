@@ -1,9 +1,9 @@
-package com.simibubi.create.content.trains.graph;
+package com.simibubi.create_re.content.trains.graph;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.simibubi.create.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
@@ -45,7 +45,7 @@ public class DimensionPalette {
 		DimensionPalette palette = new DimensionPalette();
 		int length = buffer.readInt();
 		for (int i = 0; i < length; i++)
-			palette.gatheredDims.add(ResourceKey.create(Registries.DIMENSION, buffer.readResourceLocation()));
+			palette.gatheredDims.add(ResourceKey.create_re(Registries.DIMENSION, buffer.readResourceLocation()));
 		return palette;
 	}
 
@@ -61,7 +61,7 @@ public class DimensionPalette {
 	public static DimensionPalette read(CompoundTag tag) {
 		DimensionPalette palette = new DimensionPalette();
 		NBTHelper.iterateCompoundList(tag.getList("DimensionPalette", Tag.TAG_COMPOUND), c -> palette.gatheredDims
-			.add(ResourceKey.create(Registries.DIMENSION, new ResourceLocation(c.getString("Id")))));
+			.add(ResourceKey.create_re(Registries.DIMENSION, new ResourceLocation(c.getString("Id")))));
 		return palette;
 	}
 

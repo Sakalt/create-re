@@ -1,26 +1,26 @@
-package com.simibubi.create.content.decoration.girder;
+package com.simibubi.create_re.content.decoration.girder;
 
 import static net.minecraft.world.level.block.FaceAttachedHorizontalDirectionalBlock.FACE;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.WATERLOGGED;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.AllTags;
-import com.simibubi.create.content.decoration.bracket.BracketBlock;
-import com.simibubi.create.content.decoration.bracket.BracketedBlockEntityBehaviour;
-import com.simibubi.create.content.decoration.placard.PlacardBlock;
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.logistics.chute.AbstractChuteBlock;
-import com.simibubi.create.content.redstone.nixieTube.NixieTubeBlock;
-import com.simibubi.create.content.trains.display.FlapDisplayBlock;
-import com.simibubi.create.content.trains.track.TrackBlock;
-import com.simibubi.create.content.trains.track.TrackShape;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.placement.IPlacementHelper;
-import com.simibubi.create.foundation.placement.PlacementHelpers;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.AllTags;
+import com.simibubi.create_re.content.decoration.bracket.BracketBlock;
+import com.simibubi.create_re.content.decoration.bracket.BracketedBlockEntityBehaviour;
+import com.simibubi.create_re.content.decoration.placard.PlacardBlock;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.logistics.chute.AbstractChuteBlock;
+import com.simibubi.create_re.content.redstone.nixieTube.NixieTubeBlock;
+import com.simibubi.create_re.content.trains.display.FlapDisplayBlock;
+import com.simibubi.create_re.content.trains.track.TrackBlock;
+import com.simibubi.create_re.content.trains.track.TrackShape;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.placement.IPlacementHelper;
+import com.simibubi.create_re.foundation.placement.PlacementHelpers;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -68,10 +68,10 @@ public class GirderBlock extends Block implements SimpleWaterloggedBlock, IWrenc
 
 	private static final int placementHelperId = PlacementHelpers.register(new GirderPlacementHelper());
 
-	public static final BooleanProperty X = BooleanProperty.create("x");
-	public static final BooleanProperty Z = BooleanProperty.create("z");
-	public static final BooleanProperty TOP = BooleanProperty.create("top");
-	public static final BooleanProperty BOTTOM = BooleanProperty.create("bottom");
+	public static final BooleanProperty X = BooleanProperty.create_re("x");
+	public static final BooleanProperty Z = BooleanProperty.create_re("z");
+	public static final BooleanProperty TOP = BooleanProperty.create_re("top");
+	public static final BooleanProperty BOTTOM = BooleanProperty.create_re("bottom");
 	public static final EnumProperty<Axis> AXIS = BlockStateProperties.AXIS;
 
 	public GirderBlock(Properties p_49795_) {
@@ -85,8 +85,8 @@ public class GirderBlock extends Block implements SimpleWaterloggedBlock, IWrenc
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
-		super.createBlockStateDefinition(pBuilder.add(X, Z, TOP, BOTTOM, AXIS, WATERLOGGED));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
+		super.create_reBlockStateDefinition(pBuilder.add(X, Z, TOP, BOTTOM, AXIS, WATERLOGGED));
 	}
 
 	@Override

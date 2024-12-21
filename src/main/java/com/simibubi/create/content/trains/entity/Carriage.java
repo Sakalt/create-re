@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.entity;
+package com.simibubi.create_re.content.trains.entity;
 
 import java.lang.ref.WeakReference;
 import java.util.HashMap;
@@ -18,19 +18,19 @@ import javax.annotation.Nullable;
 
 import org.apache.commons.lang3.mutable.MutableDouble;
 
-import com.simibubi.create.content.contraptions.Contraption;
-import com.simibubi.create.content.contraptions.minecart.TrainCargoManager;
-import com.simibubi.create.content.trains.entity.TravellingPoint.IEdgePointListener;
-import com.simibubi.create.content.trains.entity.TravellingPoint.ITrackSelector;
-import com.simibubi.create.content.trains.graph.DimensionPalette;
-import com.simibubi.create.content.trains.graph.TrackGraph;
-import com.simibubi.create.content.trains.graph.TrackNodeLocation;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.Pair;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.content.contraptions.Contraption;
+import com.simibubi.create_re.content.contraptions.minecart.TrainCargoManager;
+import com.simibubi.create_re.content.trains.entity.TravellingPoint.IEdgePointListener;
+import com.simibubi.create_re.content.trains.entity.TravellingPoint.ITrackSelector;
+import com.simibubi.create_re.content.trains.graph.DimensionPalette;
+import com.simibubi.create_re.content.trains.graph.TrackGraph;
+import com.simibubi.create_re.content.trains.graph.TrackNodeLocation;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.Pair;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
@@ -72,10 +72,10 @@ public class Carriage {
 
 	public Carriage(CarriageBogey bogey1, @Nullable CarriageBogey bogey2, int bogeySpacing) {
 		this.bogeySpacing = bogeySpacing;
-		this.bogeys = Couple.create(bogey1, bogey2);
+		this.bogeys = Couple.create_re(bogey1, bogey2);
 		this.id = netIdGenerator.incrementAndGet();
 		this.serialisedEntity = new CompoundTag();
-		this.presentConductors = Couple.create(false, false);
+		this.presentConductors = Couple.create_re(false, false);
 		this.serialisedPassengers = new HashMap<>();
 		this.entities = new HashMap<>();
 		this.storage = new TrainCargoManager();
@@ -101,7 +101,7 @@ public class Carriage {
 
 	public void setContraption(Level level, CarriageContraption contraption) {
 		this.storage = null;
-		CarriageContraptionEntity entity = CarriageContraptionEntity.create(level, contraption);
+		CarriageContraptionEntity entity = CarriageContraptionEntity.create_re(level, contraption);
 		entity.setCarriage(this);
 		contraption.startMoving(level);
 		contraption.onEntityInitialize(level, entity);
@@ -272,7 +272,7 @@ public class Carriage {
 					iterator.remove();
 				else if (dimensionalCarriageEntity.positionAnchor != null && CarriageEntityHandler
 					.isActiveChunk(currentLevel, BlockPos.containing(dimensionalCarriageEntity.positionAnchor)))
-					dimensionalCarriageEntity.createEntity(currentLevel, anyAvailableEntity() == null);
+					dimensionalCarriageEntity.create_reEntity(currentLevel, anyAvailableEntity() == null);
 
 			} else {
 				if (discard) {
@@ -498,7 +498,7 @@ public class Carriage {
 		Carriage carriage = new Carriage(bogey1, bogey2, tag.getInt("Spacing"));
 
 		carriage.stalled = tag.getBoolean("Stalled");
-		carriage.presentConductors = Couple.create(tag.getBoolean("FrontConductor"), tag.getBoolean("BackConductor"));
+		carriage.presentConductors = Couple.create_re(tag.getBoolean("FrontConductor"), tag.getBoolean("BackConductor"));
 		carriage.serialisedEntity = tag.getCompound("Entity")
 			.copy();
 
@@ -532,7 +532,7 @@ public class Carriage {
 
 		public DimensionalCarriageEntity() {
 			this.entity = new WeakReference<>(null);
-			this.rotationAnchors = Couple.create(null, null);
+			this.rotationAnchors = Couple.create_re(null, null);
 			this.pointsInitialised = false;
 		}
 
@@ -798,10 +798,10 @@ public class Carriage {
 			entity.updateRenderedPortalCutoff();
 		}
 
-		private void createEntity(Level level, boolean loadPassengers) {
+		private void create_reEntity(Level level, boolean loadPassengers) {
 			if (positionAnchor != null)
 				serialisedEntity.put("Pos", VecHelper.writeNBT(positionAnchor));
-			Entity entity = EntityType.create(serialisedEntity, level)
+			Entity entity = EntityType.create_re(serialisedEntity, level)
 				.orElse(null);
 
 			if (!(entity instanceof CarriageContraptionEntity cce)) {

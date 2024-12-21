@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:mechanical_roller"
+          "name": "create_re:mechanical_roller"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/mechanical_roller"
+  "random_sequence": "create_re:blocks/mechanical_roller"
 }

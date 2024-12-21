@@ -1,4 +1,4 @@
-package com.simibubi.create.content.equipment.clipboard;
+package com.simibubi.create_re.content.equipment.clipboard;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,7 +6,7 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.AllSoundEvents;
+import com.simibubi.create_re.AllSoundEvents;
 
 import net.minecraft.client.Minecraft;
 
@@ -23,15 +23,15 @@ import com.mojang.blaze3d.vertex.BufferBuilder;
 import com.mojang.blaze3d.vertex.DefaultVertexFormat;
 import com.mojang.blaze3d.vertex.Tesselator;
 import com.mojang.blaze3d.vertex.VertexFormat;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.content.equipment.clipboard.ClipboardOverrides.ClipboardType;
-import com.simibubi.create.foundation.gui.AbstractSimiScreen;
-import com.simibubi.create.foundation.gui.AllGuiTextures;
-import com.simibubi.create.foundation.gui.AllIcons;
-import com.simibubi.create.foundation.gui.widget.IconButton;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.content.equipment.clipboard.ClipboardOverrides.ClipboardType;
+import com.simibubi.create_re.foundation.gui.AbstractSimiScreen;
+import com.simibubi.create_re.foundation.gui.AllGuiTextures;
+import com.simibubi.create_re.foundation.gui.AllIcons;
+import com.simibubi.create_re.foundation.gui.widget.IconButton;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import it.unimi.dsi.fastutil.ints.IntArrayList;
 import it.unimi.dsi.fastutil.ints.IntList;
@@ -718,19 +718,19 @@ public class ClipboardScreen extends AbstractSimiScreen {
 			if (j1 == k1) {
 				int l1 = j1 * 9;
 				int i2 = aint[j1];
-				list1.add(createPartialLineSelection(s, stringsplitter, l2, i1, l1, i2));
+				list1.add(create_rePartialLineSelection(s, stringsplitter, l2, i1, l1, i2));
 			} else {
 				int i3 = j1 + 1 > aint.length ? s.length() : aint[j1 + 1];
-				list1.add(createPartialLineSelection(s, stringsplitter, l2, i3, j1 * 9, aint[j1]));
+				list1.add(create_rePartialLineSelection(s, stringsplitter, l2, i3, j1 * 9, aint[j1]));
 
 				for (int j3 = j1 + 1; j3 < k1; ++j3) {
 					int j2 = j3 * 9;
 					String s1 = s.substring(aint[j3], aint[j3 + 1]);
 					int k2 = (int) stringsplitter.stringWidth(s1);
-					list1.add(createSelection(new Pos2i(0, j2), new Pos2i(k2, j2 + 9)));
+					list1.add(create_reSelection(new Pos2i(0, j2), new Pos2i(k2, j2 + 9)));
 				}
 
-				list1.add(createPartialLineSelection(s, stringsplitter, aint[k1], i1, k1 * 9, aint[k1]));
+				list1.add(create_rePartialLineSelection(s, stringsplitter, aint[k1], i1, k1 * 9, aint[k1]));
 			}
 		}
 
@@ -742,16 +742,16 @@ public class ClipboardScreen extends AbstractSimiScreen {
 		return i < 0 ? -(i + 2) : i;
 	}
 
-	private Rect2i createPartialLineSelection(String pInput, StringSplitter pSplitter, int p_98122_, int p_98123_,
+	private Rect2i create_rePartialLineSelection(String pInput, StringSplitter pSplitter, int p_98122_, int p_98123_,
 		int p_98124_, int p_98125_) {
 		String s = pInput.substring(p_98125_, p_98122_);
 		String s1 = pInput.substring(p_98125_, p_98123_);
 		Pos2i firstPos = new Pos2i((int) pSplitter.stringWidth(s), p_98124_);
 		Pos2i secondPos = new Pos2i((int) pSplitter.stringWidth(s1), p_98124_ + 9);
-		return createSelection(firstPos, secondPos);
+		return create_reSelection(firstPos, secondPos);
 	}
 
-	private Rect2i createSelection(Pos2i pCorner1, Pos2i pCorner2) {
+	private Rect2i create_reSelection(Pos2i pCorner1, Pos2i pCorner2) {
 		Pos2i firstPos = convertLocalToScreen(pCorner1);
 		Pos2i secondPos = convertLocalToScreen(pCorner2);
 		int i = Math.min(firstPos.x, secondPos.x);

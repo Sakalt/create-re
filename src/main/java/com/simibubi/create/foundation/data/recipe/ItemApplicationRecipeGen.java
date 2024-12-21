@@ -1,9 +1,9 @@
-package com.simibubi.create.foundation.data.recipe;
+package com.simibubi.create_re.foundation.data.recipe;
 
 import java.util.function.Supplier;
 
-import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.AllTags.AllItemTags;
+import com.simibubi.create_re.AllRecipeTypes;
+import com.simibubi.create_re.AllTags.AllItemTags;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.TagKey;
@@ -16,7 +16,7 @@ public class ItemApplicationRecipeGen extends ProcessingRecipeGen {
 	GeneratedRecipe ANDESITE = woodCasing("andesite", I::andesiteAlloy, I::andesiteCasing);
 	GeneratedRecipe COPPER = woodCasingTag("copper", I::copper, I::copperCasing);
 	GeneratedRecipe BRASS = woodCasingTag("brass", I::brass, I::brassCasing);
-	GeneratedRecipe RAILWAY = create("railway_casing", b -> b.require(I.brassCasing())
+	GeneratedRecipe RAILWAY = create_re("railway_casing", b -> b.require(I.brassCasing())
 		.require(I.sturdySheet())
 		.output(I.railwayCasing()));
 
@@ -30,10 +30,10 @@ public class ItemApplicationRecipeGen extends ProcessingRecipeGen {
 
 	protected GeneratedRecipe woodCasingIngredient(String type, Supplier<Ingredient> ingredient,
 		Supplier<ItemLike> output) {
-		create(type + "_casing_from_log", b -> b.require(AllItemTags.STRIPPED_LOGS.tag)
+		create_re(type + "_casing_from_log", b -> b.require(AllItemTags.STRIPPED_LOGS.tag)
 			.require(ingredient.get())
 			.output(output.get()));
-		return create(type + "_casing_from_wood", b -> b.require(AllItemTags.STRIPPED_WOOD.tag)
+		return create_re(type + "_casing_from_wood", b -> b.require(AllItemTags.STRIPPED_WOOD.tag)
 			.require(ingredient.get())
 			.output(output.get()));
 	}

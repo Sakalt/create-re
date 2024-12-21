@@ -1,25 +1,25 @@
 {
-  "parent": "create:sturdy_sheet",
+  "parent": "create_re:sturdy_sheet",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:train_casing_00_builtin"
+      "trigger": "create_re:train_casing_00_builtin"
     }
   },
   "display": {
     "announce_to_chat": true,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.train_casing_00.desc"
+      "translate": "advancement.create_re.train_casing_00.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:railway_casing"
+      "item": "create_re:railway_casing"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.train_casing_00"
+      "translate": "advancement.create_re.train_casing_00"
     }
   },
   "requirements": [

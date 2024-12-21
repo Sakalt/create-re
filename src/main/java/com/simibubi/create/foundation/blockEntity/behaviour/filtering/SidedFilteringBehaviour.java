@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.blockEntity.behaviour.filtering;
+package com.simibubi.create_re.foundation.blockEntity.behaviour.filtering;
 
 import java.util.HashSet;
 import java.util.IdentityHashMap;
@@ -7,12 +7,12 @@ import java.util.Set;
 import java.util.function.BiFunction;
 import java.util.function.Predicate;
 
-import com.simibubi.create.content.schematics.requirement.ItemRequirement;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.ValueBoxTransform;
-import com.simibubi.create.foundation.blockEntity.behaviour.ValueBoxTransform.Sided;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.NBTHelper;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBoxTransform;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBoxTransform.Sided;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;

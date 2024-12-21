@@ -1,4 +1,4 @@
-package com.simibubi.create.content.equipment.bell;
+package com.simibubi.create_re.content.equipment.bell;
 
 import org.joml.Quaternionf;
 import org.joml.Vector3f;

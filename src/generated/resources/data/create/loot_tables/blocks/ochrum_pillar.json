@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:ochrum_pillar"
+          "name": "create_re:ochrum_pillar"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/ochrum_pillar"
+  "random_sequence": "create_re:blocks/ochrum_pillar"
 }

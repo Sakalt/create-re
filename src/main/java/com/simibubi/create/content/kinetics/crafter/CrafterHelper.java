@@ -1,6 +1,6 @@
-package com.simibubi.create.content.kinetics.crafter;
+package com.simibubi.create_re.content.kinetics.crafter;
 
-import com.simibubi.create.content.kinetics.crafter.ConnectedInputHandler.ConnectedInput;
+import com.simibubi.create_re.content.kinetics.crafter.ConnectedInputHandler.ConnectedInput;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockAndTintGetter;

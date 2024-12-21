@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:scorchia"
+          "name": "create_re:scorchia"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/scorchia"
+  "random_sequence": "create_re:blocks/scorchia"
 }

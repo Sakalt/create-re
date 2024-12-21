@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.signal;
+package com.simibubi.create_re.content.trains.signal;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -7,17 +7,17 @@ import java.util.Map.Entry;
 import java.util.UUID;
 
 import com.google.common.base.Objects;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.trains.graph.DimensionPalette;
-import com.simibubi.create.content.trains.graph.EdgePointType;
-import com.simibubi.create.content.trains.graph.TrackGraph;
-import com.simibubi.create.content.trains.graph.TrackNode;
-import com.simibubi.create.content.trains.signal.SignalBlock.SignalType;
-import com.simibubi.create.content.trains.signal.SignalBlockEntity.OverlayState;
-import com.simibubi.create.content.trains.signal.SignalBlockEntity.SignalState;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.NBTHelper;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.trains.graph.DimensionPalette;
+import com.simibubi.create_re.content.trains.graph.EdgePointType;
+import com.simibubi.create_re.content.trains.graph.TrackGraph;
+import com.simibubi.create_re.content.trains.graph.TrackNode;
+import com.simibubi.create_re.content.trains.signal.SignalBlock.SignalType;
+import com.simibubi.create_re.content.trains.signal.SignalBlockEntity.OverlayState;
+import com.simibubi.create_re.content.trains.signal.SignalBlockEntity.SignalState;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
@@ -38,12 +38,12 @@ public class SignalBoundary extends TrackEdgePoint {
 	private Couple<Map<UUID, Boolean>> chainedSignals;
 
 	public SignalBoundary() {
-		blockEntities = Couple.create(HashMap::new);
-		chainedSignals = Couple.create(null, null);
-		groups = Couple.create(null, null);
-		sidesToUpdate = Couple.create(true, true);
-		types = Couple.create(() -> SignalType.ENTRY_SIGNAL);
-		cachedStates = Couple.create(() -> SignalState.INVALID);
+		blockEntities = Couple.create_re(HashMap::new);
+		chainedSignals = Couple.create_re(null, null);
+		groups = Couple.create_re(null, null);
+		sidesToUpdate = Couple.create_re(true, true);
+		types = Couple.create_re(() -> SignalType.ENTRY_SIGNAL);
+		cachedStates = Couple.create_re(() -> SignalState.INVALID);
 	}
 
 	public void setGroup(boolean primary, UUID groupId) {
@@ -265,8 +265,8 @@ public class SignalBoundary extends TrackEdgePoint {
 		if (migration)
 			return;
 
-		blockEntities = Couple.create(HashMap::new);
-		groups = Couple.create(null, null);
+		blockEntities = Couple.create_re(HashMap::new);
+		groups = Couple.create_re(null, null);
 
 		for (int i = 1; i <= 2; i++)
 			if (nbt.contains("Tiles" + i)) {

@@ -1,22 +1,22 @@
-package com.simibubi.create.content.redstone.smartObserver;
+package com.simibubi.create_re.content.redstone.smartObserver;
 
 import java.util.List;
 
-import com.simibubi.create.content.fluids.FluidTransportBehaviour;
-import com.simibubi.create.content.fluids.PipeConnection.Flow;
-import com.simibubi.create.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour;
-import com.simibubi.create.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour.TransportedResult;
-import com.simibubi.create.content.redstone.DirectedDirectionalBlock;
-import com.simibubi.create.content.redstone.FilteredDetectorFilterSlot;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.inventory.CapManipulationBehaviourBase.InterfaceProvider;
-import com.simibubi.create.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.inventory.TankManipulationBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.inventory.VersionedInventoryTrackerBehaviour;
-import com.simibubi.create.foundation.utility.BlockFace;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.content.fluids.FluidTransportBehaviour;
+import com.simibubi.create_re.content.fluids.PipeConnection.Flow;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour.TransportedResult;
+import com.simibubi.create_re.content.redstone.DirectedDirectionalBlock;
+import com.simibubi.create_re.content.redstone.FilteredDetectorFilterSlot;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.inventory.CapManipulationBehaviourBase.InterfaceProvider;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.inventory.TankManipulationBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.inventory.VersionedInventoryTrackerBehaviour;
+import com.simibubi.create_re.foundation.utility.BlockFace;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

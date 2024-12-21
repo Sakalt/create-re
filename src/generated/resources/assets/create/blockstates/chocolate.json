@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/chocolate"
+      "model": "create_re:block/chocolate"
     }
   }
 }

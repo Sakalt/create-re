@@ -1,12 +1,12 @@
-package com.simibubi.create.content.kinetics.base;
+package com.simibubi.create_re.content.kinetics.base;
 
-import com.simibubi.create.content.contraptions.AbstractContraptionEntity;
-import com.simibubi.create.content.contraptions.OrientedContraptionEntity;
-import com.simibubi.create.content.contraptions.behaviour.MovementBehaviour;
-import com.simibubi.create.content.contraptions.behaviour.MovementContext;
-import com.simibubi.create.content.contraptions.mounted.MountedContraption;
-import com.simibubi.create.content.trains.entity.CarriageContraption;
-import com.simibubi.create.foundation.utility.BlockHelper;
+import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity;
+import com.simibubi.create_re.content.contraptions.OrientedContraptionEntity;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementBehaviour;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
+import com.simibubi.create_re.content.contraptions.mounted.MountedContraption;
+import com.simibubi.create_re.content.trains.entity.CarriageContraption;
+import com.simibubi.create_re.foundation.utility.BlockHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

@@ -1,5 +1,5 @@
 {
-  "type": "create:splashing",
+  "type": "create_re:splashing",
   "ingredients": [
     {
       "item": "minecraft:purple_concrete_powder"

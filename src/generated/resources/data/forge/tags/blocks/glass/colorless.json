@@ -1,8 +1,8 @@
 {
   "values": [
-    "create:tiled_glass",
-    "create:framed_glass",
-    "create:horizontal_framed_glass",
-    "create:vertical_framed_glass"
+    "create_re:tiled_glass",
+    "create_re:framed_glass",
+    "create_re:horizontal_framed_glass",
+    "create_re:vertical_framed_glass"
   ]
 }

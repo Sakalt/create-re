@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "X": {
-      "item": "create:small_veridium_bricks"
+      "item": "create_re:small_veridium_bricks"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 6,
-    "item": "create:small_veridium_brick_wall"
+    "item": "create_re:small_veridium_brick_wall"
   },
   "show_notification": true
 }

@@ -1,7 +1,7 @@
-package com.simibubi.create.content.schematics.cannon;
+package com.simibubi.create_re.content.schematics.cannon;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;

@@ -1,14 +1,14 @@
-package com.simibubi.create.infrastructure.ponder.scenes.fluid;
+package com.simibubi.create_re.infrastructure.ponder.scenes.fluid;
 
-import com.simibubi.create.content.fluids.drain.ItemDrainBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.fluid.SmartFluidTankBehaviour;
-import com.simibubi.create.foundation.ponder.ElementLink;
-import com.simibubi.create.foundation.ponder.SceneBuilder;
-import com.simibubi.create.foundation.ponder.SceneBuildingUtil;
-import com.simibubi.create.foundation.ponder.Selection;
-import com.simibubi.create.foundation.ponder.element.InputWindowElement;
-import com.simibubi.create.foundation.ponder.element.WorldSectionElement;
-import com.simibubi.create.foundation.utility.Pointing;
+import com.simibubi.create_re.content.fluids.drain.ItemDrainBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.fluid.SmartFluidTankBehaviour;
+import com.simibubi.create_re.foundation.ponder.ElementLink;
+import com.simibubi.create_re.foundation.ponder.SceneBuilder;
+import com.simibubi.create_re.foundation.ponder.SceneBuildingUtil;
+import com.simibubi.create_re.foundation.ponder.Selection;
+import com.simibubi.create_re.foundation.ponder.element.InputWindowElement;
+import com.simibubi.create_re.foundation.ponder.element.WorldSectionElement;
+import com.simibubi.create_re.foundation.utility.Pointing;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -91,7 +91,7 @@ public class DrainScenes {
 		scene.overlay
 			.showControls(new InputWindowElement(util.vector.topOf(beltPos), Pointing.DOWN).withItem(lavaBucket), 20);
 		scene.idle(7);
-		scene.world.createItemOnBelt(beltPos, Direction.NORTH, lavaBucket);
+		scene.world.create_reItemOnBelt(beltPos, Direction.NORTH, lavaBucket);
 		scene.idle(30);
 
 		scene.overlay.showText(60)
@@ -116,7 +116,7 @@ public class DrainScenes {
 		scene.idle(50);
 
 		for (int i = 0; i < 5; i++) {
-			scene.world.createItemOnBelt(beltPos, Direction.NORTH, lavaBucket);
+			scene.world.create_reItemOnBelt(beltPos, Direction.NORTH, lavaBucket);
 			scene.idle(30);
 		}
 

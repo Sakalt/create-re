@@ -1,11 +1,11 @@
-package com.simibubi.create.foundation.mixin.client;
+package com.simibubi.create_re.foundation.mixin.client;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import com.simibubi.create.content.schematics.SchematicWorld;
+import com.simibubi.create_re.content.schematics.SchematicWorld;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.level.Level;
@@ -24,7 +24,7 @@ public class ModelDataRefreshMixin {
 	 * worlds, so in those cases just do nothing instead.
 	 */
 	@Inject(method = "requestModelDataRefresh", at = @At("HEAD"), cancellable = true, remap = false)
-	private static void create$requestModelDataRefresh(BlockEntity be, CallbackInfo ci) {
+	private static void create_re$requestModelDataRefresh(BlockEntity be, CallbackInfo ci) {
 		if (be != null) {
 			Level world = be.getLevel();
 			if (world != Minecraft.getInstance().level && world instanceof SchematicWorld)

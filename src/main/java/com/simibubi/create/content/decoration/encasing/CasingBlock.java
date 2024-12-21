@@ -1,6 +1,6 @@
-package com.simibubi.create.content.decoration.encasing;
+package com.simibubi.create_re.content.decoration.encasing;
 
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
 
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.context.UseOnContext;

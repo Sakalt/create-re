@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.model;
+package com.simibubi.create_re.foundation.model;
 
 import java.util.Arrays;
 

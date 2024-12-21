@@ -1,4 +1,4 @@
-package com.simibubi.create.content.fluids;
+package com.simibubi.create_re.content.fluids;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -8,14 +8,14 @@ import java.util.function.Predicate;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.fluids.pipes.EncasedPipeBlock;
-import com.simibubi.create.content.fluids.pump.PumpBlock;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BehaviourType;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.WorldAttached;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.fluids.pipes.EncasedPipeBlock;
+import com.simibubi.create_re.content.fluids.pump.PumpBlock;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BehaviourType;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.WorldAttached;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -53,7 +53,7 @@ public abstract class FluidTransportBehaviour extends BlockEntityBehaviour {
 	@Override
 	public void initialize() {
 		super.initialize();
-		createConnectionData();
+		create_reConnectionData();
 	}
 
 	@Override
@@ -163,7 +163,7 @@ public abstract class FluidTransportBehaviour extends BlockEntityBehaviour {
 	public void write(CompoundTag nbt, boolean clientPacket) {
 		super.write(nbt, clientPacket);
 		if (clientPacket)
-			createConnectionData();
+			create_reConnectionData();
 		if (interfaces == null)
 			return;
 
@@ -172,7 +172,7 @@ public abstract class FluidTransportBehaviour extends BlockEntityBehaviour {
 	}
 
 	public FluidStack getProvidedOutwardFluid(Direction side) {
-		createConnectionData();
+		create_reConnectionData();
 		if (!interfaces.containsKey(side))
 			return FluidStack.EMPTY;
 		return interfaces.get(side)
@@ -181,12 +181,12 @@ public abstract class FluidTransportBehaviour extends BlockEntityBehaviour {
 
 	@Nullable
 	public PipeConnection getConnection(Direction side) {
-		createConnectionData();
+		create_reConnectionData();
 		return interfaces.get(side);
 	}
 
 	public boolean hasAnyPressure() {
-		createConnectionData();
+		create_reConnectionData();
 		for (PipeConnection pipeConnection : interfaces.values())
 			if (pipeConnection.hasPressure())
 				return true;
@@ -195,14 +195,14 @@ public abstract class FluidTransportBehaviour extends BlockEntityBehaviour {
 
 	@Nullable
 	public PipeConnection.Flow getFlow(Direction side) {
-		createConnectionData();
+		create_reConnectionData();
 		if (!interfaces.containsKey(side))
 			return null;
 		return interfaces.get(side).flow.orElse(null);
 	}
 
 	public void addPressure(Direction side, boolean inbound, float pressure) {
-		createConnectionData();
+		create_reConnectionData();
 		if (!interfaces.containsKey(side))
 			return;
 		interfaces.get(side)
@@ -219,13 +219,13 @@ public abstract class FluidTransportBehaviour extends BlockEntityBehaviour {
 					interfaces.computeIfAbsent(d, PipeConnection::new);
 			}
 		phase = UpdatePhase.WAIT_FOR_PUMPS;
-		createConnectionData();
+		create_reConnectionData();
 		interfaces.values()
 			.forEach(PipeConnection::wipePressure);
 		blockEntity.sendData();
 	}
 
-	private void createConnectionData() {
+	private void create_reConnectionData() {
 		if (interfaces != null)
 			return;
 		interfaces = new IdentityHashMap<>();

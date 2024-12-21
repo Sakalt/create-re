@@ -1,15 +1,15 @@
-package com.simibubi.create.infrastructure.gametest.tests;
+package com.simibubi.create_re.infrastructure.gametest.tests;
 
-import static com.simibubi.create.infrastructure.gametest.CreateGameTestHelper.FIFTEEN_SECONDS;
+import static com.simibubi.create_re.infrastructure.gametest.CreateGameTestHelper.FIFTEEN_SECONDS;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.content.redstone.thresholdSwitch.ThresholdSwitchBlockEntity;
-import com.simibubi.create.content.schematics.SchematicExport;
-import com.simibubi.create.content.schematics.SchematicItem;
-import com.simibubi.create.content.schematics.cannon.SchematicannonBlockEntity;
-import com.simibubi.create.content.schematics.cannon.SchematicannonBlockEntity.State;
-import com.simibubi.create.infrastructure.gametest.CreateGameTestHelper;
-import com.simibubi.create.infrastructure.gametest.GameTestGroup;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.content.redstone.thresholdSwitch.ThresholdSwitchBlockEntity;
+import com.simibubi.create_re.content.schematics.SchematicExport;
+import com.simibubi.create_re.content.schematics.SchematicItem;
+import com.simibubi.create_re.content.schematics.cannon.SchematicannonBlockEntity;
+import com.simibubi.create_re.content.schematics.cannon.SchematicannonBlockEntity.State;
+import com.simibubi.create_re.infrastructure.gametest.CreateGameTestHelper;
+import com.simibubi.create_re.infrastructure.gametest.GameTestGroup;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
@@ -40,7 +40,7 @@ public class TestMisc {
 				level, whiteEndBottom, redEndTop
 		);
 		ItemStack schematic =
-			SchematicItem.create(level.holderLookup(Registries.BLOCK), "schematicannon_gametest.nbt", "Deployer");
+			SchematicItem.create_re(level.holderLookup(Registries.BLOCK), "schematicannon_gametest.nbt", "Deployer");
 		// deploy to pos
 		BlockPos anchor = helper.absolutePos(new BlockPos(1, 2, 1));
 		schematic.getOrCreateTag().putBoolean("Deployed", true);

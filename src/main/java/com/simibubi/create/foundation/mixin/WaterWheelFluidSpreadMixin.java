@@ -1,13 +1,13 @@
-package com.simibubi.create.foundation.mixin;
+package com.simibubi.create_re.foundation.mixin;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.kinetics.base.IRotate;
-import com.simibubi.create.content.kinetics.waterwheel.WaterWheelStructuralBlock;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.kinetics.base.IRotate;
+import com.simibubi.create_re.content.kinetics.waterwheel.WaterWheelStructuralBlock;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -21,7 +21,7 @@ import net.minecraft.world.level.material.FluidState;
 @Mixin(FlowingFluid.class)
 public class WaterWheelFluidSpreadMixin {
 	@Inject(method = "canPassThrough(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/level/material/Fluid;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/Direction;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/material/FluidState;)Z", at = @At("HEAD"), cancellable = true)
-	protected void create$canPassThroughOnWaterWheel(BlockGetter pLevel, Fluid pFluid, BlockPos pFromPos, BlockState p_75967_,
+	protected void create_re$canPassThroughOnWaterWheel(BlockGetter pLevel, Fluid pFluid, BlockPos pFromPos, BlockState p_75967_,
 		Direction pDirection, BlockPos p_75969_, BlockState p_75970_, FluidState p_75971_,
 		CallbackInfoReturnable<Boolean> cir) {
 

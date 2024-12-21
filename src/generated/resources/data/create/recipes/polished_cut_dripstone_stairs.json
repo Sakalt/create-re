@@ -4,7 +4,7 @@
   "group": "polished_cut_dripstone_stairs",
   "key": {
     "X": {
-      "item": "create:polished_cut_dripstone"
+      "item": "create_re:polished_cut_dripstone"
     }
   },
   "pattern": [
@@ -14,7 +14,7 @@
   ],
   "result": {
     "count": 4,
-    "item": "create:polished_cut_dripstone_stairs"
+    "item": "create_re:polished_cut_dripstone_stairs"
   },
   "show_notification": true
 }

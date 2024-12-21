@@ -1,4 +1,4 @@
-package com.simibubi.create.content.contraptions.minecart;
+package com.simibubi.create_re.content.contraptions.minecart;
 
 import java.util.Set;
 import java.util.UUID;
@@ -6,15 +6,15 @@ import java.util.function.Consumer;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.AllItems;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.contraptions.AbstractContraptionEntity;
-import com.simibubi.create.content.contraptions.minecart.capability.CapabilityMinecartController;
-import com.simibubi.create.content.contraptions.minecart.capability.MinecartController;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity;
+import com.simibubi.create_re.content.contraptions.minecart.capability.CapabilityMinecartController;
+import com.simibubi.create_re.content.contraptions.minecart.capability.MinecartController;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.Entity;
@@ -63,7 +63,7 @@ public class CouplingHandler {
 			MinecartController coupledController = CapabilityMinecartController.getIfPresent(world, coupledCart);
 			if (coupledController == null)
 				return;
-			consumer.accept(Couple.create(controller, coupledController));
+			consumer.accept(Couple.create_re(controller, coupledController));
 		};
 	}
 

@@ -1,15 +1,15 @@
-package com.simibubi.create.content.decoration.copycat;
+package com.simibubi.create_re.content.decoration.copycat;
 
 import java.util.function.Predicate;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.content.kinetics.steamEngine.PoweredShaftBlock;
-import com.simibubi.create.foundation.placement.IPlacementHelper;
-import com.simibubi.create.foundation.placement.PlacementHelpers;
-import com.simibubi.create.foundation.placement.PlacementOffset;
-import com.simibubi.create.foundation.placement.PoleHelper;
-import com.simibubi.create.foundation.utility.VoxelShaper;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.content.kinetics.steamEngine.PoweredShaftBlock;
+import com.simibubi.create_re.foundation.placement.IPlacementHelper;
+import com.simibubi.create_re.foundation.placement.PlacementHelpers;
+import com.simibubi.create_re.foundation.placement.PlacementOffset;
+import com.simibubi.create_re.foundation.placement.PoleHelper;
+import com.simibubi.create_re.foundation.utility.VoxelShaper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -150,8 +150,8 @@ public class CopycatStepBlock extends WaterloggedCopycatBlock {
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
-		super.createBlockStateDefinition(pBuilder.add(HALF, FACING));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
+		super.create_reBlockStateDefinition(pBuilder.add(HALF, FACING));
 	}
 
 	@Override

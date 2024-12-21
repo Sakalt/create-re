@@ -1,7 +1,7 @@
-package com.simibubi.create.infrastructure.ponder;
+package com.simibubi.create_re.infrastructure.ponder;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.ponder.PonderLocalization;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.ponder.PonderLocalization;
 
 public class SharedText {
 	public static void gatherText() {

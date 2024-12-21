@@ -7,19 +7,19 @@
   },
   "display": {
     "announce_to_chat": false,
-    "background": "create:textures/gui/advancements.png",
+    "background": "create_re:textures/gui/advancements.png",
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.root.desc"
+      "translate": "advancement.create_re.root.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:brass_hand"
+      "item": "create_re:brass_hand"
     },
     "show_toast": false,
     "title": {
-      "translate": "advancement.create.root"
+      "translate": "advancement.create_re.root"
     }
   },
   "requirements": [

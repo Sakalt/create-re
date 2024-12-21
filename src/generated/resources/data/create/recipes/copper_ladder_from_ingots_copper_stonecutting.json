@@ -4,5 +4,5 @@
   "ingredient": {
     "tag": "forge:ingots/copper"
   },
-  "result": "create:copper_ladder"
+  "result": "create_re:copper_ladder"
 }

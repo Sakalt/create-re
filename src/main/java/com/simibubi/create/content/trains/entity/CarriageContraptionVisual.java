@@ -1,13 +1,13 @@
-package com.simibubi.create.content.trains.entity;
+package com.simibubi.create_re.content.trains.entity;
 
 import org.jetbrains.annotations.Nullable;
 import org.joml.Vector3f;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.content.contraptions.render.ContraptionVisual;
-import com.simibubi.create.content.trains.bogey.BogeyVisual;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.content.contraptions.render.ContraptionVisual;
+import com.simibubi.create_re.content.trains.bogey.BogeyVisual;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import dev.engine_room.flywheel.api.visual.DynamicVisual;
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
@@ -21,7 +21,7 @@ public class CarriageContraptionVisual extends ContraptionVisual<CarriageContrap
 	private Carriage carriage;
 	@Nullable
 	private Couple<@Nullable VisualizedBogey> bogeys;
-	private Couple<Boolean> bogeyHidden = Couple.create(() -> false);
+	private Couple<Boolean> bogeyHidden = Couple.create_re(() -> false);
 
 	public CarriageContraptionVisual(VisualizationContext context, CarriageContraptionEntity entity, float partialTick) {
 		super(context, entity, partialTick);
@@ -125,7 +125,7 @@ public class CarriageContraptionVisual extends ContraptionVisual<CarriageContrap
 	private record VisualizedBogey(CarriageBogey bogey, BogeyVisual visual) {
 		@Nullable
 		static VisualizedBogey of(VisualizationContext ctx, CarriageBogey bogey, float partialTick) {
-			BogeyVisual visual = bogey.getStyle().createVisual(bogey.getSize(), ctx, partialTick, true);
+			BogeyVisual visual = bogey.getStyle().create_reVisual(bogey.getSize(), ctx, partialTick, true);
 			if (visual == null) {
 				return null;
 			}

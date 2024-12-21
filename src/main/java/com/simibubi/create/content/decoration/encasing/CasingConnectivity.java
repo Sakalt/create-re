@@ -1,10 +1,10 @@
-package com.simibubi.create.content.decoration.encasing;
+package com.simibubi.create_re.content.decoration.encasing;
 
 import java.util.IdentityHashMap;
 import java.util.Map;
 import java.util.function.BiPredicate;
 
-import com.simibubi.create.foundation.block.connected.CTSpriteShiftEntry;
+import com.simibubi.create_re.foundation.block.connected.CTSpriteShiftEntry;
 
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;

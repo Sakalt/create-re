@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/item_drain"
+      "model": "create_re:block/item_drain"
     }
   }
 }

@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "C": {
-      "item": "create:andesite_alloy"
+      "item": "create_re:andesite_alloy"
     },
     "P": {
       "tag": "forge:plates/iron"
@@ -15,7 +15,7 @@
   ],
   "result": {
     "count": 8,
-    "item": "create:metal_girder"
+    "item": "create_re:metal_girder"
   },
   "show_notification": true
 }

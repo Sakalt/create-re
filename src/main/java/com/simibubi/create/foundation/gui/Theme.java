@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.gui;
+package com.simibubi.create_re.foundation.gui;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -10,8 +10,8 @@ import java.util.Objects;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import com.simibubi.create.foundation.utility.Color;
-import com.simibubi.create.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Color;
+import com.simibubi.create_re.foundation.utility.Couple;
 
 public class Theme {
 
@@ -207,13 +207,13 @@ public class Theme {
 
 		private static ColorHolder single(Color c) {
 			ColorHolder h = new ColorHolder();
-			h.colors = Couple.create(c.setImmutable(), c.setImmutable());
+			h.colors = Couple.create_re(c.setImmutable(), c.setImmutable());
 			return h;
 		}
 
 		private static ColorHolder pair(Color first, Color second) {
 			ColorHolder h = new ColorHolder();
-			h.colors = Couple.create(first.setImmutable(), second.setImmutable());
+			h.colors = Couple.create_re(first.setImmutable(), second.setImmutable());
 			return h;
 		}
 

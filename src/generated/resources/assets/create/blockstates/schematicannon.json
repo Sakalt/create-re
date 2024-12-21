@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/schematicannon/block"
+      "model": "create_re:block/schematicannon/block"
     }
   }
 }

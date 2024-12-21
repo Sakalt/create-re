@@ -1,14 +1,14 @@
-package com.simibubi.create.content.kinetics.crank;
+package com.simibubi.create_re.content.kinetics.crank;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.content.kinetics.base.DirectionalKineticBlock;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.block.ProperWaterloggedBlock;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.content.kinetics.base.DirectionalKineticBlock;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -46,8 +46,8 @@ public class HandCrankBlock extends DirectionalKineticBlock
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
-		super.createBlockStateDefinition(builder.add(WATERLOGGED));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
+		super.create_reBlockStateDefinition(builder.add(WATERLOGGED));
 	}
 
 	public int getRotationSpeed() {
@@ -152,7 +152,7 @@ public class HandCrankBlock extends DirectionalKineticBlock
 	}
 
 	public static Couple<Integer> getSpeedRange() {
-		return Couple.create(32, 32);
+		return Couple.create_re(32, 32);
 	}
 
 }

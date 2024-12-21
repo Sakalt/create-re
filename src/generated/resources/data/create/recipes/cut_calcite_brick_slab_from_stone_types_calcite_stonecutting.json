@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 2,
   "ingredient": {
-    "tag": "create:stone_types/calcite"
+    "tag": "create_re:stone_types/calcite"
   },
-  "result": "create:cut_calcite_brick_slab"
+  "result": "create_re:cut_calcite_brick_slab"
 }

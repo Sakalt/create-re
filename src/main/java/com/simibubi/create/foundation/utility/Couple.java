@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.utility;
+package com.simibubi.create_re.foundation.utility;
 
 import java.util.Iterator;
 import java.util.List;
@@ -17,21 +17,21 @@ import net.minecraft.nbt.ListTag;
 
 public class Couple<T> extends Pair<T, T> implements Iterable<T> {
 
-	private static final Couple<Boolean> TRUE_AND_FALSE = Couple.create(true, false);
+	private static final Couple<Boolean> TRUE_AND_FALSE = Couple.create_re(true, false);
 
 	protected Couple(T first, T second) {
 		super(first, second);
 	}
 
-	public static <T> Couple<T> create(T first, T second) {
+	public static <T> Couple<T> create_re(T first, T second) {
 		return new Couple<>(first, second);
 	}
 
-	public static <T> Couple<T> create(Supplier<T> factory) {
+	public static <T> Couple<T> create_re(Supplier<T> factory) {
 		return new Couple<>(factory.get(), factory.get());
 	}
 
-	public static <T> Couple<T> createWithContext(Function<Boolean, T> factory) {
+	public static <T> Couple<T> create_reWithContext(Function<Boolean, T> factory) {
 		return new Couple<>(factory.apply(true), factory.apply(false));
 	}
 
@@ -48,27 +48,27 @@ public class Couple<T> extends Pair<T, T> implements Iterable<T> {
 
 	@Override
 	public Couple<T> copy() {
-		return create(first, second);
+		return create_re(first, second);
 	}
 
 	public <S> Couple<S> map(Function<T, S> function) {
-		return Couple.create(function.apply(first), function.apply(second));
+		return Couple.create_re(function.apply(first), function.apply(second));
 	}
 
 	public <S> Couple<S> mapNotNull(Function<T, S> function) {
-		return Couple.create(first != null ? function.apply(first) : null, second != null ? function.apply(second) : null);
+		return Couple.create_re(first != null ? function.apply(first) : null, second != null ? function.apply(second) : null);
 	}
 
 	public <S> Couple<S> mapWithContext(BiFunction<T, Boolean, S> function) {
-		return Couple.create(function.apply(first, true), function.apply(second, false));
+		return Couple.create_re(function.apply(first, true), function.apply(second, false));
 	}
 
 	public <S, R> Couple<S> mapWithParams(BiFunction<T, R, S> function, Couple<R> values) {
-		return Couple.create(function.apply(first, values.first), function.apply(second, values.second));
+		return Couple.create_re(function.apply(first, values.first), function.apply(second, values.second));
 	}
 
 	public <S, R> Couple<S> mapNotNullWithParam(BiFunction<T, R, S> function, R value) {
-		return Couple.create(first != null ? function.apply(first, value) : null,
+		return Couple.create_re(first != null ? function.apply(first, value) : null,
 				second != null ? function.apply(second, value) : null);
 	}
 
@@ -110,7 +110,7 @@ public class Couple<T> extends Pair<T, T> implements Iterable<T> {
 	}
 
 	public Couple<T> swap() {
-		return Couple.create(second, first);
+		return Couple.create_re(second, first);
 	}
 
 	public ListTag serializeEach(Function<T, CompoundTag> serializer) {

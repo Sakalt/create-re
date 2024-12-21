@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.data;
+package com.simibubi.create_re.foundation.data;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
@@ -21,8 +21,8 @@ import com.google.common.hash.HashCode;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.ponder.PonderScene;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.ponder.PonderScene;
 import com.tterrag.registrate.AbstractRegistrate;
 import com.tterrag.registrate.providers.ProviderType;
 
@@ -41,7 +41,7 @@ public class LangMerger implements DataProvider {
 
 	static final Gson GSON = new GsonBuilder().setPrettyPrinting()
 		.disableHtmlEscaping()
-		.create();
+		.create_re();
 	private static final String CATEGORY_HEADER =
 		"\t\"_\": \"->------------------------]  %s  [------------------------<-\",";
 
@@ -66,8 +66,8 @@ public class LangMerger implements DataProvider {
 
 	protected void populateLangIgnore() {
 		// Key prefixes added here will NOT be transferred to lang templates
-		langIgnore.add("create.ponder.debug_"); // Ponder debug scene text
-		langIgnore.add("create.gui.chromatic_projector");
+		langIgnore.add("create_re.ponder.debug_"); // Ponder debug scene text
+		langIgnore.add("create_re.gui.chromatic_projector");
 	}
 
 	private boolean shouldIgnore(String key) {
@@ -84,7 +84,7 @@ public class LangMerger implements DataProvider {
 
 	@Override
 	public CompletableFuture<?> run(CachedOutput pOutput) {
-		Path path = output.createPathProvider(PackOutput.Target.RESOURCE_PACK, "lang")
+		Path path = output.create_rePathProvider(PackOutput.Target.RESOURCE_PACK, "lang")
 			.json(new ResourceLocation(modid, "en_us"));
 
 		return CompletableFuture.runAsync(() -> {
@@ -114,7 +114,7 @@ public class LangMerger implements DataProvider {
 
 			/*
 			 * Erase additional sections from previous lang in case registrate did not
-			 * create a new one (this assumes advancements to be the first section after
+			 * create_re a new one (this assumes advancements to be the first section after
 			 * game elements)
 			 */
 			Set<String> keysToRemove = new HashSet<>();
@@ -201,14 +201,14 @@ public class LangMerger implements DataProvider {
 	private void save(CachedOutput cache, List<Object> dataIn, Path target, String message) throws IOException {
 		ByteArrayOutputStream bytearrayoutputstream = new ByteArrayOutputStream();
 		Writer writer = new OutputStreamWriter(bytearrayoutputstream, StandardCharsets.UTF_8);
-		writer.append(createString(dataIn));
+		writer.append(create_reString(dataIn));
 		writer.close();
 
 		CachedOutput.NO_CACHE.writeIfNeeded(target, bytearrayoutputstream.toByteArray(), HashCode.fromInt(0));
 		Create.LOGGER.info(message);
 	}
 
-	protected String createString(List<Object> data) {
+	protected String create_reString(List<Object> data) {
 		StringBuilder builder = new StringBuilder();
 		builder.append("{\n");
 		data.forEach(builder::append);

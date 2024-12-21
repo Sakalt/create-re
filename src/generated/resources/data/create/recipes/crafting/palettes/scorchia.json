@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "create:scoria"
+      "item": "create_re:scoria"
     },
     "D": {
       "tag": "forge:dyes/black"
@@ -16,7 +16,7 @@
   ],
   "result": {
     "count": 8,
-    "item": "create:scorchia"
+    "item": "create_re:scorchia"
   },
   "show_notification": true
 }

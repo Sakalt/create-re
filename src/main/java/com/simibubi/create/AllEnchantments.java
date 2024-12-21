@@ -1,9 +1,9 @@
-package com.simibubi.create;
+package com.simibubi.create_re;
 
-import static com.simibubi.create.Create.REGISTRATE;
+import static com.simibubi.create_re.Create.REGISTRATE;
 
-import com.simibubi.create.content.equipment.armor.CapacityEnchantment;
-import com.simibubi.create.content.equipment.potatoCannon.PotatoRecoveryEnchantment;
+import com.simibubi.create_re.content.equipment.armor.CapacityEnchantment;
+import com.simibubi.create_re.content.equipment.potatoCannon.PotatoRecoveryEnchantment;
 import com.tterrag.registrate.util.entry.RegistryEntry;
 
 import net.minecraft.world.entity.EquipmentSlot;

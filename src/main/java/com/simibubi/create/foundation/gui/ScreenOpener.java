@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.gui;
+package com.simibubi.create_re.foundation.gui;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -8,8 +8,8 @@ import java.util.Optional;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.foundation.ponder.ui.NavigatableSimiScreen;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat;
+import com.simibubi.create_re.foundation.ponder.ui.NavigatableSimiScreen;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.Screen;

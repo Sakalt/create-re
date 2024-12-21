@@ -3,13 +3,13 @@
 	"parent": "block/block",
 	"texture_size": [32, 32],
 	"textures": {
-		"3": "create:block/crafter_thingies",
-		"4": "create:block/crafter_side",
-		"5": "create:block/brass_casing",
-		"7": "create:block/brass_block",
-		"8": "create:block/smooth_dark_log_top",
-		"9": "create:block/cogwheel",
-		"particle": "create:block/brass_casing"
+		"3": "create_re:block/crafter_thingies",
+		"4": "create_re:block/crafter_side",
+		"5": "create_re:block/brass_casing",
+		"7": "create_re:block/brass_block",
+		"8": "create_re:block/smooth_dark_log_top",
+		"9": "create_re:block/cogwheel",
+		"particle": "create_re:block/brass_casing"
 	},
 	"elements": [
 		{

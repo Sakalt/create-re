@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/deepslate_zinc_ore"
+      "model": "create_re:block/deepslate_zinc_ore"
     }
   }
 }

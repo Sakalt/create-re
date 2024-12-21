@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:jungle_window"
+              "create_re:jungle_window"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:jungle_window_pane"
+        "recipe": "create_re:jungle_window_pane"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:jungle_window_pane"
+      "create_re:jungle_window_pane"
     ]
   },
   "sends_telemetry_event": false

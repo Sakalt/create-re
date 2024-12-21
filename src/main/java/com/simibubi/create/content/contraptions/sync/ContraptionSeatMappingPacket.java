@@ -1,12 +1,12 @@
-package com.simibubi.create.content.contraptions.sync;
+package com.simibubi.create_re.content.contraptions.sync;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-import com.simibubi.create.content.contraptions.AbstractContraptionEntity;
-import com.simibubi.create.foundation.networking.SimplePacketBase;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity;
+import com.simibubi.create_re.foundation.networking.SimplePacketBase;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.FriendlyByteBuf;

@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:wooden_bracket"
+          "name": "create_re:wooden_bracket"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/wooden_bracket"
+  "random_sequence": "create_re:blocks/wooden_bracket"
 }

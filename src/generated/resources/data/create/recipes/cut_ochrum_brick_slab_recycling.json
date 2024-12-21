@@ -3,13 +3,13 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "create:cut_ochrum_brick_slab"
+      "item": "create_re:cut_ochrum_brick_slab"
     },
     {
-      "item": "create:cut_ochrum_brick_slab"
+      "item": "create_re:cut_ochrum_brick_slab"
     }
   ],
   "result": {
-    "item": "create:cut_ochrum_bricks"
+    "item": "create_re:cut_ochrum_bricks"
   }
 }

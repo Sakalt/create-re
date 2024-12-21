@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.station;
+package com.simibubi.create_re.content.trains.station;
 
 import java.util.Objects;
 import java.util.Optional;
@@ -7,12 +7,12 @@ import org.joml.Matrix4f;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.trains.track.TrackTargetingBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.map.CustomRenderedMapDecoration;
-import com.simibubi.create.foundation.utility.Components;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.trains.track.TrackTargetingBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.map.CustomRenderedMapDecoration;
+import com.simibubi.create_re.foundation.utility.Components;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
@@ -40,7 +40,7 @@ public class StationMarker {
 		this.source = source;
 		this.target = target;
 		this.name = name;
-		id = "create:station-" + target.getX() + "," + target.getY() + "," + target.getZ();
+		id = "create_re:station-" + target.getX() + "," + target.getY() + "," + target.getZ();
 	}
 
 	public static StationMarker load(CompoundTag tag) {

@@ -1,5 +1,5 @@
 {
-  "type": "create:compacting",
+  "type": "create_re:compacting",
   "ingredients": [
     {
       "tag": "forge:eggs"
@@ -8,12 +8,12 @@
       "item": "minecraft:sugar"
     },
     {
-      "item": "create:cinder_flour"
+      "item": "create_re:cinder_flour"
     }
   ],
   "results": [
     {
-      "item": "create:blaze_cake_base"
+      "item": "create_re:blaze_cake_base"
     }
   ]
 }

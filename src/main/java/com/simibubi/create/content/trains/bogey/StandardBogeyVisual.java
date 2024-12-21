@@ -1,15 +1,15 @@
-package com.simibubi.create.content.trains.bogey;
+package com.simibubi.create_re.content.trains.bogey;
 
 import java.util.function.Consumer;
 
 import org.jetbrains.annotations.Nullable;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.kinetics.simpleRelays.ShaftBlock;
-import com.simibubi.create.foundation.render.VirtualRenderHelper;
-import com.simibubi.create.foundation.utility.AngleHelper;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.kinetics.simpleRelays.ShaftBlock;
+import com.simibubi.create_re.foundation.render.VirtualRenderHelper;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
@@ -27,8 +27,8 @@ public class StandardBogeyVisual implements BogeyVisual {
 		var shaftInstancer = ctx.instancerProvider()
 				.instancer(InstanceTypes.TRANSFORMED, VirtualRenderHelper.blockModel(AllBlocks.SHAFT.getDefaultState()
 						.setValue(ShaftBlock.AXIS, Direction.Axis.Z)));
-		shaft1 = shaftInstancer.createInstance();
-		shaft2 = shaftInstancer.createInstance();
+		shaft1 = shaftInstancer.create_reInstance();
+		shaft2 = shaftInstancer.create_reInstance();
 	}
 
 	@Override
@@ -82,9 +82,9 @@ public class StandardBogeyVisual implements BogeyVisual {
 				.instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.SMALL_BOGEY_WHEELS));
 			frame = ctx.instancerProvider()
 					.instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.BOGEY_FRAME))
-					.createInstance();
-			wheel1 = wheelInstancer.createInstance();
-			wheel2 = wheelInstancer.createInstance();
+					.create_reInstance();
+			wheel1 = wheelInstancer.create_reInstance();
+			wheel2 = wheelInstancer.create_reInstance();
 		}
 
 		@Override
@@ -149,20 +149,20 @@ public class StandardBogeyVisual implements BogeyVisual {
 			var secondaryShaftInstancer = ctx.instancerProvider()
 					.instancer(InstanceTypes.TRANSFORMED, VirtualRenderHelper.blockModel(AllBlocks.SHAFT.getDefaultState()
 							.setValue(ShaftBlock.AXIS, Direction.Axis.X)));
-			secondaryShaft1 = secondaryShaftInstancer.createInstance();
-			secondaryShaft2 = secondaryShaftInstancer.createInstance();
+			secondaryShaft1 = secondaryShaftInstancer.create_reInstance();
+			secondaryShaft2 = secondaryShaftInstancer.create_reInstance();
 			drive = ctx.instancerProvider()
 					.instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.BOGEY_DRIVE))
-					.createInstance();
+					.create_reInstance();
 			piston = ctx.instancerProvider()
 					.instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.BOGEY_PISTON))
-					.createInstance();
+					.create_reInstance();
 			wheels = ctx.instancerProvider()
 					.instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.LARGE_BOGEY_WHEELS))
-					.createInstance();
+					.create_reInstance();
 			pin = ctx.instancerProvider()
 					.instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.BOGEY_PIN))
-					.createInstance();
+					.create_reInstance();
 		}
 
 		@Override

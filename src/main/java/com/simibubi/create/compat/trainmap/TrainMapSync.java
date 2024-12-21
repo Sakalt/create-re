@@ -1,4 +1,4 @@
-package com.simibubi.create.compat.trainmap;
+package com.simibubi.create_re.compat.trainmap;
 
 import java.lang.ref.WeakReference;
 import java.time.Duration;
@@ -8,20 +8,20 @@ import java.util.UUID;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.trains.entity.Carriage;
-import com.simibubi.create.content.trains.entity.Carriage.DimensionalCarriageEntity;
-import com.simibubi.create.content.trains.entity.Train;
-import com.simibubi.create.content.trains.entity.TravellingPoint;
-import com.simibubi.create.content.trains.graph.DimensionPalette;
-import com.simibubi.create.content.trains.graph.EdgePointType;
-import com.simibubi.create.content.trains.schedule.ScheduleRuntime;
-import com.simibubi.create.content.trains.signal.SignalBlock.SignalType;
-import com.simibubi.create.content.trains.signal.SignalBoundary;
-import com.simibubi.create.content.trains.signal.SignalEdgeGroup;
-import com.simibubi.create.content.trains.station.GlobalStation;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.trains.entity.Carriage;
+import com.simibubi.create_re.content.trains.entity.Carriage.DimensionalCarriageEntity;
+import com.simibubi.create_re.content.trains.entity.Train;
+import com.simibubi.create_re.content.trains.entity.TravellingPoint;
+import com.simibubi.create_re.content.trains.graph.DimensionPalette;
+import com.simibubi.create_re.content.trains.graph.EdgePointType;
+import com.simibubi.create_re.content.trains.schedule.ScheduleRuntime;
+import com.simibubi.create_re.content.trains.signal.SignalBlock.SignalType;
+import com.simibubi.create_re.content.trains.signal.SignalBoundary;
+import com.simibubi.create_re.content.trains.signal.SignalEdgeGroup;
+import com.simibubi.create_re.content.trains.station.GlobalStation;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceKey;
@@ -194,7 +194,7 @@ public class TrainMapSync {
 
 		TrainMapSyncPacket packet = new TrainMapSyncPacket(light);
 		for (Train train : Create.RAILWAYS.trains.values())
-			packet.add(train.id, createEntry(minecraftServer, train));
+			packet.add(train.id, create_reEntry(minecraftServer, train));
 
 		for (WeakReference<ServerPlayer> weakReference : requestingPlayers.asMap()
 			.values()) {
@@ -206,7 +206,7 @@ public class TrainMapSync {
 		}
 	}
 
-	private static TrainMapSyncEntry createEntry(MinecraftServer minecraftServer, Train train) {
+	private static TrainMapSyncEntry create_reEntry(MinecraftServer minecraftServer, Train train) {
 		TrainMapSyncEntry entry = new TrainMapSyncEntry();
 		boolean stopped = Math.abs(train.speed) < 0.05;
 

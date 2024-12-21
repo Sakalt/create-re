@@ -1,20 +1,20 @@
 {
   "values": [
-    "create:white_seat",
-    "create:orange_seat",
-    "create:magenta_seat",
-    "create:light_blue_seat",
-    "create:yellow_seat",
-    "create:lime_seat",
-    "create:pink_seat",
-    "create:gray_seat",
-    "create:light_gray_seat",
-    "create:cyan_seat",
-    "create:purple_seat",
-    "create:blue_seat",
-    "create:brown_seat",
-    "create:green_seat",
-    "create:red_seat",
-    "create:black_seat"
+    "create_re:white_seat",
+    "create_re:orange_seat",
+    "create_re:magenta_seat",
+    "create_re:light_blue_seat",
+    "create_re:yellow_seat",
+    "create_re:lime_seat",
+    "create_re:pink_seat",
+    "create_re:gray_seat",
+    "create_re:light_gray_seat",
+    "create_re:cyan_seat",
+    "create_re:purple_seat",
+    "create_re:blue_seat",
+    "create_re:brown_seat",
+    "create_re:green_seat",
+    "create_re:red_seat",
+    "create_re:black_seat"
   ]
 }

@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "C": {
-      "item": "create:andesite_alloy"
+      "item": "create_re:andesite_alloy"
     },
     "L": {
       "tag": "minecraft:logs"
@@ -17,7 +17,7 @@
     "L L"
   ],
   "result": {
-    "item": "create:cart_assembler"
+    "item": "create_re:cart_assembler"
   },
   "show_notification": true
 }

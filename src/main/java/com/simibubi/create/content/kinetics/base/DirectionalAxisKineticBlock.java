@@ -1,8 +1,8 @@
-package com.simibubi.create.content.kinetics.base;
+package com.simibubi.create_re.content.kinetics.base;
 
-import com.simibubi.create.content.contraptions.ITransformableBlock;
-import com.simibubi.create.content.contraptions.StructureTransform;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.content.contraptions.ITransformableBlock;
+import com.simibubi.create_re.content.contraptions.StructureTransform;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -18,16 +18,16 @@ import net.minecraft.world.level.block.state.properties.BooleanProperty;
 
 public abstract class DirectionalAxisKineticBlock extends DirectionalKineticBlock implements ITransformableBlock {
 
-	public static final BooleanProperty AXIS_ALONG_FIRST_COORDINATE = BooleanProperty.create("axis_along_first");
+	public static final BooleanProperty AXIS_ALONG_FIRST_COORDINATE = BooleanProperty.create_re("axis_along_first");
 
 	public DirectionalAxisKineticBlock(Properties properties) {
 		super(properties);
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
 		builder.add(AXIS_ALONG_FIRST_COORDINATE);
-		super.createBlockStateDefinition(builder);
+		super.create_reBlockStateDefinition(builder);
 	}
 
 	protected Direction getFacingForPlacement(BlockPlaceContext context) {

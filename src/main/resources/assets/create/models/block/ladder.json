@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "create:block/ladder_andesite_hoop",
-		"1": "create:block/ladder_andesite",
-		"particle": "create:block/ladder_andesite"
+		"0": "create_re:block/ladder_andesite_hoop",
+		"1": "create_re:block/ladder_andesite",
+		"particle": "create_re:block/ladder_andesite"
 	},
 	"elements": [
 		{

@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.track;
+package com.simibubi.create_re.content.trains.track;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -8,18 +8,18 @@ import java.util.Map.Entry;
 import java.util.Optional;
 import java.util.Set;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.AllTags;
-import com.simibubi.create.content.contraptions.ITransformableBlockEntity;
-import com.simibubi.create.content.contraptions.StructureTransform;
-import com.simibubi.create.content.trains.graph.TrackNodeLocation;
-import com.simibubi.create.foundation.block.ProperWaterloggedBlock;
-import com.simibubi.create.foundation.blockEntity.IMergeableBE;
-import com.simibubi.create.foundation.blockEntity.RemoveBlockEntityPacket;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.AllTags;
+import com.simibubi.create_re.content.contraptions.ITransformableBlockEntity;
+import com.simibubi.create_re.content.contraptions.StructureTransform;
+import com.simibubi.create_re.content.trains.graph.TrackNodeLocation;
+import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
+import com.simibubi.create_re.foundation.blockEntity.IMergeableBE;
+import com.simibubi.create_re.foundation.blockEntity.RemoveBlockEntityPacket;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import dev.engine_room.flywheel.lib.visualization.VisualizationHelper;
 import net.minecraft.core.BlockPos;
@@ -233,7 +233,7 @@ public class TrackBlockEntity extends SmartBlockEntity implements ITransformable
 
 		if (tag.contains("BoundLocation"))
 			boundLocation = Pair.of(
-				ResourceKey.create(Registries.DIMENSION, new ResourceLocation(tag.getString("BoundDimension"))),
+				ResourceKey.create_re(Registries.DIMENSION, new ResourceLocation(tag.getString("BoundDimension"))),
 				NbtUtils.readBlockPos(tag.getCompound("BoundLocation")));
 	}
 

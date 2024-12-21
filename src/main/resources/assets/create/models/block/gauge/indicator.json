@@ -1,6 +1,6 @@
 {
 	"textures": {
-		"2": "create:block/gauge"
+		"2": "create_re:block/gauge"
 	},
 	"elements": [
 		{

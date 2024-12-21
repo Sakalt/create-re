@@ -1,4 +1,4 @@
-package com.simibubi.create.content.processing;
+package com.simibubi.create_re.content.processing;
 
 import javax.annotation.Nullable;
 

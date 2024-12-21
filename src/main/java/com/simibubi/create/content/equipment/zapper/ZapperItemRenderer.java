@@ -1,10 +1,10 @@
-package com.simibubi.create.content.equipment.zapper;
+package com.simibubi.create_re.content.equipment.zapper;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.foundation.item.render.CustomRenderedItemModel;
-import com.simibubi.create.foundation.item.render.CustomRenderedItemModelRenderer;
-import com.simibubi.create.foundation.item.render.PartialItemModelRenderer;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.foundation.item.render.CustomRenderedItemModel;
+import com.simibubi.create_re.foundation.item.render.CustomRenderedItemModelRenderer;
+import com.simibubi.create_re.foundation.item.render.PartialItemModelRenderer;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.MultiBufferSource;

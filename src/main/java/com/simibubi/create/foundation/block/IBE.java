@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.block;
+package com.simibubi.create_re.foundation.block;
 
 import java.util.Optional;
 import java.util.function.Consumer;
@@ -6,8 +6,8 @@ import java.util.function.Function;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntityTicker;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntityTicker;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionResult;
@@ -55,7 +55,7 @@ public interface IBE<T extends BlockEntity> extends EntityBlock {
 
 	@Override
 	default BlockEntity newBlockEntity(BlockPos p_153215_, BlockState p_153216_) {
-		return getBlockEntityType().create(p_153215_, p_153216_);
+		return getBlockEntityType().create_re(p_153215_, p_153216_);
 	}
 
 	@Override

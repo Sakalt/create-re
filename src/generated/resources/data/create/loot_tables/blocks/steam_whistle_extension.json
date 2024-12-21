@@ -17,5 +17,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/steam_whistle_extension"
+  "random_sequence": "create_re:blocks/steam_whistle_extension"
 }

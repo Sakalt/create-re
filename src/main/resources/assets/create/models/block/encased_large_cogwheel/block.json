@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "block/stripped_spruce_log_top",
-		"particle": "create:block/andesite_casing",
-		"casing": "create:block/andesite_casing",
-		"side": "create:block/andesite_encased_cogwheel_side_connected"
+		"particle": "create_re:block/andesite_casing",
+		"casing": "create_re:block/andesite_casing",
+		"side": "create_re:block/andesite_encased_cogwheel_side_connected"
 	},
 	"elements": [
 		{

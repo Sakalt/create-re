@@ -1,25 +1,25 @@
 {
-  "parent": "create:wrench_goggles",
+  "parent": "create_re:wrench_goggles",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:stressometer_builtin"
+      "trigger": "create_re:stressometer_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.stressometer.desc"
+      "translate": "advancement.create_re.stressometer.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:stressometer"
+      "item": "create_re:stressometer"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.stressometer"
+      "translate": "advancement.create_re.stressometer"
     }
   },
   "requirements": [

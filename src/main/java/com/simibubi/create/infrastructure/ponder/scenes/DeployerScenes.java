@@ -1,20 +1,20 @@
-package com.simibubi.create.infrastructure.ponder.scenes;
+package com.simibubi.create_re.infrastructure.ponder.scenes;
 
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.equipment.sandPaper.SandPaperItem;
-import com.simibubi.create.content.kinetics.deployer.DeployerBlock;
-import com.simibubi.create.content.kinetics.deployer.DeployerBlockEntity;
-import com.simibubi.create.foundation.ponder.ElementLink;
-import com.simibubi.create.foundation.ponder.PonderPalette;
-import com.simibubi.create.foundation.ponder.SceneBuilder;
-import com.simibubi.create.foundation.ponder.SceneBuildingUtil;
-import com.simibubi.create.foundation.ponder.Selection;
-import com.simibubi.create.foundation.ponder.element.BeltItemElement;
-import com.simibubi.create.foundation.ponder.element.EntityElement;
-import com.simibubi.create.foundation.ponder.element.InputWindowElement;
-import com.simibubi.create.foundation.ponder.element.WorldSectionElement;
-import com.simibubi.create.foundation.ponder.instruction.EmitParticlesInstruction.Emitter;
-import com.simibubi.create.foundation.utility.Pointing;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.equipment.sandPaper.SandPaperItem;
+import com.simibubi.create_re.content.kinetics.deployer.DeployerBlock;
+import com.simibubi.create_re.content.kinetics.deployer.DeployerBlockEntity;
+import com.simibubi.create_re.foundation.ponder.ElementLink;
+import com.simibubi.create_re.foundation.ponder.PonderPalette;
+import com.simibubi.create_re.foundation.ponder.SceneBuilder;
+import com.simibubi.create_re.foundation.ponder.SceneBuildingUtil;
+import com.simibubi.create_re.foundation.ponder.Selection;
+import com.simibubi.create_re.foundation.ponder.element.BeltItemElement;
+import com.simibubi.create_re.foundation.ponder.element.EntityElement;
+import com.simibubi.create_re.foundation.ponder.element.InputWindowElement;
+import com.simibubi.create_re.foundation.ponder.element.WorldSectionElement;
+import com.simibubi.create_re.foundation.ponder.instruction.EmitParticlesInstruction.Emitter;
+import com.simibubi.create_re.foundation.utility.Pointing;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -135,7 +135,7 @@ public class DeployerScenes {
 		Vec3 entitySpawn = util.vector.topOf(deployerPos.above(3));
 
 		ElementLink<EntityElement> entity1 =
-			scene.world.createItemEntity(entitySpawn, util.vector.of(0, 0.2, 0), tulip);
+			scene.world.create_reItemEntity(entitySpawn, util.vector.of(0, 0.2, 0), tulip);
 		scene.idle(17);
 		scene.world.modifyEntity(entity1, Entity::discard);
 		scene.world.modifyBlockEntityNBT(deployerSelection, teType, nbt -> nbt.put("HeldItem", tulip.serializeNBT()));
@@ -178,8 +178,8 @@ public class DeployerScenes {
 			.text("When a filter is set, it activates only while holding a matching item");
 		scene.idle(70);
 
-		ElementLink<EntityElement> sheep = scene.world.createEntity(w -> {
-			Sheep entity = EntityType.SHEEP.create(w);
+		ElementLink<EntityElement> sheep = scene.world.create_reEntity(w -> {
+			Sheep entity = EntityType.SHEEP.create_re(w);
 			entity.setColor(DyeColor.PINK);
 			Vec3 p = util.vector.topOf(util.grid.at(1, 0, 2));
 			entity.setPos(p.x, p.y, p.z);
@@ -197,7 +197,7 @@ public class DeployerScenes {
 		});
 		scene.idle(20);
 		scene.world.showSection(util.select.position(deployerPos.above()), Direction.WEST);
-		entity1 = scene.world.createItemEntity(entitySpawn, util.vector.of(0, 0.2, 0), shears);
+		entity1 = scene.world.create_reItemEntity(entitySpawn, util.vector.of(0, 0.2, 0), shears);
 		scene.idle(17);
 		scene.world.modifyEntity(entity1, Entity::discard);
 		scene.world.modifyBlockEntityNBT(deployerSelection, teType, nbt -> nbt.put("HeldItem", shears.serializeNBT()));
@@ -226,7 +226,7 @@ public class DeployerScenes {
 			.pointAt(util.vector.of(3.5, 1.25, 1.25))
 			.text("...and only non-matching items will be extracted");
 		scene.world.flapFunnel(deployerPos.north(), true);
-		scene.world.createItemEntity(util.vector.centerOf(deployerPos.north())
+		scene.world.create_reItemEntity(util.vector.centerOf(deployerPos.north())
 			.subtract(0, .45, 0), util.vector.of(0, 0, -0.1), new ItemStack(Items.PINK_WOOL));
 
 		scene.markAsFinished();
@@ -304,7 +304,7 @@ public class DeployerScenes {
 			scene.world.incrementBlockBreakingProgress(breakingPos);
 			scene.world.moveDeployer(deployerPos, -1, 25);
 			if (i == 3)
-				scene.world.createItemEntity(util.vector.centerOf(breakingPos), util.vector.of(0, 0, 0),
+				scene.world.create_reItemEntity(util.vector.centerOf(breakingPos), util.vector.of(0, 0, 0),
 					new ItemStack(Blocks.DIRT));
 			scene.idle(26);
 
@@ -362,7 +362,7 @@ public class DeployerScenes {
 			.text("The Input items can be dropped or placed on a Depot under the Deployer");
 		scene.idle(50);
 		ItemStack quartz = AllItems.ROSE_QUARTZ.asStack();
-		scene.world.createItemOnBeltLike(depotPos, Direction.NORTH, quartz);
+		scene.world.create_reItemOnBeltLike(depotPos, Direction.NORTH, quartz);
 		Vec3 depotCenter = util.vector.centerOf(depotPos.south());
 		scene.overlay.showControls(new InputWindowElement(depotCenter, Pointing.UP).withItem(quartz), 30);
 		scene.idle(10);
@@ -377,7 +377,7 @@ public class DeployerScenes {
 		// particle
 		scene.world.removeItemsFromBelt(depotPos);
 		ItemStack polished = AllItems.POLISHED_ROSE_QUARTZ.asStack();
-		scene.world.createItemOnBeltLike(depotPos, Direction.UP, polished);
+		scene.world.create_reItemOnBeltLike(depotPos, Direction.UP, polished);
 		scene.idle(10);
 		scene.overlay.showControls(new InputWindowElement(depotCenter, Pointing.UP).withItem(polished), 50);
 		scene.idle(60);
@@ -396,9 +396,9 @@ public class DeployerScenes {
 			.text("When items are provided on a belt...");
 		scene.idle(30);
 
-		ElementLink<BeltItemElement> ingot = scene.world.createItemOnBelt(beltPos, Direction.SOUTH, quartz);
+		ElementLink<BeltItemElement> ingot = scene.world.create_reItemOnBelt(beltPos, Direction.SOUTH, quartz);
 		scene.idle(15);
-		ElementLink<BeltItemElement> ingot2 = scene.world.createItemOnBelt(beltPos, Direction.SOUTH, quartz);
+		ElementLink<BeltItemElement> ingot2 = scene.world.create_reItemOnBelt(beltPos, Direction.SOUTH, quartz);
 		scene.idle(15);
 		scene.world.stallBeltItem(ingot, true);
 		scene.world.moveDeployer(pressPos, 1, 30);
@@ -413,7 +413,7 @@ public class DeployerScenes {
 		scene.world.moveDeployer(pressPos, -1, 30);
 		scene.debug.enqueueCallback(s -> SandPaperItem.spawnParticles(targetV, quartz, s.getWorld()));
 		scene.world.removeItemsFromBelt(pressPos.below(2));
-		ingot = scene.world.createItemOnBelt(pressPos.below(2), Direction.UP, polished);
+		ingot = scene.world.create_reItemOnBelt(pressPos.below(2), Direction.UP, polished);
 		scene.world.stallBeltItem(ingot, true);
 		scene.idle(15);
 		scene.world.stallBeltItem(ingot, false);
@@ -424,7 +424,7 @@ public class DeployerScenes {
 		scene.world.moveDeployer(pressPos, -1, 30);
 		scene.debug.enqueueCallback(s -> SandPaperItem.spawnParticles(targetV, quartz, s.getWorld()));
 		scene.world.removeItemsFromBelt(pressPos.below(2));
-		ingot2 = scene.world.createItemOnBelt(pressPos.below(2), Direction.UP, polished);
+		ingot2 = scene.world.create_reItemOnBelt(pressPos.below(2), Direction.UP, polished);
 		scene.world.stallBeltItem(ingot2, true);
 		scene.idle(15);
 		scene.world.stallBeltItem(ingot2, false);

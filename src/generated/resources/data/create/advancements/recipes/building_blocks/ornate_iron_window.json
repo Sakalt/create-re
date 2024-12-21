@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:ornate_iron_window"
+        "recipe": "create_re:ornate_iron_window"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:ornate_iron_window"
+      "create_re:ornate_iron_window"
     ]
   },
   "sends_telemetry_event": false

@@ -1,4 +1,4 @@
-package com.simibubi.create.content.kinetics.deployer;
+package com.simibubi.create_re.content.kinetics.deployer;
 
 import java.util.Arrays;
 import java.util.List;
@@ -8,29 +8,29 @@ import javax.annotation.Nullable;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.contraptions.AbstractContraptionEntity;
-import com.simibubi.create.content.contraptions.OrientedContraptionEntity;
-import com.simibubi.create.content.contraptions.behaviour.MovementBehaviour;
-import com.simibubi.create.content.contraptions.behaviour.MovementContext;
-import com.simibubi.create.content.contraptions.mounted.MountedContraption;
-import com.simibubi.create.content.contraptions.render.ActorVisual;
-import com.simibubi.create.content.contraptions.render.ContraptionMatrices;
-import com.simibubi.create.content.kinetics.deployer.DeployerBlockEntity.Mode;
-import com.simibubi.create.content.logistics.filter.FilterItemStack;
-import com.simibubi.create.content.schematics.SchematicInstances;
-import com.simibubi.create.content.schematics.SchematicWorld;
-import com.simibubi.create.content.schematics.requirement.ItemRequirement;
-import com.simibubi.create.content.trains.entity.CarriageContraption;
-import com.simibubi.create.content.trains.entity.CarriageContraptionEntity;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.item.ItemHelper;
-import com.simibubi.create.foundation.item.ItemHelper.ExtractionCountMode;
-import com.simibubi.create.foundation.utility.BlockHelper;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.foundation.virtualWorld.VirtualRenderWorld;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity;
+import com.simibubi.create_re.content.contraptions.OrientedContraptionEntity;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementBehaviour;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
+import com.simibubi.create_re.content.contraptions.mounted.MountedContraption;
+import com.simibubi.create_re.content.contraptions.render.ActorVisual;
+import com.simibubi.create_re.content.contraptions.render.ContraptionMatrices;
+import com.simibubi.create_re.content.kinetics.deployer.DeployerBlockEntity.Mode;
+import com.simibubi.create_re.content.logistics.filter.FilterItemStack;
+import com.simibubi.create_re.content.schematics.SchematicInstances;
+import com.simibubi.create_re.content.schematics.SchematicWorld;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement;
+import com.simibubi.create_re.content.trains.entity.CarriageContraption;
+import com.simibubi.create_re.content.trains.entity.CarriageContraptionEntity;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.item.ItemHelper;
+import com.simibubi.create_re.foundation.item.ItemHelper.ExtractionCountMode;
+import com.simibubi.create_re.foundation.utility.BlockHelper;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.foundation.virtualWorld.VirtualRenderWorld;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
 import dev.engine_room.flywheel.api.visualization.VisualizationManager;
@@ -158,7 +158,7 @@ public class DeployerMovementBehaviour implements MovementBehaviour {
 		}
 
 		CompoundTag data = BlockHelper.prepareBlockEntityData(blockState, schematicWorld.getBlockEntity(pos));
-		BlockSnapshot blocksnapshot = BlockSnapshot.create(world.dimension(), world, pos);
+		BlockSnapshot blocksnapshot = BlockSnapshot.create_re(world.dimension(), world, pos);
 		BlockHelper.placeSchematicBlock(world, blockState, pos, contextStack, data);
 
 		if (ForgeEventFactory.onBlockPlace(player, blocksnapshot, Direction.UP))
@@ -304,7 +304,7 @@ public class DeployerMovementBehaviour implements MovementBehaviour {
 
 	@Nullable
 	@Override
-	public ActorVisual createVisual(VisualizationContext visualizationContext, VirtualRenderWorld simulationWorld,
+	public ActorVisual create_reVisual(VisualizationContext visualizationContext, VirtualRenderWorld simulationWorld,
 		MovementContext movementContext) {
 		return new DeployerActorVisual(visualizationContext, simulationWorld, movementContext);
 	}

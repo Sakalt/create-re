@@ -1,11 +1,11 @@
-package com.simibubi.create.content.equipment.bell;
+package com.simibubi.create_re.content.equipment.bell;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
 import com.mojang.brigadier.StringReader;
 import com.mojang.serialization.Codec;
-import com.simibubi.create.foundation.particle.ICustomParticleDataWithSprite;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.foundation.particle.ICustomParticleDataWithSprite;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.client.multiplayer.ClientLevel;

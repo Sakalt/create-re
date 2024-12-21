@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "B": {
-      "item": "create:brass_casing"
+      "item": "create_re:brass_casing"
     },
     "C": {
       "item": "minecraft:dried_kelp_block"
@@ -18,7 +18,7 @@
     "I"
   ],
   "result": {
-    "item": "create:elevator_pulley"
+    "item": "create_re:elevator_pulley"
   },
   "show_notification": true
 }

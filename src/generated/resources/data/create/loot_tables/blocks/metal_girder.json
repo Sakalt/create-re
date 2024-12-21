@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:metal_girder"
+          "name": "create_re:metal_girder"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/metal_girder"
+  "random_sequence": "create_re:blocks/metal_girder"
 }

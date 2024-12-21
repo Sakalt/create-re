@@ -2,12 +2,12 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "create:block/brass_casing",
-		"5": "create:block/andesite_casing_short",
-		"6": "create:block/gearbox_top",
+		"0": "create_re:block/brass_casing",
+		"5": "create_re:block/andesite_casing_short",
+		"6": "create_re:block/gearbox_top",
 		"7": "block/dark_oak_log",
-		"particle": "create:block/andesite_casing_short",
-		"1_2": "create:block/brass_block"
+		"particle": "create_re:block/andesite_casing_short",
+		"1_2": "create_re:block/brass_block"
 	},
 	"elements": [
 		{

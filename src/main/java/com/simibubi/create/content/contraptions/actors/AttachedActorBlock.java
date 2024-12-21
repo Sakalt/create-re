@@ -1,11 +1,11 @@
-package com.simibubi.create.content.contraptions.actors;
+package com.simibubi.create_re.content.contraptions.actors;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
-import com.simibubi.create.foundation.block.ProperWaterloggedBlock;
-import com.simibubi.create.foundation.utility.BlockHelper;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
+import com.simibubi.create_re.foundation.utility.BlockHelper;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
@@ -47,9 +47,9 @@ public abstract class AttachedActorBlock extends HorizontalDirectionalBlock
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
 		builder.add(FACING, WATERLOGGED);
-		super.createBlockStateDefinition(builder);
+		super.create_reBlockStateDefinition(builder);
 	}
 
 	@Override

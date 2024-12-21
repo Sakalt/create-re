@@ -6,7 +6,7 @@
       "item": "minecraft:clock"
     },
     "C": {
-      "item": "create:andesite_casing"
+      "item": "create_re:andesite_casing"
     },
     "S": {
       "tag": "minecraft:planks"
@@ -18,7 +18,7 @@
     "A"
   ],
   "result": {
-    "item": "create:cuckoo_clock"
+    "item": "create_re:cuckoo_clock"
   },
   "show_notification": true
 }

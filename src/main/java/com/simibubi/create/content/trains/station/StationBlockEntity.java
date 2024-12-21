@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.station;
+package com.simibubi.create_re.content.trains.station;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,51 +15,51 @@ import javax.annotation.Nullable;
 
 import org.jetbrains.annotations.NotNull;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.Create;
-import com.simibubi.create.compat.computercraft.AbstractComputerBehaviour;
-import com.simibubi.create.compat.computercraft.ComputerCraftProxy;
-import com.simibubi.create.content.contraptions.AssemblyException;
-import com.simibubi.create.content.contraptions.ITransformableBlockEntity;
-import com.simibubi.create.content.contraptions.StructureTransform;
-import com.simibubi.create.content.decoration.slidingDoor.DoorControlBehaviour;
-import com.simibubi.create.content.logistics.depot.DepotBehaviour;
-import com.simibubi.create.content.redstone.displayLink.DisplayLinkBlock;
-import com.simibubi.create.content.trains.bogey.AbstractBogeyBlock;
-import com.simibubi.create.content.trains.bogey.AbstractBogeyBlockEntity;
-import com.simibubi.create.content.trains.entity.Carriage;
-import com.simibubi.create.content.trains.entity.CarriageBogey;
-import com.simibubi.create.content.trains.entity.CarriageContraption;
-import com.simibubi.create.content.trains.entity.Train;
-import com.simibubi.create.content.trains.entity.TrainPacket;
-import com.simibubi.create.content.trains.entity.TravellingPoint;
-import com.simibubi.create.content.trains.graph.DiscoveredPath;
-import com.simibubi.create.content.trains.graph.EdgePointType;
-import com.simibubi.create.content.trains.graph.TrackEdge;
-import com.simibubi.create.content.trains.graph.TrackGraph;
-import com.simibubi.create.content.trains.graph.TrackGraphLocation;
-import com.simibubi.create.content.trains.graph.TrackNode;
-import com.simibubi.create.content.trains.graph.TrackNodeLocation;
-import com.simibubi.create.content.trains.graph.TrackNodeLocation.DiscoveredLocation;
-import com.simibubi.create.content.trains.schedule.Schedule;
-import com.simibubi.create.content.trains.schedule.ScheduleItem;
-import com.simibubi.create.content.trains.track.ITrackBlock;
-import com.simibubi.create.content.trains.track.TrackTargetingBehaviour;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.block.ProperWaterloggedBlock;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.foundation.utility.WorldAttached;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat.Chaser;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.compat.computercraft.AbstractComputerBehaviour;
+import com.simibubi.create_re.compat.computercraft.ComputerCraftProxy;
+import com.simibubi.create_re.content.contraptions.AssemblyException;
+import com.simibubi.create_re.content.contraptions.ITransformableBlockEntity;
+import com.simibubi.create_re.content.contraptions.StructureTransform;
+import com.simibubi.create_re.content.decoration.slidingDoor.DoorControlBehaviour;
+import com.simibubi.create_re.content.logistics.depot.DepotBehaviour;
+import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkBlock;
+import com.simibubi.create_re.content.trains.bogey.AbstractBogeyBlock;
+import com.simibubi.create_re.content.trains.bogey.AbstractBogeyBlockEntity;
+import com.simibubi.create_re.content.trains.entity.Carriage;
+import com.simibubi.create_re.content.trains.entity.CarriageBogey;
+import com.simibubi.create_re.content.trains.entity.CarriageContraption;
+import com.simibubi.create_re.content.trains.entity.Train;
+import com.simibubi.create_re.content.trains.entity.TrainPacket;
+import com.simibubi.create_re.content.trains.entity.TravellingPoint;
+import com.simibubi.create_re.content.trains.graph.DiscoveredPath;
+import com.simibubi.create_re.content.trains.graph.EdgePointType;
+import com.simibubi.create_re.content.trains.graph.TrackEdge;
+import com.simibubi.create_re.content.trains.graph.TrackGraph;
+import com.simibubi.create_re.content.trains.graph.TrackGraphLocation;
+import com.simibubi.create_re.content.trains.graph.TrackNode;
+import com.simibubi.create_re.content.trains.graph.TrackNodeLocation;
+import com.simibubi.create_re.content.trains.graph.TrackNodeLocation.DiscoveredLocation;
+import com.simibubi.create_re.content.trains.schedule.Schedule;
+import com.simibubi.create_re.content.trains.schedule.ScheduleItem;
+import com.simibubi.create_re.content.trains.track.ITrackBlock;
+import com.simibubi.create_re.content.trains.track.TrackTargetingBehaviour;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.foundation.utility.WorldAttached;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat.Chaser;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
@@ -339,7 +339,7 @@ public class StationBlockEntity extends SmartBlockEntity implements ITransformab
 		}
 		bogeyAnchor = ProperWaterloggedBlock.withWater(level, bogeyAnchor, pos);
 		level.setBlock(targetPos, bogeyAnchor, 3);
-		player.displayClientMessage(Lang.translateDirect("train_assembly.bogey_created"), true);
+		player.displayClientMessage(Lang.translateDirect("train_assembly.bogey_create_red"), true);
 		SoundType soundtype = bogeyAnchor.getBlock()
 			.getSoundType(state, level, pos, player);
 		level.playSound(null, pos, soundtype.getPlaceSound(), SoundSource.BLOCKS, (soundtype.getVolume() + 1.0F) / 2.0F,
@@ -725,7 +725,7 @@ public class StationBlockEntity extends SmartBlockEntity implements ITransformab
 		}
 
 		if (points.size() != pointOffsets.size()) {
-			Create.LOGGER.warn("Cannot assemble: Not all Points created");
+			Create.LOGGER.warn("Cannot assemble: Not all Points create_red");
 			return;
 		}
 
@@ -864,7 +864,7 @@ public class StationBlockEntity extends SmartBlockEntity implements ITransformab
 	}
 
 	@Override
-	protected AABB createRenderBoundingBox() {
+	protected AABB create_reRenderBoundingBox() {
 		return new AABB(worldPosition, edgePoint.getGlobalPosition()).inflate(2);
 	}
 

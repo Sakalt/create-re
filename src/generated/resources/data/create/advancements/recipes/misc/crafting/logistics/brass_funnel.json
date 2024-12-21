@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/logistics/brass_funnel"
+        "recipe": "create_re:crafting/logistics/brass_funnel"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/logistics/brass_funnel"
+      "create_re:crafting/logistics/brass_funnel"
     ]
   },
   "sends_telemetry_event": false

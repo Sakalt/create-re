@@ -10,7 +10,7 @@
   "cookingtime": 200,
   "experience": 0.1,
   "ingredient": {
-    "item": "create:crushed_raw_osmium"
+    "item": "create_re:crushed_raw_osmium"
   },
   "result": "mekanism:ingot_osmium"
 }

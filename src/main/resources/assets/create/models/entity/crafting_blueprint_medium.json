@@ -1,8 +1,8 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "create:entity/blueprint_medium",
-    "particle": "create:entity/blueprint_medium"
+    "0": "create_re:entity/blueprint_medium",
+    "particle": "create_re:entity/blueprint_medium"
   },
   "elements": [
     {

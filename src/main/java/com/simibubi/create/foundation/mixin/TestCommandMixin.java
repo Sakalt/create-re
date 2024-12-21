@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.mixin;
+package com.simibubi.create_re.foundation.mixin;
 
 import javax.annotation.Nullable;
 
@@ -6,7 +6,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
-import com.simibubi.create.infrastructure.gametest.CreateTestFunction;
+import com.simibubi.create_re.infrastructure.gametest.CreateTestFunction;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.gametest.framework.GameTestRegistry;
@@ -28,7 +28,7 @@ public class TestCommandMixin {
 			),
 			require = 0 // don't crash if this fails. non-critical
 	)
-	private static TestFunction create$getCorrectTestFunction(String testName,
+	private static TestFunction create_re$getCorrectTestFunction(String testName,
 															  ServerLevel level, BlockPos pos, @Nullable MultipleTestTracker tracker) {
 		StructureBlockEntity be = (StructureBlockEntity) level.getBlockEntity(pos);
 		CompoundTag data = be.getPersistentData();

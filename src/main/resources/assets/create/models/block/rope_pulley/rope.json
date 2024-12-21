@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"5": "create:block/pulley_rope",
-		"particle": "create:block/pulley_rope"
+		"5": "create_re:block/pulley_rope",
+		"particle": "create_re:block/pulley_rope"
 	},
 	"elements": [
 		{

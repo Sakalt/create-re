@@ -1,4 +1,4 @@
-package com.simibubi.create.content.logistics.filter;
+package com.simibubi.create_re.content.logistics.filter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -12,21 +12,21 @@ import java.util.stream.Collectors;
 import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.kinetics.fan.processing.AllFanProcessingTypes;
-import com.simibubi.create.content.logistics.filter.attribute.BookAuthorAttribute;
-import com.simibubi.create.content.logistics.filter.attribute.BookCopyAttribute;
-import com.simibubi.create.content.logistics.filter.attribute.ColorAttribute;
-import com.simibubi.create.content.logistics.filter.attribute.EnchantAttribute;
-import com.simibubi.create.content.logistics.filter.attribute.FluidContentsAttribute;
-import com.simibubi.create.content.logistics.filter.attribute.ItemNameAttribute;
-import com.simibubi.create.content.logistics.filter.attribute.ShulkerFillLevelAttribute;
-import com.simibubi.create.content.logistics.filter.attribute.astralsorcery.AstralSorceryAmuletAttribute;
-import com.simibubi.create.content.logistics.filter.attribute.astralsorcery.AstralSorceryAttunementAttribute;
-import com.simibubi.create.content.logistics.filter.attribute.astralsorcery.AstralSorceryCrystalAttribute;
-import com.simibubi.create.content.logistics.filter.attribute.astralsorcery.AstralSorceryPerkGemAttribute;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllRecipeTypes;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.kinetics.fan.processing.AllFanProcessingTypes;
+import com.simibubi.create_re.content.logistics.filter.attribute.BookAuthorAttribute;
+import com.simibubi.create_re.content.logistics.filter.attribute.BookCopyAttribute;
+import com.simibubi.create_re.content.logistics.filter.attribute.ColorAttribute;
+import com.simibubi.create_re.content.logistics.filter.attribute.EnchantAttribute;
+import com.simibubi.create_re.content.logistics.filter.attribute.FluidContentsAttribute;
+import com.simibubi.create_re.content.logistics.filter.attribute.ItemNameAttribute;
+import com.simibubi.create_re.content.logistics.filter.attribute.ShulkerFillLevelAttribute;
+import com.simibubi.create_re.content.logistics.filter.attribute.astralsorcery.AstralSorceryAmuletAttribute;
+import com.simibubi.create_re.content.logistics.filter.attribute.astralsorcery.AstralSorceryAttunementAttribute;
+import com.simibubi.create_re.content.logistics.filter.attribute.astralsorcery.AstralSorceryCrystalAttribute;
+import com.simibubi.create_re.content.logistics.filter.attribute.astralsorcery.AstralSorceryPerkGemAttribute;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.MutableComponent;
@@ -273,7 +273,7 @@ public interface ItemAttribute {
 
 		@Override
 		public ItemAttribute readNBT(CompoundTag nbt) {
-			return new InTag(ItemTags.create(new ResourceLocation(nbt.getString("space"), nbt.getString("path"))));
+			return new InTag(ItemTags.create_re(new ResourceLocation(nbt.getString("space"), nbt.getString("path"))));
 		}
 
 	}

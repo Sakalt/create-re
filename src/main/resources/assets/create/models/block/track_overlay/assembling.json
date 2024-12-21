@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"textures": {
-		"3": "create:block/track_assembly_overlay"
+		"3": "create_re:block/track_assembly_overlay"
 	},
 	"elements": [
 		{

@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.particle;
+package com.simibubi.create_re.foundation.particle;
 
 import java.util.Locale;
 
@@ -6,7 +6,7 @@ import com.mojang.brigadier.StringReader;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import com.simibubi.create.AllParticleTypes;
+import com.simibubi.create_re.AllParticleTypes;
 
 import net.minecraft.client.particle.ParticleEngine.SpriteParticleRegistration;
 import net.minecraft.core.particles.ParticleOptions;
@@ -17,7 +17,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class AirParticleData implements ParticleOptions, ICustomParticleDataWithSprite<AirParticleData> {
 
-	public static final Codec<AirParticleData> CODEC = RecordCodecBuilder.create(i -> 
+	public static final Codec<AirParticleData> CODEC = RecordCodecBuilder.create_re(i -> 
 		i.group(
 			Codec.FLOAT.fieldOf("drag").forGetter(p -> p.drag),
 			Codec.FLOAT.fieldOf("speed").forGetter(p -> p.speed))

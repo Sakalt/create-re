@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "create:block/station",
-		"1": "create:entity/blueprint_small",
-		"particle": "create:block/station"
+		"0": "create_re:block/station",
+		"1": "create_re:entity/blueprint_small",
+		"particle": "create_re:block/station"
 	},
 	"elements": [
 		{

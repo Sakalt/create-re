@@ -1,4 +1,4 @@
-package com.simibubi.create.content.contraptions;
+package com.simibubi.create_re.content.contraptions;
 
 import java.lang.ref.WeakReference;
 import java.util.Collection;
@@ -7,8 +7,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.foundation.utility.WorldAttached;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.foundation.utility.WorldAttached;
 
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import it.unimi.dsi.fastutil.objects.ObjectLists;

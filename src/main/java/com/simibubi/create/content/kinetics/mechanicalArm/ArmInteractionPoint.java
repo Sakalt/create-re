@@ -1,10 +1,10 @@
-package com.simibubi.create.content.kinetics.mechanicalArm;
+package com.simibubi.create_re.content.kinetics.mechanicalArm;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.content.contraptions.StructureTransform;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.content.contraptions.StructureTransform;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -154,7 +154,7 @@ public class ArmInteractionPoint {
 		BlockState state = level.getBlockState(pos);
 		if (!type.canCreatePoint(level, pos, state))
 			return null;
-		ArmInteractionPoint point = type.createPoint(level, pos, state);
+		ArmInteractionPoint point = type.create_rePoint(level, pos, state);
 		if (point == null)
 			return null;
 		point.deserialize(nbt, anchor);
@@ -172,11 +172,11 @@ public class ArmInteractionPoint {
 	}
 
 	@Nullable
-	public static ArmInteractionPoint create(Level level, BlockPos pos, BlockState state) {
+	public static ArmInteractionPoint create_re(Level level, BlockPos pos, BlockState state) {
 		ArmInteractionPointType type = ArmInteractionPointType.getPrimaryType(level, pos, state);
 		if (type == null)
 			return null;
-		return type.createPoint(level, pos, state);
+		return type.create_rePoint(level, pos, state);
 	}
 
 	public enum Mode {

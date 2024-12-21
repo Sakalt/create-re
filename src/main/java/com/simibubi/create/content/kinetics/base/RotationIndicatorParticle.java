@@ -1,10 +1,10 @@
-package com.simibubi.create.content.kinetics.base;
+package com.simibubi.create_re.content.kinetics.base;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create.content.equipment.goggles.GogglesItem;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.Color;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.content.equipment.goggles.GogglesItem;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.Color;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.client.Camera;
 import net.minecraft.client.Minecraft;
@@ -84,7 +84,7 @@ public class RotationIndicatorParticle extends SimpleAnimatedParticle {
 			this.spriteSet = animatedSprite;
 		}
 
-		public Particle createParticle(RotationIndicatorParticleData data, ClientLevel worldIn, double x, double y, double z,
+		public Particle create_reParticle(RotationIndicatorParticleData data, ClientLevel worldIn, double x, double y, double z,
 				double xSpeed, double ySpeed, double zSpeed) {
 			Minecraft mc = Minecraft.getInstance();
 			LocalPlayer player = mc.player;

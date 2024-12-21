@@ -1,15 +1,15 @@
-package com.simibubi.create.infrastructure.config;
+package com.simibubi.create_re.infrastructure.config;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Supplier;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.content.kinetics.BlockStressDefaults;
-import com.simibubi.create.content.kinetics.BlockStressValues.IStressValueProvider;
-import com.simibubi.create.foundation.config.ConfigBase;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.kinetics.BlockStressDefaults;
+import com.simibubi.create_re.content.kinetics.BlockStressValues.IStressValueProvider;
+import com.simibubi.create_re.foundation.config.ConfigBase;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;

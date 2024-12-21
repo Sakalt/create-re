@@ -13,18 +13,18 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "block": "create:train_door",
+              "block": "create_re:train_door",
               "condition": "minecraft:block_state_property",
               "properties": {
                 "half": "lower"
               }
             }
           ],
-          "name": "create:train_door"
+          "name": "create_re:train_door"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/train_door"
+  "random_sequence": "create_re:blocks/train_door"
 }

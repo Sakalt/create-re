@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:encased_chain_drive"
+          "name": "create_re:encased_chain_drive"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/encased_chain_drive"
+  "random_sequence": "create_re:blocks/encased_chain_drive"
 }

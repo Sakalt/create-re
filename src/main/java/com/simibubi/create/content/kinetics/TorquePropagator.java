@@ -1,11 +1,11 @@
-package com.simibubi.create.content.kinetics;
+package com.simibubi.create_re.content.kinetics;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.foundation.utility.WorldHelper;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.foundation.utility.WorldHelper;
 
 import net.minecraft.world.level.LevelAccessor;
 

@@ -1,13 +1,13 @@
-package com.simibubi.create.content.trains.track;
+package com.simibubi.create_re.content.trains.track;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
-import com.simibubi.create.content.trains.graph.TrackNodeLocation;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.content.trains.graph.TrackNodeLocation;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.Mth;
@@ -35,7 +35,7 @@ public class TrackBlockEntityTilt {
 		if (smoothingAngle.isPresent())
 			return;
 
-		Couple<BezierConnection> discoveredSlopes = Couple.create(null, null);
+		Couple<BezierConnection> discoveredSlopes = Couple.create_re(null, null);
 		Vec3 axis = null;
 
 		BlockState blockState = blockEntity.getBlockState();
@@ -106,7 +106,7 @@ public class TrackBlockEntityTilt {
 
 		int smoothingParam = Mth.clamp((int) (m * baseAxisLength * 16), 0, 15);
 
-		Couple<Integer> smoothingResult = Couple.create(0, smoothingParam);
+		Couple<Integer> smoothingResult = Couple.create_re(0, smoothingParam);
 		Vec3 raisedOffset = diff.normalize()
 			.add(0, Mth.clamp(m, 0, 1 - 1 / 512.0), 0)
 			.normalize()
@@ -120,7 +120,7 @@ public class TrackBlockEntityTilt {
 			int smoothingToApply = smoothingResult.get(first);
 
 			if (bezierConnection.smoothing == null)
-				bezierConnection.smoothing = Couple.create(0, 0);
+				bezierConnection.smoothing = Couple.create_re(0, 0);
 			bezierConnection.smoothing.setFirst(smoothingToApply);
 			bezierConnection.axes.setFirst(bezierConnection.axes.getFirst()
 				.add(0, (first ? 1 : -1) * -m, 0)
@@ -142,7 +142,7 @@ public class TrackBlockEntityTilt {
 
 	public void captureSmoothingHandles() {
 		boolean first = true;
-		previousSmoothingHandles = Couple.create(null, null);
+		previousSmoothingHandles = Couple.create_re(null, null);
 		for (BezierConnection bezierConnection : blockEntity.connections.values()) {
 			previousSmoothingHandles.set(first, Pair.of(bezierConnection.starts.getFirst(),
 				bezierConnection.smoothing == null ? 0 : bezierConnection.smoothing.getFirst()));

@@ -1,11 +1,11 @@
-package com.simibubi.create.content.kinetics.mixer;
+package com.simibubi.create_re.content.kinetics.mixer;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.content.kinetics.base.KineticBlock;
-import com.simibubi.create.content.kinetics.simpleRelays.ICogWheel;
-import com.simibubi.create.content.processing.basin.BasinBlock;
-import com.simibubi.create.foundation.block.IBE;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.content.kinetics.base.KineticBlock;
+import com.simibubi.create_re.content.kinetics.simpleRelays.ICogWheel;
+import com.simibubi.create_re.content.processing.basin.BasinBlock;
+import com.simibubi.create_re.foundation.block.IBE;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

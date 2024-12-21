@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 1,
   "ingredient": {
-    "tag": "create:stone_types/ochrum"
+    "tag": "create_re:stone_types/ochrum"
   },
-  "result": "create:ochrum_pillar"
+  "result": "create_re:ochrum_pillar"
 }

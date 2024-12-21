@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "create:seats"
+            "tag": "create_re:seats"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/kinetics/yellow_seat_from_other_seat"
+        "recipe": "create_re:crafting/kinetics/yellow_seat_from_other_seat"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/kinetics/yellow_seat_from_other_seat"
+      "create_re:crafting/kinetics/yellow_seat_from_other_seat"
     ]
   },
   "sends_telemetry_event": false

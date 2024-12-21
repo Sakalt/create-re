@@ -1,4 +1,4 @@
-package com.simibubi.create.content.decoration;
+package com.simibubi.create_re.content.decoration;
 
 import javax.annotation.Nullable;
 

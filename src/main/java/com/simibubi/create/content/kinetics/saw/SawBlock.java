@@ -1,20 +1,20 @@
-package com.simibubi.create.content.kinetics.saw;
+package com.simibubi.create_re.content.kinetics.saw;
 
 import java.util.List;
 import java.util.function.Predicate;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.content.kinetics.base.DirectionalAxisKineticBlock;
-import com.simibubi.create.content.kinetics.drill.DrillBlock;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.damageTypes.CreateDamageSources;
-import com.simibubi.create.foundation.placement.IPlacementHelper;
-import com.simibubi.create.foundation.placement.PlacementHelpers;
-import com.simibubi.create.foundation.placement.PlacementOffset;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.content.kinetics.base.DirectionalAxisKineticBlock;
+import com.simibubi.create_re.content.kinetics.drill.DrillBlock;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.damageTypes.CreateDamageSources;
+import com.simibubi.create_re.foundation.placement.IPlacementHelper;
+import com.simibubi.create_re.foundation.placement.PlacementHelpers;
+import com.simibubi.create_re.foundation.placement.PlacementOffset;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
@@ -49,7 +49,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 @ParametersAreNonnullByDefault
 @MethodsReturnNonnullByDefault
 public class SawBlock extends DirectionalAxisKineticBlock implements IBE<SawBlockEntity> {
-	public static final BooleanProperty FLIPPED = BooleanProperty.create("flipped");
+	public static final BooleanProperty FLIPPED = BooleanProperty.create_re("flipped");
 
 	private static final int placementHelperId = PlacementHelpers.register(new PlacementHelper());
 
@@ -58,8 +58,8 @@ public class SawBlock extends DirectionalAxisKineticBlock implements IBE<SawBloc
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
-		super.createBlockStateDefinition(builder.add(FLIPPED));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
+		super.create_reBlockStateDefinition(builder.add(FLIPPED));
 	}
 
 	@Override

@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:vertical_framed_glass"
+              "create_re:vertical_framed_glass"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:vertical_framed_glass_pane"
+        "recipe": "create_re:vertical_framed_glass_pane"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:vertical_framed_glass_pane"
+      "create_re:vertical_framed_glass_pane"
     ]
   },
   "sends_telemetry_event": false

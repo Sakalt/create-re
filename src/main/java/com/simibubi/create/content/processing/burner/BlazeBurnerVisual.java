@@ -1,15 +1,15 @@
-package com.simibubi.create.content.processing.burner;
+package com.simibubi.create_re.content.processing.burner;
 
 import java.util.function.Consumer;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.AllSpriteShifts;
-import com.simibubi.create.foundation.block.render.SpriteShiftEntry;
-import com.simibubi.create.foundation.render.AllInstanceTypes;
-import com.simibubi.create.foundation.utility.AngleHelper;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.AllSpriteShifts;
+import com.simibubi.create_re.foundation.block.render.SpriteShiftEntry;
+import com.simibubi.create_re.foundation.render.AllInstanceTypes;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.visual.DynamicVisual;
@@ -56,7 +56,7 @@ public class BlazeBurnerVisual extends AbstractBlockEntityVisual<BlazeBurnerBloc
 		isInert = blazeModel == AllPartialModels.BLAZE_INERT;
 
 		head = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(blazeModel))
-				.createInstance();
+				.create_reInstance();
 
 		head.light(LightTexture.FULL_BRIGHT);
 
@@ -67,9 +67,9 @@ public class BlazeBurnerVisual extends AbstractBlockEntityVisual<BlazeBurnerBloc
 					: AllPartialModels.BLAZE_BURNER_RODS_2;
 
 			smallRods = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(rodsModel))
-					.createInstance();
+					.create_reInstance();
 			largeRods = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(rodsModel2))
-					.createInstance();
+					.create_reInstance();
 
 			smallRods.light(LightTexture.FULL_BRIGHT);
 			largeRods.light(LightTexture.FULL_BRIGHT);
@@ -118,7 +118,7 @@ public class BlazeBurnerVisual extends AbstractBlockEntityVisual<BlazeBurnerBloc
 
 		if (blockEntity.goggles && goggles == null) {
 			goggles = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(isInert ? AllPartialModels.BLAZE_GOGGLES_SMALL : AllPartialModels.BLAZE_GOGGLES))
-					.createInstance();
+					.create_reInstance();
 			goggles.light(LightTexture.FULL_BRIGHT);
 		} else if (!blockEntity.goggles && goggles != null) {
 			goggles.delete();
@@ -127,7 +127,7 @@ public class BlazeBurnerVisual extends AbstractBlockEntityVisual<BlazeBurnerBloc
 
 		if (blockEntity.hat && hat == null) {
 			hat = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.TRAIN_HAT))
-					.createInstance();
+					.create_reInstance();
 			hat.light(LightTexture.FULL_BRIGHT);
 		} else if (!blockEntity.hat && hat != null) {
 			hat.delete();
@@ -201,7 +201,7 @@ public class BlazeBurnerVisual extends AbstractBlockEntityVisual<BlazeBurnerBloc
 
 	private void setupFlameInstance() {
 		flame = instancerProvider().instancer(AllInstanceTypes.SCROLLING, Models.partial(AllPartialModels.BLAZE_BURNER_FLAME))
-				.createInstance();
+				.create_reInstance();
 
 		flame.position(getVisualPosition())
 				.light(LightTexture.FULL_BRIGHT);

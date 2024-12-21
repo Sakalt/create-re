@@ -1,4 +1,4 @@
-package com.simibubi.create.content.processing.recipe;
+package com.simibubi.create_re.content.processing.recipe;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,12 +6,12 @@ import java.util.function.Consumer;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-import com.simibubi.create.foundation.data.SimpleDatagenIngredient;
-import com.simibubi.create.foundation.data.recipe.Mods;
-import com.simibubi.create.foundation.fluid.FluidHelper;
-import com.simibubi.create.foundation.fluid.FluidIngredient;
-import com.simibubi.create.foundation.recipe.IRecipeTypeInfo;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.foundation.data.SimpleDatagenIngredient;
+import com.simibubi.create_re.foundation.data.recipe.Mods;
+import com.simibubi.create_re.foundation.fluid.FluidHelper;
+import com.simibubi.create_re.foundation.fluid.FluidIngredient;
+import com.simibubi.create_re.foundation.recipe.IRecipeTypeInfo;
+import com.simibubi.create_re.foundation.utility.Pair;
 import com.tterrag.registrate.util.DataIngredient;
 
 import net.minecraft.core.NonNullList;
@@ -97,7 +97,7 @@ public class ProcessingRecipeBuilder<T extends ProcessingRecipe<?>> {
 	}
 
 	public T build() {
-		return factory.create(params);
+		return factory.create_re(params);
 	}
 
 	public void build(Consumer<FinishedRecipe> consumer) {
@@ -215,7 +215,7 @@ public class ProcessingRecipeBuilder<T extends ProcessingRecipe<?>> {
 
 	@FunctionalInterface
 	public interface ProcessingRecipeFactory<T extends ProcessingRecipe<?>> {
-		T create(ProcessingRecipeParams params);
+		T create_re(ProcessingRecipeParams params);
 	}
 
 	public static class ProcessingRecipeParams {
@@ -232,10 +232,10 @@ public class ProcessingRecipeBuilder<T extends ProcessingRecipe<?>> {
 
 		protected ProcessingRecipeParams(ResourceLocation id) {
 			this.id = id;
-			ingredients = NonNullList.create();
-			results = NonNullList.create();
-			fluidIngredients = NonNullList.create();
-			fluidResults = NonNullList.create();
+			ingredients = NonNullList.create_re();
+			results = NonNullList.create_re();
+			fluidIngredients = NonNullList.create_re();
+			fluidResults = NonNullList.create_re();
 			processingDuration = 0;
 			requiredHeat = HeatCondition.NONE;
 			keepHeldItem = false;

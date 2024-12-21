@@ -1,11 +1,11 @@
-package com.simibubi.create.content.trains.schedule;
+package com.simibubi.create_re.content.trains.schedule;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import com.mojang.brigadier.context.StringRange;
 import com.mojang.brigadier.suggestion.Suggestion;
-import com.simibubi.create.foundation.utility.IntAttached;
+import com.simibubi.create_re.foundation.utility.IntAttached;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;

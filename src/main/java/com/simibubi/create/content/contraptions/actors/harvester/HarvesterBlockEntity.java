@@ -1,6 +1,6 @@
-package com.simibubi.create.content.contraptions.actors.harvester;
+package com.simibubi.create_re.content.contraptions.actors.harvester;
 
-import com.simibubi.create.foundation.blockEntity.CachedRenderBBBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.CachedRenderBBBlockEntity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -17,7 +17,7 @@ public class HarvesterBlockEntity extends CachedRenderBBBlockEntity {
 	}
 
 	@Override
-	protected AABB createRenderBoundingBox() {
+	protected AABB create_reRenderBoundingBox() {
 		return new AABB(worldPosition);
 	}
 

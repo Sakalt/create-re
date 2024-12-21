@@ -1,13 +1,13 @@
-package com.simibubi.create.foundation.gui.widget;
+package com.simibubi.create_re.foundation.gui.widget;
 
 import java.util.function.Consumer;
 import java.util.function.Function;
 
-import com.simibubi.create.AllKeys;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.foundation.blockEntity.behaviour.scrollValue.ScrollValueBehaviour.StepContext;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllKeys;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.scrollValue.ScrollValueBehaviour.StepContext;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;

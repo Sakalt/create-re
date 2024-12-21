@@ -1,13 +1,13 @@
-package com.simibubi.create.content.equipment.toolbox;
+package com.simibubi.create_re.content.equipment.toolbox;
 
 import java.util.List;
 import java.util.WeakHashMap;
 import java.util.stream.Collectors;
 
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.foundation.networking.ISyncPersistentData.PersistentDataPacket;
-import com.simibubi.create.foundation.utility.WorldAttached;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.foundation.networking.ISyncPersistentData.PersistentDataPacket;
+import com.simibubi.create_re.foundation.utility.WorldAttached;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

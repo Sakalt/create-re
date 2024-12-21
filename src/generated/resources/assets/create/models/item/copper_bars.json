@@ -1,7 +1,7 @@
 {
-  "parent": "create:item/bars",
+  "parent": "create_re:item/bars",
   "textures": {
-    "bars": "create:block/bars/copper_bars",
-    "edge": "create:block/bars/copper_bars_edge"
+    "bars": "create_re:block/bars/copper_bars",
+    "edge": "create_re:block/bars/copper_bars_edge"
   }
 }

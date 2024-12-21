@@ -1,4 +1,4 @@
-package com.simibubi.create.content.kinetics.belt.transport;
+package com.simibubi.create_re.content.kinetics.belt.transport;
 
 import static net.minecraft.core.Direction.AxisDirection.NEGATIVE;
 import static net.minecraft.core.Direction.AxisDirection.POSITIVE;
@@ -6,11 +6,11 @@ import static net.minecraft.world.entity.MoverType.SELF;
 
 import java.util.List;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.kinetics.belt.BeltBlock;
-import com.simibubi.create.content.kinetics.belt.BeltBlockEntity;
-import com.simibubi.create.content.kinetics.belt.BeltPart;
-import com.simibubi.create.content.kinetics.belt.BeltSlope;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlock;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlockEntity;
+import com.simibubi.create_re.content.kinetics.belt.BeltPart;
+import com.simibubi.create_re.content.kinetics.belt.BeltSlope;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

@@ -1,4 +1,4 @@
-package com.simibubi.create.content.fluids.tank;
+package com.simibubi.create_re.content.fluids.tank;
 
 import static java.lang.Math.abs;
 
@@ -8,17 +8,17 @@ import java.util.Objects;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import com.simibubi.create.api.connectivity.ConnectivityHandler;
-import com.simibubi.create.content.equipment.goggles.IHaveGoggleInformation;
-import com.simibubi.create.content.fluids.tank.FluidTankBlock.Shape;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.blockEntity.IMultiBlockEntityContainer;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.fluid.SmartFluidTank;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat.Chaser;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.api.connectivity.ConnectivityHandler;
+import com.simibubi.create_re.content.equipment.goggles.IHaveGoggleInformation;
+import com.simibubi.create_re.content.fluids.tank.FluidTankBlock.Shape;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.blockEntity.IMultiBlockEntityContainer;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.fluid.SmartFluidTank;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat.Chaser;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -66,7 +66,7 @@ public class FluidTankBlockEntity extends SmartBlockEntity implements IHaveGoggl
 
 	public FluidTankBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state) {
 		super(type, pos, state);
-		tankInventory = createInventory();
+		tankInventory = create_reInventory();
 		fluidCapability = LazyOptional.of(() -> tankInventory);
 		forceFluidLevelUpdate = true;
 		updateConnectivity = false;
@@ -78,7 +78,7 @@ public class FluidTankBlockEntity extends SmartBlockEntity implements IHaveGoggl
 		refreshCapability();
 	}
 
-	protected SmartFluidTank createInventory() {
+	protected SmartFluidTank create_reInventory() {
 		return new SmartFluidTank(getCapacityMultiplier(), this::onFluidStackChanged);
 	}
 
@@ -351,7 +351,7 @@ public class FluidTankBlockEntity extends SmartBlockEntity implements IHaveGoggl
 	}
 
 	private IFluidHandler handlerForCapability() {
-		return isController() ? boiler.isActive() ? boiler.createHandler() : tankInventory
+		return isController() ? boiler.isActive() ? boiler.create_reHandler() : tankInventory
 			: getControllerBE() != null ? getControllerBE().handlerForCapability() : new FluidTank(0);
 	}
 
@@ -361,11 +361,11 @@ public class FluidTankBlockEntity extends SmartBlockEntity implements IHaveGoggl
 	}
 
 	@Override
-	protected AABB createRenderBoundingBox() {
+	protected AABB create_reRenderBoundingBox() {
 		if (isController())
-			return super.createRenderBoundingBox().expandTowards(width - 1, height - 1, width - 1);
+			return super.create_reRenderBoundingBox().expandTowards(width - 1, height - 1, width - 1);
 		else
-			return super.createRenderBoundingBox();
+			return super.create_reRenderBoundingBox();
 	}
 
 	@Nullable

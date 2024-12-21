@@ -1,5 +1,5 @@
 {
-  "type": "create:crushing",
+  "type": "create_re:crushing",
   "conditions": [
     {
       "type": "forge:mod_loaded",

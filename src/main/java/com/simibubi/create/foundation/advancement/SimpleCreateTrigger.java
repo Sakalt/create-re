@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.advancement;
+package com.simibubi.create_re.foundation.advancement;
 
 import java.util.List;
 import java.util.function.Supplier;
@@ -23,7 +23,7 @@ public class SimpleCreateTrigger extends CriterionTriggerBase<SimpleCreateTrigge
 	}
 
 	@Override
-	public Instance createInstance(JsonObject json, DeserializationContext context) {
+	public Instance create_reInstance(JsonObject json, DeserializationContext context) {
 		return new Instance(getId());
 	}
 

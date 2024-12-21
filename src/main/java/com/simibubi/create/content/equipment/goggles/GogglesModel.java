@@ -1,7 +1,7 @@
-package com.simibubi.create.content.equipment.goggles;
+package com.simibubi.create_re.content.equipment.goggles;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.AllPartialModels;
+import com.simibubi.create_re.AllPartialModels;
 
 import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.world.item.ItemDisplayContext;

@@ -1,4 +1,4 @@
-package com.simibubi.create.content.schematics.client;
+package com.simibubi.create_re.content.schematics.client;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -6,11 +6,11 @@ import java.util.function.Consumer;
 import com.mojang.blaze3d.platform.Window;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.AllKeys;
-import com.simibubi.create.content.schematics.client.tools.ToolType;
-import com.simibubi.create.foundation.gui.AllGuiTextures;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllKeys;
+import com.simibubi.create_re.content.schematics.client.tools.ToolType;
+import com.simibubi.create_re.foundation.gui.AllGuiTextures;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;

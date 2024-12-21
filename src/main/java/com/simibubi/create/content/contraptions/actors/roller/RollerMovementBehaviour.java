@@ -1,4 +1,4 @@
-package com.simibubi.create.content.contraptions.actors.roller;
+package com.simibubi.create_re.content.contraptions.actors.roller;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -9,34 +9,34 @@ import java.util.function.BiConsumer;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.AllTags;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.contraptions.actors.roller.RollerBlockEntity.RollingMode;
-import com.simibubi.create.content.contraptions.behaviour.MovementContext;
-import com.simibubi.create.content.contraptions.pulley.PulleyContraption;
-import com.simibubi.create.content.contraptions.render.ActorVisual;
-import com.simibubi.create.content.contraptions.render.ContraptionMatrices;
-import com.simibubi.create.content.kinetics.base.BlockBreakingMovementBehaviour;
-import com.simibubi.create.content.logistics.filter.FilterItemStack;
-import com.simibubi.create.content.trains.bogey.StandardBogeyBlock;
-import com.simibubi.create.content.trains.entity.Carriage;
-import com.simibubi.create.content.trains.entity.CarriageBogey;
-import com.simibubi.create.content.trains.entity.CarriageContraptionEntity;
-import com.simibubi.create.content.trains.entity.Train;
-import com.simibubi.create.content.trains.entity.TravellingPoint;
-import com.simibubi.create.content.trains.entity.TravellingPoint.ITrackSelector;
-import com.simibubi.create.content.trains.entity.TravellingPoint.SteerDirection;
-import com.simibubi.create.content.trains.graph.TrackEdge;
-import com.simibubi.create.content.trains.graph.TrackGraph;
-import com.simibubi.create.foundation.damageTypes.CreateDamageSources;
-import com.simibubi.create.foundation.item.ItemHelper;
-import com.simibubi.create.foundation.utility.BlockHelper;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.Pair;
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.foundation.virtualWorld.VirtualRenderWorld;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllTags;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.contraptions.actors.roller.RollerBlockEntity.RollingMode;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
+import com.simibubi.create_re.content.contraptions.pulley.PulleyContraption;
+import com.simibubi.create_re.content.contraptions.render.ActorVisual;
+import com.simibubi.create_re.content.contraptions.render.ContraptionMatrices;
+import com.simibubi.create_re.content.kinetics.base.BlockBreakingMovementBehaviour;
+import com.simibubi.create_re.content.logistics.filter.FilterItemStack;
+import com.simibubi.create_re.content.trains.bogey.StandardBogeyBlock;
+import com.simibubi.create_re.content.trains.entity.Carriage;
+import com.simibubi.create_re.content.trains.entity.CarriageBogey;
+import com.simibubi.create_re.content.trains.entity.CarriageContraptionEntity;
+import com.simibubi.create_re.content.trains.entity.Train;
+import com.simibubi.create_re.content.trains.entity.TravellingPoint;
+import com.simibubi.create_re.content.trains.entity.TravellingPoint.ITrackSelector;
+import com.simibubi.create_re.content.trains.entity.TravellingPoint.SteerDirection;
+import com.simibubi.create_re.content.trains.graph.TrackEdge;
+import com.simibubi.create_re.content.trains.graph.TrackGraph;
+import com.simibubi.create_re.foundation.damageTypes.CreateDamageSources;
+import com.simibubi.create_re.foundation.item.ItemHelper;
+import com.simibubi.create_re.foundation.utility.BlockHelper;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Pair;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.foundation.virtualWorld.VirtualRenderWorld;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
 import dev.engine_room.flywheel.api.visualization.VisualizationManager;
@@ -77,7 +77,7 @@ public class RollerMovementBehaviour extends BlockBreakingMovementBehaviour {
 
 	@Nullable
 	@Override
-	public ActorVisual createVisual(VisualizationContext visualizationContext, VirtualRenderWorld simulationWorld,
+	public ActorVisual create_reVisual(VisualizationContext visualizationContext, VirtualRenderWorld simulationWorld,
 		MovementContext movementContext) {
 		return new RollerActorVisual(visualizationContext, simulationWorld, movementContext);
 	}
@@ -204,7 +204,7 @@ public class RollerMovementBehaviour extends BlockBreakingMovementBehaviour {
 		}
 
 		// Train
-		PaveTask profileForTracks = createHeightProfileForTracks(context);
+		PaveTask profileForTracks = create_reHeightProfileForTracks(context);
 		if (profileForTracks != null) {
 			for (Couple<Integer> coords : profileForTracks.keys()) {
 				float height = profileForTracks.get(coords);
@@ -241,7 +241,7 @@ public class RollerMovementBehaviour extends BlockBreakingMovementBehaviour {
 	}
 
 	@Nullable
-	protected PaveTask createHeightProfileForTracks(MovementContext context) {
+	protected PaveTask create_reHeightProfileForTracks(MovementContext context) {
 		if (context.contraption == null)
 			return null;
 		if (!(context.contraption.entity instanceof CarriageContraptionEntity cce))
@@ -319,7 +319,7 @@ public class RollerMovementBehaviour extends BlockBreakingMovementBehaviour {
 		int yOffset = 0;
 
 		List<Pair<BlockPos, Boolean>> paveSet = new ArrayList<>();
-		PaveTask profileForTracks = createHeightProfileForTracks(context);
+		PaveTask profileForTracks = create_reHeightProfileForTracks(context);
 		if (profileForTracks == null)
 			paveSet.add(Pair.of(pos, false));
 		else
@@ -452,7 +452,7 @@ public class RollerMovementBehaviour extends BlockBreakingMovementBehaviour {
 			ITurnListener turnListener, double prevPos, double totalDistance) {
 			double from = forward ? prevPos : position;
 			double to = forward ? position : prevPos;
-			traversalCallback.accept(edge, Couple.create(from, to));
+			traversalCallback.accept(edge, Couple.create_re(from, to));
 			return super.edgeTraversedFrom(graph, forward, edgePointListener, turnListener, prevPos, totalDistance);
 		}
 

@@ -1,7 +1,7 @@
 {
   "values": [
-    "create:zinc_block",
-    "create:brass_block",
-    "create:experience_block"
+    "create_re:zinc_block",
+    "create_re:brass_block",
+    "create_re:experience_block"
   ]
 }

@@ -1,18 +1,18 @@
-package com.simibubi.create.content.contraptions.actors.harvester;
+package com.simibubi.create_re.content.contraptions.actors.harvester;
 
 import javax.annotation.Nullable;
 
 import org.apache.commons.lang3.mutable.MutableBoolean;
 
-import com.simibubi.create.content.contraptions.behaviour.MovementBehaviour;
-import com.simibubi.create.content.contraptions.behaviour.MovementContext;
-import com.simibubi.create.content.contraptions.render.ActorVisual;
-import com.simibubi.create.content.contraptions.render.ContraptionMatrices;
-import com.simibubi.create.foundation.item.ItemHelper;
-import com.simibubi.create.foundation.utility.BlockHelper;
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.foundation.virtualWorld.VirtualRenderWorld;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementBehaviour;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
+import com.simibubi.create_re.content.contraptions.render.ActorVisual;
+import com.simibubi.create_re.content.contraptions.render.ContraptionMatrices;
+import com.simibubi.create_re.foundation.item.ItemHelper;
+import com.simibubi.create_re.foundation.utility.BlockHelper;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.foundation.virtualWorld.VirtualRenderWorld;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
 import dev.engine_room.flywheel.api.visualization.VisualizationManager;
@@ -162,7 +162,7 @@ public class HarvesterMovementBehaviour implements MovementBehaviour {
 				.isEmpty())
 				return Blocks.AIR.defaultBlockState();
 			return state.getFluidState()
-				.createLegacyBlock();
+				.create_reLegacyBlock();
 		}
 
 		Block block = state.getBlock();
@@ -178,7 +178,7 @@ public class HarvesterMovementBehaviour implements MovementBehaviour {
 				.isEmpty())
 				return Blocks.AIR.defaultBlockState();
 			return state.getFluidState()
-				.createLegacyBlock();
+				.create_reLegacyBlock();
 		}
 		if (state.getCollisionShape(world, pos)
 			.isEmpty() || block instanceof CocoaBlock) {
@@ -196,7 +196,7 @@ public class HarvesterMovementBehaviour implements MovementBehaviour {
 			.isEmpty())
 			return Blocks.AIR.defaultBlockState();
 		return state.getFluidState()
-			.createLegacyBlock();
+			.create_reLegacyBlock();
 	}
 
 	@Override
@@ -213,7 +213,7 @@ public class HarvesterMovementBehaviour implements MovementBehaviour {
 
 	@Nullable
 	@Override
-	public ActorVisual createVisual(VisualizationContext visualizationContext, VirtualRenderWorld simulationWorld,
+	public ActorVisual create_reVisual(VisualizationContext visualizationContext, VirtualRenderWorld simulationWorld,
 		MovementContext movementContext) {
 		return new HarvesterActorVisual(visualizationContext, simulationWorld, movementContext);
 	}

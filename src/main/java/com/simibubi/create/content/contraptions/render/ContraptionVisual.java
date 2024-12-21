@@ -1,4 +1,4 @@
-package com.simibubi.create.content.contraptions.render;
+package com.simibubi.create_re.content.contraptions.render;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,14 +6,14 @@ import java.util.List;
 import org.apache.commons.lang3.tuple.MutablePair;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.AllMovementBehaviours;
-import com.simibubi.create.content.contraptions.AbstractContraptionEntity;
-import com.simibubi.create.content.contraptions.Contraption;
-import com.simibubi.create.content.contraptions.Contraption.RenderedBlocks;
-import com.simibubi.create.content.contraptions.behaviour.MovementBehaviour;
-import com.simibubi.create.content.contraptions.behaviour.MovementContext;
-import com.simibubi.create.foundation.utility.worldWrappers.WrappedBlockAndTintGetter;
-import com.simibubi.create.foundation.virtualWorld.VirtualRenderWorld;
+import com.simibubi.create_re.AllMovementBehaviours;
+import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity;
+import com.simibubi.create_re.content.contraptions.Contraption;
+import com.simibubi.create_re.content.contraptions.Contraption.RenderedBlocks;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementBehaviour;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
+import com.simibubi.create_re.foundation.utility.worldWrappers.WrappedBlockAndTintGetter;
+import com.simibubi.create_re.foundation.virtualWorld.VirtualRenderWorld;
 
 import dev.engine_room.flywheel.api.model.Model;
 import dev.engine_room.flywheel.api.task.Plan;
@@ -66,7 +66,7 @@ public class ContraptionVisual<E extends AbstractContraptionEntity> extends Abst
 
 	public ContraptionVisual(VisualizationContext ctx, E entity, float partialTick) {
 		super(ctx, entity, partialTick);
-		embedding = ctx.createEmbedding(Vec3i.ZERO);
+		embedding = ctx.create_reEmbedding(Vec3i.ZERO);
 
 		init(partialTick);
     }
@@ -91,7 +91,7 @@ public class ContraptionVisual<E extends AbstractContraptionEntity> extends Abst
 
 		structure = embedding.instancerProvider()
 				.instancer(InstanceTypes.TRANSFORMED, model)
-				.createInstance();
+				.create_reInstance();
 
 		structure.setChanged();
 
@@ -113,7 +113,7 @@ public class ContraptionVisual<E extends AbstractContraptionEntity> extends Abst
 
 		Level level = be.getLevel();
 		be.setLevel(virtualRenderWorld);
-		BlockEntityVisual<? super T> visual = visualizer.createVisual(this.embedding, be, partialTicks);
+		BlockEntityVisual<? super T> visual = visualizer.create_reVisual(this.embedding, be, partialTicks);
 
 		children.add(visual);
 
@@ -143,7 +143,7 @@ public class ContraptionVisual<E extends AbstractContraptionEntity> extends Abst
 		if (movementBehaviour == null) {
 			return;
 		}
-		var visual = movementBehaviour.createVisual(this.embedding, virtualRenderWorld, context);
+		var visual = movementBehaviour.create_reVisual(this.embedding, virtualRenderWorld, context);
 
 		if (visual == null) {
 			return;

@@ -1,4 +1,4 @@
-package com.simibubi.create.content.decoration.slidingDoor;
+package com.simibubi.create_re.content.decoration.slidingDoor;
 
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;

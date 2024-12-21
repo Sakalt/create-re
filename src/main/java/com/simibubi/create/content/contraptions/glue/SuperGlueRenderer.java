@@ -1,4 +1,4 @@
-package com.simibubi.create.content.contraptions.glue;
+package com.simibubi.create_re.content.contraptions.glue;
 
 import net.minecraft.client.renderer.culling.Frustum;
 import net.minecraft.client.renderer.entity.EntityRenderer;

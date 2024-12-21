@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.data;
+package com.simibubi.create_re.foundation.data;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -6,7 +6,7 @@ import java.util.function.Supplier;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.Create;
+import com.simibubi.create_re.Create;
 import com.tterrag.registrate.AbstractRegistrate;
 import com.tterrag.registrate.builders.BlockEntityBuilder;
 import com.tterrag.registrate.builders.BuilderCallback;
@@ -31,7 +31,7 @@ public class CreateBlockEntityBuilder<T extends BlockEntity, P> extends BlockEnt
 	private Collection<NonNullSupplier<? extends Collection<NonNullSupplier<? extends Block>>>> deferredValidBlocks =
 		new ArrayList<>();
 
-	public static <T extends BlockEntity, P> BlockEntityBuilder<T, P> create(AbstractRegistrate<?> owner, P parent,
+	public static <T extends BlockEntity, P> BlockEntityBuilder<T, P> create_re(AbstractRegistrate<?> owner, P parent,
 		String name, BuilderCallback callback, BlockEntityFactory<T> factory) {
 		return new CreateBlockEntityBuilder<>(owner, parent, name, callback, factory);
 	}
@@ -48,12 +48,12 @@ public class CreateBlockEntityBuilder<T extends BlockEntity, P> extends BlockEnt
 	}
 
 	@Override
-	protected BlockEntityType<T> createEntry() {
+	protected BlockEntityType<T> create_reEntry() {
 		deferredValidBlocks.stream()
 			.map(Supplier::get)
 			.flatMap(Collection::stream)
 			.forEach(this::validBlock);
-		return super.createEntry();
+		return super.create_reEntry();
 	}
 
 	public CreateBlockEntityBuilder<T, P> visual(

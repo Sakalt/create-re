@@ -6,7 +6,7 @@
       "tag": "forge:cobblestone"
     },
     "I": {
-      "item": "create:andesite_alloy"
+      "item": "create_re:andesite_alloy"
     },
     "R": {
       "tag": "forge:dusts/redstone"
@@ -20,7 +20,7 @@
     "CRC"
   ],
   "result": {
-    "item": "create:sticker"
+    "item": "create_re:sticker"
   },
   "show_notification": true
 }

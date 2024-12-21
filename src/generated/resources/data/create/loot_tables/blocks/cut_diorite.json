@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:cut_diorite"
+          "name": "create_re:cut_diorite"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/cut_diorite"
+  "random_sequence": "create_re:blocks/cut_diorite"
 }

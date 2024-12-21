@@ -1,12 +1,12 @@
-package com.simibubi.create.infrastructure.command;
+package com.simibubi.create_re.infrastructure.command;
 
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.builder.ArgumentBuilder;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.config.ui.ConfigHelper;
-import com.simibubi.create.foundation.utility.Components;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.config.ui.ConfigHelper;
+import com.simibubi.create_re.foundation.utility.Components;
 
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
@@ -16,9 +16,9 @@ import net.minecraftforge.network.PacketDistributor;
 
 /**
  * Examples:
- * /create config client - to open Create's ConfigGui with the client config already selected
- * /create config "botania:common" - to open Create's ConfigGui with Botania's common config already selected
- * /create config "create:client.client.rainbowDebug" set false - to disable Create's rainbow debug for the sender
+ * /create_re config client - to open Create's ConfigGui with the client config already selected
+ * /create_re config "botania:common" - to open Create's ConfigGui with Botania's common config already selected
+ * /create_re config "create_re:client.client.rainbowDebug" set false - to disable Create's rainbow debug for the sender
  */
 public class ConfigCommand {
 

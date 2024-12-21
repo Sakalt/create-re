@@ -1,4 +1,4 @@
-package com.simibubi.create.content.equipment.extendoGrip;
+package com.simibubi.create_re.content.equipment.extendoGrip;
 
 import java.util.UUID;
 import java.util.function.Consumer;
@@ -7,13 +7,13 @@ import java.util.function.Supplier;
 import com.google.common.base.Suppliers;
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.content.equipment.armor.BacktankUtil;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.item.render.SimpleCustomRenderer;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.content.equipment.armor.BacktankUtil;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.item.render.SimpleCustomRenderer;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
@@ -75,8 +75,8 @@ public class ExtendoGripItem extends Item {
 		super(properties.defaultDurability(MAX_DAMAGE));
 	}
 
-	public static final String EXTENDO_MARKER = "createExtendo";
-	public static final String DUAL_EXTENDO_MARKER = "createDualExtendo";
+	public static final String EXTENDO_MARKER = "create_reExtendo";
+	public static final String DUAL_EXTENDO_MARKER = "create_reDualExtendo";
 
 	@SubscribeEvent
 	public static void holdingExtendoGripIncreasesRange(LivingTickEvent event) {
@@ -312,7 +312,7 @@ public class ExtendoGripItem extends Item {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void initializeClient(Consumer<IClientItemExtensions> consumer) {
-		consumer.accept(SimpleCustomRenderer.create(this, new ExtendoGripItemRenderer()));
+		consumer.accept(SimpleCustomRenderer.create_re(this, new ExtendoGripItemRenderer()));
 	}
 
 }

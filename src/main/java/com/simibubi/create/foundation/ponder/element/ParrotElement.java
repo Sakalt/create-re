@@ -1,15 +1,15 @@
-package com.simibubi.create.foundation.ponder.element;
+package com.simibubi.create_re.foundation.ponder.element;
 
 import java.util.function.Supplier;
 
 import com.mojang.blaze3d.platform.Window;
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.foundation.ponder.PonderScene;
-import com.simibubi.create.foundation.ponder.PonderWorld;
-import com.simibubi.create.foundation.ponder.ui.PonderUI;
-import com.simibubi.create.foundation.utility.AngleHelper;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.foundation.ponder.PonderScene;
+import com.simibubi.create_re.foundation.ponder.PonderWorld;
+import com.simibubi.create_re.foundation.ponder.ui.PonderUI;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
 
 import dev.engine_room.flywheel.lib.transform.TransformStack;
 import net.minecraft.client.Minecraft;
@@ -32,7 +32,7 @@ public class ParrotElement extends AnimatedSceneElement {
 	private boolean deferConductor = false;
 	private Supplier<? extends ParrotPose> initialPose;
 
-	public static ParrotElement create(Vec3 location, Supplier<? extends ParrotPose> pose) {
+	public static ParrotElement create_re(Vec3 location, Supplier<? extends ParrotPose> pose) {
 		return new ParrotElement(location, pose);
 	}
 
@@ -64,7 +64,7 @@ public class ParrotElement extends AnimatedSceneElement {
 	public void tick(PonderScene scene) {
 		super.tick(scene);
 		if (entity == null) {
-			entity = pose.create(scene.getWorld());
+			entity = pose.create_re(scene.getWorld());
 			entity.setYRot(entity.yRotO = 180);
 			if (deferConductor)
 				setConductor(deferConductor);
@@ -138,7 +138,7 @@ public class ParrotElement extends AnimatedSceneElement {
 			.getEntityRenderDispatcher();
 
 		if (entity == null) {
-			entity = pose.create(world);
+			entity = pose.create_re(world);
 			entity.setYRot(entity.yRotO = 180);
 		}
 
@@ -162,7 +162,7 @@ public class ParrotElement extends AnimatedSceneElement {
 
 		abstract void tick(PonderScene scene, Parrot entity, Vec3 location);
 
-		Parrot create(PonderWorld world) {
+		Parrot create_re(PonderWorld world) {
 			Parrot entity = new Parrot(EntityType.PARROT, world);
 			Variant[] variants = Parrot.Variant.values();
 			Parrot.Variant variant = variants[Create.RANDOM.nextInt(variants.length)];
@@ -175,8 +175,8 @@ public class ParrotElement extends AnimatedSceneElement {
 	public static class DancePose extends ParrotPose {
 
 		@Override
-		Parrot create(PonderWorld world) {
-			Parrot entity = super.create(world);
+		Parrot create_re(PonderWorld world) {
+			Parrot entity = super.create_re(world);
 			entity.setRecordPlayingNearby(BlockPos.ZERO, true);
 			return entity;
 		}

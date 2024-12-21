@@ -1,11 +1,11 @@
-package com.simibubi.create.content.logistics.filter;
+package com.simibubi.create_re.content.logistics.filter;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.simibubi.create.AllMenuTypes;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.AllMenuTypes;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
@@ -39,7 +39,7 @@ public class AttributeFilterMenu extends AbstractFilterMenu {
 		super(type, id, inv, stack);
 	}
 
-	public static AttributeFilterMenu create(int id, Inventory inv, ItemStack stack) {
+	public static AttributeFilterMenu create_re(int id, Inventory inv, ItemStack stack) {
 		return new AttributeFilterMenu(AllMenuTypes.ATTRIBUTE_FILTER.get(), id, inv, stack);
 	}
 
@@ -78,7 +78,7 @@ public class AttributeFilterMenu extends AbstractFilterMenu {
 	}
 
 	@Override
-	protected ItemStackHandler createGhostInventory() {
+	protected ItemStackHandler create_reGhostInventory() {
 		return new ItemStackHandler(2);
 	}
 

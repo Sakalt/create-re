@@ -1,9 +1,9 @@
-package com.simibubi.create.content.contraptions.chassis;
+package com.simibubi.create_re.content.contraptions.chassis;
 
 import java.util.function.Consumer;
 
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.foundation.utility.AngleHelper;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.visual.DynamicVisual;
@@ -29,7 +29,7 @@ public class StickerVisual extends AbstractBlockEntityVisual<StickerBlockEntity>
 	public StickerVisual(VisualizationContext context, StickerBlockEntity blockEntity, float partialTick) {
 		super(context, blockEntity, partialTick);
 
-		head = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.STICKER_HEAD)).createInstance();
+		head = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.STICKER_HEAD)).create_reInstance();
 
 		fakeWorld = blockEntity.getLevel() != Minecraft.getInstance().level;
 		facing = blockState.getValue(StickerBlock.FACING);

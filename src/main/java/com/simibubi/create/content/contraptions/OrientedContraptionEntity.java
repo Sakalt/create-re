@@ -1,7 +1,7 @@
-package com.simibubi.create.content.contraptions;
+package com.simibubi.create_re.content.contraptions;
 
-import static com.simibubi.create.foundation.utility.AngleHelper.angleLerp;
-import static com.simibubi.create.foundation.utility.AngleHelper.wrapAngle180;
+import static com.simibubi.create_re.foundation.utility.AngleHelper.angleLerp;
+import static com.simibubi.create_re.foundation.utility.AngleHelper.wrapAngle180;
 
 import java.util.Optional;
 import java.util.UUID;
@@ -9,18 +9,18 @@ import java.util.UUID;
 import javax.annotation.Nullable;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.AllEntityTypes;
-import com.simibubi.create.content.contraptions.bearing.StabilizedContraption;
-import com.simibubi.create.content.contraptions.minecart.MinecartSim2020;
-import com.simibubi.create.content.contraptions.minecart.capability.CapabilityMinecartController;
-import com.simibubi.create.content.contraptions.minecart.capability.MinecartController;
-import com.simibubi.create.content.contraptions.mounted.CartAssemblerBlockEntity.CartMovementMode;
-import com.simibubi.create.content.contraptions.mounted.MountedContraption;
-import com.simibubi.create.foundation.item.ItemHelper;
-import com.simibubi.create.foundation.utility.AngleHelper;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllEntityTypes;
+import com.simibubi.create_re.content.contraptions.bearing.StabilizedContraption;
+import com.simibubi.create_re.content.contraptions.minecart.MinecartSim2020;
+import com.simibubi.create_re.content.contraptions.minecart.capability.CapabilityMinecartController;
+import com.simibubi.create_re.content.contraptions.minecart.capability.MinecartController;
+import com.simibubi.create_re.content.contraptions.mounted.CartAssemblerBlockEntity.CartMovementMode;
+import com.simibubi.create_re.content.contraptions.mounted.MountedContraption;
+import com.simibubi.create_re.foundation.item.ItemHelper;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import dev.engine_room.flywheel.lib.transform.TransformStack;
 import net.minecraft.client.Minecraft;
@@ -87,7 +87,7 @@ public class OrientedContraptionEntity extends AbstractContraptionEntity {
 		nonDamageTicks = 10;
 	}
 
-	public static OrientedContraptionEntity create(Level world, Contraption contraption, Direction initialOrientation) {
+	public static OrientedContraptionEntity create_re(Level world, Contraption contraption, Direction initialOrientation) {
 		OrientedContraptionEntity entity =
 			new OrientedContraptionEntity(AllEntityTypes.ORIENTED_CONTRAPTION.get(), world);
 		entity.setContraption(contraption);
@@ -96,9 +96,9 @@ public class OrientedContraptionEntity extends AbstractContraptionEntity {
 		return entity;
 	}
 
-	public static OrientedContraptionEntity createAtYaw(Level world, Contraption contraption,
+	public static OrientedContraptionEntity create_reAtYaw(Level world, Contraption contraption,
 		Direction initialOrientation, float initialYaw) {
-		OrientedContraptionEntity entity = create(world, contraption, initialOrientation);
+		OrientedContraptionEntity entity = create_re(world, contraption, initialOrientation);
 		entity.startAtYaw(initialYaw);
 		entity.manuallyPlaced = true;
 		return entity;
@@ -460,7 +460,7 @@ public class OrientedContraptionEntity extends AbstractContraptionEntity {
 		MinecartController coupledController = CapabilityMinecartController.getIfPresent(level(), coupledCart);
 		if (coupledController == null || !coupledController.isPresent())
 			return null;
-		return Couple.create(controller, coupledController);
+		return Couple.create_re(controller, coupledController);
 	}
 
 	protected void attachInventoriesFromRidingCarts(Entity riding, boolean isOnCoupling, UUID couplingId) {

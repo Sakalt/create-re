@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:small_rose_quartz_tiles"
+              "create_re:small_rose_quartz_tiles"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/materials/rose_quartz_tilesfrom_conversion"
+        "recipe": "create_re:crafting/materials/rose_quartz_tilesfrom_conversion"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/materials/rose_quartz_tilesfrom_conversion"
+      "create_re:crafting/materials/rose_quartz_tilesfrom_conversion"
     ]
   },
   "sends_telemetry_event": false

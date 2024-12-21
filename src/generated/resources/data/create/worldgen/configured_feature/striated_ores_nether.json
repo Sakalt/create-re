@@ -1,5 +1,5 @@
 {
-  "type": "create:layered_ore",
+  "type": "create_re:layered_ore",
   "config": {
     "discard_chance_on_air_exposure": 0.0,
     "layer_patterns": [
@@ -41,7 +41,7 @@
             [
               {
                 "state": {
-                  "Name": "create:scoria"
+                  "Name": "create_re:scoria"
                 },
                 "target": {
                   "predicate_type": "minecraft:tag_match",
@@ -141,7 +141,7 @@
             [
               {
                 "state": {
-                  "Name": "create:scorchia"
+                  "Name": "create_re:scorchia"
                 },
                 "target": {
                   "predicate_type": "minecraft:tag_match",

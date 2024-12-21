@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.mixin.client;
+package com.simibubi.create_re.foundation.mixin.client;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -20,7 +20,7 @@ public abstract class HeavyBootsOnPlayerMixin extends AbstractClientPlayer {
 	}
 
 	@Inject(method = "isUnderWater()Z", at = @At("HEAD"), cancellable = true)
-	public void create$noSwimmingWithHeavyBootsOn(CallbackInfoReturnable<Boolean> cir) {
+	public void create_re$noSwimmingWithHeavyBootsOn(CallbackInfoReturnable<Boolean> cir) {
 		CompoundTag persistentData = getPersistentData();
 		if (persistentData.contains("HeavyBoots"))
 			cir.setReturnValue(false);

@@ -1,11 +1,11 @@
-package com.simibubi.create.content.kinetics.fan.processing;
+package com.simibubi.create_re.content.kinetics.fan.processing;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.simibubi.create.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour.TransportedResult;
-import com.simibubi.create.content.kinetics.belt.transport.TransportedItemStack;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour.TransportedResult;
+import com.simibubi.create_re.content.kinetics.belt.transport.TransportedItemStack;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -86,11 +86,11 @@ public class FanProcessing {
 
 		if (!nbt.contains("CreateData"))
 			nbt.put("CreateData", new CompoundTag());
-		CompoundTag createData = nbt.getCompound("CreateData");
+		CompoundTag create_reData = nbt.getCompound("CreateData");
 
-		if (!createData.contains("Processing"))
-			createData.put("Processing", new CompoundTag());
-		CompoundTag processing = createData.getCompound("Processing");
+		if (!create_reData.contains("Processing"))
+			create_reData.put("Processing", new CompoundTag());
+		CompoundTag processing = create_reData.getCompound("Processing");
 
 		if (!processing.contains("Type") || AllFanProcessingTypes.parseLegacy(processing.getString("Type")) != type) {
 			processing.putString("Type", FanProcessingTypeRegistry.getIdOrThrow(type).toString());

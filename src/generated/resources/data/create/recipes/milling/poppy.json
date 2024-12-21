@@ -1,5 +1,5 @@
 {
-  "type": "create:milling",
+  "type": "create_re:milling",
   "ingredients": [
     {
       "item": "minecraft:poppy"

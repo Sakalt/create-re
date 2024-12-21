@@ -1,29 +1,29 @@
-package com.simibubi.create.content.fluids.spout;
+package com.simibubi.create_re.content.fluids.spout;
 
-import static com.simibubi.create.content.kinetics.belt.behaviour.BeltProcessingBehaviour.ProcessingResult.HOLD;
-import static com.simibubi.create.content.kinetics.belt.behaviour.BeltProcessingBehaviour.ProcessingResult.PASS;
+import static com.simibubi.create_re.content.kinetics.belt.behaviour.BeltProcessingBehaviour.ProcessingResult.HOLD;
+import static com.simibubi.create_re.content.kinetics.belt.behaviour.BeltProcessingBehaviour.ProcessingResult.PASS;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.api.behaviour.BlockSpoutingBehaviour;
-import com.simibubi.create.content.equipment.goggles.IHaveGoggleInformation;
-import com.simibubi.create.content.fluids.FluidFX;
-import com.simibubi.create.content.kinetics.belt.behaviour.BeltProcessingBehaviour;
-import com.simibubi.create.content.kinetics.belt.behaviour.BeltProcessingBehaviour.ProcessingResult;
-import com.simibubi.create.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour;
-import com.simibubi.create.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour.TransportedResult;
-import com.simibubi.create.content.kinetics.belt.transport.TransportedItemStack;
-import com.simibubi.create.foundation.advancement.AdvancementBehaviour;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.fluid.SmartFluidTankBehaviour;
-import com.simibubi.create.foundation.fluid.FluidHelper;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.api.behaviour.BlockSpoutingBehaviour;
+import com.simibubi.create_re.content.equipment.goggles.IHaveGoggleInformation;
+import com.simibubi.create_re.content.fluids.FluidFX;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.BeltProcessingBehaviour;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.BeltProcessingBehaviour.ProcessingResult;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour.TransportedResult;
+import com.simibubi.create_re.content.kinetics.belt.transport.TransportedItemStack;
+import com.simibubi.create_re.foundation.advancement.AdvancementBehaviour;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.fluid.SmartFluidTankBehaviour;
+import com.simibubi.create_re.foundation.fluid.FluidHelper;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -51,7 +51,7 @@ public class SpoutBlockEntity extends SmartBlockEntity implements IHaveGoggleInf
 
 	SmartFluidTankBehaviour tank;
 
-	private boolean createdSweetRoll, createdHoneyApple, createdChocolateBerries;
+	private boolean create_redSweetRoll, create_redHoneyApple, create_redChocolateBerries;
 
 	public SpoutBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state) {
 		super(type, pos, state);
@@ -59,8 +59,8 @@ public class SpoutBlockEntity extends SmartBlockEntity implements IHaveGoggleInf
 	}
 
 	@Override
-	protected AABB createRenderBoundingBox() {
-		return super.createRenderBoundingBox().expandTowards(0, -2, 0);
+	protected AABB create_reRenderBoundingBox() {
+		return super.create_reRenderBoundingBox().expandTowards(0, -2, 0);
 	}
 
 	@Override
@@ -125,10 +125,10 @@ public class SpoutBlockEntity extends SmartBlockEntity implements IHaveGoggleInf
 
 		award(AllAdvancements.SPOUT);
 		if (trackFoods()) {
-			createdChocolateBerries |= AllItems.CHOCOLATE_BERRIES.isIn(out);
-			createdHoneyApple |= AllItems.HONEYED_APPLE.isIn(out);
-			createdSweetRoll |= AllItems.SWEET_ROLL.isIn(out);
-			if (createdChocolateBerries && createdHoneyApple && createdSweetRoll)
+			create_redChocolateBerries |= AllItems.CHOCOLATE_BERRIES.isIn(out);
+			create_redHoneyApple |= AllItems.HONEYED_APPLE.isIn(out);
+			create_redSweetRoll |= AllItems.SWEET_ROLL.isIn(out);
+			if (create_redChocolateBerries && create_redHoneyApple && create_redSweetRoll)
 				award(AllAdvancements.FOODS);
 		}
 
@@ -156,11 +156,11 @@ public class SpoutBlockEntity extends SmartBlockEntity implements IHaveGoggleInf
 
 		if (!trackFoods())
 			return;
-		if (createdChocolateBerries)
+		if (create_redChocolateBerries)
 			NBTHelper.putMarker(compound, "ChocolateBerries");
-		if (createdHoneyApple)
+		if (create_redHoneyApple)
 			NBTHelper.putMarker(compound, "HoneyApple");
-		if (createdSweetRoll)
+		if (create_redSweetRoll)
 			NBTHelper.putMarker(compound, "SweetRoll");
 	}
 
@@ -173,9 +173,9 @@ public class SpoutBlockEntity extends SmartBlockEntity implements IHaveGoggleInf
 		super.read(compound, clientPacket);
 		processingTicks = compound.getInt("ProcessingTicks");
 
-		createdChocolateBerries = compound.contains("ChocolateBerries");
-		createdHoneyApple = compound.contains("HoneyApple");
-		createdSweetRoll = compound.contains("SweetRoll");
+		create_redChocolateBerries = compound.contains("ChocolateBerries");
+		create_redHoneyApple = compound.contains("HoneyApple");
+		create_redSweetRoll = compound.contains("SweetRoll");
 
 		if (!clientPacket)
 			return;

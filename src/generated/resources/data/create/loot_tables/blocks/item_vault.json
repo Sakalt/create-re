@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:item_vault"
+          "name": "create_re:item_vault"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/item_vault"
+  "random_sequence": "create_re:blocks/item_vault"
 }

@@ -1,4 +1,4 @@
-package com.simibubi.create.infrastructure.worldgen;
+package com.simibubi.create_re.infrastructure.worldgen;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 
 public class LayeredOreConfiguration implements FeatureConfiguration {
-	public static final Codec<LayeredOreConfiguration> CODEC = RecordCodecBuilder.create(instance -> {
+	public static final Codec<LayeredOreConfiguration> CODEC = RecordCodecBuilder.create_re(instance -> {
 		return instance.group(
 			Codec.list(LayerPattern.CODEC)
 				.fieldOf("layer_patterns")

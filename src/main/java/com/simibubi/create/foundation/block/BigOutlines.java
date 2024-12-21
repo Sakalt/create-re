@@ -1,8 +1,8 @@
-package com.simibubi.create.foundation.block;
+package com.simibubi.create_re.foundation.block;
 
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.RaycastHelper;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.RaycastHelper;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;

@@ -5,8 +5,8 @@
 		"0": "#casing",
 		"1": "#opening",
 		"particle": "#casing",
-		"1_0": "create:block/axis",
-		"1_1": "create:block/axis_top"
+		"1_0": "create_re:block/axis",
+		"1_1": "create_re:block/axis_top"
 	},
 	"elements": [
 		{

@@ -1,14 +1,14 @@
-package com.simibubi.create.content.schematics.client;
+package com.simibubi.create_re.content.schematics.client;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.content.schematics.SchematicWorld;
-import com.simibubi.create.foundation.render.BlockEntityRenderHelper;
-import com.simibubi.create.foundation.render.ShadedBlockSbbBuilder;
-import com.simibubi.create.foundation.render.SuperByteBuffer;
-import com.simibubi.create.foundation.render.SuperRenderTypeBuffer;
+import com.simibubi.create_re.content.schematics.SchematicWorld;
+import com.simibubi.create_re.foundation.render.BlockEntityRenderHelper;
+import com.simibubi.create_re.foundation.render.ShadedBlockSbbBuilder;
+import com.simibubi.create_re.foundation.render.SuperByteBuffer;
+import com.simibubi.create_re.foundation.render.SuperRenderTypeBuffer;
 
 import dev.engine_room.flywheel.lib.model.ModelUtil;
 import net.minecraft.client.Minecraft;
@@ -135,7 +135,7 @@ public class SchematicRenderer {
 
 	private static class ThreadLocalObjects {
 		public final PoseStack poseStack = new PoseStack();
-		public final RandomSource random = RandomSource.createNewThreadLocalInstance();
+		public final RandomSource random = RandomSource.create_reNewThreadLocalInstance();
 		public final BlockPos.MutableBlockPos mutableBlockPos = new BlockPos.MutableBlockPos();
 		public final ShadedBlockSbbBuilder sbbBuilder = new ShadedBlockSbbBuilder();
 	}

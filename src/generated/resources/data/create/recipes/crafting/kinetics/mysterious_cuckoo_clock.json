@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "B": {
-      "item": "create:cuckoo_clock"
+      "item": "create_re:cuckoo_clock"
     },
     "C": {
       "tag": "forge:gunpowder"
@@ -15,7 +15,7 @@
     " C "
   ],
   "result": {
-    "item": "create:mysterious_cuckoo_clock"
+    "item": "create_re:mysterious_cuckoo_clock"
   },
   "show_notification": true
 }

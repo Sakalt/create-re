@@ -6,10 +6,10 @@
       "tag": "forge:plates/brass"
     },
     "P": {
-      "item": "create:electron_tube"
+      "item": "create_re:electron_tube"
     },
     "S": {
-      "item": "create:fluid_pipe"
+      "item": "create_re:fluid_pipe"
     }
   },
   "pattern": [
@@ -18,7 +18,7 @@
     "P"
   ],
   "result": {
-    "item": "create:smart_fluid_pipe"
+    "item": "create_re:smart_fluid_pipe"
   },
   "show_notification": true
 }

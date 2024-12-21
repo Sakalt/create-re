@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "create:block/brass_door_side",
-		"2": "create:block/brass_door_bottom",
-		"particle": "create:block/brass_casing"
+		"0": "create_re:block/brass_door_side",
+		"2": "create_re:block/brass_door_bottom",
+		"particle": "create_re:block/brass_casing"
 	},
 	"elements": [
 		{

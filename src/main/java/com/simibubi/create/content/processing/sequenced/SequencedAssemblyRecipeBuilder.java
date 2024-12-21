@@ -1,4 +1,4 @@
-package com.simibubi.create.content.processing.sequenced;
+package com.simibubi.create_re.content.processing.sequenced;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,11 +7,11 @@ import java.util.function.UnaryOperator;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.content.processing.recipe.ProcessingOutput;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipe;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeFactory;
+import com.simibubi.create_re.AllRecipeTypes;
+import com.simibubi.create_re.content.processing.recipe.ProcessingOutput;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipe;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeFactory;
 
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.resources.ResourceLocation;

@@ -1,7 +1,7 @@
-package com.simibubi.create.content.equipment.wrench;
+package com.simibubi.create_re.content.equipment.wrench;
 
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllTags.AllItemTags;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllTags.AllItemTags;
 
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;

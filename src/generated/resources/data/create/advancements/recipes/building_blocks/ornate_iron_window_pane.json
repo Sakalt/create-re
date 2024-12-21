@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:ornate_iron_window"
+              "create_re:ornate_iron_window"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:ornate_iron_window_pane"
+        "recipe": "create_re:ornate_iron_window_pane"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:ornate_iron_window_pane"
+      "create_re:ornate_iron_window_pane"
     ]
   },
   "sends_telemetry_event": false

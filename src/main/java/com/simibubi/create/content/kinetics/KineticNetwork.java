@@ -1,10 +1,10 @@
-package com.simibubi.create.content.kinetics;
+package com.simibubi.create_re.content.kinetics;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
 
 public class KineticNetwork {
 

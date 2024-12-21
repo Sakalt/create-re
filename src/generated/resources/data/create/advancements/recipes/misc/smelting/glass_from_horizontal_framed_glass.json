@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:horizontal_framed_glass"
+              "create_re:horizontal_framed_glass"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:smelting/glass_from_horizontal_framed_glass"
+        "recipe": "create_re:smelting/glass_from_horizontal_framed_glass"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:smelting/glass_from_horizontal_framed_glass"
+      "create_re:smelting/glass_from_horizontal_framed_glass"
     ]
   },
   "sends_telemetry_event": false

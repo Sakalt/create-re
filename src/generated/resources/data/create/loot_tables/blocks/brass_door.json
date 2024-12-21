@@ -13,18 +13,18 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "block": "create:brass_door",
+              "block": "create_re:brass_door",
               "condition": "minecraft:block_state_property",
               "properties": {
                 "half": "lower"
               }
             }
           ],
-          "name": "create:brass_door"
+          "name": "create_re:brass_door"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/brass_door"
+  "random_sequence": "create_re:blocks/brass_door"
 }

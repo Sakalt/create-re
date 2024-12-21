@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:copper_tiles"
+              "create_re:copper_tiles"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:copper_tile_slab_from_copper_tiles_stonecutting"
+        "recipe": "create_re:copper_tile_slab_from_copper_tiles_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:copper_tile_slab_from_copper_tiles_stonecutting"
+      "create_re:copper_tile_slab_from_copper_tiles_stonecutting"
     ]
   },
   "sends_telemetry_event": false

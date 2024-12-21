@@ -1,8 +1,8 @@
-package com.simibubi.create.infrastructure.config;
+package com.simibubi.create_re.infrastructure.config;
 
-import com.simibubi.create.content.contraptions.ContraptionData;
-import com.simibubi.create.content.contraptions.ContraptionMovementSetting;
-import com.simibubi.create.foundation.config.ConfigBase;
+import com.simibubi.create_re.content.contraptions.ContraptionData;
+import com.simibubi.create_re.content.contraptions.ContraptionMovementSetting;
+import com.simibubi.create_re.foundation.config.ConfigBase;
 
 public class CKinetics extends ConfigBase {
 
@@ -120,7 +120,7 @@ public class CKinetics extends ConfigBase {
 		static String obsidianMovement = "Configure how Obsidian blocks can be moved by contraptions.";
 		static String reinforcedDeepslateMovement = "Configure how Reinforced Deepslate blocks can be moved by contraptions.";
 		static String minecartContraptionInContainers = "Whether minecart contraptions can be placed into container items.";
-		static String stabiliseStableContraptions = "Whether stabilised bearings create a separated entity even on non-rotating contraptions.";
+		static String stabiliseStableContraptions = "Whether stabilised bearings create_re a separated entity even on non-rotating contraptions.";
 	}
 
 	public enum DeployerAggroSetting {

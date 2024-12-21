@@ -3,8 +3,8 @@
 	"parent": "block/block",
 	"ambientocclusion": false,
 	"textures": {
-		"1": "create:block/signal_glow",
-		"particle": "create:block/signal_glow"
+		"1": "create_re:block/signal_glow",
+		"particle": "create_re:block/signal_glow"
 	},
 	"elements": [
 		{

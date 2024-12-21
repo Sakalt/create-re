@@ -4,7 +4,7 @@
   "group": "cut_tuff_slab",
   "key": {
     "X": {
-      "item": "create:cut_tuff"
+      "item": "create_re:cut_tuff"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 6,
-    "item": "create:cut_tuff_slab"
+    "item": "create_re:cut_tuff_slab"
   },
   "show_notification": true
 }

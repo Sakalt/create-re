@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "X": {
-      "item": "create:cut_scorchia"
+      "item": "create_re:cut_scorchia"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 6,
-    "item": "create:cut_scorchia_wall"
+    "item": "create_re:cut_scorchia_wall"
   },
   "show_notification": true
 }

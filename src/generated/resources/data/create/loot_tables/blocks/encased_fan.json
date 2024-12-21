@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:encased_fan"
+          "name": "create_re:encased_fan"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/encased_fan"
+  "random_sequence": "create_re:blocks/encased_fan"
 }

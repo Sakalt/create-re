@@ -1,7 +1,7 @@
 {
-	"parent": "create:block/rope_pulley/rope_half",
+	"parent": "create_re:block/rope_pulley/rope_half",
 	"textures": {
-		"5": "create:block/hose_pulley_rope",
-		"particle": "create:block/hose_pulley_rope"
+		"5": "create_re:block/hose_pulley_rope",
+		"particle": "create_re:block/hose_pulley_rope"
 	}
 }

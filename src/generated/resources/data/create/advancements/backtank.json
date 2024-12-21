@@ -1,25 +1,25 @@
 {
-  "parent": "create:steam_whistle",
+  "parent": "create_re:steam_whistle",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:backtank_builtin"
+      "trigger": "create_re:backtank_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.backtank.desc"
+      "translate": "advancement.create_re.backtank.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:copper_backtank"
+      "item": "create_re:copper_backtank"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.backtank"
+      "translate": "advancement.create_re.backtank"
     }
   },
   "requirements": [

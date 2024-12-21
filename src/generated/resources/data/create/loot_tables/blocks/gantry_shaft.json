@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:gantry_shaft"
+          "name": "create_re:gantry_shaft"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/gantry_shaft"
+  "random_sequence": "create_re:blocks/gantry_shaft"
 }

@@ -13,18 +13,18 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "block": "create:andesite_door",
+              "block": "create_re:andesite_door",
               "condition": "minecraft:block_state_property",
               "properties": {
                 "half": "lower"
               }
             }
           ],
-          "name": "create:andesite_door"
+          "name": "create_re:andesite_door"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/andesite_door"
+  "random_sequence": "create_re:blocks/andesite_door"
 }

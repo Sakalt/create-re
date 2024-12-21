@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:track_station"
+          "name": "create_re:track_station"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/track_station"
+  "random_sequence": "create_re:blocks/track_station"
 }

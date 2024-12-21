@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:gearshift"
+          "name": "create_re:gearshift"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/gearshift"
+  "random_sequence": "create_re:blocks/gearshift"
 }

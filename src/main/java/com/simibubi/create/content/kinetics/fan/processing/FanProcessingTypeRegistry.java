@@ -1,4 +1,4 @@
-package com.simibubi.create.content.kinetics.fan.processing;
+package com.simibubi.create_re.content.kinetics.fan.processing;
 
 import java.util.Collections;
 import java.util.List;

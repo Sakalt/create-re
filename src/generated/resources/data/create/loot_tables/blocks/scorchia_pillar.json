@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:scorchia_pillar"
+          "name": "create_re:scorchia_pillar"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/scorchia_pillar"
+  "random_sequence": "create_re:blocks/scorchia_pillar"
 }

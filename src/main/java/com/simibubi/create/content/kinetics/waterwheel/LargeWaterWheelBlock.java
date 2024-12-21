@@ -1,11 +1,11 @@
-package com.simibubi.create.content.kinetics.waterwheel;
+package com.simibubi.create_re.content.kinetics.waterwheel;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.kinetics.base.RotatedPillarKineticBlock;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.kinetics.base.RotatedPillarKineticBlock;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -32,7 +32,7 @@ import net.minecraft.world.phys.BlockHitResult;
 
 public class LargeWaterWheelBlock extends RotatedPillarKineticBlock implements IBE<LargeWaterWheelBlockEntity> {
 
-	public static final BooleanProperty EXTENSION = BooleanProperty.create("extension");
+	public static final BooleanProperty EXTENSION = BooleanProperty.create_re("extension");
 
 	public LargeWaterWheelBlock(Properties properties) {
 		super(properties);
@@ -40,8 +40,8 @@ public class LargeWaterWheelBlock extends RotatedPillarKineticBlock implements I
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
-		super.createBlockStateDefinition(builder.add(EXTENSION));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
+		super.create_reBlockStateDefinition(builder.add(EXTENSION));
 	}
 
 	public Axis getAxisForPlacement(BlockPlaceContext context) {
@@ -165,7 +165,7 @@ public class LargeWaterWheelBlock extends RotatedPillarKineticBlock implements I
 	}
 
 	public static Couple<Integer> getSpeedRange() {
-		return Couple.create(4, 4);
+		return Couple.create_re(4, 4);
 	}
 	
 	@Override

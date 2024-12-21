@@ -1,4 +1,4 @@
-package com.simibubi.create.content.contraptions.behaviour.dispenser;
+package com.simibubi.create_re.content.contraptions.behaviour.dispenser;
 
 public class DispenseItemLocation {
 	private final boolean internal;

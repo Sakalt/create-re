@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:raw_zinc_block"
+              "create_re:raw_zinc_block"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/materials/raw_zinc"
+        "recipe": "create_re:crafting/materials/raw_zinc"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/materials/raw_zinc"
+      "create_re:crafting/materials/raw_zinc"
     ]
   },
   "sends_telemetry_event": false

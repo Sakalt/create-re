@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:mechanical_mixer"
+          "name": "create_re:mechanical_mixer"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/mechanical_mixer"
+  "random_sequence": "create_re:blocks/mechanical_mixer"
 }

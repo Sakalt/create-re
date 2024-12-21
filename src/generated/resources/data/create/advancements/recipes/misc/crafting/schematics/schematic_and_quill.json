@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/schematics/schematic_and_quill"
+        "recipe": "create_re:crafting/schematics/schematic_and_quill"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/schematics/schematic_and_quill"
+      "create_re:crafting/schematics/schematic_and_quill"
     ]
   },
   "sends_telemetry_event": false

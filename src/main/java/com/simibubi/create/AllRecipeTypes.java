@@ -1,4 +1,4 @@
-package com.simibubi.create;
+package com.simibubi.create_re;
 
 import java.util.Optional;
 import java.util.function.Predicate;
@@ -6,28 +6,28 @@ import java.util.function.Supplier;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create.compat.jei.ConversionRecipe;
-import com.simibubi.create.content.equipment.sandPaper.SandPaperPolishingRecipe;
-import com.simibubi.create.content.equipment.toolbox.ToolboxDyeingRecipe;
-import com.simibubi.create.content.fluids.transfer.EmptyingRecipe;
-import com.simibubi.create.content.fluids.transfer.FillingRecipe;
-import com.simibubi.create.content.kinetics.crafter.MechanicalCraftingRecipe;
-import com.simibubi.create.content.kinetics.crusher.CrushingRecipe;
-import com.simibubi.create.content.kinetics.deployer.DeployerApplicationRecipe;
-import com.simibubi.create.content.kinetics.deployer.ManualApplicationRecipe;
-import com.simibubi.create.content.kinetics.fan.processing.HauntingRecipe;
-import com.simibubi.create.content.kinetics.fan.processing.SplashingRecipe;
-import com.simibubi.create.content.kinetics.millstone.MillingRecipe;
-import com.simibubi.create.content.kinetics.mixer.CompactingRecipe;
-import com.simibubi.create.content.kinetics.mixer.MixingRecipe;
-import com.simibubi.create.content.kinetics.press.PressingRecipe;
-import com.simibubi.create.content.kinetics.saw.CuttingRecipe;
-import com.simibubi.create.content.processing.basin.BasinRecipe;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeFactory;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeSerializer;
-import com.simibubi.create.content.processing.sequenced.SequencedAssemblyRecipeSerializer;
-import com.simibubi.create.foundation.recipe.IRecipeTypeInfo;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.compat.jei.ConversionRecipe;
+import com.simibubi.create_re.content.equipment.sandPaper.SandPaperPolishingRecipe;
+import com.simibubi.create_re.content.equipment.toolbox.ToolboxDyeingRecipe;
+import com.simibubi.create_re.content.fluids.transfer.EmptyingRecipe;
+import com.simibubi.create_re.content.fluids.transfer.FillingRecipe;
+import com.simibubi.create_re.content.kinetics.crafter.MechanicalCraftingRecipe;
+import com.simibubi.create_re.content.kinetics.crusher.CrushingRecipe;
+import com.simibubi.create_re.content.kinetics.deployer.DeployerApplicationRecipe;
+import com.simibubi.create_re.content.kinetics.deployer.ManualApplicationRecipe;
+import com.simibubi.create_re.content.kinetics.fan.processing.HauntingRecipe;
+import com.simibubi.create_re.content.kinetics.fan.processing.SplashingRecipe;
+import com.simibubi.create_re.content.kinetics.millstone.MillingRecipe;
+import com.simibubi.create_re.content.kinetics.mixer.CompactingRecipe;
+import com.simibubi.create_re.content.kinetics.mixer.MixingRecipe;
+import com.simibubi.create_re.content.kinetics.press.PressingRecipe;
+import com.simibubi.create_re.content.kinetics.saw.CuttingRecipe;
+import com.simibubi.create_re.content.processing.basin.BasinRecipe;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeFactory;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeSerializer;
+import com.simibubi.create_re.content.processing.sequenced.SequencedAssemblyRecipeSerializer;
+import com.simibubi.create_re.foundation.recipe.IRecipeTypeInfo;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -137,8 +137,8 @@ public enum AllRecipeTypes implements IRecipeTypeInfo {
 	}
 
 	private static class Registers {
-		private static final DeferredRegister<RecipeSerializer<?>> SERIALIZER_REGISTER = DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, Create.ID);
-		private static final DeferredRegister<RecipeType<?>> TYPE_REGISTER = DeferredRegister.create(Registries.RECIPE_TYPE, Create.ID);
+		private static final DeferredRegister<RecipeSerializer<?>> SERIALIZER_REGISTER = DeferredRegister.create_re(ForgeRegistries.RECIPE_SERIALIZERS, Create.ID);
+		private static final DeferredRegister<RecipeType<?>> TYPE_REGISTER = DeferredRegister.create_re(Registries.RECIPE_TYPE, Create.ID);
 	}
 
 }

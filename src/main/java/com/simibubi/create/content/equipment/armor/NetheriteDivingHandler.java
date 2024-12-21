@@ -1,6 +1,6 @@
-package com.simibubi.create.content.equipment.armor;
+package com.simibubi.create_re.content.equipment.armor;
 
-import com.simibubi.create.AllTags.AllItemTags;
+import com.simibubi.create_re.AllTags.AllItemTags;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.EquipmentSlot;

@@ -3,13 +3,13 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "create:encased_chain_drive"
+      "item": "create_re:encased_chain_drive"
     },
     {
-      "item": "create:electron_tube"
+      "item": "create_re:electron_tube"
     }
   ],
   "result": {
-    "item": "create:adjustable_chain_gearshift"
+    "item": "create_re:adjustable_chain_gearshift"
   }
 }

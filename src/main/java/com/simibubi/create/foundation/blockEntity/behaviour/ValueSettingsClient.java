@@ -1,11 +1,11 @@
-package com.simibubi.create.foundation.blockEntity.behaviour;
+package com.simibubi.create_re.foundation.blockEntity.behaviour;
 
 import java.util.List;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.foundation.gui.ScreenOpener;
-import com.simibubi.create.foundation.utility.Color;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.foundation.gui.ScreenOpener;
+import com.simibubi.create_re.foundation.utility.Color;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
@@ -98,7 +98,7 @@ public class ValueSettingsClient implements IGuiOverlay {
 		if (interactHeldTicks++ < 5)
 			return;
 		ScreenOpener
-			.open(new ValueSettingsScreen(interactHeldPos, valueSettingBehaviour.createBoard(player, blockHitResult),
+			.open(new ValueSettingsScreen(interactHeldPos, valueSettingBehaviour.create_reBoard(player, blockHitResult),
 				valueSettingBehaviour.getValueSettings(), valueSettingBehaviour::newSettingHovered));
 		interactHeldTicks = -1;
 	}

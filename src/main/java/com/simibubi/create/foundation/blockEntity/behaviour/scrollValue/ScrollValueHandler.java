@@ -1,6 +1,6 @@
-package com.simibubi.create.foundation.blockEntity.behaviour.scrollValue;
+package com.simibubi.create_re.foundation.blockEntity.behaviour.scrollValue;
 
-import com.simibubi.create.foundation.utility.animation.PhysicalFloat;
+import com.simibubi.create_re.foundation.utility.animation.PhysicalFloat;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.Mth;
@@ -12,7 +12,7 @@ public class ScrollValueHandler {
 	private static float lastPassiveScroll = 0.0f;
 	private static float passiveScroll = 0.0f;
 	private static float passiveScrollDirection = 1f;
-	public static final PhysicalFloat wrenchCog = PhysicalFloat.create()
+	public static final PhysicalFloat wrenchCog = PhysicalFloat.create_re()
 		.withDrag(0.3);
 
 	public static float getScroll(float partialTicks) {

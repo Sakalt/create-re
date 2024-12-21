@@ -1,21 +1,21 @@
-package com.simibubi.create.content.contraptions.elevator;
+package com.simibubi.create_re.content.contraptions.elevator;
 
 import java.util.Optional;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.contraptions.elevator.ElevatorColumn.ColumnCoords;
-import com.simibubi.create.content.redstone.contact.RedstoneContactBlock;
-import com.simibubi.create.content.redstone.diodes.BrassDiodeBlock;
-import com.simibubi.create.content.schematics.requirement.ISpecialBlockItemRequirement;
-import com.simibubi.create.content.schematics.requirement.ItemRequirement;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.block.WrenchableDirectionalBlock;
-import com.simibubi.create.foundation.gui.ScreenOpener;
-import com.simibubi.create.foundation.utility.BlockHelper;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.contraptions.elevator.ElevatorColumn.ColumnCoords;
+import com.simibubi.create_re.content.redstone.contact.RedstoneContactBlock;
+import com.simibubi.create_re.content.redstone.diodes.BrassDiodeBlock;
+import com.simibubi.create_re.content.schematics.requirement.ISpecialBlockItemRequirement;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.block.WrenchableDirectionalBlock;
+import com.simibubi.create_re.foundation.gui.ScreenOpener;
+import com.simibubi.create_re.foundation.utility.BlockHelper;
 
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.core.BlockPos;
@@ -48,7 +48,7 @@ public class ElevatorContactBlock extends WrenchableDirectionalBlock
 	implements IBE<ElevatorContactBlockEntity>, ISpecialBlockItemRequirement {
 
 	public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
-	public static final BooleanProperty CALLING = BooleanProperty.create("calling");
+	public static final BooleanProperty CALLING = BooleanProperty.create_re("calling");
 	public static final BooleanProperty POWERING = BrassDiodeBlock.POWERING;
 
 	public ElevatorContactBlock(Properties pProperties) {
@@ -60,8 +60,8 @@ public class ElevatorContactBlock extends WrenchableDirectionalBlock
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
-		super.createBlockStateDefinition(builder.add(CALLING, POWERING, POWERED));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
+		super.create_reBlockStateDefinition(builder.add(CALLING, POWERING, POWERED));
 	}
 
 	@Override

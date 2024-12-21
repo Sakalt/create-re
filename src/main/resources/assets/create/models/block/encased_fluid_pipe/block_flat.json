@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "create:block/copper_casing",
-		"particle": "create:block/copper_casing"
+		"0": "create_re:block/copper_casing",
+		"particle": "create_re:block/copper_casing"
 	},
 	"elements": [
 		{

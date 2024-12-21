@@ -1,12 +1,12 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"2": "create:block/fluid_valve",
-		"3": "create:block/pipes",
-		"4": "create:block/pump",
-		"1_1": "create:block/axis_top",
-		"1_0": "create:block/axis",
-		"particle": "create:block/copper_plating"
+		"2": "create_re:block/fluid_valve",
+		"3": "create_re:block/pipes",
+		"4": "create_re:block/pump",
+		"1_1": "create_re:block/axis_top",
+		"1_0": "create_re:block/axis",
+		"particle": "create_re:block/copper_plating"
 	},
 	"elements": [
 		{

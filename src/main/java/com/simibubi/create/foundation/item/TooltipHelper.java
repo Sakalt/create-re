@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.item;
+package com.simibubi.create_re.foundation.item;
 
 import java.text.BreakIterator;
 import java.util.ArrayList;
@@ -6,9 +6,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 import com.google.common.base.Strings;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
@@ -119,7 +119,7 @@ public class TooltipHelper {
 		MutableComponent lineStart = Components.literal(Strings.repeat(" ", indent));
 		lineStart.withStyle(primaryStyle);
 		List<Component> formattedLines = new ArrayList<>(lines.size());
-		Couple<Style> styles = Couple.create(highlightStyle, primaryStyle);
+		Couple<Style> styles = Couple.create_re(highlightStyle, primaryStyle);
 
 		boolean currentlyHighlighted = false;
 		for (String string : lines) {

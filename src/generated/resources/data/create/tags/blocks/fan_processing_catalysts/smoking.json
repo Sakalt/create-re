@@ -1,7 +1,7 @@
 {
   "values": [
-    "create:blaze_burner",
-    "create:lit_blaze_burner",
+    "create_re:blaze_burner",
+    "create_re:lit_blaze_burner",
     "minecraft:fire",
     "minecraft:campfire"
   ]

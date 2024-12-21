@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "create:block/roller_metal",
-		"particle": "create:block/roller_casing"
+		"1": "create_re:block/roller_metal",
+		"particle": "create_re:block/roller_casing"
 	},
 	"elements": [
 		{

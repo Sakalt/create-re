@@ -1,11 +1,11 @@
-package com.simibubi.create.content.kinetics.simpleRelays;
+package com.simibubi.create_re.content.kinetics.simpleRelays;
 
 import java.util.List;
 
-import com.simibubi.create.content.contraptions.ITransformableBlockEntity;
-import com.simibubi.create.content.contraptions.StructureTransform;
-import com.simibubi.create.content.decoration.bracket.BracketedBlockEntityBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.content.contraptions.ITransformableBlockEntity;
+import com.simibubi.create_re.content.contraptions.StructureTransform;
+import com.simibubi.create_re.content.decoration.bracket.BracketedBlockEntityBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntityType;

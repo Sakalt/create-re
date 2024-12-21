@@ -1,19 +1,19 @@
-package com.simibubi.create.content.contraptions;
+package com.simibubi.create_re.content.contraptions;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.function.Supplier;
 
-import com.simibubi.create.content.contraptions.bearing.BearingContraption;
-import com.simibubi.create.content.contraptions.bearing.ClockworkContraption;
-import com.simibubi.create.content.contraptions.bearing.StabilizedContraption;
-import com.simibubi.create.content.contraptions.elevator.ElevatorContraption;
-import com.simibubi.create.content.contraptions.gantry.GantryContraption;
-import com.simibubi.create.content.contraptions.mounted.MountedContraption;
-import com.simibubi.create.content.contraptions.piston.PistonContraption;
-import com.simibubi.create.content.contraptions.pulley.PulleyContraption;
-import com.simibubi.create.content.trains.entity.CarriageContraption;
+import com.simibubi.create_re.content.contraptions.bearing.BearingContraption;
+import com.simibubi.create_re.content.contraptions.bearing.ClockworkContraption;
+import com.simibubi.create_re.content.contraptions.bearing.StabilizedContraption;
+import com.simibubi.create_re.content.contraptions.elevator.ElevatorContraption;
+import com.simibubi.create_re.content.contraptions.gantry.GantryContraption;
+import com.simibubi.create_re.content.contraptions.mounted.MountedContraption;
+import com.simibubi.create_re.content.contraptions.piston.PistonContraption;
+import com.simibubi.create_re.content.contraptions.pulley.PulleyContraption;
+import com.simibubi.create_re.content.trains.entity.CarriageContraption;
 
 public class ContraptionType {
 

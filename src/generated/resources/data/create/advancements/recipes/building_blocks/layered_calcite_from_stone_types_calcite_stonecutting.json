@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "create:stone_types/calcite"
+            "tag": "create_re:stone_types/calcite"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:layered_calcite_from_stone_types_calcite_stonecutting"
+        "recipe": "create_re:layered_calcite_from_stone_types_calcite_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:layered_calcite_from_stone_types_calcite_stonecutting"
+      "create_re:layered_calcite_from_stone_types_calcite_stonecutting"
     ]
   },
   "sends_telemetry_event": false

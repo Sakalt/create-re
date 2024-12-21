@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:gearbox"
+              "create_re:gearbox"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/kinetics/vertical_gearboxfrom_conversion"
+        "recipe": "create_re:crafting/kinetics/vertical_gearboxfrom_conversion"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/kinetics/vertical_gearboxfrom_conversion"
+      "create_re:crafting/kinetics/vertical_gearboxfrom_conversion"
     ]
   },
   "sends_telemetry_event": false

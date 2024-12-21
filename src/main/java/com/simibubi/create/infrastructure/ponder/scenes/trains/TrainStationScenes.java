@@ -1,18 +1,18 @@
-package com.simibubi.create.infrastructure.ponder.scenes.trains;
+package com.simibubi.create_re.infrastructure.ponder.scenes.trains;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.trains.station.StationBlock;
-import com.simibubi.create.foundation.ponder.ElementLink;
-import com.simibubi.create.foundation.ponder.PonderPalette;
-import com.simibubi.create.foundation.ponder.SceneBuilder;
-import com.simibubi.create.foundation.ponder.SceneBuildingUtil;
-import com.simibubi.create.foundation.ponder.Selection;
-import com.simibubi.create.foundation.ponder.element.InputWindowElement;
-import com.simibubi.create.foundation.ponder.element.ParrotElement;
-import com.simibubi.create.foundation.ponder.element.ParrotElement.FacePointOfInterestPose;
-import com.simibubi.create.foundation.ponder.element.WorldSectionElement;
-import com.simibubi.create.foundation.utility.Pointing;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.trains.station.StationBlock;
+import com.simibubi.create_re.foundation.ponder.ElementLink;
+import com.simibubi.create_re.foundation.ponder.PonderPalette;
+import com.simibubi.create_re.foundation.ponder.SceneBuilder;
+import com.simibubi.create_re.foundation.ponder.SceneBuildingUtil;
+import com.simibubi.create_re.foundation.ponder.Selection;
+import com.simibubi.create_re.foundation.ponder.element.InputWindowElement;
+import com.simibubi.create_re.foundation.ponder.element.ParrotElement;
+import com.simibubi.create_re.foundation.ponder.element.ParrotElement.FacePointOfInterestPose;
+import com.simibubi.create_re.foundation.ponder.element.WorldSectionElement;
+import com.simibubi.create_re.foundation.utility.Pointing;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -93,7 +93,7 @@ public class TrainStationScenes {
 			.pointAt(stationTop)
 			.placeNearTarget()
 			.attachKeyFrame()
-			.text("To create a new Train, open the UI and switch to Assembly Mode");
+			.text("To create_re a new Train, open the UI and switch to Assembly Mode");
 		scene.idle(50);
 
 		scene.world.cycleBlockProperty(stationPos, StationBlock.ASSEMBLING);
@@ -259,7 +259,7 @@ public class TrainStationScenes {
 		scene.idle(20);
 
 		ElementLink<ParrotElement> birb =
-			scene.special.createBirb(util.vector.centerOf(10, 3, 6), FacePointOfInterestPose::new);
+			scene.special.create_reBirb(util.vector.centerOf(10, 3, 6), FacePointOfInterestPose::new);
 		scene.idle(15);
 		scene.special.movePointOfInterest(util.grid.at(18, 3, 6));
 		scene.idle(15);
@@ -359,7 +359,7 @@ public class TrainStationScenes {
 		ElementLink<WorldSectionElement> trainElement = scene.world.showIndependentSection(train, Direction.DOWN);
 		scene.world.moveSection(trainElement, util.vector.of(-4, 0, 0), 0);
 		Vec3 target = util.vector.centerOf(2, 3, 6);
-		ElementLink<ParrotElement> birb = scene.special.createBirb(target, FacePointOfInterestPose::new);
+		ElementLink<ParrotElement> birb = scene.special.create_reBirb(target, FacePointOfInterestPose::new);
 		scene.idle(10);
 
 		scene.overlay.showText(90)
@@ -472,14 +472,14 @@ public class TrainStationScenes {
 		trainElement = scene.world.showIndependentSection(train, Direction.DOWN);
 		scene.world.moveSection(trainElement, util.vector.of(-4, 0, 0), 0);
 		target = util.vector.centerOf(2, 3, 6);
-		birb = scene.special.createBirb(target, FacePointOfInterestPose::new);
+		birb = scene.special.create_reBirb(target, FacePointOfInterestPose::new);
 		scene.idle(10);
 		scene.world.moveSection(trainElement, util.vector.of(4, 0, 0), 20);
 		scene.world.animateBogey(util.grid.at(7, 2, 6), -4f, 20);
 		scene.special.moveParrot(birb, util.vector.of(4, 0, 0), 20);
 		scene.idle(10);
 
-		scene.world.createItemOnBelt(util.grid.at(11, 1, 3), Direction.DOWN, AllItems.SCHEDULE.asStack());
+		scene.world.create_reItemOnBelt(util.grid.at(11, 1, 3), Direction.DOWN, AllItems.SCHEDULE.asStack());
 		scene.idle(10);
 		scene.world.animateTrainStation(stationPos, true);
 		scene.idle(10);

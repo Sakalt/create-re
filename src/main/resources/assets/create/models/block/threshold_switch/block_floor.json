@@ -2,12 +2,12 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"3": "create:block/threshold_switch_back",
-		"5": "create:block/threshold_switch_front",
-		"7": "create:block/brass_block",
-		"8": "create:block/tunnel/brass_tunnel_top_connected",
-		"particle": "create:block/threshold_switch/level_0",
-		"level": "create:block/threshold_switch/level_0"
+		"3": "create_re:block/threshold_switch_back",
+		"5": "create_re:block/threshold_switch_front",
+		"7": "create_re:block/brass_block",
+		"8": "create_re:block/tunnel/brass_tunnel_top_connected",
+		"particle": "create_re:block/threshold_switch/level_0",
+		"level": "create_re:block/threshold_switch/level_0"
 	},
 	"elements": [
 		{

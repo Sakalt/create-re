@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.graph;
+package com.simibubi.create_re.content.trains.graph;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -6,9 +6,9 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.UUID;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.content.trains.signal.TrackEdgePoint;
-import com.simibubi.create.foundation.utility.NBTHelper;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.trains.signal.TrackEdgePoint;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
@@ -86,7 +86,7 @@ public class EdgePointStorage {
 				.toString(), Tag.TAG_COMPOUND);
 			Map<UUID, TrackEdgePoint> map = getMap(type);
 			NBTHelper.iterateCompoundList(list, tag -> {
-				TrackEdgePoint edgePoint = type.create();
+				TrackEdgePoint edgePoint = type.create_re();
 				edgePoint.read(tag, false, dimensions);
 				map.put(edgePoint.getId(), edgePoint);
 			});

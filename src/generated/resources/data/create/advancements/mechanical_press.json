@@ -1,25 +1,25 @@
 {
-  "parent": "create:andesite_casing",
+  "parent": "create_re:andesite_casing",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:mechanical_press_builtin"
+      "trigger": "create_re:mechanical_press_builtin"
     }
   },
   "display": {
     "announce_to_chat": true,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.mechanical_press.desc"
+      "translate": "advancement.create_re.mechanical_press.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:mechanical_press"
+      "item": "create_re:mechanical_press"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.mechanical_press"
+      "translate": "advancement.create_re.mechanical_press"
     }
   },
   "requirements": [

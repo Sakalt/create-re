@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:copper_casing"
+          "name": "create_re:copper_casing"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/copper_casing"
+  "random_sequence": "create_re:blocks/copper_casing"
 }

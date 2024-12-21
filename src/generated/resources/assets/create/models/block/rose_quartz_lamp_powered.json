@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "create:block/rose_quartz_lamp_powered"
+    "all": "create_re:block/rose_quartz_lamp_powered"
   }
 }

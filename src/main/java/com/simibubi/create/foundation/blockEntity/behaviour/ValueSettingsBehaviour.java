@@ -1,7 +1,7 @@
-package com.simibubi.create.foundation.blockEntity.behaviour;
+package com.simibubi.create_re.foundation.blockEntity.behaviour;
 
-import com.simibubi.create.content.equipment.clipboard.ClipboardCloneable;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.content.equipment.clipboard.ClipboardCloneable;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -36,7 +36,7 @@ public interface ValueSettingsBehaviour extends ClipboardCloneable {
 
 	public ValueBoxTransform getSlotPositioning();
 
-	public ValueSettingsBoard createBoard(Player player, BlockHitResult hitResult);
+	public ValueSettingsBoard create_reBoard(Player player, BlockHitResult hitResult);
 
 	public void setValueSettings(Player player, ValueSettings valueSetting, boolean ctrlDown);
 

@@ -1,25 +1,25 @@
 {
-  "parent": "create:water_wheel",
+  "parent": "create_re:water_wheel",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:windmill_builtin"
+      "trigger": "create_re:windmill_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.windmill.desc"
+      "translate": "advancement.create_re.windmill.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:sail_frame"
+      "item": "create_re:sail_frame"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.windmill"
+      "translate": "advancement.create_re.windmill"
     }
   },
   "requirements": [

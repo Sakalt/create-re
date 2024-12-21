@@ -1,23 +1,23 @@
-package com.simibubi.create.content.kinetics;
+package com.simibubi.create_re.content.kinetics;
 
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.AXIS;
 
 import java.util.LinkedList;
 import java.util.List;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.kinetics.base.DirectionalShaftHalvesBlockEntity;
-import com.simibubi.create.content.kinetics.base.IRotate;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.kinetics.chainDrive.ChainDriveBlock;
-import com.simibubi.create.content.kinetics.gearbox.GearboxBlockEntity;
-import com.simibubi.create.content.kinetics.simpleRelays.CogWheelBlock;
-import com.simibubi.create.content.kinetics.simpleRelays.ICogWheel;
-import com.simibubi.create.content.kinetics.speedController.SpeedControllerBlock;
-import com.simibubi.create.content.kinetics.speedController.SpeedControllerBlockEntity;
-import com.simibubi.create.content.kinetics.transmission.SplitShaftBlockEntity;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.kinetics.base.DirectionalShaftHalvesBlockEntity;
+import com.simibubi.create_re.content.kinetics.base.IRotate;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.kinetics.chainDrive.ChainDriveBlock;
+import com.simibubi.create_re.content.kinetics.gearbox.GearboxBlockEntity;
+import com.simibubi.create_re.content.kinetics.simpleRelays.CogWheelBlock;
+import com.simibubi.create_re.content.kinetics.simpleRelays.ICogWheel;
+import com.simibubi.create_re.content.kinetics.speedController.SpeedControllerBlock;
+import com.simibubi.create_re.content.kinetics.speedController.SpeedControllerBlockEntity;
+import com.simibubi.create_re.content.kinetics.transmission.SplitShaftBlockEntity;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

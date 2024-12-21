@@ -4,7 +4,7 @@
   "group": "small_diorite_brick_slab",
   "key": {
     "X": {
-      "item": "create:small_diorite_bricks"
+      "item": "create_re:small_diorite_bricks"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 6,
-    "item": "create:small_diorite_brick_slab"
+    "item": "create_re:small_diorite_brick_slab"
   },
   "show_notification": true
 }

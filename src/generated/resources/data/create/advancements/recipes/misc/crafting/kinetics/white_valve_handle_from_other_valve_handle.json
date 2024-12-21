@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/kinetics/white_valve_handle_from_other_valve_handle"
+        "recipe": "create_re:crafting/kinetics/white_valve_handle_from_other_valve_handle"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "create:valve_handles"
+            "tag": "create_re:valve_handles"
           }
         ]
       },
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/kinetics/white_valve_handle_from_other_valve_handle"
+      "create_re:crafting/kinetics/white_valve_handle_from_other_valve_handle"
     ]
   },
   "sends_telemetry_event": false

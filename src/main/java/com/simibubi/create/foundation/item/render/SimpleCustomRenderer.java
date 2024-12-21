@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.item.render;
+package com.simibubi.create_re.foundation.item.render;
 
 import net.minecraft.world.item.Item;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
@@ -11,7 +11,7 @@ public class SimpleCustomRenderer implements IClientItemExtensions {
 		this.renderer = renderer;
 	}
 
-	public static SimpleCustomRenderer create(Item item, CustomRenderedItemModelRenderer renderer) {
+	public static SimpleCustomRenderer create_re(Item item, CustomRenderedItemModelRenderer renderer) {
 		CustomRenderedItems.register(item);
 		return new SimpleCustomRenderer(renderer);
 	}

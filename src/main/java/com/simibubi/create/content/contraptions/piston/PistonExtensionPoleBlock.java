@@ -1,19 +1,19 @@
-package com.simibubi.create.content.contraptions.piston;
+package com.simibubi.create_re.content.contraptions.piston;
 
-import static com.simibubi.create.content.contraptions.piston.MechanicalPistonBlock.isExtensionPole;
-import static com.simibubi.create.content.contraptions.piston.MechanicalPistonBlock.isPiston;
-import static com.simibubi.create.content.contraptions.piston.MechanicalPistonBlock.isPistonHead;
+import static com.simibubi.create_re.content.contraptions.piston.MechanicalPistonBlock.isExtensionPole;
+import static com.simibubi.create_re.content.contraptions.piston.MechanicalPistonBlock.isPiston;
+import static com.simibubi.create_re.content.contraptions.piston.MechanicalPistonBlock.isPistonHead;
 
 import java.util.function.Predicate;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.content.contraptions.piston.MechanicalPistonBlock.PistonState;
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
-import com.simibubi.create.foundation.block.WrenchableDirectionalBlock;
-import com.simibubi.create.foundation.placement.IPlacementHelper;
-import com.simibubi.create.foundation.placement.PlacementHelpers;
-import com.simibubi.create.foundation.placement.PoleHelper;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.content.contraptions.piston.MechanicalPistonBlock.PistonState;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.foundation.block.WrenchableDirectionalBlock;
+import com.simibubi.create_re.foundation.placement.IPlacementHelper;
+import com.simibubi.create_re.foundation.placement.PlacementHelpers;
+import com.simibubi.create_re.foundation.placement.PoleHelper;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
@@ -143,9 +143,9 @@ public class PistonExtensionPoleBlock extends WrenchableDirectionalBlock impleme
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
 		builder.add(BlockStateProperties.WATERLOGGED);
-		super.createBlockStateDefinition(builder);
+		super.create_reBlockStateDefinition(builder);
 	}
 
     @Override

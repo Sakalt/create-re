@@ -2,7 +2,7 @@
   "multipart": [
     {
       "apply": {
-        "model": "create:block/steam_whistle/extension/small_top_rim"
+        "model": "create_re:block/steam_whistle/extension/small_top_rim"
       },
       "when": {
         "shape": "double",
@@ -11,7 +11,7 @@
     },
     {
       "apply": {
-        "model": "create:block/steam_whistle/extension/small_single"
+        "model": "create_re:block/steam_whistle/extension/small_single"
       },
       "when": {
         "shape": "single",
@@ -20,7 +20,7 @@
     },
     {
       "apply": {
-        "model": "create:block/steam_whistle/extension/small_double"
+        "model": "create_re:block/steam_whistle/extension/small_double"
       },
       "when": {
         "shape": "double|double_connected",
@@ -29,7 +29,7 @@
     },
     {
       "apply": {
-        "model": "create:block/steam_whistle/extension/medium_top_rim"
+        "model": "create_re:block/steam_whistle/extension/medium_top_rim"
       },
       "when": {
         "shape": "double",
@@ -38,7 +38,7 @@
     },
     {
       "apply": {
-        "model": "create:block/steam_whistle/extension/medium_single"
+        "model": "create_re:block/steam_whistle/extension/medium_single"
       },
       "when": {
         "shape": "single",
@@ -47,7 +47,7 @@
     },
     {
       "apply": {
-        "model": "create:block/steam_whistle/extension/medium_double"
+        "model": "create_re:block/steam_whistle/extension/medium_double"
       },
       "when": {
         "shape": "double|double_connected",
@@ -56,7 +56,7 @@
     },
     {
       "apply": {
-        "model": "create:block/steam_whistle/extension/large_top_rim"
+        "model": "create_re:block/steam_whistle/extension/large_top_rim"
       },
       "when": {
         "shape": "double",
@@ -65,7 +65,7 @@
     },
     {
       "apply": {
-        "model": "create:block/steam_whistle/extension/large_single"
+        "model": "create_re:block/steam_whistle/extension/large_single"
       },
       "when": {
         "shape": "single",
@@ -74,7 +74,7 @@
     },
     {
       "apply": {
-        "model": "create:block/steam_whistle/extension/large_double"
+        "model": "create_re:block/steam_whistle/extension/large_double"
       },
       "when": {
         "shape": "double|double_connected",

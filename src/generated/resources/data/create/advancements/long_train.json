@@ -1,16 +1,16 @@
 {
-  "parent": "create:track_crafting_factory",
+  "parent": "create_re:track_crafting_factory",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:long_train_builtin"
+      "trigger": "create_re:long_train_builtin"
     }
   },
   "display": {
     "announce_to_chat": true,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.long_train.desc"
+      "translate": "advancement.create_re.long_train.desc"
     },
     "frame": "goal",
     "hidden": false,
@@ -19,7 +19,7 @@
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.long_train"
+      "translate": "advancement.create_re.long_train"
     }
   },
   "requirements": [

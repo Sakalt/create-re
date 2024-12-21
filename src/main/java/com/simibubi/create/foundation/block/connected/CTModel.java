@@ -1,14 +1,14 @@
-package com.simibubi.create.foundation.block.connected;
+package com.simibubi.create_re.foundation.block.connected;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import com.simibubi.create.content.decoration.copycat.CopycatBlock;
-import com.simibubi.create.foundation.block.connected.ConnectedTextureBehaviour.CTContext;
-import com.simibubi.create.foundation.model.BakedModelWrapperWithData;
-import com.simibubi.create.foundation.model.BakedQuadHelper;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.content.decoration.copycat.CopycatBlock;
+import com.simibubi.create_re.foundation.block.connected.ConnectedTextureBehaviour.CTContext;
+import com.simibubi.create_re.foundation.model.BakedModelWrapperWithData;
+import com.simibubi.create_re.foundation.model.BakedQuadHelper;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.block.model.BakedQuad;
@@ -38,10 +38,10 @@ public class CTModel extends BakedModelWrapperWithData {
 	@Override
 	protected ModelData.Builder gatherModelData(Builder builder, BlockAndTintGetter world, BlockPos pos, BlockState state,
 		ModelData blockEntityData) {
-		return builder.with(CT_PROPERTY, createCTData(world, pos, state));
+		return builder.with(CT_PROPERTY, create_reCTData(world, pos, state));
 	}
 
-	protected CTData createCTData(BlockAndTintGetter world, BlockPos pos, BlockState state) {
+	protected CTData create_reCTData(BlockAndTintGetter world, BlockPos pos, BlockState state) {
 		CTData data = new CTData();
 		MutableBlockPos mutablePos = new MutableBlockPos();
 		for (Direction face : Iterate.directions) {

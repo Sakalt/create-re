@@ -1,4 +1,4 @@
-package com.simibubi.create.infrastructure.debugInfo;
+package com.simibubi.create_re.infrastructure.debugInfo;
 
 import java.util.Objects;
 

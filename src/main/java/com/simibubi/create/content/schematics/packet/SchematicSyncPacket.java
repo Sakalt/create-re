@@ -1,8 +1,8 @@
-package com.simibubi.create.content.schematics.packet;
+package com.simibubi.create_re.content.schematics.packet;
 
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.schematics.SchematicInstances;
-import com.simibubi.create.foundation.networking.SimplePacketBase;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.schematics.SchematicInstances;
+import com.simibubi.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

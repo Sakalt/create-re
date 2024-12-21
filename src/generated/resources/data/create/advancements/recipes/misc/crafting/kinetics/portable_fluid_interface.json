@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:copper_casing"
+              "create_re:copper_casing"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/kinetics/portable_fluid_interface"
+        "recipe": "create_re:crafting/kinetics/portable_fluid_interface"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/kinetics/portable_fluid_interface"
+      "create_re:crafting/kinetics/portable_fluid_interface"
     ]
   },
   "sends_telemetry_event": false

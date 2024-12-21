@@ -1,8 +1,8 @@
-package com.simibubi.create.compat.jei.category.animations;
+package com.simibubi.create_re.compat.jei.category.animations;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.foundation.gui.AllGuiTextures;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.foundation.gui.AllGuiTextures;
 
 import dev.engine_room.flywheel.lib.transform.TransformStack;
 import net.minecraft.client.gui.GuiGraphics;

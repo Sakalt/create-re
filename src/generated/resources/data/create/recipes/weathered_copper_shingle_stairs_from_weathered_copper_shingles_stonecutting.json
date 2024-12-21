@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 1,
   "ingredient": {
-    "item": "create:weathered_copper_shingles"
+    "item": "create_re:weathered_copper_shingles"
   },
-  "result": "create:weathered_copper_shingle_stairs"
+  "result": "create_re:weathered_copper_shingle_stairs"
 }

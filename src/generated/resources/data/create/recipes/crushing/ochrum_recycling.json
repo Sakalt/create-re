@@ -1,15 +1,15 @@
 {
-  "type": "create:crushing",
+  "type": "create_re:crushing",
   "ingredients": [
     {
-      "tag": "create:stone_types/ochrum"
+      "tag": "create_re:stone_types/ochrum"
     }
   ],
   "processingTime": 250,
   "results": [
     {
       "chance": 0.2,
-      "item": "create:crushed_raw_gold"
+      "item": "create_re:crushed_raw_gold"
     },
     {
       "chance": 0.2,

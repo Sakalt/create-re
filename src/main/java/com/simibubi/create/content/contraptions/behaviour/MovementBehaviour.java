@@ -1,11 +1,11 @@
-package com.simibubi.create.content.contraptions.behaviour;
+package com.simibubi.create_re.content.contraptions.behaviour;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.content.contraptions.render.ActorVisual;
-import com.simibubi.create.content.contraptions.render.ContraptionMatrices;
-import com.simibubi.create.foundation.virtualWorld.VirtualRenderWorld;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.content.contraptions.render.ActorVisual;
+import com.simibubi.create_re.content.contraptions.render.ContraptionMatrices;
+import com.simibubi.create_re.foundation.virtualWorld.VirtualRenderWorld;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -90,7 +90,7 @@ public interface MovementBehaviour {
 
 	@OnlyIn(Dist.CLIENT)
 	@Nullable
-	default ActorVisual createVisual(VisualizationContext visualizationContext, VirtualRenderWorld simulationWorld,
+	default ActorVisual create_reVisual(VisualizationContext visualizationContext, VirtualRenderWorld simulationWorld,
 		MovementContext movementContext) {
 		return null;
 	}

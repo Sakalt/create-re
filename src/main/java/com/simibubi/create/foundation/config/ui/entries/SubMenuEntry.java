@@ -1,12 +1,12 @@
-package com.simibubi.create.foundation.config.ui.entries;
+package com.simibubi.create_re.foundation.config.ui.entries;
 
 import com.electronwill.nightconfig.core.UnmodifiableConfig;
-import com.simibubi.create.foundation.config.ui.ConfigScreenList;
-import com.simibubi.create.foundation.config.ui.SubMenuConfigScreen;
-import com.simibubi.create.foundation.gui.AllIcons;
-import com.simibubi.create.foundation.gui.ScreenOpener;
-import com.simibubi.create.foundation.gui.element.DelegatedStencilElement;
-import com.simibubi.create.foundation.gui.widget.BoxWidget;
+import com.simibubi.create_re.foundation.config.ui.ConfigScreenList;
+import com.simibubi.create_re.foundation.config.ui.SubMenuConfigScreen;
+import com.simibubi.create_re.foundation.gui.AllIcons;
+import com.simibubi.create_re.foundation.gui.ScreenOpener;
+import com.simibubi.create_re.foundation.gui.element.DelegatedStencilElement;
+import com.simibubi.create_re.foundation.gui.widget.BoxWidget;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraftforge.common.ForgeConfigSpec;

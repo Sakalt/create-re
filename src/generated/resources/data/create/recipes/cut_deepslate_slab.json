@@ -4,7 +4,7 @@
   "group": "cut_deepslate_slab",
   "key": {
     "X": {
-      "item": "create:cut_deepslate"
+      "item": "create_re:cut_deepslate"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 6,
-    "item": "create:cut_deepslate_slab"
+    "item": "create_re:cut_deepslate_slab"
   },
   "show_notification": true
 }

@@ -1,14 +1,14 @@
-package com.simibubi.create.content.kinetics.transmission.sequencer;
+package com.simibubi.create_re.content.kinetics.transmission.sequencer;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.contraptions.ITransformableBlock;
-import com.simibubi.create.content.contraptions.StructureTransform;
-import com.simibubi.create.content.kinetics.base.HorizontalAxisKineticBlock;
-import com.simibubi.create.content.kinetics.base.KineticBlock;
-import com.simibubi.create.content.kinetics.base.RotatedPillarKineticBlock;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.gui.ScreenOpener;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.contraptions.ITransformableBlock;
+import com.simibubi.create_re.content.contraptions.StructureTransform;
+import com.simibubi.create_re.content.kinetics.base.HorizontalAxisKineticBlock;
+import com.simibubi.create_re.content.kinetics.base.KineticBlock;
+import com.simibubi.create_re.content.kinetics.base.RotatedPillarKineticBlock;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.gui.ScreenOpener;
 
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.core.BlockPos;
@@ -39,16 +39,16 @@ import net.minecraftforge.fml.DistExecutor;
 
 public class SequencedGearshiftBlock extends HorizontalAxisKineticBlock implements IBE<SequencedGearshiftBlockEntity>, ITransformableBlock {
 
-	public static final BooleanProperty VERTICAL = BooleanProperty.create("vertical");
-	public static final IntegerProperty STATE = IntegerProperty.create("state", 0, 5);
+	public static final BooleanProperty VERTICAL = BooleanProperty.create_re("vertical");
+	public static final IntegerProperty STATE = IntegerProperty.create_re("state", 0, 5);
 
 	public SequencedGearshiftBlock(Properties properties) {
 		super(properties);
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
-		super.createBlockStateDefinition(builder.add(STATE, VERTICAL));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
+		super.create_reBlockStateDefinition(builder.add(STATE, VERTICAL));
 	}
 
 	@Override

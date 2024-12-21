@@ -1,7 +1,7 @@
-package com.simibubi.create.content.contraptions.piston;
+package com.simibubi.create_re.content.contraptions.piston;
 
-import com.simibubi.create.content.contraptions.piston.MechanicalPistonBlock.PistonState;
-import com.simibubi.create.foundation.data.SpecialBlockStateGen;
+import com.simibubi.create_re.content.contraptions.piston.MechanicalPistonBlock.PistonState;
+import com.simibubi.create_re.foundation.data.SpecialBlockStateGen;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 

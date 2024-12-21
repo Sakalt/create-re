@@ -1,4 +1,4 @@
-package com.simibubi.create.content.fluids;
+package com.simibubi.create_re.content.fluids;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -30,7 +30,7 @@ public class VirtualFluid extends ForgeFlowingFluid {
 	}
 
 	@Override
-	protected BlockState createLegacyBlock(FluidState state) {
+	protected BlockState create_reLegacyBlock(FluidState state) {
 		return Blocks.AIR.defaultBlockState();
 	}
 

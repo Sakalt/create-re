@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.bogey;
+package com.simibubi.create_re.content.trains.bogey;
 
 import java.util.function.Consumer;
 

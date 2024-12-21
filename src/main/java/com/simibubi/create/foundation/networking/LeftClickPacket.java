@@ -1,6 +1,6 @@
-package com.simibubi.create.foundation.networking;
+package com.simibubi.create_re.foundation.networking;
 
-import com.simibubi.create.foundation.events.CommonEvents;
+import com.simibubi.create_re.foundation.events.CommonEvents;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraftforge.network.NetworkDirection;

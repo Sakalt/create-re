@@ -1,6 +1,6 @@
 {
-  "parent": "create:block/steam_whistle/block_large_floor",
+  "parent": "create_re:block/steam_whistle/block_large_floor",
   "textures": {
-    "2": "create:block/copper_redstone_plate_powered"
+    "2": "create_re:block/copper_redstone_plate_powered"
   }
 }

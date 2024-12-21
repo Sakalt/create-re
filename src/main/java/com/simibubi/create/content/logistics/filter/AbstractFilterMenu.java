@@ -1,6 +1,6 @@
-package com.simibubi.create.content.logistics.filter;
+package com.simibubi.create_re.content.logistics.filter;
 
-import com.simibubi.create.foundation.gui.menu.GhostItemMenu;
+import com.simibubi.create_re.foundation.gui.menu.GhostItemMenu;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
@@ -35,7 +35,7 @@ public abstract class AbstractFilterMenu extends GhostItemMenu<ItemStack> {
 
 	@Override
 	@OnlyIn(Dist.CLIENT)
-	protected ItemStack createOnClient(FriendlyByteBuf extraData) {
+	protected ItemStack create_reOnClient(FriendlyByteBuf extraData) {
 		return extraData.readItem();
 	}
 

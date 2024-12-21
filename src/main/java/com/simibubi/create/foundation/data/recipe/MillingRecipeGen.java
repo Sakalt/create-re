@@ -1,10 +1,10 @@
-package com.simibubi.create.foundation.data.recipe;
+package com.simibubi.create_re.foundation.data.recipe;
 
 import java.util.List;
 
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.AllTags;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllRecipeTypes;
+import com.simibubi.create_re.AllTags;
 import com.tterrag.registrate.util.entry.ItemEntry;
 
 import net.minecraft.data.PackOutput;
@@ -23,229 +23,229 @@ public class MillingRecipeGen extends ProcessingRecipeGen {
 
 	GeneratedRecipe
 
-	GRANITE = create(() -> Blocks.GRANITE, b -> b.duration(200)
+	GRANITE = create_re(() -> Blocks.GRANITE, b -> b.duration(200)
 		.output(Blocks.RED_SAND)),
 
-		WOOL = create("wool", b -> b.duration(100)
+		WOOL = create_re("wool", b -> b.duration(100)
 			.require(ItemTags.WOOL)
 			.output(Items.STRING)),
 
-		CLAY = create(() -> Blocks.CLAY, b -> b.duration(50)
+		CLAY = create_re(() -> Blocks.CLAY, b -> b.duration(50)
 			.output(Items.CLAY_BALL, 3)
 			.output(.5f, Items.CLAY_BALL)),
 
-		CALCITE = create(() -> Items.CALCITE, b -> b.duration(250)
+		CALCITE = create_re(() -> Items.CALCITE, b -> b.duration(250)
 			.output(.75f, Items.BONE_MEAL, 1)),
-		DRIPSTONE = create(() -> Items.DRIPSTONE_BLOCK, b -> b.duration(250)
+		DRIPSTONE = create_re(() -> Items.DRIPSTONE_BLOCK, b -> b.duration(250)
 			.output(Items.CLAY_BALL, 1)),
 
-		TERRACOTTA = create(() -> Blocks.TERRACOTTA, b -> b.duration(200)
+		TERRACOTTA = create_re(() -> Blocks.TERRACOTTA, b -> b.duration(200)
 			.output(Blocks.RED_SAND)),
-		ANDESITE = create(() -> Blocks.ANDESITE, b -> b.duration(200)
+		ANDESITE = create_re(() -> Blocks.ANDESITE, b -> b.duration(200)
 			.output(Blocks.COBBLESTONE)),
-		COBBLESTONE = create(() -> Blocks.COBBLESTONE, b -> b.duration(250)
+		COBBLESTONE = create_re(() -> Blocks.COBBLESTONE, b -> b.duration(250)
 			.output(Blocks.GRAVEL)),
-		GRAVEL = create(() -> Blocks.GRAVEL, b -> b.duration(250)
+		GRAVEL = create_re(() -> Blocks.GRAVEL, b -> b.duration(250)
 			.output(Items.FLINT)),
-		SANDSTONE = create(() -> Blocks.SANDSTONE, b -> b.duration(150)
+		SANDSTONE = create_re(() -> Blocks.SANDSTONE, b -> b.duration(150)
 			.output(Blocks.SAND)),
 
-		WHEAT = create(() -> Items.WHEAT, b -> b.duration(150)
+		WHEAT = create_re(() -> Items.WHEAT, b -> b.duration(150)
 			.output(AllItems.WHEAT_FLOUR.get())
 			.output(.25f, AllItems.WHEAT_FLOUR.get(), 2)
 			.output(.25f, Items.WHEAT_SEEDS)),
 
-		BONE = create(() -> Items.BONE, b -> b.duration(100)
+		BONE = create_re(() -> Items.BONE, b -> b.duration(100)
 			.output(Items.BONE_MEAL, 3)
 			.output(.25f, Items.WHITE_DYE, 1)
 			.output(.25f, Items.BONE_MEAL, 3)),
 
-		CACTUS = create(() -> Blocks.CACTUS, b -> b.duration(50)
+		CACTUS = create_re(() -> Blocks.CACTUS, b -> b.duration(50)
 			.output(Items.GREEN_DYE, 2)
 			.output(.1f, Items.GREEN_DYE, 1)
 			.whenModMissing("quark")),
 
-		SEA_PICKLE = create(() -> Blocks.SEA_PICKLE, b -> b.duration(50)
+		SEA_PICKLE = create_re(() -> Blocks.SEA_PICKLE, b -> b.duration(50)
 			.output(Items.LIME_DYE, 2)
 			.output(.1f, Items.GREEN_DYE)),
 
-		BONE_MEAL = create(() -> Items.BONE_MEAL, b -> b.duration(70)
+		BONE_MEAL = create_re(() -> Items.BONE_MEAL, b -> b.duration(70)
 			.output(Items.WHITE_DYE, 2)
 			.output(.1f, Items.LIGHT_GRAY_DYE, 1)),
 
-		COCOA_BEANS = create(() -> Items.COCOA_BEANS, b -> b.duration(70)
+		COCOA_BEANS = create_re(() -> Items.COCOA_BEANS, b -> b.duration(70)
 			.output(Items.BROWN_DYE, 2)
 			.output(.1f, Items.BROWN_DYE, 1)),
 
-		SADDLE = create(() -> Items.SADDLE, b -> b.duration(200)
+		SADDLE = create_re(() -> Items.SADDLE, b -> b.duration(200)
 			.output(Items.LEATHER, 2)
 			.output(.5f, Items.LEATHER, 2)),
 
-		SUGAR_CANE = create(() -> Items.SUGAR_CANE, b -> b.duration(50)
+		SUGAR_CANE = create_re(() -> Items.SUGAR_CANE, b -> b.duration(50)
 			.output(Items.SUGAR, 2)
 			.output(.1f, Items.SUGAR)),
 
-		BEETROOT = create(() -> Items.BEETROOT, b -> b.duration(70)
+		BEETROOT = create_re(() -> Items.BEETROOT, b -> b.duration(70)
 			.output(Items.RED_DYE, 2)
 			.output(.1f, Items.BEETROOT_SEEDS)),
 
-		INK_SAC = create(() -> Items.INK_SAC, b -> b.duration(100)
+		INK_SAC = create_re(() -> Items.INK_SAC, b -> b.duration(100)
 			.output(Items.BLACK_DYE, 2)
 			.output(.1f, Items.GRAY_DYE)),
 
-		CHARCOAL = create(() -> Items.CHARCOAL, b -> b.duration(100)
+		CHARCOAL = create_re(() -> Items.CHARCOAL, b -> b.duration(100)
 			.output(Items.BLACK_DYE, 1)
 			.output(.1f, Items.GRAY_DYE, 2)),
 
-		COAL = create(() -> Items.COAL, b -> b.duration(100)
+		COAL = create_re(() -> Items.COAL, b -> b.duration(100)
 			.output(Items.BLACK_DYE, 2)
 			.output(.1f, Items.GRAY_DYE, 1)),
 
-		LAPIS_LAZULI = create(() -> Items.LAPIS_LAZULI, b -> b.duration(100)
+		LAPIS_LAZULI = create_re(() -> Items.LAPIS_LAZULI, b -> b.duration(100)
 			.output(Items.BLUE_DYE, 2)
 			.output(.1f, Items.BLUE_DYE)),
 
-		AZURE_BLUET = create(() -> Blocks.AZURE_BLUET, b -> b.duration(50)
+		AZURE_BLUET = create_re(() -> Blocks.AZURE_BLUET, b -> b.duration(50)
 			.output(Items.LIGHT_GRAY_DYE, 2)
 			.output(.1f, Items.WHITE_DYE, 2)),
 
-		BLUE_ORCHID = create(() -> Blocks.BLUE_ORCHID, b -> b.duration(50)
+		BLUE_ORCHID = create_re(() -> Blocks.BLUE_ORCHID, b -> b.duration(50)
 			.output(Items.LIGHT_BLUE_DYE, 2)
 			.output(.05f, Items.LIGHT_GRAY_DYE, 1)),
 
-		FERN = create(() -> Blocks.FERN, b -> b.duration(50)
+		FERN = create_re(() -> Blocks.FERN, b -> b.duration(50)
 			.output(Items.GREEN_DYE)
 			.output(.1f, Items.WHEAT_SEEDS)),
 
-		LARGE_FERN = create(() -> Blocks.LARGE_FERN, b -> b.duration(50)
+		LARGE_FERN = create_re(() -> Blocks.LARGE_FERN, b -> b.duration(50)
 			.output(Items.GREEN_DYE, 2)
 			.output(.5f, Items.GREEN_DYE)
 			.output(.1f, Items.WHEAT_SEEDS)),
 
-		LILAC = create(() -> Blocks.LILAC, b -> b.duration(100)
+		LILAC = create_re(() -> Blocks.LILAC, b -> b.duration(100)
 			.output(Items.MAGENTA_DYE, 3)
 			.output(.25f, Items.MAGENTA_DYE)
 			.output(.25f, Items.PURPLE_DYE)),
 
-		PEONY = create(() -> Blocks.PEONY, b -> b.duration(100)
+		PEONY = create_re(() -> Blocks.PEONY, b -> b.duration(100)
 			.output(Items.PINK_DYE, 3)
 			.output(.25f, Items.MAGENTA_DYE)
 			.output(.25f, Items.PINK_DYE)),
 
-		ALLIUM = create(() -> Blocks.ALLIUM, b -> b.duration(50)
+		ALLIUM = create_re(() -> Blocks.ALLIUM, b -> b.duration(50)
 			.output(Items.MAGENTA_DYE, 2)
 			.output(.1f, Items.PURPLE_DYE, 2)
 			.output(.1f, Items.PINK_DYE)),
 
-		LILY_OF_THE_VALLEY = create(() -> Blocks.LILY_OF_THE_VALLEY, b -> b.duration(50)
+		LILY_OF_THE_VALLEY = create_re(() -> Blocks.LILY_OF_THE_VALLEY, b -> b.duration(50)
 			.output(Items.WHITE_DYE, 2)
 			.output(.1f, Items.LIME_DYE)
 			.output(.1f, Items.WHITE_DYE)),
 
-		ROSE_BUSH = create(() -> Blocks.ROSE_BUSH, b -> b.duration(50)
+		ROSE_BUSH = create_re(() -> Blocks.ROSE_BUSH, b -> b.duration(50)
 			.output(Items.RED_DYE, 3)
 			.output(.05f, Items.GREEN_DYE, 2)
 			.output(.25f, Items.RED_DYE, 2)),
 
-		SUNFLOWER = create(() -> Blocks.SUNFLOWER, b -> b.duration(100)
+		SUNFLOWER = create_re(() -> Blocks.SUNFLOWER, b -> b.duration(100)
 			.output(Items.YELLOW_DYE, 3)
 			.output(.25f, Items.ORANGE_DYE)
 			.output(.25f, Items.YELLOW_DYE)),
 
-		OXEYE_DAISY = create(() -> Blocks.OXEYE_DAISY, b -> b.duration(50)
+		OXEYE_DAISY = create_re(() -> Blocks.OXEYE_DAISY, b -> b.duration(50)
 			.output(Items.LIGHT_GRAY_DYE, 2)
 			.output(.2f, Items.WHITE_DYE)
 			.output(.05f, Items.YELLOW_DYE)),
 
-		POPPY = create(() -> Blocks.POPPY, b -> b.duration(50)
+		POPPY = create_re(() -> Blocks.POPPY, b -> b.duration(50)
 			.output(Items.RED_DYE, 2)
 			.output(.05f, Items.GREEN_DYE)),
 
-		DANDELION = create(() -> Blocks.DANDELION, b -> b.duration(50)
+		DANDELION = create_re(() -> Blocks.DANDELION, b -> b.duration(50)
 			.output(Items.YELLOW_DYE, 2)
 			.output(.05f, Items.YELLOW_DYE)),
 
-		CORNFLOWER = create(() -> Blocks.CORNFLOWER, b -> b.duration(50)
+		CORNFLOWER = create_re(() -> Blocks.CORNFLOWER, b -> b.duration(50)
 			.output(Items.BLUE_DYE, 2)),
 
-		WITHER_ROSE = create(() -> Blocks.WITHER_ROSE, b -> b.duration(50)
+		WITHER_ROSE = create_re(() -> Blocks.WITHER_ROSE, b -> b.duration(50)
 			.output(Items.BLACK_DYE, 2)
 			.output(.1f, Items.BLACK_DYE)),
 
-		ORANGE_TULIP = create(() -> Blocks.ORANGE_TULIP, b -> b.duration(50)
+		ORANGE_TULIP = create_re(() -> Blocks.ORANGE_TULIP, b -> b.duration(50)
 			.output(Items.ORANGE_DYE, 2)
 			.output(.1f, Items.LIME_DYE)),
 
-		RED_TULIP = create(() -> Blocks.RED_TULIP, b -> b.duration(50)
+		RED_TULIP = create_re(() -> Blocks.RED_TULIP, b -> b.duration(50)
 			.output(Items.RED_DYE, 2)
 			.output(.1f, Items.LIME_DYE)),
 
-		WHITE_TULIP = create(() -> Blocks.WHITE_TULIP, b -> b.duration(50)
+		WHITE_TULIP = create_re(() -> Blocks.WHITE_TULIP, b -> b.duration(50)
 			.output(Items.WHITE_DYE, 2)
 			.output(.1f, Items.LIME_DYE)),
 
-		PINK_TULIP = create(() -> Blocks.PINK_TULIP, b -> b.duration(50)
+		PINK_TULIP = create_re(() -> Blocks.PINK_TULIP, b -> b.duration(50)
 			.output(Items.PINK_DYE, 2)
 			.output(.1f, Items.LIME_DYE)),
 
-		TALL_GRASS = create(() -> Blocks.TALL_GRASS, b -> b.duration(100)
+		TALL_GRASS = create_re(() -> Blocks.TALL_GRASS, b -> b.duration(100)
 			.output(.5f, Items.WHEAT_SEEDS)),
-		GRASS = create(() -> Blocks.GRASS, b -> b.duration(50)
+		GRASS = create_re(() -> Blocks.GRASS, b -> b.duration(50)
 			.output(.25f, Items.WHEAT_SEEDS)),
 
 		// AE2
 
-		AE2_CERTUS = create(Mods.AE2.recipeId("certus_quartz"), b -> b.duration(200)
+		AE2_CERTUS = create_re(Mods.AE2.recipeId("certus_quartz"), b -> b.duration(200)
 				.require(AllTags.forgeItemTag("gems/certus_quartz"))
 				.output(Mods.AE2, "certus_quartz_dust")
 				.whenModLoaded(Mods.AE2.getId())),
 
-		AE2_ENDER = create(Mods.AE2.recipeId("ender_pearl"), b -> b.duration(100)
+		AE2_ENDER = create_re(Mods.AE2.recipeId("ender_pearl"), b -> b.duration(100)
 				.require(Tags.Items.ENDER_PEARLS)
 				.output(Mods.AE2, "ender_dust")
 				.whenModLoaded(Mods.AE2.getId())),
 
-		AE2_FLUIX = create(Mods.AE2.recipeId("fluix_crystal"), b -> b.duration(200)
+		AE2_FLUIX = create_re(Mods.AE2.recipeId("fluix_crystal"), b -> b.duration(200)
 				.require(Mods.AE2, "fluix_crystal")
 				.output(Mods.AE2, "fluix_dust")
 				.whenModLoaded(Mods.AE2.getId())),
 
-		AE2_SKY_STONE = create(Mods.AE2.recipeId("sky_stone_block"), b -> b.duration(300)
+		AE2_SKY_STONE = create_re(Mods.AE2.recipeId("sky_stone_block"), b -> b.duration(300)
 			.require(Mods.AE2, "sky_stone_block")
 			.output(Mods.AE2, "sky_dust")
 			.whenModLoaded(Mods.AE2.getId())),
 
 		// Atmospheric
 
-		ATMO_GILIA = create(Mods.ATM.recipeId("gilia"), b -> b.duration(50)
+		ATMO_GILIA = create_re(Mods.ATM.recipeId("gilia"), b -> b.duration(50)
 				.require(Mods.ATM, "gilia")
 				.output(Items.PURPLE_DYE, 2)
 				.output(.1f, Items.MAGENTA_DYE, 2)
 				.output(.1f, Items.PINK_DYE)
 				.whenModLoaded(Mods.ATM.getId())),
 
-		ATMO_HOT_BRUSH = create(Mods.ATM.recipeId("hot_monkey_brush"), b -> b.duration(50)
+		ATMO_HOT_BRUSH = create_re(Mods.ATM.recipeId("hot_monkey_brush"), b -> b.duration(50)
 				.require(Mods.ATM, "hot_monkey_brush")
 				.output(Items.ORANGE_DYE, 2)
 				.output(.05f, Items.RED_DYE)
 				.output(.05f, Items.YELLOW_DYE)
 				.whenModLoaded(Mods.ATM.getId())),
 
-		ATMO_SCALDING_BRUSH = create(Mods.ATM.recipeId("scalding_monkey_brush"), b -> b.duration(50)
+		ATMO_SCALDING_BRUSH = create_re(Mods.ATM.recipeId("scalding_monkey_brush"), b -> b.duration(50)
 				.require(Mods.ATM, "scalding_monkey_brush")
 				.output(Items.RED_DYE, 2)
 				.output(.1f, Items.RED_DYE, 2)
 				.output(.1f, Items.ORANGE_DYE)
 				.whenModLoaded(Mods.ATM.getId())),
 
-		ATMO_WARM_BRUSH = create(Mods.ATM.recipeId("warm_monkey_brush"), b -> b.duration(50)
+		ATMO_WARM_BRUSH = create_re(Mods.ATM.recipeId("warm_monkey_brush"), b -> b.duration(50)
 				.require(Mods.ATM, "scalding_monkey_brush")
 				.output(Items.YELLOW_DYE, 2)
 				.output(.1f, Items.YELLOW_DYE, 2)
 				.output(.1f, Items.ORANGE_DYE)
 				.whenModLoaded(Mods.ATM.getId())),
 
-		ATMO_YUCCA_FLOWER = create(Mods.ATM.recipeId("yucca_flower"), b -> b.duration(50)
+		ATMO_YUCCA_FLOWER = create_re(Mods.ATM.recipeId("yucca_flower"), b -> b.duration(50)
 				.require(Mods.ATM, "yucca_flower")
 				.output(Items.LIGHT_GRAY_DYE, 2)
 				.output(.05f, Items.WHITE_DYE)
@@ -253,7 +253,7 @@ public class MillingRecipeGen extends ProcessingRecipeGen {
 
 		// Autumnity
 
-		AUTUM_CROCUS = create(Mods.AUTUM.recipeId("autumn_crocus"), b -> b.duration(50)
+		AUTUM_CROCUS = create_re(Mods.AUTUM.recipeId("autumn_crocus"), b -> b.duration(50)
 				.require(Mods.AUTUM, "autumn_crocus")
 				.output(Items.MAGENTA_DYE, 2)
 				.output(.1f, Items.PINK_DYE, 2)
@@ -298,19 +298,19 @@ public class MillingRecipeGen extends ProcessingRecipeGen {
 
 		// Buzzier Bees
 
-		BB_BUTTERCUP = create(Mods.BB.recipeId("buttercup"), b -> b.duration(50)
+		BB_BUTTERCUP = create_re(Mods.BB.recipeId("buttercup"), b -> b.duration(50)
 				.require(Mods.BB, "buttercup")
 				.output(Items.YELLOW_DYE, 2)
 				.output(.1f, Items.LIME_DYE)
 				.whenModLoaded(Mods.BB.getId())),
 
-		BB_PINK_CLOVER = create(Mods.BB.recipeId("pink_clover"), b -> b.duration(50)
+		BB_PINK_CLOVER = create_re(Mods.BB.recipeId("pink_clover"), b -> b.duration(50)
 				.require(Mods.BB, "buttercup")
 				.output(Items.PINK_DYE, 2)
 				.output(.1f, Items.LIME_DYE)
 				.whenModLoaded(Mods.BB.getId())),
 
-		BB_WHITE_CLOVER = create(Mods.BB.recipeId("white_clover"), b -> b.duration(50)
+		BB_WHITE_CLOVER = create_re(Mods.BB.recipeId("white_clover"), b -> b.duration(50)
 				.require(Mods.BB, "buttercup")
 				.output(Items.WHITE_DYE, 2)
 				.output(.1f, Items.LIME_DYE)
@@ -468,7 +468,7 @@ public class MillingRecipeGen extends ProcessingRecipeGen {
 		BYG_WHITE_ANEMONE = bygFlower("white_anemone", List.of(1f,.1f),
 				List.of(Items.WHITE_DYE, Items.LIGHT_GRAY_DYE), List.of(2,2)),
 
-		BYG_PUFFBALL = create(Mods.BYG.recipeId("white_puffball_cap"), b -> b.duration(150)
+		BYG_PUFFBALL = create_re(Mods.BYG.recipeId("white_puffball_cap"), b -> b.duration(150)
 				.require(Mods.BYG, "white_puffball_cap")
 				.output(.25f, Mods.BYG, "white_puffball_spores", 1)
 				.whenModLoaded(Mods.BYG.getId())),
@@ -545,14 +545,14 @@ public class MillingRecipeGen extends ProcessingRecipeGen {
 				List.of(Items.YELLOW_DYE, Items.YELLOW_DYE), List.of(2,1)),
 
 		// Duidcraft
-		DC_LAVENDER = create(Mods.DRUIDCRAFT.recipeId("lavender"), b -> b.duration(50)
+		DC_LAVENDER = create_re(Mods.DRUIDCRAFT.recipeId("lavender"), b -> b.duration(50)
 				.require(Mods.DRUIDCRAFT, "lavender")
 				.output(Items.PURPLE_DYE, 2)
 				.output(.1f, Items.PURPLE_DYE)
 				.whenModLoaded(Mods.DRUIDCRAFT.getId())),
 
 		// Supplementaries
-		SUP_FLAX = create(Mods.SUP.recipeId("flax"), b -> b.duration(150)
+		SUP_FLAX = create_re(Mods.SUP.recipeId("flax"), b -> b.duration(150)
 				.require(Mods.SUP, "flax")
 				.output(Items.STRING)
 				.output(.25f, Items.STRING, 2)
@@ -560,7 +560,7 @@ public class MillingRecipeGen extends ProcessingRecipeGen {
 				.whenModLoaded(Mods.SUP.getId())),
 
 		// Tinkers' Construct
-		TIC_NERCOTIC_BONE = create(Mods.TIC.recipeId("nercotic_bone"), b -> b.duration(100)
+		TIC_NERCOTIC_BONE = create_re(Mods.TIC.recipeId("nercotic_bone"), b -> b.duration(100)
 				.require(Mods.TIC, "necrotic_bone")
 				.output(Items.BONE_MEAL, 3)
 				.output(.25f, Items.BLACK_DYE)
@@ -569,19 +569,19 @@ public class MillingRecipeGen extends ProcessingRecipeGen {
 
 		// Upgrade Aquatic
 
-		UA_FLOWERING_RUSH = create(Mods.UA.recipeId("flowering_rush"), b -> b.duration(50)
+		UA_FLOWERING_RUSH = create_re(Mods.UA.recipeId("flowering_rush"), b -> b.duration(50)
 				.require(Mods.UA, "flowering_rush")
 				.output(Items.PINK_DYE, 3)
 				.output(.25f, Items.PINK_DYE, 2)
 				.whenModLoaded(Mods.UA.getId())),
 
-		UA_PINK_SEAROCKET = create(Mods.UA.recipeId("pink_searocket"), b -> b.duration(50)
+		UA_PINK_SEAROCKET = create_re(Mods.UA.recipeId("pink_searocket"), b -> b.duration(50)
 				.require(Mods.UA, "pink_searocket")
 				.output(Items.PINK_DYE, 2)
 				.output(.1f, Items.GREEN_DYE)
 				.whenModLoaded(Mods.UA.getId())),
 
-		UA_WHITE_SEAROCKET = create(Mods.UA.recipeId("white_searocket"), b -> b.duration(50)
+		UA_WHITE_SEAROCKET = create_re(Mods.UA.recipeId("white_searocket"), b -> b.duration(50)
 				.require(Mods.UA, "white_searocket")
 				.output(Items.WHITE_DYE, 2)
 				.output(.1f, Items.GREEN_DYE)
@@ -724,7 +724,7 @@ public class MillingRecipeGen extends ProcessingRecipeGen {
 	;
 
 	protected GeneratedRecipe metalOre(String name, ItemEntry<? extends Item> crushed, int duration) {
-		return create(name + "_ore", b -> b.duration(duration)
+		return create_re(name + "_ore", b -> b.duration(duration)
 			.withCondition(new NotCondition(new TagEmptyCondition("forge", "ores/" + name)))
 			.require(AllTags.forgeItemTag("ores/" + name))
 			.output(crushed.get()));
@@ -733,20 +733,20 @@ public class MillingRecipeGen extends ProcessingRecipeGen {
 	protected GeneratedRecipe bopFlower(String input, List<Float> chances,
 										List<Item> dyes, List<Integer> amounts) {
 		if (chances.size() == 2) {
-			return create(Mods.BOP.recipeId(input), b -> b.duration(50)
+			return create_re(Mods.BOP.recipeId(input), b -> b.duration(50)
 					.require(Mods.BOP, input)
 					.output(chances.get(0), dyes.get(0), amounts.get(0))
 					.output(chances.get(1), dyes.get(1), amounts.get(1))
 					.whenModLoaded(Mods.BOP.getId()));
 		} else if (chances.size() == 3) {
-			return create(Mods.BOP.recipeId(input), b -> b.duration(50)
+			return create_re(Mods.BOP.recipeId(input), b -> b.duration(50)
 					.require(Mods.BOP, input)
 					.output(chances.get(0), dyes.get(0), amounts.get(0))
 					.output(chances.get(1), dyes.get(1), amounts.get(1))
 					.output(chances.get(2), dyes.get(2), amounts.get(2))
 					.whenModLoaded(Mods.BOP.getId()));
 		} else if (chances.size() == 1) {
-			return create(Mods.BOP.recipeId(input), b -> b.duration(50)
+			return create_re(Mods.BOP.recipeId(input), b -> b.duration(50)
 					.require(Mods.BOP, input)
 					.output(chances.get(0), dyes.get(0), amounts.get(0))
 					.whenModLoaded(Mods.BOP.getId()));
@@ -758,20 +758,20 @@ public class MillingRecipeGen extends ProcessingRecipeGen {
 	protected GeneratedRecipe bygFlower(String input, List<Float> chances,
 										List<Item> dyes, List<Integer> amounts) {
 		if (chances.size() == 2) {
-			return create(Mods.BYG.recipeId(input), b -> b.duration(50)
+			return create_re(Mods.BYG.recipeId(input), b -> b.duration(50)
 					.require(Mods.BYG, input)
 					.output(chances.get(0), dyes.get(0), amounts.get(0))
 					.output(chances.get(1), dyes.get(1), amounts.get(1))
 					.whenModLoaded(Mods.BYG.getId()));
 		} else if (chances.size() == 3) {
-			return create(Mods.BYG.recipeId(input), b -> b.duration(50)
+			return create_re(Mods.BYG.recipeId(input), b -> b.duration(50)
 					.require(Mods.BYG, input)
 					.output(chances.get(0), dyes.get(0), amounts.get(0))
 					.output(chances.get(1), dyes.get(1), amounts.get(1))
 					.output(chances.get(2), dyes.get(2), amounts.get(2))
 					.whenModLoaded(Mods.BYG.getId()));
 		} else if (chances.size() == 1) {
-			return create(Mods.BYG.recipeId(input), b -> b.duration(50)
+			return create_re(Mods.BYG.recipeId(input), b -> b.duration(50)
 					.require(Mods.BYG, input)
 					.output(chances.get(0), dyes.get(0), amounts.get(0))
 					.whenModLoaded(Mods.BYG.getId()));
@@ -783,20 +783,20 @@ public class MillingRecipeGen extends ProcessingRecipeGen {
 	protected GeneratedRecipe envFlower(String input, List<Float> chances,
 										List<Item> dyes, List<Integer> amounts) {
 		if (chances.size() == 2) {
-			return create(Mods.ENV.recipeId(input), b -> b.duration(50)
+			return create_re(Mods.ENV.recipeId(input), b -> b.duration(50)
 					.require(Mods.ENV, input)
 					.output(chances.get(0), dyes.get(0), amounts.get(0))
 					.output(chances.get(1), dyes.get(1), amounts.get(1))
 					.whenModLoaded(Mods.ENV.getId()));
 		} else if (chances.size() == 3) {
-			return create(Mods.ENV.recipeId(input), b -> b.duration(50)
+			return create_re(Mods.ENV.recipeId(input), b -> b.duration(50)
 					.require(Mods.ENV, input)
 					.output(chances.get(0), dyes.get(0), amounts.get(0))
 					.output(chances.get(1), dyes.get(1), amounts.get(1))
 					.output(chances.get(2), dyes.get(2), amounts.get(2))
 					.whenModLoaded(Mods.ENV.getId()));
 		} else if (chances.size() == 1) {
-			return create(Mods.ENV.recipeId(input), b -> b.duration(50)
+			return create_re(Mods.ENV.recipeId(input), b -> b.duration(50)
 					.require(Mods.ENV, input)
 					.output(chances.get(0), dyes.get(0), amounts.get(0))
 					.whenModLoaded(Mods.ENV.getId()));
@@ -806,7 +806,7 @@ public class MillingRecipeGen extends ProcessingRecipeGen {
 	}
 
 	protected GeneratedRecipe bopFlower(String input, Float chance, Item dye, int amount) {
-		return create(Mods.BOP.recipeId(input), b -> b.duration(50)
+		return create_re(Mods.BOP.recipeId(input), b -> b.duration(50)
 				.require(Mods.BOP, input)
 				.output(chance, dye, amount)
 				.whenModLoaded(Mods.BOP.getId()));
@@ -814,7 +814,7 @@ public class MillingRecipeGen extends ProcessingRecipeGen {
 
 	protected GeneratedRecipe botaniaPetals(String... colors) {
 		for (String color : colors) {
-			create(Mods.BTN.recipeId(color + "_petal"), b -> b.duration(50)
+			create_re(Mods.BTN.recipeId(color + "_petal"), b -> b.duration(50)
 					.require(AllTags.optionalTag(ForgeRegistries.ITEMS,
 							new ResourceLocation(Mods.BTN.getId(), "petals/" + color)))
 					.output(Mods.MC, color + "_dye")
@@ -826,20 +826,20 @@ public class MillingRecipeGen extends ProcessingRecipeGen {
 	protected GeneratedRecipe ruFlower(String input, List<Float> chances,
 									   List<Item> dyes, List<Integer> amounts) {
 		if (chances.size() == 2) {
-			return create(Mods.RU.recipeId(input), b -> b.duration(50)
+			return create_re(Mods.RU.recipeId(input), b -> b.duration(50)
 					.require(Mods.RU, input)
 					.output(chances.get(0), dyes.get(0), amounts.get(0))
 					.output(chances.get(1), dyes.get(1), amounts.get(1))
 					.whenModLoaded(Mods.RU.getId()));
 		} else if (chances.size() == 3) {
-			return create(Mods.RU.recipeId(input), b -> b.duration(50)
+			return create_re(Mods.RU.recipeId(input), b -> b.duration(50)
 					.require(Mods.RU, input)
 					.output(chances.get(0), dyes.get(0), amounts.get(0))
 					.output(chances.get(1), dyes.get(1), amounts.get(1))
 					.output(chances.get(2), dyes.get(2), amounts.get(2))
 					.whenModLoaded(Mods.RU.getId()));
 		} else if (chances.size() == 1) {
-			return create(Mods.RU.recipeId(input), b -> b.duration(50)
+			return create_re(Mods.RU.recipeId(input), b -> b.duration(50)
 					.require(Mods.RU, input)
 					.output(chances.get(0), dyes.get(0), amounts.get(0))
 					.whenModLoaded(Mods.RU.getId()));

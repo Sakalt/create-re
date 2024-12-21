@@ -1,13 +1,13 @@
-package com.simibubi.create.content.fluids.pipes;
+package com.simibubi.create_re.content.fluids.pipes;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.fluids.FluidTransportBehaviour;
-import com.simibubi.create.content.schematics.requirement.ISpecialBlockItemRequirement;
-import com.simibubi.create.content.schematics.requirement.ItemRequirement;
-import com.simibubi.create.foundation.block.IBE;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.fluids.FluidTransportBehaviour;
+import com.simibubi.create_re.content.schematics.requirement.ISpecialBlockItemRequirement;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement;
+import com.simibubi.create_re.foundation.block.IBE;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
@@ -32,7 +32,7 @@ import net.minecraft.world.level.pathfinder.PathComputationType;
 @ParametersAreNonnullByDefault
 public class GlassFluidPipeBlock extends AxisPipeBlock implements IBE<StraightPipeBlockEntity>, SimpleWaterloggedBlock, ISpecialBlockItemRequirement {
 
-	public static final BooleanProperty ALT = BooleanProperty.create("alt");
+	public static final BooleanProperty ALT = BooleanProperty.create_re("alt");
 
 	public GlassFluidPipeBlock(Properties p_i48339_1_) {
 		super(p_i48339_1_);
@@ -40,8 +40,8 @@ public class GlassFluidPipeBlock extends AxisPipeBlock implements IBE<StraightPi
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> p_206840_1_) {
-		super.createBlockStateDefinition(p_206840_1_.add(ALT, BlockStateProperties.WATERLOGGED));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> p_206840_1_) {
+		super.create_reBlockStateDefinition(p_206840_1_.add(ALT, BlockStateProperties.WATERLOGGED));
 	}
 
 	@Override

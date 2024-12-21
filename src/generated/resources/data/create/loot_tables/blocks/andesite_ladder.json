@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:andesite_ladder"
+          "name": "create_re:andesite_ladder"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/andesite_ladder"
+  "random_sequence": "create_re:blocks/andesite_ladder"
 }

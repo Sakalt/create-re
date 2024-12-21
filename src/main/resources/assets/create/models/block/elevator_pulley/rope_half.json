@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"1": "create:block/elevator_pulley_belt",
-		"particle": "create:block/brass_gearbox"
+		"1": "create_re:block/elevator_pulley_belt",
+		"particle": "create_re:block/brass_gearbox"
 	},
 	"elements": [
 		{

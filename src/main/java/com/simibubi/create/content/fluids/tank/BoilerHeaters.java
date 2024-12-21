@@ -1,16 +1,16 @@
-package com.simibubi.create.content.fluids.tank;
+package com.simibubi.create_re.content.fluids.tank;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllTags.AllBlockTags;
-import com.simibubi.create.content.processing.burner.BlazeBurnerBlock;
-import com.simibubi.create.content.processing.burner.BlazeBurnerBlock.HeatLevel;
-import com.simibubi.create.foundation.utility.AttachedRegistry;
-import com.simibubi.create.foundation.utility.BlockHelper;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllTags.AllBlockTags;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock.HeatLevel;
+import com.simibubi.create_re.foundation.utility.AttachedRegistry;
+import com.simibubi.create_re.foundation.utility.BlockHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;

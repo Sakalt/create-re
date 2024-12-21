@@ -6,10 +6,10 @@
       "item": "minecraft:lever"
     },
     "C": {
-      "item": "create:railway_casing"
+      "item": "create_re:railway_casing"
     },
     "I": {
-      "item": "create:precision_mechanism"
+      "item": "create_re:precision_mechanism"
     }
   },
   "pattern": [
@@ -18,7 +18,7 @@
     "I"
   ],
   "result": {
-    "item": "create:controls"
+    "item": "create_re:controls"
   },
   "show_notification": true
 }

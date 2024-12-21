@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/andesite_casing"
+      "model": "create_re:block/andesite_casing"
     }
   }
 }

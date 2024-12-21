@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"2": "create:block/indicator/0",
-		"particle": "create:block/signal_box"
+		"2": "create_re:block/indicator/0",
+		"particle": "create_re:block/signal_box"
 	},
 	"elements": [
 		{

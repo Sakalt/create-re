@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:acacia_window"
+        "recipe": "create_re:acacia_window"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:acacia_window"
+      "create_re:acacia_window"
     ]
   },
   "sends_telemetry_event": false

@@ -1,12 +1,12 @@
-package com.simibubi.create.compat.computercraft.implementation.peripherals;
+package com.simibubi.create_re.compat.computercraft.implementation.peripherals;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
 import org.jetbrains.annotations.NotNull;
 
-import com.simibubi.create.content.redstone.displayLink.DisplayLinkBlockEntity;
-import com.simibubi.create.content.redstone.displayLink.DisplayLinkContext;
-import com.simibubi.create.content.redstone.displayLink.target.DisplayTargetStats;
+import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkBlockEntity;
+import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkContext;
+import com.simibubi.create_re.content.redstone.displayLink.target.DisplayTargetStats;
 
 import dan200.computercraft.api.lua.LuaFunction;
 import net.minecraft.nbt.ListTag;

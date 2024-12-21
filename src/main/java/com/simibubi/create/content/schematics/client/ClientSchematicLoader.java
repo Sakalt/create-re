@@ -1,4 +1,4 @@
-package com.simibubi.create.content.schematics.client;
+package com.simibubi.create_re.content.schematics.client;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,13 +14,13 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.schematics.packet.SchematicUploadPacket;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.FilesHelper;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.schematics.packet.SchematicUploadPacket;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.FilesHelper;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
@@ -128,7 +128,7 @@ public class ClientSchematicLoader {
 	}
 
 	public void refresh() {
-		FilesHelper.createFolderIfMissing("schematics");
+		FilesHelper.create_reFolderIfMissing("schematics");
 		availableSchematics.clear();
 
 		try {
@@ -140,7 +140,7 @@ public class ClientSchematicLoader {
 						availableSchematics.add(Components.literal(path.getFileName().toString()));
 					});
 		} catch (NoSuchFileException e) {
-			// No Schematics created yet
+			// No Schematics create_red yet
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

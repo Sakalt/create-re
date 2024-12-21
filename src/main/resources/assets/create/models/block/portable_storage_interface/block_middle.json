@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "create:block/portable_storage_interface",
-		"particle": "create:block/portable_storage_interface"
+		"0": "create_re:block/portable_storage_interface",
+		"particle": "create_re:block/portable_storage_interface"
 	},
 	"elements": [
 		{

@@ -35,11 +35,11 @@
               "source": "block_entity"
             }
           ],
-          "name": "create:copper_backtank"
+          "name": "create_re:copper_backtank"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/copper_backtank"
+  "random_sequence": "create_re:blocks/copper_backtank"
 }

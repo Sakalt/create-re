@@ -1,8 +1,8 @@
-package com.simibubi.create.content.kinetics.turntable;
+package com.simibubi.create_re.content.kinetics.turntable;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;

@@ -1,8 +1,8 @@
-package com.simibubi.create.foundation.ponder.instruction;
+package com.simibubi.create_re.foundation.ponder.instruction;
 
 import java.util.function.Consumer;
 
-import com.simibubi.create.foundation.ponder.PonderScene;
+import com.simibubi.create_re.foundation.ponder.PonderScene;
 
 public abstract class PonderInstruction {
 

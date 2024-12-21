@@ -1,4 +1,4 @@
-package com.simibubi.create.content.redstone.link;
+package com.simibubi.create_re.content.redstone.link;
 
 import java.util.HashMap;
 import java.util.IdentityHashMap;
@@ -8,10 +8,10 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.WorldHelper;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.WorldHelper;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.item.Item;

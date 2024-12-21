@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "create:warped_window"
+      "item": "create_re:warped_window"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 16,
-    "item": "create:warped_window_pane"
+    "item": "create_re:warped_window_pane"
   },
   "show_notification": true
 }

@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:crushed_raw_silver"
+              "create_re:crushed_raw_silver"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:smelting/silver_ingot_compat_thermal"
+        "recipe": "create_re:smelting/silver_ingot_compat_thermal"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:smelting/silver_ingot_compat_thermal"
+      "create_re:smelting/silver_ingot_compat_thermal"
     ]
   },
   "sends_telemetry_event": false

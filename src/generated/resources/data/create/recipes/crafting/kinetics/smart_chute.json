@@ -6,10 +6,10 @@
       "tag": "forge:plates/brass"
     },
     "P": {
-      "item": "create:electron_tube"
+      "item": "create_re:electron_tube"
     },
     "S": {
-      "item": "create:chute"
+      "item": "create_re:chute"
     }
   },
   "pattern": [
@@ -18,7 +18,7 @@
     "P"
   ],
   "result": {
-    "item": "create:smart_chute"
+    "item": "create_re:smart_chute"
   },
   "show_notification": true
 }

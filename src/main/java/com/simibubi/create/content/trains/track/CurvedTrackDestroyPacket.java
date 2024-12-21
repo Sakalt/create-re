@@ -1,9 +1,9 @@
-package com.simibubi.create.content.trains.track;
+package com.simibubi.create_re.content.trains.track;
 
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.networking.BlockEntityConfigurationPacket;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.networking.BlockEntityConfigurationPacket;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;

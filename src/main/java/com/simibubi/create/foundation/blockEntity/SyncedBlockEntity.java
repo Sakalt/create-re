@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.blockEntity;
+package com.simibubi.create_re.foundation.blockEntity;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
@@ -33,7 +33,7 @@ public abstract class SyncedBlockEntity extends BlockEntity {
 
 	@Override
 	public ClientboundBlockEntityDataPacket getUpdatePacket() {
-		return ClientboundBlockEntityDataPacket.create(this);
+		return ClientboundBlockEntityDataPacket.create_re(this);
 	}
 
 	@Override

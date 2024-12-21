@@ -1,13 +1,13 @@
-package com.simibubi.create.compat.jei.category;
+package com.simibubi.create_re.compat.jei.category;
 
 import java.util.List;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create.compat.jei.category.animations.AnimatedMillstone;
-import com.simibubi.create.content.kinetics.crusher.AbstractCrushingRecipe;
-import com.simibubi.create.content.processing.recipe.ProcessingOutput;
-import com.simibubi.create.foundation.gui.AllGuiTextures;
+import com.simibubi.create_re.compat.jei.category.animations.AnimatedMillstone;
+import com.simibubi.create_re.content.kinetics.crusher.AbstractCrushingRecipe;
+import com.simibubi.create_re.content.processing.recipe.ProcessingOutput;
+import com.simibubi.create_re.foundation.gui.AllGuiTextures;
 
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.ingredient.IRecipeSlotsView;

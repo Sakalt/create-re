@@ -1,20 +1,20 @@
-package com.simibubi.create.content.kinetics.crafter;
+package com.simibubi.create_re.content.kinetics.crafter;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.kinetics.base.HorizontalKineticBlock;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.kinetics.crafter.ConnectedInputHandler.ConnectedInput;
-import com.simibubi.create.content.kinetics.crafter.MechanicalCrafterBlockEntity.Phase;
-import com.simibubi.create.content.kinetics.simpleRelays.ICogWheel;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
-import com.simibubi.create.foundation.utility.AngleHelper;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.Pointing;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.kinetics.base.HorizontalKineticBlock;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.kinetics.crafter.ConnectedInputHandler.ConnectedInput;
+import com.simibubi.create_re.content.kinetics.crafter.MechanicalCrafterBlockEntity.Phase;
+import com.simibubi.create_re.content.kinetics.simpleRelays.ICogWheel;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Pointing;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -44,7 +44,7 @@ import net.minecraftforge.items.ItemStackHandler;
 public class MechanicalCrafterBlock extends HorizontalKineticBlock
 	implements IBE<MechanicalCrafterBlockEntity>, ICogWheel {
 
-	public static final EnumProperty<Pointing> POINTING = EnumProperty.create("pointing", Pointing.class);
+	public static final EnumProperty<Pointing> POINTING = EnumProperty.create_re("pointing", Pointing.class);
 
 	public MechanicalCrafterBlock(Properties properties) {
 		super(properties);
@@ -52,8 +52,8 @@ public class MechanicalCrafterBlock extends HorizontalKineticBlock
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
-		super.createBlockStateDefinition(builder.add(POINTING));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
+		super.create_reBlockStateDefinition(builder.add(POINTING));
 	}
 
 	@Override

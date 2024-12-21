@@ -1,6 +1,6 @@
-package com.simibubi.create.content.kinetics.crafter;
+package com.simibubi.create_re.content.kinetics.crafter;
 
-import static com.simibubi.create.content.kinetics.base.HorizontalKineticBlock.HORIZONTAL_FACING;
+import static com.simibubi.create_re.content.kinetics.base.HorizontalKineticBlock.HORIZONTAL_FACING;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -9,21 +9,21 @@ import java.util.Map.Entry;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
-import com.simibubi.create.content.kinetics.crafter.ConnectedInputHandler.ConnectedInput;
-import com.simibubi.create.content.kinetics.crafter.RecipeGridHandler.GroupedItems;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.edgeInteraction.EdgeInteractionBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
-import com.simibubi.create.foundation.item.SmartInventory;
-import com.simibubi.create.foundation.utility.BlockFace;
-import com.simibubi.create.foundation.utility.Pointing;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
+import com.simibubi.create_re.content.kinetics.crafter.ConnectedInputHandler.ConnectedInput;
+import com.simibubi.create_re.content.kinetics.crafter.RecipeGridHandler.GroupedItems;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.edgeInteraction.EdgeInteractionBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
+import com.simibubi.create_re.foundation.item.SmartInventory;
+import com.simibubi.create_re.foundation.utility.BlockFace;
+import com.simibubi.create_re.foundation.utility.Pointing;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

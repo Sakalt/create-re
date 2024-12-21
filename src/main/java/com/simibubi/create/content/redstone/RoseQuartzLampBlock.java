@@ -1,4 +1,4 @@
-package com.simibubi.create.content.redstone;
+package com.simibubi.create_re.content.redstone;
 
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.Set;
 import java.util.function.BiConsumer;
 
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
-import com.simibubi.create.content.redstone.diodes.BrassDiodeBlock;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.content.redstone.diodes.BrassDiodeBlock;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.BlockPos.MutableBlockPos;
@@ -35,7 +35,7 @@ public class RoseQuartzLampBlock extends Block implements IWrenchable {
 
 	public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
 	public static final BooleanProperty POWERING = BrassDiodeBlock.POWERING;
-	public static final BooleanProperty ACTIVATE = BooleanProperty.create("activate");
+	public static final BooleanProperty ACTIVATE = BooleanProperty.create_re("activate");
 
 	public RoseQuartzLampBlock(Properties p_49795_) {
 		super(p_49795_);
@@ -52,8 +52,8 @@ public class RoseQuartzLampBlock extends Block implements IWrenchable {
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
-		super.createBlockStateDefinition(pBuilder.add(POWERED, POWERING, ACTIVATE));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
+		super.create_reBlockStateDefinition(pBuilder.add(POWERED, POWERING, ACTIVATE));
 	}
 
 	@Override

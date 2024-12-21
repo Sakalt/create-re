@@ -1,4 +1,4 @@
-package com.simibubi.create.content.logistics.crate;
+package com.simibubi.create_re.content.logistics.crate;
 
 import java.util.function.Supplier;
 

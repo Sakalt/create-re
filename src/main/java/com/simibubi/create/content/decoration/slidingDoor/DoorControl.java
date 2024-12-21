@@ -1,14 +1,14 @@
-package com.simibubi.create.content.decoration.slidingDoor;
+package com.simibubi.create_re.content.decoration.slidingDoor;
 
 import java.util.Arrays;
 import java.util.function.Consumer;
 
-import com.simibubi.create.foundation.gui.widget.Label;
-import com.simibubi.create.foundation.gui.widget.ScrollInput;
-import com.simibubi.create.foundation.gui.widget.SelectionScrollInput;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.foundation.gui.widget.Label;
+import com.simibubi.create_re.foundation.gui.widget.ScrollInput;
+import com.simibubi.create_re.foundation.gui.widget.SelectionScrollInput;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.Direction;
@@ -40,7 +40,7 @@ public enum DoorControl {
 	}
 
 	@OnlyIn(Dist.CLIENT)
-	public static Pair<ScrollInput, Label> createWidget(int x, int y, Consumer<DoorControl> callback,
+	public static Pair<ScrollInput, Label> create_reWidget(int x, int y, Consumer<DoorControl> callback,
 		DoorControl initial) {
 
 		DoorControl playerFacing = NONE;

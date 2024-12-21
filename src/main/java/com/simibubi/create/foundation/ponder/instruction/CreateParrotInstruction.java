@@ -1,6 +1,6 @@
-package com.simibubi.create.foundation.ponder.instruction;
+package com.simibubi.create_re.foundation.ponder.instruction;
 
-import com.simibubi.create.foundation.ponder.element.ParrotElement;
+import com.simibubi.create_re.foundation.ponder.element.ParrotElement;
 
 import net.minecraft.core.Direction;
 

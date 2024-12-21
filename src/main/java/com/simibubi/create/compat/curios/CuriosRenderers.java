@@ -1,6 +1,6 @@
-package com.simibubi.create.compat.curios;
+package com.simibubi.create_re.compat.curios;
 
-import com.simibubi.create.AllItems;
+import com.simibubi.create_re.AllItems;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.geom.builders.LayerDefinition;
@@ -16,6 +16,6 @@ public class CuriosRenderers {
 	}
 
 	public static void onLayerRegister(final EntityRenderersEvent.RegisterLayerDefinitions event) {
-		event.registerLayerDefinition(GogglesCurioRenderer.LAYER, () -> LayerDefinition.create(GogglesCurioRenderer.mesh(), 1, 1));
+		event.registerLayerDefinition(GogglesCurioRenderer.LAYER, () -> LayerDefinition.create_re(GogglesCurioRenderer.mesh(), 1, 1));
 	}
 }

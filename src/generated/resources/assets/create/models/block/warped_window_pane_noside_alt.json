@@ -1,7 +1,7 @@
 {
-  "parent": "create:block/connected_glass_pane/noside_alt",
+  "parent": "create_re:block/connected_glass_pane/noside_alt",
   "textures": {
     "edge": "minecraft:block/warped_planks",
-    "pane": "create:block/palettes/warped_window"
+    "pane": "create_re:block/palettes/warped_window"
   }
 }

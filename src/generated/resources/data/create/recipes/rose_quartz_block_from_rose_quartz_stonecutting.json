@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 2,
   "ingredient": {
-    "item": "create:rose_quartz"
+    "item": "create_re:rose_quartz"
   },
-  "result": "create:rose_quartz_block"
+  "result": "create_re:rose_quartz_block"
 }

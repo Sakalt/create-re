@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.recipe;
+package com.simibubi.create_re.foundation.recipe;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.RecipeSerializer;

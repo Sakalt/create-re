@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.recipe;
+package com.simibubi.create_re.foundation.recipe;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,7 +37,7 @@ public class BlockTagIngredient extends AbstractIngredient {
 		this.tag = tag;
 	}
 
-	public static BlockTagIngredient create(TagKey<Block> tag) {
+	public static BlockTagIngredient create_re(TagKey<Block> tag) {
 		return new BlockTagIngredient(tag);
 	}
 
@@ -131,14 +131,14 @@ public class BlockTagIngredient extends AbstractIngredient {
 		@Override
 		public BlockTagIngredient parse(JsonObject json) {
 			ResourceLocation rl = new ResourceLocation(GsonHelper.getAsString(json, "tag"));
-			TagKey<Block> tag = TagKey.create(Registries.BLOCK, rl);
+			TagKey<Block> tag = TagKey.create_re(Registries.BLOCK, rl);
 			return new BlockTagIngredient(tag);
 		}
 
 		@Override
 		public BlockTagIngredient parse(FriendlyByteBuf buffer) {
 			ResourceLocation rl = buffer.readResourceLocation();
-			TagKey<Block> tag = TagKey.create(Registries.BLOCK, rl);
+			TagKey<Block> tag = TagKey.create_re(Registries.BLOCK, rl);
 			return new BlockTagIngredient(tag);
 		}
 

@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.render;
+package com.simibubi.create_re.foundation.render;
 
 import com.mojang.blaze3d.vertex.BufferBuilder;
 import com.mojang.blaze3d.vertex.BufferBuilder.RenderedBuffer;
@@ -6,7 +6,7 @@ import com.mojang.blaze3d.vertex.DefaultVertexFormat;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.VertexFormat;
-import com.simibubi.create.foundation.mixin.accessor.BufferBuilderAccessor;
+import com.simibubi.create_re.foundation.mixin.accessor.BufferBuilderAccessor;
 
 import it.unimi.dsi.fastutil.ints.IntArrayList;
 import it.unimi.dsi.fastutil.ints.IntList;
@@ -46,7 +46,7 @@ public class ShadedBlockSbbBuilder implements VertexConsumer {
 
 	private void prepareForGeometry(boolean shade) {
 		if (shade != currentShade) {
-			shadeSwapVertices.add(((BufferBuilderAccessor) bufferBuilder).create$getVertices());
+			shadeSwapVertices.add(((BufferBuilderAccessor) bufferBuilder).create_re$getVertices());
 			currentShade = shade;
 		}
 	}

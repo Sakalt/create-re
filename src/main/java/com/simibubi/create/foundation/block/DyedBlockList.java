@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.block;
+package com.simibubi.create_re.foundation.block;
 
 import java.util.Arrays;
 import java.util.Iterator;

@@ -1,17 +1,17 @@
-package com.simibubi.create;
+package com.simibubi.create_re;
 
 import java.util.function.Supplier;
 
-import com.simibubi.create.content.equipment.bell.SoulBaseParticle;
-import com.simibubi.create.content.equipment.bell.SoulParticle;
-import com.simibubi.create.content.fluids.particle.FluidParticleData;
-import com.simibubi.create.content.kinetics.base.RotationIndicatorParticleData;
-import com.simibubi.create.content.kinetics.fan.AirFlowParticleData;
-import com.simibubi.create.content.kinetics.steamEngine.SteamJetParticleData;
-import com.simibubi.create.content.trains.CubeParticleData;
-import com.simibubi.create.foundation.particle.AirParticleData;
-import com.simibubi.create.foundation.particle.ICustomParticleData;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.content.equipment.bell.SoulBaseParticle;
+import com.simibubi.create_re.content.equipment.bell.SoulParticle;
+import com.simibubi.create_re.content.fluids.particle.FluidParticleData;
+import com.simibubi.create_re.content.kinetics.base.RotationIndicatorParticleData;
+import com.simibubi.create_re.content.kinetics.fan.AirFlowParticleData;
+import com.simibubi.create_re.content.kinetics.steamEngine.SteamJetParticleData;
+import com.simibubi.create_re.content.trains.CubeParticleData;
+import com.simibubi.create_re.foundation.particle.AirParticleData;
+import com.simibubi.create_re.foundation.particle.ICustomParticleData;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleType;
@@ -64,7 +64,7 @@ public enum AllParticleTypes {
 	}
 
 	private static class ParticleEntry<D extends ParticleOptions> {
-		private static final DeferredRegister<ParticleType<?>> REGISTER = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, Create.ID);
+		private static final DeferredRegister<ParticleType<?>> REGISTER = DeferredRegister.create_re(ForgeRegistries.PARTICLE_TYPES, Create.ID);
 
 		private final String name;
 		private final Supplier<? extends ICustomParticleData<D>> typeFactory;
@@ -74,7 +74,7 @@ public enum AllParticleTypes {
 			this.name = name;
 			this.typeFactory = typeFactory;
 
-			object = REGISTER.register(name, () -> this.typeFactory.get().createType());
+			object = REGISTER.register(name, () -> this.typeFactory.get().create_reType());
 		}
 
 		@OnlyIn(Dist.CLIENT)

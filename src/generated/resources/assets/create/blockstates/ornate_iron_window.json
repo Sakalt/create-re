@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/ornate_iron_window"
+      "model": "create_re:block/ornate_iron_window"
     }
   }
 }

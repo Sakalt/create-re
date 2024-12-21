@@ -21,11 +21,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:vertical_framed_glass"
+          "name": "create_re:vertical_framed_glass"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/vertical_framed_glass"
+  "random_sequence": "create_re:blocks/vertical_framed_glass"
 }

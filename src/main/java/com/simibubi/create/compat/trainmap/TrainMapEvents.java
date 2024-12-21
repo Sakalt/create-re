@@ -1,7 +1,7 @@
-package com.simibubi.create.compat.trainmap;
+package com.simibubi.create_re.compat.trainmap;
 
 import com.mojang.blaze3d.platform.InputConstants;
-import com.simibubi.create.compat.Mods;
+import com.simibubi.create_re.compat.Mods;
 
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.api.distmarker.Dist;

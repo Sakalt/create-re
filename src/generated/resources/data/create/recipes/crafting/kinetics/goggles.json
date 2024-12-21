@@ -17,7 +17,7 @@
     "GPG"
   ],
   "result": {
-    "item": "create:goggles"
+    "item": "create_re:goggles"
   },
   "show_notification": true
 }

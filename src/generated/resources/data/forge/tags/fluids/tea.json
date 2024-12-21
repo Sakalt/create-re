@@ -1,6 +1,6 @@
 {
   "values": [
-    "create:flowing_tea",
-    "create:tea"
+    "create_re:flowing_tea",
+    "create_re:tea"
   ]
 }

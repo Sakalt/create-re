@@ -3,10 +3,10 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "create:white_sail"
+      "item": "create_re:white_sail"
     }
   ],
   "result": {
-    "item": "create:sail_frame"
+    "item": "create_re:sail_frame"
   }
 }

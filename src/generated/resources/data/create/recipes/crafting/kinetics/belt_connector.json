@@ -11,7 +11,7 @@
     "DDD"
   ],
   "result": {
-    "item": "create:belt_connector"
+    "item": "create_re:belt_connector"
   },
   "show_notification": true
 }

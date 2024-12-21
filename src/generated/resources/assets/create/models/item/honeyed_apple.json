@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "create:item/honeyed_apple"
+    "layer0": "create_re:item/honeyed_apple"
   }
 }

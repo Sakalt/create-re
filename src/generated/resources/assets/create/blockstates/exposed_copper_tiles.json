@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/exposed_copper_tiles"
+      "model": "create_re:block/exposed_copper_tiles"
     }
   }
 }

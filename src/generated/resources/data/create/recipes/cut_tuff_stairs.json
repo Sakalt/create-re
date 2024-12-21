@@ -4,7 +4,7 @@
   "group": "cut_tuff_stairs",
   "key": {
     "X": {
-      "item": "create:cut_tuff"
+      "item": "create_re:cut_tuff"
     }
   },
   "pattern": [
@@ -14,7 +14,7 @@
   ],
   "result": {
     "count": 4,
-    "item": "create:cut_tuff_stairs"
+    "item": "create_re:cut_tuff_stairs"
   },
   "show_notification": true
 }

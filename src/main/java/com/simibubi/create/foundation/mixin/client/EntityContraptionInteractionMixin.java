@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.mixin.client;
+package com.simibubi.create_re.foundation.mixin.client;
 
 import java.lang.ref.Reference;
 import java.util.Set;
@@ -15,10 +15,10 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import com.simibubi.create.content.contraptions.AbstractContraptionEntity;
-import com.simibubi.create.content.contraptions.Contraption;
-import com.simibubi.create.content.contraptions.ContraptionCollider;
-import com.simibubi.create.content.contraptions.ContraptionHandler;
+import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity;
+import com.simibubi.create_re.content.contraptions.Contraption;
+import com.simibubi.create_re.content.contraptions.ContraptionCollider;
+import com.simibubi.create_re.content.contraptions.ContraptionHandler;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.BlockParticleOption;
@@ -63,7 +63,7 @@ public abstract class EntityContraptionInteractionMixin extends CapabilityProvid
 	protected abstract void playStepSound(BlockPos pos, BlockState state);
 
 	@Unique
-	private Stream<AbstractContraptionEntity> create$getIntersectionContraptionsStream() {
+	private Stream<AbstractContraptionEntity> create_re$getIntersectionContraptionsStream() {
 		return ContraptionHandler.loadedContraptions.get(level)
 				.values()
 				.stream()
@@ -72,8 +72,8 @@ public abstract class EntityContraptionInteractionMixin extends CapabilityProvid
 	}
 
 	@Unique
-	private Set<AbstractContraptionEntity> create$getIntersectingContraptions() {
-		Set<AbstractContraptionEntity> contraptions = create$getIntersectionContraptionsStream().collect(Collectors.toSet());
+	private Set<AbstractContraptionEntity> create_re$getIntersectingContraptions() {
+		Set<AbstractContraptionEntity> contraptions = create_re$getIntersectionContraptionsStream().collect(Collectors.toSet());
 
 		contraptions.addAll(level.getEntitiesOfClass(AbstractContraptionEntity.class, ((Entity) (Object) this).getBoundingBox()
 			.inflate(1f)));
@@ -81,8 +81,8 @@ public abstract class EntityContraptionInteractionMixin extends CapabilityProvid
 	}
 
 	@Unique
-	private void create$forCollision(Vec3 worldPos, TriConsumer<Contraption, BlockState, BlockPos> action) {
-		create$getIntersectingContraptions().forEach(cEntity -> {
+	private void create_re$forCollision(Vec3 worldPos, TriConsumer<Contraption, BlockState, BlockPos> action) {
+		create_re$getIntersectingContraptions().forEach(cEntity -> {
 			Vec3 localPos = ContraptionCollider.worldToLocalPos(worldPos, cEntity);
 
 			BlockPos blockPos = BlockPos.containing(localPos);
@@ -100,11 +100,11 @@ public abstract class EntityContraptionInteractionMixin extends CapabilityProvid
 	// involves block step sounds on contraptions
 	// IFNE line 661 injecting before `!blockstate.isAir(this.world, blockpos)`
 	@Inject(method = "move", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/block/state/BlockState;isAir()Z", ordinal = 0))
-	private void create$contraptionStepSounds(MoverType mover, Vec3 movement, CallbackInfo ci) {
+	private void create_re$contraptionStepSounds(MoverType mover, Vec3 movement, CallbackInfo ci) {
 		Vec3 worldPos = position.add(0, -0.2, 0);
 		MutableBoolean stepped = new MutableBoolean(false);
 
-		create$forCollision(worldPos, (contraption, state, pos) -> {
+		create_re$forCollision(worldPos, (contraption, state, pos) -> {
 			playStepSound(pos, state);
 			stepped.setTrue();
 		});
@@ -115,7 +115,7 @@ public abstract class EntityContraptionInteractionMixin extends CapabilityProvid
 
 	// involves client-side view bobbing animation on contraptions
 	@Inject(method = "move", at = @At(value = "TAIL"))
-	private void create$onMove(MoverType mover, Vec3 movement, CallbackInfo ci) {
+	private void create_re$onMove(MoverType mover, Vec3 movement, CallbackInfo ci) {
 		if (!level.isClientSide)
 			return;
 		Entity self = (Entity) (Object) this;
@@ -125,7 +125,7 @@ public abstract class EntityContraptionInteractionMixin extends CapabilityProvid
 			return;
 
 		Vec3 worldPos = position.add(0, -0.2, 0);
-		boolean onAtLeastOneContraption = create$getIntersectionContraptionsStream().anyMatch(cEntity -> {
+		boolean onAtLeastOneContraption = create_re$getIntersectionContraptionsStream().anyMatch(cEntity -> {
 			Vec3 localPos = ContraptionCollider.worldToLocalPos(worldPos, cEntity);
 
 			BlockPos blockPos = BlockPos.containing(localPos);
@@ -149,12 +149,12 @@ public abstract class EntityContraptionInteractionMixin extends CapabilityProvid
 	}
 
 	@Inject(method = "spawnSprintParticle", at = @At(value = "TAIL"))
-	private void create$onSpawnSprintParticle(CallbackInfo ci) {
+	private void create_re$onSpawnSprintParticle(CallbackInfo ci) {
 		Entity self = (Entity) (Object) this;
 		Vec3 worldPos = position.add(0, -0.2, 0);
 		BlockPos particlePos = BlockPos.containing(worldPos); // pos where particles are spawned
 
-		create$forCollision(worldPos, (contraption, state, pos) -> {
+		create_re$forCollision(worldPos, (contraption, state, pos) -> {
 			if (!state.addRunningEffects(level, pos, self)
 				&& state.getRenderShape() != RenderShape.INVISIBLE) {
 				Vec3 speed = self.getDeltaMovement();

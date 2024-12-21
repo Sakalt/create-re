@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "create:block/axis",
-		"1": "create:block/axis_top",
+		"0": "create_re:block/axis",
+		"1": "create_re:block/axis_top",
 		"2": "block/dark_oak_log",
 		"3": "block/dark_oak_log_top",
 		"particle": "block/dark_oak_log"

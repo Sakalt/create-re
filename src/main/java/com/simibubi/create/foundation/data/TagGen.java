@@ -1,11 +1,11 @@
-package com.simibubi.create.foundation.data;
+package com.simibubi.create_re.foundation.data;
 
 import java.util.function.Function;
 import java.util.stream.Stream;
 
-import com.simibubi.create.AllTags;
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.data.recipe.Mods;
+import com.simibubi.create_re.AllTags;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.data.recipe.Mods;
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.builders.ItemBuilder;
 import com.tterrag.registrate.providers.RegistrateTagsProvider;

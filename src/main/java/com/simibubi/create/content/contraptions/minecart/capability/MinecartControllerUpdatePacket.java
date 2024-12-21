@@ -1,6 +1,6 @@
-package com.simibubi.create.content.contraptions.minecart.capability;
+package com.simibubi.create_re.content.contraptions.minecart.capability;
 
-import com.simibubi.create.foundation.networking.SimplePacketBase;
+import com.simibubi.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;

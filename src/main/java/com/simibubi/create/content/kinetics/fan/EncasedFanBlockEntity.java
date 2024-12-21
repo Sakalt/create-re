@@ -1,14 +1,14 @@
-package com.simibubi.create.content.kinetics.fan;
+package com.simibubi.create_re.content.kinetics.fan;
 
 import java.util.List;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.logistics.chute.ChuteBlockEntity;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.logistics.chute.ChuteBlockEntity;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;

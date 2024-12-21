@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/scoria"
+      "model": "create_re:block/scoria"
     }
   }
 }

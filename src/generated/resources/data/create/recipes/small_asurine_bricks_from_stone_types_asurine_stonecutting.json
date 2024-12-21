@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 1,
   "ingredient": {
-    "tag": "create:stone_types/asurine"
+    "tag": "create_re:stone_types/asurine"
   },
-  "result": "create:small_asurine_bricks"
+  "result": "create_re:small_asurine_bricks"
 }

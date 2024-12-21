@@ -1,6 +1,6 @@
-package com.simibubi.create.content.redstone.displayLink.source;
+package com.simibubi.create_re.content.redstone.displayLink.source;
 
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;

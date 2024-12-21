@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:mechanical_arm"
+          "name": "create_re:mechanical_arm"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/mechanical_arm"
+  "random_sequence": "create_re:blocks/mechanical_arm"
 }

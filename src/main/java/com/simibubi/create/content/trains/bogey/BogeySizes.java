@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.bogey;
+package com.simibubi.create_re.content.trains.bogey;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,7 +10,7 @@ import java.util.Map;
 import org.jetbrains.annotations.ApiStatus;
 import org.jetbrains.annotations.UnmodifiableView;
 
-import com.simibubi.create.Create;
+import com.simibubi.create_re.Create;
 
 import net.minecraft.resources.ResourceLocation;
 

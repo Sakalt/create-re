@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "create:block/brass_casing"
+    "all": "create_re:block/brass_casing"
   }
 }

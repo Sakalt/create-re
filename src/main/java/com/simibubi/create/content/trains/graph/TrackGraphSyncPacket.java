@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.graph;
+package com.simibubi.create_re.content.trains.graph;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,14 +8,14 @@ import java.util.Map.Entry;
 import java.util.Objects;
 import java.util.UUID;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.content.trains.GlobalRailwayManager;
-import com.simibubi.create.content.trains.signal.TrackEdgePoint;
-import com.simibubi.create.content.trains.track.BezierConnection;
-import com.simibubi.create.content.trains.track.TrackMaterial;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Pair;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.trains.GlobalRailwayManager;
+import com.simibubi.create_re.content.trains.signal.TrackEdgePoint;
+import com.simibubi.create_re.content.trains.track.BezierConnection;
+import com.simibubi.create_re.content.trains.track.TrackMaterial;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Pair;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.phys.Vec3;
@@ -80,7 +80,7 @@ public class TrackGraphSyncPacket extends TrackGraphPacket {
 		size = buffer.readVarInt();
 		for (int i = 0; i < size; i++)
 			addedEdges.add(
-				Pair.of(Pair.of(Couple.create(buffer::readVarInt), TrackMaterial.deserialize(buffer.readUtf())), buffer.readBoolean() ? new BezierConnection(buffer) : null));
+				Pair.of(Pair.of(Couple.create_re(buffer::readVarInt), TrackMaterial.deserialize(buffer.readUtf())), buffer.readBoolean() ? new BezierConnection(buffer) : null));
 
 		size = buffer.readVarInt();
 		for (int i = 0; i < size; i++)
@@ -93,7 +93,7 @@ public class TrackGraphSyncPacket extends TrackGraphPacket {
 		size = buffer.readVarInt();
 		for (int i = 0; i < size; i++) {
 			ArrayList<UUID> list = new ArrayList<>();
-			Couple<Integer> key = Couple.create(buffer::readInt);
+			Couple<Integer> key = Couple.create_re(buffer::readInt);
 			Pair<Integer, List<UUID>> entry = Pair.of(buffer.readVarInt(), list);
 			int size2 = buffer.readVarInt();
 			for (int j = 0; j < size2; j++)
@@ -260,7 +260,7 @@ public class TrackGraphSyncPacket extends TrackGraphPacket {
 	}
 
 	public void syncEdgeData(TrackNode node1, TrackNode node2, TrackEdge edge) {
-		Couple<Integer> key = Couple.create(node1.getNetId(), node2.getNetId());
+		Couple<Integer> key = Couple.create_re(node1.getNetId(), node2.getNetId());
 		List<UUID> list = new ArrayList<>();
 		EdgeData edgeData = edge.getEdgeData();
 		int groupType = edgeData.hasSignalBoundaries() ? NULL_GROUP

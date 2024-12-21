@@ -1,4 +1,4 @@
-package com.simibubi.create;
+package com.simibubi.create_re;
 
 import static net.minecraft.core.Direction.EAST;
 import static net.minecraft.core.Direction.NORTH;
@@ -7,9 +7,9 @@ import static net.minecraft.core.Direction.UP;
 
 import java.util.function.BiFunction;
 
-import com.simibubi.create.content.logistics.chute.ChuteShapes;
-import com.simibubi.create.content.trains.track.TrackVoxelShapes;
-import com.simibubi.create.foundation.utility.VoxelShaper;
+import com.simibubi.create_re.content.logistics.chute.ChuteShapes;
+import com.simibubi.create_re.content.trains.track.TrackVoxelShapes;
+import com.simibubi.create_re.foundation.utility.VoxelShaper;
 
 import net.minecraft.core.Direction;
 import net.minecraft.core.Direction.Axis;
@@ -322,7 +322,7 @@ public class AllShapes {
 			.forHorizontal(SOUTH),
 		SCHEMATICS_TABLE = shape(4, 0, 4, 12, 12, 12).add(0, 11, 2, 16, 14, 14)
 			.forDirectional(SOUTH),
-		CHUTE_SLOPE = shape(ChuteShapes.createSlope()).forHorizontal(SOUTH),
+		CHUTE_SLOPE = shape(ChuteShapes.create_reSlope()).forHorizontal(SOUTH),
 
 		WHISTLE_SMALL_WALL = shape(WHISTLE_SMALL).add(WHISTLE_BASE.get(NORTH))
 			.forHorizontal(SOUTH),

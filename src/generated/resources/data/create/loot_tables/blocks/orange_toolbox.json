@@ -39,11 +39,11 @@
               "source": "block_entity"
             }
           ],
-          "name": "create:orange_toolbox"
+          "name": "create_re:orange_toolbox"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/orange_toolbox"
+  "random_sequence": "create_re:blocks/orange_toolbox"
 }

@@ -1,4 +1,4 @@
-package com.simibubi.create.content.fluids.pipes;
+package com.simibubi.create_re.content.fluids.pipes;
 
 import javax.annotation.Nullable;
 

@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "C": {
-      "item": "create:andesite_alloy"
+      "item": "create_re:andesite_alloy"
     },
     "S": {
       "tag": "forge:plates/iron"
@@ -15,7 +15,7 @@
     " S "
   ],
   "result": {
-    "item": "create:propeller"
+    "item": "create_re:propeller"
   },
   "show_notification": true
 }

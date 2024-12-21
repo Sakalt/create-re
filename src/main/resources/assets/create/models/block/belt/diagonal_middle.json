@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "create:block/belt_diagonal",
-		"particle": "create:block/belt_diagonal"
+		"0": "create_re:block/belt_diagonal",
+		"particle": "create_re:block/belt_diagonal"
 	},
 	"elements": [
 		{

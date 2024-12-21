@@ -1,11 +1,11 @@
-package com.simibubi.create.content.fluids.spout;
+package com.simibubi.create_re.content.fluids.spout;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
-import com.simibubi.create.foundation.advancement.AdvancementBehaviour;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.blockEntity.ComparatorUtil;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.foundation.advancement.AdvancementBehaviour;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.blockEntity.ComparatorUtil;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.LivingEntity;

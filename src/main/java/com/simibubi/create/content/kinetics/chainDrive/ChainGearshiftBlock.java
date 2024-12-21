@@ -1,7 +1,7 @@
-package com.simibubi.create.content.kinetics.chainDrive;
+package com.simibubi.create_re.content.kinetics.chainDrive;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -23,8 +23,8 @@ public class ChainGearshiftBlock extends ChainDriveBlock {
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
-		super.createBlockStateDefinition(builder.add(POWERED));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
+		super.create_reBlockStateDefinition(builder.add(POWERED));
 	}
 
 	@Override

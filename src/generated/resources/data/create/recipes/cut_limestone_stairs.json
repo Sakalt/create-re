@@ -4,7 +4,7 @@
   "group": "cut_limestone_stairs",
   "key": {
     "X": {
-      "item": "create:cut_limestone"
+      "item": "create_re:cut_limestone"
     }
   },
   "pattern": [
@@ -14,7 +14,7 @@
   ],
   "result": {
     "count": 4,
-    "item": "create:cut_limestone_stairs"
+    "item": "create_re:cut_limestone_stairs"
   },
   "show_notification": true
 }

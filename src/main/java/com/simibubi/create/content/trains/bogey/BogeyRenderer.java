@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.bogey;
+package com.simibubi.create_re.content.trains.bogey;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 

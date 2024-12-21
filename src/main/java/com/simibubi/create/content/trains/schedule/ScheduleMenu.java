@@ -1,6 +1,6 @@
-package com.simibubi.create.content.trains.schedule;
+package com.simibubi.create_re.content.trains.schedule;
 
-import com.simibubi.create.foundation.gui.menu.GhostItemMenu;
+import com.simibubi.create_re.foundation.gui.menu.GhostItemMenu;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
@@ -30,7 +30,7 @@ public class ScheduleMenu extends GhostItemMenu<ItemStack> {
 	}
 
 	@Override
-	protected ItemStackHandler createGhostInventory() {
+	protected ItemStackHandler create_reGhostInventory() {
 		return new ItemStackHandler(slots);
 	}
 
@@ -46,7 +46,7 @@ public class ScheduleMenu extends GhostItemMenu<ItemStack> {
 	}
 
 	@Override
-	protected ItemStack createOnClient(FriendlyByteBuf extraData) {
+	protected ItemStack create_reOnClient(FriendlyByteBuf extraData) {
 		return extraData.readItem();
 	}
 

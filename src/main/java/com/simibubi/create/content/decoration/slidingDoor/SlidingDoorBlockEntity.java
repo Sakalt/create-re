@@ -1,11 +1,11 @@
-package com.simibubi.create.content.decoration.slidingDoor;
+package com.simibubi.create_re.content.decoration.slidingDoor;
 
 import java.util.List;
 
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat.Chaser;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat.Chaser;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
@@ -55,8 +55,8 @@ public class SlidingDoorBlockEntity extends SmartBlockEntity {
 	}
 
 	@Override
-	protected AABB createRenderBoundingBox() {
-		return super.createRenderBoundingBox().inflate(1);
+	protected AABB create_reRenderBoundingBox() {
+		return super.create_reRenderBoundingBox().inflate(1);
 	}
 
 	protected boolean isVisible(BlockState state) {

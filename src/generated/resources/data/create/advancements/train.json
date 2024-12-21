@@ -1,25 +1,25 @@
 {
-  "parent": "create:train_casing_00",
+  "parent": "create_re:train_casing_00",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:train_builtin"
+      "trigger": "create_re:train_builtin"
     }
   },
   "display": {
     "announce_to_chat": true,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.train.desc"
+      "translate": "advancement.create_re.train.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:track_station"
+      "item": "create_re:track_station"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.train"
+      "translate": "advancement.create_re.train"
     }
   },
   "requirements": [

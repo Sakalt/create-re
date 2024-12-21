@@ -1,269 +1,269 @@
-package com.simibubi.create;
+package com.simibubi.create_re;
 
-import static com.simibubi.create.AllInteractionBehaviours.interactionBehaviour;
-import static com.simibubi.create.AllMovementBehaviours.movementBehaviour;
-import static com.simibubi.create.Create.REGISTRATE;
-import static com.simibubi.create.content.redstone.displayLink.AllDisplayBehaviours.assignDataBehaviour;
-import static com.simibubi.create.foundation.data.BlockStateGen.axisBlock;
-import static com.simibubi.create.foundation.data.BlockStateGen.simpleCubeAll;
-import static com.simibubi.create.foundation.data.CreateRegistrate.connectedTextures;
-import static com.simibubi.create.foundation.data.ModelGen.customItemModel;
-import static com.simibubi.create.foundation.data.TagGen.axeOnly;
-import static com.simibubi.create.foundation.data.TagGen.axeOrPickaxe;
-import static com.simibubi.create.foundation.data.TagGen.pickaxeOnly;
-import static com.simibubi.create.foundation.data.TagGen.tagBlockAndItem;
+import static com.simibubi.create_re.AllInteractionBehaviours.interactionBehaviour;
+import static com.simibubi.create_re.AllMovementBehaviours.movementBehaviour;
+import static com.simibubi.create_re.Create.REGISTRATE;
+import static com.simibubi.create_re.content.redstone.displayLink.AllDisplayBehaviours.assignDataBehaviour;
+import static com.simibubi.create_re.foundation.data.BlockStateGen.axisBlock;
+import static com.simibubi.create_re.foundation.data.BlockStateGen.simpleCubeAll;
+import static com.simibubi.create_re.foundation.data.CreateRegistrate.connectedTextures;
+import static com.simibubi.create_re.foundation.data.ModelGen.customItemModel;
+import static com.simibubi.create_re.foundation.data.TagGen.axeOnly;
+import static com.simibubi.create_re.foundation.data.TagGen.axeOrPickaxe;
+import static com.simibubi.create_re.foundation.data.TagGen.pickaxeOnly;
+import static com.simibubi.create_re.foundation.data.TagGen.tagBlockAndItem;
 
-import com.simibubi.create.AllTags.AllBlockTags;
-import com.simibubi.create.AllTags.AllItemTags;
-import com.simibubi.create.content.contraptions.actors.contraptionControls.ContraptionControlsBlock;
-import com.simibubi.create.content.contraptions.actors.contraptionControls.ContraptionControlsMovement;
-import com.simibubi.create.content.contraptions.actors.contraptionControls.ContraptionControlsMovingInteraction;
-import com.simibubi.create.content.contraptions.actors.harvester.HarvesterBlock;
-import com.simibubi.create.content.contraptions.actors.harvester.HarvesterMovementBehaviour;
-import com.simibubi.create.content.contraptions.actors.plough.PloughBlock;
-import com.simibubi.create.content.contraptions.actors.plough.PloughMovementBehaviour;
-import com.simibubi.create.content.contraptions.actors.psi.PortableStorageInterfaceBlock;
-import com.simibubi.create.content.contraptions.actors.psi.PortableStorageInterfaceMovement;
-import com.simibubi.create.content.contraptions.actors.roller.RollerBlock;
-import com.simibubi.create.content.contraptions.actors.roller.RollerBlockItem;
-import com.simibubi.create.content.contraptions.actors.roller.RollerMovementBehaviour;
-import com.simibubi.create.content.contraptions.actors.seat.SeatBlock;
-import com.simibubi.create.content.contraptions.actors.seat.SeatInteractionBehaviour;
-import com.simibubi.create.content.contraptions.actors.seat.SeatMovementBehaviour;
-import com.simibubi.create.content.contraptions.actors.trainControls.ControlsBlock;
-import com.simibubi.create.content.contraptions.actors.trainControls.ControlsInteractionBehaviour;
-import com.simibubi.create.content.contraptions.actors.trainControls.ControlsMovementBehaviour;
-import com.simibubi.create.content.contraptions.bearing.BlankSailBlockItem;
-import com.simibubi.create.content.contraptions.bearing.ClockworkBearingBlock;
-import com.simibubi.create.content.contraptions.bearing.MechanicalBearingBlock;
-import com.simibubi.create.content.contraptions.bearing.SailBlock;
-import com.simibubi.create.content.contraptions.bearing.StabilizedBearingMovementBehaviour;
-import com.simibubi.create.content.contraptions.bearing.WindmillBearingBlock;
-import com.simibubi.create.content.contraptions.behaviour.BellMovementBehaviour;
-import com.simibubi.create.content.contraptions.chassis.LinearChassisBlock;
-import com.simibubi.create.content.contraptions.chassis.LinearChassisBlock.ChassisCTBehaviour;
-import com.simibubi.create.content.contraptions.chassis.RadialChassisBlock;
-import com.simibubi.create.content.contraptions.chassis.StickerBlock;
-import com.simibubi.create.content.contraptions.elevator.ElevatorContactBlock;
-import com.simibubi.create.content.contraptions.elevator.ElevatorPulleyBlock;
-import com.simibubi.create.content.contraptions.gantry.GantryCarriageBlock;
-import com.simibubi.create.content.contraptions.mounted.CartAssemblerBlock;
-import com.simibubi.create.content.contraptions.mounted.CartAssemblerBlock.MinecartAnchorBlock;
-import com.simibubi.create.content.contraptions.mounted.CartAssemblerBlockItem;
-import com.simibubi.create.content.contraptions.piston.MechanicalPistonBlock;
-import com.simibubi.create.content.contraptions.piston.MechanicalPistonHeadBlock;
-import com.simibubi.create.content.contraptions.piston.PistonExtensionPoleBlock;
-import com.simibubi.create.content.contraptions.pulley.PulleyBlock;
-import com.simibubi.create.content.decoration.MetalLadderBlock;
-import com.simibubi.create.content.decoration.MetalScaffoldingBlock;
-import com.simibubi.create.content.decoration.TrainTrapdoorBlock;
-import com.simibubi.create.content.decoration.TrapdoorCTBehaviour;
-import com.simibubi.create.content.decoration.bracket.BracketBlock;
-import com.simibubi.create.content.decoration.bracket.BracketBlockItem;
-import com.simibubi.create.content.decoration.bracket.BracketGenerator;
-import com.simibubi.create.content.decoration.copycat.CopycatBarsModel;
-import com.simibubi.create.content.decoration.copycat.CopycatPanelBlock;
-import com.simibubi.create.content.decoration.copycat.CopycatPanelModel;
-import com.simibubi.create.content.decoration.copycat.CopycatStepBlock;
-import com.simibubi.create.content.decoration.copycat.CopycatStepModel;
-import com.simibubi.create.content.decoration.copycat.SpecialCopycatPanelBlockState;
-import com.simibubi.create.content.decoration.encasing.CasingBlock;
-import com.simibubi.create.content.decoration.encasing.EncasedCTBehaviour;
-import com.simibubi.create.content.decoration.encasing.EncasingRegistry;
-import com.simibubi.create.content.decoration.girder.ConnectedGirderModel;
-import com.simibubi.create.content.decoration.girder.GirderBlock;
-import com.simibubi.create.content.decoration.girder.GirderBlockStateGenerator;
-import com.simibubi.create.content.decoration.girder.GirderEncasedShaftBlock;
-import com.simibubi.create.content.decoration.placard.PlacardBlock;
-import com.simibubi.create.content.decoration.slidingDoor.SlidingDoorBlock;
-import com.simibubi.create.content.decoration.steamWhistle.WhistleBlock;
-import com.simibubi.create.content.decoration.steamWhistle.WhistleExtenderBlock;
-import com.simibubi.create.content.decoration.steamWhistle.WhistleGenerator;
-import com.simibubi.create.content.equipment.armor.BacktankBlock;
-import com.simibubi.create.content.equipment.bell.HauntedBellBlock;
-import com.simibubi.create.content.equipment.bell.HauntedBellMovementBehaviour;
-import com.simibubi.create.content.equipment.bell.PeculiarBellBlock;
-import com.simibubi.create.content.equipment.clipboard.ClipboardBlock;
-import com.simibubi.create.content.equipment.clipboard.ClipboardBlockItem;
-import com.simibubi.create.content.equipment.clipboard.ClipboardOverrides;
-import com.simibubi.create.content.equipment.toolbox.ToolboxBlock;
-import com.simibubi.create.content.fluids.PipeAttachmentModel;
-import com.simibubi.create.content.fluids.drain.ItemDrainBlock;
-import com.simibubi.create.content.fluids.hosePulley.HosePulleyBlock;
-import com.simibubi.create.content.fluids.pipes.EncasedPipeBlock;
-import com.simibubi.create.content.fluids.pipes.FluidPipeBlock;
-import com.simibubi.create.content.fluids.pipes.GlassFluidPipeBlock;
-import com.simibubi.create.content.fluids.pipes.SmartFluidPipeBlock;
-import com.simibubi.create.content.fluids.pipes.SmartFluidPipeGenerator;
-import com.simibubi.create.content.fluids.pipes.valve.FluidValveBlock;
-import com.simibubi.create.content.fluids.pump.PumpBlock;
-import com.simibubi.create.content.fluids.spout.SpoutBlock;
-import com.simibubi.create.content.fluids.tank.FluidTankBlock;
-import com.simibubi.create.content.fluids.tank.FluidTankGenerator;
-import com.simibubi.create.content.fluids.tank.FluidTankItem;
-import com.simibubi.create.content.fluids.tank.FluidTankModel;
-import com.simibubi.create.content.kinetics.BlockStressDefaults;
-import com.simibubi.create.content.kinetics.belt.BeltBlock;
-import com.simibubi.create.content.kinetics.belt.BeltGenerator;
-import com.simibubi.create.content.kinetics.belt.BeltModel;
-import com.simibubi.create.content.kinetics.chainDrive.ChainDriveBlock;
-import com.simibubi.create.content.kinetics.chainDrive.ChainDriveGenerator;
-import com.simibubi.create.content.kinetics.chainDrive.ChainGearshiftBlock;
-import com.simibubi.create.content.kinetics.clock.CuckooClockBlock;
-import com.simibubi.create.content.kinetics.crafter.CrafterCTBehaviour;
-import com.simibubi.create.content.kinetics.crafter.MechanicalCrafterBlock;
-import com.simibubi.create.content.kinetics.crank.HandCrankBlock;
-import com.simibubi.create.content.kinetics.crank.ValveHandleBlock;
-import com.simibubi.create.content.kinetics.crusher.CrushingWheelBlock;
-import com.simibubi.create.content.kinetics.crusher.CrushingWheelControllerBlock;
-import com.simibubi.create.content.kinetics.deployer.DeployerBlock;
-import com.simibubi.create.content.kinetics.deployer.DeployerMovementBehaviour;
-import com.simibubi.create.content.kinetics.deployer.DeployerMovingInteraction;
-import com.simibubi.create.content.kinetics.drill.DrillBlock;
-import com.simibubi.create.content.kinetics.drill.DrillMovementBehaviour;
-import com.simibubi.create.content.kinetics.fan.EncasedFanBlock;
-import com.simibubi.create.content.kinetics.fan.NozzleBlock;
-import com.simibubi.create.content.kinetics.flywheel.FlywheelBlock;
-import com.simibubi.create.content.kinetics.gantry.GantryShaftBlock;
-import com.simibubi.create.content.kinetics.gauge.GaugeBlock;
-import com.simibubi.create.content.kinetics.gauge.GaugeGenerator;
-import com.simibubi.create.content.kinetics.gearbox.GearboxBlock;
-import com.simibubi.create.content.kinetics.mechanicalArm.ArmBlock;
-import com.simibubi.create.content.kinetics.mechanicalArm.ArmItem;
-import com.simibubi.create.content.kinetics.millstone.MillstoneBlock;
-import com.simibubi.create.content.kinetics.mixer.MechanicalMixerBlock;
-import com.simibubi.create.content.kinetics.motor.CreativeMotorBlock;
-import com.simibubi.create.content.kinetics.motor.CreativeMotorGenerator;
-import com.simibubi.create.content.kinetics.press.MechanicalPressBlock;
-import com.simibubi.create.content.kinetics.saw.SawBlock;
-import com.simibubi.create.content.kinetics.saw.SawGenerator;
-import com.simibubi.create.content.kinetics.saw.SawMovementBehaviour;
-import com.simibubi.create.content.kinetics.simpleRelays.BracketedKineticBlockModel;
-import com.simibubi.create.content.kinetics.simpleRelays.CogWheelBlock;
-import com.simibubi.create.content.kinetics.simpleRelays.CogwheelBlockItem;
-import com.simibubi.create.content.kinetics.simpleRelays.ShaftBlock;
-import com.simibubi.create.content.kinetics.simpleRelays.encased.EncasedCogCTBehaviour;
-import com.simibubi.create.content.kinetics.simpleRelays.encased.EncasedCogwheelBlock;
-import com.simibubi.create.content.kinetics.simpleRelays.encased.EncasedShaftBlock;
-import com.simibubi.create.content.kinetics.speedController.SpeedControllerBlock;
-import com.simibubi.create.content.kinetics.steamEngine.PoweredShaftBlock;
-import com.simibubi.create.content.kinetics.steamEngine.SteamEngineBlock;
-import com.simibubi.create.content.kinetics.transmission.ClutchBlock;
-import com.simibubi.create.content.kinetics.transmission.GearshiftBlock;
-import com.simibubi.create.content.kinetics.transmission.sequencer.SequencedGearshiftBlock;
-import com.simibubi.create.content.kinetics.transmission.sequencer.SequencedGearshiftGenerator;
-import com.simibubi.create.content.kinetics.turntable.TurntableBlock;
-import com.simibubi.create.content.kinetics.waterwheel.LargeWaterWheelBlock;
-import com.simibubi.create.content.kinetics.waterwheel.LargeWaterWheelBlockItem;
-import com.simibubi.create.content.kinetics.waterwheel.WaterWheelBlock;
-import com.simibubi.create.content.kinetics.waterwheel.WaterWheelStructuralBlock;
-import com.simibubi.create.content.logistics.chute.ChuteBlock;
-import com.simibubi.create.content.logistics.chute.ChuteGenerator;
-import com.simibubi.create.content.logistics.chute.ChuteItem;
-import com.simibubi.create.content.logistics.chute.SmartChuteBlock;
-import com.simibubi.create.content.logistics.crate.CreativeCrateBlock;
-import com.simibubi.create.content.logistics.depot.DepotBlock;
-import com.simibubi.create.content.logistics.depot.EjectorBlock;
-import com.simibubi.create.content.logistics.depot.EjectorItem;
-import com.simibubi.create.content.logistics.funnel.AndesiteFunnelBlock;
-import com.simibubi.create.content.logistics.funnel.BeltFunnelBlock;
-import com.simibubi.create.content.logistics.funnel.BeltFunnelGenerator;
-import com.simibubi.create.content.logistics.funnel.BrassFunnelBlock;
-import com.simibubi.create.content.logistics.funnel.FunnelGenerator;
-import com.simibubi.create.content.logistics.funnel.FunnelItem;
-import com.simibubi.create.content.logistics.funnel.FunnelMovementBehaviour;
-import com.simibubi.create.content.logistics.tunnel.BeltTunnelBlock;
-import com.simibubi.create.content.logistics.tunnel.BrassTunnelBlock;
-import com.simibubi.create.content.logistics.tunnel.BrassTunnelCTBehaviour;
-import com.simibubi.create.content.logistics.vault.ItemVaultBlock;
-import com.simibubi.create.content.logistics.vault.ItemVaultCTBehaviour;
-import com.simibubi.create.content.logistics.vault.ItemVaultItem;
-import com.simibubi.create.content.materials.ExperienceBlock;
-import com.simibubi.create.content.processing.AssemblyOperatorBlockItem;
-import com.simibubi.create.content.processing.basin.BasinBlock;
-import com.simibubi.create.content.processing.basin.BasinGenerator;
-import com.simibubi.create.content.processing.basin.BasinMovementBehaviour;
-import com.simibubi.create.content.processing.burner.BlazeBurnerBlock;
-import com.simibubi.create.content.processing.burner.BlazeBurnerBlockItem;
-import com.simibubi.create.content.processing.burner.BlazeBurnerInteractionBehaviour;
-import com.simibubi.create.content.processing.burner.BlazeBurnerMovementBehaviour;
-import com.simibubi.create.content.processing.burner.LitBlazeBurnerBlock;
-import com.simibubi.create.content.redstone.RoseQuartzLampBlock;
-import com.simibubi.create.content.redstone.analogLever.AnalogLeverBlock;
-import com.simibubi.create.content.redstone.contact.ContactMovementBehaviour;
-import com.simibubi.create.content.redstone.contact.RedstoneContactBlock;
-import com.simibubi.create.content.redstone.contact.RedstoneContactItem;
-import com.simibubi.create.content.redstone.diodes.AbstractDiodeGenerator;
-import com.simibubi.create.content.redstone.diodes.BrassDiodeBlock;
-import com.simibubi.create.content.redstone.diodes.BrassDiodeGenerator;
-import com.simibubi.create.content.redstone.diodes.PoweredLatchBlock;
-import com.simibubi.create.content.redstone.diodes.PoweredLatchGenerator;
-import com.simibubi.create.content.redstone.diodes.ToggleLatchBlock;
-import com.simibubi.create.content.redstone.diodes.ToggleLatchGenerator;
-import com.simibubi.create.content.redstone.displayLink.DisplayLinkBlock;
-import com.simibubi.create.content.redstone.displayLink.DisplayLinkBlockItem;
-import com.simibubi.create.content.redstone.displayLink.source.AccumulatedItemCountDisplaySource;
-import com.simibubi.create.content.redstone.displayLink.source.BoilerDisplaySource;
-import com.simibubi.create.content.redstone.displayLink.source.CurrentFloorDisplaySource;
-import com.simibubi.create.content.redstone.displayLink.source.EntityNameDisplaySource;
-import com.simibubi.create.content.redstone.displayLink.source.FillLevelDisplaySource;
-import com.simibubi.create.content.redstone.displayLink.source.FluidAmountDisplaySource;
-import com.simibubi.create.content.redstone.displayLink.source.FluidListDisplaySource;
-import com.simibubi.create.content.redstone.displayLink.source.ItemCountDisplaySource;
-import com.simibubi.create.content.redstone.displayLink.source.ItemListDisplaySource;
-import com.simibubi.create.content.redstone.displayLink.source.ItemNameDisplaySource;
-import com.simibubi.create.content.redstone.displayLink.source.ItemThroughputDisplaySource;
-import com.simibubi.create.content.redstone.displayLink.source.KineticSpeedDisplaySource;
-import com.simibubi.create.content.redstone.displayLink.source.KineticStressDisplaySource;
-import com.simibubi.create.content.redstone.displayLink.source.ObservedTrainNameSource;
-import com.simibubi.create.content.redstone.displayLink.source.StationSummaryDisplaySource;
-import com.simibubi.create.content.redstone.displayLink.source.StopWatchDisplaySource;
-import com.simibubi.create.content.redstone.displayLink.source.TimeOfDayDisplaySource;
-import com.simibubi.create.content.redstone.displayLink.source.TrainStatusDisplaySource;
-import com.simibubi.create.content.redstone.displayLink.target.DisplayBoardTarget;
-import com.simibubi.create.content.redstone.link.RedstoneLinkBlock;
-import com.simibubi.create.content.redstone.link.RedstoneLinkGenerator;
-import com.simibubi.create.content.redstone.link.controller.LecternControllerBlock;
-import com.simibubi.create.content.redstone.nixieTube.NixieTubeBlock;
-import com.simibubi.create.content.redstone.nixieTube.NixieTubeGenerator;
-import com.simibubi.create.content.redstone.rail.ControllerRailBlock;
-import com.simibubi.create.content.redstone.rail.ControllerRailGenerator;
-import com.simibubi.create.content.redstone.smartObserver.SmartObserverBlock;
-import com.simibubi.create.content.redstone.smartObserver.SmartObserverGenerator;
-import com.simibubi.create.content.redstone.thresholdSwitch.ThresholdSwitchBlock;
-import com.simibubi.create.content.redstone.thresholdSwitch.ThresholdSwitchGenerator;
-import com.simibubi.create.content.schematics.cannon.SchematicannonBlock;
-import com.simibubi.create.content.schematics.table.SchematicTableBlock;
-import com.simibubi.create.content.trains.bogey.BogeySizes;
-import com.simibubi.create.content.trains.bogey.StandardBogeyBlock;
-import com.simibubi.create.content.trains.display.FlapDisplayBlock;
-import com.simibubi.create.content.trains.graph.EdgePointType;
-import com.simibubi.create.content.trains.observer.TrackObserverBlock;
-import com.simibubi.create.content.trains.signal.SignalBlock;
-import com.simibubi.create.content.trains.station.StationBlock;
-import com.simibubi.create.content.trains.track.FakeTrackBlock;
-import com.simibubi.create.content.trains.track.TrackBlock;
-import com.simibubi.create.content.trains.track.TrackBlockItem;
-import com.simibubi.create.content.trains.track.TrackBlockStateGenerator;
-import com.simibubi.create.content.trains.track.TrackMaterial;
-import com.simibubi.create.content.trains.track.TrackModel;
-import com.simibubi.create.content.trains.track.TrackTargetingBlockItem;
-import com.simibubi.create.foundation.block.CopperBlockSet;
-import com.simibubi.create.foundation.block.DyedBlockList;
-import com.simibubi.create.foundation.block.ItemUseOverrides;
-import com.simibubi.create.foundation.block.WrenchableDirectionalBlock;
-import com.simibubi.create.foundation.data.AssetLookup;
-import com.simibubi.create.foundation.data.BlockStateGen;
-import com.simibubi.create.foundation.data.BuilderTransformers;
-import com.simibubi.create.foundation.data.CreateRegistrate;
-import com.simibubi.create.foundation.data.MetalBarsGen;
-import com.simibubi.create.foundation.data.ModelGen;
-import com.simibubi.create.foundation.data.SharedProperties;
-import com.simibubi.create.foundation.item.ItemDescription;
-import com.simibubi.create.foundation.item.UncontainableBlockItem;
-import com.simibubi.create.foundation.utility.ColorHandlers;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.DyeHelper;
+import com.simibubi.create_re.AllTags.AllBlockTags;
+import com.simibubi.create_re.AllTags.AllItemTags;
+import com.simibubi.create_re.content.contraptions.actors.contraptionControls.ContraptionControlsBlock;
+import com.simibubi.create_re.content.contraptions.actors.contraptionControls.ContraptionControlsMovement;
+import com.simibubi.create_re.content.contraptions.actors.contraptionControls.ContraptionControlsMovingInteraction;
+import com.simibubi.create_re.content.contraptions.actors.harvester.HarvesterBlock;
+import com.simibubi.create_re.content.contraptions.actors.harvester.HarvesterMovementBehaviour;
+import com.simibubi.create_re.content.contraptions.actors.plough.PloughBlock;
+import com.simibubi.create_re.content.contraptions.actors.plough.PloughMovementBehaviour;
+import com.simibubi.create_re.content.contraptions.actors.psi.PortableStorageInterfaceBlock;
+import com.simibubi.create_re.content.contraptions.actors.psi.PortableStorageInterfaceMovement;
+import com.simibubi.create_re.content.contraptions.actors.roller.RollerBlock;
+import com.simibubi.create_re.content.contraptions.actors.roller.RollerBlockItem;
+import com.simibubi.create_re.content.contraptions.actors.roller.RollerMovementBehaviour;
+import com.simibubi.create_re.content.contraptions.actors.seat.SeatBlock;
+import com.simibubi.create_re.content.contraptions.actors.seat.SeatInteractionBehaviour;
+import com.simibubi.create_re.content.contraptions.actors.seat.SeatMovementBehaviour;
+import com.simibubi.create_re.content.contraptions.actors.trainControls.ControlsBlock;
+import com.simibubi.create_re.content.contraptions.actors.trainControls.ControlsInteractionBehaviour;
+import com.simibubi.create_re.content.contraptions.actors.trainControls.ControlsMovementBehaviour;
+import com.simibubi.create_re.content.contraptions.bearing.BlankSailBlockItem;
+import com.simibubi.create_re.content.contraptions.bearing.ClockworkBearingBlock;
+import com.simibubi.create_re.content.contraptions.bearing.MechanicalBearingBlock;
+import com.simibubi.create_re.content.contraptions.bearing.SailBlock;
+import com.simibubi.create_re.content.contraptions.bearing.StabilizedBearingMovementBehaviour;
+import com.simibubi.create_re.content.contraptions.bearing.WindmillBearingBlock;
+import com.simibubi.create_re.content.contraptions.behaviour.BellMovementBehaviour;
+import com.simibubi.create_re.content.contraptions.chassis.LinearChassisBlock;
+import com.simibubi.create_re.content.contraptions.chassis.LinearChassisBlock.ChassisCTBehaviour;
+import com.simibubi.create_re.content.contraptions.chassis.RadialChassisBlock;
+import com.simibubi.create_re.content.contraptions.chassis.StickerBlock;
+import com.simibubi.create_re.content.contraptions.elevator.ElevatorContactBlock;
+import com.simibubi.create_re.content.contraptions.elevator.ElevatorPulleyBlock;
+import com.simibubi.create_re.content.contraptions.gantry.GantryCarriageBlock;
+import com.simibubi.create_re.content.contraptions.mounted.CartAssemblerBlock;
+import com.simibubi.create_re.content.contraptions.mounted.CartAssemblerBlock.MinecartAnchorBlock;
+import com.simibubi.create_re.content.contraptions.mounted.CartAssemblerBlockItem;
+import com.simibubi.create_re.content.contraptions.piston.MechanicalPistonBlock;
+import com.simibubi.create_re.content.contraptions.piston.MechanicalPistonHeadBlock;
+import com.simibubi.create_re.content.contraptions.piston.PistonExtensionPoleBlock;
+import com.simibubi.create_re.content.contraptions.pulley.PulleyBlock;
+import com.simibubi.create_re.content.decoration.MetalLadderBlock;
+import com.simibubi.create_re.content.decoration.MetalScaffoldingBlock;
+import com.simibubi.create_re.content.decoration.TrainTrapdoorBlock;
+import com.simibubi.create_re.content.decoration.TrapdoorCTBehaviour;
+import com.simibubi.create_re.content.decoration.bracket.BracketBlock;
+import com.simibubi.create_re.content.decoration.bracket.BracketBlockItem;
+import com.simibubi.create_re.content.decoration.bracket.BracketGenerator;
+import com.simibubi.create_re.content.decoration.copycat.CopycatBarsModel;
+import com.simibubi.create_re.content.decoration.copycat.CopycatPanelBlock;
+import com.simibubi.create_re.content.decoration.copycat.CopycatPanelModel;
+import com.simibubi.create_re.content.decoration.copycat.CopycatStepBlock;
+import com.simibubi.create_re.content.decoration.copycat.CopycatStepModel;
+import com.simibubi.create_re.content.decoration.copycat.SpecialCopycatPanelBlockState;
+import com.simibubi.create_re.content.decoration.encasing.CasingBlock;
+import com.simibubi.create_re.content.decoration.encasing.EncasedCTBehaviour;
+import com.simibubi.create_re.content.decoration.encasing.EncasingRegistry;
+import com.simibubi.create_re.content.decoration.girder.ConnectedGirderModel;
+import com.simibubi.create_re.content.decoration.girder.GirderBlock;
+import com.simibubi.create_re.content.decoration.girder.GirderBlockStateGenerator;
+import com.simibubi.create_re.content.decoration.girder.GirderEncasedShaftBlock;
+import com.simibubi.create_re.content.decoration.placard.PlacardBlock;
+import com.simibubi.create_re.content.decoration.slidingDoor.SlidingDoorBlock;
+import com.simibubi.create_re.content.decoration.steamWhistle.WhistleBlock;
+import com.simibubi.create_re.content.decoration.steamWhistle.WhistleExtenderBlock;
+import com.simibubi.create_re.content.decoration.steamWhistle.WhistleGenerator;
+import com.simibubi.create_re.content.equipment.armor.BacktankBlock;
+import com.simibubi.create_re.content.equipment.bell.HauntedBellBlock;
+import com.simibubi.create_re.content.equipment.bell.HauntedBellMovementBehaviour;
+import com.simibubi.create_re.content.equipment.bell.PeculiarBellBlock;
+import com.simibubi.create_re.content.equipment.clipboard.ClipboardBlock;
+import com.simibubi.create_re.content.equipment.clipboard.ClipboardBlockItem;
+import com.simibubi.create_re.content.equipment.clipboard.ClipboardOverrides;
+import com.simibubi.create_re.content.equipment.toolbox.ToolboxBlock;
+import com.simibubi.create_re.content.fluids.PipeAttachmentModel;
+import com.simibubi.create_re.content.fluids.drain.ItemDrainBlock;
+import com.simibubi.create_re.content.fluids.hosePulley.HosePulleyBlock;
+import com.simibubi.create_re.content.fluids.pipes.EncasedPipeBlock;
+import com.simibubi.create_re.content.fluids.pipes.FluidPipeBlock;
+import com.simibubi.create_re.content.fluids.pipes.GlassFluidPipeBlock;
+import com.simibubi.create_re.content.fluids.pipes.SmartFluidPipeBlock;
+import com.simibubi.create_re.content.fluids.pipes.SmartFluidPipeGenerator;
+import com.simibubi.create_re.content.fluids.pipes.valve.FluidValveBlock;
+import com.simibubi.create_re.content.fluids.pump.PumpBlock;
+import com.simibubi.create_re.content.fluids.spout.SpoutBlock;
+import com.simibubi.create_re.content.fluids.tank.FluidTankBlock;
+import com.simibubi.create_re.content.fluids.tank.FluidTankGenerator;
+import com.simibubi.create_re.content.fluids.tank.FluidTankItem;
+import com.simibubi.create_re.content.fluids.tank.FluidTankModel;
+import com.simibubi.create_re.content.kinetics.BlockStressDefaults;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlock;
+import com.simibubi.create_re.content.kinetics.belt.BeltGenerator;
+import com.simibubi.create_re.content.kinetics.belt.BeltModel;
+import com.simibubi.create_re.content.kinetics.chainDrive.ChainDriveBlock;
+import com.simibubi.create_re.content.kinetics.chainDrive.ChainDriveGenerator;
+import com.simibubi.create_re.content.kinetics.chainDrive.ChainGearshiftBlock;
+import com.simibubi.create_re.content.kinetics.clock.CuckooClockBlock;
+import com.simibubi.create_re.content.kinetics.crafter.CrafterCTBehaviour;
+import com.simibubi.create_re.content.kinetics.crafter.MechanicalCrafterBlock;
+import com.simibubi.create_re.content.kinetics.crank.HandCrankBlock;
+import com.simibubi.create_re.content.kinetics.crank.ValveHandleBlock;
+import com.simibubi.create_re.content.kinetics.crusher.CrushingWheelBlock;
+import com.simibubi.create_re.content.kinetics.crusher.CrushingWheelControllerBlock;
+import com.simibubi.create_re.content.kinetics.deployer.DeployerBlock;
+import com.simibubi.create_re.content.kinetics.deployer.DeployerMovementBehaviour;
+import com.simibubi.create_re.content.kinetics.deployer.DeployerMovingInteraction;
+import com.simibubi.create_re.content.kinetics.drill.DrillBlock;
+import com.simibubi.create_re.content.kinetics.drill.DrillMovementBehaviour;
+import com.simibubi.create_re.content.kinetics.fan.EncasedFanBlock;
+import com.simibubi.create_re.content.kinetics.fan.NozzleBlock;
+import com.simibubi.create_re.content.kinetics.flywheel.FlywheelBlock;
+import com.simibubi.create_re.content.kinetics.gantry.GantryShaftBlock;
+import com.simibubi.create_re.content.kinetics.gauge.GaugeBlock;
+import com.simibubi.create_re.content.kinetics.gauge.GaugeGenerator;
+import com.simibubi.create_re.content.kinetics.gearbox.GearboxBlock;
+import com.simibubi.create_re.content.kinetics.mechanicalArm.ArmBlock;
+import com.simibubi.create_re.content.kinetics.mechanicalArm.ArmItem;
+import com.simibubi.create_re.content.kinetics.millstone.MillstoneBlock;
+import com.simibubi.create_re.content.kinetics.mixer.MechanicalMixerBlock;
+import com.simibubi.create_re.content.kinetics.motor.CreativeMotorBlock;
+import com.simibubi.create_re.content.kinetics.motor.CreativeMotorGenerator;
+import com.simibubi.create_re.content.kinetics.press.MechanicalPressBlock;
+import com.simibubi.create_re.content.kinetics.saw.SawBlock;
+import com.simibubi.create_re.content.kinetics.saw.SawGenerator;
+import com.simibubi.create_re.content.kinetics.saw.SawMovementBehaviour;
+import com.simibubi.create_re.content.kinetics.simpleRelays.BracketedKineticBlockModel;
+import com.simibubi.create_re.content.kinetics.simpleRelays.CogWheelBlock;
+import com.simibubi.create_re.content.kinetics.simpleRelays.CogwheelBlockItem;
+import com.simibubi.create_re.content.kinetics.simpleRelays.ShaftBlock;
+import com.simibubi.create_re.content.kinetics.simpleRelays.encased.EncasedCogCTBehaviour;
+import com.simibubi.create_re.content.kinetics.simpleRelays.encased.EncasedCogwheelBlock;
+import com.simibubi.create_re.content.kinetics.simpleRelays.encased.EncasedShaftBlock;
+import com.simibubi.create_re.content.kinetics.speedController.SpeedControllerBlock;
+import com.simibubi.create_re.content.kinetics.steamEngine.PoweredShaftBlock;
+import com.simibubi.create_re.content.kinetics.steamEngine.SteamEngineBlock;
+import com.simibubi.create_re.content.kinetics.transmission.ClutchBlock;
+import com.simibubi.create_re.content.kinetics.transmission.GearshiftBlock;
+import com.simibubi.create_re.content.kinetics.transmission.sequencer.SequencedGearshiftBlock;
+import com.simibubi.create_re.content.kinetics.transmission.sequencer.SequencedGearshiftGenerator;
+import com.simibubi.create_re.content.kinetics.turntable.TurntableBlock;
+import com.simibubi.create_re.content.kinetics.waterwheel.LargeWaterWheelBlock;
+import com.simibubi.create_re.content.kinetics.waterwheel.LargeWaterWheelBlockItem;
+import com.simibubi.create_re.content.kinetics.waterwheel.WaterWheelBlock;
+import com.simibubi.create_re.content.kinetics.waterwheel.WaterWheelStructuralBlock;
+import com.simibubi.create_re.content.logistics.chute.ChuteBlock;
+import com.simibubi.create_re.content.logistics.chute.ChuteGenerator;
+import com.simibubi.create_re.content.logistics.chute.ChuteItem;
+import com.simibubi.create_re.content.logistics.chute.SmartChuteBlock;
+import com.simibubi.create_re.content.logistics.crate.CreativeCrateBlock;
+import com.simibubi.create_re.content.logistics.depot.DepotBlock;
+import com.simibubi.create_re.content.logistics.depot.EjectorBlock;
+import com.simibubi.create_re.content.logistics.depot.EjectorItem;
+import com.simibubi.create_re.content.logistics.funnel.AndesiteFunnelBlock;
+import com.simibubi.create_re.content.logistics.funnel.BeltFunnelBlock;
+import com.simibubi.create_re.content.logistics.funnel.BeltFunnelGenerator;
+import com.simibubi.create_re.content.logistics.funnel.BrassFunnelBlock;
+import com.simibubi.create_re.content.logistics.funnel.FunnelGenerator;
+import com.simibubi.create_re.content.logistics.funnel.FunnelItem;
+import com.simibubi.create_re.content.logistics.funnel.FunnelMovementBehaviour;
+import com.simibubi.create_re.content.logistics.tunnel.BeltTunnelBlock;
+import com.simibubi.create_re.content.logistics.tunnel.BrassTunnelBlock;
+import com.simibubi.create_re.content.logistics.tunnel.BrassTunnelCTBehaviour;
+import com.simibubi.create_re.content.logistics.vault.ItemVaultBlock;
+import com.simibubi.create_re.content.logistics.vault.ItemVaultCTBehaviour;
+import com.simibubi.create_re.content.logistics.vault.ItemVaultItem;
+import com.simibubi.create_re.content.materials.ExperienceBlock;
+import com.simibubi.create_re.content.processing.AssemblyOperatorBlockItem;
+import com.simibubi.create_re.content.processing.basin.BasinBlock;
+import com.simibubi.create_re.content.processing.basin.BasinGenerator;
+import com.simibubi.create_re.content.processing.basin.BasinMovementBehaviour;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlockItem;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerInteractionBehaviour;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerMovementBehaviour;
+import com.simibubi.create_re.content.processing.burner.LitBlazeBurnerBlock;
+import com.simibubi.create_re.content.redstone.RoseQuartzLampBlock;
+import com.simibubi.create_re.content.redstone.analogLever.AnalogLeverBlock;
+import com.simibubi.create_re.content.redstone.contact.ContactMovementBehaviour;
+import com.simibubi.create_re.content.redstone.contact.RedstoneContactBlock;
+import com.simibubi.create_re.content.redstone.contact.RedstoneContactItem;
+import com.simibubi.create_re.content.redstone.diodes.AbstractDiodeGenerator;
+import com.simibubi.create_re.content.redstone.diodes.BrassDiodeBlock;
+import com.simibubi.create_re.content.redstone.diodes.BrassDiodeGenerator;
+import com.simibubi.create_re.content.redstone.diodes.PoweredLatchBlock;
+import com.simibubi.create_re.content.redstone.diodes.PoweredLatchGenerator;
+import com.simibubi.create_re.content.redstone.diodes.ToggleLatchBlock;
+import com.simibubi.create_re.content.redstone.diodes.ToggleLatchGenerator;
+import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkBlock;
+import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkBlockItem;
+import com.simibubi.create_re.content.redstone.displayLink.source.AccumulatedItemCountDisplaySource;
+import com.simibubi.create_re.content.redstone.displayLink.source.BoilerDisplaySource;
+import com.simibubi.create_re.content.redstone.displayLink.source.CurrentFloorDisplaySource;
+import com.simibubi.create_re.content.redstone.displayLink.source.EntityNameDisplaySource;
+import com.simibubi.create_re.content.redstone.displayLink.source.FillLevelDisplaySource;
+import com.simibubi.create_re.content.redstone.displayLink.source.FluidAmountDisplaySource;
+import com.simibubi.create_re.content.redstone.displayLink.source.FluidListDisplaySource;
+import com.simibubi.create_re.content.redstone.displayLink.source.ItemCountDisplaySource;
+import com.simibubi.create_re.content.redstone.displayLink.source.ItemListDisplaySource;
+import com.simibubi.create_re.content.redstone.displayLink.source.ItemNameDisplaySource;
+import com.simibubi.create_re.content.redstone.displayLink.source.ItemThroughputDisplaySource;
+import com.simibubi.create_re.content.redstone.displayLink.source.KineticSpeedDisplaySource;
+import com.simibubi.create_re.content.redstone.displayLink.source.KineticStressDisplaySource;
+import com.simibubi.create_re.content.redstone.displayLink.source.ObservedTrainNameSource;
+import com.simibubi.create_re.content.redstone.displayLink.source.StationSummaryDisplaySource;
+import com.simibubi.create_re.content.redstone.displayLink.source.StopWatchDisplaySource;
+import com.simibubi.create_re.content.redstone.displayLink.source.TimeOfDayDisplaySource;
+import com.simibubi.create_re.content.redstone.displayLink.source.TrainStatusDisplaySource;
+import com.simibubi.create_re.content.redstone.displayLink.target.DisplayBoardTarget;
+import com.simibubi.create_re.content.redstone.link.RedstoneLinkBlock;
+import com.simibubi.create_re.content.redstone.link.RedstoneLinkGenerator;
+import com.simibubi.create_re.content.redstone.link.controller.LecternControllerBlock;
+import com.simibubi.create_re.content.redstone.nixieTube.NixieTubeBlock;
+import com.simibubi.create_re.content.redstone.nixieTube.NixieTubeGenerator;
+import com.simibubi.create_re.content.redstone.rail.ControllerRailBlock;
+import com.simibubi.create_re.content.redstone.rail.ControllerRailGenerator;
+import com.simibubi.create_re.content.redstone.smartObserver.SmartObserverBlock;
+import com.simibubi.create_re.content.redstone.smartObserver.SmartObserverGenerator;
+import com.simibubi.create_re.content.redstone.thresholdSwitch.ThresholdSwitchBlock;
+import com.simibubi.create_re.content.redstone.thresholdSwitch.ThresholdSwitchGenerator;
+import com.simibubi.create_re.content.schematics.cannon.SchematicannonBlock;
+import com.simibubi.create_re.content.schematics.table.SchematicTableBlock;
+import com.simibubi.create_re.content.trains.bogey.BogeySizes;
+import com.simibubi.create_re.content.trains.bogey.StandardBogeyBlock;
+import com.simibubi.create_re.content.trains.display.FlapDisplayBlock;
+import com.simibubi.create_re.content.trains.graph.EdgePointType;
+import com.simibubi.create_re.content.trains.observer.TrackObserverBlock;
+import com.simibubi.create_re.content.trains.signal.SignalBlock;
+import com.simibubi.create_re.content.trains.station.StationBlock;
+import com.simibubi.create_re.content.trains.track.FakeTrackBlock;
+import com.simibubi.create_re.content.trains.track.TrackBlock;
+import com.simibubi.create_re.content.trains.track.TrackBlockItem;
+import com.simibubi.create_re.content.trains.track.TrackBlockStateGenerator;
+import com.simibubi.create_re.content.trains.track.TrackMaterial;
+import com.simibubi.create_re.content.trains.track.TrackModel;
+import com.simibubi.create_re.content.trains.track.TrackTargetingBlockItem;
+import com.simibubi.create_re.foundation.block.CopperBlockSet;
+import com.simibubi.create_re.foundation.block.DyedBlockList;
+import com.simibubi.create_re.foundation.block.ItemUseOverrides;
+import com.simibubi.create_re.foundation.block.WrenchableDirectionalBlock;
+import com.simibubi.create_re.foundation.data.AssetLookup;
+import com.simibubi.create_re.foundation.data.BlockStateGen;
+import com.simibubi.create_re.foundation.data.BuilderTransformers;
+import com.simibubi.create_re.foundation.data.CreateRegistrate;
+import com.simibubi.create_re.foundation.data.MetalBarsGen;
+import com.simibubi.create_re.foundation.data.ModelGen;
+import com.simibubi.create_re.foundation.data.SharedProperties;
+import com.simibubi.create_re.foundation.item.ItemDescription;
+import com.simibubi.create_re.foundation.item.UncontainableBlockItem;
+import com.simibubi.create_re.foundation.utility.ColorHandlers;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.DyeHelper;
 import com.tterrag.registrate.providers.RegistrateRecipeProvider;
 import com.tterrag.registrate.providers.loot.RegistrateBlockLootTables;
 import com.tterrag.registrate.util.DataIngredient;
@@ -405,7 +405,7 @@ public class AllBlocks {
 		.transform(BuilderTransformers.encasedCogwheel("andesite", () -> AllSpriteShifts.ANDESITE_CASING))
 		.transform(EncasingRegistry.addVariantTo(AllBlocks.COGWHEEL))
 		.onRegister(CreateRegistrate.connectedTextures(() -> new EncasedCogCTBehaviour(AllSpriteShifts.ANDESITE_CASING,
-			Couple.create(AllSpriteShifts.ANDESITE_ENCASED_COGWHEEL_SIDE,
+			Couple.create_re(AllSpriteShifts.ANDESITE_ENCASED_COGWHEEL_SIDE,
 				AllSpriteShifts.ANDESITE_ENCASED_COGWHEEL_OTHERSIDE))))
 		.transform(axeOrPickaxe())
 		.register();
@@ -416,7 +416,7 @@ public class AllBlocks {
 			.transform(BuilderTransformers.encasedCogwheel("brass", () -> AllSpriteShifts.BRASS_CASING))
 			.transform(EncasingRegistry.addVariantTo(AllBlocks.COGWHEEL))
 			.onRegister(CreateRegistrate.connectedTextures(() -> new EncasedCogCTBehaviour(AllSpriteShifts.BRASS_CASING,
-				Couple.create(AllSpriteShifts.BRASS_ENCASED_COGWHEEL_SIDE,
+				Couple.create_re(AllSpriteShifts.BRASS_ENCASED_COGWHEEL_SIDE,
 					AllSpriteShifts.BRASS_ENCASED_COGWHEEL_OTHERSIDE))))
 			.transform(axeOrPickaxe())
 			.register();
@@ -524,7 +524,7 @@ public class AllBlocks {
 			.transform(pickaxeOnly())
 			.blockstate(new CreativeMotorGenerator()::generate)
 			.transform(BlockStressDefaults.setCapacity(16384.0))
-			.transform(BlockStressDefaults.setGeneratorSpeed(() -> Couple.create(0, 256)))
+			.transform(BlockStressDefaults.setGeneratorSpeed(() -> Couple.create_re(0, 256)))
 			.item()
 			.properties(p -> p.rarity(Rarity.EPIC))
 			.transform(customItemModel())
@@ -1522,7 +1522,7 @@ public class AllBlocks {
 		.transform(customItemModel())
 		.register();
 
-	public static final BlockEntry<TrackBlock> TRACK = REGISTRATE.block("track", TrackMaterial.ANDESITE::createBlock)
+	public static final BlockEntry<TrackBlock> TRACK = REGISTRATE.block("track", TrackMaterial.ANDESITE::create_reBlock)
 		.initialProperties(SharedProperties::stone)
 		.properties(p -> p.mapColor(MapColor.METAL)
 			.strength(0.8F)
@@ -1942,7 +1942,7 @@ public class AllBlocks {
 					.withExistingParent(colourName + "_toolbox", p.modLoc("block/toolbox/block"))
 					.texture("0", p.modLoc("block/toolbox/" + colourName)));
 			})
-			.onRegisterAfter(Registries.ITEM, v -> ItemDescription.useKey(v, "block.create.toolbox"))
+			.onRegisterAfter(Registries.ITEM, v -> ItemDescription.useKey(v, "block.create_re.toolbox"))
 			.tag(AllBlockTags.TOOLBOXES.tag)
 			.item(UncontainableBlockItem::new)
 			.model((c, p) -> p.withExistingParent(colourName + "_toolbox", p.modLoc("block/toolbox/item"))
@@ -1990,11 +1990,11 @@ public class AllBlocks {
 				() -> DataIngredient.tag(AllTags.forgeItemTag("ingots/copper")), MapColor.COLOR_ORANGE))
 			.register();
 
-	public static final BlockEntry<IronBarsBlock> ANDESITE_BARS = MetalBarsGen.createBars("andesite", true,
+	public static final BlockEntry<IronBarsBlock> ANDESITE_BARS = MetalBarsGen.create_reBars("andesite", true,
 		() -> DataIngredient.items(AllItems.ANDESITE_ALLOY.get()), MapColor.STONE);
-	public static final BlockEntry<IronBarsBlock> BRASS_BARS = MetalBarsGen.createBars("brass", true,
+	public static final BlockEntry<IronBarsBlock> BRASS_BARS = MetalBarsGen.create_reBars("brass", true,
 		() -> DataIngredient.tag(AllTags.forgeItemTag("ingots/brass")), MapColor.TERRACOTTA_YELLOW);
-	public static final BlockEntry<IronBarsBlock> COPPER_BARS = MetalBarsGen.createBars("copper", true,
+	public static final BlockEntry<IronBarsBlock> COPPER_BARS = MetalBarsGen.create_reBars("copper", true,
 		() -> DataIngredient.tag(AllTags.forgeItemTag("ingots/copper")), MapColor.COLOR_ORANGE);
 
 	public static final BlockEntry<MetalScaffoldingBlock> ANDESITE_SCAFFOLD = REGISTRATE
@@ -2034,7 +2034,7 @@ public class AllBlocks {
 			.properties(p -> p.mapColor(MapColor.COLOR_GRAY).sound(SoundType.NETHERITE_BLOCK))
 			.transform(pickaxeOnly())
 			.blockstate(GirderBlockStateGenerator::blockStateWithShaft)
-			.loot((p, b) -> p.add(b, p.createSingleItemTable(METAL_GIRDER.get())
+			.loot((p, b) -> p.add(b, p.create_reSingleItemTable(METAL_GIRDER.get())
 				.withPool(p.applyExplosionCondition(SHAFT.get(), LootPool.lootPool()
 					.setRolls(ConstantValue.exactly(1.0F))
 					.add(LootItem.lootTableItem(SHAFT.get()))))))
@@ -2106,7 +2106,7 @@ public class AllBlocks {
 					.unlockedBy("has_seat", RegistrateRecipeProvider.has(AllItemTags.SEATS.tag))
 					.save(p, Create.asResource("crafting/kinetics/" + c.getName() + "_from_other_seat"));
 			})
-			.onRegisterAfter(Registries.ITEM, v -> ItemDescription.useKey(v, "block.create.seat"))
+			.onRegisterAfter(Registries.ITEM, v -> ItemDescription.useKey(v, "block.create_re.seat"))
 			.tag(AllBlockTags.SEATS.tag)
 			.item()
 			.tag(AllItemTags.SEATS.tag)
@@ -2180,7 +2180,7 @@ public class AllBlocks {
 			.sound(SoundType.STONE))
 		.transform(pickaxeOnly())
 		.loot((lt, b) -> lt.add(b,
-			RegistrateBlockLootTables.createSilkTouchDispatchTable(b,
+			RegistrateBlockLootTables.create_reSilkTouchDispatchTable(b,
 				lt.applyExplosionDecay(b, LootItem.lootTableItem(AllItems.RAW_ZINC.get())
 					.apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))))))
 		.tag(BlockTags.NEEDS_IRON_TOOL)
@@ -2197,7 +2197,7 @@ public class AllBlocks {
 			.sound(SoundType.DEEPSLATE))
 		.transform(pickaxeOnly())
 		.loot((lt, b) -> lt.add(b,
-			RegistrateBlockLootTables.createSilkTouchDispatchTable(b,
+			RegistrateBlockLootTables.create_reSilkTouchDispatchTable(b,
 				lt.applyExplosionDecay(b, LootItem.lootTableItem(AllItems.RAW_ZINC.get())
 					.apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))))))
 		.tag(BlockTags.NEEDS_IRON_TOOL)

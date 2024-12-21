@@ -1,12 +1,12 @@
 {
-  "type": "create:filling",
+  "type": "create_re:filling",
   "ingredients": [
     {
-      "item": "create:cinder_flour"
+      "item": "create_re:cinder_flour"
     },
     {
       "amount": 25,
-      "fluid": "create:potion",
+      "fluid": "create_re:potion",
       "nbt": {
         "Bottle": "REGULAR",
         "Potion": "minecraft:harming"

@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:cut_scoria_bricks"
+              "create_re:cut_scoria_bricks"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:cut_scoria_brick_slab"
+        "recipe": "create_re:cut_scoria_brick_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:cut_scoria_brick_slab"
+      "create_re:cut_scoria_brick_slab"
     ]
   },
   "sends_telemetry_event": false

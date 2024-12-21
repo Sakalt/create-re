@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:copper_diving_helmet"
+              "create_re:copper_diving_helmet"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/appliances/netherite_diving_helmet"
+        "recipe": "create_re:crafting/appliances/netherite_diving_helmet"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/appliances/netherite_diving_helmet"
+      "create_re:crafting/appliances/netherite_diving_helmet"
     ]
   },
   "sends_telemetry_event": false

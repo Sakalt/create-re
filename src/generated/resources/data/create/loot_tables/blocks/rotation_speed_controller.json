@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:rotation_speed_controller"
+          "name": "create_re:rotation_speed_controller"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/rotation_speed_controller"
+  "random_sequence": "create_re:blocks/rotation_speed_controller"
 }

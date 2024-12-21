@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/zinc_block"
+      "model": "create_re:block/zinc_block"
     }
   }
 }

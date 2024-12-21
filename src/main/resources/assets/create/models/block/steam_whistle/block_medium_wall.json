@@ -1,10 +1,10 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "create:block/whistle",
-		"1": "create:block/engine",
-		"2": "create:block/copper_redstone_plate",
-		"particle": "create:block/whistle_particle"
+		"0": "create_re:block/whistle",
+		"1": "create_re:block/engine",
+		"2": "create_re:block/copper_redstone_plate",
+		"particle": "create_re:block/whistle_particle"
 	},
 	"elements": [
 		{

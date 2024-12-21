@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "create:andesite_alloy"
+      "item": "create_re:andesite_alloy"
     },
     "B": {
       "tag": "forge:plates/brass"
@@ -15,7 +15,7 @@
     " B "
   ],
   "result": {
-    "item": "create:brass_hand"
+    "item": "create_re:brass_hand"
   },
   "show_notification": true
 }

@@ -1,9 +1,9 @@
-package com.simibubi.create.content.logistics.filter.attribute;
+package com.simibubi.create_re.content.logistics.filter.attribute;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.simibubi.create.content.logistics.filter.ItemAttribute;
+import com.simibubi.create_re.content.logistics.filter.ItemAttribute;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.item.ItemStack;

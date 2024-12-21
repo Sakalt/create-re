@@ -1,8 +1,8 @@
-package com.simibubi.create.content.contraptions;
+package com.simibubi.create_re.content.contraptions;
 
-import com.simibubi.create.compat.Mods;
-import com.simibubi.create.foundation.mixin.accessor.NbtAccounterAccessor;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.compat.Mods;
+import com.simibubi.create_re.foundation.mixin.accessor.NbtAccounterAccessor;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import io.netty.buffer.Unpooled;
 import net.minecraft.nbt.CompoundTag;
@@ -78,7 +78,7 @@ public class ContraptionData {
 		test.writeNbt(data);
 		NbtAccounter sizeTracker = new NbtAccounter(Long.MAX_VALUE);
 		test.readNbt(sizeTracker);
-		long size = ((NbtAccounterAccessor) sizeTracker).create$getUsage();
+		long size = ((NbtAccounterAccessor) sizeTracker).create_re$getUsage();
 		test.release();
 		return size;
 	}

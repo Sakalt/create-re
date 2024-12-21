@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:content_observer"
+          "name": "create_re:content_observer"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/content_observer"
+  "random_sequence": "create_re:blocks/content_observer"
 }

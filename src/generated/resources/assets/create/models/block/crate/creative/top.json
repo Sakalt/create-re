@@ -1,8 +1,8 @@
 {
-  "parent": "create:block/crate/top",
+  "parent": "create_re:block/crate/top",
   "textures": {
-    "casing": "create:block/creative_casing",
-    "crate": "create:block/crate_creative",
-    "side": "create:block/crate_creative_side"
+    "casing": "create_re:block/creative_casing",
+    "crate": "create_re:block/crate_creative",
+    "side": "create_re:block/crate_creative_side"
   }
 }

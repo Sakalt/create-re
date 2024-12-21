@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.gui.element;
+package com.simibubi.create_re.foundation.gui.element;
 
 import javax.annotation.Nullable;
 
@@ -9,12 +9,12 @@ import com.mojang.blaze3d.platform.Lighting;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import com.simibubi.create.foundation.fluid.FluidRenderer;
-import com.simibubi.create.foundation.gui.ILightingSettings;
-import com.simibubi.create.foundation.gui.UIRenderHelper;
-import com.simibubi.create.foundation.render.VirtualRenderHelper;
-import com.simibubi.create.foundation.utility.Color;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.foundation.fluid.FluidRenderer;
+import com.simibubi.create_re.foundation.gui.ILightingSettings;
+import com.simibubi.create_re.foundation.gui.UIRenderHelper;
+import com.simibubi.create_re.foundation.render.VirtualRenderHelper;
+import com.simibubi.create_re.foundation.utility.Color;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 import net.minecraft.client.Minecraft;
@@ -62,7 +62,7 @@ public class GuiGameElement {
 
 	public static GuiRenderBuilder of(Fluid fluid) {
 		return new GuiBlockStateRenderBuilder(fluid.defaultFluidState()
-			.createLegacyBlock()
+			.create_reLegacyBlock()
 			.setValue(LiquidBlock.LEVEL, 0));
 	}
 
@@ -194,7 +194,7 @@ public class GuiGameElement {
 					.getColor(blockState, null, null, 0);
 				Color rgb = new Color(color == -1 ? this.color : color);
 
-				for (RenderType chunkType : blockModel.getRenderTypes(blockState, RandomSource.create(42L), VirtualRenderHelper.VIRTUAL_DATA)) {
+				for (RenderType chunkType : blockModel.getRenderTypes(blockState, RandomSource.create_re(42L), VirtualRenderHelper.VIRTUAL_DATA)) {
 					RenderType renderType = RenderTypeHelper.getEntityRenderType(chunkType, true);
 					blockRenderer.getModelRenderer()
 						.renderModel(ms.last(), buffer.getBuffer(renderType), blockState, blockModel,

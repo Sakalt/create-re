@@ -1,6 +1,6 @@
 {
   "values": [
-    "#create:vanilla_stripped_logs",
-    "#create:modded_stripped_logs"
+    "#create_re:vanilla_stripped_logs",
+    "#create_re:modded_stripped_logs"
   ]
 }

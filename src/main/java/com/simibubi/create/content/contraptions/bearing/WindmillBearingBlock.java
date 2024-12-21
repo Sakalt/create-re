@@ -1,8 +1,8 @@
-package com.simibubi.create.content.contraptions.bearing;
+package com.simibubi.create_re.content.contraptions.bearing;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.utility.Couple;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.utility.Couple;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
@@ -53,7 +53,7 @@ public class WindmillBearingBlock extends BearingBlock implements IBE<WindmillBe
 	}
 	
 	public static Couple<Integer> getSpeedRange() {
-		return Couple.create(1, 16);
+		return Couple.create_re(1, 16);
 	}
 
 }

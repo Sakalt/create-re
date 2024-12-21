@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:copycat_panel"
+          "name": "create_re:copycat_panel"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/copycat_panel"
+  "random_sequence": "create_re:blocks/copycat_panel"
 }

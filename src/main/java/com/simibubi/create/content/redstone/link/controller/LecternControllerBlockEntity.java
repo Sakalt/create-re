@@ -1,11 +1,11 @@
-package com.simibubi.create.content.redstone.link.controller;
+package com.simibubi.create_re.content.redstone.link.controller;
 
 import java.util.List;
 import java.util.UUID;
 
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;

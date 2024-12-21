@@ -1,10 +1,10 @@
-package com.simibubi.create.content.kinetics.fan;
+package com.simibubi.create_re.content.kinetics.fan;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.content.kinetics.base.DirectionalKineticBlock;
-import com.simibubi.create.content.logistics.chute.AbstractChuteBlock;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.utility.worldWrappers.WrappedWorld;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.content.kinetics.base.DirectionalKineticBlock;
+import com.simibubi.create_re.content.logistics.chute.AbstractChuteBlock;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.utility.worldWrappers.WrappedWorld;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

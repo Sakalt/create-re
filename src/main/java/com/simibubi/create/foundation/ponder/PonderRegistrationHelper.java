@@ -1,9 +1,9 @@
-package com.simibubi.create.foundation.ponder;
+package com.simibubi.create_re.foundation.ponder;
 
 import java.util.Arrays;
 import java.util.function.Consumer;
 
-import com.simibubi.create.foundation.ponder.PonderStoryBoardEntry.PonderStoryBoard;
+import com.simibubi.create_re.foundation.ponder.PonderStoryBoardEntry.PonderStoryBoard;
 import com.tterrag.registrate.util.entry.ItemProviderEntry;
 
 import net.minecraft.resources.ResourceLocation;
@@ -18,7 +18,7 @@ public class PonderRegistrationHelper {
 
 	public PonderStoryBoardEntry addStoryBoard(ResourceLocation component,
 		ResourceLocation schematicLocation, PonderStoryBoard storyBoard, PonderTag... tags) {
-		PonderStoryBoardEntry entry = this.createStoryBoardEntry(storyBoard, schematicLocation, component);
+		PonderStoryBoardEntry entry = this.create_reStoryBoardEntry(storyBoard, schematicLocation, component);
 		entry.highlightTags(tags);
 		PonderRegistry.addStoryBoard(entry);
 		return entry;
@@ -47,15 +47,15 @@ public class PonderRegistrationHelper {
 		return new MultiSceneBuilder(components);
 	}
 
-	public PonderStoryBoardEntry createStoryBoardEntry(PonderStoryBoard storyBoard, ResourceLocation schematicLocation, ResourceLocation component) {
+	public PonderStoryBoardEntry create_reStoryBoardEntry(PonderStoryBoard storyBoard, ResourceLocation schematicLocation, ResourceLocation component) {
 		return new PonderStoryBoardEntry(storyBoard, namespace, schematicLocation, component);
 	}
 
-	public PonderStoryBoardEntry createStoryBoardEntry(PonderStoryBoard storyBoard, String schematicPath, ResourceLocation component) {
-		return createStoryBoardEntry(storyBoard, asLocation(schematicPath), component);
+	public PonderStoryBoardEntry create_reStoryBoardEntry(PonderStoryBoard storyBoard, String schematicPath, ResourceLocation component) {
+		return create_reStoryBoardEntry(storyBoard, asLocation(schematicPath), component);
 	}
 
-	public PonderTag createTag(String name) {
+	public PonderTag create_reTag(String name) {
 		return new PonderTag(asLocation(name));
 	}
 

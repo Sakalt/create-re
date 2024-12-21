@@ -4,7 +4,7 @@
   "group": "cut_ochrum_brick_slab",
   "key": {
     "X": {
-      "item": "create:cut_ochrum_bricks"
+      "item": "create_re:cut_ochrum_bricks"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 6,
-    "item": "create:cut_ochrum_brick_slab"
+    "item": "create_re:cut_ochrum_brick_slab"
   },
   "show_notification": true
 }

@@ -1,23 +1,23 @@
-package com.simibubi.create.content.kinetics.simpleRelays.encased;
+package com.simibubi.create_re.content.kinetics.simpleRelays.encased;
 
 import java.util.function.Supplier;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.contraptions.ITransformableBlock;
-import com.simibubi.create.content.contraptions.StructureTransform;
-import com.simibubi.create.content.decoration.encasing.EncasedBlock;
-import com.simibubi.create.content.kinetics.base.IRotate;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.kinetics.base.RotatedPillarKineticBlock;
-import com.simibubi.create.content.kinetics.simpleRelays.CogWheelBlock;
-import com.simibubi.create.content.kinetics.simpleRelays.ICogWheel;
-import com.simibubi.create.content.kinetics.simpleRelays.SimpleKineticBlockEntity;
-import com.simibubi.create.content.schematics.requirement.ISpecialBlockItemRequirement;
-import com.simibubi.create.content.schematics.requirement.ItemRequirement;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.VoxelShaper;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.contraptions.ITransformableBlock;
+import com.simibubi.create_re.content.contraptions.StructureTransform;
+import com.simibubi.create_re.content.decoration.encasing.EncasedBlock;
+import com.simibubi.create_re.content.kinetics.base.IRotate;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.kinetics.base.RotatedPillarKineticBlock;
+import com.simibubi.create_re.content.kinetics.simpleRelays.CogWheelBlock;
+import com.simibubi.create_re.content.kinetics.simpleRelays.ICogWheel;
+import com.simibubi.create_re.content.kinetics.simpleRelays.SimpleKineticBlockEntity;
+import com.simibubi.create_re.content.schematics.requirement.ISpecialBlockItemRequirement;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.VoxelShaper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -46,8 +46,8 @@ import net.minecraft.world.phys.HitResult;
 public class EncasedCogwheelBlock extends RotatedPillarKineticBlock
 	implements ICogWheel, IBE<SimpleKineticBlockEntity>, ISpecialBlockItemRequirement, ITransformableBlock, EncasedBlock {
 
-	public static final BooleanProperty TOP_SHAFT = BooleanProperty.create("top_shaft");
-	public static final BooleanProperty BOTTOM_SHAFT = BooleanProperty.create("bottom_shaft");
+	public static final BooleanProperty TOP_SHAFT = BooleanProperty.create_re("top_shaft");
+	public static final BooleanProperty BOTTOM_SHAFT = BooleanProperty.create_re("bottom_shaft");
 
 	protected final boolean isLarge;
 	private final Supplier<Block> casing;
@@ -61,8 +61,8 @@ public class EncasedCogwheelBlock extends RotatedPillarKineticBlock
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
-		super.createBlockStateDefinition(builder.add(TOP_SHAFT, BOTTOM_SHAFT));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
+		super.create_reBlockStateDefinition(builder.add(TOP_SHAFT, BOTTOM_SHAFT));
 	}
 
 	@Override

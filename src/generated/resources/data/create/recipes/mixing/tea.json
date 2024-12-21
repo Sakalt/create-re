@@ -1,5 +1,5 @@
 {
-  "type": "create:mixing",
+  "type": "create_re:mixing",
   "heatRequirement": "heated",
   "ingredients": [
     {
@@ -18,7 +18,7 @@
   "results": [
     {
       "amount": 500,
-      "fluid": "create:tea"
+      "fluid": "create_re:tea"
     }
   ]
 }

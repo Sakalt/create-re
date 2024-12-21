@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "create:dough"
+      "item": "create_re:dough"
     },
     {
       "tag": "forge:dyes/lime"

@@ -2,13 +2,13 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"2": "create:block/gearbox",
-		"fan_casing": "create:block/fan_casing",
-		"particle": "create:block/fan_side",
-		"fan_side": "create:block/fan_side",
-		"axis_top": "create:block/axis_top",
-		"fan_blades": "create:block/fan_blades",
-		"axis": "create:block/axis"
+		"2": "create_re:block/gearbox",
+		"fan_casing": "create_re:block/fan_casing",
+		"particle": "create_re:block/fan_side",
+		"fan_side": "create_re:block/fan_side",
+		"axis_top": "create_re:block/axis_top",
+		"fan_blades": "create_re:block/fan_blades",
+		"axis": "create_re:block/axis"
 	},
 	"elements": [
 		{

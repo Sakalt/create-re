@@ -2,8 +2,8 @@
 	"ambientocclusion": false,
 	"textures": {
 		"particle": "#rail",
-		"rail": "create:block/controller_rail_base",
-		"tint": "create:block/controller_rail_tint"
+		"rail": "create_re:block/controller_rail_base",
+		"tint": "create_re:block/controller_rail_tint"
 	},
 	"elements": [
 		{   "from": [ 0, 1, 0 ],

@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.utility;
+package com.simibubi.create_re.foundation.utility;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -14,10 +14,10 @@ import java.util.function.Predicate;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import com.simibubi.create.AllTags;
-import com.simibubi.create.AllTags.AllBlockTags;
-import com.simibubi.create.compat.Mods;
-import com.simibubi.create.compat.dynamictrees.DynamicTree;
+import com.simibubi.create_re.AllTags;
+import com.simibubi.create_re.AllTags.AllBlockTags;
+import com.simibubi.create_re.compat.Mods;
+import com.simibubi.create_re.compat.dynamictrees.DynamicTree;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

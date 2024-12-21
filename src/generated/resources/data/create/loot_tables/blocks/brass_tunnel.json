@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:brass_tunnel"
+          "name": "create_re:brass_tunnel"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/brass_tunnel"
+  "random_sequence": "create_re:blocks/brass_tunnel"
 }

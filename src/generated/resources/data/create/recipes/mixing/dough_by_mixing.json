@@ -1,5 +1,5 @@
 {
-  "type": "create:mixing",
+  "type": "create_re:mixing",
   "ingredients": [
     {
       "tag": "forge:flour/wheat"
@@ -12,7 +12,7 @@
   ],
   "results": [
     {
-      "item": "create:dough"
+      "item": "create_re:dough"
     }
   ]
 }

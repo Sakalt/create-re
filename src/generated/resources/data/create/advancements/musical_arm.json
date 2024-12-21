@@ -1,16 +1,16 @@
 {
-  "parent": "create:mechanical_crafter",
+  "parent": "create_re:mechanical_crafter",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:musical_arm_builtin"
+      "trigger": "create_re:musical_arm_builtin"
     }
   },
   "display": {
     "announce_to_chat": true,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.musical_arm.desc"
+      "translate": "advancement.create_re.musical_arm.desc"
     },
     "frame": "goal",
     "hidden": true,
@@ -19,7 +19,7 @@
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.musical_arm"
+      "translate": "advancement.create_re.musical_arm"
     }
   },
   "requirements": [

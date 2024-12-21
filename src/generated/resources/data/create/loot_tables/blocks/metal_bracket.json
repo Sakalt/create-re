@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:metal_bracket"
+          "name": "create_re:metal_bracket"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/metal_bracket"
+  "random_sequence": "create_re:blocks/metal_bracket"
 }

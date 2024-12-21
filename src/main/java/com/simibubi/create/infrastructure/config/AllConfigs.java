@@ -1,4 +1,4 @@
-package com.simibubi.create.infrastructure.config;
+package com.simibubi.create_re.infrastructure.config;
 
 import java.util.EnumMap;
 import java.util.Map;
@@ -7,8 +7,8 @@ import java.util.function.Supplier;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import com.simibubi.create.content.kinetics.BlockStressValues;
-import com.simibubi.create.foundation.config.ConfigBase;
+import com.simibubi.create_re.content.kinetics.BlockStressValues;
+import com.simibubi.create_re.foundation.config.ConfigBase;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

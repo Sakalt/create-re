@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.particle;
+package com.simibubi.create_re.foundation.particle;
 
 import com.mojang.serialization.Codec;
 
@@ -15,7 +15,7 @@ public interface ICustomParticleDataWithSprite<T extends ParticleOptions> extend
 
 	Deserializer<T> getDeserializer();
 	
-	public default ParticleType<T> createType() {
+	public default ParticleType<T> create_reType() {
 		return new ParticleType<T>(false, getDeserializer()) {
 
 			@Override

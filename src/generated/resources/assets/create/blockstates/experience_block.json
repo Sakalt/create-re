@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/experience_block"
+      "model": "create_re:block/experience_block"
     }
   }
 }

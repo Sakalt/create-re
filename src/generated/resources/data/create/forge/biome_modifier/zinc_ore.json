@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
   "biomes": "#minecraft:is_overworld",
-  "features": "create:zinc_ore",
+  "features": "create_re:zinc_ore",
   "step": "underground_ores"
 }

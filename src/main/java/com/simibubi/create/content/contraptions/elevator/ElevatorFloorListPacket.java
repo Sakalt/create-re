@@ -1,13 +1,13 @@
-package com.simibubi.create.content.contraptions.elevator;
+package com.simibubi.create_re.content.contraptions.elevator;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.content.contraptions.AbstractContraptionEntity;
-import com.simibubi.create.foundation.networking.SimplePacketBase;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.IntAttached;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity;
+import com.simibubi.create_re.foundation.networking.SimplePacketBase;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.IntAttached;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.FriendlyByteBuf;
@@ -31,7 +31,7 @@ public class ElevatorFloorListPacket extends SimplePacketBase {
 		int size = buffer.readInt();
 		floorsList = new ArrayList<>();
 		for (int i = 0; i < size; i++)
-			floorsList.add(IntAttached.with(buffer.readInt(), Couple.create(buffer.readUtf(), buffer.readUtf())));
+			floorsList.add(IntAttached.with(buffer.readInt(), Couple.create_re(buffer.readUtf(), buffer.readUtf())));
 	}
 
 	@Override

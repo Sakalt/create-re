@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.block.connected;
+package com.simibubi.create_re.foundation.block.connected;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.entity;
+package com.simibubi.create_re.content.trains.entity;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -12,29 +12,29 @@ import javax.annotation.Nullable;
 import org.apache.commons.lang3.mutable.MutableBoolean;
 import org.apache.commons.lang3.mutable.MutableInt;
 
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.Create;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.content.contraptions.AbstractContraptionEntity;
-import com.simibubi.create.content.contraptions.ContraptionHandlerClient;
-import com.simibubi.create.content.trains.entity.TravellingPoint.IEdgePointListener;
-import com.simibubi.create.content.trains.entity.TravellingPoint.ITrackSelector;
-import com.simibubi.create.content.trains.entity.TravellingPoint.ITurnListener;
-import com.simibubi.create.content.trains.entity.TravellingPoint.SteerDirection;
-import com.simibubi.create.content.trains.graph.TrackEdge;
-import com.simibubi.create.content.trains.graph.TrackGraph;
-import com.simibubi.create.content.trains.graph.TrackGraphHelper;
-import com.simibubi.create.content.trains.graph.TrackGraphLocation;
-import com.simibubi.create.content.trains.graph.TrackNode;
-import com.simibubi.create.content.trains.track.BezierTrackPointLocation;
-import com.simibubi.create.content.trains.track.ITrackBlock;
-import com.simibubi.create.content.trains.track.TrackBlockOutline;
-import com.simibubi.create.content.trains.track.TrackBlockOutline.BezierPointSelection;
-import com.simibubi.create.foundation.item.TooltipHelper;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity;
+import com.simibubi.create_re.content.contraptions.ContraptionHandlerClient;
+import com.simibubi.create_re.content.trains.entity.TravellingPoint.IEdgePointListener;
+import com.simibubi.create_re.content.trains.entity.TravellingPoint.ITrackSelector;
+import com.simibubi.create_re.content.trains.entity.TravellingPoint.ITurnListener;
+import com.simibubi.create_re.content.trains.entity.TravellingPoint.SteerDirection;
+import com.simibubi.create_re.content.trains.graph.TrackEdge;
+import com.simibubi.create_re.content.trains.graph.TrackGraph;
+import com.simibubi.create_re.content.trains.graph.TrackGraphHelper;
+import com.simibubi.create_re.content.trains.graph.TrackGraphLocation;
+import com.simibubi.create_re.content.trains.graph.TrackNode;
+import com.simibubi.create_re.content.trains.track.BezierTrackPointLocation;
+import com.simibubi.create_re.content.trains.track.ITrackBlock;
+import com.simibubi.create_re.content.trains.track.TrackBlockOutline;
+import com.simibubi.create_re.content.trains.track.TrackBlockOutline.BezierPointSelection;
+import com.simibubi.create_re.foundation.item.TooltipHelper;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
@@ -191,7 +191,7 @@ public class TrainRelocator {
 		List<Pair<Couple<TrackNode>, Double>> recordedLocations = new ArrayList<>();
 		List<Vec3> recordedVecs = new ArrayList<>();
 		Consumer<TravellingPoint> recorder = tp -> {
-			recordedLocations.add(Pair.of(Couple.create(tp.node1, tp.node2), tp.position));
+			recordedLocations.add(Pair.of(Couple.create_re(tp.node1, tp.node2), tp.position));
 			recordedVecs.add(tp.getPosition(graph));
 		};
 		ITrackSelector steer = probe.steer(SteerDirection.NONE, track.getUpNormal(level, pos, blockState));

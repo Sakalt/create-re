@@ -1,6 +1,6 @@
-package com.simibubi.create.foundation.data;
+package com.simibubi.create_re.foundation.data;
 
-import static com.simibubi.create.foundation.data.TagGen.pickaxeOnly;
+import static com.simibubi.create_re.foundation.data.TagGen.pickaxeOnly;
 
 import java.util.Collections;
 import java.util.IdentityHashMap;
@@ -12,13 +12,13 @@ import java.util.function.Supplier;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.content.decoration.encasing.CasingConnectivity;
-import com.simibubi.create.content.fluids.VirtualFluid;
-import com.simibubi.create.foundation.block.connected.CTModel;
-import com.simibubi.create.foundation.block.connected.ConnectedTextureBehaviour;
-import com.simibubi.create.foundation.item.TooltipModifier;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.content.decoration.encasing.CasingConnectivity;
+import com.simibubi.create_re.content.fluids.VirtualFluid;
+import com.simibubi.create_re.foundation.block.connected.CTModel;
+import com.simibubi.create_re.foundation.block.connected.ConnectedTextureBehaviour;
+import com.simibubi.create_re.foundation.item.TooltipModifier;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
 import com.tterrag.registrate.AbstractRegistrate;
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.builders.BlockEntityBuilder.BlockEntityFactory;
@@ -64,7 +64,7 @@ public class CreateRegistrate extends AbstractRegistrate<CreateRegistrate> {
 		super(modid);
 	}
 
-	public static CreateRegistrate create(String modid) {
+	public static CreateRegistrate create_re(String modid) {
 		return new CreateRegistrate(modid);
 	}
 
@@ -123,7 +123,7 @@ public class CreateRegistrate extends AbstractRegistrate<CreateRegistrate> {
 	public <T extends BlockEntity, P> CreateBlockEntityBuilder<T, P> blockEntity(P parent, String name,
 		BlockEntityFactory<T> factory) {
 		return (CreateBlockEntityBuilder<T, P>) entry(name,
-			(callback) -> CreateBlockEntityBuilder.create(this, parent, name, callback, factory));
+			(callback) -> CreateBlockEntityBuilder.create_re(this, parent, name, callback, factory));
 	}
 
 	@Override
@@ -136,7 +136,7 @@ public class CreateRegistrate extends AbstractRegistrate<CreateRegistrate> {
 	public <T extends Entity, P> CreateEntityBuilder<T, P> entity(P parent, String name,
 		EntityType.EntityFactory<T> factory, MobCategory classification) {
 		return (CreateEntityBuilder<T, P>) this.entry(name, (callback) -> {
-			return CreateEntityBuilder.create(this, parent, name, callback, factory, classification);
+			return CreateEntityBuilder.create_re(this, parent, name, callback, factory, classification);
 		});
 	}
 

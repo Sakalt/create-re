@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.bogey;
+package com.simibubi.create_re.content.trains.bogey;
 
 import java.util.function.Consumer;
 
@@ -6,7 +6,7 @@ import org.jetbrains.annotations.Nullable;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import com.simibubi.create.content.trains.bogey.BogeySizes.BogeySize;
+import com.simibubi.create_re.content.trains.bogey.BogeySizes.BogeySize;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
@@ -44,7 +44,7 @@ public class BogeyBlockEntityVisual extends AbstractBlockEntityVisual<AbstractBo
 			poseStack.mulPose(Axis.YP.rotationDegrees(90));
 		poseStack.translate(0, -1.5 - 1 / 128f, 0);
 
-		bogey = lastStyle.createVisual(bogeySize, visualizationContext, partialTick, false);
+		bogey = lastStyle.create_reVisual(bogeySize, visualizationContext, partialTick, false);
 	}
 
 	@Override
@@ -60,7 +60,7 @@ public class BogeyBlockEntityVisual extends AbstractBlockEntityVisual<AbstractBo
 				bogey = null;
 			}
 			lastStyle = style;
-			bogey = lastStyle.createVisual(bogeySize, visualizationContext, context.partialTick(), false);
+			bogey = lastStyle.create_reVisual(bogeySize, visualizationContext, context.partialTick(), false);
 		}
 
 		if (bogey == null) {

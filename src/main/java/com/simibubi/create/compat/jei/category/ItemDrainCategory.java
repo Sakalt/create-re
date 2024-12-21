@@ -1,16 +1,16 @@
-package com.simibubi.create.compat.jei.category;
+package com.simibubi.create_re.compat.jei.category;
 
 import java.util.function.Consumer;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.compat.jei.category.animations.AnimatedItemDrain;
-import com.simibubi.create.content.fluids.potion.PotionFluidHandler;
-import com.simibubi.create.content.fluids.transfer.EmptyingRecipe;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder;
-import com.simibubi.create.foundation.gui.AllGuiTextures;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.compat.jei.category.animations.AnimatedItemDrain;
+import com.simibubi.create_re.content.fluids.potion.PotionFluidHandler;
+import com.simibubi.create_re.content.fluids.transfer.EmptyingRecipe;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder;
+import com.simibubi.create_re.foundation.gui.AllGuiTextures;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
 
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.forge.ForgeTypes;

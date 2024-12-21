@@ -3,10 +3,10 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "create:gearbox"
+      "item": "create_re:gearbox"
     }
   ],
   "result": {
-    "item": "create:vertical_gearbox"
+    "item": "create_re:vertical_gearbox"
   }
 }

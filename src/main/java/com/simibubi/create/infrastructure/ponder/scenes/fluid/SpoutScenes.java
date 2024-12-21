@@ -1,22 +1,22 @@
-package com.simibubi.create.infrastructure.ponder.scenes.fluid;
+package com.simibubi.create_re.infrastructure.ponder.scenes.fluid;
 
-import com.simibubi.create.AllFluids;
-import com.simibubi.create.content.fluids.FluidFX;
-import com.simibubi.create.content.fluids.pump.PumpBlock;
-import com.simibubi.create.content.fluids.spout.SpoutBlockEntity;
-import com.simibubi.create.foundation.fluid.FluidHelper;
-import com.simibubi.create.foundation.gui.AllIcons;
-import com.simibubi.create.foundation.ponder.ElementLink;
-import com.simibubi.create.foundation.ponder.PonderPalette;
-import com.simibubi.create.foundation.ponder.SceneBuilder;
-import com.simibubi.create.foundation.ponder.SceneBuildingUtil;
-import com.simibubi.create.foundation.ponder.Selection;
-import com.simibubi.create.foundation.ponder.element.BeltItemElement;
-import com.simibubi.create.foundation.ponder.element.InputWindowElement;
-import com.simibubi.create.foundation.ponder.element.WorldSectionElement;
-import com.simibubi.create.foundation.ponder.instruction.EmitParticlesInstruction.Emitter;
-import com.simibubi.create.foundation.utility.Pointing;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllFluids;
+import com.simibubi.create_re.content.fluids.FluidFX;
+import com.simibubi.create_re.content.fluids.pump.PumpBlock;
+import com.simibubi.create_re.content.fluids.spout.SpoutBlockEntity;
+import com.simibubi.create_re.foundation.fluid.FluidHelper;
+import com.simibubi.create_re.foundation.gui.AllIcons;
+import com.simibubi.create_re.foundation.ponder.ElementLink;
+import com.simibubi.create_re.foundation.ponder.PonderPalette;
+import com.simibubi.create_re.foundation.ponder.SceneBuilder;
+import com.simibubi.create_re.foundation.ponder.SceneBuildingUtil;
+import com.simibubi.create_re.foundation.ponder.Selection;
+import com.simibubi.create_re.foundation.ponder.element.BeltItemElement;
+import com.simibubi.create_re.foundation.ponder.element.InputWindowElement;
+import com.simibubi.create_re.foundation.ponder.element.WorldSectionElement;
+import com.simibubi.create_re.foundation.ponder.instruction.EmitParticlesInstruction.Emitter;
+import com.simibubi.create_re.foundation.utility.Pointing;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -30,7 +30,7 @@ import net.minecraftforge.fluids.FluidStack;
 public class SpoutScenes {
 
 	public static void filling(SceneBuilder scene, SceneBuildingUtil util) {
-		RandomSource random = RandomSource.create();
+		RandomSource random = RandomSource.create_re();
 
 		scene.title("spout_filling", "Filling Items using a Spout");
 		scene.configureBasePlate(0, 0, 5);
@@ -102,7 +102,7 @@ public class SpoutScenes {
 			.text("The Input items can be placed on a Depot under the Spout");
 		scene.idle(50);
 		ItemStack bottle = new ItemStack(Items.GLASS_BOTTLE);
-		scene.world.createItemOnBeltLike(depotPos, Direction.NORTH, bottle);
+		scene.world.create_reItemOnBeltLike(depotPos, Direction.NORTH, bottle);
 		Vec3 depotCenter = util.vector.centerOf(depotPos.south());
 		scene.overlay.showControls(new InputWindowElement(depotCenter, Pointing.UP).withItem(bottle), 30);
 		scene.idle(10);
@@ -112,7 +112,7 @@ public class SpoutScenes {
 		scene.idle(20);
 		scene.world.removeItemsFromBelt(depotPos);
 		ItemStack potion = new ItemStack(Items.HONEY_BOTTLE);
-		scene.world.createItemOnBeltLike(depotPos, Direction.UP, potion);
+		scene.world.create_reItemOnBeltLike(depotPos, Direction.UP, potion);
 		ParticleOptions fluidParticle = FluidFX.getFluidParticle(new FluidStack(AllFluids.HONEY.get(), 1000));
 		for (int i = 0; i < 10; i++) {
 			scene.effects.emitParticles(util.vector.topOf(depotPos.south())
@@ -137,9 +137,9 @@ public class SpoutScenes {
 			.text("When items are provided on a belt...");
 		scene.idle(30);
 
-		ElementLink<BeltItemElement> ingot = scene.world.createItemOnBelt(beltPos, Direction.SOUTH, bottle);
+		ElementLink<BeltItemElement> ingot = scene.world.create_reItemOnBelt(beltPos, Direction.SOUTH, bottle);
 		scene.idle(15);
-		ElementLink<BeltItemElement> ingot2 = scene.world.createItemOnBelt(beltPos, Direction.SOUTH, bottle);
+		ElementLink<BeltItemElement> ingot2 = scene.world.create_reItemOnBelt(beltPos, Direction.SOUTH, bottle);
 		scene.idle(15);
 		scene.world.stallBeltItem(ingot, true);
 		scene.world.modifyBlockEntityNBT(spoutS, SpoutBlockEntity.class, nbt -> nbt.putInt("ProcessingTicks", 20));
@@ -157,7 +157,7 @@ public class SpoutScenes {
 				Emitter.simple(fluidParticle, VecHelper.offsetRandomly(Vec3.ZERO, random, .1f)), 1, 1);
 		}
 		scene.world.removeItemsFromBelt(spoutPos.below(2));
-		ingot = scene.world.createItemOnBelt(spoutPos.below(2), Direction.UP, potion);
+		ingot = scene.world.create_reItemOnBelt(spoutPos.below(2), Direction.UP, potion);
 		scene.world.stallBeltItem(ingot, true);
 		scene.idle(5);
 		scene.world.stallBeltItem(ingot, false);
@@ -171,7 +171,7 @@ public class SpoutScenes {
 				Emitter.simple(fluidParticle, VecHelper.offsetRandomly(Vec3.ZERO, random, .1f)), 1, 1);
 		}
 		scene.world.removeItemsFromBelt(spoutPos.below(2));
-		ingot2 = scene.world.createItemOnBelt(spoutPos.below(2), Direction.UP, potion);
+		ingot2 = scene.world.create_reItemOnBelt(spoutPos.below(2), Direction.UP, potion);
 		scene.world.stallBeltItem(ingot2, true);
 		scene.idle(5);
 		scene.world.stallBeltItem(ingot2, false);

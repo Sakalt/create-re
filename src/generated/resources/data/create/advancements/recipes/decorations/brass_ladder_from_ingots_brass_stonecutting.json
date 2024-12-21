@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:brass_ladder_from_ingots_brass_stonecutting"
+        "recipe": "create_re:brass_ladder_from_ingots_brass_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:brass_ladder_from_ingots_brass_stonecutting"
+      "create_re:brass_ladder_from_ingots_brass_stonecutting"
     ]
   },
   "sends_telemetry_event": false

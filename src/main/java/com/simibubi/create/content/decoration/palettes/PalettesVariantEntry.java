@@ -1,12 +1,12 @@
-package com.simibubi.create.content.decoration.palettes;
+package com.simibubi.create_re.content.decoration.palettes;
 
-import static com.simibubi.create.Create.REGISTRATE;
-import static com.simibubi.create.foundation.data.CreateRegistrate.connectedTextures;
-import static com.simibubi.create.foundation.data.TagGen.pickaxeOnly;
+import static com.simibubi.create_re.Create.REGISTRATE;
+import static com.simibubi.create_re.foundation.data.CreateRegistrate.connectedTextures;
+import static com.simibubi.create_re.foundation.data.TagGen.pickaxeOnly;
 
 import com.google.common.collect.ImmutableList;
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.data.CreateRegistrate;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.builders.ItemBuilder;
 import com.tterrag.registrate.providers.ProviderType;
@@ -33,7 +33,7 @@ public class PalettesVariantEntry {
 
 		for (PaletteBlockPattern pattern : paletteStoneVariants.variantTypes) {
 			BlockBuilder<? extends Block, CreateRegistrate> builder =
-				REGISTRATE.block(pattern.createName(name), pattern.getBlockFactory())
+				REGISTRATE.block(pattern.create_reName(name), pattern.getBlockFactory())
 					.initialProperties(baseBlock)
 					.transform(pickaxeOnly())
 					.blockstate(pattern.getBlockStateGenerator()
@@ -54,7 +54,7 @@ public class PalettesVariantEntry {
 
 			if (pattern.isTranslucent())
 				builder.addLayer(() -> RenderType::translucent);
-			pattern.createCTBehaviour(name)
+			pattern.create_reCTBehaviour(name)
 				.ifPresent(b -> builder.onRegister(connectedTextures(b)));
 
 			builder.recipe((c, p) -> {
@@ -67,7 +67,7 @@ public class PalettesVariantEntry {
 			registeredBlocks.add(block);
 
 			for (PaletteBlockPartial<? extends Block> partialBlock : pattern.getPartials())
-				registeredPartials.add(partialBlock.create(name, pattern, block, paletteStoneVariants)
+				registeredPartials.add(partialBlock.create_re(name, pattern, block, paletteStoneVariants)
 					.register());
 		}
 

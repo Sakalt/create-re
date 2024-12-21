@@ -2,10 +2,10 @@
   "required": true,
   "minVersion": "0.8",
   "priority": 1100,
-  "package": "com.simibubi.create.foundation.mixin",
+  "package": "com.simibubi.create_re.foundation.mixin",
   "compatibilityLevel": "JAVA_17",
-  "refmap": "create.refmap.json",
-  "plugin": "com.simibubi.create.foundation.mixin.CreateMixinPlugin",
+  "refmap": "create_re.refmap.json",
+  "plugin": "com.simibubi.create_re.foundation.mixin.CreateMixinPlugin",
   "mixins": [
     "BlockItemMixin",
     "ClientboundMapItemDataPacketMixin",

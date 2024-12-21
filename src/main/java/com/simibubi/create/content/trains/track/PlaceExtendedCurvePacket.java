@@ -1,7 +1,7 @@
-package com.simibubi.create.content.trains.track;
+package com.simibubi.create_re.content.trains.track;
 
-import com.simibubi.create.AllTags;
-import com.simibubi.create.foundation.networking.SimplePacketBase;
+import com.simibubi.create_re.AllTags;
+import com.simibubi.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;

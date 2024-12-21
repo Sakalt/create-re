@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"1": "create:block/fluid_tank",
-		"3": "create:block/fluid_tank_window",
-		"particle": "create:block/fluid_tank"
+		"1": "create_re:block/fluid_tank",
+		"3": "create_re:block/fluid_tank_window",
+		"particle": "create_re:block/fluid_tank"
 	},
 	"elements": [
 		{

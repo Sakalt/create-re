@@ -1,11 +1,11 @@
-package com.simibubi.create.foundation.utility.worldWrappers;
+package com.simibubi.create_re.foundation.utility.worldWrappers;
 
 import java.util.Collections;
 import java.util.List;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create.foundation.mixin.accessor.EntityAccessor;
+import com.simibubi.create_re.foundation.mixin.accessor.EntityAccessor;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.Util;
@@ -95,7 +95,7 @@ public class WrappedServerWorld extends ServerLevel {
 
 	@Override
 	public boolean addFreshEntity(Entity entityIn) {
-		((EntityAccessor) entityIn).create$callSetLevel(world);
+		((EntityAccessor) entityIn).create_re$callSetLevel(world);
 		return world.addFreshEntity(entityIn);
 	}
 

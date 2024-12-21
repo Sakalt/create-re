@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"6": "create:block/hose_pulley_magnet",
+		"6": "create_re:block/hose_pulley_magnet",
 		"particle": "block/copper_block"
 	},
 	"elements": [

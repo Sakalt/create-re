@@ -1,25 +1,25 @@
 {
-  "parent": "create:precision_mechanism",
+  "parent": "create_re:precision_mechanism",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:speed_controller_builtin"
+      "trigger": "create_re:speed_controller_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.speed_controller.desc"
+      "translate": "advancement.create_re.speed_controller.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:rotation_speed_controller"
+      "item": "create_re:rotation_speed_controller"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.speed_controller"
+      "translate": "advancement.create_re.speed_controller"
     }
   },
   "requirements": [

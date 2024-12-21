@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"3": "create:block/weighted_ejector_casing",
-		"7": "create:block/andesite_casing",
-		"particle": "create:block/weighted_ejector_top"
+		"3": "create_re:block/weighted_ejector_casing",
+		"7": "create_re:block/andesite_casing",
+		"particle": "create_re:block/weighted_ejector_top"
 	},
 	"elements": [
 		{

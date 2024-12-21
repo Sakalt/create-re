@@ -1,10 +1,10 @@
-package com.simibubi.create.content.kinetics.fan;
+package com.simibubi.create_re.content.kinetics.fan;
 
 import javax.annotation.Nonnull;
 
-import com.simibubi.create.content.kinetics.fan.processing.AllFanProcessingTypes;
-import com.simibubi.create.content.kinetics.fan.processing.FanProcessingType;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.content.kinetics.fan.processing.AllFanProcessingTypes;
+import com.simibubi.create_re.content.kinetics.fan.processing.FanProcessingType;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.Particle;
@@ -123,7 +123,7 @@ public class AirFlowParticle extends SimpleAnimatedParticle {
 		}
 
 		@Override
-		public Particle createParticle(AirFlowParticleData data, ClientLevel worldIn, double x, double y, double z,
+		public Particle create_reParticle(AirFlowParticleData data, ClientLevel worldIn, double x, double y, double z,
 									   double xSpeed, double ySpeed, double zSpeed) {
 			BlockEntity be = worldIn.getBlockEntity(new BlockPos(data.posX, data.posY, data.posZ));
 			if (!(be instanceof IAirCurrentSource))

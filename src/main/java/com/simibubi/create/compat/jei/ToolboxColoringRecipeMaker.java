@@ -1,10 +1,10 @@
-package com.simibubi.create.compat.jei;
+package com.simibubi.create_re.compat.jei;
 
 import java.util.Arrays;
 import java.util.stream.Stream;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.Create;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.Create;
 
 import net.minecraft.core.NonNullList;
 import net.minecraft.resources.ResourceLocation;
@@ -22,8 +22,8 @@ import net.minecraft.world.level.block.Block;
 public final class ToolboxColoringRecipeMaker {
 
 	// From JEI's ShulkerBoxColoringRecipeMaker
-	public static Stream<CraftingRecipe> createRecipes() {
-		String group = "create.toolbox.color";
+	public static Stream<CraftingRecipe> create_reRecipes() {
+		String group = "create_re.toolbox.color";
 		ItemStack baseShulkerStack = AllBlocks.TOOLBOXES.get(DyeColor.BROWN)
 			.asStack();
 		Ingredient baseShulkerIngredient = Ingredient.of(baseShulkerStack);

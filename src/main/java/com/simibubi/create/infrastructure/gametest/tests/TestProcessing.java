@@ -1,15 +1,15 @@
-package com.simibubi.create.infrastructure.gametest.tests;
+package com.simibubi.create_re.infrastructure.gametest.tests;
 
 import java.util.List;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.processing.recipe.ProcessingOutput;
-import com.simibubi.create.content.processing.sequenced.SequencedAssemblyRecipe;
-import com.simibubi.create.foundation.item.ItemHelper;
-import com.simibubi.create.infrastructure.gametest.CreateGameTestHelper;
-import com.simibubi.create.infrastructure.gametest.GameTestGroup;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.processing.recipe.ProcessingOutput;
+import com.simibubi.create_re.content.processing.sequenced.SequencedAssemblyRecipe;
+import com.simibubi.create_re.foundation.item.ItemHelper;
+import com.simibubi.create_re.infrastructure.gametest.CreateGameTestHelper;
+import com.simibubi.create_re.infrastructure.gametest.GameTestGroup;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.gametest.framework.GameTest;

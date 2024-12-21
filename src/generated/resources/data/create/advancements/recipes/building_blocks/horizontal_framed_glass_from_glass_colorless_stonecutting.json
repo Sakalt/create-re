@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:horizontal_framed_glass_from_glass_colorless_stonecutting"
+        "recipe": "create_re:horizontal_framed_glass_from_glass_colorless_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:horizontal_framed_glass_from_glass_colorless_stonecutting"
+      "create_re:horizontal_framed_glass_from_glass_colorless_stonecutting"
     ]
   },
   "sends_telemetry_event": false

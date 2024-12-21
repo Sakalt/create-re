@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "create:shaft"
+      "item": "create_re:shaft"
     },
     "C": {
       "tag": "forge:ingots/brass"
@@ -15,7 +15,7 @@
     "CCC"
   ],
   "result": {
-    "item": "create:flywheel"
+    "item": "create_re:flywheel"
   },
   "show_notification": true
 }

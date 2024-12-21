@@ -1,6 +1,6 @@
-package com.simibubi.create.foundation.block.render;
+package com.simibubi.create_re.foundation.block.render;
 
-import com.simibubi.create.foundation.render.StitchedSprite;
+import com.simibubi.create_re.foundation.render.StitchedSprite;
 
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.resources.ResourceLocation;

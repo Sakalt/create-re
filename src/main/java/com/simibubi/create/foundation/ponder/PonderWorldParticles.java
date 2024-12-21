@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.ponder;
+package com.simibubi.create_re.foundation.ponder;
 
 import java.util.Collection;
 import java.util.Iterator;
@@ -43,7 +43,7 @@ public class PonderWorldParticles {
 		if (queue.isEmpty())
 			return;
 		while ((particle = this.queue.poll()) != null)
-			this.byType.computeIfAbsent(particle.getRenderType(), $ -> EvictingQueue.create(16384))
+			this.byType.computeIfAbsent(particle.getRenderType(), $ -> EvictingQueue.create_re(16384))
 				.add(particle);
 	}
 

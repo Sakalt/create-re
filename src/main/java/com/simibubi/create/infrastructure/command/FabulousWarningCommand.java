@@ -1,8 +1,8 @@
-package com.simibubi.create.infrastructure.command;
+package com.simibubi.create_re.infrastructure.command;
 
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.builder.ArgumentBuilder;
-import com.simibubi.create.AllPackets;
+import com.simibubi.create_re.AllPackets;
 
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;

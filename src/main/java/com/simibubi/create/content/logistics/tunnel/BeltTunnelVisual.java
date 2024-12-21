@@ -1,4 +1,4 @@
-package com.simibubi.create.content.logistics.tunnel;
+package com.simibubi.create_re.content.logistics.tunnel;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -6,10 +6,10 @@ import java.util.EnumMap;
 import java.util.Map;
 import java.util.function.Consumer;
 
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.logistics.flwdata.FlapInstance;
-import com.simibubi.create.foundation.render.AllInstanceTypes;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.logistics.flwdata.FlapInstance;
+import com.simibubi.create_re.foundation.render.AllInstanceTypes;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.instance.Instancer;
@@ -53,7 +53,7 @@ public class BeltTunnelVisual extends AbstractBlockEntityVisual<BeltTunnelBlockE
 				float intensity = segment == 3 ? 1.5f : segment + 1;
 				float segmentOffset = -3.05f / 16f * segment + 0.075f / 16f;
 
-				FlapInstance key = model.createInstance();
+				FlapInstance key = model.create_reInstance();
 
 				key.setPosition(getVisualPosition())
 						.setSegmentOffset(segmentOffset, 0, 0)

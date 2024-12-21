@@ -1,12 +1,12 @@
-package com.simibubi.create.infrastructure.gametest;
+package com.simibubi.create_re.infrastructure.gametest;
 
 import java.util.Collection;
 
-import com.simibubi.create.infrastructure.gametest.tests.TestContraptions;
-import com.simibubi.create.infrastructure.gametest.tests.TestFluids;
-import com.simibubi.create.infrastructure.gametest.tests.TestItems;
-import com.simibubi.create.infrastructure.gametest.tests.TestMisc;
-import com.simibubi.create.infrastructure.gametest.tests.TestProcessing;
+import com.simibubi.create_re.infrastructure.gametest.tests.TestContraptions;
+import com.simibubi.create_re.infrastructure.gametest.tests.TestFluids;
+import com.simibubi.create_re.infrastructure.gametest.tests.TestItems;
+import com.simibubi.create_re.infrastructure.gametest.tests.TestMisc;
+import com.simibubi.create_re.infrastructure.gametest.tests.TestProcessing;
 
 import net.minecraft.gametest.framework.GameTestGenerator;
 import net.minecraft.gametest.framework.TestFunction;

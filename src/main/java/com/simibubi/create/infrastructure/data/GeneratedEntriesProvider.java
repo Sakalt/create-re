@@ -1,13 +1,13 @@
-package com.simibubi.create.infrastructure.data;
+package com.simibubi.create_re.infrastructure.data;
 
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
-import com.simibubi.create.AllDamageTypes;
-import com.simibubi.create.Create;
-import com.simibubi.create.infrastructure.worldgen.AllBiomeModifiers;
-import com.simibubi.create.infrastructure.worldgen.AllConfiguredFeatures;
-import com.simibubi.create.infrastructure.worldgen.AllPlacedFeatures;
+import com.simibubi.create_re.AllDamageTypes;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.infrastructure.worldgen.AllBiomeModifiers;
+import com.simibubi.create_re.infrastructure.worldgen.AllConfiguredFeatures;
+import com.simibubi.create_re.infrastructure.worldgen.AllPlacedFeatures;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;

@@ -3,13 +3,13 @@
 	"parent": "block/block",
 	"ambientocclusion": false,
 	"textures": {
-		"5": "create:block/andesite_casing_piston",
-		"6": "create:block/piston_bottom",
-		"7": "create:block/piston_inner",
-		"particle": "create:block/gearbox_top",
-		"gearbox_top": "create:block/gearbox_top",
-		"gearbox": "create:block/gearbox",
-		"andesite_casing_short": "create:block/andesite_casing_short"
+		"5": "create_re:block/andesite_casing_piston",
+		"6": "create_re:block/piston_bottom",
+		"7": "create_re:block/piston_inner",
+		"particle": "create_re:block/gearbox_top",
+		"gearbox_top": "create_re:block/gearbox_top",
+		"gearbox": "create_re:block/gearbox",
+		"andesite_casing_short": "create_re:block/andesite_casing_short"
 	},
 	"elements": [
 		{

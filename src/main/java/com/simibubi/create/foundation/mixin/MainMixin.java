@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.mixin;
+package com.simibubi.create_re.foundation.mixin;
 
 import java.util.Collection;
 
@@ -19,12 +19,12 @@ import net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess;
 public class MainMixin {
 	/**
 	 * Forge completely bypasses vanilla's
-	 * {@link GameTestServer#create(Thread, LevelStorageAccess, PackRepository, Collection, BlockPos)},
+	 * {@link GameTestServer#create_re(Thread, LevelStorageAccess, PackRepository, Collection, BlockPos)},
 	 * which causes tests to generate at bedrock level in a regular world. This causes interference
 	 * (ex. darkness, liquids, gravel) that makes tests fail and act inconsistently. Replacing the server Forge
 	 * makes with one made by vanilla's factory causes tests to run on a superflat, as they should.
 	 * <p>
-	 * The system property 'create.useOriginalGametestServer' may be set to true to avoid this behavior.
+	 * The system property 'create_re.useOriginalGametestServer' may be set to true to avoid this behavior.
 	 * This may be desirable for other mods which pull Create into their development environments.
 	 */
 	@ModifyVariable(
@@ -35,9 +35,9 @@ public class MainMixin {
 			),
 			require = 0 // don't crash if this fails
 	)
-	private static MinecraftServer create$correctlyInitializeGametestServer(MinecraftServer original) {
-		if (original instanceof GameTestServer && !Boolean.getBoolean("create.useOriginalGametestServer")) {
-			return GameTestServer.create(
+	private static MinecraftServer create_re$correctlyInitializeGametestServer(MinecraftServer original) {
+		if (original instanceof GameTestServer && !Boolean.getBoolean("create_re.useOriginalGametestServer")) {
+			return GameTestServer.create_re(
 					original.getRunningThread(),
 					original.storageSource,
 					original.getPackRepository(),

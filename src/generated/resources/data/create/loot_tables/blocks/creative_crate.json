@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:creative_crate"
+          "name": "create_re:creative_crate"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/creative_crate"
+  "random_sequence": "create_re:blocks/creative_crate"
 }

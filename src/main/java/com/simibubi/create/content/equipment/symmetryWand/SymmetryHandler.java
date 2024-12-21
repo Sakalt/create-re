@@ -1,4 +1,4 @@
-package com.simibubi.create.content.equipment.symmetryWand;
+package com.simibubi.create_re.content.equipment.symmetryWand;
 
 import java.util.Random;
 
@@ -6,10 +6,10 @@ import org.joml.Vector3f;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.equipment.symmetryWand.mirror.EmptyMirror;
-import com.simibubi.create.content.equipment.symmetryWand.mirror.SymmetryMirror;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.equipment.symmetryWand.mirror.EmptyMirror;
+import com.simibubi.create_re.content.equipment.symmetryWand.mirror.SymmetryMirror;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
 
 import net.minecraft.client.Camera;
 import net.minecraft.client.Minecraft;
@@ -82,7 +82,7 @@ public class SymmetryHandler {
 		
 		Minecraft mc = Minecraft.getInstance();
 		LocalPlayer player = mc.player;
-		RandomSource random = RandomSource.create();
+		RandomSource random = RandomSource.create_re();
 
 		for (int i = 0; i < Inventory.getSelectionSize(); i++) {
 			ItemStack stackInSlot = player.getInventory()

@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "create:block/sail/frame",
+		"1": "create_re:block/sail/frame",
 		"particle": "#1"
 	},
 	"elements": [

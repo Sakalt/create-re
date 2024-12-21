@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.utility.animation;
+package com.simibubi.create_re.foundation.utility.animation;
 
 import java.util.ArrayList;
 
@@ -17,11 +17,11 @@ public class PhysicalFloat {
 
     private final ArrayList<Force> forces = new ArrayList<>();
 
-    public static PhysicalFloat create() {
+    public static PhysicalFloat create_re() {
         return new PhysicalFloat(1);
     }
 
-    public static PhysicalFloat create(float mass) {
+    public static PhysicalFloat create_re(float mass) {
         return new PhysicalFloat(mass);
     }
 

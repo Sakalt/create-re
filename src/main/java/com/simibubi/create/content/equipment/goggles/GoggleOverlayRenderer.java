@@ -1,4 +1,4 @@
-package com.simibubi.create.content.equipment.goggles;
+package com.simibubi.create_re.content.equipment.goggles;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,27 +6,27 @@ import java.util.Map;
 
 import com.mojang.blaze3d.platform.Window;
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.compat.Mods;
-import com.simibubi.create.content.contraptions.IDisplayAssemblyExceptions;
-import com.simibubi.create.content.contraptions.piston.MechanicalPistonBlock;
-import com.simibubi.create.content.contraptions.piston.PistonExtensionPoleBlock;
-import com.simibubi.create.content.trains.entity.TrainRelocator;
-import com.simibubi.create.foundation.blockEntity.behaviour.ValueBox;
-import com.simibubi.create.foundation.gui.RemovedGuiUtils;
-import com.simibubi.create.foundation.gui.Theme;
-import com.simibubi.create.foundation.gui.element.GuiGameElement;
-import com.simibubi.create.foundation.mixin.accessor.MouseHandlerAccessor;
-import com.simibubi.create.foundation.outliner.Outline;
-import com.simibubi.create.foundation.outliner.Outliner.OutlineEntry;
-import com.simibubi.create.foundation.utility.Color;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.infrastructure.config.AllConfigs;
-import com.simibubi.create.infrastructure.config.CClient;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.compat.Mods;
+import com.simibubi.create_re.content.contraptions.IDisplayAssemblyExceptions;
+import com.simibubi.create_re.content.contraptions.piston.MechanicalPistonBlock;
+import com.simibubi.create_re.content.contraptions.piston.PistonExtensionPoleBlock;
+import com.simibubi.create_re.content.trains.entity.TrainRelocator;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBox;
+import com.simibubi.create_re.foundation.gui.RemovedGuiUtils;
+import com.simibubi.create_re.foundation.gui.Theme;
+import com.simibubi.create_re.foundation.gui.element.GuiGameElement;
+import com.simibubi.create_re.foundation.mixin.accessor.MouseHandlerAccessor;
+import com.simibubi.create_re.foundation.outliner.Outline;
+import com.simibubi.create_re.foundation.outliner.Outliner.OutlineEntry;
+import com.simibubi.create_re.foundation.utility.Color;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.infrastructure.config.CClient;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.MouseHandler;
@@ -237,14 +237,14 @@ public class GoggleOverlayRenderer {
 		double guiScale = window.getGuiScale();
 		double cursorX = mouseHandler.xpos();
 		double cursorY = mouseHandler.ypos();
-		((MouseHandlerAccessor) mouseHandler).create$setXPos(Math.round(cursorX / guiScale) * guiScale);
-		((MouseHandlerAccessor) mouseHandler).create$setYPos(Math.round(cursorY / guiScale) * guiScale);
+		((MouseHandlerAccessor) mouseHandler).create_re$setXPos(Math.round(cursorX / guiScale) * guiScale);
+		((MouseHandlerAccessor) mouseHandler).create_re$setYPos(Math.round(cursorY / guiScale) * guiScale);
 
 		RemovedGuiUtils.drawHoveringText(graphics, tooltip, posX, posY, width, height, -1, colorBackground.getRGB(),
 			colorBorderTop.getRGB(), colorBorderBot.getRGB(), mc.font);
 
-		((MouseHandlerAccessor) mouseHandler).create$setXPos(cursorX);
-		((MouseHandlerAccessor) mouseHandler).create$setYPos(cursorY);
+		((MouseHandlerAccessor) mouseHandler).create_re$setXPos(cursorX);
+		((MouseHandlerAccessor) mouseHandler).create_re$setYPos(cursorY);
 
 		poseStack.popPose();
 

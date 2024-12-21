@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:birch_window"
+              "create_re:birch_window"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:birch_window_pane"
+        "recipe": "create_re:birch_window_pane"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:birch_window_pane"
+      "create_re:birch_window_pane"
     ]
   },
   "sends_telemetry_event": false

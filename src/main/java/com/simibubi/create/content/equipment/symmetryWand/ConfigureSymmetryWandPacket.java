@@ -1,7 +1,7 @@
-package com.simibubi.create.content.equipment.symmetryWand;
+package com.simibubi.create_re.content.equipment.symmetryWand;
 
-import com.simibubi.create.content.equipment.symmetryWand.mirror.SymmetryMirror;
-import com.simibubi.create.foundation.networking.SimplePacketBase;
+import com.simibubi.create_re.content.equipment.symmetryWand.mirror.SymmetryMirror;
+import com.simibubi.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.server.level.ServerPlayer;

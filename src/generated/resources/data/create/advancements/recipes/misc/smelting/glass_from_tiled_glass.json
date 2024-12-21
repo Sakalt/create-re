@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:tiled_glass"
+              "create_re:tiled_glass"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:smelting/glass_from_tiled_glass"
+        "recipe": "create_re:smelting/glass_from_tiled_glass"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:smelting/glass_from_tiled_glass"
+      "create_re:smelting/glass_from_tiled_glass"
     ]
   },
   "sends_telemetry_event": false

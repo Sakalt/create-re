@@ -2,11 +2,11 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"3": "create:block/gearbox_top",
-		"4": "create:block/gearbox",
-		"5": "create:block/andesite_casing",
-		"6": "create:block/pulley_top",
-		"particle": "create:block/pulley_rope"
+		"3": "create_re:block/gearbox_top",
+		"4": "create_re:block/gearbox",
+		"5": "create_re:block/andesite_casing",
+		"6": "create_re:block/pulley_top",
+		"particle": "create_re:block/pulley_rope"
 	},
 	"elements": [
 		{

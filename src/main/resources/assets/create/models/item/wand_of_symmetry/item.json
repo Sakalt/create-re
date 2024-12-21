@@ -3,9 +3,9 @@
 	"textures": {
 		"0": "block/obsidian",
 		"2": "block/dark_oak_log",
-		"6": "create:block/brass_block",
-		"7": "create:block/andesite_casing",
-		"particle": "create:block/brass_block"
+		"6": "create_re:block/brass_block",
+		"7": "create_re:block/andesite_casing",
+		"particle": "create_re:block/brass_block"
 	},
 	"elements": [
 		{

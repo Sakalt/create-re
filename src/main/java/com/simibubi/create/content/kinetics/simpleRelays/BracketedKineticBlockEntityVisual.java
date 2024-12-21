@@ -1,14 +1,14 @@
-package com.simibubi.create.content.kinetics.simpleRelays;
+package com.simibubi.create_re.content.kinetics.simpleRelays;
 
 import java.util.function.Consumer;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntityRenderer;
-import com.simibubi.create.content.kinetics.base.RotatingInstance;
-import com.simibubi.create.content.kinetics.base.SingleRotatingVisual;
-import com.simibubi.create.foundation.render.AllInstanceTypes;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntityRenderer;
+import com.simibubi.create_re.content.kinetics.base.RotatingInstance;
+import com.simibubi.create_re.content.kinetics.base.SingleRotatingVisual;
+import com.simibubi.create_re.foundation.render.AllInstanceTypes;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.instance.Instancer;
@@ -41,7 +41,7 @@ public class BracketedKineticBlockEntityVisual extends SingleRotatingVisual<Brac
             var model = Models.partial(AllPartialModels.COGWHEEL_SHAFT, axis, BracketedKineticBlockEntityVisual::rotateToAxis);
             Instancer<RotatingInstance> half = instancerProvider().instancer(AllInstanceTypes.ROTATING, model);
 
-            additionalShaft = setup(half.createInstance(), speed);
+            additionalShaft = setup(half.create_reInstance(), speed);
             additionalShaft.setRotationOffset(offset)
                 .setChanged();
         }

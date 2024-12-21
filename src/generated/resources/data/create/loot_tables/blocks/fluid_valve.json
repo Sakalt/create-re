@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:fluid_valve"
+          "name": "create_re:fluid_valve"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/fluid_valve"
+  "random_sequence": "create_re:blocks/fluid_valve"
 }

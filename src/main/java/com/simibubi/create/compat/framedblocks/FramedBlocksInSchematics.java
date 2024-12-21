@@ -1,12 +1,12 @@
-package com.simibubi.create.compat.framedblocks;
+package com.simibubi.create_re.compat.framedblocks;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.simibubi.create.compat.Mods;
-import com.simibubi.create.content.schematics.requirement.ItemRequirement;
-import com.simibubi.create.content.schematics.requirement.ItemRequirement.ItemUseType;
-import com.simibubi.create.content.schematics.requirement.ItemRequirement.StackRequirement;
+import com.simibubi.create_re.compat.Mods;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement.ItemUseType;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement.StackRequirement;
 
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;

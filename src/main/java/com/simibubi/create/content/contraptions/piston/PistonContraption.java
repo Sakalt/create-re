@@ -1,11 +1,11 @@
-package com.simibubi.create.content.contraptions.piston;
+package com.simibubi.create_re.content.contraptions.piston;
 
-import static com.simibubi.create.AllBlocks.MECHANICAL_PISTON_HEAD;
-import static com.simibubi.create.AllBlocks.PISTON_EXTENSION_POLE;
-import static com.simibubi.create.content.contraptions.piston.MechanicalPistonBlock.isExtensionPole;
-import static com.simibubi.create.content.contraptions.piston.MechanicalPistonBlock.isPiston;
-import static com.simibubi.create.content.contraptions.piston.MechanicalPistonBlock.isPistonHead;
-import static com.simibubi.create.content.contraptions.piston.MechanicalPistonBlock.isStickyPiston;
+import static com.simibubi.create_re.AllBlocks.MECHANICAL_PISTON_HEAD;
+import static com.simibubi.create_re.AllBlocks.PISTON_EXTENSION_POLE;
+import static com.simibubi.create_re.content.contraptions.piston.MechanicalPistonBlock.isExtensionPole;
+import static com.simibubi.create_re.content.contraptions.piston.MechanicalPistonBlock.isPiston;
+import static com.simibubi.create_re.content.contraptions.piston.MechanicalPistonBlock.isPistonHead;
+import static com.simibubi.create_re.content.contraptions.piston.MechanicalPistonBlock.isStickyPiston;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.FACING;
 
 import java.util.ArrayList;
@@ -14,13 +14,13 @@ import java.util.Queue;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import com.simibubi.create.content.contraptions.AssemblyException;
-import com.simibubi.create.content.contraptions.BlockMovementChecks;
-import com.simibubi.create.content.contraptions.ContraptionType;
-import com.simibubi.create.content.contraptions.TranslatingContraption;
-import com.simibubi.create.content.contraptions.piston.MechanicalPistonBlock.PistonState;
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.content.contraptions.AssemblyException;
+import com.simibubi.create_re.content.contraptions.BlockMovementChecks;
+import com.simibubi.create_re.content.contraptions.ContraptionType;
+import com.simibubi.create_re.content.contraptions.TranslatingContraption;
+import com.simibubi.create_re.content.contraptions.piston.MechanicalPistonBlock.PistonState;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

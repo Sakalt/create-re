@@ -1,13 +1,13 @@
-package com.simibubi.create.content.contraptions;
+package com.simibubi.create_re.content.contraptions;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllTags.AllBlockTags;
-import com.simibubi.create.content.equipment.toolbox.ToolboxInventory;
-import com.simibubi.create.content.kinetics.crafter.MechanicalCrafterBlockEntity;
-import com.simibubi.create.content.logistics.crate.BottomlessItemHandler;
-import com.simibubi.create.content.logistics.vault.ItemVaultBlockEntity;
-import com.simibubi.create.content.processing.recipe.ProcessingInventory;
-import com.simibubi.create.foundation.utility.NBTHelper;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllTags.AllBlockTags;
+import com.simibubi.create_re.content.equipment.toolbox.ToolboxInventory;
+import com.simibubi.create_re.content.kinetics.crafter.MechanicalCrafterBlockEntity;
+import com.simibubi.create_re.content.logistics.crate.BottomlessItemHandler;
+import com.simibubi.create_re.content.logistics.vault.ItemVaultBlockEntity;
+import com.simibubi.create_re.content.processing.recipe.ProcessingInventory;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;

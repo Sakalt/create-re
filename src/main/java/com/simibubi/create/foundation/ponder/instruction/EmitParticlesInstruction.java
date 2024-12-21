@@ -1,8 +1,8 @@
-package com.simibubi.create.foundation.ponder.instruction;
+package com.simibubi.create_re.foundation.ponder.instruction;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.ponder.PonderScene;
-import com.simibubi.create.foundation.ponder.PonderWorld;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.ponder.PonderScene;
+import com.simibubi.create_re.foundation.ponder.PonderWorld;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.particle.ParticleEngine;
@@ -32,7 +32,7 @@ public class EmitParticlesInstruction extends TickingInstruction {
 			return Minecraft.getInstance().particleEngine;
 		}
 
-		public void create(PonderWorld world, double x, double y, double z);
+		public void create_re(PonderWorld world, double x, double y, double z);
 
 	}
 
@@ -50,7 +50,7 @@ public class EmitParticlesInstruction extends TickingInstruction {
 		if (Create.RANDOM.nextFloat() < (runsPerTick - runs))
 			runs++;
 		for (int i = 0; i < runs; i++)
-			emitter.create(scene.getWorld(), anchor.x, anchor.y, anchor.z);
+			emitter.create_re(scene.getWorld(), anchor.x, anchor.y, anchor.z);
 	}
 
 }

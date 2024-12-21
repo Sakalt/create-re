@@ -1,15 +1,15 @@
 {
   "variants": {
     "axis=x": {
-      "model": "create:block/flywheel/block",
+      "model": "create_re:block/flywheel/block",
       "x": 90,
       "y": 90
     },
     "axis=y": {
-      "model": "create:block/flywheel/block"
+      "model": "create_re:block/flywheel/block"
     },
     "axis=z": {
-      "model": "create:block/flywheel/block",
+      "model": "create_re:block/flywheel/block",
       "x": 90,
       "y": 180
     }

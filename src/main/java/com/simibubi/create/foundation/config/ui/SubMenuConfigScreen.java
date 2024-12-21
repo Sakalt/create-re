@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.config.ui;
+package com.simibubi.create_re.foundation.config.ui;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,27 +19,27 @@ import org.lwjgl.glfw.GLFW;
 import com.electronwill.nightconfig.core.AbstractConfig;
 import com.electronwill.nightconfig.core.UnmodifiableConfig;
 import com.google.common.collect.Lists;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.foundation.config.ui.ConfigScreenList.LabeledEntry;
-import com.simibubi.create.foundation.config.ui.entries.BooleanEntry;
-import com.simibubi.create.foundation.config.ui.entries.EnumEntry;
-import com.simibubi.create.foundation.config.ui.entries.NumberEntry;
-import com.simibubi.create.foundation.config.ui.entries.SubMenuEntry;
-import com.simibubi.create.foundation.config.ui.entries.ValueEntry;
-import com.simibubi.create.foundation.gui.AllIcons;
-import com.simibubi.create.foundation.gui.ConfirmationScreen;
-import com.simibubi.create.foundation.gui.ConfirmationScreen.Response;
-import com.simibubi.create.foundation.gui.ScreenOpener;
-import com.simibubi.create.foundation.gui.Theme;
-import com.simibubi.create.foundation.gui.UIRenderHelper;
-import com.simibubi.create.foundation.gui.element.DelegatedStencilElement;
-import com.simibubi.create.foundation.gui.widget.BoxWidget;
-import com.simibubi.create.foundation.item.TooltipHelper;
-import com.simibubi.create.foundation.item.TooltipHelper.Palette;
-import com.simibubi.create.foundation.utility.Color;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.foundation.config.ui.ConfigScreenList.LabeledEntry;
+import com.simibubi.create_re.foundation.config.ui.entries.BooleanEntry;
+import com.simibubi.create_re.foundation.config.ui.entries.EnumEntry;
+import com.simibubi.create_re.foundation.config.ui.entries.NumberEntry;
+import com.simibubi.create_re.foundation.config.ui.entries.SubMenuEntry;
+import com.simibubi.create_re.foundation.config.ui.entries.ValueEntry;
+import com.simibubi.create_re.foundation.gui.AllIcons;
+import com.simibubi.create_re.foundation.gui.ConfirmationScreen;
+import com.simibubi.create_re.foundation.gui.ConfirmationScreen.Response;
+import com.simibubi.create_re.foundation.gui.ScreenOpener;
+import com.simibubi.create_re.foundation.gui.Theme;
+import com.simibubi.create_re.foundation.gui.UIRenderHelper;
+import com.simibubi.create_re.foundation.gui.element.DelegatedStencilElement;
+import com.simibubi.create_re.foundation.gui.widget.BoxWidget;
+import com.simibubi.create_re.foundation.item.TooltipHelper;
+import com.simibubi.create_re.foundation.item.TooltipHelper.Palette;
+import com.simibubi.create_re.foundation.utility.Color;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
@@ -279,7 +279,7 @@ public class SubMenuConfigScreen extends ConfigScreen {
 				} else if (value instanceof Enum) {
 					entry = new EnumEntry(humanKey, (ForgeConfigSpec.ConfigValue<Enum<?>>) configValue, valueSpec);
 				} else if (value instanceof Number) {
-					entry = NumberEntry.create(value, humanKey, configValue, valueSpec);
+					entry = NumberEntry.create_re(value, humanKey, configValue, valueSpec);
 				}
 
 				if (entry == null)

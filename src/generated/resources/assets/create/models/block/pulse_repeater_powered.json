@@ -1,6 +1,6 @@
 {
-  "parent": "create:block/diodes/pulse_repeater",
+  "parent": "create_re:block/diodes/pulse_repeater",
   "textures": {
-    "top": "create:block/diodes/pulse_repeater/powered"
+    "top": "create_re:block/diodes/pulse_repeater/powered"
   }
 }

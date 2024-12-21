@@ -1,4 +1,4 @@
-package com.simibubi.create.content.kinetics.belt;
+package com.simibubi.create_re.content.kinetics.belt;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -9,31 +9,31 @@ import java.util.function.Consumer;
 
 import org.apache.commons.lang3.mutable.MutableBoolean;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.contraptions.ITransformableBlock;
-import com.simibubi.create.content.contraptions.StructureTransform;
-import com.simibubi.create.content.equipment.armor.DivingBootsItem;
-import com.simibubi.create.content.fluids.transfer.GenericItemEmptying;
-import com.simibubi.create.content.kinetics.base.HorizontalKineticBlock;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.kinetics.belt.BeltBlockEntity.CasingType;
-import com.simibubi.create.content.kinetics.belt.BeltSlicer.Feedback;
-import com.simibubi.create.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour.TransportedResult;
-import com.simibubi.create.content.kinetics.belt.transport.BeltMovementHandler.TransportedEntityInfo;
-import com.simibubi.create.content.kinetics.belt.transport.BeltTunnelInteractionHandler;
-import com.simibubi.create.content.logistics.funnel.FunnelBlock;
-import com.simibubi.create.content.logistics.tunnel.BeltTunnelBlock;
-import com.simibubi.create.content.schematics.requirement.ISpecialBlockItemRequirement;
-import com.simibubi.create.content.schematics.requirement.ItemRequirement;
-import com.simibubi.create.content.schematics.requirement.ItemRequirement.ItemUseType;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.block.ProperWaterloggedBlock;
-import com.simibubi.create.foundation.block.render.MultiPosDestructionHandler;
-import com.simibubi.create.foundation.block.render.ReducedDestroyEffects;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.contraptions.ITransformableBlock;
+import com.simibubi.create_re.content.contraptions.StructureTransform;
+import com.simibubi.create_re.content.equipment.armor.DivingBootsItem;
+import com.simibubi.create_re.content.fluids.transfer.GenericItemEmptying;
+import com.simibubi.create_re.content.kinetics.base.HorizontalKineticBlock;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlockEntity.CasingType;
+import com.simibubi.create_re.content.kinetics.belt.BeltSlicer.Feedback;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour.TransportedResult;
+import com.simibubi.create_re.content.kinetics.belt.transport.BeltMovementHandler.TransportedEntityInfo;
+import com.simibubi.create_re.content.kinetics.belt.transport.BeltTunnelInteractionHandler;
+import com.simibubi.create_re.content.logistics.funnel.FunnelBlock;
+import com.simibubi.create_re.content.logistics.tunnel.BeltTunnelBlock;
+import com.simibubi.create_re.content.schematics.requirement.ISpecialBlockItemRequirement;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement.ItemUseType;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
+import com.simibubi.create_re.foundation.block.render.MultiPosDestructionHandler;
+import com.simibubi.create_re.foundation.block.render.ReducedDestroyEffects;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.core.BlockPos;
@@ -93,9 +93,9 @@ import net.minecraftforge.items.IItemHandler;
 public class BeltBlock extends HorizontalKineticBlock
 	implements IBE<BeltBlockEntity>, ISpecialBlockItemRequirement, ITransformableBlock, ProperWaterloggedBlock {
 
-	public static final Property<BeltSlope> SLOPE = EnumProperty.create("slope", BeltSlope.class);
-	public static final Property<BeltPart> PART = EnumProperty.create("part", BeltPart.class);
-	public static final BooleanProperty CASING = BooleanProperty.create("casing");
+	public static final Property<BeltSlope> SLOPE = EnumProperty.create_re("slope", BeltSlope.class);
+	public static final Property<BeltPart> PART = EnumProperty.create_re("part", BeltPart.class);
+	public static final BooleanProperty CASING = BooleanProperty.create_re("casing");
 
 	public BeltBlock(Properties properties) {
 		super(properties);
@@ -358,9 +358,9 @@ public class BeltBlock extends HorizontalKineticBlock
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
 		builder.add(SLOPE, PART, CASING, WATERLOGGED);
-		super.createBlockStateDefinition(builder);
+		super.create_reBlockStateDefinition(builder);
 	}
 
 	@Override

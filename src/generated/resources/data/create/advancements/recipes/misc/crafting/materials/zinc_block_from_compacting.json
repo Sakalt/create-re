@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:zinc_ingot"
+              "create_re:zinc_ingot"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/materials/zinc_block_from_compacting"
+        "recipe": "create_re:crafting/materials/zinc_block_from_compacting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/materials/zinc_block_from_compacting"
+      "create_re:crafting/materials/zinc_block_from_compacting"
     ]
   },
   "sends_telemetry_event": false

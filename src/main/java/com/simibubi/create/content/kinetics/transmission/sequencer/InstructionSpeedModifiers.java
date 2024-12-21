@@ -1,11 +1,11 @@
-package com.simibubi.create.content.kinetics.transmission.sequencer;
+package com.simibubi.create_re.content.kinetics.transmission.sequencer;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.network.chat.Component;
 

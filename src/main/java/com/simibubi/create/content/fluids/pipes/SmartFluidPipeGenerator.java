@@ -1,7 +1,7 @@
-package com.simibubi.create.content.fluids.pipes;
+package com.simibubi.create_re.content.fluids.pipes;
 
-import com.simibubi.create.foundation.data.AssetLookup;
-import com.simibubi.create.foundation.data.SpecialBlockStateGen;
+import com.simibubi.create_re.foundation.data.AssetLookup;
+import com.simibubi.create_re.foundation.data.SpecialBlockStateGen;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 

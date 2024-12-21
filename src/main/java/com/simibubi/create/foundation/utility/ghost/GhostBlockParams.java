@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.utility.ghost;
+package com.simibubi.create_re.foundation.utility.ghost;
 
 import java.util.function.Supplier;
 

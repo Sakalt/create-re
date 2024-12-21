@@ -1,11 +1,11 @@
-package com.simibubi.create.content.equipment.blueprint;
+package com.simibubi.create_re.content.equipment.blueprint;
 
 import java.util.Collection;
 
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.logistics.filter.AttributeFilterMenu.WhitelistMode;
-import com.simibubi.create.content.logistics.filter.FilterItem;
-import com.simibubi.create.content.logistics.filter.ItemAttribute;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.logistics.filter.AttributeFilterMenu.WhitelistMode;
+import com.simibubi.create_re.content.logistics.filter.FilterItem;
+import com.simibubi.create_re.content.logistics.filter.ItemAttribute;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -122,7 +122,7 @@ public class BlueprintItem extends Item {
 			filterItem.getOrCreateTag()
 					.putInt("WhitelistMode", WhitelistMode.WHITELIST_DISJ.ordinal());
 			ListTag attributes = new ListTag();
-			ItemAttribute at = new ItemAttribute.InTag(ItemTags.create(resourcelocation));
+			ItemAttribute at = new ItemAttribute.InTag(ItemTags.create_re(resourcelocation));
 			CompoundTag compoundNBT = new CompoundTag();
 			at.serializeNBT(compoundNBT);
 			compoundNBT.putBoolean("Inverted", false);

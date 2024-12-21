@@ -3,13 +3,13 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "create:cut_asurine_slab"
+      "item": "create_re:cut_asurine_slab"
     },
     {
-      "item": "create:cut_asurine_slab"
+      "item": "create_re:cut_asurine_slab"
     }
   ],
   "result": {
-    "item": "create:cut_asurine"
+    "item": "create_re:cut_asurine"
   }
 }

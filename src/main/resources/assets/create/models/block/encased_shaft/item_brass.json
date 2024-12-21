@@ -1,7 +1,7 @@
 {
-	"parent": "create:block/encased_shaft/item",
+	"parent": "create_re:block/encased_shaft/item",
 	"textures": {
-		"casing": "create:block/brass_casing",
-		"opening": "create:block/brass_gearbox"
+		"casing": "create_re:block/brass_casing",
+		"opening": "create_re:block/brass_gearbox"
 	}
 }

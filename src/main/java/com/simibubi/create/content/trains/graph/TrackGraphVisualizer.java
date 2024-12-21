@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.graph;
+package com.simibubi.create_re.content.trains.graph;
 
 import java.util.Iterator;
 import java.util.Map;
@@ -7,16 +7,16 @@ import java.util.UUID;
 
 import org.lwjgl.glfw.GLFW;
 
-import com.simibubi.create.AllKeys;
-import com.simibubi.create.Create;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.content.trains.signal.SignalBoundary;
-import com.simibubi.create.content.trains.signal.SignalEdgeGroup;
-import com.simibubi.create.content.trains.signal.TrackEdgePoint;
-import com.simibubi.create.content.trains.track.BezierConnection;
-import com.simibubi.create.foundation.outliner.Outliner;
-import com.simibubi.create.foundation.utility.Color;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.AllKeys;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.content.trains.signal.SignalBoundary;
+import com.simibubi.create_re.content.trains.signal.SignalEdgeGroup;
+import com.simibubi.create_re.content.trains.signal.TrackEdgePoint;
+import com.simibubi.create_re.content.trains.track.BezierConnection;
+import com.simibubi.create_re.foundation.outliner.Outliner;
+import com.simibubi.create_re.foundation.utility.Color;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.entity.Entity;

@@ -1,4 +1,4 @@
-package com.simibubi.create.content.kinetics.steamEngine;
+package com.simibubi.create_re.content.kinetics.steamEngine;
 
 import java.util.Locale;
 
@@ -6,8 +6,8 @@ import com.mojang.brigadier.StringReader;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import com.simibubi.create.AllParticleTypes;
-import com.simibubi.create.foundation.particle.ICustomParticleDataWithSprite;
+import com.simibubi.create_re.AllParticleTypes;
+import com.simibubi.create_re.foundation.particle.ICustomParticleDataWithSprite;
 
 import net.minecraft.client.particle.ParticleEngine.SpriteParticleRegistration;
 import net.minecraft.core.particles.ParticleOptions;
@@ -18,7 +18,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class SteamJetParticleData implements ParticleOptions, ICustomParticleDataWithSprite<SteamJetParticleData> {
 
-	public static final Codec<SteamJetParticleData> CODEC = RecordCodecBuilder.create(i -> i
+	public static final Codec<SteamJetParticleData> CODEC = RecordCodecBuilder.create_re(i -> i
 		.group(Codec.FLOAT.fieldOf("speed")
 			.forGetter(p -> p.speed))
 		.apply(i, SteamJetParticleData::new));

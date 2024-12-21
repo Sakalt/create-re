@@ -1,14 +1,14 @@
-package com.simibubi.create.foundation.render;
+package com.simibubi.create_re.foundation.render;
 
-import static com.simibubi.create.Create.asResource;
+import static com.simibubi.create_re.Create.asResource;
 
 import org.lwjgl.system.MemoryUtil;
 
-import com.simibubi.create.content.contraptions.actors.ActorInstance;
-import com.simibubi.create.content.kinetics.base.RotatingInstance;
-import com.simibubi.create.content.kinetics.belt.BeltInstance;
-import com.simibubi.create.content.logistics.flwdata.FlapInstance;
-import com.simibubi.create.content.processing.burner.ScrollInstance;
+import com.simibubi.create_re.content.contraptions.actors.ActorInstance;
+import com.simibubi.create_re.content.kinetics.base.RotatingInstance;
+import com.simibubi.create_re.content.kinetics.belt.BeltInstance;
+import com.simibubi.create_re.content.logistics.flwdata.FlapInstance;
+import com.simibubi.create_re.content.processing.burner.ScrollInstance;
 
 import dev.engine_room.flywheel.api.instance.InstanceType;
 import dev.engine_room.flywheel.api.layout.FloatRepr;
@@ -24,7 +24,7 @@ public class AllInstanceTypes {
 	public static final InstanceType<RotatingInstance> ROTATING = SimpleInstanceType.builder(RotatingInstance::new)
 			.cullShader(asResource("instance/cull/rotating.glsl"))
 			.vertexShader(asResource("instance/rotating.vert"))
-			.layout(LayoutBuilder.create()
+			.layout(LayoutBuilder.create_re()
 					.vector("color", FloatRepr.NORMALIZED_UNSIGNED_BYTE, 4)
 					.vector("light", IntegerRepr.SHORT, 2)
 					.vector("overlay", IntegerRepr.SHORT, 2)
@@ -54,7 +54,7 @@ public class AllInstanceTypes {
 	public static final InstanceType<BeltInstance> BELT = SimpleInstanceType.builder(BeltInstance::new)
 			.cullShader(asResource("instance/cull/belt.glsl"))
 			.vertexShader(asResource("instance/belt.vert"))
-			.layout(LayoutBuilder.create()
+			.layout(LayoutBuilder.create_re()
 					.vector("color", FloatRepr.NORMALIZED_UNSIGNED_BYTE, 4)
 					.vector("light", IntegerRepr.SHORT, 2)
 					.vector("overlay", IntegerRepr.SHORT, 2)
@@ -93,7 +93,7 @@ public class AllInstanceTypes {
 	public static final InstanceType<ScrollInstance> SCROLLING = SimpleInstanceType.builder(ScrollInstance::new)
 			.cullShader(asResource("instance/cull/scrolling.glsl"))
 			.vertexShader(asResource("instance/scrolling.vert"))
-			.layout(LayoutBuilder.create()
+			.layout(LayoutBuilder.create_re()
 					.vector("color", FloatRepr.NORMALIZED_UNSIGNED_BYTE, 4)
 					.vector("light", IntegerRepr.SHORT, 2)
 					.vector("overlay", IntegerRepr.SHORT, 2)
@@ -126,7 +126,7 @@ public class AllInstanceTypes {
 	public static final InstanceType<ActorInstance> ACTOR = SimpleInstanceType.builder(ActorInstance::new)
 			.cullShader(asResource("instance/cull/actor.glsl"))
 			.vertexShader(asResource("instance/actor.vert"))
-			.layout(LayoutBuilder.create()
+			.layout(LayoutBuilder.create_re()
 					.vector("pos", FloatRepr.FLOAT, 3)
 					.vector("light", IntegerRepr.SHORT, 2)
 					.scalar("offset", FloatRepr.FLOAT)
@@ -157,7 +157,7 @@ public class AllInstanceTypes {
 	public static final InstanceType<FlapInstance> FLAP = SimpleInstanceType.builder(FlapInstance::new)
 			.cullShader(asResource("instance/cull/flap.glsl"))
 			.vertexShader(asResource("instance/flap.vert"))
-			.layout(LayoutBuilder.create()
+			.layout(LayoutBuilder.create_re()
 					.vector("instancePos", FloatRepr.FLOAT, 3)
 					.vector("light", IntegerRepr.SHORT, 2)
 					.vector("segmentOffset", FloatRepr.FLOAT, 3)

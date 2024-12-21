@@ -1,9 +1,9 @@
-package com.simibubi.create.content.redstone.diodes;
+package com.simibubi.create_re.content.redstone.diodes;
 
 import java.util.Vector;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.data.SpecialBlockStateGen;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.data.SpecialBlockStateGen;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 import com.tterrag.registrate.providers.RegistrateItemModelProvider;
@@ -39,7 +39,7 @@ public abstract class AbstractDiodeGenerator extends SpecialBlockStateGen {
 		return horizontalAngle(state.getValue(AbstractDiodeBlock.FACING));
 	}
 
-	protected abstract <T extends Block> Vector<ModelFile> createModels(DataGenContext<Block, T> ctx,
+	protected abstract <T extends Block> Vector<ModelFile> create_reModels(DataGenContext<Block, T> ctx,
 		BlockModelProvider prov);
 
 	protected abstract int getModelIndex(BlockState state);
@@ -48,7 +48,7 @@ public abstract class AbstractDiodeGenerator extends SpecialBlockStateGen {
 	public final <T extends Block> ModelFile getModel(DataGenContext<Block, T> ctx, RegistrateBlockstateProvider prov,
 		BlockState state) {
 		if (models == null)
-			models = createModels(ctx, prov.models());
+			models = create_reModels(ctx, prov.models());
 		return models.get(getModelIndex(state));
 	}
 

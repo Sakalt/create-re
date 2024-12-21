@@ -1,6 +1,6 @@
 {
-  "parent": "create:block/white_sail",
+  "parent": "create_re:block/white_sail",
   "textures": {
-    "0": "create:block/sail/canvas_light_gray"
+    "0": "create_re:block/sail/canvas_light_gray"
   }
 }

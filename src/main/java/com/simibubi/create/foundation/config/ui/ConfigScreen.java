@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.config.ui;
+package com.simibubi.create_re.foundation.config.ui;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -12,15 +12,15 @@ import org.lwjgl.opengl.GL30;
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.kinetics.simpleRelays.CogWheelBlock;
-import com.simibubi.create.foundation.gui.AbstractSimiScreen;
-import com.simibubi.create.foundation.gui.UIRenderHelper;
-import com.simibubi.create.foundation.gui.element.GuiGameElement;
-import com.simibubi.create.foundation.gui.element.StencilElement;
-import com.simibubi.create.foundation.utility.animation.Force;
-import com.simibubi.create.foundation.utility.animation.PhysicalFloat;
-import com.simibubi.create.infrastructure.gui.CreateMainMenuScreen;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.kinetics.simpleRelays.CogWheelBlock;
+import com.simibubi.create_re.foundation.gui.AbstractSimiScreen;
+import com.simibubi.create_re.foundation.gui.UIRenderHelper;
+import com.simibubi.create_re.foundation.gui.element.GuiGameElement;
+import com.simibubi.create_re.foundation.gui.element.StencilElement;
+import com.simibubi.create_re.foundation.utility.animation.Force;
+import com.simibubi.create_re.foundation.utility.animation.PhysicalFloat;
+import com.simibubi.create_re.infrastructure.gui.CreateMainMenuScreen;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
@@ -44,7 +44,7 @@ public abstract class ConfigScreen extends AbstractSimiScreen {
 	 */
 
 	public static final Map<String, TriConsumer<Screen, GuiGraphics, Float>> backgrounds = new HashMap<>();
-	public static final PhysicalFloat cogSpin = PhysicalFloat.create().withLimit(10f).withDrag(0.3).addForce(new Force.Static(.2f));
+	public static final PhysicalFloat cogSpin = PhysicalFloat.create_re().withLimit(10f).withDrag(0.3).addForce(new Force.Static(.2f));
 	public static final BlockState cogwheelState = AllBlocks.LARGE_COGWHEEL.getDefaultState().setValue(CogWheelBlock.AXIS, Direction.Axis.Y);
 	public static String modID = null;
 	protected final Screen parent;

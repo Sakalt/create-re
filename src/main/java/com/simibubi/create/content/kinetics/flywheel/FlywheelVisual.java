@@ -1,13 +1,13 @@
-package com.simibubi.create.content.kinetics.flywheel;
+package com.simibubi.create_re.content.kinetics.flywheel;
 
 import java.util.function.Consumer;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntityVisual;
-import com.simibubi.create.content.kinetics.base.RotatingInstance;
-import com.simibubi.create.foundation.render.AllInstanceTypes;
-import com.simibubi.create.foundation.render.VirtualRenderHelper;
-import com.simibubi.create.foundation.utility.AngleHelper;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntityVisual;
+import com.simibubi.create_re.content.kinetics.base.RotatingInstance;
+import com.simibubi.create_re.foundation.render.AllInstanceTypes;
+import com.simibubi.create_re.foundation.render.VirtualRenderHelper;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.visual.DynamicVisual;
@@ -28,9 +28,9 @@ public class FlywheelVisual extends KineticBlockEntityVisual<FlywheelBlockEntity
 		super(context, blockEntity, partialTick);
 
 		shaft = setup(instancerProvider().instancer(AllInstanceTypes.ROTATING, VirtualRenderHelper.blockModel(shaft()))
-			.createInstance());
+			.create_reInstance());
 		wheel = instancerProvider().instancer(InstanceTypes.TRANSFORMED, VirtualRenderHelper.blockModel(blockState))
-			.createInstance();
+			.create_reInstance();
 
 		animate(blockEntity.angle);
 	}

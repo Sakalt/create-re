@@ -1,5 +1,5 @@
 {
-  "type": "create:pressing",
+  "type": "create_re:pressing",
   "ingredients": [
     {
       "tag": "forge:ingots/copper"
@@ -7,7 +7,7 @@
   ],
   "results": [
     {
-      "item": "create:copper_sheet"
+      "item": "create_re:copper_sheet"
     }
   ]
 }

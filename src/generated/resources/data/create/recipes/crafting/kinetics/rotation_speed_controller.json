@@ -3,10 +3,10 @@
   "category": "misc",
   "key": {
     "B": {
-      "item": "create:precision_mechanism"
+      "item": "create_re:precision_mechanism"
     },
     "C": {
-      "item": "create:brass_casing"
+      "item": "create_re:brass_casing"
     }
   },
   "pattern": [
@@ -14,7 +14,7 @@
     "C"
   ],
   "result": {
-    "item": "create:rotation_speed_controller"
+    "item": "create_re:rotation_speed_controller"
   },
   "show_notification": true
 }

@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:brass_casing"
+              "create_re:brass_casing"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/logistics/redstone_contact"
+        "recipe": "create_re:crafting/logistics/redstone_contact"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/logistics/redstone_contact"
+      "create_re:crafting/logistics/redstone_contact"
     ]
   },
   "sends_telemetry_event": false

@@ -1,25 +1,25 @@
 {
-  "parent": "create:rose_quartz",
+  "parent": "create_re:rose_quartz",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:deployer_builtin"
+      "trigger": "create_re:deployer_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.deployer.desc"
+      "translate": "advancement.create_re.deployer.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:deployer"
+      "item": "create_re:deployer"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.deployer"
+      "translate": "advancement.create_re.deployer"
     }
   },
   "requirements": [

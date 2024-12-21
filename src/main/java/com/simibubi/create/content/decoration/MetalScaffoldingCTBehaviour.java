@@ -1,9 +1,9 @@
-package com.simibubi.create.content.decoration;
+package com.simibubi.create_re.content.decoration;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create.foundation.block.connected.CTSpriteShiftEntry;
-import com.simibubi.create.foundation.block.connected.HorizontalCTBehaviour;
+import com.simibubi.create_re.foundation.block.connected.CTSpriteShiftEntry;
+import com.simibubi.create_re.foundation.block.connected.HorizontalCTBehaviour;
 
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.core.BlockPos;

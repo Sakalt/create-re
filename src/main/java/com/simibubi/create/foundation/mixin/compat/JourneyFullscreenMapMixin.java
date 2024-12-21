@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.mixin.compat;
+package com.simibubi.create_re.foundation.mixin.compat;
 
 import java.awt.geom.Point2D;
 
@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.At.Shift;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import com.simibubi.create.compat.trainmap.JourneyTrainMap;
+import com.simibubi.create_re.compat.trainmap.JourneyTrainMap;
 
 import journeymap.client.render.map.GridRenderer;
 import journeymap.client.ui.fullscreen.Fullscreen;
@@ -28,7 +28,7 @@ public abstract class JourneyFullscreenMapMixin {
 	public abstract Point2D.Double getMouseDrag();
 
 	@Inject(method = "Ljourneymap/client/ui/fullscreen/Fullscreen;render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V", at = @At(target = "Ljourneymap/client/ui/fullscreen/Fullscreen;drawMap(Lnet/minecraft/client/gui/GuiGraphics;II)V", value = "INVOKE", shift = Shift.AFTER))
-	public void create$journeyMapFullscreenRender(GuiGraphics graphics, int mouseX, int mouseY, float pt,
+	public void create_re$journeyMapFullscreenRender(GuiGraphics graphics, int mouseX, int mouseY, float pt,
 		CallbackInfo ci) {
 		boolean dragging = isScrolling;
 		Point2D.Double mouseDrag = getMouseDrag();

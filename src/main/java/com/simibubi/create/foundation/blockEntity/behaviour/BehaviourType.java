@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.blockEntity.behaviour;
+package com.simibubi.create_re.foundation.blockEntity.behaviour;
 
 public class BehaviourType<T extends BlockEntityBehaviour> {
 

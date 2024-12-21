@@ -1,7 +1,7 @@
-package com.simibubi.create.foundation.ponder.instruction;
+package com.simibubi.create_re.foundation.ponder.instruction;
 
-import com.simibubi.create.foundation.ponder.PonderPalette;
-import com.simibubi.create.foundation.ponder.PonderScene;
+import com.simibubi.create_re.foundation.ponder.PonderPalette;
+import com.simibubi.create_re.foundation.ponder.PonderScene;
 
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;

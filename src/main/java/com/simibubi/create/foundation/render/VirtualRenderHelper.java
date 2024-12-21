@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.render;
+package com.simibubi.create_re.foundation.render;
 
 import java.nio.ByteBuffer;
 
@@ -86,7 +86,7 @@ public class VirtualRenderHelper {
 
 	private static class ThreadLocalObjects {
 		public final PoseStack identityPoseStack = new PoseStack();
-		public final RandomSource random = RandomSource.createNewThreadLocalInstance();
+		public final RandomSource random = RandomSource.create_reNewThreadLocalInstance();
 		public final ShadedBlockSbbBuilder sbbBuilder = new ShadedBlockSbbBuilder();
 	}
 }

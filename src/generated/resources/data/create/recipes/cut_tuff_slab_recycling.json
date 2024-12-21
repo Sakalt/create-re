@@ -3,13 +3,13 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "create:cut_tuff_slab"
+      "item": "create_re:cut_tuff_slab"
     },
     {
-      "item": "create:cut_tuff_slab"
+      "item": "create_re:cut_tuff_slab"
     }
   ],
   "result": {
-    "item": "create:cut_tuff"
+    "item": "create_re:cut_tuff"
   }
 }

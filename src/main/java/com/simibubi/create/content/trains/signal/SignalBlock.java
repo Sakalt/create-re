@@ -1,11 +1,11 @@
-package com.simibubi.create.content.trains.signal;
+package com.simibubi.create_re.content.trains.signal;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -28,7 +28,7 @@ import net.minecraft.world.level.block.state.properties.EnumProperty;
 
 public class SignalBlock extends Block implements IBE<SignalBlockEntity>, IWrenchable {
 
-	public static final EnumProperty<SignalType> TYPE = EnumProperty.create("type", SignalType.class);
+	public static final EnumProperty<SignalType> TYPE = EnumProperty.create_re("type", SignalType.class);
 	public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
 
 	public enum SignalType implements StringRepresentable {
@@ -52,8 +52,8 @@ public class SignalBlock extends Block implements IBE<SignalBlockEntity>, IWrenc
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
-		super.createBlockStateDefinition(pBuilder.add(TYPE, POWERED));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
+		super.create_reBlockStateDefinition(pBuilder.add(TYPE, POWERED));
 	}
 
 	@Override

@@ -1,12 +1,12 @@
-package com.simibubi.create.content.trains.schedule.condition;
+package com.simibubi.create_re.content.trains.schedule.condition;
 
 import java.util.function.Supplier;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.content.trains.entity.Train;
-import com.simibubi.create.content.trains.schedule.Schedule;
-import com.simibubi.create.content.trains.schedule.ScheduleDataEntry;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.trains.entity.Train;
+import com.simibubi.create_re.content.trains.schedule.Schedule;
+import com.simibubi.create_re.content.trains.schedule.ScheduleDataEntry;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.MutableComponent;

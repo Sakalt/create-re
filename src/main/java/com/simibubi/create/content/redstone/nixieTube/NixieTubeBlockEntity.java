@@ -1,17 +1,17 @@
-package com.simibubi.create.content.redstone.nixieTube;
+package com.simibubi.create_re.content.redstone.nixieTube;
 
 import java.lang.ref.WeakReference;
 import java.util.List;
 import java.util.Optional;
 
-import com.simibubi.create.content.redstone.displayLink.DisplayLinkBlock;
-import com.simibubi.create.content.trains.signal.SignalBlockEntity;
-import com.simibubi.create.content.trains.signal.SignalBlockEntity.SignalState;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.DynamicComponent;
+import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkBlock;
+import com.simibubi.create_re.content.trains.signal.SignalBlockEntity;
+import com.simibubi.create_re.content.trains.signal.SignalBlockEntity.SignalState;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.DynamicComponent;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -23,7 +23,7 @@ import net.minecraft.world.level.block.state.BlockState;
 
 public class NixieTubeBlockEntity extends SmartBlockEntity {
 
-	private static final Couple<String> EMPTY = Couple.create("", "");
+	private static final Couple<String> EMPTY = Couple.create_re("", "");
 
 	private int redstoneStrength;
 	private Optional<DynamicComponent> customText;
@@ -113,9 +113,9 @@ public class NixieTubeBlockEntity extends SmartBlockEntity {
 		customText.map(DynamicComponent::resolve)
 			.ifPresentOrElse(
 				fullText -> displayedStrings =
-					Couple.create(charOrEmpty(fullText, nixieIndex * 2), charOrEmpty(fullText, nixieIndex * 2 + 1)),
+					Couple.create_re(charOrEmpty(fullText, nixieIndex * 2), charOrEmpty(fullText, nixieIndex * 2 + 1)),
 				() -> displayedStrings =
-					Couple.create(redstoneStrength < 10 ? "0" : "1", String.valueOf(redstoneStrength % 10)));
+					Couple.create_re(redstoneStrength < 10 ? "0" : "1", String.valueOf(redstoneStrength % 10)));
 	}
 
 	public void clearCustomText() {

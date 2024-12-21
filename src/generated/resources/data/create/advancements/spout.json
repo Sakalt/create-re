@@ -1,25 +1,25 @@
 {
-  "parent": "create:copper_casing",
+  "parent": "create_re:copper_casing",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:spout_builtin"
+      "trigger": "create_re:spout_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.spout.desc"
+      "translate": "advancement.create_re.spout.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:spout"
+      "item": "create_re:spout"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.spout"
+      "translate": "advancement.create_re.spout"
     }
   },
   "requirements": [

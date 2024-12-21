@@ -1,5 +1,5 @@
 {
-  "type": "create:splashing",
+  "type": "create_re:splashing",
   "ingredients": [
     {
       "tag": "forge:flour/wheat"
@@ -7,7 +7,7 @@
   ],
   "results": [
     {
-      "item": "create:dough"
+      "item": "create_re:dough"
     }
   ]
 }

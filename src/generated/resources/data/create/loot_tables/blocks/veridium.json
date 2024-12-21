@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:veridium"
+          "name": "create_re:veridium"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/veridium"
+  "random_sequence": "create_re:blocks/veridium"
 }

@@ -1,15 +1,15 @@
-package com.simibubi.create.content.equipment.armor;
+package com.simibubi.create_re.content.equipment.armor;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
 
-import com.simibubi.create.AllEnchantments;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.AllTags;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllEnchantments;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.AllTags;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;

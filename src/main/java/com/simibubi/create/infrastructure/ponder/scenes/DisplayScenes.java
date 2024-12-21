@@ -1,19 +1,19 @@
-package com.simibubi.create.infrastructure.ponder.scenes;
+package com.simibubi.create_re.infrastructure.ponder.scenes;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.equipment.clipboard.ClipboardOverrides;
-import com.simibubi.create.content.equipment.clipboard.ClipboardOverrides.ClipboardType;
-import com.simibubi.create.foundation.ponder.ElementLink;
-import com.simibubi.create.foundation.ponder.PonderPalette;
-import com.simibubi.create.foundation.ponder.SceneBuilder;
-import com.simibubi.create.foundation.ponder.SceneBuildingUtil;
-import com.simibubi.create.foundation.ponder.Selection;
-import com.simibubi.create.foundation.ponder.element.InputWindowElement;
-import com.simibubi.create.foundation.ponder.element.WorldSectionElement;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.Pointing;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.equipment.clipboard.ClipboardOverrides;
+import com.simibubi.create_re.content.equipment.clipboard.ClipboardOverrides.ClipboardType;
+import com.simibubi.create_re.foundation.ponder.ElementLink;
+import com.simibubi.create_re.foundation.ponder.PonderPalette;
+import com.simibubi.create_re.foundation.ponder.SceneBuilder;
+import com.simibubi.create_re.foundation.ponder.SceneBuildingUtil;
+import com.simibubi.create_re.foundation.ponder.Selection;
+import com.simibubi.create_re.foundation.ponder.element.InputWindowElement;
+import com.simibubi.create_re.foundation.ponder.element.WorldSectionElement;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.Pointing;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -98,7 +98,7 @@ public class DisplayScenes {
 		scene.idle(60);
 
 		ItemStack item = AllItems.PROPELLER.asStack();
-		scene.world.createItemOnBeltLike(depotPos, Direction.SOUTH, item);
+		scene.world.create_reItemOnBeltLike(depotPos, Direction.SOUTH, item);
 		scene.idle(20);
 
 		scene.overlay.showControls(new InputWindowElement(util.vector.topOf(linkPos), Pointing.DOWN).rightClick(), 60);
@@ -116,7 +116,7 @@ public class DisplayScenes {
 
 		scene.world.removeItemsFromBelt(depotPos);
 		item = AllItems.BLAZE_CAKE.asStack();
-		scene.world.createItemOnBeltLike(depotPos, Direction.SOUTH, item);
+		scene.world.create_reItemOnBeltLike(depotPos, Direction.SOUTH, item);
 		scene.world.setDisplayBoardText(board, 1, item.getHoverName());
 		scene.world.flashDisplayLink(linkPos);
 		scene.idle(20);
@@ -130,7 +130,7 @@ public class DisplayScenes {
 		scene.idle(30);
 		scene.world.removeItemsFromBelt(depotPos);
 		item = AllBlocks.DISPLAY_BOARD.asStack();
-		scene.world.createItemOnBeltLike(depotPos, Direction.SOUTH, item);
+		scene.world.create_reItemOnBeltLike(depotPos, Direction.SOUTH, item);
 		scene.world.setDisplayBoardText(board, 1, item.getHoverName());
 		scene.world.flashDisplayLink(linkPos);
 		scene.idle(50);
@@ -315,21 +315,21 @@ public class DisplayScenes {
 		scene.idle(50);
 
 		ItemStack item = AllItems.PROPELLER.asStack();
-		scene.world.createItemOnBeltLike(depotPos, Direction.SOUTH, item);
+		scene.world.create_reItemOnBeltLike(depotPos, Direction.SOUTH, item);
 		scene.world.setDisplayBoardText(board, 1, item.getHoverName());
 		scene.world.flashDisplayLink(linkPos);
 		scene.idle(50);
 
 		scene.world.removeItemsFromBelt(depotPos);
 		item = AllItems.BLAZE_CAKE.asStack();
-		scene.world.createItemOnBeltLike(depotPos, Direction.SOUTH, item);
+		scene.world.create_reItemOnBeltLike(depotPos, Direction.SOUTH, item);
 		scene.world.setDisplayBoardText(board, 1, item.getHoverName());
 		scene.world.flashDisplayLink(linkPos);
 		scene.idle(50);
 
 		scene.world.removeItemsFromBelt(depotPos);
 		item = AllBlocks.DISPLAY_BOARD.asStack();
-		scene.world.createItemOnBeltLike(depotPos, Direction.SOUTH, item);
+		scene.world.create_reItemOnBeltLike(depotPos, Direction.SOUTH, item);
 		scene.world.setDisplayBoardText(board, 1, item.getHoverName());
 		scene.world.flashDisplayLink(linkPos);
 		scene.idle(50);
@@ -417,13 +417,13 @@ public class DisplayScenes {
 		scene.idle(50);
 		scene.world.removeItemsFromBelt(depotPos);
 		ItemStack item = new ItemStack(Items.AMETHYST_BLOCK);
-		scene.world.createItemOnBeltLike(depotPos, Direction.SOUTH, item);
+		scene.world.create_reItemOnBeltLike(depotPos, Direction.SOUTH, item);
 		scene.idle(20);
 
 		scene.idle(30);
 		scene.world.removeItemsFromBelt(depotPos);
 		item = new ItemStack(Items.GOLD_BLOCK);
-		scene.world.createItemOnBeltLike(depotPos, Direction.SOUTH, item);
+		scene.world.create_reItemOnBeltLike(depotPos, Direction.SOUTH, item);
 		scene.idle(50);
 
 		scene.world.toggleRedstonePower(redstone);

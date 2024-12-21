@@ -1,14 +1,14 @@
-package com.simibubi.create.foundation.data.recipe;
+package com.simibubi.create_re.foundation.data.recipe;
 
-import static com.simibubi.create.foundation.data.recipe.Mods.GS;
-import static com.simibubi.create.foundation.data.recipe.Mods.IC2;
-import static com.simibubi.create.foundation.data.recipe.Mods.IE;
-import static com.simibubi.create.foundation.data.recipe.Mods.IF;
-import static com.simibubi.create.foundation.data.recipe.Mods.MEK;
-import static com.simibubi.create.foundation.data.recipe.Mods.OREGANIZED;
-import static com.simibubi.create.foundation.data.recipe.Mods.TH;
+import static com.simibubi.create_re.foundation.data.recipe.Mods.GS;
+import static com.simibubi.create_re.foundation.data.recipe.Mods.IC2;
+import static com.simibubi.create_re.foundation.data.recipe.Mods.IE;
+import static com.simibubi.create_re.foundation.data.recipe.Mods.IF;
+import static com.simibubi.create_re.foundation.data.recipe.Mods.MEK;
+import static com.simibubi.create_re.foundation.data.recipe.Mods.OREGANIZED;
+import static com.simibubi.create_re.foundation.data.recipe.Mods.TH;
 
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 public enum CompatMetals {
 	ALUMINUM(IE, IC2),

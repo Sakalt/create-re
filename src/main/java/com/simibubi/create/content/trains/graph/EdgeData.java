@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.graph;
+package com.simibubi.create_re.content.trains.graph;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -9,12 +9,12 @@ import java.util.UUID;
 import javax.annotation.Nullable;
 
 import com.google.common.base.Objects;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.trains.signal.SignalBoundary;
-import com.simibubi.create.content.trains.signal.SignalEdgeGroup;
-import com.simibubi.create.content.trains.signal.TrackEdgePoint;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.NBTHelper;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.trains.signal.SignalBoundary;
+import com.simibubi.create_re.content.trains.signal.SignalEdgeGroup;
+import com.simibubi.create_re.content.trains.signal.TrackEdgePoint;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.Tag;
@@ -88,7 +88,7 @@ public class EdgeData {
 		TrackEdgeIntersection intersection = new TrackEdgeIntersection();
 		intersection.id = id;
 		intersection.location = position;
-		intersection.target = Couple.create(loc1, loc2);
+		intersection.target = Couple.create_re(loc1, loc2);
 		intersection.targetLocation = targetPosition;
 		intersections.add(intersection);
 		graph.deferIntersectionUpdate(edge);

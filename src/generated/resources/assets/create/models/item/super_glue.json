@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "create:item/super_glue"
+    "layer0": "create_re:item/super_glue"
   }
 }

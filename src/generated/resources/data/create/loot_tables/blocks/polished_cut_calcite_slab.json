@@ -11,7 +11,7 @@
               "add": false,
               "conditions": [
                 {
-                  "block": "create:polished_cut_calcite_slab",
+                  "block": "create_re:polished_cut_calcite_slab",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "type": "double"
@@ -25,11 +25,11 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "create:polished_cut_calcite_slab"
+          "name": "create_re:polished_cut_calcite_slab"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/polished_cut_calcite_slab"
+  "random_sequence": "create_re:blocks/polished_cut_calcite_slab"
 }

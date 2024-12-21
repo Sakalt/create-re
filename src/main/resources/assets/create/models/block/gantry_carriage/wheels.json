@@ -1,10 +1,10 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "create:block/large_wheels",
+	"parent": "create_re:block/large_wheels",
 	"texture_size": [32, 32],
 	"textures": {
-		"3": "create:block/cogwheel",
-		"particle": "create:block/andesite_casing"
+		"3": "create_re:block/cogwheel",
+		"particle": "create_re:block/andesite_casing"
 	},
 	"elements": [
 		{

@@ -1,4 +1,4 @@
-package com.simibubi.create.compat.jei;
+package com.simibubi.create_re.compat.jei;
 
 import java.util.Optional;
 
@@ -6,9 +6,9 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.content.equipment.blueprint.BlueprintAssignCompleteRecipePacket;
-import com.simibubi.create.content.equipment.blueprint.BlueprintMenu;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.content.equipment.blueprint.BlueprintAssignCompleteRecipePacket;
+import com.simibubi.create_re.content.equipment.blueprint.BlueprintMenu;
 
 import mezz.jei.api.constants.RecipeTypes;
 import mezz.jei.api.gui.ingredient.IRecipeSlotsView;

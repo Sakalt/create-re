@@ -1,6 +1,6 @@
 {
-  "parent": "create:block/toolbox/block",
+  "parent": "create_re:block/toolbox/block",
   "textures": {
-    "0": "create:block/toolbox/white"
+    "0": "create_re:block/toolbox/white"
   }
 }

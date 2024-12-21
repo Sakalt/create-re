@@ -1,13 +1,13 @@
-package com.simibubi.create.content.redstone.link.controller;
+package com.simibubi.create_re.content.redstone.link.controller;
 
 import java.util.function.Consumer;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.redstone.link.RedstoneLinkNetworkHandler;
-import com.simibubi.create.content.redstone.link.RedstoneLinkNetworkHandler.Frequency;
-import com.simibubi.create.foundation.item.render.SimpleCustomRenderer;
-import com.simibubi.create.foundation.utility.Couple;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.redstone.link.RedstoneLinkNetworkHandler;
+import com.simibubi.create_re.content.redstone.link.RedstoneLinkNetworkHandler.Frequency;
+import com.simibubi.create_re.foundation.item.render.SimpleCustomRenderer;
+import com.simibubi.create_re.foundation.utility.Couple;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
@@ -126,14 +126,14 @@ public class LinkedControllerItem extends Item implements MenuProvider {
 
 	public static Couple<RedstoneLinkNetworkHandler.Frequency> toFrequency(ItemStack controller, int slot) {
 		ItemStackHandler frequencyItems = getFrequencyItems(controller);
-		return Couple.create(Frequency.of(frequencyItems.getStackInSlot(slot * 2)),
+		return Couple.create_re(Frequency.of(frequencyItems.getStackInSlot(slot * 2)),
 			Frequency.of(frequencyItems.getStackInSlot(slot * 2 + 1)));
 	}
 
 	@Override
-	public AbstractContainerMenu createMenu(int id, Inventory inv, Player player) {
+	public AbstractContainerMenu create_reMenu(int id, Inventory inv, Player player) {
 		ItemStack heldItem = player.getMainHandItem();
-		return LinkedControllerMenu.create(id, inv, heldItem);
+		return LinkedControllerMenu.create_re(id, inv, heldItem);
 	}
 
 	@Override
@@ -144,7 +144,7 @@ public class LinkedControllerItem extends Item implements MenuProvider {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void initializeClient(Consumer<IClientItemExtensions> consumer) {
-		consumer.accept(SimpleCustomRenderer.create(this, new LinkedControllerItemRenderer()));
+		consumer.accept(SimpleCustomRenderer.create_re(this, new LinkedControllerItemRenderer()));
 	}
 
 }

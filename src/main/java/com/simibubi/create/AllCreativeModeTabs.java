@@ -1,4 +1,4 @@
-package com.simibubi.create;
+package com.simibubi.create_re;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -9,14 +9,14 @@ import java.util.function.Predicate;
 
 import org.apache.commons.lang3.mutable.MutableObject;
 
-import com.simibubi.create.content.contraptions.actors.seat.SeatBlock;
-import com.simibubi.create.content.decoration.palettes.AllPaletteBlocks;
-import com.simibubi.create.content.equipment.armor.BacktankUtil;
-import com.simibubi.create.content.equipment.toolbox.ToolboxBlock;
-import com.simibubi.create.content.kinetics.crank.ValveHandleBlock;
-import com.simibubi.create.foundation.data.CreateRegistrate;
-import com.simibubi.create.foundation.item.TagDependentIngredientItem;
-import com.simibubi.create.foundation.utility.Components;
+import com.simibubi.create_re.content.contraptions.actors.seat.SeatBlock;
+import com.simibubi.create_re.content.decoration.palettes.AllPaletteBlocks;
+import com.simibubi.create_re.content.equipment.armor.BacktankUtil;
+import com.simibubi.create_re.content.equipment.toolbox.ToolboxBlock;
+import com.simibubi.create_re.content.kinetics.crank.ValveHandleBlock;
+import com.simibubi.create_re.foundation.data.CreateRegistrate;
+import com.simibubi.create_re.foundation.item.TagDependentIngredientItem;
+import com.simibubi.create_re.foundation.utility.Components;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.entry.ItemEntry;
 import com.tterrag.registrate.util.entry.ItemProviderEntry;
@@ -55,11 +55,11 @@ import net.minecraftforge.registries.RegistryObject;
 @EventBusSubscriber(bus = Bus.MOD)
 public class AllCreativeModeTabs {
 	private static final DeferredRegister<CreativeModeTab> REGISTER =
-		DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Create.ID);
+		DeferredRegister.create_re(Registries.CREATIVE_MODE_TAB, Create.ID);
 
 	public static final RegistryObject<CreativeModeTab> BASE_CREATIVE_TAB = REGISTER.register("base",
 		() -> CreativeModeTab.builder()
-			.title(Components.translatable("itemGroup.create.base"))
+			.title(Components.translatable("itemGroup.create_re.base"))
 			.withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
 			.icon(() -> AllBlocks.COGWHEEL.asStack())
 			.displayItems(new RegistrateDisplayItemsGenerator(true, AllCreativeModeTabs.BASE_CREATIVE_TAB))
@@ -67,7 +67,7 @@ public class AllCreativeModeTabs {
 
 	public static final RegistryObject<CreativeModeTab> PALETTES_CREATIVE_TAB = REGISTER.register("palettes",
 		() -> CreativeModeTab.builder()
-			.title(Components.translatable("itemGroup.create.palettes"))
+			.title(Components.translatable("itemGroup.create_re.palettes"))
 			.withTabsBefore(BASE_CREATIVE_TAB.getKey())
 			.icon(() -> AllPaletteBlocks.ORNATE_IRON_WINDOW.asStack())
 			.displayItems(new RegistrateDisplayItemsGenerator(false, AllCreativeModeTabs.PALETTES_CREATIVE_TAB))

@@ -1,14 +1,14 @@
-package com.simibubi.create.content.logistics.vault;
+package com.simibubi.create_re.content.logistics.vault;
 
 import java.util.List;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.api.connectivity.ConnectivityHandler;
-import com.simibubi.create.foundation.blockEntity.IMultiBlockEntityContainer;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.inventory.VersionedInventoryWrapper;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.api.connectivity.ConnectivityHandler;
+import com.simibubi.create_re.foundation.blockEntity.IMultiBlockEntityContainer;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.inventory.VersionedInventoryWrapper;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

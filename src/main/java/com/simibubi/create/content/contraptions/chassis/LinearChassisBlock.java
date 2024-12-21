@@ -1,11 +1,11 @@
-package com.simibubi.create.content.contraptions.chassis;
+package com.simibubi.create_re.content.contraptions.chassis;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllSpriteShifts;
-import com.simibubi.create.foundation.block.connected.CTSpriteShiftEntry;
-import com.simibubi.create.foundation.block.connected.ConnectedTextureBehaviour;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllSpriteShifts;
+import com.simibubi.create_re.foundation.block.connected.CTSpriteShiftEntry;
+import com.simibubi.create_re.foundation.block.connected.ConnectedTextureBehaviour;
 
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.core.BlockPos;
@@ -23,8 +23,8 @@ import net.minecraft.world.level.block.state.properties.BooleanProperty;
 
 public class LinearChassisBlock extends AbstractChassisBlock {
 
-	public static final BooleanProperty STICKY_TOP = BooleanProperty.create("sticky_top");
-	public static final BooleanProperty STICKY_BOTTOM = BooleanProperty.create("sticky_bottom");
+	public static final BooleanProperty STICKY_TOP = BooleanProperty.create_re("sticky_top");
+	public static final BooleanProperty STICKY_BOTTOM = BooleanProperty.create_re("sticky_bottom");
 
 	public LinearChassisBlock(Properties properties) {
 		super(properties);
@@ -33,9 +33,9 @@ public class LinearChassisBlock extends AbstractChassisBlock {
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
 		builder.add(STICKY_TOP, STICKY_BOTTOM);
-		super.createBlockStateDefinition(builder);
+		super.create_reBlockStateDefinition(builder);
 	}
 
 	@Override

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "create:item/brass_ingot"
+    "layer0": "create_re:item/brass_ingot"
   }
 }

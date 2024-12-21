@@ -1,4 +1,4 @@
-package com.simibubi.create.content.kinetics.base;
+package com.simibubi.create_re.content.kinetics.base;
 
 import javax.annotation.Nullable;
 
@@ -20,8 +20,8 @@ public abstract class AbstractEncasedShaftBlock extends RotatedPillarKineticBloc
     }
 
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        super.createBlockStateDefinition(builder);
+    protected void create_reBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+        super.create_reBlockStateDefinition(builder);
     }
 
     @Override

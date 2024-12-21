@@ -1,5 +1,5 @@
 {
-  "type": "create:crushing",
+  "type": "create_re:crushing",
   "conditions": [
     {
       "type": "forge:not",
@@ -17,15 +17,15 @@
   "processingTime": 400,
   "results": [
     {
-      "item": "create:crushed_raw_quicksilver"
+      "item": "create_re:crushed_raw_quicksilver"
     },
     {
       "chance": 0.75,
-      "item": "create:crushed_raw_quicksilver"
+      "item": "create_re:crushed_raw_quicksilver"
     },
     {
       "chance": 0.75,
-      "item": "create:experience_nugget"
+      "item": "create_re:experience_nugget"
     }
   ]
 }

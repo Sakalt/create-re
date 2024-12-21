@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "create:item/minecart_coupling"
+    "layer0": "create_re:item/minecart_coupling"
   }
 }

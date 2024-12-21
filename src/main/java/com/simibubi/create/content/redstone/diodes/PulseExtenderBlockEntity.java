@@ -1,6 +1,6 @@
-package com.simibubi.create.content.redstone.diodes;
+package com.simibubi.create_re.content.redstone.diodes;
 
-import static com.simibubi.create.content.redstone.diodes.BrassDiodeBlock.POWERING;
+import static com.simibubi.create_re.content.redstone.diodes.BrassDiodeBlock.POWERING;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntityType;

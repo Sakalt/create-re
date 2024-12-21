@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.ponder;
+package com.simibubi.create_re.foundation.ponder;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import net.minecraft.resources.ResourceLocation;
 

@@ -1,6 +1,6 @@
 {
-	"parent": "create:block/track/bogey/textures",
+	"parent": "create_re:block/track/bogey/textures",
 	"loader": "forge:obj",
 	"flip_v": true,
-	"model": "create:models/block/track/bogey/bogey_frame.obj"
+	"model": "create_re:models/block/track/bogey/bogey_frame.obj"
 }

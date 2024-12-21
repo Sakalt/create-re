@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "create:block/andesite_casing_short",
-		"andesite_casing_short": "create:block/andesite_casing_short"
+		"particle": "create_re:block/andesite_casing_short",
+		"andesite_casing_short": "create_re:block/andesite_casing_short"
 	},
 	"elements": [
 		{

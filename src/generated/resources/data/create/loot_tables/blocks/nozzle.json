@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:nozzle"
+          "name": "create_re:nozzle"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/nozzle"
+  "random_sequence": "create_re:blocks/nozzle"
 }

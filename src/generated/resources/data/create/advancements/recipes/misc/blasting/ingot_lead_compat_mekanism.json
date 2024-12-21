@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:crushed_raw_lead"
+              "create_re:crushed_raw_lead"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:blasting/ingot_lead_compat_mekanism"
+        "recipe": "create_re:blasting/ingot_lead_compat_mekanism"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:blasting/ingot_lead_compat_mekanism"
+      "create_re:blasting/ingot_lead_compat_mekanism"
     ]
   },
   "sends_telemetry_event": false

@@ -1,12 +1,12 @@
-package com.simibubi.create.foundation.events;
+package com.simibubi.create_re.foundation.events;
 
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.content.contraptions.elevator.ElevatorControlsHandler;
-import com.simibubi.create.content.equipment.toolbox.ToolboxHandlerClient;
-import com.simibubi.create.content.redstone.link.controller.LinkedControllerClientHandler;
-import com.simibubi.create.content.trains.TrainHUD;
-import com.simibubi.create.content.trains.entity.TrainRelocator;
-import com.simibubi.create.content.trains.track.CurvedTrackInteraction;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.content.contraptions.elevator.ElevatorControlsHandler;
+import com.simibubi.create_re.content.equipment.toolbox.ToolboxHandlerClient;
+import com.simibubi.create_re.content.redstone.link.controller.LinkedControllerClientHandler;
+import com.simibubi.create_re.content.trains.TrainHUD;
+import com.simibubi.create_re.content.trains.entity.TrainRelocator;
+import com.simibubi.create_re.content.trains.track.CurvedTrackInteraction;
 
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;

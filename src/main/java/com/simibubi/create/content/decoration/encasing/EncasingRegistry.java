@@ -1,4 +1,4 @@
-package com.simibubi.create.content.decoration.encasing;
+package com.simibubi.create_re.content.decoration.encasing;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -3,10 +3,10 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "create:valve_handles"
+      "tag": "create_re:valve_handles"
     }
   ],
   "result": {
-    "item": "create:copper_valve_handle"
+    "item": "create_re:copper_valve_handle"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "parent": "create:block/radial_chassis/side_y",
+  "parent": "create_re:block/radial_chassis/side_y",
   "textures": {
-    "side": "create:block/radial_chassis_side"
+    "side": "create_re:block/radial_chassis_side"
   }
 }

@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/appliances/tree_fertilizer"
+        "recipe": "create_re:crafting/appliances/tree_fertilizer"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/appliances/tree_fertilizer"
+      "create_re:crafting/appliances/tree_fertilizer"
     ]
   },
   "sends_telemetry_event": false

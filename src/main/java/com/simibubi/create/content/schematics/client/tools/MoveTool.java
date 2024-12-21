@@ -1,7 +1,7 @@
-package com.simibubi.create.content.schematics.client.tools;
+package com.simibubi.create_re.content.schematics.client.tools;
 
-import com.simibubi.create.content.schematics.client.SchematicTransformation;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.content.schematics.client.SchematicTransformation;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.Direction.Axis;
 import net.minecraft.world.phys.Vec3;

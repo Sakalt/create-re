@@ -1,11 +1,11 @@
-package com.simibubi.create.content.contraptions.actors.contraptionControls;
+package com.simibubi.create_re.content.contraptions.actors.contraptionControls;
 
 import java.util.Iterator;
 import java.util.List;
 
-import com.simibubi.create.content.contraptions.AbstractContraptionEntity;
-import com.simibubi.create.content.contraptions.Contraption;
-import com.simibubi.create.foundation.networking.SimplePacketBase;
+import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity;
+import com.simibubi.create_re.content.contraptions.Contraption;
+import com.simibubi.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.FriendlyByteBuf;

@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "create:railway_casing"
+      "item": "create_re:railway_casing"
     },
     {
       "item": "minecraft:compass"
@@ -11,6 +11,6 @@
   ],
   "result": {
     "count": 2,
-    "item": "create:track_station"
+    "item": "create_re:track_station"
   }
 }

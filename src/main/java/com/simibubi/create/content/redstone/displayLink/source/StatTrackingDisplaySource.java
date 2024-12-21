@@ -1,10 +1,10 @@
-package com.simibubi.create.content.redstone.displayLink.source;
+package com.simibubi.create_re.content.redstone.displayLink.source;
 
 import java.util.stream.Stream;
 
-import com.simibubi.create.content.redstone.displayLink.DisplayLinkContext;
-import com.simibubi.create.foundation.gui.ModularGuiLineBuilder;
-import com.simibubi.create.foundation.utility.IntAttached;
+import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkContext;
+import com.simibubi.create_re.foundation.gui.ModularGuiLineBuilder;
+import com.simibubi.create_re.foundation.utility.IntAttached;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
@@ -27,7 +27,7 @@ public abstract class StatTrackingDisplaySource extends ScoreboardDisplaySource 
 		if (!(level instanceof ServerLevel sLevel))
 			return Stream.empty();
 
-		String name = "create_auto_" + getObjectiveName();
+		String name = "create_re_auto_" + getObjectiveName();
 		Scoreboard scoreboard = level.getScoreboard();
 		if (!scoreboard.hasObjective(name))
 			scoreboard.addObjective(name, ObjectiveCriteria.DUMMY, getObjectiveDisplayName(), RenderType.INTEGER);

@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:andesite_alloy"
+              "create_re:andesite_alloy"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/logistics/andesite_funnel"
+        "recipe": "create_re:crafting/logistics/andesite_funnel"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/logistics/andesite_funnel"
+      "create_re:crafting/logistics/andesite_funnel"
     ]
   },
   "sends_telemetry_event": false

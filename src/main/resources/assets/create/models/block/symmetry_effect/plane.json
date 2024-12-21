@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "create:block/symmetry_mirror",
-		"1_2": "create:block/brass_block"
+		"0": "create_re:block/symmetry_mirror",
+		"1_2": "create_re:block/brass_block"
 	},
 	"elements": [
 		{

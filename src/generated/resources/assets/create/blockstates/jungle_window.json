@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/jungle_window"
+      "model": "create_re:block/jungle_window"
     }
   }
 }

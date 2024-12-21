@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "create:block/bell_frame_side",
-		"particle": "create:block/bell"
+		"1": "create_re:block/bell_frame_side",
+		"particle": "create_re:block/bell"
 	},
 	"elements": [
 		{

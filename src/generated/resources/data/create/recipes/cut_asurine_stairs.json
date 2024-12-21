@@ -4,7 +4,7 @@
   "group": "cut_asurine_stairs",
   "key": {
     "X": {
-      "item": "create:cut_asurine"
+      "item": "create_re:cut_asurine"
     }
   },
   "pattern": [
@@ -14,7 +14,7 @@
   ],
   "result": {
     "count": 4,
-    "item": "create:cut_asurine_stairs"
+    "item": "create_re:cut_asurine_stairs"
   },
   "show_notification": true
 }

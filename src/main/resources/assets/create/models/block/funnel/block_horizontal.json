@@ -2,12 +2,12 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"back": "create:block/funnel/funnel_back",
-		"base": "create:block/funnel/brass_funnel",
-		"direction": "create:block/funnel/brass_funnel_pull",
-		"redstone": "create:block/funnel/brass_funnel_unpowered",
-		"particle": "create:block/brass_block",
-		"block": "create:block/brass_block"
+		"back": "create_re:block/funnel/funnel_back",
+		"base": "create_re:block/funnel/brass_funnel",
+		"direction": "create_re:block/funnel/brass_funnel_pull",
+		"redstone": "create_re:block/funnel/brass_funnel_unpowered",
+		"particle": "create_re:block/brass_block",
+		"block": "create_re:block/brass_block"
 	},
 	"elements": [
 		{

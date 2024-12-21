@@ -1,8 +1,8 @@
-package com.simibubi.create.content.processing.burner;
+package com.simibubi.create_re.content.processing.burner;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.content.processing.burner.BlazeBurnerBlockEntity.FuelType;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlockEntity.FuelType;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:redstone_link"
+          "name": "create_re:redstone_link"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/redstone_link"
+  "random_sequence": "create_re:blocks/redstone_link"
 }

@@ -1,4 +1,4 @@
-package com.simibubi.create.compat.trainmap;
+package com.simibubi.create_re.compat.trainmap;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -6,10 +6,10 @@ import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.compat.trainmap.TrainMapSync.TrainMapSyncEntry;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.compat.trainmap.TrainMapSync.TrainMapSyncEntry;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 public class TrainMapSyncClient {
 

@@ -1,10 +1,10 @@
-package com.simibubi.create.content.decoration.encasing;
+package com.simibubi.create_re.content.decoration.encasing;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.foundation.block.connected.CTSpriteShiftEntry;
-import com.simibubi.create.foundation.block.connected.ConnectedTextureBehaviour;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.foundation.block.connected.CTSpriteShiftEntry;
+import com.simibubi.create_re.foundation.block.connected.ConnectedTextureBehaviour;
 
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.core.BlockPos;

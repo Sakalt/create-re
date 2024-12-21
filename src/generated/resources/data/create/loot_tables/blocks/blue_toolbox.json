@@ -39,11 +39,11 @@
               "source": "block_entity"
             }
           ],
-          "name": "create:blue_toolbox"
+          "name": "create_re:blue_toolbox"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/blue_toolbox"
+  "random_sequence": "create_re:blocks/blue_toolbox"
 }

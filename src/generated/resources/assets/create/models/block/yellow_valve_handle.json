@@ -1,6 +1,6 @@
 {
-  "parent": "create:block/valve_handle",
+  "parent": "create_re:block/valve_handle",
   "textures": {
-    "3": "create:block/valve_handle/valve_handle_yellow"
+    "3": "create_re:block/valve_handle/valve_handle_yellow"
   }
 }

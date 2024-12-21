@@ -1,6 +1,6 @@
-package com.simibubi.create.content.contraptions.actors.trainControls;
+package com.simibubi.create_re.content.contraptions.actors.trainControls;
 
-import com.simibubi.create.foundation.networking.SimplePacketBase;
+import com.simibubi.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraftforge.network.NetworkEvent.Context;

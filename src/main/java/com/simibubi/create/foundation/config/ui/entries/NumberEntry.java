@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.config.ui.entries;
+package com.simibubi.create_re.foundation.config.ui.entries;
 
 import java.lang.reflect.Field;
 import java.util.Locale;
@@ -6,11 +6,11 @@ import java.util.function.Function;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.foundation.config.ui.ConfigTextField;
-import com.simibubi.create.foundation.gui.Theme;
-import com.simibubi.create.foundation.gui.UIRenderHelper;
-import com.simibubi.create.foundation.gui.element.TextStencilElement;
-import com.simibubi.create.foundation.utility.Components;
+import com.simibubi.create_re.foundation.config.ui.ConfigTextField;
+import com.simibubi.create_re.foundation.gui.Theme;
+import com.simibubi.create_re.foundation.gui.UIRenderHelper;
+import com.simibubi.create_re.foundation.gui.element.TextStencilElement;
+import com.simibubi.create_re.foundation.utility.Components;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
@@ -26,7 +26,7 @@ public abstract class NumberEntry<T extends Number> extends ValueEntry<T> {
 	protected EditBox textField;
 
 	@Nullable
-	public static NumberEntry<? extends Number> create(Object type, String label, ForgeConfigSpec.ConfigValue<?> value, ForgeConfigSpec.ValueSpec spec) {
+	public static NumberEntry<? extends Number> create_re(Object type, String label, ForgeConfigSpec.ConfigValue<?> value, ForgeConfigSpec.ValueSpec spec) {
 		if (type instanceof Integer) {
 			return new IntegerEntry(label, (ForgeConfigSpec.ConfigValue<Integer>) value, spec);
 		} else if (type instanceof Float) {

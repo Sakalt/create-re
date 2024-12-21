@@ -1,10 +1,10 @@
-package com.simibubi.create.content.kinetics.transmission;
+package com.simibubi.create_re.content.kinetics.transmission;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.content.kinetics.RotationPropagator;
-import com.simibubi.create.content.kinetics.base.AbstractEncasedShaftBlock;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.foundation.block.IBE;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.content.kinetics.RotationPropagator;
+import com.simibubi.create_re.content.kinetics.base.AbstractEncasedShaftBlock;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.foundation.block.IBE;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
@@ -30,9 +30,9 @@ public class GearshiftBlock extends AbstractEncasedShaftBlock implements IBE<Spl
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
 		builder.add(POWERED);
-		super.createBlockStateDefinition(builder);
+		super.create_reBlockStateDefinition(builder);
 	}
 
 	@Override

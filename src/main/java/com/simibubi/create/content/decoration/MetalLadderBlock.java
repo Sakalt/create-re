@@ -1,13 +1,13 @@
-package com.simibubi.create.content.decoration;
+package com.simibubi.create_re.content.decoration;
 
 import java.util.function.Predicate;
 
-import com.simibubi.create.content.equipment.extendoGrip.ExtendoGripItem;
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
-import com.simibubi.create.foundation.placement.IPlacementHelper;
-import com.simibubi.create.foundation.placement.PlacementHelpers;
-import com.simibubi.create.foundation.placement.PlacementOffset;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.content.equipment.extendoGrip.ExtendoGripItem;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.foundation.placement.IPlacementHelper;
+import com.simibubi.create_re.foundation.placement.PlacementHelpers;
+import com.simibubi.create_re.foundation.placement.PlacementOffset;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;

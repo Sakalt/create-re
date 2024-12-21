@@ -1,14 +1,14 @@
-package com.simibubi.create.content.decoration.bracket;
+package com.simibubi.create_re.content.decoration.bracket;
 
 import java.util.Optional;
 
-import com.simibubi.create.content.fluids.FluidPropagator;
-import com.simibubi.create.content.kinetics.base.DirectionalAxisKineticBlock;
-import com.simibubi.create.content.kinetics.base.RotatedPillarKineticBlock;
-import com.simibubi.create.content.kinetics.simpleRelays.AbstractSimpleShaftBlock;
-import com.simibubi.create.content.kinetics.simpleRelays.CogWheelBlock;
-import com.simibubi.create.foundation.block.WrenchableDirectionalBlock;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.content.fluids.FluidPropagator;
+import com.simibubi.create_re.content.kinetics.base.DirectionalAxisKineticBlock;
+import com.simibubi.create_re.content.kinetics.base.RotatedPillarKineticBlock;
+import com.simibubi.create_re.content.kinetics.simpleRelays.AbstractSimpleShaftBlock;
+import com.simibubi.create_re.content.kinetics.simpleRelays.CogWheelBlock;
+import com.simibubi.create_re.foundation.block.WrenchableDirectionalBlock;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.Direction;
 import net.minecraft.core.Direction.Axis;
@@ -24,7 +24,7 @@ public class BracketBlock extends WrenchableDirectionalBlock {
 
 	public static final BooleanProperty AXIS_ALONG_FIRST_COORDINATE =
 		DirectionalAxisKineticBlock.AXIS_ALONG_FIRST_COORDINATE;
-	public static final EnumProperty<BracketType> TYPE = EnumProperty.create("type", BracketType.class);
+	public static final EnumProperty<BracketType> TYPE = EnumProperty.create_re("type", BracketType.class);
 
 	public static enum BracketType implements StringRepresentable {
 		PIPE, COG, SHAFT;
@@ -37,8 +37,8 @@ public class BracketBlock extends WrenchableDirectionalBlock {
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
-		super.createBlockStateDefinition(builder.add(AXIS_ALONG_FIRST_COORDINATE)
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
+		super.create_reBlockStateDefinition(builder.add(AXIS_ALONG_FIRST_COORDINATE)
 			.add(TYPE));
 	}
 

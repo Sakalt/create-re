@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "create:item/red_sand_paper"
+    "layer0": "create_re:item/red_sand_paper"
   }
 }

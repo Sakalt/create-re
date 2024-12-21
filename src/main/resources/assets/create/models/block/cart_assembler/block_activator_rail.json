@@ -1,5 +1,5 @@
 {
-	"parent": "create:block/cart_assembler/block",
+	"parent": "create_re:block/cart_assembler/block",
     "textures": {
         "rail": "block/activator_rail"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/curiosities/brown_toolbox"
+        "recipe": "create_re:crafting/curiosities/brown_toolbox"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/curiosities/brown_toolbox"
+      "create_re:crafting/curiosities/brown_toolbox"
     ]
   },
   "sends_telemetry_event": false

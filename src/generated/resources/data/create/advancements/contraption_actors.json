@@ -1,25 +1,25 @@
 {
-  "parent": "create:super_glue",
+  "parent": "create_re:super_glue",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:contraption_actors_builtin"
+      "trigger": "create_re:contraption_actors_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.contraption_actors.desc"
+      "translate": "advancement.create_re.contraption_actors.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:mechanical_harvester"
+      "item": "create_re:mechanical_harvester"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.contraption_actors"
+      "translate": "advancement.create_re.contraption_actors"
     }
   },
   "requirements": [

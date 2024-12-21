@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "C": {
-      "item": "create:experience_nugget"
+      "item": "create_re:experience_nugget"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
     "CCC"
   ],
   "result": {
-    "item": "create:experience_block"
+    "item": "create_re:experience_block"
   },
   "show_notification": true
 }

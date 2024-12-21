@@ -1,11 +1,11 @@
-package com.simibubi.create.foundation.block;
+package com.simibubi.create_re.foundation.block;
 
 import java.util.HashSet;
 import java.util.Set;
 
-import com.simibubi.create.AllItems;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionResult;

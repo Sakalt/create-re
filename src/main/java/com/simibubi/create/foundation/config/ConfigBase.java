@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.config;
+package com.simibubi.create_re.foundation.config;
 
 import java.util.ArrayList;
 import java.util.List;

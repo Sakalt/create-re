@@ -1,9 +1,9 @@
-package com.simibubi.create.foundation.item.render;
+package com.simibubi.create_re.foundation.item.render;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create.foundation.render.RenderTypes;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.render.RenderTypes;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -22,7 +22,7 @@ public class PartialItemModelRenderer {
 
 	private static final PartialItemModelRenderer INSTANCE = new PartialItemModelRenderer();
 
-	private final RandomSource random = RandomSource.create();
+	private final RandomSource random = RandomSource.create_re();
 
 	private ItemStack stack;
 	private ItemDisplayContext transformType;

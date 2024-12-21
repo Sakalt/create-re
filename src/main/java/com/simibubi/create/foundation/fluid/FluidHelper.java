@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.fluid;
+package com.simibubi.create_re.foundation.fluid;
 
 import javax.annotation.Nullable;
 
@@ -6,13 +6,13 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonSyntaxException;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.fluids.tank.CreativeFluidTankBlockEntity;
-import com.simibubi.create.content.fluids.transfer.GenericItemEmptying;
-import com.simibubi.create.content.fluids.transfer.GenericItemFilling;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.utility.Pair;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.fluids.tank.CreativeFluidTankBlockEntity;
+import com.simibubi.create_re.content.fluids.transfer.GenericItemEmptying;
+import com.simibubi.create_re.content.fluids.transfer.GenericItemFilling;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.utility.Pair;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
 
 import net.minecraft.nbt.TagParser;
 import net.minecraft.resources.ResourceLocation;
@@ -97,7 +97,7 @@ public class FluidHelper {
 
 	public static boolean hasBlockState(Fluid fluid) {
 		BlockState blockState = fluid.defaultFluidState()
-			.createLegacyBlock();
+			.create_reLegacyBlock();
 		return blockState != null && blockState != Blocks.AIR.defaultBlockState();
 	}
 

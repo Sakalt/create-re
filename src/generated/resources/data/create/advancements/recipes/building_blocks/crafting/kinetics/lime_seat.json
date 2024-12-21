@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/kinetics/lime_seat"
+        "recipe": "create_re:crafting/kinetics/lime_seat"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/kinetics/lime_seat"
+      "create_re:crafting/kinetics/lime_seat"
     ]
   },
   "sends_telemetry_event": false

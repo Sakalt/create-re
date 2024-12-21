@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.recipe;
+package com.simibubi.create_re.foundation.recipe;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -15,7 +15,7 @@ public class DummyCraftingContainer extends TransientCraftingContainer {
 	public DummyCraftingContainer(IItemHandler itemHandler, int[] extractedItemsFromSlot) {
 		super(null, 0, 0);
 
-		this.inv = createInventory(itemHandler, extractedItemsFromSlot);
+		this.inv = create_reInventory(itemHandler, extractedItemsFromSlot);
 	}
 
 	@Override
@@ -57,8 +57,8 @@ public class DummyCraftingContainer extends TransientCraftingContainer {
 	@Override
 	public void fillStackedContents(@NotNull StackedContents helper) {}
 
-	private static NonNullList<ItemStack> createInventory(IItemHandler itemHandler, int[] extractedItemsFromSlot) {
-		NonNullList<ItemStack> inv = NonNullList.create();
+	private static NonNullList<ItemStack> create_reInventory(IItemHandler itemHandler, int[] extractedItemsFromSlot) {
+		NonNullList<ItemStack> inv = NonNullList.create_re();
 
 		for (int slot = 0; slot < itemHandler.getSlots(); slot++) {
 			ItemStack stack = itemHandler.getStackInSlot(slot);

@@ -1,7 +1,7 @@
 {
-	"parent": "create:block/clutch/block",
+	"parent": "create_re:block/clutch/block",
     "textures": {
-        "0": "create:block/clutch_on",
-		"particle": "create:block/clutch_on"
+        "0": "create_re:block/clutch_on",
+		"particle": "create_re:block/clutch_on"
     }
 }

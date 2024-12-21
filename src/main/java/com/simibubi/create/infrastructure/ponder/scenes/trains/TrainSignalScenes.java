@@ -1,20 +1,20 @@
-package com.simibubi.create.infrastructure.ponder.scenes.trains;
+package com.simibubi.create_re.infrastructure.ponder.scenes.trains;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.trains.signal.SignalBlock;
-import com.simibubi.create.content.trains.signal.SignalBlockEntity.SignalState;
-import com.simibubi.create.foundation.ponder.ElementLink;
-import com.simibubi.create.foundation.ponder.PonderPalette;
-import com.simibubi.create.foundation.ponder.SceneBuilder;
-import com.simibubi.create.foundation.ponder.SceneBuildingUtil;
-import com.simibubi.create.foundation.ponder.Selection;
-import com.simibubi.create.foundation.ponder.element.InputWindowElement;
-import com.simibubi.create.foundation.ponder.element.ParrotElement;
-import com.simibubi.create.foundation.ponder.element.ParrotElement.DancePose;
-import com.simibubi.create.foundation.ponder.element.ParrotElement.FacePointOfInterestPose;
-import com.simibubi.create.foundation.ponder.element.WorldSectionElement;
-import com.simibubi.create.foundation.utility.Pointing;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.trains.signal.SignalBlock;
+import com.simibubi.create_re.content.trains.signal.SignalBlockEntity.SignalState;
+import com.simibubi.create_re.foundation.ponder.ElementLink;
+import com.simibubi.create_re.foundation.ponder.PonderPalette;
+import com.simibubi.create_re.foundation.ponder.SceneBuilder;
+import com.simibubi.create_re.foundation.ponder.SceneBuildingUtil;
+import com.simibubi.create_re.foundation.ponder.Selection;
+import com.simibubi.create_re.foundation.ponder.element.InputWindowElement;
+import com.simibubi.create_re.foundation.ponder.element.ParrotElement;
+import com.simibubi.create_re.foundation.ponder.element.ParrotElement.DancePose;
+import com.simibubi.create_re.foundation.ponder.element.ParrotElement.FacePointOfInterestPose;
+import com.simibubi.create_re.foundation.ponder.element.WorldSectionElement;
+import com.simibubi.create_re.foundation.utility.Pointing;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -87,7 +87,7 @@ public class TrainSignalScenes {
 
 		ElementLink<WorldSectionElement> trainElement = scene.world.showIndependentSection(train, Direction.DOWN);
 		Vec3 birbVec = util.vector.centerOf(util.grid.at(2, 3, 6));
-		ElementLink<ParrotElement> birb = scene.special.createBirb(birbVec, FacePointOfInterestPose::new);
+		ElementLink<ParrotElement> birb = scene.special.create_reBirb(birbVec, FacePointOfInterestPose::new);
 
 		scene.idle(10);
 		scene.world.showSection(station, Direction.DOWN);
@@ -287,7 +287,7 @@ public class TrainSignalScenes {
 
 		ElementLink<WorldSectionElement> trainElement = scene.world.showIndependentSection(train1, null);
 		ElementLink<ParrotElement> birb1 =
-			scene.special.createBirb(util.vector.centerOf(18, 3, 7), FacePointOfInterestPose::new);
+			scene.special.create_reBirb(util.vector.centerOf(18, 3, 7), FacePointOfInterestPose::new);
 		scene.world.moveSection(trainElement, util.vector.of(4, 0, 0), 0);
 		scene.world.moveSection(trainElement, util.vector.of(-9, 0, 0), 45);
 		scene.world.animateBogey(util.grid.at(13, 2, 7), 9f, 45);
@@ -312,7 +312,7 @@ public class TrainSignalScenes {
 
 		ElementLink<WorldSectionElement> trainElement2 = scene.world.showIndependentSection(train3, null);
 		ElementLink<ParrotElement> birb2 =
-			scene.special.createBirb(util.vector.centerOf(18, 3, 7), FacePointOfInterestPose::new);
+			scene.special.create_reBirb(util.vector.centerOf(18, 3, 7), FacePointOfInterestPose::new);
 		scene.world.moveSection(trainElement2, util.vector.of(4, 0, 6), 0);
 		scene.world.moveSection(trainElement2, util.vector.of(-4.5, 0, 0), 35);
 		scene.world.animateBogey(util.grid.at(13, 2, 1), 4.5f, 35);
@@ -385,7 +385,7 @@ public class TrainSignalScenes {
 
 		trainElement = scene.world.showIndependentSection(train1, Direction.DOWN);
 		scene.world.moveSection(trainElement, util.vector.of(-10.5, 0, 0), 0);
-		birb1 = scene.special.createBirb(util.vector.centerOf(3, 3, 7)
+		birb1 = scene.special.create_reBirb(util.vector.centerOf(3, 3, 7)
 			.add(.5, 0, 0), DancePose::new);
 		scene.idle(10);
 		scene.world.changeSignalState(s2Pos, SignalState.RED);
@@ -402,7 +402,7 @@ public class TrainSignalScenes {
 		scene.idle(10);
 
 		trainElement2 = scene.world.showIndependentSection(train3, null);
-		birb2 = scene.special.createBirb(util.vector.centerOf(18, 3, 7), FacePointOfInterestPose::new);
+		birb2 = scene.special.create_reBirb(util.vector.centerOf(18, 3, 7), FacePointOfInterestPose::new);
 
 		scene.world.moveSection(trainElement2, util.vector.of(4, 0, 6), 0);
 		scene.world.moveSection(trainElement2, util.vector.of(-4.5, 0, 0), 35);
@@ -448,7 +448,7 @@ public class TrainSignalScenes {
 		scene.world.moveSection(trainElement3a, util.vector.of(-20, 0, 20), 40);
 		scene.world.animateBogey(util.grid.at(13, 2, 4), -20f, 40);
 		ElementLink<ParrotElement> birb3 =
-			scene.special.createBirb(util.vector.of(18, 3.5, -2), FacePointOfInterestPose::new);
+			scene.special.create_reBirb(util.vector.of(18, 3.5, -2), FacePointOfInterestPose::new);
 		scene.special.moveParrot(birb3, util.vector.of(-20, 0, 20), 40);
 		scene.idle(5);
 
@@ -544,7 +544,7 @@ public class TrainSignalScenes {
 
 		scene.world.toggleControls(util.grid.at(6, 3, 5));
 		scene.world.showSection(train, Direction.DOWN);
-		scene.special.createBirb(util.vector.centerOf(util.grid.at(6, 3, 4)), DancePose::new);
+		scene.special.create_reBirb(util.vector.centerOf(util.grid.at(6, 3, 4)), DancePose::new);
 		scene.idle(10);
 		scene.world.toggleRedstonePower(comparator);
 		scene.effects.indicateRedstone(signalPos);

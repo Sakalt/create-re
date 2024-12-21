@@ -1,11 +1,11 @@
-package com.simibubi.create.content.kinetics.base;
+package com.simibubi.create_re.content.kinetics.base;
 
 import java.util.List;
 
-import com.simibubi.create.content.kinetics.KineticNetwork;
-import com.simibubi.create.content.kinetics.base.IRotate.SpeedLevel;
-import com.simibubi.create.content.kinetics.base.IRotate.StressImpact;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.content.kinetics.KineticNetwork;
+import com.simibubi.create_re.content.kinetics.base.IRotate.SpeedLevel;
+import com.simibubi.create_re.content.kinetics.base.IRotate.StressImpact;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
@@ -131,10 +131,10 @@ public abstract class GeneratingKineticBlockEntity extends KineticBlockEntity {
 			return;
 		}
 
-		// Now turning - create a new Network
+		// Now turning - create_re a new Network
 		if (prevSpeed == 0) {
 			setSpeed(speed);
-			setNetwork(createNetworkId());
+			setNetwork(create_reNetworkId());
 			attachKinetics();
 			return;
 		}
@@ -153,7 +153,7 @@ public abstract class GeneratingKineticBlockEntity extends KineticBlockEntity {
 			detachKinetics();
 			setSpeed(speed);
 			source = null;
-			setNetwork(createNetworkId());
+			setNetwork(create_reNetworkId());
 			attachKinetics();
 			return;
 		}
@@ -164,7 +164,7 @@ public abstract class GeneratingKineticBlockEntity extends KineticBlockEntity {
 		attachKinetics();
 	}
 
-	public Long createNetworkId() {
+	public Long create_reNetworkId() {
 		return worldPosition.asLong();
 	}
 }

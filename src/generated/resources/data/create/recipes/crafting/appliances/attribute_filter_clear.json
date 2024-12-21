@@ -3,10 +3,10 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "create:attribute_filter"
+      "item": "create_re:attribute_filter"
     }
   ],
   "result": {
-    "item": "create:attribute_filter"
+    "item": "create_re:attribute_filter"
   }
 }

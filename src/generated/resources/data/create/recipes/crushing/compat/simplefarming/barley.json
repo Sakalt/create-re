@@ -1,5 +1,5 @@
 {
-  "type": "create:crushing",
+  "type": "create_re:crushing",
   "conditions": [
     {
       "type": "forge:mod_loaded",
@@ -14,12 +14,12 @@
   "processingTime": 150,
   "results": [
     {
-      "item": "create:wheat_flour"
+      "item": "create_re:wheat_flour"
     },
     {
       "chance": 0.25,
       "count": 2,
-      "item": "create:wheat_flour"
+      "item": "create_re:wheat_flour"
     },
     {
       "chance": 0.25,

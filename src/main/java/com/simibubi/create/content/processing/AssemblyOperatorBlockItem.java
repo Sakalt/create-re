@@ -1,9 +1,9 @@
-package com.simibubi.create.content.processing;
+package com.simibubi.create_re.content.processing;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.kinetics.belt.BeltBlock;
-import com.simibubi.create.content.kinetics.belt.BeltSlope;
-import com.simibubi.create.content.processing.basin.BasinBlock;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlock;
+import com.simibubi.create_re.content.kinetics.belt.BeltSlope;
+import com.simibubi.create_re.content.processing.basin.BasinBlock;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

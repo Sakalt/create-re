@@ -1,8 +1,8 @@
-package com.simibubi.create.content.kinetics.flywheel;
+package com.simibubi.create_re.content.kinetics.flywheel;
 
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat.Chaser;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat.Chaser;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
@@ -20,8 +20,8 @@ public class FlywheelBlockEntity extends KineticBlockEntity {
 	}
 
 	@Override
-	protected AABB createRenderBoundingBox() {
-		return super.createRenderBoundingBox().inflate(2);
+	protected AABB create_reRenderBoundingBox() {
+		return super.create_reRenderBoundingBox().inflate(2);
 	}
 
 	@Override

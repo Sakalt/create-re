@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "C": {
-      "item": "create:andesite_alloy"
+      "item": "create_re:andesite_alloy"
     },
     "S": {
       "tag": "forge:plates/iron"
@@ -15,7 +15,7 @@
     "SSS"
   ],
   "result": {
-    "item": "create:whisk"
+    "item": "create_re:whisk"
   },
   "show_notification": true
 }

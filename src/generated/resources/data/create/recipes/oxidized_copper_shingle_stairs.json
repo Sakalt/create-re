@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "X": {
-      "item": "create:oxidized_copper_shingles"
+      "item": "create_re:oxidized_copper_shingles"
     }
   },
   "pattern": [
@@ -13,7 +13,7 @@
   ],
   "result": {
     "count": 4,
-    "item": "create:oxidized_copper_shingle_stairs"
+    "item": "create_re:oxidized_copper_shingle_stairs"
   },
   "show_notification": true
 }

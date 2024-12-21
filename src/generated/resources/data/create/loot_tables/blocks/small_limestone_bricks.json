@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:small_limestone_bricks"
+          "name": "create_re:small_limestone_bricks"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/small_limestone_bricks"
+  "random_sequence": "create_re:blocks/small_limestone_bricks"
 }

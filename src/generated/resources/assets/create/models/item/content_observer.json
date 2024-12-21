@@ -1,3 +1,3 @@
 {
-  "parent": "create:block/content_observer/block"
+  "parent": "create_re:block/content_observer/block"
 }

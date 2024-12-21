@@ -1,7 +1,7 @@
-package com.simibubi.create.content.redstone.link;
+package com.simibubi.create_re.content.redstone.link;
 
-import com.simibubi.create.content.redstone.link.RedstoneLinkNetworkHandler.Frequency;
-import com.simibubi.create.foundation.utility.Couple;
+import com.simibubi.create_re.content.redstone.link.RedstoneLinkNetworkHandler.Frequency;
+import com.simibubi.create_re.foundation.utility.Couple;
 
 import net.minecraft.core.BlockPos;
 

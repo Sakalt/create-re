@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 1,
   "ingredient": {
-    "tag": "create:stone_types/limestone"
+    "tag": "create_re:stone_types/limestone"
   },
-  "result": "create:polished_cut_limestone_wall"
+  "result": "create_re:polished_cut_limestone_wall"
 }

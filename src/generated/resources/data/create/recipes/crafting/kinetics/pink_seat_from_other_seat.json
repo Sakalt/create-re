@@ -6,10 +6,10 @@
       "tag": "forge:dyes/pink"
     },
     {
-      "tag": "create:seats"
+      "tag": "create_re:seats"
     }
   ],
   "result": {
-    "item": "create:pink_seat"
+    "item": "create_re:pink_seat"
   }
 }

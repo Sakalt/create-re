@@ -1,14 +1,14 @@
-package com.simibubi.create.content.contraptions.bearing;
+package com.simibubi.create_re.content.contraptions.bearing;
 
 import java.util.function.Consumer;
 
 import org.joml.Quaternionf;
 
 import com.mojang.math.Axis;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.kinetics.base.BackHalfShaftVisual;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.foundation.utility.AngleHelper;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.kinetics.base.BackHalfShaftVisual;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.visual.DynamicVisual;
@@ -39,7 +39,7 @@ public class BearingVisual<B extends KineticBlockEntity & IBearingBlockEntity> e
 				blockEntity.isWoodenTop() ? AllPartialModels.BEARING_TOP_WOODEN : AllPartialModels.BEARING_TOP;
 
 		topInstance = instancerProvider().instancer(InstanceTypes.ORIENTED, Models.partial(top))
-				.createInstance();
+				.create_reInstance();
 
 		topInstance.position(getVisualPosition())
 				.rotation(blockOrientation)

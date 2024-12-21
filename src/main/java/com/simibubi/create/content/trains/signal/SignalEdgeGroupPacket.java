@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.signal;
+package com.simibubi.create_re.content.trains.signal;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.Map;
 import java.util.UUID;
 
 import com.google.common.collect.ImmutableList;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.foundation.networking.SimplePacketBase;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.foundation.networking.SimplePacketBase;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraftforge.network.NetworkEvent.Context;

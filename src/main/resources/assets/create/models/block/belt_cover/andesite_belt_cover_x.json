@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "create:block/funnel/andesite_funnel_frame",
-		"1": "create:block/andesite_belt_cover"
+		"0": "create_re:block/funnel/andesite_funnel_frame",
+		"1": "create_re:block/andesite_belt_cover"
 	},
 	"elements": [
 		{

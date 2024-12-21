@@ -1,4 +1,4 @@
-package com.simibubi.create.infrastructure.command;
+package com.simibubi.create_re.infrastructure.command;
 
 import static net.minecraft.commands.Commands.argument;
 import static net.minecraft.commands.Commands.literal;
@@ -15,11 +15,11 @@ import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.brigadier.suggestion.Suggestions;
 import com.mojang.brigadier.suggestion.SuggestionsBuilder;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.content.schematics.SchematicExport;
-import com.simibubi.create.content.schematics.SchematicExport.SchematicExportResult;
-import com.simibubi.create.content.schematics.client.SchematicAndQuillHandler;
-import com.simibubi.create.foundation.utility.Components;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.content.schematics.SchematicExport;
+import com.simibubi.create_re.content.schematics.SchematicExport.SchematicExportResult;
+import com.simibubi.create_re.content.schematics.client.SchematicAndQuillHandler;
+import com.simibubi.create_re.foundation.utility.Components;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
@@ -33,7 +33,7 @@ import net.minecraftforge.fml.loading.FMLPaths;
 public class CreateTestCommand {
 	private static final Path gametests = FMLPaths.GAMEDIR.get()
 			.getParent()
-			.resolve("src/main/resources/data/create/structures/gametest")
+			.resolve("src/main/resources/data/create_re/structures/gametest")
 			.toAbsolutePath();
 
 	public static ArgumentBuilder<CommandSourceStack, ?> register() {

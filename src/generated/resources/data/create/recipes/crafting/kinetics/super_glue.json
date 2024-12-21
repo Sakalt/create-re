@@ -17,7 +17,7 @@
     "NA"
   ],
   "result": {
-    "item": "create:super_glue"
+    "item": "create_re:super_glue"
   },
   "show_notification": true
 }

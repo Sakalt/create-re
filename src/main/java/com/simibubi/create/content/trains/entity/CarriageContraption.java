@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.entity;
+package com.simibubi.create_re.content.trains.entity;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -9,22 +9,22 @@ import java.util.Optional;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.contraptions.AbstractContraptionEntity;
-import com.simibubi.create.content.contraptions.AssemblyException;
-import com.simibubi.create.content.contraptions.Contraption;
-import com.simibubi.create.content.contraptions.ContraptionType;
-import com.simibubi.create.content.contraptions.MountedStorageManager;
-import com.simibubi.create.content.contraptions.actors.trainControls.ControlsBlock;
-import com.simibubi.create.content.contraptions.minecart.TrainCargoManager;
-import com.simibubi.create.content.processing.burner.BlazeBurnerBlock;
-import com.simibubi.create.content.processing.burner.BlazeBurnerBlock.HeatLevel;
-import com.simibubi.create.content.trains.bogey.AbstractBogeyBlock;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity;
+import com.simibubi.create_re.content.contraptions.AssemblyException;
+import com.simibubi.create_re.content.contraptions.Contraption;
+import com.simibubi.create_re.content.contraptions.ContraptionType;
+import com.simibubi.create_re.content.contraptions.MountedStorageManager;
+import com.simibubi.create_re.content.contraptions.actors.trainControls.ControlsBlock;
+import com.simibubi.create_re.content.contraptions.minecart.TrainCargoManager;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock.HeatLevel;
+import com.simibubi.create_re.content.trains.bogey.AbstractBogeyBlock;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -73,7 +73,7 @@ public class CarriageContraption extends Contraption {
 	public CarriageContraption() {
 		conductorSeats = new HashMap<>();
 		assembledBlazeBurners = new ArrayList<>();
-		blazeBurnerConductors = Couple.create(false, false);
+		blazeBurnerConductors = Couple.create_re(false, false);
 		soundQueue = new ArrivalSoundQueue();
 		portalCutoffMin = Integer.MIN_VALUE;
 		portalCutoffMax = Integer.MAX_VALUE;
@@ -110,7 +110,7 @@ public class CarriageContraption extends Contraption {
 		for (BlockPos seatPos : getSeats())
 			for (Direction direction : Iterate.directionsInAxis(assemblyDirection.getAxis()))
 				if (inControl(seatPos, direction))
-					conductorSeats.computeIfAbsent(seatPos, p -> Couple.create(false, false))
+					conductorSeats.computeIfAbsent(seatPos, p -> Couple.create_re(false, false))
 						.set(direction != assemblyDirection, true);
 
 		return true;
@@ -214,11 +214,11 @@ public class CarriageContraption extends Contraption {
 		forwardControls = nbt.getBoolean("FrontControls");
 		backwardControls = nbt.getBoolean("BackControls");
 		blazeBurnerConductors =
-			Couple.create(nbt.getBoolean("FrontBlazeConductor"), nbt.getBoolean("BackBlazeConductor"));
+			Couple.create_re(nbt.getBoolean("FrontBlazeConductor"), nbt.getBoolean("BackBlazeConductor"));
 		conductorSeats.clear();
 		NBTHelper.iterateCompoundList(nbt.getList("ConductorSeats", Tag.TAG_COMPOUND),
 			c -> conductorSeats.put(NbtUtils.readBlockPos(c.getCompound("Pos")),
-				Couple.create(c.getBoolean("Forward"), c.getBoolean("Backward"))));
+				Couple.create_re(c.getBoolean("Forward"), c.getBoolean("Backward"))));
 		soundQueue.deserialize(nbt);
 		super.readNBT(world, nbt, spawnData);
 	}

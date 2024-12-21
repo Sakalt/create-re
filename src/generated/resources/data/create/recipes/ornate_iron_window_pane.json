@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "create:ornate_iron_window"
+      "item": "create_re:ornate_iron_window"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 16,
-    "item": "create:ornate_iron_window_pane"
+    "item": "create_re:ornate_iron_window_pane"
   },
   "show_notification": true
 }

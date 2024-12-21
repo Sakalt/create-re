@@ -4,7 +4,7 @@
   "group": "cut_scoria_stairs",
   "key": {
     "X": {
-      "item": "create:cut_scoria"
+      "item": "create_re:cut_scoria"
     }
   },
   "pattern": [
@@ -14,7 +14,7 @@
   ],
   "result": {
     "count": 4,
-    "item": "create:cut_scoria_stairs"
+    "item": "create_re:cut_scoria_stairs"
   },
   "show_notification": true
 }

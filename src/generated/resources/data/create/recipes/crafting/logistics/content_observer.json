@@ -3,13 +3,13 @@
   "category": "misc",
   "key": {
     "B": {
-      "item": "create:brass_casing"
+      "item": "create_re:brass_casing"
     },
     "I": {
       "item": "minecraft:observer"
     },
     "R": {
-      "item": "create:electron_tube"
+      "item": "create_re:electron_tube"
     }
   },
   "pattern": [
@@ -18,7 +18,7 @@
     "I"
   ],
   "result": {
-    "item": "create:content_observer"
+    "item": "create_re:content_observer"
   },
   "show_notification": true
 }

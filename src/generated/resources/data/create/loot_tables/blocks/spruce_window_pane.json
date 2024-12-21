@@ -21,11 +21,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:spruce_window_pane"
+          "name": "create_re:spruce_window_pane"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/spruce_window_pane"
+  "random_sequence": "create_re:blocks/spruce_window_pane"
 }

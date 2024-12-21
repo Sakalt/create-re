@@ -1,4 +1,4 @@
-package com.simibubi.create.content.kinetics.mechanicalArm;
+package com.simibubi.create_re.content.kinetics.mechanicalArm;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -57,7 +57,7 @@ public abstract class ArmInteractionPointType {
 	public abstract boolean canCreatePoint(Level level, BlockPos pos, BlockState state);
 
 	@Nullable
-	public abstract ArmInteractionPoint createPoint(Level level, BlockPos pos, BlockState state);
+	public abstract ArmInteractionPoint create_rePoint(Level level, BlockPos pos, BlockState state);
 
 	public int getPriority() {
 		return 0;

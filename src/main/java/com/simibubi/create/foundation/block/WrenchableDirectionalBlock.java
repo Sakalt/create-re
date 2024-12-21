@@ -1,6 +1,6 @@
-package com.simibubi.create.foundation.block;
+package com.simibubi.create_re.foundation.block;
 
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
 
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -18,9 +18,9 @@ public class WrenchableDirectionalBlock extends DirectionalBlock implements IWre
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
 		builder.add(FACING);
-		super.createBlockStateDefinition(builder);
+		super.create_reBlockStateDefinition(builder);
 	}
 
 	@Override

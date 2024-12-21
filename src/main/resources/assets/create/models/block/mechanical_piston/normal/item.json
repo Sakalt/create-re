@@ -2,15 +2,15 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "create:block/andesite_casing_piston",
-		"1": "create:block/piston_bottom",
-		"2": "create:block/gearbox",
-		"3": "create:block/piston_inner",
+		"0": "create_re:block/andesite_casing_piston",
+		"1": "create_re:block/piston_bottom",
+		"2": "create_re:block/gearbox",
+		"3": "create_re:block/piston_inner",
 		"4": "block/piston_side",
 		"5": "block/piston_top",
-		"particle": "create:block/axis",
-		"1_0": "create:block/axis",
-		"1_1": "create:block/axis_top"
+		"particle": "create_re:block/axis",
+		"1_0": "create_re:block/axis",
+		"1_1": "create_re:block/axis_top"
 	},
 	"elements": [
 		{

@@ -1,15 +1,15 @@
-package com.simibubi.create.content.decoration.slidingDoor;
+package com.simibubi.create_re.content.decoration.slidingDoor;
 
 import java.util.function.Supplier;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.content.contraptions.ContraptionWorld;
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
-import com.simibubi.create.foundation.block.IBE;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.content.contraptions.ContraptionWorld;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.foundation.block.IBE;
 
-import com.simibubi.create.foundation.block.IHaveBigOutline;
+import com.simibubi.create_re.foundation.block.IHaveBigOutline;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -56,7 +56,7 @@ public class SlidingDoorBlock extends DoorBlock implements IWrenchable, IBE<Slid
 			SoundEvents.METAL_PRESSURE_PLATE_CLICK_OFF, SoundEvents.METAL_PRESSURE_PLATE_CLICK_ON,
 			SoundEvents.STONE_BUTTON_CLICK_OFF, SoundEvents.STONE_BUTTON_CLICK_ON);
 
-	public static final BooleanProperty VISIBLE = BooleanProperty.create("visible");
+	public static final BooleanProperty VISIBLE = BooleanProperty.create_re("visible");
 	private boolean folds;
 
 	public static SlidingDoorBlock metal(Properties p_52737_, boolean folds) {
@@ -77,8 +77,8 @@ public class SlidingDoorBlock extends DoorBlock implements IWrenchable, IBE<Slid
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
-		super.createBlockStateDefinition(pBuilder.add(VISIBLE));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
+		super.create_reBlockStateDefinition(pBuilder.add(VISIBLE));
 	}
 
 	@Override

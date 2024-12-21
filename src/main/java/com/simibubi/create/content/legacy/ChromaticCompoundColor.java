@@ -1,7 +1,7 @@
-package com.simibubi.create.content.legacy;
+package com.simibubi.create_re.content.legacy;
 
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.Color;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.Color;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.color.item.ItemColor;

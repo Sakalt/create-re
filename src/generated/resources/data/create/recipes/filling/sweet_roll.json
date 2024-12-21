@@ -1,5 +1,5 @@
 {
-  "type": "create:filling",
+  "type": "create_re:filling",
   "ingredients": [
     {
       "item": "minecraft:bread"
@@ -11,7 +11,7 @@
   ],
   "results": [
     {
-      "item": "create:sweet_roll"
+      "item": "create_re:sweet_roll"
     }
   ]
 }

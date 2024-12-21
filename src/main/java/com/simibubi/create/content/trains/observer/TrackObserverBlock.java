@@ -1,8 +1,8 @@
-package com.simibubi.create.content.trains.observer;
+package com.simibubi.create_re.content.trains.observer;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
-import com.simibubi.create.foundation.block.IBE;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.foundation.block.IBE;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -25,8 +25,8 @@ public class TrackObserverBlock extends Block implements IBE<TrackObserverBlockE
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
-		super.createBlockStateDefinition(pBuilder.add(POWERED));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
+		super.create_reBlockStateDefinition(pBuilder.add(POWERED));
 	}
 
 	@Override

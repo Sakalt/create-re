@@ -1,10 +1,10 @@
-package com.simibubi.create.content.redstone.link;
+package com.simibubi.create_re.content.redstone.link;
 
 import java.util.Arrays;
 
-import com.simibubi.create.AllItems;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.utility.RaycastHelper;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.utility.RaycastHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;

@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "create:block/girder",
-		"particle": "create:block/industrial_iron_block"
+		"0": "create_re:block/girder",
+		"particle": "create_re:block/industrial_iron_block"
 	},
 	"elements": [
 		{

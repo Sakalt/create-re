@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "create:block/station",
-		"particle": "create:block/station"
+		"0": "create_re:block/station",
+		"particle": "create_re:block/station"
 	},
 	"elements": [
 		{

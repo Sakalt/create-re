@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:hand_crank"
+          "name": "create_re:hand_crank"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/hand_crank"
+  "random_sequence": "create_re:blocks/hand_crank"
 }

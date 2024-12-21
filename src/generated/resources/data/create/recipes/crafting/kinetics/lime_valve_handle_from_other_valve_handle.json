@@ -6,10 +6,10 @@
       "tag": "forge:dyes/lime"
     },
     {
-      "tag": "create:valve_handles"
+      "tag": "create_re:valve_handles"
     }
   ],
   "result": {
-    "item": "create:lime_valve_handle"
+    "item": "create_re:lime_valve_handle"
   }
 }

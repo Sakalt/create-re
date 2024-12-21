@@ -1,8 +1,8 @@
-package com.simibubi.create.content.equipment.clipboard;
+package com.simibubi.create_re.content.equipment.clipboard;
 
 import javax.annotation.Nonnull;
 
-import com.simibubi.create.foundation.gui.ScreenOpener;
+import com.simibubi.create_re.foundation.gui.ScreenOpener;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;

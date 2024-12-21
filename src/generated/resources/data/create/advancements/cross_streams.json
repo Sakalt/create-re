@@ -1,16 +1,16 @@
 {
-  "parent": "create:backtank",
+  "parent": "create_re:backtank",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:cross_streams_builtin"
+      "trigger": "create_re:cross_streams_builtin"
     }
   },
   "display": {
     "announce_to_chat": true,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.cross_streams.desc"
+      "translate": "advancement.create_re.cross_streams.desc"
     },
     "frame": "goal",
     "hidden": true,
@@ -19,7 +19,7 @@
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.cross_streams"
+      "translate": "advancement.create_re.cross_streams"
     }
   },
   "requirements": [

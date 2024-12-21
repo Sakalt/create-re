@@ -1,8 +1,8 @@
-package com.simibubi.create.foundation.blockEntity.renderer;
+package com.simibubi.create_re.foundation.blockEntity.renderer;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 
-import com.simibubi.create.foundation.ponder.PonderWorld;
+import com.simibubi.create_re.foundation.ponder.PonderWorld;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.MultiBufferSource;

@@ -1,25 +1,25 @@
 {
-  "parent": "create:fan_processing",
+  "parent": "create_re:fan_processing",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:saw_processing_builtin"
+      "trigger": "create_re:saw_processing_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.saw_processing.desc"
+      "translate": "advancement.create_re.saw_processing.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:mechanical_saw"
+      "item": "create_re:mechanical_saw"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.saw_processing"
+      "translate": "advancement.create_re.saw_processing"
     }
   },
   "requirements": [

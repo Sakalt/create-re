@@ -1,7 +1,7 @@
-package com.simibubi.create.foundation.data.recipe;
+package com.simibubi.create_re.foundation.data.recipe;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllRecipeTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllRecipeTypes;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
@@ -14,10 +14,10 @@ public class CuttingRecipeGen extends ProcessingRecipeGen {
 
 	GeneratedRecipe
 
-	ANDESITE_ALLOY = create(I::andesiteAlloy, b -> b.duration(200)
+	ANDESITE_ALLOY = create_re(I::andesiteAlloy, b -> b.duration(200)
 		.output(AllBlocks.SHAFT.get(), 6)),
 
-		BAMBOO_PLANKS = create(() -> Blocks.BAMBOO_PLANKS, b -> b.duration(20)
+		BAMBOO_PLANKS = create_re(() -> Blocks.BAMBOO_PLANKS, b -> b.duration(20)
 			.output(Blocks.BAMBOO_MOSAIC, 1)),
 
 		OAK_WOOD = stripAndMakePlanks(Blocks.OAK_WOOD, Blocks.STRIPPED_OAK_WOOD, Blocks.OAK_PLANKS),
@@ -173,9 +173,9 @@ public class CuttingRecipeGen extends ProcessingRecipeGen {
 	}
 
 	GeneratedRecipe stripAndMakePlanks(Block wood, Block stripped, Block planks, int planksAmount) {
-		create(() -> wood, b -> b.duration(50)
+		create_re(() -> wood, b -> b.duration(50)
 			.output(stripped));
-		return create(() -> stripped, b -> b.duration(50)
+		return create_re(() -> stripped, b -> b.duration(50)
 			.output(planks, planksAmount));
 	}
 
@@ -207,7 +207,7 @@ public class CuttingRecipeGen extends ProcessingRecipeGen {
 	}
 
 	GeneratedRecipe stripOnlyDiffModId(Mods mod1, String wood, Mods mod2, String stripped) {
-		create("compat/" + mod1.getId() + "/" + wood, b -> b.duration(50)
+		create_re("compat/" + mod1.getId() + "/" + wood, b -> b.duration(50)
 				.require(mod1, wood)
 				.output(1, mod2, stripped, 1)
 				.whenModLoaded(mod1.getId()));
@@ -216,18 +216,18 @@ public class CuttingRecipeGen extends ProcessingRecipeGen {
 
 	GeneratedRecipe stripAndMakePlanks(Mods mod, String wood, String stripped, String planks) {
 		if (wood != null)
-			create("compat/" + mod.getId() + "/" + wood, b -> b.duration(50)
+			create_re("compat/" + mod.getId() + "/" + wood, b -> b.duration(50)
 				.require(mod, wood)
 				.output(1, mod, stripped, 1)
 				.whenModLoaded(mod.getId()));
 		if (planks != null)
 			if (!Objects.equals(mod.getId(), Mods.VH.getId())) {
-				create("compat/" + mod.getId() + "/" + stripped, b -> b.duration(50)
+				create_re("compat/" + mod.getId() + "/" + stripped, b -> b.duration(50)
 						.require(mod, stripped)
 						.output(1, mod, planks, 6)
 						.whenModLoaded(mod.getId()));
 			} else {
-				create("compat/" + mod.getId() + "/" + stripped, b -> b.duration(50)
+				create_re("compat/" + mod.getId() + "/" + stripped, b -> b.duration(50)
 						.require(mod, stripped)
 						.output(1, mod, planks, 4)
 						.whenModLoaded(mod.getId()));

@@ -1,4 +1,4 @@
-package com.simibubi.create.content.schematics.requirement;
+package com.simibubi.create_re.content.schematics.requirement;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import com.simibubi.create.compat.framedblocks.FramedBlocksInSchematics;
-import com.simibubi.create.foundation.data.recipe.Mods;
-import com.simibubi.create.foundation.utility.NBTProcessors;
+import com.simibubi.create_re.compat.framedblocks.FramedBlocksInSchematics;
+import com.simibubi.create_re.foundation.data.recipe.Mods;
+import com.simibubi.create_re.foundation.utility.NBTProcessors;
 
 import net.minecraft.core.Registry;
 import net.minecraft.world.entity.Entity;
@@ -73,7 +73,7 @@ public class ItemRequirement {
 		if (be instanceof ISpecialBlockEntityItemRequirement specialBE)
 			requirement = requirement.union(specialBE.getRequiredItems(state));
 		
-		if (com.simibubi.create.compat.Mods.FRAMEDBLOCKS.contains(block))
+		if (com.simibubi.create_re.compat.Mods.FRAMEDBLOCKS.contains(block))
 			requirement = requirement.union(FramedBlocksInSchematics.getRequiredItems(state, be));
 		
 		return requirement;

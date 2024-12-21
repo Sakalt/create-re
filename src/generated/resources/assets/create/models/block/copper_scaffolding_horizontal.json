@@ -1,10 +1,10 @@
 {
-  "parent": "create:block/scaffold/block_horizontal",
+  "parent": "create_re:block/scaffold/block_horizontal",
   "textures": {
-    "casing": "create:block/copper_casing",
-    "inside": "create:block/scaffold/copper_scaffold_inside",
-    "particle": "create:block/scaffold/copper_scaffold",
-    "side": "create:block/scaffold/copper_scaffold",
-    "top": "create:block/funnel/copper_funnel_frame"
+    "casing": "create_re:block/copper_casing",
+    "inside": "create_re:block/scaffold/copper_scaffold_inside",
+    "particle": "create_re:block/scaffold/copper_scaffold",
+    "side": "create_re:block/scaffold/copper_scaffold",
+    "top": "create_re:block/funnel/copper_funnel_frame"
   }
 }

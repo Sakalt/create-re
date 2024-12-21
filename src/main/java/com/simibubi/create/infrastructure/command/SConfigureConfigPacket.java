@@ -1,4 +1,4 @@
-package com.simibubi.create.infrastructure.command;
+package com.simibubi.create_re.infrastructure.command;
 
 import java.util.function.Consumer;
 import java.util.function.Supplier;
@@ -6,20 +6,20 @@ import java.util.function.Supplier;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.equipment.goggles.GoggleConfigScreen;
-import com.simibubi.create.content.trains.CameraDistanceModifier;
-import com.simibubi.create.foundation.config.ui.BaseConfigScreen;
-import com.simibubi.create.foundation.config.ui.ConfigHelper;
-import com.simibubi.create.foundation.config.ui.SubMenuConfigScreen;
-import com.simibubi.create.foundation.gui.ScreenOpener;
-import com.simibubi.create.foundation.networking.SimplePacketBase;
-import com.simibubi.create.foundation.ponder.PonderRegistry;
-import com.simibubi.create.foundation.ponder.ui.PonderIndexScreen;
-import com.simibubi.create.foundation.ponder.ui.PonderUI;
-import com.simibubi.create.foundation.utility.CameraAngleAnimationService;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.equipment.goggles.GoggleConfigScreen;
+import com.simibubi.create_re.content.trains.CameraDistanceModifier;
+import com.simibubi.create_re.foundation.config.ui.BaseConfigScreen;
+import com.simibubi.create_re.foundation.config.ui.ConfigHelper;
+import com.simibubi.create_re.foundation.config.ui.SubMenuConfigScreen;
+import com.simibubi.create_re.foundation.gui.ScreenOpener;
+import com.simibubi.create_re.foundation.networking.SimplePacketBase;
+import com.simibubi.create_re.foundation.ponder.PonderRegistry;
+import com.simibubi.create_re.foundation.ponder.ui.PonderIndexScreen;
+import com.simibubi.create_re.foundation.ponder.ui.PonderUI;
+import com.simibubi.create_re.foundation.utility.CameraAngleAnimationService;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;

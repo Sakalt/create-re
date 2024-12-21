@@ -1,7 +1,7 @@
 {
-  "parent": "create:block/bracket/pipe/wall",
+  "parent": "create_re:block/bracket/pipe/wall",
   "textures": {
-    "bracket": "create:block/bracket_wooden",
-    "plate": "create:block/bracket_plate_wooden"
+    "bracket": "create_re:block/bracket_wooden",
+    "plate": "create_re:block/bracket_plate_wooden"
   }
 }

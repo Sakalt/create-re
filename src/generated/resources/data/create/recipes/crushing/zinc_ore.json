@@ -1,22 +1,22 @@
 {
-  "type": "create:crushing",
+  "type": "create_re:crushing",
   "ingredients": [
     {
-      "item": "create:zinc_ore"
+      "item": "create_re:zinc_ore"
     }
   ],
   "processingTime": 250,
   "results": [
     {
-      "item": "create:crushed_raw_zinc"
+      "item": "create_re:crushed_raw_zinc"
     },
     {
       "chance": 0.75,
-      "item": "create:crushed_raw_zinc"
+      "item": "create_re:crushed_raw_zinc"
     },
     {
       "chance": 0.75,
-      "item": "create:experience_nugget"
+      "item": "create_re:experience_nugget"
     },
     {
       "chance": 0.125,

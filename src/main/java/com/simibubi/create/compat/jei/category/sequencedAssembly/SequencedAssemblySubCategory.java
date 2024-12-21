@@ -1,15 +1,15 @@
-package com.simibubi.create.compat.jei.category.sequencedAssembly;
+package com.simibubi.create_re.compat.jei.category.sequencedAssembly;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.compat.jei.category.CreateRecipeCategory;
-import com.simibubi.create.compat.jei.category.animations.AnimatedDeployer;
-import com.simibubi.create.compat.jei.category.animations.AnimatedPress;
-import com.simibubi.create.compat.jei.category.animations.AnimatedSaw;
-import com.simibubi.create.compat.jei.category.animations.AnimatedSpout;
-import com.simibubi.create.content.kinetics.deployer.DeployerApplicationRecipe;
-import com.simibubi.create.content.processing.sequenced.SequencedRecipe;
-import com.simibubi.create.foundation.fluid.FluidIngredient;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.compat.jei.category.CreateRecipeCategory;
+import com.simibubi.create_re.compat.jei.category.animations.AnimatedDeployer;
+import com.simibubi.create_re.compat.jei.category.animations.AnimatedPress;
+import com.simibubi.create_re.compat.jei.category.animations.AnimatedSaw;
+import com.simibubi.create_re.compat.jei.category.animations.AnimatedSpout;
+import com.simibubi.create_re.content.kinetics.deployer.DeployerApplicationRecipe;
+import com.simibubi.create_re.content.processing.sequenced.SequencedRecipe;
+import com.simibubi.create_re.foundation.fluid.FluidIngredient;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import mezz.jei.api.forge.ForgeTypes;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;

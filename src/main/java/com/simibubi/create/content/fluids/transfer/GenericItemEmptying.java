@@ -1,11 +1,11 @@
-package com.simibubi.create.content.fluids.transfer;
+package com.simibubi.create_re.content.fluids.transfer;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.content.fluids.potion.PotionFluidHandler;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.AllRecipeTypes;
+import com.simibubi.create_re.content.fluids.potion.PotionFluidHandler;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.PotionItem;

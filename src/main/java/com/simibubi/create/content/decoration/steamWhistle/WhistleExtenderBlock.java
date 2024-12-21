@@ -1,10 +1,10 @@
-package com.simibubi.create.content.decoration.steamWhistle;
+package com.simibubi.create_re.content.decoration.steamWhistle;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.content.decoration.steamWhistle.WhistleBlock.WhistleSize;
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.content.decoration.steamWhistle.WhistleBlock.WhistleSize;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -33,7 +33,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class WhistleExtenderBlock extends Block implements IWrenchable {
 
 	public static final EnumProperty<WhistleExtenderShape> SHAPE =
-		EnumProperty.create("shape", WhistleExtenderShape.class);
+		EnumProperty.create_re("shape", WhistleExtenderShape.class);
 	public static final EnumProperty<WhistleSize> SIZE = WhistleBlock.SIZE;
 
 	public static enum WhistleExtenderShape implements StringRepresentable {
@@ -154,8 +154,8 @@ public class WhistleExtenderBlock extends Block implements IWrenchable {
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
-		super.createBlockStateDefinition(pBuilder.add(SHAPE, SIZE));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
+		super.create_reBlockStateDefinition(pBuilder.add(SHAPE, SIZE));
 	}
 
 	@Override

@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"1": "create:block/chute_large",
-		"6": "create:block/pulley_magnet",
-		"particle": "create:block/pulley_magnet"
+		"1": "create_re:block/chute_large",
+		"6": "create_re:block/pulley_magnet",
+		"particle": "create_re:block/pulley_magnet"
 	},
 	"elements": [
 		{

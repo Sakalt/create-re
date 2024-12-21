@@ -1,8 +1,8 @@
-package com.simibubi.create.content.trains.graph;
+package com.simibubi.create_re.content.trains.graph;
 
 import java.util.UUID;
 
-import com.simibubi.create.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Couple;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.Tag;

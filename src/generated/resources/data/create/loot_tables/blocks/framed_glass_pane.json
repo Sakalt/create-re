@@ -21,11 +21,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:framed_glass_pane"
+          "name": "create_re:framed_glass_pane"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/framed_glass_pane"
+  "random_sequence": "create_re:blocks/framed_glass_pane"
 }

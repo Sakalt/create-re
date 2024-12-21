@@ -1,6 +1,6 @@
-package com.simibubi.create.content.kinetics.gauge;
+package com.simibubi.create_re.content.kinetics.gauge;
 
-import com.simibubi.create.foundation.networking.BlockEntityConfigurationPacket;
+import com.simibubi.create_re.foundation.networking.BlockEntityConfigurationPacket;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;

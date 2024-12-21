@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:small_rose_quartz_tiles"
+          "name": "create_re:small_rose_quartz_tiles"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/small_rose_quartz_tiles"
+  "random_sequence": "create_re:blocks/small_rose_quartz_tiles"
 }

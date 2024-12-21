@@ -1,4 +1,4 @@
-package com.simibubi.create.content.kinetics.base;
+package com.simibubi.create_re.content.kinetics.base;
 
 import java.util.Locale;
 
@@ -9,8 +9,8 @@ import com.mojang.serialization.DataResult;
 import com.mojang.serialization.DynamicOps;
 import com.mojang.serialization.codecs.PrimitiveCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import com.simibubi.create.AllParticleTypes;
-import com.simibubi.create.foundation.particle.ICustomParticleDataWithSprite;
+import com.simibubi.create_re.AllParticleTypes;
+import com.simibubi.create_re.foundation.particle.ICustomParticleDataWithSprite;
 
 import net.minecraft.client.particle.ParticleEngine.SpriteParticleRegistration;
 import net.minecraft.core.Direction.Axis;
@@ -33,7 +33,7 @@ public class RotationIndicatorParticleData
 
 		@Override
 		public <T> T write(final DynamicOps<T> ops, final Character value) {
-			return ops.createShort((short) value.charValue());
+			return ops.create_reShort((short) value.charValue());
 		}
 
 		@Override
@@ -42,7 +42,7 @@ public class RotationIndicatorParticleData
 		}
 	};
 
-	public static final Codec<RotationIndicatorParticleData> CODEC = RecordCodecBuilder.create(i -> i
+	public static final Codec<RotationIndicatorParticleData> CODEC = RecordCodecBuilder.create_re(i -> i
 		.group(Codec.INT.fieldOf("color")
 			.forGetter(p -> p.color),
 			Codec.FLOAT.fieldOf("speed")

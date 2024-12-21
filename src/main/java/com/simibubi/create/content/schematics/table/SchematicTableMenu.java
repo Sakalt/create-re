@@ -1,8 +1,8 @@
-package com.simibubi.create.content.schematics.table;
+package com.simibubi.create_re.content.schematics.table;
 
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllMenuTypes;
-import com.simibubi.create.foundation.gui.menu.MenuBase;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllMenuTypes;
+import com.simibubi.create_re.foundation.gui.menu.MenuBase;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
@@ -28,7 +28,7 @@ public class SchematicTableMenu extends MenuBase<SchematicTableBlockEntity> {
 		super(type, id, inv, be);
 	}
 
-	public static SchematicTableMenu create(int id, Inventory inv, SchematicTableBlockEntity be) {
+	public static SchematicTableMenu create_re(int id, Inventory inv, SchematicTableBlockEntity be) {
 		return new SchematicTableMenu(AllMenuTypes.SCHEMATIC_TABLE.get(), id, inv, be);
 	}
 
@@ -52,7 +52,7 @@ public class SchematicTableMenu extends MenuBase<SchematicTableBlockEntity> {
 	}
 
 	@Override
-	protected SchematicTableBlockEntity createOnClient(FriendlyByteBuf extraData) {
+	protected SchematicTableBlockEntity create_reOnClient(FriendlyByteBuf extraData) {
 		ClientLevel world = Minecraft.getInstance().level;
 		BlockEntity blockEntity = world.getBlockEntity(extraData.readBlockPos());
 		if (blockEntity instanceof SchematicTableBlockEntity schematicTable) {

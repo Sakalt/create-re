@@ -1,9 +1,9 @@
-package com.simibubi.create.content.kinetics.base;
+package com.simibubi.create_re.content.kinetics.base;
 
 import java.util.function.Consumer;
 
-import com.simibubi.create.foundation.render.AllInstanceTypes;
-import com.simibubi.create.foundation.render.VirtualRenderHelper;
+import com.simibubi.create_re.foundation.render.AllInstanceTypes;
+import com.simibubi.create_re.foundation.render.VirtualRenderHelper;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.model.Model;
@@ -16,7 +16,7 @@ public class SingleRotatingVisual<T extends KineticBlockEntity> extends KineticB
 	public SingleRotatingVisual(VisualizationContext context, T blockEntity, float partialTick) {
 		super(context, blockEntity, partialTick);
 		rotatingModel = instancerProvider().instancer(AllInstanceTypes.ROTATING, model())
-				.createInstance();
+				.create_reInstance();
 		setup(rotatingModel);
 	}
 

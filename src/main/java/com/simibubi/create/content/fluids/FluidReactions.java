@@ -1,11 +1,11 @@
-package com.simibubi.create.content.fluids;
+package com.simibubi.create_re.content.fluids;
 
-import com.simibubi.create.AllFluids;
-import com.simibubi.create.api.event.PipeCollisionEvent;
-import com.simibubi.create.foundation.advancement.AdvancementBehaviour;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.fluid.FluidHelper;
-import com.simibubi.create.foundation.utility.BlockHelper;
+import com.simibubi.create_re.AllFluids;
+import com.simibubi.create_re.api.event.PipeCollisionEvent;
+import com.simibubi.create_re.foundation.advancement.AdvancementBehaviour;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.fluid.FluidHelper;
+import com.simibubi.create_re.foundation.utility.BlockHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.FluidTags;

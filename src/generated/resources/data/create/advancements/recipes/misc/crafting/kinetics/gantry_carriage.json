@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:andesite_casing"
+              "create_re:andesite_casing"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/kinetics/gantry_carriage"
+        "recipe": "create_re:crafting/kinetics/gantry_carriage"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/kinetics/gantry_carriage"
+      "create_re:crafting/kinetics/gantry_carriage"
     ]
   },
   "sends_telemetry_event": false

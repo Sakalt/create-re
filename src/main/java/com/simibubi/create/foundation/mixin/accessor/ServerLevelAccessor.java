@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.mixin.accessor;
+package com.simibubi.create_re.foundation.mixin.accessor;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Accessor;
@@ -9,5 +9,5 @@ import net.minecraft.world.level.entity.EntityTickList;
 @Mixin(ServerLevel.class)
 public interface ServerLevelAccessor {
 	@Accessor("entityTickList")
-	EntityTickList create$getEntityTickList();
+	EntityTickList create_re$getEntityTickList();
 }

@@ -1,13 +1,13 @@
-package com.simibubi.create.content.trains.track;
+package com.simibubi.create_re.content.trains.track;
 
-import static com.simibubi.create.AllShapes.TRACK_ASC;
-import static com.simibubi.create.AllShapes.TRACK_CROSS;
-import static com.simibubi.create.AllShapes.TRACK_CROSS_DIAG;
-import static com.simibubi.create.AllShapes.TRACK_CROSS_DIAG_ORTHO;
-import static com.simibubi.create.AllShapes.TRACK_CROSS_ORTHO_DIAG;
-import static com.simibubi.create.AllShapes.TRACK_DIAG;
-import static com.simibubi.create.AllShapes.TRACK_ORTHO;
-import static com.simibubi.create.AllShapes.TRACK_ORTHO_LONG;
+import static com.simibubi.create_re.AllShapes.TRACK_ASC;
+import static com.simibubi.create_re.AllShapes.TRACK_CROSS;
+import static com.simibubi.create_re.AllShapes.TRACK_CROSS_DIAG;
+import static com.simibubi.create_re.AllShapes.TRACK_CROSS_DIAG_ORTHO;
+import static com.simibubi.create_re.AllShapes.TRACK_CROSS_ORTHO_DIAG;
+import static com.simibubi.create_re.AllShapes.TRACK_DIAG;
+import static com.simibubi.create_re.AllShapes.TRACK_ORTHO;
+import static com.simibubi.create_re.AllShapes.TRACK_ORTHO_LONG;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -19,38 +19,38 @@ import java.util.Random;
 import java.util.Set;
 import java.util.function.Consumer;
 
-import com.simibubi.create.foundation.block.IHaveBigOutline;
+import com.simibubi.create_re.foundation.block.IHaveBigOutline;
 
 import org.jetbrains.annotations.Nullable;
 
 import com.google.common.base.Predicates;
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.AllTags;
-import com.simibubi.create.content.decoration.girder.GirderBlock;
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
-import com.simibubi.create.content.schematics.requirement.ISpecialBlockItemRequirement;
-import com.simibubi.create.content.schematics.requirement.ItemRequirement;
-import com.simibubi.create.content.schematics.requirement.ItemRequirement.ItemUseType;
-import com.simibubi.create.content.trains.CubeParticleData;
-import com.simibubi.create.content.trains.graph.TrackNodeLocation;
-import com.simibubi.create.content.trains.graph.TrackNodeLocation.DiscoveredLocation;
-import com.simibubi.create.content.trains.station.StationBlockEntity;
-import com.simibubi.create.content.trains.track.TrackTargetingBehaviour.RenderedTrackOverlayType;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.block.ProperWaterloggedBlock;
-import com.simibubi.create.foundation.block.render.MultiPosDestructionHandler;
-import com.simibubi.create.foundation.block.render.ReducedDestroyEffects;
-import com.simibubi.create.foundation.utility.AngleHelper;
-import com.simibubi.create.foundation.utility.BlockFace;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.Pair;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.AllTags;
+import com.simibubi.create_re.content.decoration.girder.GirderBlock;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.content.schematics.requirement.ISpecialBlockItemRequirement;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement.ItemUseType;
+import com.simibubi.create_re.content.trains.CubeParticleData;
+import com.simibubi.create_re.content.trains.graph.TrackNodeLocation;
+import com.simibubi.create_re.content.trains.graph.TrackNodeLocation.DiscoveredLocation;
+import com.simibubi.create_re.content.trains.station.StationBlockEntity;
+import com.simibubi.create_re.content.trains.track.TrackTargetingBehaviour.RenderedTrackOverlayType;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.block.ProperWaterloggedBlock;
+import com.simibubi.create_re.foundation.block.render.MultiPosDestructionHandler;
+import com.simibubi.create_re.foundation.block.render.ReducedDestroyEffects;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
+import com.simibubi.create_re.foundation.utility.BlockFace;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.Pair;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 import dev.engine_room.flywheel.lib.transform.TransformStack;
@@ -107,8 +107,8 @@ import net.minecraftforge.client.extensions.common.IClientBlockExtensions;
 public class TrackBlock extends Block
 	implements IBE<TrackBlockEntity>, IWrenchable, ITrackBlock, ISpecialBlockItemRequirement, ProperWaterloggedBlock, IHaveBigOutline {
 
-	public static final EnumProperty<TrackShape> SHAPE = EnumProperty.create("shape", TrackShape.class);
-	public static final BooleanProperty HAS_BE = BooleanProperty.create("turn");
+	public static final EnumProperty<TrackShape> SHAPE = EnumProperty.create_re("shape", TrackShape.class);
+	public static final BooleanProperty HAS_BE = BooleanProperty.create_re("turn");
 
 	protected final TrackMaterial material;
 
@@ -121,8 +121,8 @@ public class TrackBlock extends Block
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> p_49915_) {
-		super.createBlockStateDefinition(p_49915_.add(SHAPE, HAS_BE, WATERLOGGED));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> p_49915_) {
+		super.create_reBlockStateDefinition(p_49915_.add(SHAPE, HAS_BE, WATERLOGGED));
 	}
 
 	@Override
@@ -547,7 +547,7 @@ public class TrackBlock extends Block
 	public BlockEntity newBlockEntity(BlockPos p_153215_, BlockState state) {
 		if (!state.getValue(HAS_BE))
 			return null;
-		return AllBlockEntityTypes.TRACK.create(p_153215_, state);
+		return AllBlockEntityTypes.TRACK.create_re(p_153215_, state);
 	}
 
 	@Override

@@ -1,7 +1,7 @@
 {
-  "parent": "create:block/connected_glass_pane/side_alt",
+  "parent": "create_re:block/connected_glass_pane/side_alt",
   "textures": {
-    "edge": "create:block/palettes/framed_glass_pane_top",
-    "pane": "create:block/palettes/framed_glass"
+    "edge": "create_re:block/palettes/framed_glass_pane_top",
+    "pane": "create_re:block/palettes/framed_glass"
   }
 }

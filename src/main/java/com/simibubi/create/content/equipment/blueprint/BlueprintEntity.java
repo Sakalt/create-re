@@ -1,4 +1,4 @@
-package com.simibubi.create.content.equipment.blueprint;
+package com.simibubi.create_re.content.equipment.blueprint;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,17 +9,17 @@ import javax.annotation.Nullable;
 
 import org.apache.commons.lang3.Validate;
 
-import com.simibubi.create.AllEntityTypes;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.logistics.filter.FilterItemStack;
-import com.simibubi.create.content.schematics.requirement.ISpecialEntityItemRequirement;
-import com.simibubi.create.content.schematics.requirement.ItemRequirement;
-import com.simibubi.create.content.schematics.requirement.ItemRequirement.ItemUseType;
-import com.simibubi.create.foundation.networking.ISyncPersistentData;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.IInteractionChecker;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllEntityTypes;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.logistics.filter.FilterItemStack;
+import com.simibubi.create_re.content.schematics.requirement.ISpecialEntityItemRequirement;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement.ItemUseType;
+import com.simibubi.create_re.foundation.networking.ISyncPersistentData;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.IInteractionChecker;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -512,7 +512,7 @@ public class BlueprintEntity extends HangingEntity
 			if (cachedDisplayItems != null)
 				return cachedDisplayItems;
 			ItemStackHandler items = getItems();
-			return cachedDisplayItems = Couple.create(items.getStackInSlot(9), items.getStackInSlot(10));
+			return cachedDisplayItems = Couple.create_re(items.getStackInSlot(9), items.getStackInSlot(10));
 		}
 
 		public ItemStackHandler getItems() {
@@ -543,8 +543,8 @@ public class BlueprintEntity extends HangingEntity
 		}
 
 		@Override
-		public AbstractContainerMenu createMenu(int id, Inventory inv, Player player) {
-			return BlueprintMenu.create(id, inv, this);
+		public AbstractContainerMenu create_reMenu(int id, Inventory inv, Player player) {
+			return BlueprintMenu.create_re(id, inv, this);
 		}
 
 		@Override

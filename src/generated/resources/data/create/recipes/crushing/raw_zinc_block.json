@@ -1,5 +1,5 @@
 {
-  "type": "create:crushing",
+  "type": "create_re:crushing",
   "ingredients": [
     {
       "tag": "forge:storage_blocks/raw_zinc"
@@ -9,12 +9,12 @@
   "results": [
     {
       "count": 9,
-      "item": "create:crushed_raw_zinc"
+      "item": "create_re:crushed_raw_zinc"
     },
     {
       "chance": 0.75,
       "count": 9,
-      "item": "create:experience_nugget"
+      "item": "create_re:experience_nugget"
     }
   ]
 }

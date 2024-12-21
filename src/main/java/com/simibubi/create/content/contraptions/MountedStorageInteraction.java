@@ -1,10 +1,10 @@
-package com.simibubi.create.content.contraptions;
+package com.simibubi.create_re.content.contraptions;
 
 import java.util.List;
 import java.util.function.Supplier;
 
 import com.google.common.collect.ImmutableList;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.Mth;
@@ -22,7 +22,7 @@ public class MountedStorageInteraction {
 	public static final List<MenuType<?>> menus = ImmutableList.of(MenuType.GENERIC_9x1, MenuType.GENERIC_9x2,
 		MenuType.GENERIC_9x3, MenuType.GENERIC_9x4, MenuType.GENERIC_9x5, MenuType.GENERIC_9x6);
 
-	public static MenuProvider createMenuProvider(Component displayName, IItemHandlerModifiable handler,
+	public static MenuProvider create_reMenuProvider(Component displayName, IItemHandlerModifiable handler,
 		int slotCount, Supplier<Boolean> stillValid) {
 		int rows = Mth.clamp(slotCount / 9, 1, 6);
 		MenuType<?> menuType = menus.get(rows - 1);
@@ -31,7 +31,7 @@ public class MountedStorageInteraction {
 		return new MenuProvider() {
 
 			@Override
-			public AbstractContainerMenu createMenu(int pContainerId, Inventory pPlayerInventory, Player pPlayer) {
+			public AbstractContainerMenu create_reMenu(int pContainerId, Inventory pPlayerInventory, Player pPlayer) {
 				return new ChestMenu(menuType, pContainerId, pPlayerInventory, new StorageInteractionContainer(handler, stillValid),
 					rows);
 			}

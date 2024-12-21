@@ -1,6 +1,6 @@
-package com.simibubi.create.content.kinetics.base;
+package com.simibubi.create_re.content.kinetics.base;
 
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import net.minecraft.core.Direction;
 import net.minecraft.core.Direction.Axis;
@@ -61,7 +61,7 @@ public abstract class RotatedPillarKineticBlock extends KineticBlock {
 	}
 
 	@Override
-	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+	protected void create_reBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		builder.add(AXIS);
 	}
 

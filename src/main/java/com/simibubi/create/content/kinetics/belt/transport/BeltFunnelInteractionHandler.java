@@ -1,12 +1,12 @@
-package com.simibubi.create.content.kinetics.belt.transport;
+package com.simibubi.create_re.content.kinetics.belt.transport;
 
-import com.simibubi.create.content.kinetics.belt.BeltHelper;
-import com.simibubi.create.content.logistics.funnel.BeltFunnelBlock;
-import com.simibubi.create.content.logistics.funnel.BeltFunnelBlock.Shape;
-import com.simibubi.create.content.logistics.funnel.FunnelBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
-import com.simibubi.create.foundation.item.ItemHelper.ExtractionCountMode;
+import com.simibubi.create_re.content.kinetics.belt.BeltHelper;
+import com.simibubi.create_re.content.logistics.funnel.BeltFunnelBlock;
+import com.simibubi.create_re.content.logistics.funnel.BeltFunnelBlock.Shape;
+import com.simibubi.create_re.content.logistics.funnel.FunnelBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.inventory.InvManipulationBehaviour;
+import com.simibubi.create_re.foundation.item.ItemHelper.ExtractionCountMode;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

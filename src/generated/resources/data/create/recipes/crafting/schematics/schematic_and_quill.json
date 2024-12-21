@@ -3,13 +3,13 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "create:empty_schematic"
+      "item": "create_re:empty_schematic"
     },
     {
       "tag": "forge:feathers"
     }
   ],
   "result": {
-    "item": "create:schematic_and_quill"
+    "item": "create_re:schematic_and_quill"
   }
 }

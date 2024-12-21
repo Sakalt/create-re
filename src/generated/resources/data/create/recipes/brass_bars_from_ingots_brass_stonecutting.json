@@ -4,5 +4,5 @@
   "ingredient": {
     "tag": "forge:ingots/brass"
   },
-  "result": "create:brass_bars"
+  "result": "create_re:brass_bars"
 }

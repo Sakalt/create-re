@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:granite_pillar"
+          "name": "create_re:granite_pillar"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/granite_pillar"
+  "random_sequence": "create_re:blocks/granite_pillar"
 }

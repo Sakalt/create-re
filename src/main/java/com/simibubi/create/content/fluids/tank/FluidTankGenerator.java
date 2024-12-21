@@ -1,8 +1,8 @@
-package com.simibubi.create.content.fluids.tank;
+package com.simibubi.create_re.content.fluids.tank;
 
-import com.simibubi.create.content.fluids.tank.FluidTankBlock.Shape;
-import com.simibubi.create.foundation.data.AssetLookup;
-import com.simibubi.create.foundation.data.SpecialBlockStateGen;
+import com.simibubi.create_re.content.fluids.tank.FluidTankBlock.Shape;
+import com.simibubi.create_re.foundation.data.AssetLookup;
+import com.simibubi.create_re.foundation.data.SpecialBlockStateGen;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 

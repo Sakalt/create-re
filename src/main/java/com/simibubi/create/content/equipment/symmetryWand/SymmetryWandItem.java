@@ -1,4 +1,4 @@
-package com.simibubi.create.content.equipment.symmetryWand;
+package com.simibubi.create_re.content.equipment.symmetryWand;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,19 +8,19 @@ import java.util.function.Consumer;
 
 import javax.annotation.Nonnull;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.content.contraptions.mounted.CartAssemblerBlock;
-import com.simibubi.create.content.equipment.symmetryWand.mirror.CrossPlaneMirror;
-import com.simibubi.create.content.equipment.symmetryWand.mirror.EmptyMirror;
-import com.simibubi.create.content.equipment.symmetryWand.mirror.PlaneMirror;
-import com.simibubi.create.content.equipment.symmetryWand.mirror.SymmetryMirror;
-import com.simibubi.create.foundation.gui.ScreenOpener;
-import com.simibubi.create.foundation.item.render.SimpleCustomRenderer;
-import com.simibubi.create.foundation.utility.BlockHelper;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.content.contraptions.mounted.CartAssemblerBlock;
+import com.simibubi.create_re.content.equipment.symmetryWand.mirror.CrossPlaneMirror;
+import com.simibubi.create_re.content.equipment.symmetryWand.mirror.EmptyMirror;
+import com.simibubi.create_re.content.equipment.symmetryWand.mirror.PlaneMirror;
+import com.simibubi.create_re.content.equipment.symmetryWand.mirror.SymmetryMirror;
+import com.simibubi.create_re.foundation.gui.ScreenOpener;
+import com.simibubi.create_re.foundation.item.render.SimpleCustomRenderer;
+import com.simibubi.create_re.foundation.utility.BlockHelper;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -248,9 +248,9 @@ public class SymmetryWandItem extends Item {
 						continue;
 				}
 
-				BlockSnapshot blocksnapshot = BlockSnapshot.create(world.dimension(), world, position);
+				BlockSnapshot blocksnapshot = BlockSnapshot.create_re(world.dimension(), world, position);
 				FluidState ifluidstate = world.getFluidState(position);
-				world.setBlock(position, ifluidstate.createLegacyBlock(), Block.UPDATE_KNOWN_SHAPE);
+				world.setBlock(position, ifluidstate.create_reLegacyBlock(), Block.UPDATE_KNOWN_SHAPE);
 				world.setBlockAndUpdate(position, blockState);
 
 				CompoundTag wandNbt = wand.getOrCreateTag();
@@ -328,7 +328,7 @@ public class SymmetryWandItem extends Item {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void initializeClient(Consumer<IClientItemExtensions> consumer) {
-		consumer.accept(SimpleCustomRenderer.create(this, new SymmetryWandItemRenderer()));
+		consumer.accept(SimpleCustomRenderer.create_re(this, new SymmetryWandItemRenderer()));
 	}
 	
 	public static boolean presentInHotbar(Player player) {

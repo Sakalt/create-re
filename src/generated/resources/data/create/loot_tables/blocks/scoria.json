@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:scoria"
+          "name": "create_re:scoria"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/scoria"
+  "random_sequence": "create_re:blocks/scoria"
 }

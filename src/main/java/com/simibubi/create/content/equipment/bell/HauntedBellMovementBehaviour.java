@@ -1,7 +1,7 @@
-package com.simibubi.create.content.equipment.bell;
+package com.simibubi.create_re.content.equipment.bell;
 
-import com.simibubi.create.content.contraptions.behaviour.BellMovementBehaviour;
-import com.simibubi.create.content.contraptions.behaviour.MovementContext;
+import com.simibubi.create_re.content.contraptions.behaviour.BellMovementBehaviour;
+import com.simibubi.create_re.content.contraptions.behaviour.MovementContext;
 
 import net.minecraft.core.BlockPos;
 

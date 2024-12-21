@@ -1,25 +1,25 @@
 {
-  "parent": "create:mechanical_mixer",
+  "parent": "create_re:mechanical_mixer",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:belt_funnel_kiss_builtin"
+      "trigger": "create_re:belt_funnel_kiss_builtin"
     }
   },
   "display": {
     "announce_to_chat": true,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.belt_funnel_kiss.desc"
+      "translate": "advancement.create_re.belt_funnel_kiss.desc"
     },
     "frame": "goal",
     "hidden": true,
     "icon": {
-      "item": "create:brass_funnel"
+      "item": "create_re:brass_funnel"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.belt_funnel_kiss"
+      "translate": "advancement.create_re.belt_funnel_kiss"
     }
   },
   "requirements": [

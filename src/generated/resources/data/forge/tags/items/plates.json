@@ -1,9 +1,9 @@
 {
   "values": [
-    "create:sturdy_sheet",
-    "create:copper_sheet",
-    "create:brass_sheet",
-    "create:iron_sheet",
-    "create:golden_sheet"
+    "create_re:sturdy_sheet",
+    "create_re:copper_sheet",
+    "create_re:brass_sheet",
+    "create_re:iron_sheet",
+    "create_re:golden_sheet"
   ]
 }

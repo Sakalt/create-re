@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:cyan_valve_handle"
+          "name": "create_re:cyan_valve_handle"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/cyan_valve_handle"
+  "random_sequence": "create_re:blocks/cyan_valve_handle"
 }

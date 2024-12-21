@@ -1,7 +1,7 @@
 {
-  "parent": "create:item/pane",
+  "parent": "create_re:item/pane",
   "textures": {
     "edge": "minecraft:block/spruce_planks",
-    "pane": "create:block/palettes/spruce_window"
+    "pane": "create_re:block/palettes/spruce_window"
   }
 }

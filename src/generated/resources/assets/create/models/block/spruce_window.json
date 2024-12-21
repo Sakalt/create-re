@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cube_column",
   "textures": {
     "end": "minecraft:block/spruce_planks",
-    "side": "create:block/palettes/spruce_window"
+    "side": "create_re:block/palettes/spruce_window"
   }
 }

@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "create:andesite_alloy"
+      "item": "create_re:andesite_alloy"
     },
     "C": {
       "tag": "minecraft:planks"
@@ -14,7 +14,7 @@
     "  A"
   ],
   "result": {
-    "item": "create:hand_crank"
+    "item": "create_re:hand_crank"
   },
   "show_notification": true
 }

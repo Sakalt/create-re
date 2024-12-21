@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:train_trapdoor"
+          "name": "create_re:train_trapdoor"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/train_trapdoor"
+  "random_sequence": "create_re:blocks/train_trapdoor"
 }

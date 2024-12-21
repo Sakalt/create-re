@@ -1,7 +1,7 @@
-package com.simibubi.create.foundation.model;
+package com.simibubi.create_re.foundation.model;
 
-import static com.simibubi.create.foundation.block.render.SpriteShiftEntry.getUnInterpolatedU;
-import static com.simibubi.create.foundation.block.render.SpriteShiftEntry.getUnInterpolatedV;
+import static com.simibubi.create_re.foundation.block.render.SpriteShiftEntry.getUnInterpolatedU;
+import static com.simibubi.create_re.foundation.block.render.SpriteShiftEntry.getUnInterpolatedV;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,8 +10,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.UnaryOperator;
 
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.block.model.BakedQuad;
@@ -97,7 +97,7 @@ public class BakedModelHelper {
 	}
 
 	public static BakedModel generateModel(BakedModel template, UnaryOperator<TextureAtlasSprite> spriteSwapper) {
-		RandomSource random = RandomSource.create();
+		RandomSource random = RandomSource.create_re();
 
 		Map<Direction, List<BakedQuad>> culledFaces = new EnumMap<>(Direction.class);
 		for (Direction cullFace : Iterate.directions) {

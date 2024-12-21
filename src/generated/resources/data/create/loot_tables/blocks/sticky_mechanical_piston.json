@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:sticky_mechanical_piston"
+          "name": "create_re:sticky_mechanical_piston"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/sticky_mechanical_piston"
+  "random_sequence": "create_re:blocks/sticky_mechanical_piston"
 }

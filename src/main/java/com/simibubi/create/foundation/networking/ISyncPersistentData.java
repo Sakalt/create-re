@@ -1,8 +1,8 @@
-package com.simibubi.create.foundation.networking;
+package com.simibubi.create_re.foundation.networking;
 
 import java.util.HashSet;
 
-import com.simibubi.create.AllPackets;
+import com.simibubi.create_re.AllPackets;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.nbt.CompoundTag;

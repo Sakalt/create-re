@@ -1,4 +1,4 @@
-package com.simibubi.create.content.redstone.link.controller;
+package com.simibubi.create_re.content.redstone.link.controller;
 
 import java.util.ArrayList;
 import java.util.Collection;

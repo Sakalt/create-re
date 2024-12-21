@@ -1,8 +1,8 @@
-package com.simibubi.create.foundation.ponder.instruction;
+package com.simibubi.create_re.foundation.ponder.instruction;
 
-import com.simibubi.create.foundation.ponder.ElementLink;
-import com.simibubi.create.foundation.ponder.PonderScene;
-import com.simibubi.create.foundation.ponder.element.AnimatedSceneElement;
+import com.simibubi.create_re.foundation.ponder.ElementLink;
+import com.simibubi.create_re.foundation.ponder.PonderScene;
+import com.simibubi.create_re.foundation.ponder.element.AnimatedSceneElement;
 
 import net.minecraft.core.Direction;
 import net.minecraft.world.phys.Vec3;
@@ -44,7 +44,7 @@ public abstract class FadeIntoSceneInstruction<T extends AnimatedSceneElement> e
 		}
 	}
 
-	public ElementLink<T> createLink(PonderScene scene) {
+	public ElementLink<T> create_reLink(PonderScene scene) {
 		elementLink = new ElementLink<>(getElementClass());
 		scene.linkElement(element, elementLink);
 		return elementLink;

@@ -1,6 +1,6 @@
-package com.simibubi.create.content.redstone.diodes;
+package com.simibubi.create_re.content.redstone.diodes;
 
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
 
 import net.minecraft.world.level.block.DiodeBlock;
 import net.minecraft.world.level.block.state.BlockState;

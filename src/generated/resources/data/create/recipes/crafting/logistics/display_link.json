@@ -9,7 +9,7 @@
       "item": "minecraft:redstone_torch"
     },
     "S": {
-      "item": "create:brass_casing"
+      "item": "create_re:brass_casing"
     }
   },
   "pattern": [
@@ -18,7 +18,7 @@
     "A"
   ],
   "result": {
-    "item": "create:display_link"
+    "item": "create_re:display_link"
   },
   "show_notification": true
 }

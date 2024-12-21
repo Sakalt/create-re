@@ -1,16 +1,16 @@
 {
-  "parent": "create:chocolate_bucket",
+  "parent": "create_re:chocolate_bucket",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:honey_drain_builtin"
+      "trigger": "create_re:honey_drain_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.honey_drain.desc"
+      "translate": "advancement.create_re.honey_drain.desc"
     },
     "frame": "task",
     "hidden": false,
@@ -19,7 +19,7 @@
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.honey_drain"
+      "translate": "advancement.create_re.honey_drain"
     }
   },
   "requirements": [

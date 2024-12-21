@@ -1,19 +1,19 @@
-package com.simibubi.create.infrastructure.ponder.scenes.trains;
+package com.simibubi.create_re.infrastructure.ponder.scenes.trains;
 
 import java.util.List;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.processing.burner.BlazeBurnerBlock;
-import com.simibubi.create.foundation.ponder.ElementLink;
-import com.simibubi.create.foundation.ponder.PonderPalette;
-import com.simibubi.create.foundation.ponder.SceneBuilder;
-import com.simibubi.create.foundation.ponder.SceneBuildingUtil;
-import com.simibubi.create.foundation.ponder.Selection;
-import com.simibubi.create.foundation.ponder.element.InputWindowElement;
-import com.simibubi.create.foundation.ponder.element.ParrotElement;
-import com.simibubi.create.foundation.ponder.element.ParrotElement.FacePointOfInterestPose;
-import com.simibubi.create.foundation.ponder.element.WorldSectionElement;
-import com.simibubi.create.foundation.utility.Pointing;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock;
+import com.simibubi.create_re.foundation.ponder.ElementLink;
+import com.simibubi.create_re.foundation.ponder.PonderPalette;
+import com.simibubi.create_re.foundation.ponder.SceneBuilder;
+import com.simibubi.create_re.foundation.ponder.SceneBuildingUtil;
+import com.simibubi.create_re.foundation.ponder.Selection;
+import com.simibubi.create_re.foundation.ponder.element.InputWindowElement;
+import com.simibubi.create_re.foundation.ponder.element.ParrotElement;
+import com.simibubi.create_re.foundation.ponder.element.ParrotElement.FacePointOfInterestPose;
+import com.simibubi.create_re.foundation.ponder.element.WorldSectionElement;
+import com.simibubi.create_re.foundation.utility.Pointing;
 
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.ItemStack;
@@ -174,7 +174,7 @@ public class TrackScenes {
 			.pointAt(util.vector.centerOf(9, 1, 9))
 			.colored(PonderPalette.GREEN)
 			.placeNearTarget()
-			.text("...will create the longest fitting bend instead");
+			.text("...will create_re the longest fitting bend instead");
 		scene.idle(70);
 
 		scene.world.hideIndependentSection(longBend, Direction.UP);
@@ -287,7 +287,7 @@ public class TrackScenes {
 		scene.overlay.showText(70)
 			.pointAt(util.vector.topOf(4, 0, 6))
 			.placeNearTarget()
-			.text("...will attempt to create a paired track on the other side");
+			.text("...will attempt to create_re a paired track on the other side");
 		scene.idle(40);
 
 		ElementLink<WorldSectionElement> t1 =
@@ -298,7 +298,7 @@ public class TrackScenes {
 			scene.world.showIndependentSection(util.select.fromTo(5, 2, 4, 3, 3, 5), Direction.DOWN);
 
 		ElementLink<ParrotElement> birb =
-			scene.special.createBirb(util.vector.centerOf(4, 3, 2), FacePointOfInterestPose::new);
+			scene.special.create_reBirb(util.vector.centerOf(4, 3, 2), FacePointOfInterestPose::new);
 		scene.special.conductorBirb(birb, true);
 		scene.special.movePointOfInterest(util.grid.at(4, 4, 10));
 
@@ -377,7 +377,7 @@ public class TrackScenes {
 		scene.idle(5);
 		scene.world.showSectionAndMerge(vStation, Direction.DOWN, stationElement);
 		ElementLink<ParrotElement> birb =
-			scene.special.createBirb(util.vector.centerOf(2, 2, 7), FacePointOfInterestPose::new);
+			scene.special.create_reBirb(util.vector.centerOf(2, 2, 7), FacePointOfInterestPose::new);
 		scene.special.movePointOfInterest(util.grid.at(4, 3, 4));
 		scene.idle(5);
 		ElementLink<WorldSectionElement> trainElement = scene.world.showIndependentSection(train, Direction.DOWN);
@@ -444,7 +444,7 @@ public class TrackScenes {
 			.add(dStation), null);
 		ElementLink<WorldSectionElement> dPlatformElement =
 			scene.world.showIndependentSection(dPlatform, null);
-		birb = scene.special.createBirb(util.vector.centerOf(-2, 2, 7), FacePointOfInterestPose::new);
+		birb = scene.special.create_reBirb(util.vector.centerOf(-2, 2, 7), FacePointOfInterestPose::new);
 		scene.world.moveSection(dPlatformElement, util.vector.of(-8, -2, 0), 0);
 		scene.world.moveSection(stationElement, util.vector.of(-8, 0, 0), 0);
 		scene.world.moveSection(stationElement, util.vector.of(8, 0, 0), 80);

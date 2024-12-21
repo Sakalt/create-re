@@ -1,10 +1,10 @@
-package com.simibubi.create.content.kinetics.gantry;
+package com.simibubi.create_re.content.kinetics.gantry;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.contraptions.gantry.GantryCarriageBlock;
-import com.simibubi.create.content.contraptions.gantry.GantryCarriageBlockEntity;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.contraptions.gantry.GantryCarriageBlock;
+import com.simibubi.create_re.content.contraptions.gantry.GantryCarriageBlockEntity;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

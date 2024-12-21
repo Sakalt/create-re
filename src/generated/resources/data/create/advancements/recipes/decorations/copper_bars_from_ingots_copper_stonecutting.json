@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:copper_bars_from_ingots_copper_stonecutting"
+        "recipe": "create_re:copper_bars_from_ingots_copper_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:copper_bars_from_ingots_copper_stonecutting"
+      "create_re:copper_bars_from_ingots_copper_stonecutting"
     ]
   },
   "sends_telemetry_event": false

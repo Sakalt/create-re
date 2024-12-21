@@ -1,13 +1,13 @@
-package com.simibubi.create.content.kinetics.belt;
+package com.simibubi.create_re.content.kinetics.belt;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.AllSpriteShifts;
-import com.simibubi.create.content.kinetics.belt.BeltBlockEntity.CasingType;
-import com.simibubi.create.foundation.block.render.SpriteShiftEntry;
-import com.simibubi.create.foundation.model.BakedQuadHelper;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.AllSpriteShifts;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlockEntity.CasingType;
+import com.simibubi.create_re.foundation.block.render.SpriteShiftEntry;
+import com.simibubi.create_re.foundation.model.BakedQuadHelper;
 
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.block.model.BakedQuad;

@@ -1,6 +1,6 @@
-package com.simibubi.create.content.contraptions.actors.seat;
+package com.simibubi.create_re.content.contraptions.actors.seat;
 
-import com.simibubi.create.AllEntityTypes;
+import com.simibubi.create_re.AllEntityTypes;
 
 import net.minecraft.client.renderer.culling.Frustum;
 import net.minecraft.client.renderer.entity.EntityRenderer;

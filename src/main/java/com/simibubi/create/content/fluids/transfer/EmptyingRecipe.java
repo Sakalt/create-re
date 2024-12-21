@@ -1,8 +1,8 @@
-package com.simibubi.create.content.fluids.transfer;
+package com.simibubi.create_re.content.fluids.transfer;
 
-import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipe;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
+import com.simibubi.create_re.AllRecipeTypes;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipe;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
 
 import net.minecraft.world.level.Level;
 import net.minecraftforge.fluids.FluidStack;

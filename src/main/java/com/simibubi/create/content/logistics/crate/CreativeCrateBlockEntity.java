@@ -1,12 +1,12 @@
-package com.simibubi.create.content.logistics.crate;
+package com.simibubi.create_re.content.logistics.crate;
 
 import java.util.List;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.ValueBoxTransform;
-import com.simibubi.create.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBoxTransform;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import dev.engine_room.flywheel.lib.transform.TransformStack;
 import net.minecraft.core.BlockPos;
@@ -33,7 +33,7 @@ public class CreativeCrateBlockEntity extends CrateBlockEntity {
 
 	@Override
 	public void addBehaviours(List<BlockEntityBehaviour> behaviours) {
-		behaviours.add(filtering = createFilter());
+		behaviours.add(filtering = create_reFilter());
 		filtering.setLabel(Lang.translateDirect("logistics.creative_crate.supply"));
 	}
 
@@ -51,7 +51,7 @@ public class CreativeCrateBlockEntity extends CrateBlockEntity {
 		return super.getCapability(cap, side);
 	}
 
-	public FilteringBehaviour createFilter() {
+	public FilteringBehaviour create_reFilter() {
 		return new FilteringBehaviour(this, new ValueBoxTransform() {
 
 			@Override

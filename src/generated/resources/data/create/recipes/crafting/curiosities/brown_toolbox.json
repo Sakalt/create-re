@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "C": {
-      "item": "create:cogwheel"
+      "item": "create_re:cogwheel"
     },
     "L": {
       "tag": "forge:leather"
@@ -21,7 +21,7 @@
     " L "
   ],
   "result": {
-    "item": "create:brown_toolbox"
+    "item": "create_re:brown_toolbox"
   },
   "show_notification": true
 }

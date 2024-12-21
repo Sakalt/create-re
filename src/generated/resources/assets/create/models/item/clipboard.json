@@ -2,25 +2,25 @@
   "parent": "minecraft:item/generated",
   "overrides": [
     {
-      "model": "create:item/clipboard_0",
+      "model": "create_re:item/clipboard_0",
       "predicate": {
-        "create:clipboard_type": 0.0
+        "create_re:clipboard_type": 0.0
       }
     },
     {
-      "model": "create:item/clipboard_1",
+      "model": "create_re:item/clipboard_1",
       "predicate": {
-        "create:clipboard_type": 1.0
+        "create_re:clipboard_type": 1.0
       }
     },
     {
-      "model": "create:item/clipboard_2",
+      "model": "create_re:item/clipboard_2",
       "predicate": {
-        "create:clipboard_type": 2.0
+        "create_re:clipboard_type": 2.0
       }
     }
   ],
   "textures": {
-    "layer0": "create:item/clipboard"
+    "layer0": "create_re:item/clipboard"
   }
 }

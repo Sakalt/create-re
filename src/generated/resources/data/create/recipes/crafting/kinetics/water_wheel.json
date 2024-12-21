@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "C": {
-      "item": "create:shaft"
+      "item": "create_re:shaft"
     },
     "S": {
       "tag": "minecraft:planks"
@@ -15,7 +15,7 @@
     "SSS"
   ],
   "result": {
-    "item": "create:water_wheel"
+    "item": "create_re:water_wheel"
   },
   "show_notification": true
 }

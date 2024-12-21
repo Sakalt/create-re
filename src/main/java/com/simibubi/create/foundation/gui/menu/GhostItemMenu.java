@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.gui.menu;
+package com.simibubi.create_re.foundation.gui.menu;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
@@ -22,13 +22,13 @@ public abstract class GhostItemMenu<T> extends MenuBase<T> implements IClearable
 		super(type, id, inv, contentHolder);
 	}
 
-	protected abstract ItemStackHandler createGhostInventory();
+	protected abstract ItemStackHandler create_reGhostInventory();
 
 	protected abstract boolean allowRepeats();
 
 	@Override
 	protected void initAndReadInventory(T contentHolder) {
-		ghostInventory = createGhostInventory();
+		ghostInventory = create_reGhostInventory();
 	}
 
 	@Override

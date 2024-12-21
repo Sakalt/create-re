@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.gui.widget;
+package com.simibubi.create_re.foundation.gui.widget;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.function.BiConsumer;
 
 import javax.annotation.Nonnull;
 
-import com.simibubi.create.foundation.gui.TickableGuiEventListener;
-import com.simibubi.create.foundation.utility.Components;
+import com.simibubi.create_re.foundation.gui.TickableGuiEventListener;
+import com.simibubi.create_re.foundation.utility.Components;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.AbstractWidget;
@@ -42,7 +42,7 @@ public abstract class AbstractSimiWidget extends AbstractWidget implements Ticka
 	}
 
 	@Override
-	protected ClientTooltipPositioner createTooltipPositioner() {
+	protected ClientTooltipPositioner create_reTooltipPositioner() {
 		return DefaultTooltipPositioner.INSTANCE;
 	}
 

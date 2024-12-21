@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.mixin.accessor;
+package com.simibubi.create_re.foundation.mixin.accessor;
 
 import net.minecraft.world.item.context.UseOnContext;
 
@@ -10,5 +10,5 @@ import org.spongepowered.asm.mixin.gen.Invoker;
 @Mixin(UseOnContext.class)
 public interface UseOnContextAccessor {
 	@Invoker("getHitResult")
-	BlockHitResult create$getHitResult();
+	BlockHitResult create_re$getHitResult();
 }

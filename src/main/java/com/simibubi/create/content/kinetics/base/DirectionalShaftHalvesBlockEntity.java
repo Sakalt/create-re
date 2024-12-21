@@ -1,4 +1,4 @@
-package com.simibubi.create.content.kinetics.base;
+package com.simibubi.create_re.content.kinetics.base;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

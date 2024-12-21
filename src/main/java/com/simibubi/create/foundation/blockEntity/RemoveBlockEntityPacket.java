@@ -1,6 +1,6 @@
-package com.simibubi.create.foundation.blockEntity;
+package com.simibubi.create_re.foundation.blockEntity;
 
-import com.simibubi.create.foundation.networking.BlockEntityDataPacket;
+import com.simibubi.create_re.foundation.networking.BlockEntityDataPacket;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;

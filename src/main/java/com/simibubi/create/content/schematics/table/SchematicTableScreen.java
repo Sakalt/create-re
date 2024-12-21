@@ -1,26 +1,26 @@
-package com.simibubi.create.content.schematics.table;
+package com.simibubi.create_re.content.schematics.table;
 
-import static com.simibubi.create.foundation.gui.AllGuiTextures.PLAYER_INVENTORY;
-import static com.simibubi.create.foundation.gui.AllGuiTextures.SCHEMATIC_TABLE_PROGRESS;
+import static com.simibubi.create_re.foundation.gui.AllGuiTextures.PLAYER_INVENTORY;
+import static com.simibubi.create_re.foundation.gui.AllGuiTextures.SCHEMATIC_TABLE_PROGRESS;
 
 import java.nio.file.Paths;
 import java.util.Collections;
 import java.util.List;
 
 import com.google.common.collect.ImmutableList;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.content.schematics.client.ClientSchematicLoader;
-import com.simibubi.create.foundation.gui.AllGuiTextures;
-import com.simibubi.create.foundation.gui.AllIcons;
-import com.simibubi.create.foundation.gui.element.GuiGameElement;
-import com.simibubi.create.foundation.gui.menu.AbstractSimiContainerScreen;
-import com.simibubi.create.foundation.gui.widget.IconButton;
-import com.simibubi.create.foundation.gui.widget.Label;
-import com.simibubi.create.foundation.gui.widget.ScrollInput;
-import com.simibubi.create.foundation.gui.widget.SelectionScrollInput;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.content.schematics.client.ClientSchematicLoader;
+import com.simibubi.create_re.foundation.gui.AllGuiTextures;
+import com.simibubi.create_re.foundation.gui.AllIcons;
+import com.simibubi.create_re.foundation.gui.element.GuiGameElement;
+import com.simibubi.create_re.foundation.gui.menu.AbstractSimiContainerScreen;
+import com.simibubi.create_re.foundation.gui.widget.IconButton;
+import com.simibubi.create_re.foundation.gui.widget.Label;
+import com.simibubi.create_re.foundation.gui.widget.ScrollInput;
+import com.simibubi.create_re.foundation.gui.widget.SelectionScrollInput;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.Util;
 import net.minecraft.client.gui.GuiGraphics;

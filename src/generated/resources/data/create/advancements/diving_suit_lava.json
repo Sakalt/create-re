@@ -1,26 +1,26 @@
 {
-  "parent": "create:foods",
+  "parent": "create_re:foods",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:diving_suit_lava_builtin"
+      "trigger": "create_re:diving_suit_lava_builtin"
     }
   },
   "display": {
     "announce_to_chat": true,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.diving_suit_lava.desc"
+      "translate": "advancement.create_re.diving_suit_lava.desc"
     },
     "frame": "goal",
     "hidden": false,
     "icon": {
-      "item": "create:netherite_diving_helmet",
+      "item": "create_re:netherite_diving_helmet",
       "nbt": "{Damage:0}"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.diving_suit_lava"
+      "translate": "advancement.create_re.diving_suit_lava"
     }
   },
   "requirements": [

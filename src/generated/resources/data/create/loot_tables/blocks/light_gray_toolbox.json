@@ -39,11 +39,11 @@
               "source": "block_entity"
             }
           ],
-          "name": "create:light_gray_toolbox"
+          "name": "create_re:light_gray_toolbox"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/light_gray_toolbox"
+  "random_sequence": "create_re:blocks/light_gray_toolbox"
 }

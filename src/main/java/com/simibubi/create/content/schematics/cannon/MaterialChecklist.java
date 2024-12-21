@@ -1,4 +1,4 @@
-package com.simibubi.create.content.schematics.cannon;
+package com.simibubi.create_re.content.schematics.cannon;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,14 +6,14 @@ import java.util.List;
 import java.util.Locale;
 
 import com.google.common.collect.Sets;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.equipment.clipboard.ClipboardEntry;
-import com.simibubi.create.content.equipment.clipboard.ClipboardOverrides;
-import com.simibubi.create.content.equipment.clipboard.ClipboardOverrides.ClipboardType;
-import com.simibubi.create.content.schematics.requirement.ItemRequirement;
-import com.simibubi.create.content.schematics.requirement.ItemRequirement.ItemUseType;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.equipment.clipboard.ClipboardEntry;
+import com.simibubi.create_re.content.equipment.clipboard.ClipboardOverrides;
+import com.simibubi.create_re.content.equipment.clipboard.ClipboardOverrides.ClipboardType;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement;
+import com.simibubi.create_re.content.schematics.requirement.ItemRequirement.ItemUseType;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import it.unimi.dsi.fastutil.objects.Object2IntArrayMap;
 import it.unimi.dsi.fastutil.objects.Object2IntMap;
@@ -76,7 +76,7 @@ public class MaterialChecklist {
 				gathered.put(item, stack.getCount());
 	}
 
-	public ItemStack createWrittenBook() {
+	public ItemStack create_reWrittenBook() {
 		ItemStack book = new ItemStack(Items.WRITTEN_BOOK);
 
 		CompoundTag tag = book.getOrCreateTag();
@@ -156,7 +156,7 @@ public class MaterialChecklist {
 		return book;
 	}
 
-	public ItemStack createWrittenClipboard() {
+	public ItemStack create_reWrittenClipboard() {
 		ItemStack clipboard = AllBlocks.CLIPBOARD.asStack();
 		CompoundTag tag = clipboard.getOrCreateTag();
 		int itemsWritten = 0;

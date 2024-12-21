@@ -1,11 +1,11 @@
-package com.simibubi.create.foundation.data.recipe;
+package com.simibubi.create_re.foundation.data.recipe;
 
 import java.util.function.Supplier;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllRecipeTypes;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.ItemTags;
@@ -37,7 +37,7 @@ public class HauntingRecipeGen extends ProcessingRecipeGen {
 		GLOW_BERRIES = convert(Items.SWEET_BERRIES, Items.GLOW_BERRIES),
 		NETHER_BRICK = convert(Items.BRICK, Items.NETHER_BRICK),
 
-		PRISMARINE = create(Create.asResource("lapis_recycling"), b -> b.require(Tags.Items.GEMS_LAPIS)
+		PRISMARINE = create_re(Create.asResource("lapis_recycling"), b -> b.require(Tags.Items.GEMS_LAPIS)
 			.output(.75f, Items.PRISMARINE_SHARD)
 			.output(.125f, Items.PRISMARINE_CRYSTALS)),
 
@@ -51,7 +51,7 @@ public class HauntingRecipeGen extends ProcessingRecipeGen {
 		FD = moddedConversion(Mods.FD, "tomato", "rotten_tomato"),
 
 		// Haunted Harvest
-		HH = create(Mods.HH.recipeId("rotten_apple"), b -> b.require(Items.APPLE)
+		HH = create_re(Mods.HH.recipeId("rotten_apple"), b -> b.require(Items.APPLE)
 				.output(Mods.HH, "rotten_apple")
 				.whenModLoaded(Mods.HH.getId()))
 
@@ -62,7 +62,7 @@ public class HauntingRecipeGen extends ProcessingRecipeGen {
 	}
 
 	public GeneratedRecipe convert(Supplier<Ingredient> input, Supplier<ItemLike> result) {
-		return create(Create.asResource(RegisteredObjects.getKeyOrThrow(result.get()
+		return create_re(Create.asResource(RegisteredObjects.getKeyOrThrow(result.get()
 			.asItem())
 			.getPath()),
 			p -> p.withItemIngredients(input.get())
@@ -70,7 +70,7 @@ public class HauntingRecipeGen extends ProcessingRecipeGen {
 	}
 
 	public GeneratedRecipe moddedConversion(Mods mod, String input, String output) {
-		return create("compat/" + mod.getId() + "/" + output, p -> p.require(mod, input)
+		return create_re("compat/" + mod.getId() + "/" + output, p -> p.require(mod, input)
 				.output(mod, output)
 				.whenModLoaded(mod.getId()));
 	}

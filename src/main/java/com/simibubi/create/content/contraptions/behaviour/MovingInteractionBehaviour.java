@@ -1,8 +1,8 @@
-package com.simibubi.create.content.contraptions.behaviour;
+package com.simibubi.create_re.content.contraptions.behaviour;
 
 import org.apache.commons.lang3.tuple.MutablePair;
 
-import com.simibubi.create.content.contraptions.AbstractContraptionEntity;
+import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;

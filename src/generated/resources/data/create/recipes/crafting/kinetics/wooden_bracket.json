@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "C": {
-      "item": "create:andesite_alloy"
+      "item": "create_re:andesite_alloy"
     },
     "P": {
       "tag": "minecraft:planks"
@@ -18,7 +18,7 @@
   ],
   "result": {
     "count": 4,
-    "item": "create:wooden_bracket"
+    "item": "create_re:wooden_bracket"
   },
   "show_notification": true
 }

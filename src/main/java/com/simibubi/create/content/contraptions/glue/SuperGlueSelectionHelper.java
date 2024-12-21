@@ -1,12 +1,12 @@
-package com.simibubi.create.content.contraptions.glue;
+package com.simibubi.create_re.content.contraptions.glue;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import com.simibubi.create.content.contraptions.BlockMovementChecks;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.content.contraptions.BlockMovementChecks;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

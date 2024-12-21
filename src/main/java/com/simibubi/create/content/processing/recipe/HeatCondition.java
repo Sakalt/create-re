@@ -1,9 +1,9 @@
-package com.simibubi.create.content.processing.recipe;
+package com.simibubi.create_re.content.processing.recipe;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.content.processing.burner.BlazeBurnerBlock;
-import com.simibubi.create.content.processing.burner.BlazeBurnerBlock.HeatLevel;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock.HeatLevel;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 public enum HeatCondition {
 

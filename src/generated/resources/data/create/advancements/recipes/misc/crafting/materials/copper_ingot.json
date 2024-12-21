@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/materials/copper_ingot"
+        "recipe": "create_re:crafting/materials/copper_ingot"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/materials/copper_ingot"
+      "create_re:crafting/materials/copper_ingot"
     ]
   },
   "sends_telemetry_event": false

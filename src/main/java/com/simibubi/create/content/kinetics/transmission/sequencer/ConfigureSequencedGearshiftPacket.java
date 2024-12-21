@@ -1,6 +1,6 @@
-package com.simibubi.create.content.kinetics.transmission.sequencer;
+package com.simibubi.create_re.content.kinetics.transmission.sequencer;
 
-import com.simibubi.create.foundation.networking.BlockEntityConfigurationPacket;
+import com.simibubi.create_re.foundation.networking.BlockEntityConfigurationPacket;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

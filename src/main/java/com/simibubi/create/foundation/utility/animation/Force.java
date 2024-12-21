@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.utility.animation;
+package com.simibubi.create_re.foundation.utility.animation;
 
 public interface Force {
 

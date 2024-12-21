@@ -1,10 +1,10 @@
-package com.simibubi.create.foundation.utility.ghost;
+package com.simibubi.create_re.foundation.utility.ghost;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.foundation.render.SuperRenderTypeBuffer;
+import com.simibubi.create_re.foundation.render.SuperRenderTypeBuffer;
 
 import net.minecraft.util.Mth;
 import net.minecraft.world.level.block.state.BlockState;

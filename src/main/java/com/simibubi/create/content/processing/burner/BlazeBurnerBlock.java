@@ -1,18 +1,18 @@
-package com.simibubi.create.content.processing.burner;
+package com.simibubi.create_re.content.processing.burner;
 
 import java.util.Random;
 
 import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
-import com.simibubi.create.content.processing.basin.BasinBlockEntity;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.content.processing.basin.BasinBlockEntity;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
@@ -57,7 +57,7 @@ import net.minecraftforge.common.util.FakePlayer;
 @ParametersAreNonnullByDefault
 public class BlazeBurnerBlock extends HorizontalDirectionalBlock implements IBE<BlazeBurnerBlockEntity>, IWrenchable {
 
-	public static final EnumProperty<HeatLevel> HEAT_LEVEL = EnumProperty.create("blaze", HeatLevel.class);
+	public static final EnumProperty<HeatLevel> HEAT_LEVEL = EnumProperty.create_re("blaze", HeatLevel.class);
 
 	public BlazeBurnerBlock(Properties properties) {
 		super(properties);
@@ -65,8 +65,8 @@ public class BlazeBurnerBlock extends HorizontalDirectionalBlock implements IBE<
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
-		super.createBlockStateDefinition(builder);
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
+		super.create_reBlockStateDefinition(builder);
 		builder.add(HEAT_LEVEL, FACING);
 	}
 

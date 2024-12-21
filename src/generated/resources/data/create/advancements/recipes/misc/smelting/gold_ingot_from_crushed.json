@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:crushed_raw_gold"
+              "create_re:crushed_raw_gold"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:smelting/gold_ingot_from_crushed"
+        "recipe": "create_re:smelting/gold_ingot_from_crushed"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:smelting/gold_ingot_from_crushed"
+      "create_re:smelting/gold_ingot_from_crushed"
     ]
   },
   "sends_telemetry_event": false

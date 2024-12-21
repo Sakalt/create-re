@@ -1,10 +1,10 @@
-package com.simibubi.create.content.redstone.analogLever;
+package com.simibubi.create_re.content.redstone.analogLever;
 
 
 import org.joml.Vector3f;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.foundation.block.IBE;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.foundation.block.IBE;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -116,8 +116,8 @@ public class AnalogLeverBlock extends FaceAttachedHorizontalDirectionalBlock imp
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
-		super.createBlockStateDefinition(builder.add(FACING, FACE));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
+		super.create_reBlockStateDefinition(builder.add(FACING, FACE));
 	}
 
 	@Override

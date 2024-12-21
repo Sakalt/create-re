@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:cut_andesite"
+              "create_re:cut_andesite"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:cut_andesite_slab"
+        "recipe": "create_re:cut_andesite_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:cut_andesite_slab"
+      "create_re:cut_andesite_slab"
     ]
   },
   "sends_telemetry_event": false

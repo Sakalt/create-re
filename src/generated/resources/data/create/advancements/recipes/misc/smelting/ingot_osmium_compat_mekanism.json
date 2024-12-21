@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:crushed_raw_osmium"
+              "create_re:crushed_raw_osmium"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:smelting/ingot_osmium_compat_mekanism"
+        "recipe": "create_re:smelting/ingot_osmium_compat_mekanism"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:smelting/ingot_osmium_compat_mekanism"
+      "create_re:smelting/ingot_osmium_compat_mekanism"
     ]
   },
   "sends_telemetry_event": false

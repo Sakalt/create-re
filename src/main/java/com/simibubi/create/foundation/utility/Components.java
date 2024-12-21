@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.utility;
+package com.simibubi.create_re.foundation.utility;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;

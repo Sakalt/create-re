@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"axis_top": "create:block/axis_top",
-		"fan_blades": "create:block/fan_blades",
-		"axis": "create:block/axis"
+		"axis_top": "create_re:block/axis_top",
+		"fan_blades": "create_re:block/fan_blades",
+		"axis": "create_re:block/axis"
 	},
   "render_type": "minecraft:cutout",
 	"elements": [

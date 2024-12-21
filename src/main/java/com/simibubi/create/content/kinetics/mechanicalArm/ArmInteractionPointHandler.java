@@ -1,16 +1,16 @@
-package com.simibubi.create.content.kinetics.mechanicalArm;
+package com.simibubi.create_re.content.kinetics.mechanicalArm;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.content.kinetics.mechanicalArm.ArmInteractionPoint.Mode;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.content.kinetics.mechanicalArm.ArmInteractionPoint.Mode;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
@@ -54,7 +54,7 @@ public class ArmInteractionPointHandler {
 		BlockState state = world.getBlockState(pos);
 
 		if (selected == null) {
-			ArmInteractionPoint point = ArmInteractionPoint.create(world, pos, state);
+			ArmInteractionPoint point = ArmInteractionPoint.create_re(world, pos, state);
 			if (point == null)
 				return;
 			selected = point;

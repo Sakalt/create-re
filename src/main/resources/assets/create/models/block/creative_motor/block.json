@@ -2,11 +2,11 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"5": "create:block/creative_casing",
-		"6": "create:block/creative_motor",
-		"7": "create:block/flap_display_front",
-		"particle": "create:block/creative_casing",
-		"1_0": "create:block/axis"
+		"5": "create_re:block/creative_casing",
+		"6": "create_re:block/creative_motor",
+		"7": "create_re:block/flap_display_front",
+		"particle": "create_re:block/creative_casing",
+		"1_0": "create_re:block/axis"
 	},
 	"elements": [
 		{

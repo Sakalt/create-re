@@ -1,5 +1,5 @@
 @ParametersAreNonnullByDefault @MethodsReturnNonnullByDefault
-package com.simibubi.create.foundation.utility.worldWrappers;
+package com.simibubi.create_re.foundation.utility.worldWrappers;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 

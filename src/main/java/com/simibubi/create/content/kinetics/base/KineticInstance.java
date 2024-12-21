@@ -1,8 +1,8 @@
-package com.simibubi.create.content.kinetics.base;
+package com.simibubi.create_re.content.kinetics.base;
 
 import org.joml.Vector3f;
 
-import com.simibubi.create.foundation.utility.Color;
+import com.simibubi.create_re.foundation.utility.Color;
 
 import dev.engine_room.flywheel.api.instance.InstanceHandle;
 import dev.engine_room.flywheel.api.instance.InstanceType;

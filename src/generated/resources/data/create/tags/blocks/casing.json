@@ -1,10 +1,10 @@
 {
   "values": [
-    "create:andesite_casing",
-    "create:brass_casing",
-    "create:copper_casing",
-    "create:shadow_steel_casing",
-    "create:refined_radiance_casing",
-    "create:railway_casing"
+    "create_re:andesite_casing",
+    "create_re:brass_casing",
+    "create_re:copper_casing",
+    "create_re:shadow_steel_casing",
+    "create_re:refined_radiance_casing",
+    "create_re:railway_casing"
   ]
 }

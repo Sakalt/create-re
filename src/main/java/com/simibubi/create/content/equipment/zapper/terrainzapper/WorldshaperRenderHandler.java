@@ -1,13 +1,13 @@
-package com.simibubi.create.content.equipment.zapper.terrainzapper;
+package com.simibubi.create_re.content.equipment.zapper.terrainzapper;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.function.Supplier;
 
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllSpecialTextures;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.foundation.utility.NBTHelper;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllSpecialTextures;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
@@ -48,21 +48,21 @@ public class WorldshaperRenderHandler {
 		if (zapperInMain) {
 			CompoundTag tag = heldMain.getOrCreateTag();
 			if (!tag.contains("_Swap") || !zapperInOff) {
-				createBrushOutline(tag, player, heldMain);
+				create_reBrushOutline(tag, player, heldMain);
 				return;
 			}
 		}
 
 		if (zapperInOff) {
 			CompoundTag tag = heldOff.getOrCreateTag();
-			createBrushOutline(tag, player, heldOff);
+			create_reBrushOutline(tag, player, heldOff);
 			return;
 		}
 
 		renderedPositions = null;
 	}
 
-	public static void createBrushOutline(CompoundTag tag, LocalPlayer player, ItemStack zapper) {
+	public static void create_reBrushOutline(CompoundTag tag, LocalPlayer player, ItemStack zapper) {
 		if (!tag.contains("BrushParams")) {
 			renderedPositions = null;
 			return;

@@ -1,13 +1,13 @@
-package com.simibubi.create.content.kinetics.crank;
+package com.simibubi.create_re.content.kinetics.crank;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.foundation.utility.BlockHelper;
-import com.simibubi.create.foundation.utility.Couple;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.foundation.utility.BlockHelper;
+import com.simibubi.create_re.foundation.utility.Couple;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
@@ -115,7 +115,7 @@ public class ValveHandleBlock extends HandCrankBlock {
 	}
 
 	public static Couple<Integer> getSpeedRange() {
-		return Couple.create(32, 32);
+		return Couple.create_re(32, 32);
 	}
 
 }

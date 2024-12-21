@@ -1,20 +1,20 @@
-package com.simibubi.create.content.trains.observer;
+package com.simibubi.create_re.content.trains.observer;
 
 import java.util.List;
 
 import javax.annotation.Nullable;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.content.contraptions.ITransformableBlockEntity;
-import com.simibubi.create.content.contraptions.StructureTransform;
-import com.simibubi.create.content.redstone.displayLink.DisplayLinkBlock;
-import com.simibubi.create.content.trains.graph.EdgePointType;
-import com.simibubi.create.content.trains.track.TrackTargetingBehaviour;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.ValueBoxTransform;
-import com.simibubi.create.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.content.contraptions.ITransformableBlockEntity;
+import com.simibubi.create_re.content.contraptions.StructureTransform;
+import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkBlock;
+import com.simibubi.create_re.content.trains.graph.EdgePointType;
+import com.simibubi.create_re.content.trains.track.TrackTargetingBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBoxTransform;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import dev.engine_room.flywheel.lib.transform.TransformStack;
 import net.minecraft.core.BlockPos;
@@ -37,7 +37,7 @@ public class TrackObserverBlockEntity extends SmartBlockEntity implements ITrans
 	@Override
 	public void addBehaviours(List<BlockEntityBehaviour> behaviours) {
 		behaviours.add(edgePoint = new TrackTargetingBehaviour<>(this, EdgePointType.OBSERVER));
-		behaviours.add(filtering = createFilter().withCallback(this::onFilterChanged));
+		behaviours.add(filtering = create_reFilter().withCallback(this::onFilterChanged));
 		filtering.setLabel(Lang.translateDirect("logistics.train_observer.cargo_filter"));
 	}
 
@@ -84,7 +84,7 @@ public class TrackObserverBlockEntity extends SmartBlockEntity implements ITrans
 	}
 
 	@Override
-	protected AABB createRenderBoundingBox() {
+	protected AABB create_reRenderBoundingBox() {
 		return new AABB(worldPosition, edgePoint.getGlobalPosition()).inflate(2);
 	}
 
@@ -93,7 +93,7 @@ public class TrackObserverBlockEntity extends SmartBlockEntity implements ITrans
 		edgePoint.transform(transform);
 	}
 
-	public FilteringBehaviour createFilter() {
+	public FilteringBehaviour create_reFilter() {
 		return new FilteringBehaviour(this, new ValueBoxTransform() {
 
 			@Override

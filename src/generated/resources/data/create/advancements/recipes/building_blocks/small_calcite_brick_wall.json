@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:small_calcite_bricks"
+              "create_re:small_calcite_bricks"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:small_calcite_brick_wall"
+        "recipe": "create_re:small_calcite_brick_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:small_calcite_brick_wall"
+      "create_re:small_calcite_brick_wall"
     ]
   },
   "sends_telemetry_event": false

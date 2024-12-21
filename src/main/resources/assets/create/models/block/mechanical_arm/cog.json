@@ -3,7 +3,7 @@
 	"parent": "block/block",
 	"texture_size": [32, 32],
 	"textures": {
-		"5": "create:block/flywheel"
+		"5": "create_re:block/flywheel"
 	},
 	"elements": [
 		{

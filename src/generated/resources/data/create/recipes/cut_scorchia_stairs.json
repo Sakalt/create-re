@@ -4,7 +4,7 @@
   "group": "cut_scorchia_stairs",
   "key": {
     "X": {
-      "item": "create:cut_scorchia"
+      "item": "create_re:cut_scorchia"
     }
   },
   "pattern": [
@@ -14,7 +14,7 @@
   ],
   "result": {
     "count": 4,
-    "item": "create:cut_scorchia_stairs"
+    "item": "create_re:cut_scorchia_stairs"
   },
   "show_notification": true
 }

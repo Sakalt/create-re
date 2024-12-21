@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "G": {
-      "item": "create:andesite_alloy"
+      "item": "create_re:andesite_alloy"
     },
     "P": {
       "tag": "forge:ingots/copper"
@@ -15,7 +15,7 @@
     "G G"
   ],
   "result": {
-    "item": "create:copper_diving_boots"
+    "item": "create_re:copper_diving_boots"
   },
   "show_notification": true
 }

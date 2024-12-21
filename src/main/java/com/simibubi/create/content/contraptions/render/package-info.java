@@ -1,5 +1,5 @@
 @ParametersAreNonnullByDefault @MethodsReturnNonnullByDefault
-package com.simibubi.create.content.contraptions.render;
+package com.simibubi.create_re.content.contraptions.render;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 

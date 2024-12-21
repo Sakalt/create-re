@@ -1,12 +1,12 @@
 {
   "values": [
-    "create:rope",
-    "create:pulley_magnet",
-    "create:andesite_ladder",
-    "create:brass_ladder",
-    "create:copper_ladder",
-    "create:andesite_scaffolding",
-    "create:brass_scaffolding",
-    "create:copper_scaffolding"
+    "create_re:rope",
+    "create_re:pulley_magnet",
+    "create_re:andesite_ladder",
+    "create_re:brass_ladder",
+    "create_re:copper_ladder",
+    "create_re:andesite_scaffolding",
+    "create_re:brass_scaffolding",
+    "create_re:copper_scaffolding"
   ]
 }

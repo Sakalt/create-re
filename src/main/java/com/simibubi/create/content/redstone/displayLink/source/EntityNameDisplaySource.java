@@ -1,10 +1,10 @@
-package com.simibubi.create.content.redstone.displayLink.source;
+package com.simibubi.create_re.content.redstone.displayLink.source;
 
 import java.util.List;
 
-import com.simibubi.create.content.contraptions.actors.seat.SeatEntity;
-import com.simibubi.create.content.redstone.displayLink.DisplayLinkContext;
-import com.simibubi.create.content.redstone.displayLink.target.DisplayTargetStats;
+import com.simibubi.create_re.content.contraptions.actors.seat.SeatEntity;
+import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkContext;
+import com.simibubi.create_re.content.redstone.displayLink.target.DisplayTargetStats;
 
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.world.entity.Entity;

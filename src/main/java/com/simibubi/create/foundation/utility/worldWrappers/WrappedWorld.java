@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.utility.worldWrappers;
+package com.simibubi.create_re.foundation.utility.worldWrappers;
 
 import java.util.Collections;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.function.Predicate;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.foundation.mixin.accessor.EntityAccessor;
+import com.simibubi.create_re.foundation.mixin.accessor.EntityAccessor;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -148,7 +148,7 @@ public class WrappedWorld extends Level {
 
 	@Override
 	public boolean addFreshEntity(Entity entityIn) {
-		((EntityAccessor) entityIn).create$callSetLevel(world);
+		((EntityAccessor) entityIn).create_re$callSetLevel(world);
 		return world.addFreshEntity(entityIn);
 	}
 

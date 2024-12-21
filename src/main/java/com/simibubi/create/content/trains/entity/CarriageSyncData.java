@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.entity;
+package com.simibubi.create_re.content.trains.entity;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -13,16 +13,16 @@ import java.util.Vector;
 
 import org.apache.commons.lang3.mutable.MutableBoolean;
 
-import com.simibubi.create.content.trains.entity.Carriage.DimensionalCarriageEntity;
-import com.simibubi.create.content.trains.entity.TravellingPoint.ITrackSelector;
-import com.simibubi.create.content.trains.graph.TrackEdge;
-import com.simibubi.create.content.trains.graph.TrackGraph;
-import com.simibubi.create.content.trains.graph.TrackNode;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.Pair;
-import com.simibubi.create.foundation.utility.ServerSpeedProvider;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.content.trains.entity.Carriage.DimensionalCarriageEntity;
+import com.simibubi.create_re.content.trains.entity.TravellingPoint.ITrackSelector;
+import com.simibubi.create_re.content.trains.graph.TrackEdge;
+import com.simibubi.create_re.content.trains.graph.TrackGraph;
+import com.simibubi.create_re.content.trains.graph.TrackNode;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Pair;
+import com.simibubi.create_re.foundation.utility.ServerSpeedProvider;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.util.Mth;
@@ -99,7 +99,7 @@ public class CarriageSyncData {
 
 		if (fallback) {
 			fallbackLocations =
-				Pair.of(VecHelper.read(buffer), Couple.create(VecHelper.read(buffer), VecHelper.read(buffer)));
+				Pair.of(VecHelper.read(buffer), Couple.create_re(VecHelper.read(buffer), VecHelper.read(buffer)));
 			return;
 		}
 
@@ -107,7 +107,7 @@ public class CarriageSyncData {
 		for (int i = 0; i < 4; i++) {
 			if (buffer.readBoolean())
 				break;
-			wheelLocations.set(i, Pair.of(Couple.create(buffer::readInt), buffer.readFloat()));
+			wheelLocations.set(i, Pair.of(Couple.create_re(buffer::readInt), buffer.readFloat()));
 		}
 		distanceToDestination = buffer.readFloat();
 	}
@@ -132,7 +132,7 @@ public class CarriageSyncData {
 			for (boolean firstPoint : Iterate.trueAndFalse) {
 				TravellingPoint point = bogey.points.get(firstPoint);
 				int index = (first ? 0 : 2) + (firstPoint ? 0 : 1);
-				Couple<TrackNode> nodes = Couple.create(point.node1, point.node2);
+				Couple<TrackNode> nodes = Couple.create_re(point.node1, point.node2);
 
 				if (nodes.either(Objects::isNull)) {
 					updateFallbackLocations(dce);
@@ -320,7 +320,7 @@ public class CarriageSyncData {
 
 		double distanceToNode2 = forward ? initialEdge.getLength() - current.position : current.position;
 
-		frontier.add(Pair.of(distanceToNode2, Pair.of(Couple.create(initialNode1, initialNode2), initialEdge)));
+		frontier.add(Pair.of(distanceToNode2, Pair.of(Couple.create_re(initialNode1, initialNode2), initialEdge)));
 
 		while (!frontier.isEmpty()) {
 			Pair<Double, Pair<Couple<TrackNode>, TrackEdge>> poll = frontier.poll();
@@ -357,7 +357,7 @@ public class CarriageSyncData {
 				TrackNode newNode = entry.getKey();
 				TrackEdge newEdge = entry.getValue();
 				reachedVia.put(newEdge, Pair.of(validTargets.size() > 1, edge));
-				frontier.add(Pair.of(newEdge.getLength() + distance, Pair.of(Couple.create(node2, newNode), newEdge)));
+				frontier.add(Pair.of(newEdge.getLength() + distance, Pair.of(Couple.create_re(node2, newNode), newEdge)));
 			}
 		}
 

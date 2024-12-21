@@ -1,18 +1,18 @@
-package com.simibubi.create.infrastructure.ponder.scenes.trains;
+package com.simibubi.create_re.infrastructure.ponder.scenes.trains;
 
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.processing.burner.BlazeBurnerBlock;
-import com.simibubi.create.content.trains.station.StationBlock;
-import com.simibubi.create.foundation.ponder.ElementLink;
-import com.simibubi.create.foundation.ponder.PonderPalette;
-import com.simibubi.create.foundation.ponder.SceneBuilder;
-import com.simibubi.create.foundation.ponder.SceneBuildingUtil;
-import com.simibubi.create.foundation.ponder.Selection;
-import com.simibubi.create.foundation.ponder.element.InputWindowElement;
-import com.simibubi.create.foundation.ponder.element.ParrotElement;
-import com.simibubi.create.foundation.ponder.element.ParrotElement.FacePointOfInterestPose;
-import com.simibubi.create.foundation.ponder.element.WorldSectionElement;
-import com.simibubi.create.foundation.utility.Pointing;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock;
+import com.simibubi.create_re.content.trains.station.StationBlock;
+import com.simibubi.create_re.foundation.ponder.ElementLink;
+import com.simibubi.create_re.foundation.ponder.PonderPalette;
+import com.simibubi.create_re.foundation.ponder.SceneBuilder;
+import com.simibubi.create_re.foundation.ponder.SceneBuildingUtil;
+import com.simibubi.create_re.foundation.ponder.Selection;
+import com.simibubi.create_re.foundation.ponder.element.InputWindowElement;
+import com.simibubi.create_re.foundation.ponder.element.ParrotElement;
+import com.simibubi.create_re.foundation.ponder.element.ParrotElement.FacePointOfInterestPose;
+import com.simibubi.create_re.foundation.ponder.element.WorldSectionElement;
+import com.simibubi.create_re.foundation.utility.Pointing;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -230,7 +230,7 @@ public class TrainScenes {
 		scene.world.moveSection(trainElement2, util.vector.of(0, 0, -3), 0);
 		scene.idle(10);
 		Vec3 birbVec = util.vector.topOf(util.grid.at(3, 0, 7));
-		ElementLink<ParrotElement> birb = scene.special.createBirb(birbVec, FacePointOfInterestPose::new);
+		ElementLink<ParrotElement> birb = scene.special.create_reBirb(birbVec, FacePointOfInterestPose::new);
 		scene.world.animateTrainStation(stationPos, true);
 
 		scene.overlay.showText(110)

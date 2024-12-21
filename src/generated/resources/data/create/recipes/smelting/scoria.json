@@ -6,5 +6,5 @@
   "ingredient": {
     "item": "minecraft:soul_sand"
   },
-  "result": "create:scoria"
+  "result": "create_re:scoria"
 }

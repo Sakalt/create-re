@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.bogey;
+package com.simibubi.create_re.content.trains.bogey;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,10 +9,10 @@ import java.util.stream.Stream;
 import org.jetbrains.annotations.Nullable;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.AllBogeyStyles;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.content.trains.bogey.BogeySizes.BogeySize;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllBogeyStyles;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.content.trains.bogey.BogeySizes.BogeySize;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -95,10 +95,10 @@ public class BogeyStyle {
 
 	@OnlyIn(Dist.CLIENT)
 	@Nullable
-	public BogeyVisual createVisual(BogeySize size, VisualizationContext ctx, float partialTick, boolean inContraption) {
+	public BogeyVisual create_reVisual(BogeySize size, VisualizationContext ctx, float partialTick, boolean inContraption) {
 		SizeRenderer renderer = sizeRenderers.get(size);
 		if (renderer != null) {
-			return renderer.visualizer.createVisual(ctx, partialTick, inContraption);
+			return renderer.visualizer.create_reVisual(ctx, partialTick, inContraption);
 		}
 		return null;
 	}

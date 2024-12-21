@@ -39,11 +39,11 @@
               "source": "block_entity"
             }
           ],
-          "name": "create:white_toolbox"
+          "name": "create_re:white_toolbox"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/white_toolbox"
+  "random_sequence": "create_re:blocks/white_toolbox"
 }

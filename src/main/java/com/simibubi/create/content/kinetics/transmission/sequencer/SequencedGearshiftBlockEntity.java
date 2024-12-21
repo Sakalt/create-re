@@ -1,4 +1,4 @@
-package com.simibubi.create.content.kinetics.transmission.sequencer;
+package com.simibubi.create_re.content.kinetics.transmission.sequencer;
 
 import java.util.List;
 import java.util.Vector;
@@ -7,12 +7,12 @@ import javax.annotation.Nullable;
 
 import org.jetbrains.annotations.NotNull;
 
-import com.simibubi.create.compat.computercraft.AbstractComputerBehaviour;
-import com.simibubi.create.compat.computercraft.ComputerCraftProxy;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.kinetics.transmission.SplitShaftBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.utility.NBTHelper;
+import com.simibubi.create_re.compat.computercraft.AbstractComputerBehaviour;
+import com.simibubi.create_re.compat.computercraft.ComputerCraftProxy;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.kinetics.transmission.SplitShaftBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -65,7 +65,7 @@ public class SequencedGearshiftBlockEntity extends SplitShaftBlockEntity {
 
 	public SequencedGearshiftBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state) {
 		super(type, pos, state);
-		instructions = Instruction.createDefault();
+		instructions = Instruction.create_reDefault();
 		currentInstruction = -1;
 		currentInstructionDuration = -1;
 		currentInstructionProgress = 0;

@@ -1,20 +1,20 @@
-package com.simibubi.create.infrastructure.ponder.scenes;
+package com.simibubi.create_re.infrastructure.ponder.scenes;
 
-import com.simibubi.create.content.kinetics.belt.transport.TransportedItemStack;
-import com.simibubi.create.content.logistics.depot.DepotBlockEntity;
-import com.simibubi.create.foundation.ponder.ElementLink;
-import com.simibubi.create.foundation.ponder.PonderPalette;
-import com.simibubi.create.foundation.ponder.SceneBuilder;
-import com.simibubi.create.foundation.ponder.SceneBuildingUtil;
-import com.simibubi.create.foundation.ponder.Selection;
-import com.simibubi.create.foundation.ponder.element.BeltItemElement;
-import com.simibubi.create.foundation.ponder.element.EntityElement;
-import com.simibubi.create.foundation.ponder.element.InputWindowElement;
-import com.simibubi.create.foundation.ponder.element.ParrotElement;
-import com.simibubi.create.foundation.ponder.element.ParrotElement.FlappyPose;
-import com.simibubi.create.foundation.ponder.element.WorldSectionElement;
-import com.simibubi.create.foundation.ponder.instruction.EmitParticlesInstruction.Emitter;
-import com.simibubi.create.foundation.utility.Pointing;
+import com.simibubi.create_re.content.kinetics.belt.transport.TransportedItemStack;
+import com.simibubi.create_re.content.logistics.depot.DepotBlockEntity;
+import com.simibubi.create_re.foundation.ponder.ElementLink;
+import com.simibubi.create_re.foundation.ponder.PonderPalette;
+import com.simibubi.create_re.foundation.ponder.SceneBuilder;
+import com.simibubi.create_re.foundation.ponder.SceneBuildingUtil;
+import com.simibubi.create_re.foundation.ponder.Selection;
+import com.simibubi.create_re.foundation.ponder.element.BeltItemElement;
+import com.simibubi.create_re.foundation.ponder.element.EntityElement;
+import com.simibubi.create_re.foundation.ponder.element.InputWindowElement;
+import com.simibubi.create_re.foundation.ponder.element.ParrotElement;
+import com.simibubi.create_re.foundation.ponder.element.ParrotElement.FlappyPose;
+import com.simibubi.create_re.foundation.ponder.element.WorldSectionElement;
+import com.simibubi.create_re.foundation.ponder.instruction.EmitParticlesInstruction.Emitter;
+import com.simibubi.create_re.foundation.utility.Pointing;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -45,14 +45,14 @@ public class FanScenes {
 		scene.idle(40);
 		scene.effects.rotationDirectionIndicator(fanPos.south());
 
-		ElementLink<ParrotElement> flappyBirb = scene.special.createBirb(util.vector.topOf(1, 0, 3), FlappyPose::new);
+		ElementLink<ParrotElement> flappyBirb = scene.special.create_reBirb(util.vector.topOf(1, 0, 3), FlappyPose::new);
 		scene.idle(2);
 		scene.special.rotateParrot(flappyBirb, 0, 235, 0, 30);
 		scene.special.moveParrot(flappyBirb, util.vector.of(0, 0, -2.5), 30);
 		scene.idle(20);
 
 		scene.overlay.showText(80)
-			.text("Encased Fans use Rotational Force to create an Air Current")
+			.text("Encased Fans use Rotational Force to create_re an Air Current")
 			.attachKeyFrame()
 			.placeNearTarget()
 			.pointAt(util.vector.topOf(fanPos));
@@ -114,7 +114,7 @@ public class FanScenes {
 		ItemStack stack = new ItemStack(Items.GOLD_ORE);
 		ItemStack smelted = new ItemStack(Items.GOLD_INGOT);
 
-		ElementLink<EntityElement> entityLink = scene.world.createItemEntity(util.vector.centerOf(blockPos.west(2)
+		ElementLink<EntityElement> entityLink = scene.world.create_reItemEntity(util.vector.centerOf(blockPos.west(2)
 			.above(2)), util.vector.of(0, 0.1, 0), stack);
 		scene.idle(15);
 		scene.world.modifyEntity(entityLink, e -> e.setDeltaMovement(-0.2f, 0, 0));
@@ -178,13 +178,13 @@ public class FanScenes {
 		scene.overlay.showSelectionWithText(util.select.fromTo(blockPos, blockPos.west(2)), 60)
 			.colored(PonderPalette.MEDIUM)
 			.attachKeyFrame()
-			.text("Air Flows passing through water create a Washing Setup");
+			.text("Air Flows passing through water create_re a Washing Setup");
 		scene.idle(70);
 
 		stack = new ItemStack(Items.RED_SAND, 16);
 		ItemStack washed = new ItemStack(Items.GOLD_NUGGET, 16);
 
-		entityLink = scene.world.createItemEntity(util.vector.centerOf(blockPos.west(2)
+		entityLink = scene.world.create_reItemEntity(util.vector.centerOf(blockPos.west(2)
 			.above(2)), util.vector.of(0, 0.1, 0), stack);
 		scene.idle(15);
 		scene.world.modifyEntity(entityLink, e -> e.setDeltaMovement(-0.2f, 0, 0));
@@ -232,7 +232,7 @@ public class FanScenes {
 		ElementLink<WorldSectionElement> depot =
 			scene.world.showIndependentSection(util.select.position(depos), Direction.DOWN);
 		scene.world.moveSection(depot, util.vector.of(-1, -3, 0), 0);
-		scene.world.createItemOnBeltLike(depos, Direction.NORTH, sand);
+		scene.world.create_reItemOnBeltLike(depos, Direction.NORTH, sand);
 		scene.idle(10);
 		Vec3 depotTop = util.vector.topOf(2, 1, 2)
 			.add(0, 0.25, 0);
@@ -256,7 +256,7 @@ public class FanScenes {
 		scene.world.moveSection(largeCog, util.vector.of(-1, -2, 0), 0);
 		scene.world.moveSection(belt, util.vector.of(-1, -2, 0), 0);
 		ElementLink<BeltItemElement> transported =
-			scene.world.createItemOnBelt(util.grid.at(3, 3, 3), Direction.SOUTH, sand);
+			scene.world.create_reItemOnBelt(util.grid.at(3, 3, 3), Direction.SOUTH, sand);
 		scene.idle(60);
 		scene.effects.emitParticles(depotTop, Emitter.simple(ParticleTypes.SPIT, Vec3.ZERO), .5f, 25);
 		scene.idle(25);

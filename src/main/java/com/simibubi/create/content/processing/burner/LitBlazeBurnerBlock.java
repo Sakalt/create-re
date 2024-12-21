@@ -1,12 +1,12 @@
-package com.simibubi.create.content.processing.burner;
+package com.simibubi.create_re.content.processing.burner;
 
 import java.util.Random;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
@@ -38,7 +38,7 @@ public class LitBlazeBurnerBlock extends Block implements IWrenchable {
 
 	public static final ToolAction EXTINGUISH_FLAME_ACTION = ToolAction.get(Create.asResource("extinguish_flame").toString());
 
-	public static final EnumProperty<FlameType> FLAME_TYPE = EnumProperty.create("flame_type", FlameType.class);
+	public static final EnumProperty<FlameType> FLAME_TYPE = EnumProperty.create_re("flame_type", FlameType.class);
 
 	public LitBlazeBurnerBlock(Properties properties) {
 		super(properties);
@@ -46,8 +46,8 @@ public class LitBlazeBurnerBlock extends Block implements IWrenchable {
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
-		super.createBlockStateDefinition(builder);
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
+		super.create_reBlockStateDefinition(builder);
 		builder.add(FLAME_TYPE);
 	}
 

@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:cut_calcite"
+          "name": "create_re:cut_calcite"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/cut_calcite"
+  "random_sequence": "create_re:blocks/cut_calcite"
 }

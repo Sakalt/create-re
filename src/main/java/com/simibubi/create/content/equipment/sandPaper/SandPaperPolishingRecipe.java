@@ -1,13 +1,13 @@
-package com.simibubi.create.content.equipment.sandPaper;
+package com.simibubi.create_re.content.equipment.sandPaper;
 
 import java.util.List;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.content.equipment.sandPaper.SandPaperPolishingRecipe.SandPaperInv;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipe;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
+import com.simibubi.create_re.AllRecipeTypes;
+import com.simibubi.create_re.content.equipment.sandPaper.SandPaperPolishingRecipe.SandPaperInv;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipe;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Recipe;

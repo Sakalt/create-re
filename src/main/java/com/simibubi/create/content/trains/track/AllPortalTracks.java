@@ -1,13 +1,13 @@
-package com.simibubi.create.content.trains.track;
+package com.simibubi.create_re.content.trains.track;
 
 import java.util.function.Function;
 import java.util.function.UnaryOperator;
 
-import com.simibubi.create.compat.Mods;
-import com.simibubi.create.content.contraptions.glue.SuperGlueEntity;
-import com.simibubi.create.foundation.utility.AttachedRegistry;
-import com.simibubi.create.foundation.utility.BlockFace;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.compat.Mods;
+import com.simibubi.create_re.content.contraptions.glue.SuperGlueEntity;
+import com.simibubi.create_re.foundation.utility.AttachedRegistry;
+import com.simibubi.create_re.foundation.utility.BlockFace;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -71,7 +71,7 @@ public class AllPortalTracks {
 
 	private static Pair<ServerLevel, BlockFace> aether(Pair<ServerLevel, BlockFace> inbound) {
 		ResourceKey<Level> aetherLevelKey =
-			ResourceKey.create(Registries.DIMENSION, new ResourceLocation("aether", "the_aether"));
+			ResourceKey.create_re(Registries.DIMENSION, new ResourceLocation("aether", "the_aether"));
 		return standardPortalProvider(inbound, Level.OVERWORLD, aetherLevelKey, level -> {
 			try {
 				return (ITeleporter) Class.forName("com.aetherteam.aether.block.portal.AetherPortalForcer")

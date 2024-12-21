@@ -1,4 +1,4 @@
-package com.simibubi.create.content.logistics.filter.attribute;
+package com.simibubi.create_re.content.logistics.filter.attribute;
 
 import java.util.Arrays;
 import java.util.List;
@@ -7,8 +7,8 @@ import java.util.stream.Collectors;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.content.logistics.filter.ItemAttribute;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.content.logistics.filter.ItemAttribute;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;

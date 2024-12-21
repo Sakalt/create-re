@@ -1,13 +1,13 @@
-package com.simibubi.create.foundation.data.recipe;
+package com.simibubi.create_re.foundation.data.recipe;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.simibubi.create.content.kinetics.deployer.ManualApplicationRecipe;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.content.kinetics.deployer.ManualApplicationRecipe;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
@@ -27,7 +27,7 @@ import net.minecraftforge.registries.tags.ITagManager;
  */
 public class LogStrippingFakeRecipes {
 
-	public static List<ManualApplicationRecipe> createRecipes() {
+	public static List<ManualApplicationRecipe> create_reRecipes() {
 		List<ManualApplicationRecipe> recipes = new ArrayList<>();
 		if (!AllConfigs.server().recipes.displayLogStrippingRecipes.get())
 			return recipes;
@@ -54,10 +54,10 @@ public class LogStrippingFakeRecipes {
 			.asItem();
 		if (resultItem == null)
 			return;
-		list.add(create(item, resultItem, axe));
+		list.add(create_re(item, resultItem, axe));
 	}
 
-	private static ManualApplicationRecipe create(Item fromItem, Item toItem, ItemStack axe) {
+	private static ManualApplicationRecipe create_re(Item fromItem, Item toItem, ItemStack axe) {
 		ResourceLocation rn = RegisteredObjects.getKeyOrThrow(toItem);
 		return new ProcessingRecipeBuilder<>(ManualApplicationRecipe::new,
 			new ResourceLocation(rn.getNamespace(), rn.getPath() + "_via_vanilla_stripping")).require(fromItem)

@@ -1,13 +1,13 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "create:block/large_wheels",
+	"parent": "create_re:block/large_wheels",
 	"textures": {
-		"2": "create:block/flap_display_front",
-		"3": "create:block/dark_metal_block",
-		"4": "create:block/flap_display_side",
-		"5": "create:block/flap_display_top",
-		"6": "create:block/flap_display_inside",
-		"particle": "create:block/flap_display_front"
+		"2": "create_re:block/flap_display_front",
+		"3": "create_re:block/dark_metal_block",
+		"4": "create_re:block/flap_display_side",
+		"5": "create_re:block/flap_display_top",
+		"6": "create_re:block/flap_display_inside",
+		"particle": "create_re:block/flap_display_front"
 	},
 	"elements": [
 		{

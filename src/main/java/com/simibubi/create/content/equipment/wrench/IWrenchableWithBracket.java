@@ -1,9 +1,9 @@
-package com.simibubi.create.content.equipment.wrench;
+package com.simibubi.create_re.content.equipment.wrench;
 
 import java.util.Optional;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.fluids.FluidPropagator;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.fluids.FluidPropagator;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

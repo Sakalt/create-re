@@ -1,25 +1,25 @@
 {
-  "parent": "create:mechanical_arm",
+  "parent": "create_re:mechanical_arm",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:mechanical_crafter_builtin"
+      "trigger": "create_re:mechanical_crafter_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.mechanical_crafter.desc"
+      "translate": "advancement.create_re.mechanical_crafter.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:mechanical_crafter"
+      "item": "create_re:mechanical_crafter"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.mechanical_crafter"
+      "translate": "advancement.create_re.mechanical_crafter"
     }
   },
   "requirements": [

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "create:item/blaze_cake_base"
+    "layer0": "create_re:item/blaze_cake_base"
   }
 }

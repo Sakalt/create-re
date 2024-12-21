@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "create:block/glass_fluid_pipe",
+		"0": "create_re:block/glass_fluid_pipe",
 		"particle": "#0"
 	},
 	"elements": [

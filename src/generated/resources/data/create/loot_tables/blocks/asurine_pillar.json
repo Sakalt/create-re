@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:asurine_pillar"
+          "name": "create_re:asurine_pillar"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/asurine_pillar"
+  "random_sequence": "create_re:blocks/asurine_pillar"
 }

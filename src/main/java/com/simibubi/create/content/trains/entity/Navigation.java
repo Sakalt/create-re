@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.entity;
+package com.simibubi.create_re.content.trains.entity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -18,27 +18,27 @@ import javax.annotation.Nullable;
 import org.apache.commons.lang3.mutable.MutableDouble;
 import org.apache.commons.lang3.mutable.MutableObject;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.content.trains.entity.TravellingPoint.ITrackSelector;
-import com.simibubi.create.content.trains.graph.DimensionPalette;
-import com.simibubi.create.content.trains.graph.DiscoveredPath;
-import com.simibubi.create.content.trains.graph.EdgeData;
-import com.simibubi.create.content.trains.graph.EdgePointType;
-import com.simibubi.create.content.trains.graph.TrackEdge;
-import com.simibubi.create.content.trains.graph.TrackGraph;
-import com.simibubi.create.content.trains.graph.TrackNode;
-import com.simibubi.create.content.trains.graph.TrackNodeLocation;
-import com.simibubi.create.content.trains.signal.SignalBlock.SignalType;
-import com.simibubi.create.content.trains.signal.SignalBoundary;
-import com.simibubi.create.content.trains.signal.SignalEdgeGroup;
-import com.simibubi.create.content.trains.signal.TrackEdgePoint;
-import com.simibubi.create.content.trains.station.GlobalStation;
-import com.simibubi.create.content.trains.track.BezierConnection;
-import com.simibubi.create.content.trains.track.TrackMaterial;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.trains.entity.TravellingPoint.ITrackSelector;
+import com.simibubi.create_re.content.trains.graph.DimensionPalette;
+import com.simibubi.create_re.content.trains.graph.DiscoveredPath;
+import com.simibubi.create_re.content.trains.graph.EdgeData;
+import com.simibubi.create_re.content.trains.graph.EdgePointType;
+import com.simibubi.create_re.content.trains.graph.TrackEdge;
+import com.simibubi.create_re.content.trains.graph.TrackGraph;
+import com.simibubi.create_re.content.trains.graph.TrackNode;
+import com.simibubi.create_re.content.trains.graph.TrackNodeLocation;
+import com.simibubi.create_re.content.trains.signal.SignalBlock.SignalType;
+import com.simibubi.create_re.content.trains.signal.SignalBoundary;
+import com.simibubi.create_re.content.trains.signal.SignalEdgeGroup;
+import com.simibubi.create_re.content.trains.signal.TrackEdgePoint;
+import com.simibubi.create_re.content.trains.station.GlobalStation;
+import com.simibubi.create_re.content.trains.track.BezierConnection;
+import com.simibubi.create_re.content.trains.track.TrackMaterial;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.Tag;
@@ -451,7 +451,7 @@ public class Navigation {
 		if (graph == null)
 			return null;
 
-		Couple<DiscoveredPath> results = Couple.create(null, null);
+		Couple<DiscoveredPath> results = Couple.create_re(null, null);
 		for (boolean forward : Iterate.trueAndFalse) {
 
 			// When updating destinations midtransit, avoid reversing out of path
@@ -477,7 +477,7 @@ public class Navigation {
 
 						List<Couple<TrackNode>> currentPath = new ArrayList<>();
 						Pair<Boolean, Couple<TrackNode>> backTrack = reachedVia.get(edge);
-						Couple<TrackNode> toReach = Couple.create(node1, node2);
+						Couple<TrackNode> toReach = Couple.create_re(node1, node2);
 						TrackEdge edgeReached = edge;
 						while (backTrack != null) {
 							if (edgeReached == initialEdge)
@@ -648,7 +648,7 @@ public class Navigation {
 					if (presentTrain != null && !isOwnStation)
 						initialPenalty += Train.Penalties.STATION_WITH_TRAIN;
 					if (station.canApproachFrom(initialNode2) && stationTest.test(distanceToNode2, distanceToNode2 + initialPenalty, reachedVia,
-							Pair.of(Couple.create(initialNode1, initialNode2), initialEdge), station))
+							Pair.of(Couple.create_re(initialNode1, initialNode2), initialEdge), station))
 						return;
 					if (!isOwnStation)
 						initialPenalty += Train.Penalties.STATION;
@@ -682,7 +682,7 @@ public class Navigation {
 					for (TrackEdgePoint point : signalData.getPoints()) {
 						if (point instanceof GlobalStation station) {
 							if (station.canApproachFrom(node2) && stationTest.test(distance, penalty, reachedVia,
-									Pair.of(Couple.create(node1, node2), edge), station))
+									Pair.of(Couple.create_re(node1, node2), edge), station))
 								return;
 						}
 					}
@@ -747,7 +747,7 @@ public class Navigation {
 							if (presentTrain != null && !isOwnStation)
 								newPenalty += Train.Penalties.STATION_WITH_TRAIN;
 							if (station.canApproachFrom(newNode) && stationTest.test(newDistance, newDistance + newPenalty, reachedVia,
-									Pair.of(Couple.create(node2, newNode), newEdge), station)) {
+									Pair.of(Couple.create_re(node2, newNode), newEdge), station)) {
 								hasDestination = true;
 								continue;
 							}
@@ -795,7 +795,7 @@ public class Navigation {
 					}
 				}
 
-				reachedVia.putIfAbsent(newEdge, Pair.of(validTargets.size() > 1, Couple.create(node1, node2)));
+				reachedVia.putIfAbsent(newEdge, Pair.of(validTargets.size() > 1, Couple.create_re(node1, node2)));
 				frontier.add(new FrontierEntry(newDistance, newPenalty, remainingDist, hasDestination, node2, newNode, newEdge));
 			}
 		}

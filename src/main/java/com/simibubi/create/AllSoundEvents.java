@@ -1,4 +1,4 @@
-package com.simibubi.create;
+package com.simibubi.create_re;
 
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -38,288 +38,288 @@ public class AllSoundEvents {
 
 	public static final SoundEntry
 
-	SCHEMATICANNON_LAUNCH_BLOCK = create("schematicannon_launch_block").subtitle("Schematicannon fires")
+	SCHEMATICANNON_LAUNCH_BLOCK = create_re("schematicannon_launch_block").subtitle("Schematicannon fires")
 		.playExisting(SoundEvents.GENERIC_EXPLODE, .1f, 1.1f)
 		.category(SoundSource.BLOCKS)
 		.build(),
 
-		SCHEMATICANNON_FINISH = create("schematicannon_finish").subtitle("Schematicannon dings")
+		SCHEMATICANNON_FINISH = create_re("schematicannon_finish").subtitle("Schematicannon dings")
 			.playExisting(SoundEvents.NOTE_BLOCK_BELL, 1, .7f)
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		DEPOT_SLIDE = create("depot_slide").subtitle("Item slides")
+		DEPOT_SLIDE = create_re("depot_slide").subtitle("Item slides")
 			.playExisting(SoundEvents.SAND_BREAK, .125f, 1.5f)
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		DEPOT_PLOP = create("depot_plop").subtitle("Item lands")
+		DEPOT_PLOP = create_re("depot_plop").subtitle("Item lands")
 			.playExisting(SoundEvents.ITEM_FRAME_ADD_ITEM, .25f, 1.25f)
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		FUNNEL_FLAP = create("funnel_flap").subtitle("Funnel flaps")
+		FUNNEL_FLAP = create_re("funnel_flap").subtitle("Funnel flaps")
 			.playExisting(SoundEvents.ITEM_FRAME_ROTATE_ITEM, .125f, 1.5f)
 			.playExisting(SoundEvents.WOOL_BREAK, .0425f, .75f)
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		SLIME_ADDED = create("slime_added").subtitle("Slime squishes")
+		SLIME_ADDED = create_re("slime_added").subtitle("Slime squishes")
 			.playExisting(SoundEvents.SLIME_BLOCK_PLACE)
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		MECHANICAL_PRESS_ACTIVATION = create("mechanical_press_activation").subtitle("Mechanical Press clangs")
+		MECHANICAL_PRESS_ACTIVATION = create_re("mechanical_press_activation").subtitle("Mechanical Press clangs")
 			.playExisting(SoundEvents.ANVIL_LAND, .125f, 1f)
 			.playExisting(SoundEvents.ITEM_BREAK, .5f, 1f)
 			.category(SoundSource.BLOCKS)
 			.build(),
 
 		MECHANICAL_PRESS_ACTIVATION_ON_BELT =
-			create("mechanical_press_activation_belt").subtitle("Mechanical Press bonks")
+			create_re("mechanical_press_activation_belt").subtitle("Mechanical Press bonks")
 				.playExisting(SoundEvents.WOOL_HIT, .75f, 1f)
 				.playExisting(SoundEvents.ITEM_BREAK, .15f, .75f)
 				.category(SoundSource.BLOCKS)
 				.build(),
 
-		MIXING = create("mixing").subtitle("Mixing noises")
+		MIXING = create_re("mixing").subtitle("Mixing noises")
 			.playExisting(SoundEvents.GILDED_BLACKSTONE_BREAK, .125f, .5f)
 			.playExisting(SoundEvents.NETHERRACK_BREAK, .125f, .5f)
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		SPOUTING = create("spout").subtitle("Spout spurts")
+		SPOUTING = create_re("spout").subtitle("Spout spurts")
 			.addVariant("spout_1")
 			.addVariant("spout_2")
 			.addVariant("spout_3")
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		CRANKING = create("cranking").subtitle("Hand Crank turns")
+		CRANKING = create_re("cranking").subtitle("Hand Crank turns")
 			.playExisting(SoundEvents.WOOD_PLACE, .075f, .5f)
 			.playExisting(SoundEvents.WOODEN_BUTTON_CLICK_OFF, .025f, .5f)
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		WORLDSHAPER_PLACE = create("worldshaper_place").subtitle("Worldshaper zaps")
+		WORLDSHAPER_PLACE = create_re("worldshaper_place").subtitle("Worldshaper zaps")
 			.playExisting(SoundEvents.NOTE_BLOCK_BASEDRUM)
 			.category(SoundSource.PLAYERS)
 			.build(),
 
-		SCROLL_VALUE = create("scroll_value").subtitle("Scroll-input clicks")
+		SCROLL_VALUE = create_re("scroll_value").subtitle("Scroll-input clicks")
 			.playExisting(SoundEvents.NOTE_BLOCK_HAT, .124f, 1f)
 			.category(SoundSource.PLAYERS)
 			.build(),
 
-		CONFIRM = create("confirm").subtitle("Affirmative ding")
+		CONFIRM = create_re("confirm").subtitle("Affirmative ding")
 			.playExisting(SoundEvents.NOTE_BLOCK_BELL, 0.5f, 0.8f)
 			.category(SoundSource.PLAYERS)
 			.build(),
 
-		DENY = create("deny").subtitle("Declining boop")
+		DENY = create_re("deny").subtitle("Declining boop")
 			.playExisting(SoundEvents.NOTE_BLOCK_BASS, 1f, 0.5f)
 			.category(SoundSource.PLAYERS)
 			.build(),
 
-		COGS = create("cogs").subtitle("Cogwheels rumble")
+		COGS = create_re("cogs").subtitle("Cogwheels rumble")
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		FWOOMP = create("fwoomp").subtitle("Potato Launcher fwoomps")
+		FWOOMP = create_re("fwoomp").subtitle("Potato Launcher fwoomps")
 			.category(SoundSource.PLAYERS)
 			.build(),
 
-		POTATO_HIT = create("potato_hit").subtitle("Vegetable impacts")
+		POTATO_HIT = create_re("potato_hit").subtitle("Vegetable impacts")
 			.playExisting(SoundEvents.ITEM_FRAME_BREAK, .75f, .75f)
 			.playExisting(SoundEvents.WEEPING_VINES_BREAK, .75f, 1.25f)
 			.category(SoundSource.PLAYERS)
 			.build(),
 
-		CONTRAPTION_ASSEMBLE = create("contraption_assemble").subtitle("Contraption moves")
+		CONTRAPTION_ASSEMBLE = create_re("contraption_assemble").subtitle("Contraption moves")
 			.playExisting(SoundEvents.WOODEN_TRAPDOOR_OPEN, .5f, .5f)
 			.playExisting(SoundEvents.CHEST_OPEN, .045f, .74f)
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		CONTRAPTION_DISASSEMBLE = create("contraption_disassemble").subtitle("Contraption stops")
+		CONTRAPTION_DISASSEMBLE = create_re("contraption_disassemble").subtitle("Contraption stops")
 			.playExisting(SoundEvents.IRON_TRAPDOOR_CLOSE, .35f, .75f)
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		WRENCH_ROTATE = create("wrench_rotate").subtitle("Wrench used")
+		WRENCH_ROTATE = create_re("wrench_rotate").subtitle("Wrench used")
 			.playExisting(SoundEvents.WOODEN_TRAPDOOR_CLOSE, .25f, 1.25f)
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		WRENCH_REMOVE = create("wrench_remove").subtitle("Component breaks")
+		WRENCH_REMOVE = create_re("wrench_remove").subtitle("Component breaks")
 			.playExisting(SoundEvents.ITEM_PICKUP, .25f, .75f)
 			.playExisting(SoundEvents.NETHERITE_BLOCK_HIT, .25f, .75f)
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		CRAFTER_CLICK = create("crafter_click").subtitle("Crafter clicks")
+		CRAFTER_CLICK = create_re("crafter_click").subtitle("Crafter clicks")
 			.playExisting(SoundEvents.NETHERITE_BLOCK_HIT, .25f, 1)
 			.playExisting(SoundEvents.WOODEN_TRAPDOOR_OPEN, .125f, 1)
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		CRAFTER_CRAFT = create("crafter_craft").subtitle("Crafter crafts")
+		CRAFTER_CRAFT = create_re("crafter_craft").subtitle("Crafter crafts")
 			.playExisting(SoundEvents.ITEM_BREAK, .125f, .75f)
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		COPPER_ARMOR_EQUIP = create("copper_armor_equip").subtitle("Diving equipment clinks")
+		COPPER_ARMOR_EQUIP = create_re("copper_armor_equip").subtitle("Diving equipment clinks")
 			.playExisting(SoundEvents.ARMOR_EQUIP_GOLD, 1f, 1f)
 			.category(SoundSource.PLAYERS)
 			.build(),
 
-		SANDING_SHORT = create("sanding_short").subtitle("Sanding noises")
+		SANDING_SHORT = create_re("sanding_short").subtitle("Sanding noises")
 			.addVariant("sanding_short_1")
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		SANDING_LONG = create("sanding_long").subtitle("Sanding noises")
+		SANDING_LONG = create_re("sanding_long").subtitle("Sanding noises")
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		CONTROLLER_CLICK = create("controller_click").subtitle("Controller clicks")
+		CONTROLLER_CLICK = create_re("controller_click").subtitle("Controller clicks")
 			.playExisting(SoundEvents.ITEM_FRAME_ADD_ITEM, .35f, 1f)
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		CONTROLLER_PUT = create("controller_put").subtitle("Controller thumps")
+		CONTROLLER_PUT = create_re("controller_put").subtitle("Controller thumps")
 			.playExisting(SoundEvents.BOOK_PUT, 1f, 1f)
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		CONTROLLER_TAKE = create("controller_take").subtitle("Lectern empties")
+		CONTROLLER_TAKE = create_re("controller_take").subtitle("Lectern empties")
 			.playExisting(SoundEvents.ITEM_FRAME_REMOVE_ITEM, 1f, 1f)
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		SAW_ACTIVATE_WOOD = create("saw_activate_wood").subtitle("Mechanical Saw activates")
+		SAW_ACTIVATE_WOOD = create_re("saw_activate_wood").subtitle("Mechanical Saw activates")
 			.playExisting(SoundEvents.BOAT_PADDLE_LAND, .75f, 1.5f)
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		SAW_ACTIVATE_STONE = create("saw_activate_stone").subtitle("Mechanical Saw activates")
+		SAW_ACTIVATE_STONE = create_re("saw_activate_stone").subtitle("Mechanical Saw activates")
 			.playExisting(SoundEvents.UI_STONECUTTER_TAKE_RESULT, .125f, 1.25f)
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		BLAZE_MUNCH = create("blaze_munch").subtitle("Blaze Burner munches")
+		BLAZE_MUNCH = create_re("blaze_munch").subtitle("Blaze Burner munches")
 			.playExisting(SoundEvents.GENERIC_EAT, .5f, 1f)
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		CRUSHING_1 = create("crushing_1").subtitle("Crushing noises")
+		CRUSHING_1 = create_re("crushing_1").subtitle("Crushing noises")
 			.playExisting(SoundEvents.NETHERRACK_HIT)
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		CRUSHING_2 = create("crushing_2").noSubtitle()
+		CRUSHING_2 = create_re("crushing_2").noSubtitle()
 			.playExisting(SoundEvents.GRAVEL_PLACE)
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		CRUSHING_3 = create("crushing_3").noSubtitle()
+		CRUSHING_3 = create_re("crushing_3").noSubtitle()
 			.playExisting(SoundEvents.NETHERITE_BLOCK_BREAK)
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		PECULIAR_BELL_USE = create("peculiar_bell_use").subtitle("Peculiar Bell tolls")
+		PECULIAR_BELL_USE = create_re("peculiar_bell_use").subtitle("Peculiar Bell tolls")
 			.playExisting(SoundEvents.BELL_BLOCK)
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		WHISTLE_HIGH = create("whistle_high").subtitle("High whistling")
+		WHISTLE_HIGH = create_re("whistle_high").subtitle("High whistling")
 			.category(SoundSource.RECORDS)
 			.attenuationDistance(64)
 			.build(),
 
-		WHISTLE_MEDIUM = create("whistle").subtitle("Whistling")
+		WHISTLE_MEDIUM = create_re("whistle").subtitle("Whistling")
 			.category(SoundSource.RECORDS)
 			.attenuationDistance(64)
 			.build(),
 
-		WHISTLE_LOW = create("whistle_low").subtitle("Low whistling")
+		WHISTLE_LOW = create_re("whistle_low").subtitle("Low whistling")
 			.category(SoundSource.RECORDS)
 			.attenuationDistance(64)
 			.build(),
 
-		STEAM = create("steam").subtitle("Steam noises")
+		STEAM = create_re("steam").subtitle("Steam noises")
 			.category(SoundSource.NEUTRAL)
 			.attenuationDistance(32)
 			.build(),
 
-		TRAIN = create("train").subtitle("Bogey wheels rumble")
+		TRAIN = create_re("train").subtitle("Bogey wheels rumble")
 			.category(SoundSource.NEUTRAL)
 			.attenuationDistance(128)
 			.build(),
 
-		TRAIN2 = create("train2").noSubtitle()
+		TRAIN2 = create_re("train2").noSubtitle()
 			.category(SoundSource.NEUTRAL)
 			.attenuationDistance(128)
 			.build(),
 
-		TRAIN3 = create("train3").subtitle("Bogey wheels rumble muffled")
+		TRAIN3 = create_re("train3").subtitle("Bogey wheels rumble muffled")
 			.category(SoundSource.NEUTRAL)
 			.attenuationDistance(16)
 			.build(),
 
-		WHISTLE_TRAIN = create("whistle_train").subtitle("Whistling")
+		WHISTLE_TRAIN = create_re("whistle_train").subtitle("Whistling")
 			.category(SoundSource.RECORDS)
 			.build(),
 
-		WHISTLE_TRAIN_LOW = create("whistle_train_low").subtitle("Low whistling")
+		WHISTLE_TRAIN_LOW = create_re("whistle_train_low").subtitle("Low whistling")
 			.category(SoundSource.RECORDS)
 			.build(),
 
-		WHISTLE_TRAIN_MANUAL = create("whistle_train_manual").subtitle("Train honks")
+		WHISTLE_TRAIN_MANUAL = create_re("whistle_train_manual").subtitle("Train honks")
 			.category(SoundSource.NEUTRAL)
 			.attenuationDistance(64)
 			.build(),
 
-		WHISTLE_TRAIN_MANUAL_LOW = create("whistle_train_manual_low").subtitle("Train honks")
+		WHISTLE_TRAIN_MANUAL_LOW = create_re("whistle_train_manual_low").subtitle("Train honks")
 			.category(SoundSource.NEUTRAL)
 			.attenuationDistance(64)
 			.build(),
 
-		WHISTLE_TRAIN_MANUAL_END = create("whistle_train_manual_end").noSubtitle()
+		WHISTLE_TRAIN_MANUAL_END = create_re("whistle_train_manual_end").noSubtitle()
 			.category(SoundSource.NEUTRAL)
 			.attenuationDistance(64)
 			.build(),
 
-		WHISTLE_TRAIN_MANUAL_LOW_END = create("whistle_train_manual_low_end").noSubtitle()
+		WHISTLE_TRAIN_MANUAL_LOW_END = create_re("whistle_train_manual_low_end").noSubtitle()
 			.category(SoundSource.NEUTRAL)
 			.attenuationDistance(64)
 			.build(),
 
-		WHISTLE_CHIFF = create("chiff").noSubtitle()
+		WHISTLE_CHIFF = create_re("chiff").noSubtitle()
 			.category(SoundSource.RECORDS)
 			.build(),
 
-		HAUNTED_BELL_CONVERT = create("haunted_bell_convert").subtitle("Haunted Bell awakens")
+		HAUNTED_BELL_CONVERT = create_re("haunted_bell_convert").subtitle("Haunted Bell awakens")
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		HAUNTED_BELL_USE = create("haunted_bell_use").subtitle("Haunted Bell tolls")
+		HAUNTED_BELL_USE = create_re("haunted_bell_use").subtitle("Haunted Bell tolls")
 			.category(SoundSource.BLOCKS)
 				.build(),
 
-		CLIPBOARD_CHECKMARK = create("clipboard_check").noSubtitle()
+		CLIPBOARD_CHECKMARK = create_re("clipboard_check").noSubtitle()
 			.category(SoundSource.BLOCKS)
 			.build(),
 
-		CLIPBOARD_ERASE = create("clipboard_erase").noSubtitle()
+		CLIPBOARD_ERASE = create_re("clipboard_erase").noSubtitle()
 			.category(SoundSource.BLOCKS)
 			.build();
 
-	private static SoundEntryBuilder create(String name) {
-		return create(Create.asResource(name));
+	private static SoundEntryBuilder create_re(String name) {
+		return create_re(Create.asResource(name));
 	}
 
-	public static SoundEntryBuilder create(ResourceLocation id) {
+	public static SoundEntryBuilder create_re(ResourceLocation id) {
 		return new SoundEntryBuilder(id);
 	}
 
@@ -379,7 +379,7 @@ public class AllSoundEvents {
 		}
 
 		public CompletableFuture<?> generate(Path path, CachedOutput cache) {
-			path = path.resolve("assets/create");
+			path = path.resolve("assets/create_re");
 			JsonObject json = new JsonObject();
 			ALL.entrySet()
 				.stream()
@@ -565,7 +565,7 @@ public class AllSoundEvents {
 			for (int i = 0; i < wrappedEvents.size(); i++) {
 				ConfiguredSoundEvent wrapped = wrappedEvents.get(i);
 				ResourceLocation location = getIdOf(i);
-				RegistryObject<SoundEvent> event = RegistryObject.create(location, ForgeRegistries.SOUND_EVENTS);
+				RegistryObject<SoundEvent> event = RegistryObject.create_re(location, ForgeRegistries.SOUND_EVENTS);
 				compiledEvents.add(new CompiledSoundEvent(event, wrapped.volume(), wrapped.pitch()));
 			}
 		}
@@ -574,7 +574,7 @@ public class AllSoundEvents {
 		public void register(RegisterEvent.RegisterHelper<SoundEvent> helper) {
 			for (CompiledSoundEvent compiledEvent : compiledEvents) {
 				ResourceLocation location = compiledEvent.event().getId();
-				helper.register(location, SoundEvent.createVariableRangeEvent(location));
+				helper.register(location, SoundEvent.create_reVariableRangeEvent(location));
 			}
 		}
 
@@ -644,13 +644,13 @@ public class AllSoundEvents {
 
 		@Override
 		public void prepare() {
-			event = RegistryObject.create(id, ForgeRegistries.SOUND_EVENTS);
+			event = RegistryObject.create_re(id, ForgeRegistries.SOUND_EVENTS);
 		}
 
 		@Override
 		public void register(RegisterEvent.RegisterHelper<SoundEvent> helper) {
 			ResourceLocation location = event.getId();
-			helper.register(location, SoundEvent.createVariableRangeEvent(location));
+			helper.register(location, SoundEvent.create_reVariableRangeEvent(location));
 		}
 
 		@Override

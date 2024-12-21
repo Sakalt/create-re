@@ -1,4 +1,4 @@
-package com.simibubi.create.content.kinetics.deployer;
+package com.simibubi.create_re.content.kinetics.deployer;
 
 import static net.minecraftforge.eventbus.api.Event.Result.DEFAULT;
 import static net.minecraftforge.eventbus.api.Event.Result.DENY;
@@ -12,17 +12,17 @@ import javax.annotation.Nullable;
 import org.apache.commons.lang3.tuple.Pair;
 
 import com.google.common.collect.Multimap;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.AllTags.AllItemTags;
-import com.simibubi.create.content.contraptions.AbstractContraptionEntity;
-import com.simibubi.create.content.contraptions.mounted.CartAssemblerBlockItem;
-import com.simibubi.create.content.equipment.sandPaper.SandPaperItem;
-import com.simibubi.create.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour;
-import com.simibubi.create.content.kinetics.deployer.DeployerBlockEntity.Mode;
-import com.simibubi.create.content.trains.track.ITrackBlock;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.utility.BlockHelper;
-import com.simibubi.create.foundation.utility.worldWrappers.WrappedWorld;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.AllTags.AllItemTags;
+import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity;
+import com.simibubi.create_re.content.contraptions.mounted.CartAssemblerBlockItem;
+import com.simibubi.create_re.content.equipment.sandPaper.SandPaperItem;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour;
+import com.simibubi.create_re.content.kinetics.deployer.DeployerBlockEntity.Mode;
+import com.simibubi.create_re.content.trains.track.ITrackBlock;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.utility.BlockHelper;
+import com.simibubi.create_re.foundation.utility.worldWrappers.WrappedWorld;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -329,7 +329,7 @@ public class DeployerHandler {
 		if (AllItemTags.DEPLOYABLE_DRINK.matches(item))
 			return;
 
-		// buckets create their own ray, We use a fake wall to contain the active area
+		// buckets create_re their own ray, We use a fake wall to contain the active area
 		Level itemUseWorld = world;
 		if (item instanceof BucketItem || item instanceof SandPaperItem)
 			itemUseWorld = new ItemUseWorld(world, face, pos);

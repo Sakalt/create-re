@@ -4,7 +4,7 @@
   "group": "small_ochrum_brick_stairs",
   "key": {
     "X": {
-      "item": "create:small_ochrum_bricks"
+      "item": "create_re:small_ochrum_bricks"
     }
   },
   "pattern": [
@@ -14,7 +14,7 @@
   ],
   "result": {
     "count": 4,
-    "item": "create:small_ochrum_brick_stairs"
+    "item": "create_re:small_ochrum_brick_stairs"
   },
   "show_notification": true
 }

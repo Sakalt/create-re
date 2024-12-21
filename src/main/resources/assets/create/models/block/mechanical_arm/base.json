@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"2": "create:block/elevator_pulley",
-		"3": "create:block/brass_block",
-		"5": "create:block/mechanical_arm"
+		"2": "create_re:block/elevator_pulley",
+		"3": "create_re:block/brass_block",
+		"5": "create_re:block/mechanical_arm"
 	},
 	"elements": [
 		{

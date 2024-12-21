@@ -1,16 +1,16 @@
-package com.simibubi.create.content.trains.schedule.hat;
+package com.simibubi.create_re.content.trains.schedule.hat;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.contraptions.Contraption;
-import com.simibubi.create.content.trains.entity.CarriageContraption;
-import com.simibubi.create.content.trains.entity.CarriageContraptionEntity;
-import com.simibubi.create.foundation.mixin.accessor.AgeableListModelAccessor;
-import com.simibubi.create.foundation.render.CachedBufferer;
-import com.simibubi.create.foundation.utility.Couple;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.contraptions.Contraption;
+import com.simibubi.create_re.content.trains.entity.CarriageContraption;
+import com.simibubi.create_re.content.trains.entity.CarriageContraptionEntity;
+import com.simibubi.create_re.foundation.mixin.accessor.AgeableListModelAccessor;
+import com.simibubi.create_re.foundation.render.CachedBufferer;
+import com.simibubi.create_re.foundation.utility.Couple;
 
 import dev.engine_room.flywheel.lib.transform.TransformStack;
 import net.minecraft.client.model.AgeableListModel;
@@ -145,9 +145,9 @@ public class TrainHatArmorLayer<T extends LivingEntity, M extends EntityModel<T>
 	}
 
 	private static ModelPart getHeadPart(AgeableListModel<?> model) {
-		for (ModelPart part : ((AgeableListModelAccessor) model).create$callHeadParts())
+		for (ModelPart part : ((AgeableListModelAccessor) model).create_re$callHeadParts())
 			return part;
-		for (ModelPart part : ((AgeableListModelAccessor) model).create$callBodyParts())
+		for (ModelPart part : ((AgeableListModelAccessor) model).create_re$callBodyParts())
 			return part;
 		return null;
 	}

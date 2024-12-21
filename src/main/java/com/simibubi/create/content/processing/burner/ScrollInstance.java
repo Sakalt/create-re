@@ -1,4 +1,4 @@
-package com.simibubi.create.content.processing.burner;
+package com.simibubi.create_re.content.processing.burner;
 
 import org.joml.Quaternionf;
 

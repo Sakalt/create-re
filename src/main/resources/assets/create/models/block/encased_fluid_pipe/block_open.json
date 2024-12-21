@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "create:block/encased_pipe",
-		"particle": "create:block/encased_pipe"
+		"0": "create_re:block/encased_pipe",
+		"particle": "create_re:block/encased_pipe"
 	},
 	"elements": [
 		{

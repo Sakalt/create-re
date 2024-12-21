@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 1,
   "ingredient": {
-    "tag": "create:stone_types/dripstone"
+    "tag": "create_re:stone_types/dripstone"
   },
-  "result": "create:polished_cut_dripstone"
+  "result": "create_re:polished_cut_dripstone"
 }

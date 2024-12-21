@@ -1,4 +1,4 @@
-package com.simibubi.create.infrastructure.data;
+package com.simibubi.create_re.infrastructure.data;
 
 import java.util.Map.Entry;
 import java.util.concurrent.CompletableFuture;
@@ -6,20 +6,20 @@ import java.util.function.BiConsumer;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.data.DamageTypeTagGen;
-import com.simibubi.create.foundation.data.recipe.MechanicalCraftingRecipeGen;
-import com.simibubi.create.foundation.data.recipe.ProcessingRecipeGen;
-import com.simibubi.create.foundation.data.recipe.SequencedAssemblyRecipeGen;
-import com.simibubi.create.foundation.data.recipe.StandardRecipeGen;
-import com.simibubi.create.foundation.ponder.PonderLocalization;
-import com.simibubi.create.foundation.utility.FilesHelper;
-import com.simibubi.create.infrastructure.ponder.AllPonderTags;
-import com.simibubi.create.infrastructure.ponder.GeneralText;
-import com.simibubi.create.infrastructure.ponder.PonderIndex;
-import com.simibubi.create.infrastructure.ponder.SharedText;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.data.DamageTypeTagGen;
+import com.simibubi.create_re.foundation.data.recipe.MechanicalCraftingRecipeGen;
+import com.simibubi.create_re.foundation.data.recipe.ProcessingRecipeGen;
+import com.simibubi.create_re.foundation.data.recipe.SequencedAssemblyRecipeGen;
+import com.simibubi.create_re.foundation.data.recipe.StandardRecipeGen;
+import com.simibubi.create_re.foundation.ponder.PonderLocalization;
+import com.simibubi.create_re.foundation.utility.FilesHelper;
+import com.simibubi.create_re.infrastructure.ponder.AllPonderTags;
+import com.simibubi.create_re.infrastructure.ponder.GeneralText;
+import com.simibubi.create_re.infrastructure.ponder.PonderIndex;
+import com.simibubi.create_re.infrastructure.ponder.SharedText;
 import com.tterrag.registrate.providers.ProviderType;
 
 import net.minecraft.core.HolderLookup;
@@ -72,7 +72,7 @@ public class CreateDatagen {
 	}
 
 	private static void provideDefaultLang(String fileName, BiConsumer<String, String> consumer) {
-		String path = "assets/create/lang/default/" + fileName + ".json";
+		String path = "assets/create_re/lang/default/" + fileName + ".json";
 		JsonElement jsonElement = FilesHelper.loadJsonResource(path);
 		if (jsonElement == null) {
 			throw new IllegalStateException(String.format("Could not find default lang file: %s", path));

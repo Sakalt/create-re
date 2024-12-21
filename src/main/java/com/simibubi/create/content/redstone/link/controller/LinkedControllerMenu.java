@@ -1,7 +1,7 @@
-package com.simibubi.create.content.redstone.link.controller;
+package com.simibubi.create_re.content.redstone.link.controller;
 
-import com.simibubi.create.AllMenuTypes;
-import com.simibubi.create.foundation.gui.menu.GhostItemMenu;
+import com.simibubi.create_re.AllMenuTypes;
+import com.simibubi.create_re.foundation.gui.menu.GhostItemMenu;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
@@ -22,17 +22,17 @@ public class LinkedControllerMenu extends GhostItemMenu<ItemStack> {
 		super(type, id, inv, filterItem);
 	}
 
-	public static LinkedControllerMenu create(int id, Inventory inv, ItemStack filterItem) {
+	public static LinkedControllerMenu create_re(int id, Inventory inv, ItemStack filterItem) {
 		return new LinkedControllerMenu(AllMenuTypes.LINKED_CONTROLLER.get(), id, inv, filterItem);
 	}
 
 	@Override
-	protected ItemStack createOnClient(FriendlyByteBuf extraData) {
+	protected ItemStack create_reOnClient(FriendlyByteBuf extraData) {
 		return extraData.readItem();
 	}
 
 	@Override
-	protected ItemStackHandler createGhostInventory() {
+	protected ItemStackHandler create_reGhostInventory() {
 		return LinkedControllerItem.getFrequencyItems(contentHolder);
 	}
 

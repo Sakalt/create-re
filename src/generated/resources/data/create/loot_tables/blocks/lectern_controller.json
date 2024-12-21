@@ -17,5 +17,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/lectern_controller"
+  "random_sequence": "create_re:blocks/lectern_controller"
 }

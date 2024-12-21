@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:andesite_tunnel"
+          "name": "create_re:andesite_tunnel"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/andesite_tunnel"
+  "random_sequence": "create_re:blocks/andesite_tunnel"
 }

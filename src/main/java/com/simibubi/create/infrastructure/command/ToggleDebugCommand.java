@@ -1,6 +1,6 @@
-package com.simibubi.create.infrastructure.command;
+package com.simibubi.create_re.infrastructure.command;
 
-import com.simibubi.create.AllPackets;
+import com.simibubi.create_re.AllPackets;
 
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.network.PacketDistributor;

@@ -17,5 +17,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/minecart_anchor"
+  "random_sequence": "create_re:blocks/minecart_anchor"
 }

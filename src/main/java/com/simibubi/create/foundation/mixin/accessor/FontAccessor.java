@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.mixin.accessor;
+package com.simibubi.create_re.foundation.mixin.accessor;
 
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.font.FontSet;
@@ -12,5 +12,5 @@ import java.util.function.Function;
 @Mixin(Font.class)
 public interface FontAccessor {
 	@Accessor("fonts")
-	Function<ResourceLocation, FontSet> create$getFonts();
+	Function<ResourceLocation, FontSet> create_re$getFonts();
 }

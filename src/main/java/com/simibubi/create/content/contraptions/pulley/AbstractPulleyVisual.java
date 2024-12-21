@@ -1,10 +1,10 @@
-package com.simibubi.create.content.contraptions.pulley;
+package com.simibubi.create_re.content.contraptions.pulley;
 
 import java.util.function.Consumer;
 
 import com.mojang.math.Axis;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.kinetics.base.ShaftVisual;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.kinetics.base.ShaftVisual;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.instance.Instancer;
@@ -44,13 +44,13 @@ public abstract class AbstractPulleyVisual<T extends KineticBlockEntity> extends
 		rotatingAbout = Direction.get(Direction.AxisDirection.POSITIVE, axis);
 		rotationAxis = Axis.of(rotatingAbout.step());
 
-		coil = getCoilModel().createInstance()
+		coil = getCoilModel().create_reInstance()
 				.position(getVisualPosition());
 		coil.setChanged();
 
-		magnet = magnetInstancer().createInstance();
+		magnet = magnetInstancer().create_reInstance();
 
-		rope = new SmartRecycler<>(b -> b ? getHalfRopeModel().createInstance() : getRopeModel().createInstance());
+		rope = new SmartRecycler<>(b -> b ? getHalfRopeModel().create_reInstance() : getRopeModel().create_reInstance());
 
 		updateOffset(partialTick);
 		updateLight(partialTick);

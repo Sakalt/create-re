@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.entity;
+package com.simibubi.create_re.content.trains.entity;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -15,17 +15,17 @@ import java.util.function.Predicate;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.content.trains.graph.DimensionPalette;
-import com.simibubi.create.content.trains.graph.EdgeData;
-import com.simibubi.create.content.trains.graph.TrackEdge;
-import com.simibubi.create.content.trains.graph.TrackGraph;
-import com.simibubi.create.content.trains.graph.TrackGraphLocation;
-import com.simibubi.create.content.trains.graph.TrackNode;
-import com.simibubi.create.content.trains.graph.TrackNodeLocation;
-import com.simibubi.create.content.trains.signal.TrackEdgePoint;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.trains.graph.DimensionPalette;
+import com.simibubi.create_re.content.trains.graph.EdgeData;
+import com.simibubi.create_re.content.trains.graph.TrackEdge;
+import com.simibubi.create_re.content.trains.graph.TrackGraph;
+import com.simibubi.create_re.content.trains.graph.TrackGraphLocation;
+import com.simibubi.create_re.content.trains.graph.TrackNode;
+import com.simibubi.create_re.content.trains.graph.TrackNodeLocation;
+import com.simibubi.create_re.content.trains.signal.TrackEdgePoint;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.Tag;
@@ -262,7 +262,7 @@ public class TravellingPoint {
 
 				if (entry.getValue()
 					.getLength() == 0 && portalListener.test(
-						Couple.create(node2.getLocation(), entry.getKey()
+						Couple.create_re(node2.getLocation(), entry.getKey()
 							.getLocation()))) {
 					traveled -= position - edgeLength;
 					position = edgeLength;
@@ -322,7 +322,7 @@ public class TravellingPoint {
 
 				if (entry.getValue()
 					.getLength() == 0 && portalListener.test(
-						Couple.create(entry.getKey()
+						Couple.create_re(entry.getKey()
 							.getLocation(), node1.getLocation()))) {
 					traveled -= position;
 					position = 0;
@@ -373,7 +373,7 @@ public class TravellingPoint {
 			double distance = forward ? locationOn : length - locationOn;
 			if (forward ? (locationOn < from || locationOn >= to) : (locationOn <= from || locationOn > to))
 				continue;
-			Couple<TrackNode> nodes = Couple.create(node1, node2);
+			Couple<TrackNode> nodes = Couple.create_re(node1, node2);
 			if (edgePointListener.test(totalDistance + distance, Pair.of(nextBoundary, forward ? nodes : nodes.swap())))
 				return locationOn;
 		}
@@ -417,7 +417,7 @@ public class TravellingPoint {
 
 	public CompoundTag write(DimensionPalette dimensions) {
 		CompoundTag tag = new CompoundTag();
-		Couple<TrackNode> nodes = Couple.create(node1, node2);
+		Couple<TrackNode> nodes = Couple.create_re(node1, node2);
 		if (nodes.either(Objects::isNull))
 			return tag;
 		tag.put("Nodes", nodes.map(TrackNode::getLocation)
@@ -434,7 +434,7 @@ public class TravellingPoint {
 		Couple<TrackNode> locs = tag.contains("Nodes")
 			? Couple.deserializeEach(tag.getList("Nodes", Tag.TAG_COMPOUND), c -> TrackNodeLocation.read(c, dimensions))
 				.map(graph::locateNode)
-			: Couple.create(null, null);
+			: Couple.create_re(null, null);
 
 		if (locs.either(Objects::isNull))
 			return new TravellingPoint(null, null, null, 0, false);

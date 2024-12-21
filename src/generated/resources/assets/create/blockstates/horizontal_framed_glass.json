@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/horizontal_framed_glass"
+      "model": "create_re:block/horizontal_framed_glass"
     }
   }
 }

@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:stockpile_switch"
+          "name": "create_re:stockpile_switch"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/stockpile_switch"
+  "random_sequence": "create_re:blocks/stockpile_switch"
 }

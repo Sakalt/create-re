@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:railway_casing"
+              "create_re:railway_casing"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/kinetics/train_door"
+        "recipe": "create_re:crafting/kinetics/train_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/kinetics/train_door"
+      "create_re:crafting/kinetics/train_door"
     ]
   },
   "sends_telemetry_event": false

@@ -1,14 +1,14 @@
-package com.simibubi.create.compat.computercraft.implementation.peripherals;
+package com.simibubi.create_re.compat.computercraft.implementation.peripherals;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.compat.computercraft.AttachedComputerPacket;
-import com.simibubi.create.compat.computercraft.implementation.ComputerBehaviour;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.compat.computercraft.AttachedComputerPacket;
+import com.simibubi.create_re.compat.computercraft.implementation.ComputerBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
 
 import dan200.computercraft.api.peripheral.IComputerAccess;
 import dan200.computercraft.api.peripheral.IPeripheral;

@@ -1,6 +1,6 @@
-package com.simibubi.create.content.trains.schedule.condition;
+package com.simibubi.create_re.content.trains.schedule.condition;
 
-import com.simibubi.create.content.trains.entity.Train;
+import com.simibubi.create_re.content.trains.entity.Train;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.level.Level;

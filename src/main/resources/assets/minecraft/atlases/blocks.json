@@ -2,55 +2,55 @@
   "sources": [
     {
       "type": "single",
-      "resource": "create:entity/blueprint_large"
+      "resource": "create_re:entity/blueprint_large"
     },
     {
       "type": "single",
-      "resource": "create:entity/blueprint_medium"
+      "resource": "create_re:entity/blueprint_medium"
     },
     {
       "type": "single",
-      "resource": "create:entity/blueprint_small"
+      "resource": "create_re:entity/blueprint_small"
     },
     {
       "type": "single",
-      "resource": "create:entity/coupling"
+      "resource": "create_re:entity/coupling"
     },
     {
       "type": "single",
-      "resource": "create:entity/train_hat"
+      "resource": "create_re:entity/train_hat"
     },
     {
       "type": "single",
-      "resource": "create:fluid/chocolate_flow"
+      "resource": "create_re:fluid/chocolate_flow"
     },
     {
       "type": "single",
-      "resource": "create:fluid/chocolate_still"
+      "resource": "create_re:fluid/chocolate_still"
     },
     {
       "type": "single",
-      "resource": "create:fluid/honey_flow"
+      "resource": "create_re:fluid/honey_flow"
     },
     {
       "type": "single",
-      "resource": "create:fluid/honey_still"
+      "resource": "create_re:fluid/honey_still"
     },
     {
       "type": "single",
-      "resource": "create:fluid/potion_flow"
+      "resource": "create_re:fluid/potion_flow"
     },
     {
       "type": "single",
-      "resource": "create:fluid/potion_still"
+      "resource": "create_re:fluid/potion_still"
     },
     {
       "type": "single",
-      "resource": "create:fluid/tea_flow"
+      "resource": "create_re:fluid/tea_flow"
     },
     {
       "type": "single",
-      "resource": "create:fluid/tea_still"
+      "resource": "create_re:fluid/tea_still"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "parent": "create:block/bearing/block",
+  "parent": "create_re:block/bearing/block",
   "textures": {
-    "back": "create:block/gearbox",
-    "side": "create:block/mechanical_bearing_side"
+    "back": "create_re:block/gearbox",
+    "side": "create_re:block/mechanical_bearing_side"
   }
 }

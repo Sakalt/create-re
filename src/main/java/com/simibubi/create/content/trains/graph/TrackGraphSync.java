@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.graph;
+package com.simibubi.create_re.content.trains.graph;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -9,13 +9,13 @@ import java.util.UUID;
 import javax.annotation.Nullable;
 
 import com.google.common.collect.ImmutableList;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.trains.signal.EdgeGroupColor;
-import com.simibubi.create.content.trains.signal.SignalEdgeGroupPacket;
-import com.simibubi.create.content.trains.signal.TrackEdgePoint;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.trains.signal.EdgeGroupColor;
+import com.simibubi.create_re.content.trains.signal.SignalEdgeGroupPacket;
+import com.simibubi.create_re.content.trains.signal.TrackEdgePoint;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.network.PacketDistributor;
@@ -59,7 +59,7 @@ public class TrackGraphSync {
 	public void edgeAdded(TrackGraph graph, TrackNode node1, TrackNode node2, TrackEdge edge) {
 		flushGraphPacket(graph);
 		currentGraphSyncPacket.addedEdges
-			.add(Pair.of(Pair.of(Couple.create(node1.getNetId(), node2.getNetId()), edge.getTrackMaterial()), edge.getTurn()));
+			.add(Pair.of(Pair.of(Couple.create_re(node1.getNetId(), node2.getNetId()), edge.getTrackMaterial()), edge.getTurn()));
 		currentPayload++;
 	}
 
@@ -154,7 +154,7 @@ public class TrackGraphSync {
 				continue;
 			graph.connectionsByNode.get(node)
 				.forEach((node2, edge) -> {
-					Couple<Integer> key = Couple.create(node.getNetId(), node2.getNetId());
+					Couple<Integer> key = Couple.create_re(node.getNetId(), node2.getNetId());
 					currentPacket.addedEdges.add(Pair.of(Pair.of(key, edge.getTrackMaterial()), edge.getTurn()));
 					currentPacket.syncEdgeData(node, node2, edge);
 				});

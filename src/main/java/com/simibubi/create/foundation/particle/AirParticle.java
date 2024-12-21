@@ -1,7 +1,7 @@
-package com.simibubi.create.foundation.particle;
+package com.simibubi.create_re.foundation.particle;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.Particle;
@@ -101,7 +101,7 @@ public class AirParticle extends SimpleAnimatedParticle {
 			this.spriteSet = animatedSprite;
 		}
 
-		public Particle createParticle(AirParticleData data, ClientLevel worldIn, double x, double y, double z, double xSpeed,
+		public Particle create_reParticle(AirParticleData data, ClientLevel worldIn, double x, double y, double z, double xSpeed,
 			double ySpeed, double zSpeed) {
 			return new AirParticle(worldIn, data, x, y, z, xSpeed, ySpeed, zSpeed, this.spriteSet);
 		}

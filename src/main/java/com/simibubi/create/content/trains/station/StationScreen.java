@@ -1,4 +1,4 @@
-package com.simibubi.create.content.trains.station;
+package com.simibubi.create_re.content.trains.station;
 
 import java.lang.ref.WeakReference;
 import java.util.List;
@@ -7,25 +7,25 @@ import java.util.function.Consumer;
 import com.mojang.blaze3d.platform.InputConstants;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.compat.Mods;
-import com.simibubi.create.content.decoration.slidingDoor.DoorControl;
-import com.simibubi.create.content.trains.entity.Carriage;
-import com.simibubi.create.content.trains.entity.Train;
-import com.simibubi.create.content.trains.entity.TrainIconType;
-import com.simibubi.create.foundation.gui.AllGuiTextures;
-import com.simibubi.create.foundation.gui.AllIcons;
-import com.simibubi.create.foundation.gui.UIRenderHelper;
-import com.simibubi.create.foundation.gui.widget.IconButton;
-import com.simibubi.create.foundation.gui.widget.Label;
-import com.simibubi.create.foundation.gui.widget.ScrollInput;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.Pair;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.compat.Mods;
+import com.simibubi.create_re.content.decoration.slidingDoor.DoorControl;
+import com.simibubi.create_re.content.trains.entity.Carriage;
+import com.simibubi.create_re.content.trains.entity.Train;
+import com.simibubi.create_re.content.trains.entity.TrainIconType;
+import com.simibubi.create_re.foundation.gui.AllGuiTextures;
+import com.simibubi.create_re.foundation.gui.AllIcons;
+import com.simibubi.create_re.foundation.gui.UIRenderHelper;
+import com.simibubi.create_re.foundation.gui.widget.IconButton;
+import com.simibubi.create_re.foundation.gui.widget.Label;
+import com.simibubi.create_re.foundation.gui.widget.ScrollInput;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.Pair;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
 
 import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 import net.minecraft.ChatFormatting;
@@ -132,7 +132,7 @@ public class StationScreen extends AbstractStationScreen {
 		tickTrainDisplay();
 
 		Pair<ScrollInput, Label> doorControlWidgets =
-			DoorControl.createWidget(x + 35, y + 102, mode -> doorControl = mode, doorControl);
+			DoorControl.create_reWidget(x + 35, y + 102, mode -> doorControl = mode, doorControl);
 		addRenderableWidget(doorControlWidgets.getFirst());
 		addRenderableWidget(doorControlWidgets.getSecond());
 	}
@@ -258,7 +258,7 @@ public class StationScreen extends AbstractStationScreen {
 	private void updateAssemblyTooltip(String key) {
 		if (key == null) {
 			disassembleTrainButton.setToolTip(Lang.translateDirect("station.disassemble_train"));
-			newTrainButton.setToolTip(Lang.translateDirect("station.create_train"));
+			newTrainButton.setToolTip(Lang.translateDirect("station.create_re_train"));
 			return;
 		}
 		for (IconButton ib : new IconButton[] { disassembleTrainButton, newTrainButton }) {

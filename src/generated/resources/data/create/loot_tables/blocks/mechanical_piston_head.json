@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:piston_extension_pole"
+          "name": "create_re:piston_extension_pole"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/mechanical_piston_head"
+  "random_sequence": "create_re:blocks/mechanical_piston_head"
 }

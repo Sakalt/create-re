@@ -1,6 +1,6 @@
-package com.simibubi.create.content.logistics.funnel;
+package com.simibubi.create_re.content.logistics.funnel;
 
-import com.simibubi.create.AllBlocks;
+import com.simibubi.create_re.AllBlocks;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

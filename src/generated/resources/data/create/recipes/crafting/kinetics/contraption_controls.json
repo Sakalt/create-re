@@ -6,10 +6,10 @@
       "tag": "minecraft:buttons"
     },
     "C": {
-      "item": "create:andesite_casing"
+      "item": "create_re:andesite_casing"
     },
     "I": {
-      "item": "create:electron_tube"
+      "item": "create_re:electron_tube"
     }
   },
   "pattern": [
@@ -18,7 +18,7 @@
     "I"
   ],
   "result": {
-    "item": "create:contraption_controls"
+    "item": "create_re:contraption_controls"
   },
   "show_notification": true
 }

@@ -6,10 +6,10 @@
       "tag": "forge:dyes/lime"
     },
     {
-      "tag": "create:seats"
+      "tag": "create_re:seats"
     }
   ],
   "result": {
-    "item": "create:lime_seat"
+    "item": "create_re:lime_seat"
   }
 }

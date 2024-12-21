@@ -1,8 +1,8 @@
-package com.simibubi.create.foundation.item;
+package com.simibubi.create_re.foundation.item;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create.foundation.utility.AttachedRegistry;
+import com.simibubi.create_re.foundation.utility.AttachedRegistry;
 
 import net.minecraft.world.item.Item;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;

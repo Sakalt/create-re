@@ -1,6 +1,6 @@
-package com.simibubi.create.foundation.gui.menu;
+package com.simibubi.create_re.foundation.gui.menu;
 
-import com.simibubi.create.AllPackets;
+import com.simibubi.create_re.AllPackets;
 
 public interface IClearableMenu {
 

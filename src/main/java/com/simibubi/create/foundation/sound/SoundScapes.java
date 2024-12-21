@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.sound;
+package com.simibubi.create_re.foundation.sound;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -10,10 +10,10 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.function.BiFunction;
 
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.Pair;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.Pair;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;

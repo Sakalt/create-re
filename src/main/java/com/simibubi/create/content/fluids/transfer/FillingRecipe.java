@@ -1,18 +1,18 @@
-package com.simibubi.create.content.fluids.transfer;
+package com.simibubi.create_re.content.fluids.transfer;
 
 import java.util.List;
 import java.util.Set;
 import java.util.function.Supplier;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.compat.jei.category.sequencedAssembly.SequencedAssemblySubCategory;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipe;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
-import com.simibubi.create.content.processing.sequenced.IAssemblyRecipe;
-import com.simibubi.create.foundation.fluid.FluidIngredient;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllRecipeTypes;
+import com.simibubi.create_re.compat.jei.category.sequencedAssembly.SequencedAssemblySubCategory;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipe;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
+import com.simibubi.create_re.content.processing.sequenced.IAssemblyRecipe;
+import com.simibubi.create_re.foundation.fluid.FluidIngredient;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.crafting.Ingredient;

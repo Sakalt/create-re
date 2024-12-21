@@ -1,5 +1,5 @@
 {
-  "type": "create:crushing",
+  "type": "create_re:crushing",
   "ingredients": [
     {
       "item": "minecraft:obsidian"
@@ -8,7 +8,7 @@
   "processingTime": 500,
   "results": [
     {
-      "item": "create:powdered_obsidian"
+      "item": "create_re:powdered_obsidian"
     },
     {
       "chance": 0.75,

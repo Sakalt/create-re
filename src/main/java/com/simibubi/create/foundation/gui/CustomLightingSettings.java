@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.gui;
+package com.simibubi.create_re.foundation.gui;
 
 import org.joml.Vector3f;
 

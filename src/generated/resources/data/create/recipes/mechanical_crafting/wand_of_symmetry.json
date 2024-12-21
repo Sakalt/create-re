@@ -1,5 +1,5 @@
 {
-  "type": "create:mechanical_crafting",
+  "type": "create_re:mechanical_crafting",
   "acceptMirrored": true,
   "key": {
     "B": {
@@ -15,7 +15,7 @@
       "tag": "forge:obsidian"
     },
     "P": {
-      "item": "create:precision_mechanism"
+      "item": "create_re:precision_mechanism"
     }
   },
   "pattern": [
@@ -26,6 +26,6 @@
     " O "
   ],
   "result": {
-    "item": "create:wand_of_symmetry"
+    "item": "create_re:wand_of_symmetry"
   }
 }

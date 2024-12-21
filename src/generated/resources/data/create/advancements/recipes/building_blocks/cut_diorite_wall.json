@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:cut_diorite"
+              "create_re:cut_diorite"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:cut_diorite_wall"
+        "recipe": "create_re:cut_diorite_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:cut_diorite_wall"
+      "create_re:cut_diorite_wall"
     ]
   },
   "sends_telemetry_event": false

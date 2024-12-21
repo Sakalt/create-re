@@ -1,25 +1,25 @@
 {
-  "parent": "create:shifting_gears",
+  "parent": "create_re:shifting_gears",
   "criteria": {
     "0": {
       "conditions": {},
-      "trigger": "create:millstone_builtin"
+      "trigger": "create_re:millstone_builtin"
     }
   },
   "display": {
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.millstone.desc"
+      "translate": "advancement.create_re.millstone.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:millstone"
+      "item": "create_re:millstone"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.millstone"
+      "translate": "advancement.create_re.millstone"
     }
   },
   "requirements": [

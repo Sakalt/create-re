@@ -1,4 +1,4 @@
-package com.simibubi.create.content.logistics.funnel;
+package com.simibubi.create_re.content.logistics.funnel;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

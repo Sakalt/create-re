@@ -2,11 +2,11 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "create:block/item_drain_side",
-		"1": "create:block/item_drain_top",
-		"2": "create:block/copper_casing",
-		"3": "create:block/pump",
-		"particle": "create:block/item_drain_side"
+		"0": "create_re:block/item_drain_side",
+		"1": "create_re:block/item_drain_top",
+		"2": "create_re:block/copper_casing",
+		"3": "create_re:block/pump",
+		"particle": "create_re:block/item_drain_side"
 	},
 	"elements": [
 		{

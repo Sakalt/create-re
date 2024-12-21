@@ -1,10 +1,10 @@
-package com.simibubi.create.foundation.item;
+package com.simibubi.create_re.foundation.item;
 
 import java.util.Map;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create.foundation.mixin.accessor.HumanoidArmorLayerAccessor;
+import com.simibubi.create_re.foundation.mixin.accessor.HumanoidArmorLayerAccessor;
 
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.Model;
@@ -35,19 +35,19 @@ public interface LayeredArmorItem extends CustomRenderedArmorItem {
 		}
 
 		HumanoidArmorLayerAccessor accessor = (HumanoidArmorLayerAccessor) layer;
-		Map<String, ResourceLocation> locationCache = HumanoidArmorLayerAccessor.create$getArmorLocationCache();
+		Map<String, ResourceLocation> locationCache = HumanoidArmorLayerAccessor.create_re$getArmorLocationCache();
 		boolean glint = stack.hasFoil();
 
-		HumanoidModel<?> innerModel = accessor.create$getInnerModel();
+		HumanoidModel<?> innerModel = accessor.create_re$getInnerModel();
 		layer.getParentModel().copyPropertiesTo((HumanoidModel) innerModel);
-		accessor.create$callSetPartVisibility(innerModel, slot);
+		accessor.create_re$callSetPartVisibility(innerModel, slot);
 		String locationStr2 = getArmorTextureLocation(entity, slot, stack, 2);
 		ResourceLocation location2 = locationCache.computeIfAbsent(locationStr2, ResourceLocation::new);
 		renderModel(poseStack, bufferSource, light, item, innerModel, glint, 1.0F, 1.0F, 1.0F, location2);
 
-		HumanoidModel<?> outerModel = accessor.create$getOuterModel();
+		HumanoidModel<?> outerModel = accessor.create_re$getOuterModel();
 		layer.getParentModel().copyPropertiesTo((HumanoidModel) outerModel);
-		accessor.create$callSetPartVisibility(outerModel, slot);
+		accessor.create_re$callSetPartVisibility(outerModel, slot);
 		String locationStr1 = getArmorTextureLocation(entity, slot, stack, 1);
 		ResourceLocation location1 = locationCache.computeIfAbsent(locationStr1, ResourceLocation::new);
 		renderModel(poseStack, bufferSource, light, item, outerModel, glint, 1.0F, 1.0F, 1.0F, location1);

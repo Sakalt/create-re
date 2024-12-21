@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:light_blue_valve_handle"
+          "name": "create_re:light_blue_valve_handle"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/light_blue_valve_handle"
+  "random_sequence": "create_re:blocks/light_blue_valve_handle"
 }

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/waxed_copper_shingles"
+      "model": "create_re:block/waxed_copper_shingles"
     }
   }
 }

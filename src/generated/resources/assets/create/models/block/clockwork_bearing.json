@@ -1,7 +1,7 @@
 {
-  "parent": "create:block/bearing/block",
+  "parent": "create_re:block/bearing/block",
   "textures": {
-    "back": "create:block/brass_gearbox",
-    "side": "create:block/clockwork_bearing_side"
+    "back": "create_re:block/brass_gearbox",
+    "side": "create_re:block/clockwork_bearing_side"
   }
 }

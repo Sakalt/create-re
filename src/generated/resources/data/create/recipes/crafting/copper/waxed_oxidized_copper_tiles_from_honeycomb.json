@@ -3,13 +3,13 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "create:oxidized_copper_tiles"
+      "item": "create_re:oxidized_copper_tiles"
     },
     {
       "item": "minecraft:honeycomb"
     }
   ],
   "result": {
-    "item": "create:waxed_oxidized_copper_tiles"
+    "item": "create_re:waxed_oxidized_copper_tiles"
   }
 }

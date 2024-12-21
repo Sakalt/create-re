@@ -1,4 +1,4 @@
-package com.simibubi.create.content.kinetics.simpleRelays.encased;
+package com.simibubi.create_re.content.kinetics.simpleRelays.encased;
 
 import java.util.function.Consumer;
 
@@ -6,14 +6,14 @@ import org.jetbrains.annotations.Nullable;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.kinetics.base.IRotate;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntityVisual;
-import com.simibubi.create.content.kinetics.base.RotatingInstance;
-import com.simibubi.create.content.kinetics.simpleRelays.BracketedKineticBlockEntityRenderer;
-import com.simibubi.create.foundation.render.AllInstanceTypes;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.kinetics.base.IRotate;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntityVisual;
+import com.simibubi.create_re.content.kinetics.base.RotatingInstance;
+import com.simibubi.create_re.content.kinetics.simpleRelays.BracketedKineticBlockEntityRenderer;
+import com.simibubi.create_re.foundation.render.AllInstanceTypes;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.model.Model;
@@ -50,7 +50,7 @@ public class EncasedCogVisual extends KineticBlockEntityVisual<KineticBlockEntit
 		this.large = large;
 
         var instancer = instancerProvider().instancer(AllInstanceTypes.ROTATING, getCogModel());
-		rotatingModel = setup(instancer.createInstance());
+		rotatingModel = setup(instancer.create_reInstance());
 
 		RotatingInstance rotatingTopShaft = null;
 		RotatingInstance rotatingBottomShaft = null;
@@ -61,7 +61,7 @@ public class EncasedCogVisual extends KineticBlockEntityVisual<KineticBlockEntit
 				if (!def.hasShaftTowards(blockEntity.getLevel(), blockEntity.getBlockPos(), blockState, d))
 					continue;
 				RotatingInstance data = setup(instancerProvider().instancer(AllInstanceTypes.ROTATING, Models.partial(AllPartialModels.SHAFT_HALF, d))
-					.createInstance());
+					.create_reInstance());
 				if (large) {
 					data.setRotationOffset(BracketedKineticBlockEntityRenderer.getShaftAngleOffset(axis, pos));
 				}

@@ -1,11 +1,11 @@
-package com.simibubi.create.content.kinetics.crank;
+package com.simibubi.create_re.content.kinetics.crank;
 
 import java.util.function.Consumer;
 
-import com.simibubi.create.content.kinetics.base.KineticBlockEntityVisual;
-import com.simibubi.create.content.kinetics.base.RotatingInstance;
-import com.simibubi.create.foundation.render.AllInstanceTypes;
-import com.simibubi.create.foundation.render.VirtualRenderHelper;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntityVisual;
+import com.simibubi.create_re.content.kinetics.base.RotatingInstance;
+import com.simibubi.create_re.foundation.render.AllInstanceTypes;
+import com.simibubi.create_re.foundation.render.VirtualRenderHelper;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.model.Model;
@@ -28,13 +28,13 @@ public class HandCrankVisual extends KineticBlockEntityVisual<HandCrankBlockEnti
 		Model model = blockEntity.getRenderedHandleInstance();
 
 		crank = instancerProvider().instancer(InstanceTypes.TRANSFORMED, model)
-				.createInstance();
+				.create_reInstance();
 
 		rotateCrank(partialTick);
 
 		if (blockEntity.shouldRenderShaft()) {
 			rotatingModel = instancerProvider().instancer(AllInstanceTypes.ROTATING, VirtualRenderHelper.blockModel(blockState))
-					.createInstance();
+					.create_reInstance();
 			setup(rotatingModel);
 		}
 	}

@@ -1,18 +1,18 @@
-package com.simibubi.create.foundation.utility;
+package com.simibubi.create_re.foundation.utility;
 
 import java.util.function.Consumer;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllTags.AllBlockTags;
-import com.simibubi.create.compat.Mods;
-import com.simibubi.create.compat.framedblocks.FramedBlocksInSchematics;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.processing.burner.BlazeBurnerBlock;
-import com.simibubi.create.content.processing.burner.BlazeBurnerBlock.HeatLevel;
-import com.simibubi.create.foundation.blockEntity.IMergeableBE;
-import com.simibubi.create.foundation.blockEntity.IMultiBlockEntityContainer;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllTags.AllBlockTags;
+import com.simibubi.create_re.compat.Mods;
+import com.simibubi.create_re.compat.framedblocks.FramedBlocksInSchematics;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock;
+import com.simibubi.create_re.content.processing.burner.BlazeBurnerBlock.HeatLevel;
+import com.simibubi.create_re.foundation.blockEntity.IMergeableBE;
+import com.simibubi.create_re.foundation.blockEntity.IMultiBlockEntityContainer;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -206,7 +206,7 @@ public class BlockHelper {
 			state.spawnAfterBreak((ServerLevel) world, pos, ItemStack.EMPTY, true);
 		}
 
-		world.setBlockAndUpdate(pos, fluidState.createLegacyBlock());
+		world.setBlockAndUpdate(pos, fluidState.create_reLegacyBlock());
 	}
 
 	public static boolean isSolidWall(BlockGetter reader, BlockPos fromPos, Direction toDirection) {

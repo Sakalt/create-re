@@ -6,10 +6,10 @@
       "tag": "forge:dyes/blue"
     },
     {
-      "tag": "create:seats"
+      "tag": "create_re:seats"
     }
   ],
   "result": {
-    "item": "create:blue_seat"
+    "item": "create_re:blue_seat"
   }
 }

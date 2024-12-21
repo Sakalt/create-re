@@ -1,9 +1,9 @@
-package com.simibubi.create.content.fluids;
+package com.simibubi.create_re.content.fluids;
 
-import com.simibubi.create.AllParticleTypes;
-import com.simibubi.create.content.fluids.particle.FluidParticleData;
-import com.simibubi.create.foundation.fluid.FluidHelper;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllParticleTypes;
+import com.simibubi.create_re.content.fluids.particle.FluidParticleData;
+import com.simibubi.create_re.foundation.fluid.FluidHelper;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
@@ -21,7 +21,7 @@ import net.minecraftforge.fluids.FluidStack;
 
 public class FluidFX {
 
-	static RandomSource r = RandomSource.create();
+	static RandomSource r = RandomSource.create_re();
 
 	public static void splash(BlockPos pos, FluidStack fluidStack) {
 		Fluid fluid = fluidStack.getFluid();
@@ -33,7 +33,7 @@ public class FluidFX {
 			return;
 		}
 
-		BlockParticleOption blockParticleData = new BlockParticleOption(ParticleTypes.BLOCK, defaultState.createLegacyBlock());
+		BlockParticleOption blockParticleData = new BlockParticleOption(ParticleTypes.BLOCK, defaultState.create_reLegacyBlock());
 		Vec3 center = VecHelper.getCenterOf(pos);
 
 		for (int i = 0; i < 20; i++) {

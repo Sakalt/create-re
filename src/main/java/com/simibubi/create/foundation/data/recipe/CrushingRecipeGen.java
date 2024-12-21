@@ -1,26 +1,26 @@
-package com.simibubi.create.foundation.data.recipe;
+package com.simibubi.create_re.foundation.data.recipe;
 
-import static com.simibubi.create.foundation.data.recipe.CompatMetals.ALUMINUM;
-import static com.simibubi.create.foundation.data.recipe.CompatMetals.LEAD;
-import static com.simibubi.create.foundation.data.recipe.CompatMetals.NICKEL;
-import static com.simibubi.create.foundation.data.recipe.CompatMetals.OSMIUM;
-import static com.simibubi.create.foundation.data.recipe.CompatMetals.PLATINUM;
-import static com.simibubi.create.foundation.data.recipe.CompatMetals.QUICKSILVER;
-import static com.simibubi.create.foundation.data.recipe.CompatMetals.SILVER;
-import static com.simibubi.create.foundation.data.recipe.CompatMetals.TIN;
-import static com.simibubi.create.foundation.data.recipe.CompatMetals.URANIUM;
+import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.ALUMINUM;
+import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.LEAD;
+import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.NICKEL;
+import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.OSMIUM;
+import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.PLATINUM;
+import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.QUICKSILVER;
+import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.SILVER;
+import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.TIN;
+import static com.simibubi.create_re.foundation.data.recipe.CompatMetals.URANIUM;
 
 import java.util.function.Supplier;
 import java.util.function.UnaryOperator;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.AllTags;
-import com.simibubi.create.content.decoration.palettes.AllPaletteStoneTypes;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipe;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllRecipeTypes;
+import com.simibubi.create_re.AllTags;
+import com.simibubi.create_re.content.decoration.palettes.AllPaletteStoneTypes;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipe;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -40,71 +40,71 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 
 	GeneratedRecipe
 
-	BLAZE_ROD = create(() -> Items.BLAZE_ROD, b -> b.duration(100)
+	BLAZE_ROD = create_re(() -> Items.BLAZE_ROD, b -> b.duration(100)
 		.output(Items.BLAZE_POWDER, 3)
 		.output(.25f, Items.BLAZE_POWDER, 3)),
 
-		PRISMARINE_CRYSTALS = create(() -> Items.PRISMARINE_CRYSTALS, b -> b.duration(150)
+		PRISMARINE_CRYSTALS = create_re(() -> Items.PRISMARINE_CRYSTALS, b -> b.duration(150)
 			.output(1f, Items.QUARTZ, 1)
 			.output(.5f, Items.QUARTZ, 2)
 			.output(.1f, Items.GLOWSTONE_DUST, 2)),
 
-		LEATHER_HORSE_ARMOR = create(() -> Items.LEATHER_HORSE_ARMOR, b -> b.duration(200)
+		LEATHER_HORSE_ARMOR = create_re(() -> Items.LEATHER_HORSE_ARMOR, b -> b.duration(200)
 			.output(Items.LEATHER, 2)
 			.output(.5f, Items.LEATHER, 2)),
 
-		IRON_HORSE_ARMOR = create(() -> Items.IRON_HORSE_ARMOR, b -> b.duration(200)
+		IRON_HORSE_ARMOR = create_re(() -> Items.IRON_HORSE_ARMOR, b -> b.duration(200)
 			.output(Items.IRON_INGOT, 2)
 			.output(.5f, Items.LEATHER, 1)
 			.output(.5f, Items.IRON_INGOT, 1)
 			.output(.25f, Items.STRING, 2)
 			.output(.25f, Items.IRON_NUGGET, 4)),
 
-		GOLDEN_HORSE_ARMOR = create(() -> Items.GOLDEN_HORSE_ARMOR, b -> b.duration(200)
+		GOLDEN_HORSE_ARMOR = create_re(() -> Items.GOLDEN_HORSE_ARMOR, b -> b.duration(200)
 			.output(Items.GOLD_INGOT, 2)
 			.output(.5f, Items.LEATHER, 2)
 			.output(.5f, Items.GOLD_INGOT, 2)
 			.output(.25f, Items.STRING, 2)
 			.output(.25f, Items.GOLD_NUGGET, 8)),
 
-		DIAMOND_HORSE_ARMOR = create(() -> Items.DIAMOND_HORSE_ARMOR, b -> b.duration(200)
+		DIAMOND_HORSE_ARMOR = create_re(() -> Items.DIAMOND_HORSE_ARMOR, b -> b.duration(200)
 			.output(Items.DIAMOND, 1)
 			.output(.5f, Items.LEATHER, 2)
 			.output(.1f, Items.DIAMOND, 3)
 			.output(.25f, Items.STRING, 2)),
 
-		WOOL = create("wool", b -> b.duration(100)
+		WOOL = create_re("wool", b -> b.duration(100)
 			.require(ItemTags.WOOL)
 			.output(Items.STRING, 2)
 			.output(.5f, Items.STRING)),
 
-		NETHER_WART = create("nether_wart_block", b -> b.duration(150)
+		NETHER_WART = create_re("nether_wart_block", b -> b.duration(150)
 			.require(Blocks.NETHER_WART_BLOCK)
 			.output(.25f, Items.NETHER_WART, 1)),
 
-		AMETHYST_CLUSTER = create(() -> Blocks.AMETHYST_CLUSTER, b -> b.duration(150)
+		AMETHYST_CLUSTER = create_re(() -> Blocks.AMETHYST_CLUSTER, b -> b.duration(150)
 			.output(Items.AMETHYST_SHARD, 7)
 			.output(.5f, Items.AMETHYST_SHARD)),
 
-		GLOWSTONE = create(() -> Blocks.GLOWSTONE, b -> b.duration(150)
+		GLOWSTONE = create_re(() -> Blocks.GLOWSTONE, b -> b.duration(150)
 			.output(Items.GLOWSTONE_DUST, 3)
 			.output(.5f, Items.GLOWSTONE_DUST)),
 
-		AMETHYST_BLOCK = create(() -> Blocks.AMETHYST_BLOCK, b -> b.duration(150)
+		AMETHYST_BLOCK = create_re(() -> Blocks.AMETHYST_BLOCK, b -> b.duration(150)
 			.output(Items.AMETHYST_SHARD, 3)
 			.output(.5f, Items.AMETHYST_SHARD)),
 
-		GRAVEL = create(() -> Blocks.GRAVEL, b -> b.duration(250)
+		GRAVEL = create_re(() -> Blocks.GRAVEL, b -> b.duration(250)
 			.output(Blocks.SAND)
 			.output(.1f, Items.FLINT)
 			.output(.05f, Items.CLAY_BALL)),
 
-		NETHERRACK = create(() -> Blocks.NETHERRACK, b -> b.duration(250)
+		NETHERRACK = create_re(() -> Blocks.NETHERRACK, b -> b.duration(250)
 			.output(AllItems.CINDER_FLOUR.get())
 			.output(.5f, AllItems.CINDER_FLOUR.get())
 			.whenModMissing(Mods.ENS.getId())),
 
-		OBSIDIAN = create(() -> Blocks.OBSIDIAN, b -> b.duration(500)
+		OBSIDIAN = create_re(() -> Blocks.OBSIDIAN, b -> b.duration(500)
 			.output(AllItems.POWDERED_OBSIDIAN.get())
 			.output(.75f, Blocks.OBSIDIAN)),
 
@@ -196,7 +196,7 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 		NICKEL_RAW_BLOCK = moddedRawOreBlock(NICKEL, AllItems.CRUSHED_NICKEL::get),
 
 		// Oh The Biomes You'll Go
-		BYG_AMETRINE_ORE = create(Mods.BYG.recipeId("ametrine_ore"), b -> b.duration(500)
+		BYG_AMETRINE_ORE = create_re(Mods.BYG.recipeId("ametrine_ore"), b -> b.duration(500)
 				.require(AllTags.optionalTag(ForgeRegistries.ITEMS,
 						new ResourceLocation("forge", "ores/ametrine")))
 				.output(1f, Mods.BYG, "ametrine_gems", 2)
@@ -205,7 +205,7 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 				.output(.125f, Mods.BYG, "cobbled_ether_stone", 1)
 				.whenModLoaded(Mods.BYG.getId())),
 
-		BYG_ANTHRACITE_ORE = create(Mods.BYG.recipeId("anthracite_ore"), b -> b.duration(150)
+		BYG_ANTHRACITE_ORE = create_re(Mods.BYG.recipeId("anthracite_ore"), b -> b.duration(150)
 				.require(AllTags.optionalTag(ForgeRegistries.ITEMS,
 						new ResourceLocation("forge", "ores/anthracite")))
 				.output(1f, Mods.BYG, "anthracite", 2)
@@ -214,14 +214,14 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 				.output(.125f, Mods.BYG, "brimstone", 1)
 				.whenModLoaded(Mods.BYG.getId())),
 
-		BYG_BLUE_GOLD_ORE = create(Mods.BYG.recipeId("blue_nether_gold_ore"), b -> b.duration(350)
+		BYG_BLUE_GOLD_ORE = create_re(Mods.BYG.recipeId("blue_nether_gold_ore"), b -> b.duration(350)
 				.require(Mods.BYG, "blue_nether_gold_ore")
 				.output(1f, Items.GOLD_NUGGET, 18)
 				.output(.75f, AllItems.EXP_NUGGET.get(), 1)
 				.output(.125f, Mods.BYG, "blue_netherrack", 1)
 				.whenModLoaded(Mods.BYG.getId())),
 
-		BYG_BLUE_QUARTZ_ORE = create(Mods.BYG.recipeId("blue_nether_quartz_ore"), b -> b.duration(350)
+		BYG_BLUE_QUARTZ_ORE = create_re(Mods.BYG.recipeId("blue_nether_quartz_ore"), b -> b.duration(350)
 				.require(Mods.BYG, "blue_nether_quartz_ore")
 				.output(1f, Items.QUARTZ, 2)
 				.output(.25f, Items.QUARTZ, 1)
@@ -229,14 +229,14 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 				.output(.125f, Mods.BYG, "blue_netherrack", 1)
 				.whenModLoaded(Mods.BYG.getId())),
 
-		BYG_BRIMSTONE_GOLD_ORE = create(Mods.BYG.recipeId("brimstone_nether_gold_ore"), b -> b.duration(350)
+		BYG_BRIMSTONE_GOLD_ORE = create_re(Mods.BYG.recipeId("brimstone_nether_gold_ore"), b -> b.duration(350)
 				.require(Mods.BYG, "brimstone_nether_gold_ore")
 				.output(1f, Items.GOLD_NUGGET, 18)
 				.output(.75f, AllItems.EXP_NUGGET.get(), 1)
 				.output(.125f, Mods.BYG, "brimstone", 1)
 				.whenModLoaded(Mods.BYG.getId())),
 
-		BYG_BRIMSTONE_QUARTZ_ORE = create(Mods.BYG.recipeId("brimstone_nether_quartz_ore"), b -> b.duration(350)
+		BYG_BRIMSTONE_QUARTZ_ORE = create_re(Mods.BYG.recipeId("brimstone_nether_quartz_ore"), b -> b.duration(350)
 				.require(Mods.BYG, "brimstone_nether_quartz_ore")
 				.output(1f, Items.QUARTZ, 2)
 				.output(.25f, Items.QUARTZ, 1)
@@ -244,7 +244,7 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 				.output(.125f, Mods.BYG, "brimstone", 1)
 				.whenModLoaded(Mods.BYG.getId())),
 
-		BYG_REDSTONE_ORE = create(Mods.BYG.recipeId("cryptic_redstone_ore"), b -> b.duration(250)
+		BYG_REDSTONE_ORE = create_re(Mods.BYG.recipeId("cryptic_redstone_ore"), b -> b.duration(250)
 				.require(Mods.BYG, "cryptic_redstone_ore")
 				.output(1f, Items.REDSTONE, 6)
 				.output(.5f, Items.REDSTONE, 1)
@@ -252,7 +252,7 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 				.output(.125f, Mods.BYG, "cryptic_stone", 1)
 				.whenModLoaded(Mods.BYG.getId())),
 
-		BYG_EMERALDITE_ORE = create(Mods.BYG.recipeId("emeraldite_ore"), b -> b.duration(500)
+		BYG_EMERALDITE_ORE = create_re(Mods.BYG.recipeId("emeraldite_ore"), b -> b.duration(500)
 				.require(AllTags.forgeItemTag("ores/emeraldite"))
 				.output(1f,Mods.BYG, "emeraldite_shards", 2)
 				.output(.25f, Mods.BYG, "emeraldite_shards", 1)
@@ -260,7 +260,7 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 				.output(.125f, Mods.BYG, "scoria_cobblestone", 1)
 				.whenModLoaded(Mods.BYG.getId())),
 
-		BYG_LIGNITE_ORE = create(Mods.BYG.recipeId("lignite_ore"), b -> b.duration(300)
+		BYG_LIGNITE_ORE = create_re(Mods.BYG.recipeId("lignite_ore"), b -> b.duration(300)
 				.require(AllTags.forgeItemTag("ores/lignite"))
 				.output(1f,Mods.BYG, "lignite", 2)
 				.output(.5f, Mods.BYG, "lignite", 2)
@@ -268,7 +268,7 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 				.output(.125f, Mods.BYG, "cobbled_ether_stone", 1)
 				.whenModLoaded(Mods.BYG.getId())),
 
-		BYG_NETHERRACK_ORE = create(Mods.BYG.recipeId("pervaded_netherrack"), b -> b.duration(150)
+		BYG_NETHERRACK_ORE = create_re(Mods.BYG.recipeId("pervaded_netherrack"), b -> b.duration(150)
 				.require(AllTags.forgeItemTag("ores/emeraldite"))
 				.output(1f, Items.GLOWSTONE, 2)
 				.output(.5f, Items.GLOWSTONE, 1)
@@ -276,28 +276,28 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 				.output(.125f, Items.NETHERRACK, 1)
 				.whenModLoaded(Mods.BYG.getId())),
 
-		BYG_RED_ROCK_ORE = create(Mods.BYG.recipeId("red_rock"), b -> b.duration(150)
+		BYG_RED_ROCK_ORE = create_re(Mods.BYG.recipeId("red_rock"), b -> b.duration(150)
 				.require(Mods.BYG, "red_rock")
 				.output(1f, Items.RED_SAND, 1)
 				.whenModLoaded(Mods.BYG.getId())),
 
 		// Druidcraft
 
-		DC_AMBER_ORE = create(Mods.DRUIDCRAFT.recipeId("amber_ore"), b -> b.duration(300)
+		DC_AMBER_ORE = create_re(Mods.DRUIDCRAFT.recipeId("amber_ore"), b -> b.duration(300)
 				.require(Mods.DRUIDCRAFT, "amber_ore")
 				.output(1f, Mods.DRUIDCRAFT, "amber", 2)
 				.output(.5f, Mods.DRUIDCRAFT, "amber", 1)
 				.output(.125f, Items.COBBLESTONE, 1)
 				.whenModLoaded(Mods.DRUIDCRAFT.getId())),
 
-		DC_FIERY_GLASS_ORE = create(Mods.DRUIDCRAFT.recipeId("fiery_glass_ore"), b -> b.duration(300)
+		DC_FIERY_GLASS_ORE = create_re(Mods.DRUIDCRAFT.recipeId("fiery_glass_ore"), b -> b.duration(300)
 				.require(Mods.DRUIDCRAFT, "fiery_glass_ore")
 				.output(1f, Mods.DRUIDCRAFT, "fiery_glass", 8)
 				.output(.25f, Mods.DRUIDCRAFT, "fiery_glass", 6)
 				.output(.125f, Items.COBBLESTONE, 1)
 				.whenModLoaded(Mods.DRUIDCRAFT.getId())),
 
-		DC_MOONSTONE_ORE = create(Mods.DRUIDCRAFT.recipeId("moonstone_ore"), b -> b.duration(300)
+		DC_MOONSTONE_ORE = create_re(Mods.DRUIDCRAFT.recipeId("moonstone_ore"), b -> b.duration(300)
 				.require(Mods.DRUIDCRAFT, "moonstone_ore")
 				.output(1f, Mods.DRUIDCRAFT, "moonstone", 2)
 				.output(.5f, Mods.DRUIDCRAFT, "moonstone", 1)
@@ -306,7 +306,7 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 
 		// Neapolitan
 
-		NEA_ICE = create(Mods.NEA.recipeId("ice"), b -> b.duration(100)
+		NEA_ICE = create_re(Mods.NEA.recipeId("ice"), b -> b.duration(100)
 				.require(Items.ICE)
 				.output(1f, Mods.NEA, "ice_cubes", 3)
 				.output(.25f, Mods.NEA, "ice_cubes", 3)
@@ -314,7 +314,7 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 
 		// Quark
 
-		Q_MOSS = create(Mods.Q.recipeId("moss_block"), b -> b.duration(50)
+		Q_MOSS = create_re(Mods.Q.recipeId("moss_block"), b -> b.duration(50)
 				.require(Items.MOSS_BLOCK)
 				.output(1f, Mods.Q, "moss_paste", 2)
 				.output(.1f, Mods.Q, "moss_paste", 1)
@@ -338,17 +338,17 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 
 		//Galosphere
 
-		GS_ALLURITE = create(Mods.GS.recipeId("allurite"), b -> b.duration(300)
+		GS_ALLURITE = create_re(Mods.GS.recipeId("allurite"), b -> b.duration(300)
 				.require(AllTags.AllItemTags.ALLURITE.tag)
 				.output(.8f, Mods.GS, "allurite_shard", 4)
 				.whenModLoaded(Mods.GS.getId())),
 
-		GS_LUMIERE = create(Mods.GS.recipeId("lumiere"), b -> b.duration(300)
+		GS_LUMIERE = create_re(Mods.GS.recipeId("lumiere"), b -> b.duration(300)
 				.require(AllTags.AllItemTags.LUMIERE.tag)
 				.output(.8f, Mods.GS, "lumiere_shard", 4)
 				.whenModLoaded(Mods.GS.getId())),
 
-		GS_AMETHYST = create(Mods.GS.recipeId("amethyst"), b -> b.duration(300)
+		GS_AMETHYST = create_re(Mods.GS.recipeId("amethyst"), b -> b.duration(300)
 				.require(AllTags.AllItemTags.AMETHYST.tag)
 				.output(.8f, Items.AMETHYST_SHARD, 4)
 				.whenModLoaded(Mods.GS.getId())),
@@ -373,24 +373,24 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 
 		ENS_STONES = ensStones("andesite", "diorite", "end_stone", "granite", "netherrack"),
 
-		ENS_DUST = create(Mods.ENS.recipeId("dust"), b -> b.duration(200)
+		ENS_DUST = create_re(Mods.ENS.recipeId("dust"), b -> b.duration(200)
 				.require(Blocks.SAND).output(Mods.ENS, "dust")
 				.whenModLoaded(Mods.ENS.getId())),
 
-		ENS_NETHERRACK = create(Mods.ENS.recipeId("crushed_netherrack"), b -> b.duration(100)
+		ENS_NETHERRACK = create_re(Mods.ENS.recipeId("crushed_netherrack"), b -> b.duration(100)
 				.require(Mods.ENS, "crushed_netherrack")
 				.output(AllItems.CINDER_FLOUR.get())
 				.output(.5f, AllItems.CINDER_FLOUR.get())
 				.whenModLoaded(Mods.ENS.getId())),
 
-		ENS_DIORITE = create(Mods.ENS.recipeId("crushed_diorite"), b -> b.duration(100)
+		ENS_DIORITE = create_re(Mods.ENS.recipeId("crushed_diorite"), b -> b.duration(100)
 				.require(Mods.ENS, "crushed_diorite")
 				.output(.25f, Items.QUARTZ, 1)
 				.whenModLoaded(Mods.ENS.getId())),
 
 		// Aether
 
-		AET_ZANITE = create(Mods.AET.recipeId("zanite_ore"), b -> b.duration(350)
+		AET_ZANITE = create_re(Mods.AET.recipeId("zanite_ore"), b -> b.duration(350)
 				.require(Mods.AET, "zanite_ore")
 				.output(Mods.AET, "zanite_gemstone")
 				.output(0.75f, Mods.AET, "zanite_gemstone", 1)
@@ -398,7 +398,7 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 				.output(0.75f, AllItems.EXP_NUGGET.get())
 				.whenModLoaded(Mods.AET.getId())),
 
-		AET_AMBROSIUM = create(Mods.AET.recipeId("ambrosium_ore"), b -> b.duration(150)
+		AET_AMBROSIUM = create_re(Mods.AET.recipeId("ambrosium_ore"), b -> b.duration(150)
 				.require(Mods.AET, "ambrosium_ore")
 				.output(Mods.AET, "ambrosium_shard")
 				.output(0.75f, Mods.AET, "ambrosium_shard", 1)
@@ -418,14 +418,14 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 
 	protected GeneratedRecipe mineralRecycling(AllPaletteStoneTypes type,
 		UnaryOperator<ProcessingRecipeBuilder<ProcessingRecipe<?>>> transform) {
-		create(Lang.asId(type.name()) + "_recycling", b -> transform.apply(b.require(type.materialTag)));
-		return create(type.getBaseBlock()::get, transform);
+		create_re(Lang.asId(type.name()) + "_recycling", b -> transform.apply(b.require(type.materialTag)));
+		return create_re(type.getBaseBlock()::get, transform);
 	}
 
 	protected GeneratedRecipe ensMineralRecycling(AllPaletteStoneTypes type,
 											   UnaryOperator<ProcessingRecipeBuilder<ProcessingRecipe<?>>> transform) {
-		create(Lang.asId(type.name()) + "_recycling", b -> transform.apply(b.require(type.materialTag)));
-		return create(type.getBaseBlock()::get, b -> transform.apply(b.whenModMissing(Mods.ENS.getId())));
+		create_re(Lang.asId(type.name()) + "_recycling", b -> transform.apply(b.require(type.materialTag)));
+		return create_re(type.getBaseBlock()::get, b -> transform.apply(b.whenModMissing(Mods.ENS.getId())));
 	}
 
 	protected GeneratedRecipe stoneOre(Supplier<ItemLike> ore, Supplier<ItemLike> raw, float expectedAmount,
@@ -445,7 +445,7 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 
 	protected GeneratedRecipe ore(ItemLike stoneType, Supplier<ItemLike> ore, Supplier<ItemLike> raw,
 		float expectedAmount, int duration) {
-		return create(ore, b -> {
+		return create_re(ore, b -> {
 			ProcessingRecipeBuilder<ProcessingRecipe<?>> builder = b.duration(duration)
 				.output(raw.get(), Mth.floor(expectedAmount));
 			float extra = expectedAmount - Mth.floor(expectedAmount);
@@ -458,7 +458,7 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 
 	protected GeneratedRecipe moddedOre(CompatMetals metal, Supplier<ItemLike> result) {
 		String name = metal.getName();
-		return create(name + "_ore", b -> {
+		return create_re(name + "_ore", b -> {
 			String prefix = "ores/";
 			return b.duration(400)
 				.withCondition(new NotCondition(new TagEmptyCondition("forge", prefix + name)))
@@ -478,7 +478,7 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 	}
 
 	protected GeneratedRecipe rawOre(String metalName, Supplier<TagKey<Item>> input, Supplier<ItemLike> result, boolean block, int xpMult) {
-		return create("raw_" + metalName + (block ? "_block" : ""), b -> {
+		return create_re("raw_" + metalName + (block ? "_block" : ""), b -> {
 			int amount = block ? 9 : 1;
 			return b.duration(400)
 				.require(input.get())
@@ -497,7 +497,7 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 
 	protected GeneratedRecipe moddedRawOre(CompatMetals metal, Supplier<ItemLike> result, boolean block) {
 		String name = metal.getName();
-		return create("raw_" + name + (block ? "_block" : ""), b -> {
+		return create_re("raw_" + name + (block ? "_block" : ""), b -> {
 			int amount = block ? 9 : 1;
 			String tagPath = (block ? "storage_blocks/raw_" : "raw_materials/") + name;
 			return b.duration(400)
@@ -510,7 +510,7 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 
 	protected GeneratedRecipe sgStoneOres(String... types) {
 		for (String type : types) {
-			create(Mods.SILENT_GEMS.recipeId(type + "_ore"), b -> b.duration(350)
+			create_re(Mods.SILENT_GEMS.recipeId(type + "_ore"), b -> b.duration(350)
 					.require(Mods.SILENT_GEMS, type + "_ore")
 					.output(1f, Mods.SILENT_GEMS, type, 2)
 					.output(.25f, Mods.SILENT_GEMS, type, 1)
@@ -523,7 +523,7 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 
 	protected GeneratedRecipe sgNetherOres(String... types) {
 		for (String type : types) {
-			create(Mods.SILENT_GEMS.recipeId(type + "_ore"), b -> b.duration(350)
+			create_re(Mods.SILENT_GEMS.recipeId(type + "_ore"), b -> b.duration(350)
 					.require(Mods.SILENT_GEMS, type + "_ore")
 					.output(1f, Mods.SILENT_GEMS, type, 2)
 					.output(.25f, Mods.SILENT_GEMS, type, 1)
@@ -536,7 +536,7 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 
 	protected GeneratedRecipe sgEndOres(String... types) {
 		for (String type : types) {
-			create(Mods.SILENT_GEMS.recipeId(type + "_ore"), b -> b.duration(350)
+			create_re(Mods.SILENT_GEMS.recipeId(type + "_ore"), b -> b.duration(350)
 					.require(Mods.SILENT_GEMS, type + "_ore")
 					.output(1f, Mods.SILENT_GEMS, type, 2)
 					.output(.25f, Mods.SILENT_GEMS, type, 1)
@@ -549,7 +549,7 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 
 	protected GeneratedRecipe sfPlants(String... types) {
 		for (String type : types) {
-			create(Mods.SF.recipeId(type), b -> b.duration(150)
+			create_re(Mods.SF.recipeId(type), b -> b.duration(150)
 					.require(Mods.SF, type)
 					.output(1f, AllItems.WHEAT_FLOUR.get(), 1)
 					.output(.25f, AllItems.WHEAT_FLOUR.get(), 2)
@@ -561,7 +561,7 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 
 	protected GeneratedRecipe thOres(String... types) {
 		for (String type : types) {
-			create(Mods.TH.recipeId(type + "_ore"), b -> b.duration(350)
+			create_re(Mods.TH.recipeId(type + "_ore"), b -> b.duration(350)
 					.require(Mods.TH, type + "_ore")
 					.output(1f, Mods.TH, type, 2)
 					.output(.25f, Mods.TH, type, 1)
@@ -574,7 +574,7 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 
 	protected GeneratedRecipe eoNetherOre(String material, ItemLike result, int count){
 		String oreName = "ore_" + material + "_nether";
-		return create(Mods.EO.recipeId(oreName), b -> b.duration(350)
+		return create_re(Mods.EO.recipeId(oreName), b -> b.duration(350)
 				.require(Mods.EO, oreName)
 				.output(1f, result, count)
 				.output(.25f, result)
@@ -585,7 +585,7 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 
 	protected GeneratedRecipe eoEndOre(String material, ItemLike result, int count){
 		String oreName = "ore_" + material + "_end";
-		return create(Mods.EO.recipeId(oreName), b -> b.duration(350)
+		return create_re(Mods.EO.recipeId(oreName), b -> b.duration(350)
 				.require(Mods.EO, oreName)
 				.output(1f, result, count)
 				.output(.25f, result)
@@ -597,7 +597,7 @@ public class CrushingRecipeGen extends ProcessingRecipeGen {
 	protected GeneratedRecipe ensStones(String... stones) {
 		for (String stone : stones) {
 			String crushed = "crushed_" + stone;
-			create(Mods.ENS.recipeId(stone), b -> b.duration(350)
+			create_re(Mods.ENS.recipeId(stone), b -> b.duration(350)
 					.require(Mods.MC, stone)
 					.output(Mods.ENS, crushed)
 					.whenModLoaded(Mods.ENS.getId()));

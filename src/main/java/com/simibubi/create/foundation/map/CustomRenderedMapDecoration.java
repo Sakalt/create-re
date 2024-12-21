@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.map;
+package com.simibubi.create_re.foundation.map;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 

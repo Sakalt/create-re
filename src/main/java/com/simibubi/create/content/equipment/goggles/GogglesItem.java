@@ -1,10 +1,10 @@
-package com.simibubi.create.content.equipment.goggles;
+package com.simibubi.create_re.content.equipment.goggles;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
-import com.simibubi.create.AllItems;
+import com.simibubi.create_re.AllItems;
 
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;

@@ -1,12 +1,12 @@
-package com.simibubi.create.content.kinetics.simpleRelays;
+package com.simibubi.create_re.content.kinetics.simpleRelays;
 
 import java.util.Optional;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.content.decoration.bracket.BracketedBlockEntityBehaviour;
-import com.simibubi.create.content.equipment.wrench.IWrenchableWithBracket;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.content.decoration.bracket.BracketedBlockEntityBehaviour;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchableWithBracket;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionResult;

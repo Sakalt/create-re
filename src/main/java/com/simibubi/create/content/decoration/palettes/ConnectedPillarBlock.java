@@ -1,6 +1,6 @@
-package com.simibubi.create.content.decoration.palettes;
+package com.simibubi.create_re.content.decoration.palettes;
 
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.BlockPos.MutableBlockPos;
@@ -20,10 +20,10 @@ import net.minecraft.world.ticks.LevelTickAccess;
 
 public class ConnectedPillarBlock extends LayeredBlock {
 
-	public static final BooleanProperty NORTH = BooleanProperty.create("north");
-	public static final BooleanProperty SOUTH = BooleanProperty.create("south");
-	public static final BooleanProperty EAST = BooleanProperty.create("east");
-	public static final BooleanProperty WEST = BooleanProperty.create("west");
+	public static final BooleanProperty NORTH = BooleanProperty.create_re("north");
+	public static final BooleanProperty SOUTH = BooleanProperty.create_re("south");
+	public static final BooleanProperty EAST = BooleanProperty.create_re("east");
+	public static final BooleanProperty WEST = BooleanProperty.create_re("west");
 
 	public ConnectedPillarBlock(Properties p_55926_) {
 		super(p_55926_);
@@ -34,8 +34,8 @@ public class ConnectedPillarBlock extends LayeredBlock {
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
-		super.createBlockStateDefinition(pBuilder.add(NORTH, SOUTH, EAST, WEST));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
+		super.create_reBlockStateDefinition(pBuilder.add(NORTH, SOUTH, EAST, WEST));
 	}
 
 	@Override

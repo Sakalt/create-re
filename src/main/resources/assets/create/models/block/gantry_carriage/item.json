@@ -3,15 +3,15 @@
 	"parent": "block/block",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "create:block/axis",
-		"3": "create:block/cogwheel",
-		"8": "create:block/bearing_top",
-		"9": "create:block/windmill_bearing_side",
-		"10": "create:block/pinion",
-		"11": "create:block/axis_top",
-		"12": "create:block/pinion_bottom",
-		"opening": "create:block/gearbox",
-		"particle": "create:block/andesite_casing"
+		"0": "create_re:block/axis",
+		"3": "create_re:block/cogwheel",
+		"8": "create_re:block/bearing_top",
+		"9": "create_re:block/windmill_bearing_side",
+		"10": "create_re:block/pinion",
+		"11": "create_re:block/axis_top",
+		"12": "create_re:block/pinion_bottom",
+		"opening": "create_re:block/gearbox",
+		"particle": "create_re:block/andesite_casing"
 	},
 	"elements": [
 		{

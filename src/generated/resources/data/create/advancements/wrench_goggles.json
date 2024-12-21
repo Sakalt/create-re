@@ -1,12 +1,12 @@
 {
-  "parent": "create:portable_storage_interface",
+  "parent": "create_re:portable_storage_interface",
   "criteria": {
     "0": {
       "conditions": {
         "items": [
           {
             "items": [
-              "create:wrench"
+              "create_re:wrench"
             ]
           }
         ]
@@ -18,7 +18,7 @@
         "items": [
           {
             "items": [
-              "create:goggles"
+              "create_re:goggles"
             ]
           }
         ]
@@ -30,16 +30,16 @@
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.wrench_goggles.desc"
+      "translate": "advancement.create_re.wrench_goggles.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:wrench"
+      "item": "create_re:wrench"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.wrench_goggles"
+      "translate": "advancement.create_re.wrench_goggles"
     }
   },
   "requirements": [

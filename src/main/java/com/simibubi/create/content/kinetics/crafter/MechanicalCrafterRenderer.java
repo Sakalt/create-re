@@ -1,21 +1,21 @@
-package com.simibubi.create.content.kinetics.crafter;
+package com.simibubi.create_re.content.kinetics.crafter;
 
-import static com.simibubi.create.content.kinetics.base.HorizontalKineticBlock.HORIZONTAL_FACING;
-import static com.simibubi.create.content.kinetics.base.KineticBlockEntityRenderer.standardKineticRotationTransform;
+import static com.simibubi.create_re.content.kinetics.base.HorizontalKineticBlock.HORIZONTAL_FACING;
+import static com.simibubi.create_re.content.kinetics.base.KineticBlockEntityRenderer.standardKineticRotationTransform;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.AllSpriteShifts;
-import com.simibubi.create.content.kinetics.crafter.MechanicalCrafterBlockEntity.Phase;
-import com.simibubi.create.content.kinetics.crafter.RecipeGridHandler.GroupedItems;
-import com.simibubi.create.foundation.blockEntity.renderer.SafeBlockEntityRenderer;
-import com.simibubi.create.foundation.render.CachedBufferer;
-import com.simibubi.create.foundation.render.SuperByteBuffer;
-import com.simibubi.create.foundation.utility.AngleHelper;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.Pointing;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.AllSpriteShifts;
+import com.simibubi.create_re.content.kinetics.crafter.MechanicalCrafterBlockEntity.Phase;
+import com.simibubi.create_re.content.kinetics.crafter.RecipeGridHandler.GroupedItems;
+import com.simibubi.create_re.foundation.blockEntity.renderer.SafeBlockEntityRenderer;
+import com.simibubi.create_re.foundation.render.CachedBufferer;
+import com.simibubi.create_re.foundation.render.SuperByteBuffer;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.Pointing;
 
 import dev.engine_room.flywheel.api.visualization.VisualizationManager;
 import dev.engine_room.flywheel.lib.model.baked.PartialModel;

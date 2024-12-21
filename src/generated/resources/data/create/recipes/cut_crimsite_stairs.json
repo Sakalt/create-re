@@ -4,7 +4,7 @@
   "group": "cut_crimsite_stairs",
   "key": {
     "X": {
-      "item": "create:cut_crimsite"
+      "item": "create_re:cut_crimsite"
     }
   },
   "pattern": [
@@ -14,7 +14,7 @@
   ],
   "result": {
     "count": 4,
-    "item": "create:cut_crimsite_stairs"
+    "item": "create_re:cut_crimsite_stairs"
   },
   "show_notification": true
 }

@@ -35,11 +35,11 @@
               "source": "block_entity"
             }
           ],
-          "name": "create:netherite_backtank"
+          "name": "create_re:netherite_backtank"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/netherite_backtank"
+  "random_sequence": "create_re:blocks/netherite_backtank"
 }

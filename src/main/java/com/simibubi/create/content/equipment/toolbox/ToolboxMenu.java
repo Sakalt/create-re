@@ -1,9 +1,9 @@
-package com.simibubi.create.content.equipment.toolbox;
+package com.simibubi.create_re.content.equipment.toolbox;
 
-import static com.simibubi.create.content.equipment.toolbox.ToolboxInventory.STACKS_PER_COMPARTMENT;
+import static com.simibubi.create_re.content.equipment.toolbox.ToolboxInventory.STACKS_PER_COMPARTMENT;
 
-import com.simibubi.create.AllMenuTypes;
-import com.simibubi.create.foundation.gui.menu.MenuBase;
+import com.simibubi.create_re.AllMenuTypes;
+import com.simibubi.create_re.foundation.gui.menu.MenuBase;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
@@ -30,12 +30,12 @@ public class ToolboxMenu extends MenuBase<ToolboxBlockEntity> {
 		be.startOpen(player);
 	}
 
-	public static ToolboxMenu create(int id, Inventory inv, ToolboxBlockEntity be) {
+	public static ToolboxMenu create_re(int id, Inventory inv, ToolboxBlockEntity be) {
 		return new ToolboxMenu(AllMenuTypes.TOOLBOX.get(), id, inv, be);
 	}
 
 	@Override
-	protected ToolboxBlockEntity createOnClient(FriendlyByteBuf extraData) {
+	protected ToolboxBlockEntity create_reOnClient(FriendlyByteBuf extraData) {
 		BlockPos readBlockPos = extraData.readBlockPos();
 		CompoundTag readNbt = extraData.readNbt();
 

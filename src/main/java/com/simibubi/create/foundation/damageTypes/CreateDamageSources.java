@@ -1,8 +1,8 @@
-package com.simibubi.create.foundation.damageTypes;
+package com.simibubi.create_re.foundation.damageTypes;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.AllDamageTypes;
+import com.simibubi.create_re.AllDamageTypes;
 
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.Registries;

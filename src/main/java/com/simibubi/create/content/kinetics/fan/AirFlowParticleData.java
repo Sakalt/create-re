@@ -1,4 +1,4 @@
-package com.simibubi.create.content.kinetics.fan;
+package com.simibubi.create_re.content.kinetics.fan;
 
 import java.util.Locale;
 
@@ -6,8 +6,8 @@ import com.mojang.brigadier.StringReader;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import com.simibubi.create.AllParticleTypes;
-import com.simibubi.create.foundation.particle.ICustomParticleDataWithSprite;
+import com.simibubi.create_re.AllParticleTypes;
+import com.simibubi.create_re.foundation.particle.ICustomParticleDataWithSprite;
 
 import net.minecraft.client.particle.ParticleEngine.SpriteParticleRegistration;
 import net.minecraft.core.Vec3i;
@@ -19,7 +19,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class AirFlowParticleData implements ParticleOptions, ICustomParticleDataWithSprite<AirFlowParticleData> {
 	
-	public static final Codec<AirFlowParticleData> CODEC = RecordCodecBuilder.create(i -> 
+	public static final Codec<AirFlowParticleData> CODEC = RecordCodecBuilder.create_re(i -> 
 		i.group(
 			Codec.INT.fieldOf("x").forGetter(p -> p.posX),
 			Codec.INT.fieldOf("y").forGetter(p -> p.posY),

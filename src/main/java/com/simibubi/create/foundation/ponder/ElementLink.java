@@ -1,8 +1,8 @@
-package com.simibubi.create.foundation.ponder;
+package com.simibubi.create_re.foundation.ponder;
 
 import java.util.UUID;
 
-import com.simibubi.create.foundation.ponder.element.PonderElement;
+import com.simibubi.create_re.foundation.ponder.element.PonderElement;
 
 public class ElementLink<T extends PonderElement> {
 

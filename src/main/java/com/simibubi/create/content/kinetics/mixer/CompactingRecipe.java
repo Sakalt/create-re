@@ -1,8 +1,8 @@
-package com.simibubi.create.content.kinetics.mixer;
+package com.simibubi.create_re.content.kinetics.mixer;
 
-import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.content.processing.basin.BasinRecipe;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
+import com.simibubi.create_re.AllRecipeTypes;
+import com.simibubi.create_re.content.processing.basin.BasinRecipe;
+import com.simibubi.create_re.content.processing.recipe.ProcessingRecipeBuilder.ProcessingRecipeParams;
 
 public class CompactingRecipe extends BasinRecipe {
 

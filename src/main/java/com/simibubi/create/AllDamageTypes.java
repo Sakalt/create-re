@@ -1,6 +1,6 @@
-package com.simibubi.create;
+package com.simibubi.create_re;
 
-import com.simibubi.create.foundation.damageTypes.DamageTypeBuilder;
+import com.simibubi.create_re.foundation.damageTypes.DamageTypeBuilder;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
@@ -22,7 +22,7 @@ public class AllDamageTypes {
 			RUN_OVER = key("run_over");
 
 	private static ResourceKey<DamageType> key(String name) {
-		return ResourceKey.create(Registries.DAMAGE_TYPE, Create.asResource(name));
+		return ResourceKey.create_re(Registries.DAMAGE_TYPE, Create.asResource(name));
 	}
 
 	public static void bootstrap(BootstapContext<DamageType> ctx) {

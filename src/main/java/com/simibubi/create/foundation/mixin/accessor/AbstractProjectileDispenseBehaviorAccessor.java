@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.mixin.accessor;
+package com.simibubi.create_re.foundation.mixin.accessor;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Invoker;
@@ -12,11 +12,11 @@ import net.minecraft.world.level.Level;
 @Mixin(AbstractProjectileDispenseBehavior.class)
 public interface AbstractProjectileDispenseBehaviorAccessor {
 	@Invoker("getProjectile")
-	Projectile create$callGetProjectile(Level level, Position position, ItemStack stack);
+	Projectile create_re$callGetProjectile(Level level, Position position, ItemStack stack);
 
 	@Invoker("getUncertainty")
-	float create$callGetUncertainty();
+	float create_re$callGetUncertainty();
 
 	@Invoker("getPower")
-	float create$callGetPower();
+	float create_re$callGetPower();
 }

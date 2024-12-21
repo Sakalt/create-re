@@ -1,27 +1,27 @@
-package com.simibubi.create.content.schematics.client;
+package com.simibubi.create_re.content.schematics.client;
 
 import java.util.List;
 import java.util.Vector;
 
 import com.google.common.collect.ImmutableList;
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllKeys;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.contraptions.StructureTransform;
-import com.simibubi.create.content.schematics.SchematicInstances;
-import com.simibubi.create.content.schematics.SchematicItem;
-import com.simibubi.create.content.schematics.SchematicWorld;
-import com.simibubi.create.content.schematics.client.tools.ToolType;
-import com.simibubi.create.content.schematics.packet.SchematicPlacePacket;
-import com.simibubi.create.content.schematics.packet.SchematicSyncPacket;
-import com.simibubi.create.foundation.outliner.AABBOutline;
-import com.simibubi.create.foundation.render.SuperRenderTypeBuffer;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.NBTHelper;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllKeys;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.contraptions.StructureTransform;
+import com.simibubi.create_re.content.schematics.SchematicInstances;
+import com.simibubi.create_re.content.schematics.SchematicItem;
+import com.simibubi.create_re.content.schematics.SchematicWorld;
+import com.simibubi.create_re.content.schematics.client.tools.ToolType;
+import com.simibubi.create_re.content.schematics.packet.SchematicPlacePacket;
+import com.simibubi.create_re.content.schematics.packet.SchematicSyncPacket;
+import com.simibubi.create_re.foundation.outliner.AABBOutline;
+import com.simibubi.create_re.foundation.render.SuperRenderTypeBuffer;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;

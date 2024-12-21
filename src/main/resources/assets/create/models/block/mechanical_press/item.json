@@ -2,16 +2,16 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "create:block/axis",
-		"1": "create:block/axis_top",
-		"8": "create:block/mechanical_press_side",
-		"particle": "create:block/mechanical_press_side",
-		"mechanical_press_head": "create:block/mechanical_press_head",
-		"gearbox_top": "create:block/gearbox_top",
-		"mechanical_press_pole": "create:block/mechanical_press_pole",
-		"gearbox": "create:block/gearbox",
-		"mechanical_press_top": "create:block/mechanical_press_top",
-		"mechanical_press_bottom": "create:block/mechanical_press_bottom"
+		"0": "create_re:block/axis",
+		"1": "create_re:block/axis_top",
+		"8": "create_re:block/mechanical_press_side",
+		"particle": "create_re:block/mechanical_press_side",
+		"mechanical_press_head": "create_re:block/mechanical_press_head",
+		"gearbox_top": "create_re:block/gearbox_top",
+		"mechanical_press_pole": "create_re:block/mechanical_press_pole",
+		"gearbox": "create_re:block/gearbox",
+		"mechanical_press_top": "create_re:block/mechanical_press_top",
+		"mechanical_press_bottom": "create_re:block/mechanical_press_bottom"
 	},
 	"elements": [
 		{

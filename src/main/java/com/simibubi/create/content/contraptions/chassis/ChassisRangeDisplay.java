@@ -1,4 +1,4 @@
-package com.simibubi.create.content.contraptions.chassis;
+package com.simibubi.create_re.content.contraptions.chassis;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,10 +10,10 @@ import java.util.Map;
 import java.util.Set;
 
 import com.mojang.datafixers.util.Pair;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllKeys;
-import com.simibubi.create.AllSpecialTextures;
-import com.simibubi.create.CreateClient;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllKeys;
+import com.simibubi.create_re.AllSpecialTextures;
+import com.simibubi.create_re.CreateClient;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
@@ -35,7 +35,7 @@ public class ChassisRangeDisplay {
 		public Entry(ChassisBlockEntity be) {
 			this.be = be;
 			timer = DISPLAY_TIME;
-			CreateClient.OUTLINER.showCluster(getOutlineKey(), createSelection(be))
+			CreateClient.OUTLINER.showCluster(getOutlineKey(), create_reSelection(be))
 				.colored(0xFFFFFF)
 				.disableLineNormals()
 				.lineWidth(1 / 16f)
@@ -46,7 +46,7 @@ public class ChassisRangeDisplay {
 			return Pair.of(be.getBlockPos(), 1);
 		}
 
-		protected Set<BlockPos> createSelection(ChassisBlockEntity chassis) {
+		protected Set<BlockPos> create_reSelection(ChassisBlockEntity chassis) {
 			Set<BlockPos> positions = new HashSet<>();
 			List<BlockPos> includedBlockPositions = chassis.getIncludedBlockPositions(null, true);
 			if (includedBlockPositions == null)
@@ -71,13 +71,13 @@ public class ChassisRangeDisplay {
 		}
 
 		@Override
-		protected Set<BlockPos> createSelection(ChassisBlockEntity chassis) {
+		protected Set<BlockPos> create_reSelection(ChassisBlockEntity chassis) {
 			Set<BlockPos> list = new HashSet<>();
 			includedBEs = be.collectChassisGroup();
 			if (includedBEs == null)
 				return list;
 			for (ChassisBlockEntity chassisBlockEntity : includedBEs)
-				list.addAll(super.createSelection(chassisBlockEntity));
+				list.addAll(super.create_reSelection(chassisBlockEntity));
 			return list;
 		}
 

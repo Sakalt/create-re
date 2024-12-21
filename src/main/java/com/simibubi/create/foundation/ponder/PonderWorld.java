@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.ponder;
+package com.simibubi.create_re.foundation.ponder;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,15 +11,15 @@ import javax.annotation.Nullable;
 
 import com.google.common.base.Suppliers;
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.content.kinetics.belt.BeltBlock;
-import com.simibubi.create.content.kinetics.belt.BeltBlockEntity;
-import com.simibubi.create.content.schematics.SchematicWorld;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.mixin.accessor.ParticleEngineAccessor;
-import com.simibubi.create.foundation.ponder.element.WorldSectionElement;
-import com.simibubi.create.foundation.render.SuperRenderTypeBuffer;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
-import com.simibubi.create.foundation.utility.worldWrappers.WrappedClientWorld;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlock;
+import com.simibubi.create_re.content.kinetics.belt.BeltBlockEntity;
+import com.simibubi.create_re.content.schematics.SchematicWorld;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.mixin.accessor.ParticleEngineAccessor;
+import com.simibubi.create_re.foundation.ponder.element.WorldSectionElement;
+import com.simibubi.create_re.foundation.render.SuperRenderTypeBuffer;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.foundation.utility.worldWrappers.WrappedClientWorld;
 
 import net.minecraft.client.Camera;
 import net.minecraft.client.Minecraft;
@@ -73,15 +73,15 @@ public class PonderWorld extends SchematicWorld {
 		blockBreakingProgressions = new HashMap<>();
 		originalEntities = new ArrayList<>();
 		particles = new PonderWorldParticles(this);
-		particleProviders = ((ParticleEngineAccessor) Minecraft.getInstance().particleEngine).create$getProviders();
+		particleProviders = ((ParticleEngineAccessor) Minecraft.getInstance().particleEngine).create_re$getProviders();
 	}
 
-	public void createBackup() {
+	public void create_reBackup() {
 		originalBlocks.clear();
 		originalBlockEntities.clear();
 		blocks.forEach((k, v) -> originalBlocks.put(k, v));
 		blockEntities.forEach((k, v) -> originalBlockEntities.put(k, v.saveWithFullMetadata()));
-		entities.forEach(e -> EntityType.create(e.serializeNBT(), this)
+		entities.forEach(e -> EntityType.create_re(e.serializeNBT(), this)
 			.ifPresent(originalEntities::add));
 	}
 
@@ -98,7 +98,7 @@ public class PonderWorld extends SchematicWorld {
 			blockEntities.put(k, blockEntity);
 			renderedBlockEntities.add(blockEntity);
 		});
-		originalEntities.forEach(e -> EntityType.create(e.serializeNBT(), this)
+		originalEntities.forEach(e -> EntityType.create_re(e.serializeNBT(), this)
 			.ifPresent(entities::add));
 		particles.clearEffects();
 		fixControllerBlockEntities();
@@ -236,7 +236,7 @@ public class PonderWorld extends SchematicWorld {
 		ResourceLocation key = RegisteredObjects.getKeyOrThrow(data.getType());
 		ParticleProvider<T> particleProvider = (ParticleProvider<T>) particleProviders.get(key);
 		return particleProvider == null ? null
-			: particleProvider.createParticle(data, asClientWorld.get(), x, y, z, mx, my, mz);
+			: particleProvider.create_reParticle(data, asClientWorld.get(), x, y, z, mx, my, mz);
 	}
 
 	@Override

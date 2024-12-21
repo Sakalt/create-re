@@ -1,6 +1,6 @@
-package com.simibubi.create.foundation.collision;
+package com.simibubi.create_re.foundation.collision;
 
-import com.simibubi.create.foundation.collision.ContinuousOBBCollider.ContinuousSeparationManifold;
+import com.simibubi.create_re.foundation.collision.ContinuousOBBCollider.ContinuousSeparationManifold;
 
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;

@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 2,
   "ingredient": {
-    "tag": "create:stone_types/crimsite"
+    "tag": "create_re:stone_types/crimsite"
   },
-  "result": "create:cut_crimsite_slab"
+  "result": "create_re:cut_crimsite_slab"
 }

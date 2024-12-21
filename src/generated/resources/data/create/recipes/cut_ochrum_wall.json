@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "X": {
-      "item": "create:cut_ochrum"
+      "item": "create_re:cut_ochrum"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 6,
-    "item": "create:cut_ochrum_wall"
+    "item": "create_re:cut_ochrum_wall"
   },
   "show_notification": true
 }

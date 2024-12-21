@@ -1,4 +1,4 @@
-package com.simibubi.create.infrastructure.command;
+package com.simibubi.create_re.infrastructure.command;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -9,11 +9,11 @@ import com.mojang.brigadier.Command;
 import com.mojang.brigadier.builder.ArgumentBuilder;
 import com.mojang.brigadier.exceptions.DynamicCommandExceptionType;
 import com.mojang.brigadier.exceptions.SimpleCommandExceptionType;
-import com.simibubi.create.content.contraptions.minecart.CouplingHandler;
-import com.simibubi.create.content.contraptions.minecart.capability.CapabilityMinecartController;
-import com.simibubi.create.content.contraptions.minecart.capability.MinecartController;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.content.contraptions.minecart.CouplingHandler;
+import com.simibubi.create_re.content.contraptions.minecart.capability.CapabilityMinecartController;
+import com.simibubi.create_re.content.contraptions.minecart.capability.MinecartController;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
@@ -43,15 +43,15 @@ public class CouplingCommand {
 						.executes(ctx -> {
 							Entity cart1 = EntityArgument.getEntity(ctx, "cart1");
 							if (!(cart1 instanceof AbstractMinecart))
-								throw ONLY_MINECARTS_ALLOWED.create();
+								throw ONLY_MINECARTS_ALLOWED.create_re();
 
 							Entity cart2 = EntityArgument.getEntity(ctx, "cart2");
 							if (!(cart2 instanceof AbstractMinecart))
-								throw ONLY_MINECARTS_ALLOWED.create();
+								throw ONLY_MINECARTS_ALLOWED.create_re();
 
 							if (!cart1.getCommandSenderWorld()
 								.equals(cart2.getCommandSenderWorld()))
-								throw SAME_DIMENSION.create();
+								throw SAME_DIMENSION.create_re();
 
 							Entity source = ctx.getSource()
 								.getEntity();
@@ -66,20 +66,20 @@ public class CouplingCommand {
 					.executes(ctx -> {
 						Collection<? extends Entity> entities = EntityArgument.getEntities(ctx, "carts");
 						if (entities.size() != 2)
-							throw TWO_CARTS.create(entities.size());
+							throw TWO_CARTS.create_re(entities.size());
 
 						ArrayList<? extends Entity> eList = Lists.newArrayList(entities);
 						Entity cart1 = eList.get(0);
 						if (!(cart1 instanceof AbstractMinecart))
-							throw ONLY_MINECARTS_ALLOWED.create();
+							throw ONLY_MINECARTS_ALLOWED.create_re();
 
 						Entity cart2 = eList.get(1);
 						if (!(cart2 instanceof AbstractMinecart))
-							throw ONLY_MINECARTS_ALLOWED.create();
+							throw ONLY_MINECARTS_ALLOWED.create_re();
 
 						if (!cart1.getCommandSenderWorld()
 							.equals(cart2.getCommandSenderWorld()))
-							throw SAME_DIMENSION.create();
+							throw SAME_DIMENSION.create_re();
 
 						Entity source = ctx.getSource()
 							.getEntity();
@@ -95,11 +95,11 @@ public class CouplingCommand {
 						.executes(ctx -> {
 							Entity cart1 = EntityArgument.getEntity(ctx, "cart1");
 							if (!(cart1 instanceof AbstractMinecart))
-								throw ONLY_MINECARTS_ALLOWED.create();
+								throw ONLY_MINECARTS_ALLOWED.create_re();
 
 							Entity cart2 = EntityArgument.getEntity(ctx, "cart2");
 							if (!(cart2 instanceof AbstractMinecart))
-								throw ONLY_MINECARTS_ALLOWED.create();
+								throw ONLY_MINECARTS_ALLOWED.create_re();
 
 							LazyOptional<MinecartController> cart1Capability =
 								cart1.getCapability(CapabilityMinecartController.MINECART_CONTROLLER_CAPABILITY);
@@ -147,7 +147,7 @@ public class CouplingCommand {
 					.executes(ctx -> {
 						Entity cart = EntityArgument.getEntity(ctx, "cart");
 						if (!(cart instanceof AbstractMinecart))
-							throw ONLY_MINECARTS_ALLOWED.create();
+							throw ONLY_MINECARTS_ALLOWED.create_re();
 
 						LazyOptional<MinecartController> capability =
 							cart.getCapability(CapabilityMinecartController.MINECART_CONTROLLER_CAPABILITY);

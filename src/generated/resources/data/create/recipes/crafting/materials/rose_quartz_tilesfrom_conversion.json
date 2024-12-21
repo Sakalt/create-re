@@ -3,10 +3,10 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "create:small_rose_quartz_tiles"
+      "item": "create_re:small_rose_quartz_tiles"
     }
   ],
   "result": {
-    "item": "create:rose_quartz_tiles"
+    "item": "create_re:rose_quartz_tiles"
   }
 }

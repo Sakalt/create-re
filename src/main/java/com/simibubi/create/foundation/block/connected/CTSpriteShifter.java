@@ -1,9 +1,9 @@
-package com.simibubi.create.foundation.block.connected;
+package com.simibubi.create_re.foundation.block.connected;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import com.simibubi.create.foundation.block.render.SpriteShiftEntry;
+import com.simibubi.create_re.foundation.block.render.SpriteShiftEntry;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;

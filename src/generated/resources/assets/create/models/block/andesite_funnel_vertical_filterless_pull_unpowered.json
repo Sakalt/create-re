@@ -1,11 +1,11 @@
 {
-  "parent": "create:block/funnel/block_vertical_filterless",
+  "parent": "create_re:block/funnel/block_vertical_filterless",
   "textures": {
-    "base": "create:block/funnel/andesite_funnel",
-    "direction": "create:block/funnel/andesite_funnel_pull",
-    "frame": "create:block/funnel/andesite_funnel_frame",
-    "open": "create:block/funnel/funnel_open",
-    "particle": "create:block/andesite_block",
-    "redstone": "create:block/funnel/andesite_funnel_unpowered"
+    "base": "create_re:block/funnel/andesite_funnel",
+    "direction": "create_re:block/funnel/andesite_funnel_pull",
+    "frame": "create_re:block/funnel/andesite_funnel_frame",
+    "open": "create_re:block/funnel/funnel_open",
+    "particle": "create_re:block/andesite_block",
+    "redstone": "create_re:block/funnel/andesite_funnel_unpowered"
   }
 }

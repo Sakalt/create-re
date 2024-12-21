@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/layered_asurine"
+      "model": "create_re:block/layered_asurine"
     }
   }
 }

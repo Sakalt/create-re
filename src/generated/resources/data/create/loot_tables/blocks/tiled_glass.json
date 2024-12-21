@@ -21,11 +21,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:tiled_glass"
+          "name": "create_re:tiled_glass"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/tiled_glass"
+  "random_sequence": "create_re:blocks/tiled_glass"
 }

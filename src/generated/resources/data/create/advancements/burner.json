@@ -1,12 +1,12 @@
 {
-  "parent": "create:mechanical_mixer",
+  "parent": "create_re:mechanical_mixer",
   "criteria": {
     "0": {
       "conditions": {
         "items": [
           {
             "items": [
-              "create:blaze_burner"
+              "create_re:blaze_burner"
             ]
           }
         ]
@@ -18,16 +18,16 @@
     "announce_to_chat": false,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.create.burner.desc"
+      "translate": "advancement.create_re.burner.desc"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "create:blaze_burner"
+      "item": "create_re:blaze_burner"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.create.burner"
+      "translate": "advancement.create_re.burner"
     }
   },
   "requirements": [

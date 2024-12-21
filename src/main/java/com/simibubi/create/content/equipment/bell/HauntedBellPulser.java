@@ -1,4 +1,4 @@
-package com.simibubi.create.content.equipment.bell;
+package com.simibubi.create_re.content.equipment.bell;
 
 import java.util.UUID;
 import java.util.concurrent.ExecutionException;
@@ -6,9 +6,9 @@ import java.util.concurrent.TimeUnit;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.foundation.utility.IntAttached;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.foundation.utility.IntAttached;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.Entity;

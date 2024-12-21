@@ -1,10 +1,10 @@
-package com.simibubi.create.content.equipment.potatoCannon;
+package com.simibubi.create_re.content.equipment.potatoCannon;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.equipment.zapper.ShootableGadgetRenderHandler;
-import com.simibubi.create.foundation.particle.AirParticleData;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.equipment.zapper.ShootableGadgetRenderHandler;
+import com.simibubi.create_re.foundation.particle.AirParticleData;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import dev.engine_room.flywheel.lib.transform.TransformStack;
 import net.minecraft.client.Minecraft;

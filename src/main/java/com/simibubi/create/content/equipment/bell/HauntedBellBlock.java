@@ -1,8 +1,8 @@
-package com.simibubi.create.content.equipment.bell;
+package com.simibubi.create_re.content.equipment.bell;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

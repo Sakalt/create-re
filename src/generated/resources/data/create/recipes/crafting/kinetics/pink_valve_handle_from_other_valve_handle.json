@@ -6,10 +6,10 @@
       "tag": "forge:dyes/pink"
     },
     {
-      "tag": "create:valve_handles"
+      "tag": "create_re:valve_handles"
     }
   ],
   "result": {
-    "item": "create:pink_valve_handle"
+    "item": "create_re:pink_valve_handle"
   }
 }

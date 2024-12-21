@@ -1,8 +1,8 @@
-package com.simibubi.create.content.logistics.chute;
+package com.simibubi.create_re.content.logistics.chute;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.content.logistics.chute.ChuteBlock.Shape;
-import com.simibubi.create.foundation.blockEntity.renderer.SafeBlockEntityRenderer;
+import com.simibubi.create_re.content.logistics.chute.ChuteBlock.Shape;
+import com.simibubi.create_re.foundation.blockEntity.renderer.SafeBlockEntityRenderer;
 
 import dev.engine_room.flywheel.lib.transform.TransformStack;
 import net.minecraft.client.Minecraft;

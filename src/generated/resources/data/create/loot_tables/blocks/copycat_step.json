@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:copycat_step"
+          "name": "create_re:copycat_step"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/copycat_step"
+  "random_sequence": "create_re:blocks/copycat_step"
 }

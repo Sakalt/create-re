@@ -1,7 +1,7 @@
 {
-  "parent": "create:block/bracket/cog/wall",
+  "parent": "create_re:block/bracket/cog/wall",
   "textures": {
-    "bracket": "create:block/bracket_metal",
-    "plate": "create:block/bracket_plate_metal"
+    "bracket": "create_re:block/bracket_metal",
+    "plate": "create_re:block/bracket_plate_metal"
   }
 }

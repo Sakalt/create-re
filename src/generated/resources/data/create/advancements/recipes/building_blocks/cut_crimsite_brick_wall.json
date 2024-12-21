@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:cut_crimsite_bricks"
+              "create_re:cut_crimsite_bricks"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:cut_crimsite_brick_wall"
+        "recipe": "create_re:cut_crimsite_brick_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:cut_crimsite_brick_wall"
+      "create_re:cut_crimsite_brick_wall"
     ]
   },
   "sends_telemetry_event": false

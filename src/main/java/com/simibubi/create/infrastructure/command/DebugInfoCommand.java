@@ -1,12 +1,12 @@
-package com.simibubi.create.infrastructure.command;
+package com.simibubi.create_re.infrastructure.command;
 
 import static net.minecraft.commands.Commands.literal;
 
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.builder.ArgumentBuilder;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.infrastructure.debugInfo.ServerDebugInfoPacket;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.infrastructure.debugInfo.ServerDebugInfoPacket;
 
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.server.level.ServerPlayer;

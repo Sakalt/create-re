@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:exposed_copper_tiles"
+              "create_re:exposed_copper_tiles"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:exposed_copper_tile_stairs"
+        "recipe": "create_re:exposed_copper_tile_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:exposed_copper_tile_stairs"
+      "create_re:exposed_copper_tile_stairs"
     ]
   },
   "sends_telemetry_event": false

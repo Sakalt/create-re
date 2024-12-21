@@ -4,5 +4,5 @@
   "ingredient": {
     "tag": "forge:ingots/brass"
   },
-  "result": "create:brass_scaffolding"
+  "result": "create_re:brass_scaffolding"
 }

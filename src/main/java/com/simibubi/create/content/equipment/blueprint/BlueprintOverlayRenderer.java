@@ -1,4 +1,4 @@
-package com.simibubi.create.content.equipment.blueprint;
+package com.simibubi.create_re.content.equipment.blueprint;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,18 +8,18 @@ import java.util.Map;
 import java.util.Optional;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.equipment.blueprint.BlueprintEntity.BlueprintCraftingInventory;
-import com.simibubi.create.content.equipment.blueprint.BlueprintEntity.BlueprintSection;
-import com.simibubi.create.content.logistics.filter.AttributeFilterMenu.WhitelistMode;
-import com.simibubi.create.content.logistics.filter.FilterItem;
-import com.simibubi.create.content.logistics.filter.FilterItemStack;
-import com.simibubi.create.content.logistics.filter.ItemAttribute;
-import com.simibubi.create.content.trains.track.TrackPlacement.PlacementInfo;
-import com.simibubi.create.foundation.gui.AllGuiTextures;
-import com.simibubi.create.foundation.gui.element.GuiGameElement;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.Pair;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.equipment.blueprint.BlueprintEntity.BlueprintCraftingInventory;
+import com.simibubi.create_re.content.equipment.blueprint.BlueprintEntity.BlueprintSection;
+import com.simibubi.create_re.content.logistics.filter.AttributeFilterMenu.WhitelistMode;
+import com.simibubi.create_re.content.logistics.filter.FilterItem;
+import com.simibubi.create_re.content.logistics.filter.FilterItemStack;
+import com.simibubi.create_re.content.logistics.filter.ItemAttribute;
+import com.simibubi.create_re.content.trains.track.TrackPlacement.PlacementInfo;
+import com.simibubi.create_re.foundation.gui.AllGuiTextures;
+import com.simibubi.create_re.foundation.gui.element.GuiGameElement;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.Pair;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;

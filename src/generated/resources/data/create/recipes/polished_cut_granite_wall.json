@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "X": {
-      "item": "create:polished_cut_granite"
+      "item": "create_re:polished_cut_granite"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 6,
-    "item": "create:polished_cut_granite_wall"
+    "item": "create_re:polished_cut_granite_wall"
   },
   "show_notification": true
 }

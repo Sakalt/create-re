@@ -1,4 +1,4 @@
-package com.simibubi.create.content.contraptions.pulley;
+package com.simibubi.create_re.content.contraptions.pulley;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -6,21 +6,21 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.contraptions.AbstractContraptionEntity;
-import com.simibubi.create.content.contraptions.AssemblyException;
-import com.simibubi.create.content.contraptions.BlockMovementChecks;
-import com.simibubi.create.content.contraptions.ContraptionCollider;
-import com.simibubi.create.content.contraptions.ControlledContraptionEntity;
-import com.simibubi.create.content.contraptions.piston.LinearActuatorBlockEntity;
-import com.simibubi.create.content.redstone.thresholdSwitch.ThresholdSwitchObservable;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.CenteredSideValueBoxTransform;
-import com.simibubi.create.foundation.blockEntity.behaviour.ValueBoxTransform;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.contraptions.AbstractContraptionEntity;
+import com.simibubi.create_re.content.contraptions.AssemblyException;
+import com.simibubi.create_re.content.contraptions.BlockMovementChecks;
+import com.simibubi.create_re.content.contraptions.ContraptionCollider;
+import com.simibubi.create_re.content.contraptions.ControlledContraptionEntity;
+import com.simibubi.create_re.content.contraptions.piston.LinearActuatorBlockEntity;
+import com.simibubi.create_re.content.redstone.thresholdSwitch.ThresholdSwitchObservable;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.CenteredSideValueBoxTransform;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBoxTransform;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -50,14 +50,14 @@ public class PulleyBlockEntity extends LinearActuatorBlockEntity implements Thre
 	}
 
 	@Override
-	protected AABB createRenderBoundingBox() {
+	protected AABB create_reRenderBoundingBox() {
 		double expandY = -offset;
 		if (sharedMirrorContraption != null) {
 			AbstractContraptionEntity ace = sharedMirrorContraption.get();
 			if (ace != null)
 				expandY = ace.getY() - worldPosition.getY();
 		}
-		return super.createRenderBoundingBox().expandTowards(0, expandY, 0);
+		return super.create_reRenderBoundingBox().expandTowards(0, expandY, 0);
 	}
 
 	@Override
@@ -145,7 +145,7 @@ public class PulleyBlockEntity extends LinearActuatorBlockEntity implements Thre
 			if (!contraption.getBlocks()
 				.isEmpty()) {
 				contraption.removeBlocksFromWorld(level, BlockPos.ZERO);
-				movedContraption = ControlledContraptionEntity.create(level, this, contraption);
+				movedContraption = ControlledContraptionEntity.create_re(level, this, contraption);
 				movedContraption.setPos(anchor.getX(), anchor.getY(), anchor.getZ());
 				level.addFreshEntity(movedContraption);
 				forceMove = true;
@@ -154,7 +154,7 @@ public class PulleyBlockEntity extends LinearActuatorBlockEntity implements Thre
 				if (contraption.containsBlockBreakers())
 					award(AllAdvancements.CONTRAPTION_ACTORS);
 
-				for (BlockPos pos : contraption.createColliders(level, Direction.UP)) {
+				for (BlockPos pos : contraption.create_reColliders(level, Direction.UP)) {
 					if (pos.getY() != 0)
 						continue;
 					pos = pos.offset(anchor);
@@ -178,7 +178,7 @@ public class PulleyBlockEntity extends LinearActuatorBlockEntity implements Thre
 			BlockPos offset = worldPosition.below(i);
 			BlockState oldState = level.getBlockState(offset);
 			level.setBlock(offset, oldState.getFluidState()
-				.createLegacyBlock(), 66);
+				.create_reLegacyBlock(), 66);
 		}
 	}
 

@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:brass_casing"
+              "create_re:brass_casing"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/kinetics/sequenced_gearshift"
+        "recipe": "create_re:crafting/kinetics/sequenced_gearshift"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/kinetics/sequenced_gearshift"
+      "create_re:crafting/kinetics/sequenced_gearshift"
     ]
   },
   "sends_telemetry_event": false

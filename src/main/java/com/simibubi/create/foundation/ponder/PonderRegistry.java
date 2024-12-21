@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.ponder;
+package com.simibubi.create_re.foundation.ponder;
 
 import java.io.BufferedInputStream;
 import java.io.DataInputStream;
@@ -12,9 +12,9 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.zip.GZIPInputStream;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.infrastructure.ponder.PonderIndex;
-import com.simibubi.create.infrastructure.ponder.SharedText;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.infrastructure.ponder.PonderIndex;
+import com.simibubi.create_re.infrastructure.ponder.SharedText;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
@@ -74,7 +74,7 @@ public class PonderRegistry {
 			StructureTemplate activeTemplate = loadSchematic(sb.getSchematicLocation());
 			PonderWorld world = new PonderWorld(BlockPos.ZERO, Minecraft.getInstance().level);
 			activeTemplate.placeInWorld(world, BlockPos.ZERO, BlockPos.ZERO, new StructurePlaceSettings(), world.random, Block.UPDATE_CLIENTS);
-			world.createBackup();
+			world.create_reBackup();
 			PonderScene scene = compileScene(i, sb, world);
 			scene.begin();
 			scenes.add(scene);

@@ -1,18 +1,18 @@
-package com.simibubi.create.content.contraptions.gantry;
+package com.simibubi.create_re.content.contraptions.gantry;
 
 import java.util.List;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.content.contraptions.AssemblyException;
-import com.simibubi.create.content.contraptions.ContraptionCollider;
-import com.simibubi.create.content.contraptions.IDisplayAssemblyExceptions;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.kinetics.gantry.GantryShaftBlock;
-import com.simibubi.create.content.kinetics.gantry.GantryShaftBlockEntity;
-import com.simibubi.create.content.kinetics.transmission.sequencer.SequencerInstructions;
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.content.contraptions.AssemblyException;
+import com.simibubi.create_re.content.contraptions.ContraptionCollider;
+import com.simibubi.create_re.content.contraptions.IDisplayAssemblyExceptions;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.kinetics.gantry.GantryShaftBlock;
+import com.simibubi.create_re.content.kinetics.gantry.GantryShaftBlockEntity;
+import com.simibubi.create_re.content.kinetics.transmission.sequencer.SequencerInstructions;
+import com.simibubi.create_re.foundation.advancement.AllAdvancements;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -117,7 +117,7 @@ public class GantryCarriageBlockEntity extends KineticBlockEntity implements IDi
 
 		contraption.removeBlocksFromWorld(level, BlockPos.ZERO);
 		GantryContraptionEntity movedContraption =
-			GantryContraptionEntity.create(level, contraption, shaftOrientation);
+			GantryContraptionEntity.create_re(level, contraption, shaftOrientation);
 		BlockPos anchor = worldPosition;
 		movedContraption.setPos(anchor.getX(), anchor.getY(), anchor.getZ());
 		AllSoundEvents.CONTRAPTION_ASSEMBLE.playOnServer(level, worldPosition);

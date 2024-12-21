@@ -1,4 +1,4 @@
-package com.simibubi.create.content.logistics.filter.attribute;
+package com.simibubi.create_re.content.logistics.filter.attribute;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import com.simibubi.create.content.logistics.filter.ItemAttribute;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.content.logistics.filter.ItemAttribute;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
 
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.nbt.CompoundTag;

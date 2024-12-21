@@ -1,4 +1,4 @@
-package com.simibubi.create.content.schematics;
+package com.simibubi.create_re.content.schematics;
 
 import java.util.concurrent.TimeUnit;
 
@@ -6,8 +6,8 @@ import javax.annotation.Nullable;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
-import com.simibubi.create.content.contraptions.StructureTransform;
-import com.simibubi.create.foundation.utility.WorldAttached;
+import com.simibubi.create_re.content.contraptions.StructureTransform;
+import com.simibubi.create_re.foundation.utility.WorldAttached;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

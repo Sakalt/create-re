@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "create:tiled_glass"
+      "item": "create_re:tiled_glass"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 16,
-    "item": "create:tiled_glass_pane"
+    "item": "create_re:tiled_glass_pane"
   },
   "show_notification": true
 }

@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "create:stone_types/ochrum"
+            "tag": "create_re:stone_types/ochrum"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:small_ochrum_brick_slab_from_stone_types_ochrum_stonecutting"
+        "recipe": "create_re:small_ochrum_brick_slab_from_stone_types_ochrum_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:small_ochrum_brick_slab_from_stone_types_ochrum_stonecutting"
+      "create_re:small_ochrum_brick_slab_from_stone_types_ochrum_stonecutting"
     ]
   },
   "sends_telemetry_event": false

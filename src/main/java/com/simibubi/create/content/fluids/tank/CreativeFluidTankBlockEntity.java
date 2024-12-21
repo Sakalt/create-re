@@ -1,9 +1,9 @@
-package com.simibubi.create.content.fluids.tank;
+package com.simibubi.create_re.content.fluids.tank;
 
 import java.util.List;
 import java.util.function.Consumer;
 
-import com.simibubi.create.foundation.fluid.SmartFluidTank;
+import com.simibubi.create_re.foundation.fluid.SmartFluidTank;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -18,7 +18,7 @@ public class CreativeFluidTankBlockEntity extends FluidTankBlockEntity {
 	}
 
 	@Override
-	protected SmartFluidTank createInventory() {
+	protected SmartFluidTank create_reInventory() {
 		return new CreativeSmartFluidTank(getCapacityMultiplier(), this::onFluidStackChanged);
 	}
 	

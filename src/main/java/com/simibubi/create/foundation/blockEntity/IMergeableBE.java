@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.blockEntity;
+package com.simibubi.create_re.foundation.blockEntity;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 

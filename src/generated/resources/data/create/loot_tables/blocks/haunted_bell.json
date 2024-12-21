@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:haunted_bell"
+          "name": "create_re:haunted_bell"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/haunted_bell"
+  "random_sequence": "create_re:blocks/haunted_bell"
 }

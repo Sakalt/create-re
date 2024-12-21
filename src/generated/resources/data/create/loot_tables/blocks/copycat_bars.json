@@ -17,5 +17,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/copycat_bars"
+  "random_sequence": "create_re:blocks/copycat_bars"
 }

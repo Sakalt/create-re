@@ -1,7 +1,7 @@
 {
     "textures": {
-        "particle": "create:block/radial_chassis_side",
-        "rotation_chassis_top": "create:block/radial_chassis_end"
+        "particle": "create_re:block/radial_chassis_side",
+        "rotation_chassis_top": "create_re:block/radial_chassis_end"
     },
     "elements": [
         {

@@ -1,15 +1,15 @@
 {
-  "type": "create:mechanical_crafting",
+  "type": "create_re:mechanical_crafting",
   "acceptMirrored": false,
   "key": {
     "H": {
-      "item": "create:brass_hand"
+      "item": "create_re:brass_hand"
     },
     "L": {
       "tag": "forge:ingots/brass"
     },
     "R": {
-      "item": "create:precision_mechanism"
+      "item": "create_re:precision_mechanism"
     },
     "S": {
       "tag": "forge:rods/wooden"
@@ -23,6 +23,6 @@
     " H "
   ],
   "result": {
-    "item": "create:extendo_grip"
+    "item": "create_re:extendo_grip"
   }
 }

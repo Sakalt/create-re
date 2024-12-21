@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.utility;
+package com.simibubi.create_re.foundation.utility;
 
 import java.util.function.UnaryOperator;
 
@@ -67,7 +67,7 @@ public class Color {
 
 	/**
 	 * Mark this color as immutable. Attempting to mutate this color in the future
-	 * will instead cause a copy to be created that can me modified.
+	 * will instead cause a copy to be create_red that can me modified.
 	 */
 	public Color setImmutable() {
 		this.mutable = false;

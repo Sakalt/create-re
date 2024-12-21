@@ -1,22 +1,22 @@
-package com.simibubi.create.infrastructure.gametest.tests;
+package com.simibubi.create_re.infrastructure.gametest.tests;
 
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.stream.Stream;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.logistics.depot.DepotBlockEntity;
-import com.simibubi.create.content.logistics.tunnel.BrassTunnelBlockEntity.SelectionMode;
-import com.simibubi.create.content.redstone.nixieTube.NixieTubeBlockEntity;
-import com.simibubi.create.content.trains.display.FlapDisplayBlockEntity;
-import com.simibubi.create.content.trains.display.FlapDisplayLayout;
-import com.simibubi.create.content.trains.display.FlapDisplaySection;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.infrastructure.gametest.CreateGameTestHelper;
-import com.simibubi.create.infrastructure.gametest.GameTestGroup;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.content.logistics.depot.DepotBlockEntity;
+import com.simibubi.create_re.content.logistics.tunnel.BrassTunnelBlockEntity.SelectionMode;
+import com.simibubi.create_re.content.redstone.nixieTube.NixieTubeBlockEntity;
+import com.simibubi.create_re.content.trains.display.FlapDisplayBlockEntity;
+import com.simibubi.create_re.content.trains.display.FlapDisplayLayout;
+import com.simibubi.create_re.content.trains.display.FlapDisplaySection;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.infrastructure.gametest.CreateGameTestHelper;
+import com.simibubi.create_re.infrastructure.gametest.GameTestGroup;
 
 import it.unimi.dsi.fastutil.objects.Object2LongMap;
 import net.minecraft.Util;
@@ -82,7 +82,7 @@ public class TestItems {
 				new BlockPos(3, 2, 1), new ItemStack(AllBlocks.BRASS_BLOCK.get()),
 				new BlockPos(4, 2, 1), new ItemStack(Items.APPLE),
 				new BlockPos(5, 2, 1), new ItemStack(Items.WATER_BUCKET),
-				new BlockPos(6, 2, 1), EnchantedBookItem.createForEnchantment(
+				new BlockPos(6, 2, 1), EnchantedBookItem.create_reForEnchantment(
 						new EnchantmentInstance(Enchantments.ALL_DAMAGE_PROTECTION, 1)
 				),
 				new BlockPos(7, 2, 1), Util.make(

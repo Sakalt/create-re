@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:copper_tiles"
+          "name": "create_re:copper_tiles"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/copper_tiles"
+  "random_sequence": "create_re:blocks/copper_tiles"
 }

@@ -4,7 +4,7 @@
   "group": "cut_granite_stairs",
   "key": {
     "X": {
-      "item": "create:cut_granite"
+      "item": "create_re:cut_granite"
     }
   },
   "pattern": [
@@ -14,7 +14,7 @@
   ],
   "result": {
     "count": 4,
-    "item": "create:cut_granite_stairs"
+    "item": "create_re:cut_granite_stairs"
   },
   "show_notification": true
 }

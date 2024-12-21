@@ -1,18 +1,18 @@
-package com.simibubi.create.infrastructure.ponder.scenes;
+package com.simibubi.create_re.infrastructure.ponder.scenes;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.logistics.depot.EjectorBlockEntity;
-import com.simibubi.create.foundation.gui.AllIcons;
-import com.simibubi.create.foundation.ponder.ElementLink;
-import com.simibubi.create.foundation.ponder.PonderPalette;
-import com.simibubi.create.foundation.ponder.SceneBuilder;
-import com.simibubi.create.foundation.ponder.SceneBuildingUtil;
-import com.simibubi.create.foundation.ponder.Selection;
-import com.simibubi.create.foundation.ponder.element.InputWindowElement;
-import com.simibubi.create.foundation.ponder.element.ParrotElement;
-import com.simibubi.create.foundation.ponder.element.WorldSectionElement;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.Pointing;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.logistics.depot.EjectorBlockEntity;
+import com.simibubi.create_re.foundation.gui.AllIcons;
+import com.simibubi.create_re.foundation.ponder.ElementLink;
+import com.simibubi.create_re.foundation.ponder.PonderPalette;
+import com.simibubi.create_re.foundation.ponder.SceneBuilder;
+import com.simibubi.create_re.foundation.ponder.SceneBuildingUtil;
+import com.simibubi.create_re.foundation.ponder.Selection;
+import com.simibubi.create_re.foundation.ponder.element.InputWindowElement;
+import com.simibubi.create_re.foundation.ponder.element.ParrotElement;
+import com.simibubi.create_re.foundation.ponder.element.WorldSectionElement;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.Pointing;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -120,7 +120,7 @@ public class EjectorScenes {
 		scene.overlay.showControls(new InputWindowElement(util.vector.topOf(ejectorPos)
 			.add(0.5, 0, 0), Pointing.RIGHT).withItem(copperBlock), 30);
 		scene.idle(7);
-		scene.world.createItemOnBeltLike(ejectorPos, Direction.NORTH, copperBlock);
+		scene.world.create_reItemOnBeltLike(ejectorPos, Direction.NORTH, copperBlock);
 		scene.idle(20);
 		scene.overlay.showText(50)
 			.text("Items placed on the ejector cause it to trigger")
@@ -134,9 +134,9 @@ public class EjectorScenes {
 		scene.world.restoreBlocks(targetS);
 		scene.world.showSection(targetS, Direction.SOUTH);
 		scene.idle(10);
-		scene.world.createItemOnBeltLike(targetPos, Direction.SOUTH, copperIngot);
+		scene.world.create_reItemOnBeltLike(targetPos, Direction.SOUTH, copperIngot);
 		scene.idle(20);
-		scene.world.createItemOnBeltLike(ejectorPos, Direction.SOUTH, copperBlock);
+		scene.world.create_reItemOnBeltLike(ejectorPos, Direction.SOUTH, copperBlock);
 		scene.overlay.showText(60)
 			.attachKeyFrame()
 			.text("If Inventories are targeted, the ejector will wait until there is space")
@@ -172,17 +172,17 @@ public class EjectorScenes {
 		scene.idle(15);
 
 		BlockPos beltPos = util.grid.at(4, 1, 0);
-		scene.world.createItemOnBeltLike(beltPos, Direction.UP, copperBlock);
+		scene.world.create_reItemOnBeltLike(beltPos, Direction.UP, copperBlock);
 		scene.overlay.showText(100)
 			.text("It is now limited to this stack size, and only activates when its held stack reaches this amount")
 			.pointAt(util.vector.topOf(ejectorPos))
 			.placeNearTarget();
 		for (int i = 0; i < 4; i++) {
 			scene.idle(20);
-			scene.world.createItemOnBeltLike(beltPos, Direction.UP, copperBlock);
+			scene.world.create_reItemOnBeltLike(beltPos, Direction.UP, copperBlock);
 		}
 		scene.idle(20);
-		scene.world.createItemOnBeltLike(beltPos, Direction.UP, ItemHandlerHelper.copyStackWithSize(copperBlock, 15));
+		scene.world.create_reItemOnBeltLike(beltPos, Direction.UP, ItemHandlerHelper.copyStackWithSize(copperBlock, 15));
 		scene.idle(80);
 
 		scene.world.hideSection(util.select.fromTo(5, 1, 0, 4, 1, 1), Direction.UP);
@@ -191,7 +191,7 @@ public class EjectorScenes {
 		scene.world.modifyEntities(ItemEntity.class, Entity::discard);
 
 		scene.addKeyframe();
-		ElementLink<ParrotElement> birb = scene.special.createBirb(util.vector.topOf(ejectorPos)
+		ElementLink<ParrotElement> birb = scene.special.create_reBirb(util.vector.topOf(ejectorPos)
 			.add(0, -3 / 16f, 0), ParrotElement.FlappyPose::new);
 		scene.idle(15);
 		scene.world.modifyBlockEntity(ejectorPos, EjectorBlockEntity.class, ejector -> ejector.activateDeferred());
@@ -272,7 +272,7 @@ public class EjectorScenes {
 		scene.world.showSection(coverbelt, Direction.SOUTH);
 		
 		scene.idle(7);
-		scene.world.createItemOnBelt(util.grid.at(4, 1, 3), Direction.UP, new ItemStack(Items.COPPER_INGOT, 64));
+		scene.world.create_reItemOnBelt(util.grid.at(4, 1, 3), Direction.UP, new ItemStack(Items.COPPER_INGOT, 64));
 		scene.idle(40);
 		scene.world.multiplyKineticSpeed(util.select.everywhere(), 1 / 16f);
 		scene.overlay.showText(80)
@@ -308,10 +308,10 @@ public class EjectorScenes {
 		ItemStack copper = new ItemStack(Items.COPPER_INGOT);
 
 		for (int i = 0; i < 3; i++) {
-			scene.world.createItemEntity(topOf, util.vector.of(0, 0.1, 0), copper);
+			scene.world.create_reItemEntity(topOf, util.vector.of(0, 0.1, 0), copper);
 			scene.idle(12);
 			scene.world.modifyEntities(ItemEntity.class, Entity::discard);
-			scene.world.createItemOnBeltLike(ejectorPos, Direction.UP, copper);
+			scene.world.create_reItemOnBeltLike(ejectorPos, Direction.UP, copper);
 			scene.idle(20);
 			if (i == 1) {
 				scene.world.toggleRedstonePower(redstone);
@@ -348,10 +348,10 @@ public class EjectorScenes {
 
 		Selection observerRedstone = util.select.fromTo(4, 1, 1, 4, 1, 0);
 		for (int i = 0; i < 6; i++) {
-			scene.world.createItemEntity(topOf, util.vector.of(0, 0.1, 0), copper);
+			scene.world.create_reItemEntity(topOf, util.vector.of(0, 0.1, 0), copper);
 			scene.idle(12);
 			scene.world.modifyEntities(ItemEntity.class, Entity::discard);
-			scene.world.createItemOnBeltLike(ejectorPos, Direction.UP, copper);
+			scene.world.create_reItemOnBeltLike(ejectorPos, Direction.UP, copper);
 			scene.idle(1);
 			scene.world.toggleRedstonePower(observerRedstone);
 			scene.effects.indicateRedstone(util.grid.at(4, 1, 1));

@@ -1,8 +1,8 @@
-package com.simibubi.create.foundation.blockEntity.behaviour;
+package com.simibubi.create_re.foundation.blockEntity.behaviour;
 
 import java.util.function.BiPredicate;
 
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.state.BlockState;

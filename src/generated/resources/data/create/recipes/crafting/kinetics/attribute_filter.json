@@ -13,7 +13,7 @@
     "ASA"
   ],
   "result": {
-    "item": "create:attribute_filter"
+    "item": "create_re:attribute_filter"
   },
   "show_notification": true
 }

@@ -17,5 +17,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/fake_track"
+  "random_sequence": "create_re:blocks/fake_track"
 }

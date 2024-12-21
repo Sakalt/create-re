@@ -21,11 +21,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:acacia_window"
+          "name": "create_re:acacia_window"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/acacia_window"
+  "random_sequence": "create_re:blocks/acacia_window"
 }

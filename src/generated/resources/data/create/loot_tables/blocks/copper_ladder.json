@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:copper_ladder"
+          "name": "create_re:copper_ladder"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/copper_ladder"
+  "random_sequence": "create_re:blocks/copper_ladder"
 }

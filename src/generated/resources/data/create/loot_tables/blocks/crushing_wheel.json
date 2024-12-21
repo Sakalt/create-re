@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:crushing_wheel"
+          "name": "create_re:crushing_wheel"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/crushing_wheel"
+  "random_sequence": "create_re:blocks/crushing_wheel"
 }

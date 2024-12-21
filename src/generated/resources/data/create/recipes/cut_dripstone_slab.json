@@ -4,7 +4,7 @@
   "group": "cut_dripstone_slab",
   "key": {
     "X": {
-      "item": "create:cut_dripstone"
+      "item": "create_re:cut_dripstone"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 6,
-    "item": "create:cut_dripstone_slab"
+    "item": "create_re:cut_dripstone_slab"
   },
   "show_notification": true
 }

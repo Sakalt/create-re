@@ -1,4 +1,4 @@
-package com.simibubi.create.content.logistics.funnel;
+package com.simibubi.create_re.content.logistics.funnel;
 
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;
@@ -18,8 +18,8 @@ public abstract class AbstractHorizontalFunnelBlock extends AbstractFunnelBlock 
 	}
 	
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
-		super.createBlockStateDefinition(builder.add(HORIZONTAL_FACING));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
+		super.create_reBlockStateDefinition(builder.add(HORIZONTAL_FACING));
 	}
 
 	@Override

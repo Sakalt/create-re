@@ -1,5 +1,5 @@
 {
-  "type": "create:mixing",
+  "type": "create_re:mixing",
   "heatRequirement": "heated",
   "ingredients": [
     {
@@ -12,7 +12,7 @@
   "results": [
     {
       "count": 2,
-      "item": "create:brass_ingot"
+      "item": "create_re:brass_ingot"
     }
   ]
 }

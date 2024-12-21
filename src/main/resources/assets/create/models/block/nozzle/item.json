@@ -2,11 +2,11 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"3": "create:block/net",
-		"particle": "create:block/net",
-		"back": "create:block/gearbox",
-		"fan_casing": "create:block/fan_casing",
-		"fan_side": "create:block/fan_side"
+		"3": "create_re:block/net",
+		"particle": "create_re:block/net",
+		"back": "create_re:block/gearbox",
+		"fan_casing": "create_re:block/fan_casing",
+		"fan_side": "create_re:block/fan_side"
 	},
 	"elements": [
 		{

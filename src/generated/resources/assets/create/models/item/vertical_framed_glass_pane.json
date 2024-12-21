@@ -1,7 +1,7 @@
 {
-  "parent": "create:item/pane",
+  "parent": "create_re:item/pane",
   "textures": {
-    "edge": "create:block/palettes/framed_glass_pane_top",
-    "pane": "create:block/palettes/vertical_framed_glass"
+    "edge": "create_re:block/palettes/framed_glass_pane_top",
+    "pane": "create_re:block/palettes/vertical_framed_glass"
   }
 }

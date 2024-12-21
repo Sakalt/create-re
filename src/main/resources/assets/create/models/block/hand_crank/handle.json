@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "create:block/axis",
-		"2": "create:block/andesite_casing_short",
-		"3": "create:block/smooth_dark_log_top",
-		"particle": "create:block/axis"
+		"0": "create_re:block/axis",
+		"2": "create_re:block/andesite_casing_short",
+		"3": "create_re:block/smooth_dark_log_top",
+		"particle": "create_re:block/axis"
 	},
 	"elements": [
 		{

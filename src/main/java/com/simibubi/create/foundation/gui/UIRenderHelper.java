@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.gui;
+package com.simibubi.create_re.foundation.gui;
 
 import org.joml.Matrix4f;
 import org.lwjgl.opengl.GL20;
@@ -15,8 +15,8 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.Tesselator;
 import com.mojang.blaze3d.vertex.VertexFormat;
 import com.mojang.math.Axis;
-import com.simibubi.create.foundation.utility.Color;
-import com.simibubi.create.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Color;
+import com.simibubi.create_re.foundation.utility.Couple;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
@@ -33,7 +33,7 @@ public class UIRenderHelper {
 	public static void init() {
 		RenderSystem.recordRenderCall(() -> {
 			Window mainWindow = Minecraft.getInstance().getWindow();
-			framebuffer = CustomRenderTarget.create(mainWindow);
+			framebuffer = CustomRenderTarget.create_re(mainWindow);
 		});
 	}
 
@@ -288,7 +288,7 @@ public class UIRenderHelper {
 			super(useDepth);
 		}
 
-		public static CustomRenderTarget create(Window mainWindow) {
+		public static CustomRenderTarget create_re(Window mainWindow) {
 			CustomRenderTarget framebuffer = new CustomRenderTarget(true);
 			framebuffer.resize(mainWindow.getWidth(), mainWindow.getHeight(), Minecraft.ON_OSX);
 			framebuffer.setClearColor(0, 0, 0, 0);

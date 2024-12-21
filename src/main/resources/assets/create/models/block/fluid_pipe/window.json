@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "create:block/glass_fluid_pipe",
-		"particle": "create:block/copper_plating"
+		"0": "create_re:block/glass_fluid_pipe",
+		"particle": "create_re:block/copper_plating"
 	},
 	"elements": [
 		{

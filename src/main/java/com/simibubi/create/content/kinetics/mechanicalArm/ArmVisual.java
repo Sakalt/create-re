@@ -1,15 +1,15 @@
-package com.simibubi.create.content.kinetics.mechanicalArm;
+package com.simibubi.create_re.content.kinetics.mechanicalArm;
 
 import java.util.ArrayList;
 import java.util.function.Consumer;
 
 import com.google.common.collect.Lists;
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.kinetics.base.SingleRotatingVisual;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.Color;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.kinetics.base.SingleRotatingVisual;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.Color;
+import com.simibubi.create_re.foundation.utility.Iterate;
 
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.model.Model;
@@ -50,18 +50,18 @@ public class ArmVisual extends SingleRotatingVisual<ArmBlockEntity> implements S
 		super(context, blockEntity, partialTick);
 
 		base = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.ARM_BASE))
-			.createInstance();
+			.create_reInstance();
 		lowerBody = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.ARM_LOWER_BODY))
-			.createInstance();
+			.create_reInstance();
 		upperBody = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.ARM_UPPER_BODY))
-			.createInstance();
+			.create_reInstance();
 		claw = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(blockEntity.goggles ? AllPartialModels.ARM_CLAW_BASE_GOGGLES : AllPartialModels.ARM_CLAW_BASE))
-			.createInstance();
+			.create_reInstance();
 
 		TransformedInstance clawGrip1 = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.ARM_CLAW_GRIP_UPPER))
-			.createInstance();
+			.create_reInstance();
 		TransformedInstance clawGrip2 = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(AllPartialModels.ARM_CLAW_GRIP_LOWER))
-			.createInstance();
+			.create_reInstance();
 
 		clawGrips = Lists.newArrayList(clawGrip1, clawGrip2);
 		models = Lists.newArrayList(base, lowerBody, upperBody, claw, clawGrip1, clawGrip2);
@@ -176,7 +176,7 @@ public class ArmVisual extends SingleRotatingVisual<ArmBlockEntity> implements S
 		models.remove(claw);
 		claw.delete();
 		claw = instancerProvider().instancer(InstanceTypes.TRANSFORMED, Models.partial(blockEntity.goggles ? AllPartialModels.ARM_CLAW_BASE_GOGGLES : AllPartialModels.ARM_CLAW_BASE))
-				.createInstance();
+				.create_reInstance();
 		models.add(claw);
 		updateLight(pt);
 		animateArm();

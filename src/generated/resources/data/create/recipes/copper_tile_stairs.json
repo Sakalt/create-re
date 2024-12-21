@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "X": {
-      "item": "create:copper_tiles"
+      "item": "create_re:copper_tiles"
     }
   },
   "pattern": [
@@ -13,7 +13,7 @@
   ],
   "result": {
     "count": 4,
-    "item": "create:copper_tile_stairs"
+    "item": "create_re:copper_tile_stairs"
   },
   "show_notification": true
 }

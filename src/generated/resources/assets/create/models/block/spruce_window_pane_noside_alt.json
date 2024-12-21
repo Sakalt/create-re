@@ -1,7 +1,7 @@
 {
-  "parent": "create:block/connected_glass_pane/noside_alt",
+  "parent": "create_re:block/connected_glass_pane/noside_alt",
   "textures": {
     "edge": "minecraft:block/spruce_planks",
-    "pane": "create:block/palettes/spruce_window"
+    "pane": "create_re:block/palettes/spruce_window"
   }
 }

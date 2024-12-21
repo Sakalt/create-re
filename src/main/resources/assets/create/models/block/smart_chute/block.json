@@ -2,12 +2,12 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"5": "create:block/chute_large",
-		"7": "create:block/chute_smart",
-		"8": "create:block/funnel/funnel_open",
-		"9": "create:block/chute_smart_top",
-		"13": "create:block/chute",
-		"particle": "create:block/chute_smart"
+		"5": "create_re:block/chute_large",
+		"7": "create_re:block/chute_smart",
+		"8": "create_re:block/funnel/funnel_open",
+		"9": "create_re:block/chute_smart_top",
+		"13": "create_re:block/chute",
+		"particle": "create_re:block/chute_smart"
 	},
 	"elements": [
 		{

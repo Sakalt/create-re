@@ -1,11 +1,11 @@
-package com.simibubi.create.foundation.placement;
+package com.simibubi.create_re.foundation.placement;
 
 import java.util.List;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-import com.simibubi.create.content.equipment.extendoGrip.ExtendoGripItem;
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.content.equipment.extendoGrip.ExtendoGripItem;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;

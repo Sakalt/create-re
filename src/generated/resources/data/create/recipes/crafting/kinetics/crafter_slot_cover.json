@@ -10,7 +10,7 @@
     "AAA"
   ],
   "result": {
-    "item": "create:crafter_slot_cover"
+    "item": "create_re:crafter_slot_cover"
   },
   "show_notification": true
 }

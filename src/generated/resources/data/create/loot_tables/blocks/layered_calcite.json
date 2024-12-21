@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:layered_calcite"
+          "name": "create_re:layered_calcite"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/layered_calcite"
+  "random_sequence": "create_re:blocks/layered_calcite"
 }

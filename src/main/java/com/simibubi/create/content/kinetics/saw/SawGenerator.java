@@ -1,6 +1,6 @@
-package com.simibubi.create.content.kinetics.saw;
+package com.simibubi.create_re.content.kinetics.saw;
 
-import com.simibubi.create.foundation.data.SpecialBlockStateGen;
+import com.simibubi.create_re.foundation.data.SpecialBlockStateGen;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 

@@ -1,4 +1,4 @@
-package com.simibubi.create.infrastructure.gametest;
+package com.simibubi.create_re.infrastructure.gametest;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -26,7 +26,7 @@ import net.minecraft.world.level.block.entity.StructureBlockEntity;
 
 /**
  * An extension to game tests implementing functionality for {@link CreateGameTestHelper} and {@link GameTestGroup}.
- * To use, create a {@link GameTestGenerator} that provides tests using {@link #getTestsFrom(Class[])}.
+ * To use, create_re a {@link GameTestGenerator} that provides tests using {@link #getTestsFrom(Class[])}.
  */
 public class CreateTestFunction extends TestFunction {
 	// for structure blocks and /test runthis

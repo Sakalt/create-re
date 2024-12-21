@@ -1,25 +1,25 @@
-package com.simibubi.create.content.trains.entity;
+package com.simibubi.create_re.content.trains.entity;
 
-import static com.simibubi.create.content.trains.bogey.AbstractBogeyBlockEntity.BOGEY_DATA_KEY;
-import static com.simibubi.create.content.trains.bogey.AbstractBogeyBlockEntity.BOGEY_STYLE_KEY;
+import static com.simibubi.create_re.content.trains.bogey.AbstractBogeyBlockEntity.BOGEY_DATA_KEY;
+import static com.simibubi.create_re.content.trains.bogey.AbstractBogeyBlockEntity.BOGEY_STYLE_KEY;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.AllBogeyStyles;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.trains.bogey.AbstractBogeyBlock;
-import com.simibubi.create.content.trains.bogey.AbstractBogeyBlockEntity;
-import com.simibubi.create.content.trains.bogey.BogeySizes.BogeySize;
-import com.simibubi.create.content.trains.bogey.BogeyStyle;
-import com.simibubi.create.content.trains.graph.DimensionPalette;
-import com.simibubi.create.content.trains.graph.TrackGraph;
-import com.simibubi.create.foundation.utility.AngleHelper;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
-import com.simibubi.create.foundation.utility.VecHelper;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat;
+import com.simibubi.create_re.AllBogeyStyles;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.trains.bogey.AbstractBogeyBlock;
+import com.simibubi.create_re.content.trains.bogey.AbstractBogeyBlockEntity;
+import com.simibubi.create_re.content.trains.bogey.BogeySizes.BogeySize;
+import com.simibubi.create_re.content.trains.bogey.BogeyStyle;
+import com.simibubi.create_re.content.trains.graph.DimensionPalette;
+import com.simibubi.create_re.content.trains.graph.TrackGraph;
+import com.simibubi.create_re.foundation.utility.AngleHelper;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.foundation.utility.VecHelper;
+import com.simibubi.create_re.foundation.utility.animation.LerpedFloat;
 
 import net.minecraft.core.Direction.Axis;
 import net.minecraft.nbt.CompoundTag;
@@ -59,15 +59,15 @@ public class CarriageBogey {
 		point.upsideDown = this.upsideDown;
 		point2.upsideDown = this.upsideDown;
 		if (bogeyData == null || bogeyData.isEmpty())
-			bogeyData = this.createBogeyData(); // Prevent Crash When Updating
+			bogeyData = this.create_reBogeyData(); // Prevent Crash When Updating
 		bogeyData.putBoolean(UPSIDE_DOWN_KEY, upsideDown);
 		this.bogeyData = bogeyData;
-		points = Couple.create(point, point2);
+		points = Couple.create_re(point, point2);
 		wheelAngle = LerpedFloat.angular();
 		yaw = LerpedFloat.angular();
 		pitch = LerpedFloat.angular();
 		derailAngle = Create.RANDOM.nextInt(60) - 30;
-		couplingAnchors = Couple.create(null, null);
+		couplingAnchors = Couple.create_re(null, null);
 	}
 
 	public ResourceKey<Level> getDimension() {
@@ -208,7 +208,7 @@ public class CarriageBogey {
 		return type.getSize();
 	}
 
-	private CompoundTag createBogeyData() {
+	private CompoundTag create_reBogeyData() {
 		BogeyStyle style = type != null ? type.getDefaultStyle() : AllBogeyStyles.STANDARD;
 		CompoundTag nbt = style.defaultData != null ? style.defaultData : new CompoundTag();
 		NBTHelper.writeResourceLocation(nbt, BOGEY_STYLE_KEY, style.id);

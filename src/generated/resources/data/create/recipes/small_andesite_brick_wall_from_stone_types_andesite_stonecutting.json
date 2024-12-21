@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 1,
   "ingredient": {
-    "tag": "create:stone_types/andesite"
+    "tag": "create_re:stone_types/andesite"
   },
-  "result": "create:small_andesite_brick_wall"
+  "result": "create_re:small_andesite_brick_wall"
 }

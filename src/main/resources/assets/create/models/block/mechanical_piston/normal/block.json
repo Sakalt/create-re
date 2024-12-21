@@ -2,13 +2,13 @@
 	"credit": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
 	"parent": "block/block",
 	"textures": {
-		"0": "create:block/andesite_casing",
-		"1": "create:block/piston_bottom",
-		"2": "create:block/gearbox",
+		"0": "create_re:block/andesite_casing",
+		"1": "create_re:block/piston_bottom",
+		"2": "create_re:block/gearbox",
 		"4": "block/piston_side",
 		"5": "block/piston_top",
-		"6": "create:block/andesite_casing_piston",
-		"particle": "create:block/andesite_casing"
+		"6": "create_re:block/andesite_casing_piston",
+		"particle": "create_re:block/andesite_casing"
 	},
 	"elements": [
 		{

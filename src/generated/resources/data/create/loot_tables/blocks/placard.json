@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:placard"
+          "name": "create_re:placard"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/placard"
+  "random_sequence": "create_re:blocks/placard"
 }

@@ -1,7 +1,7 @@
 {
-  "parent": "create:block/seat",
+  "parent": "create_re:block/seat",
   "textures": {
-    "1": "create:block/seat/top_brown",
-    "2": "create:block/seat/side_brown"
+    "1": "create_re:block/seat/top_brown",
+    "2": "create_re:block/seat/side_brown"
   }
 }

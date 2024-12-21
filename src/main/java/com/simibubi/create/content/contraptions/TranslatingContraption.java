@@ -1,10 +1,10 @@
-package com.simibubi.create.content.contraptions;
+package com.simibubi.create_re.content.contraptions;
 
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-import com.simibubi.create.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -21,12 +21,12 @@ public abstract class TranslatingContraption extends Contraption {
 			return Collections.emptySet();
 		if (cachedColliders == null || cachedColliderDirection != movementDirection) {
 			cachedColliderDirection = movementDirection;
-			cachedColliders = createColliders(world, movementDirection);
+			cachedColliders = create_reColliders(world, movementDirection);
 		}
 		return cachedColliders;
 	}
 
-	public Set<BlockPos> createColliders(Level world, Direction movementDirection) {
+	public Set<BlockPos> create_reColliders(Level world, Direction movementDirection) {
 		Set<BlockPos> colliders = new HashSet<>();
 		for (StructureBlockInfo info : getBlocks().values()) {
 			BlockPos offsetPos = info.pos().relative(movementDirection);

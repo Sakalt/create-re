@@ -1,4 +1,4 @@
-package com.simibubi.create.content.equipment.zapper.terrainzapper;
+package com.simibubi.create_re.content.equipment.zapper.terrainzapper;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -143,7 +143,7 @@ public class FlattenTool {
 			while (surfaceCoord > targetCoord) {
 				BlockPos below = p.relative(facing.getOpposite());
 				world.setBlockAndUpdate(below, blockState);
-				world.setBlockAndUpdate(p, blockState.getFluidState().createLegacyBlock());
+				world.setBlockAndUpdate(p, blockState.getFluidState().create_reLegacyBlock());
 				p = p.relative(facing.getOpposite());
 				surfaceCoord--;
 				if (timeOut-- <= 0)

@@ -1,4 +1,4 @@
-package com.simibubi.create.content.schematics;
+package com.simibubi.create_re.content.schematics;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -13,16 +13,16 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.Create;
-import com.simibubi.create.content.schematics.SchematicExport.SchematicExportResult;
-import com.simibubi.create.content.schematics.table.SchematicTableBlockEntity;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.FilesHelper;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.infrastructure.config.AllConfigs;
-import com.simibubi.create.infrastructure.config.CSchematics;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.content.schematics.SchematicExport.SchematicExportResult;
+import com.simibubi.create_re.content.schematics.table.SchematicTableBlockEntity;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.FilesHelper;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.infrastructure.config.AllConfigs;
+import com.simibubi.create_re.infrastructure.config.CSchematics;
 
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.minecraft.ChatFormatting;
@@ -95,7 +95,7 @@ public class ServerSchematicLoader {
 			.getName();
 		String playerSchematicId = player.getGameProfile()
 			.getName() + "/" + schematic;
-		FilesHelper.createFolderIfMissing(playerPath);
+		FilesHelper.create_reFolderIfMissing(playerPath);
 
 		// Unsupported Format
 		if (!schematic.endsWith(".nbt")) {
@@ -271,7 +271,7 @@ public class ServerSchematicLoader {
 				if (table == null)
 					return;
 				table.finishUpload();
-				table.inventory.setStackInSlot(1, SchematicItem.create(world.holderLookup(Registries.BLOCK), schematic, player.getGameProfile()
+				table.inventory.setStackInSlot(1, SchematicItem.create_re(world.holderLookup(Registries.BLOCK), schematic, player.getGameProfile()
 					.getName()));
 
 			} catch (IOException e) {
@@ -286,7 +286,7 @@ public class ServerSchematicLoader {
 		String playerName = player.getGameProfile().getName();
 		String playerPath = getSchematicPath() + "/" + playerName;
 		String playerSchematicId = playerName + "/" + schematic;
-		FilesHelper.createFolderIfMissing(playerPath);
+		FilesHelper.create_reFolderIfMissing(playerPath);
 
 		// Unsupported Format
 		if (!schematic.endsWith(".nbt")) {
@@ -320,7 +320,7 @@ public class ServerSchematicLoader {
 		);
 		if (result != null)
 			player.setItemInHand(InteractionHand.MAIN_HAND,
-				SchematicItem.create(world.holderLookup(Registries.BLOCK), schematic, playerName));
+				SchematicItem.create_re(world.holderLookup(Registries.BLOCK), schematic, playerName));
 		else
 			Lang.translate("schematicAndQuill.instant_failed")
 				.style(ChatFormatting.RED)

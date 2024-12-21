@@ -1,25 +1,25 @@
-package com.simibubi.create.content.schematics.client;
+package com.simibubi.create_re.content.schematics.client;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllKeys;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.AllSpecialTextures;
-import com.simibubi.create.Create;
-import com.simibubi.create.CreateClient;
-import com.simibubi.create.content.schematics.SchematicExport;
-import com.simibubi.create.content.schematics.SchematicExport.SchematicExportResult;
-import com.simibubi.create.content.schematics.packet.InstantSchematicPacket;
-import com.simibubi.create.foundation.gui.ScreenOpener;
-import com.simibubi.create.foundation.outliner.Outliner;
-import com.simibubi.create.foundation.utility.AnimationTickHolder;
-import com.simibubi.create.foundation.utility.Lang;
-import com.simibubi.create.foundation.utility.RaycastHelper;
-import com.simibubi.create.foundation.utility.RaycastHelper.PredicateTraceResult;
-import com.simibubi.create.foundation.utility.VecHelper;
+import com.simibubi.create_re.AllItems;
+import com.simibubi.create_re.AllKeys;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.AllSpecialTextures;
+import com.simibubi.create_re.Create;
+import com.simibubi.create_re.CreateClient;
+import com.simibubi.create_re.content.schematics.SchematicExport;
+import com.simibubi.create_re.content.schematics.SchematicExport.SchematicExportResult;
+import com.simibubi.create_re.content.schematics.packet.InstantSchematicPacket;
+import com.simibubi.create_re.foundation.gui.ScreenOpener;
+import com.simibubi.create_re.foundation.outliner.Outliner;
+import com.simibubi.create_re.foundation.utility.AnimationTickHolder;
+import com.simibubi.create_re.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.utility.RaycastHelper;
+import com.simibubi.create_re.foundation.utility.RaycastHelper.PredicateTraceResult;
+import com.simibubi.create_re.foundation.utility.VecHelper;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;

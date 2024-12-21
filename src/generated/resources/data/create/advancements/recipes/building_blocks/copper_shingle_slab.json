@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:copper_shingles"
+              "create_re:copper_shingles"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:copper_shingle_slab"
+        "recipe": "create_re:copper_shingle_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:copper_shingle_slab"
+      "create_re:copper_shingle_slab"
     ]
   },
   "sends_telemetry_event": false

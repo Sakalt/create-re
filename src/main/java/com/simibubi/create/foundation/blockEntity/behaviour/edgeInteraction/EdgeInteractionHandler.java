@@ -1,12 +1,12 @@
-package com.simibubi.create.foundation.blockEntity.behaviour.edgeInteraction;
+package com.simibubi.create_re.foundation.blockEntity.behaviour.edgeInteraction;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.utility.BlockHelper;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.RaycastHelper;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.utility.BlockHelper;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.RaycastHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

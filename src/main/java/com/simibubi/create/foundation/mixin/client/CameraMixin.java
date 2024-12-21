@@ -1,10 +1,10 @@
-package com.simibubi.create.foundation.mixin.client;
+package com.simibubi.create_re.foundation.mixin.client;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 
-import com.simibubi.create.content.trains.CameraDistanceModifier;
+import com.simibubi.create_re.content.trains.CameraDistanceModifier;
 
 import net.minecraft.client.Camera;
 
@@ -15,7 +15,7 @@ public abstract class CameraMixin {
 			at = @At(value = "INVOKE", target = "Lnet/minecraft/client/Camera;getMaxZoom(D)D"),
 			index = 0
 	)
-	public double create$modifyCameraOffset(double originalValue) {
+	public double create_re$modifyCameraOffset(double originalValue) {
 		return originalValue * CameraDistanceModifier.getMultiplier();
 	}
 }

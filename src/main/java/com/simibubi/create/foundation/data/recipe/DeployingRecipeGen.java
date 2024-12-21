@@ -1,11 +1,11 @@
-package com.simibubi.create.foundation.data.recipe;
+package com.simibubi.create_re.foundation.data.recipe;
 
 import java.util.function.Supplier;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.foundation.block.CopperBlockSet;
-import com.simibubi.create.foundation.block.CopperBlockSet.Variant;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllRecipeTypes;
+import com.simibubi.create_re.foundation.block.CopperBlockSet;
+import com.simibubi.create_re.foundation.block.CopperBlockSet.Variant;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Items;
@@ -20,11 +20,11 @@ public class DeployingRecipeGen extends ProcessingRecipeGen {
 
 	GeneratedRecipe
 
-	COGWHEEL = create("cogwheel", b -> b.require(I.shaft())
+	COGWHEEL = create_re("cogwheel", b -> b.require(I.shaft())
 		.require(I.planks())
 		.output(I.cog())),
 
-		LARGE_COGWHEEL = create("large_cogwheel", b -> b.require(I.cog())
+		LARGE_COGWHEEL = create_re("large_cogwheel", b -> b.require(I.cog())
 			.require(I.planks())
 			.output(I.largeCog()));
 
@@ -58,7 +58,7 @@ public class DeployingRecipeGen extends ProcessingRecipeGen {
 	}
 
 	public GeneratedRecipe addWax(Supplier<ItemLike> waxed, Supplier<ItemLike> nonWaxed) {
-		return createWithDeferredId(idWithSuffix(waxed, "_from_adding_wax"), b -> b.require(nonWaxed.get())
+		return create_reWithDeferredId(idWithSuffix(waxed, "_from_adding_wax"), b -> b.require(nonWaxed.get())
 			.require(Items.HONEYCOMB_BLOCK)
 			.toolNotConsumed()
 			.output(waxed.get()));

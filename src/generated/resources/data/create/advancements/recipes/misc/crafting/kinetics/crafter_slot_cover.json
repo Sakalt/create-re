@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:mechanical_crafter"
+              "create_re:mechanical_crafter"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/kinetics/crafter_slot_cover"
+        "recipe": "create_re:crafting/kinetics/crafter_slot_cover"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/kinetics/crafter_slot_cover"
+      "create_re:crafting/kinetics/crafter_slot_cover"
     ]
   },
   "sends_telemetry_event": false

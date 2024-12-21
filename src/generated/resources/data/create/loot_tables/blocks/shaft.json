@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:shaft"
+          "name": "create_re:shaft"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/shaft"
+  "random_sequence": "create_re:blocks/shaft"
 }

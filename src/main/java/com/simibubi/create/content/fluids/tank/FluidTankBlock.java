@@ -1,17 +1,17 @@
-package com.simibubi.create.content.fluids.tank;
+package com.simibubi.create_re.content.fluids.tank;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.api.connectivity.ConnectivityHandler;
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
-import com.simibubi.create.content.fluids.tank.CreativeFluidTankBlockEntity.CreativeSmartFluidTank;
-import com.simibubi.create.content.fluids.transfer.GenericItemEmptying;
-import com.simibubi.create.content.fluids.transfer.GenericItemFilling;
-import com.simibubi.create.foundation.advancement.AdvancementBehaviour;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.blockEntity.ComparatorUtil;
-import com.simibubi.create.foundation.fluid.FluidHelper;
-import com.simibubi.create.foundation.fluid.FluidHelper.FluidExchange;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.api.connectivity.ConnectivityHandler;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.content.fluids.tank.CreativeFluidTankBlockEntity.CreativeSmartFluidTank;
+import com.simibubi.create_re.content.fluids.transfer.GenericItemEmptying;
+import com.simibubi.create_re.content.fluids.transfer.GenericItemFilling;
+import com.simibubi.create_re.foundation.advancement.AdvancementBehaviour;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.blockEntity.ComparatorUtil;
+import com.simibubi.create_re.foundation.fluid.FluidHelper;
+import com.simibubi.create_re.foundation.fluid.FluidHelper.FluidExchange;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -57,9 +57,9 @@ import net.minecraftforge.fluids.capability.IFluidHandler;
 
 public class FluidTankBlock extends Block implements IWrenchable, IBE<FluidTankBlockEntity> {
 
-	public static final BooleanProperty TOP = BooleanProperty.create("top");
-	public static final BooleanProperty BOTTOM = BooleanProperty.create("bottom");
-	public static final EnumProperty<Shape> SHAPE = EnumProperty.create("shape", Shape.class);
+	public static final BooleanProperty TOP = BooleanProperty.create_re("top");
+	public static final BooleanProperty BOTTOM = BooleanProperty.create_re("bottom");
+	public static final EnumProperty<Shape> SHAPE = EnumProperty.create_re("shape", Shape.class);
 
 	private boolean creative;
 
@@ -99,7 +99,7 @@ public class FluidTankBlock extends Block implements IWrenchable, IBE<FluidTankB
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> p_206840_1_) {
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> p_206840_1_) {
 		p_206840_1_.add(TOP, BOTTOM, SHAPE);
 	}
 
@@ -193,7 +193,7 @@ public class FluidTankBlock extends Block implements IWrenchable, IBE<FluidTankB
 
 			Fluid fluid = fluidInTank.getFluid();
 			fluidState = fluid.defaultFluidState()
-				.createLegacyBlock();
+				.create_reLegacyBlock();
 			soundevent = FluidHelper.getEmptySound(fluidInTank);
 		}
 
@@ -204,7 +204,7 @@ public class FluidTankBlock extends Block implements IWrenchable, IBE<FluidTankB
 
 			Fluid fluid = prevFluidInTank.getFluid();
 			fluidState = fluid.defaultFluidState()
-				.createLegacyBlock();
+				.create_reLegacyBlock();
 			soundevent = FluidHelper.getFillSound(prevFluidInTank);
 		}
 

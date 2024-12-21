@@ -3,16 +3,16 @@
 	"loader": "forge:composite",
 	"parent": "block/block",
 	"textures": {
-		"0": "create:block/display_link",
-		"3": "create:block/display_link_side",
-		"particle": "create:block/brass_casing"
+		"0": "create_re:block/display_link",
+		"3": "create_re:block/display_link_side",
+		"particle": "create_re:block/brass_casing"
 	},
 	"children": {
 		"base": {
 			"render_type": "minecraft:solid",
 			"textures": {
-				"0": "create:block/display_link",
-				"3": "create:block/display_link_side"
+				"0": "create_re:block/display_link",
+				"3": "create_re:block/display_link_side"
 			},
 			"elements": [
 				{
@@ -79,7 +79,7 @@
 		"bulb_inner": {
 			"render_type": "minecraft:cutout",
 			"textures": {
-				"0": "create:block/display_link"
+				"0": "create_re:block/display_link"
 			},
 			"elements": [
 				{
@@ -103,7 +103,7 @@
 		"bulb": {
 			"render_type": "minecraft:translucent",
 			"textures": {
-				"0": "create:block/display_link"
+				"0": "create_re:block/display_link"
 			},
 			"elements": [
 				{

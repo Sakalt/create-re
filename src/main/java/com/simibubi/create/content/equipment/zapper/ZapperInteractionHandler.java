@@ -1,10 +1,10 @@
-package com.simibubi.create.content.equipment.zapper;
+package com.simibubi.create_re.content.equipment.zapper;
 
 import java.util.Objects;
 
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.AllTags.AllBlockTags;
-import com.simibubi.create.foundation.utility.BlockHelper;
+import com.simibubi.create_re.AllSoundEvents;
+import com.simibubi.create_re.AllTags.AllBlockTags;
+import com.simibubi.create_re.foundation.utility.BlockHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;

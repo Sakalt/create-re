@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "create:andesite_alloy"
+              "create_re:andesite_alloy"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:andesite_ladder_from_andesite_alloy_stonecutting"
+        "recipe": "create_re:andesite_ladder_from_andesite_alloy_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:andesite_ladder_from_andesite_alloy_stonecutting"
+      "create_re:andesite_ladder_from_andesite_alloy_stonecutting"
     ]
   },
   "sends_telemetry_event": false

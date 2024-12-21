@@ -1,17 +1,17 @@
-package com.simibubi.create.infrastructure.gametest.tests;
+package com.simibubi.create_re.infrastructure.gametest.tests;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.content.fluids.hosePulley.HosePulleyFluidHandler;
-import com.simibubi.create.content.fluids.pipes.valve.FluidValveBlock;
-import com.simibubi.create.content.kinetics.gauge.SpeedGaugeBlockEntity;
-import com.simibubi.create.content.kinetics.gauge.StressGaugeBlockEntity;
-import com.simibubi.create.content.kinetics.waterwheel.WaterWheelBlockEntity;
-import com.simibubi.create.infrastructure.gametest.CreateGameTestHelper;
-import com.simibubi.create.infrastructure.gametest.GameTestGroup;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.content.fluids.hosePulley.HosePulleyFluidHandler;
+import com.simibubi.create_re.content.fluids.pipes.valve.FluidValveBlock;
+import com.simibubi.create_re.content.kinetics.gauge.SpeedGaugeBlockEntity;
+import com.simibubi.create_re.content.kinetics.gauge.StressGaugeBlockEntity;
+import com.simibubi.create_re.content.kinetics.waterwheel.WaterWheelBlockEntity;
+import com.simibubi.create_re.infrastructure.gametest.CreateGameTestHelper;
+import com.simibubi.create_re.infrastructure.gametest.GameTestGroup;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.gametest.framework.GameTest;

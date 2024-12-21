@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "create:block/crimson_window"
+      "model": "create_re:block/crimson_window"
     }
   }
 }

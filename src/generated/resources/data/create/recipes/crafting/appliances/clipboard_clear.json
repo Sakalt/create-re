@@ -3,10 +3,10 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "create:clipboard"
+      "item": "create_re:clipboard"
     }
   ],
   "result": {
-    "item": "create:clipboard"
+    "item": "create_re:clipboard"
   }
 }

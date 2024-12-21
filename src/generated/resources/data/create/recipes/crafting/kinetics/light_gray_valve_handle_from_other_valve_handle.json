@@ -6,10 +6,10 @@
       "tag": "forge:dyes/light_gray"
     },
     {
-      "tag": "create:valve_handles"
+      "tag": "create_re:valve_handles"
     }
   ],
   "result": {
-    "item": "create:light_gray_valve_handle"
+    "item": "create_re:light_gray_valve_handle"
   }
 }

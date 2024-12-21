@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:white_valve_handle"
+          "name": "create_re:white_valve_handle"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/white_valve_handle"
+  "random_sequence": "create_re:blocks/white_valve_handle"
 }

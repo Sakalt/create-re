@@ -1,7 +1,7 @@
-package com.simibubi.create.content.kinetics.drill;
+package com.simibubi.create_re.content.kinetics.drill;
 
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.kinetics.base.SingleRotatingVisual;
+import com.simibubi.create_re.AllPartialModels;
+import com.simibubi.create_re.content.kinetics.base.SingleRotatingVisual;
 
 import dev.engine_room.flywheel.api.model.Model;
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;

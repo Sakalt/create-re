@@ -1,13 +1,13 @@
-package com.simibubi.create.infrastructure.command;
+package com.simibubi.create_re.infrastructure.command;
 
 import java.util.Collection;
 
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.builder.ArgumentBuilder;
-import com.simibubi.create.AllPackets;
-import com.simibubi.create.content.contraptions.AssemblyException;
-import com.simibubi.create.content.contraptions.IDisplayAssemblyExceptions;
-import com.simibubi.create.foundation.utility.Components;
+import com.simibubi.create_re.AllPackets;
+import com.simibubi.create_re.content.contraptions.AssemblyException;
+import com.simibubi.create_re.content.contraptions.IDisplayAssemblyExceptions;
+import com.simibubi.create_re.foundation.utility.Components;
 
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
@@ -99,7 +99,7 @@ public class HighlightCommand {
 		}
 
 		BlockPos p = exception.getPosition();
-		String command = "/create highlight " + p.getX() + " " + p.getY() + " " + p.getZ();
+		String command = "/create_re highlight " + p.getX() + " " + p.getY() + " " + p.getZ();
 		return player.server.getCommands()
 			.performPrefixedCommand(source, command);
 	}

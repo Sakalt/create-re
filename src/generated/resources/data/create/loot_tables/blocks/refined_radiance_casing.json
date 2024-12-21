@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:refined_radiance_casing"
+          "name": "create_re:refined_radiance_casing"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "create:blocks/refined_radiance_casing"
+  "random_sequence": "create_re:blocks/refined_radiance_casing"
 }

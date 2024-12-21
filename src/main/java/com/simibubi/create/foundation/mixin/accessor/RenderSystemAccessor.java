@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.mixin.accessor;
+package com.simibubi.create_re.foundation.mixin.accessor;
 
 import org.joml.Vector3f;
 import org.spongepowered.asm.mixin.Mixin;
@@ -9,7 +9,7 @@ import com.mojang.blaze3d.systems.RenderSystem;
 @Mixin(RenderSystem.class)
 public interface RenderSystemAccessor {
 	@Accessor("shaderLightDirections")
-	static Vector3f[] create$getShaderLightDirections() {
+	static Vector3f[] create_re$getShaderLightDirections() {
 		throw new AssertionError();
 	}
 }

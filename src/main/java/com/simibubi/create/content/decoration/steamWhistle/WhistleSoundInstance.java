@@ -1,10 +1,10 @@
-package com.simibubi.create.content.decoration.steamWhistle;
+package com.simibubi.create_re.content.decoration.steamWhistle;
 
-import static com.simibubi.create.AllSoundEvents.WHISTLE_HIGH;
-import static com.simibubi.create.AllSoundEvents.WHISTLE_LOW;
-import static com.simibubi.create.AllSoundEvents.WHISTLE_MEDIUM;
+import static com.simibubi.create_re.AllSoundEvents.WHISTLE_HIGH;
+import static com.simibubi.create_re.AllSoundEvents.WHISTLE_LOW;
+import static com.simibubi.create_re.AllSoundEvents.WHISTLE_MEDIUM;
 
-import com.simibubi.create.content.decoration.steamWhistle.WhistleBlock.WhistleSize;
+import com.simibubi.create_re.content.decoration.steamWhistle.WhistleBlock.WhistleSize;
 
 import net.minecraft.client.resources.sounds.AbstractTickableSoundInstance;
 import net.minecraft.client.resources.sounds.SoundInstance;
@@ -20,7 +20,7 @@ public class WhistleSoundInstance extends AbstractTickableSoundInstance {
 
 	public WhistleSoundInstance(WhistleSize size, BlockPos worldPosition) {
 		super((size == WhistleSize.SMALL ? WHISTLE_HIGH : size == WhistleSize.MEDIUM ? WHISTLE_MEDIUM : WHISTLE_LOW)
-			.getMainEvent(), SoundSource.RECORDS, SoundInstance.createUnseededRandom());
+			.getMainEvent(), SoundSource.RECORDS, SoundInstance.create_reUnseededRandom());
 		this.size = size;
 		looping = true;
 		active = true;

@@ -1,4 +1,4 @@
-package com.simibubi.create.infrastructure.command;
+package com.simibubi.create_re.infrastructure.command;
 
 import java.util.Collections;
 import java.util.function.Predicate;
@@ -22,7 +22,7 @@ public class AllCommands {
 
 		LiteralCommandNode<CommandSourceStack> util = buildUtilityCommands();
 
-		LiteralArgumentBuilder<CommandSourceStack> root = Commands.literal("create")
+		LiteralArgumentBuilder<CommandSourceStack> root = Commands.literal("create_re")
 				.requires(cs -> cs.hasPermission(0))
 				// general purpose
 				.then(new ToggleDebugCommand().register())
@@ -47,16 +47,16 @@ public class AllCommands {
 		if (!FMLLoader.isProduction() && FMLLoader.getDist() == Dist.CLIENT)
 			root.then(CreateTestCommand.register());
 
-		LiteralCommandNode<CommandSourceStack> createRoot = dispatcher.register(root);
+		LiteralCommandNode<CommandSourceStack> create_reRoot = dispatcher.register(root);
 
-		createRoot.addChild(buildRedirect("u", util));
+		create_reRoot.addChild(buildRedirect("u", util));
 
 		CommandNode<CommandSourceStack> c = dispatcher.findNode(Collections.singleton("c"));
 		if (c != null)
 			return;
 
 		dispatcher.getRoot()
-			.addChild(buildRedirect("c", createRoot));
+			.addChild(buildRedirect("c", create_reRoot));
 
 	}
 

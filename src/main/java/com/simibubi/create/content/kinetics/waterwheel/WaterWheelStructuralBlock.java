@@ -1,4 +1,4 @@
-package com.simibubi.create.content.kinetics.waterwheel;
+package com.simibubi.create_re.content.kinetics.waterwheel;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -6,10 +6,10 @@ import java.util.function.Consumer;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.equipment.goggles.IProxyHoveringInformation;
-import com.simibubi.create.content.equipment.wrench.IWrenchable;
-import com.simibubi.create.foundation.block.render.MultiPosDestructionHandler;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.equipment.goggles.IProxyHoveringInformation;
+import com.simibubi.create_re.content.equipment.wrench.IWrenchable;
+import com.simibubi.create_re.foundation.block.render.MultiPosDestructionHandler;
 
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.ParticleEngine;
@@ -46,8 +46,8 @@ public class WaterWheelStructuralBlock extends DirectionalBlock implements IWren
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
-		super.createBlockStateDefinition(pBuilder.add(FACING));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> pBuilder) {
+		super.create_reBlockStateDefinition(pBuilder.add(FACING));
 	}
 
 	@Override

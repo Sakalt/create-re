@@ -3,7 +3,7 @@
 	"parent": "block/block",
 	"ambientocclusion": false,
 	"textures": {
-		"6": "create:block/mixer_head"
+		"6": "create_re:block/mixer_head"
 	},
   "render_type": "minecraft:cutout",
   "elements": [

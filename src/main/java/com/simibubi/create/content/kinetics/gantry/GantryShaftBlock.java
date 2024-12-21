@@ -1,21 +1,21 @@
-package com.simibubi.create.content.kinetics.gantry;
+package com.simibubi.create_re.content.kinetics.gantry;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
-import com.simibubi.create.AllBlockEntityTypes;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllShapes;
-import com.simibubi.create.content.kinetics.base.DirectionalKineticBlock;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.foundation.block.IBE;
-import com.simibubi.create.foundation.placement.IPlacementHelper;
-import com.simibubi.create.foundation.placement.PlacementHelpers;
-import com.simibubi.create.foundation.placement.PlacementOffset;
-import com.simibubi.create.foundation.placement.PoleHelper;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.AllBlockEntityTypes;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.AllShapes;
+import com.simibubi.create_re.content.kinetics.base.DirectionalKineticBlock;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.foundation.block.IBE;
+import com.simibubi.create_re.foundation.placement.IPlacementHelper;
+import com.simibubi.create_re.foundation.placement.PlacementHelpers;
+import com.simibubi.create_re.foundation.placement.PlacementOffset;
+import com.simibubi.create_re.foundation.placement.PoleHelper;
+import com.simibubi.create_re.foundation.utility.Iterate;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -49,7 +49,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class GantryShaftBlock extends DirectionalKineticBlock implements IBE<GantryShaftBlockEntity> {
 
-	public static final Property<Part> PART = EnumProperty.create("part", Part.class);
+	public static final Property<Part> PART = EnumProperty.create_re("part", Part.class);
 	public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
 
 	private static final int placementHelperId = PlacementHelpers.register(new PlacementHelper());
@@ -64,8 +64,8 @@ public class GantryShaftBlock extends DirectionalKineticBlock implements IBE<Gan
 	}
 
 	@Override
-	protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
-		super.createBlockStateDefinition(builder.add(PART, POWERED));
+	protected void create_reBlockStateDefinition(Builder<Block, BlockState> builder) {
+		super.create_reBlockStateDefinition(builder.add(PART, POWERED));
 	}
 
 	@Override

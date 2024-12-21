@@ -1,6 +1,6 @@
-package com.simibubi.create.content.redstone.displayLink.source;
+package com.simibubi.create_re.content.redstone.displayLink.source;
 
-import static com.simibubi.create.content.trains.display.FlapDisplaySection.MONOSPACE;
+import static com.simibubi.create_re.content.trains.display.FlapDisplaySection.MONOSPACE;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,16 +9,16 @@ import java.util.stream.Stream;
 
 import org.apache.commons.lang3.mutable.MutableInt;
 
-import com.simibubi.create.content.redstone.displayLink.DisplayLinkContext;
-import com.simibubi.create.content.redstone.displayLink.target.DisplayTargetStats;
-import com.simibubi.create.content.trains.display.FlapDisplayBlockEntity;
-import com.simibubi.create.content.trains.display.FlapDisplayLayout;
-import com.simibubi.create.content.trains.display.FlapDisplaySection;
-import com.simibubi.create.foundation.gui.ModularGuiLineBuilder;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.IntAttached;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.content.redstone.displayLink.DisplayLinkContext;
+import com.simibubi.create_re.content.redstone.displayLink.target.DisplayTargetStats;
+import com.simibubi.create_re.content.trains.display.FlapDisplayBlockEntity;
+import com.simibubi.create_re.content.trains.display.FlapDisplayLayout;
+import com.simibubi.create_re.content.trains.display.FlapDisplaySection;
+import com.simibubi.create_re.foundation.gui.ModularGuiLineBuilder;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Couple;
+import com.simibubi.create_re.foundation.utility.IntAttached;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.world.level.block.entity.LecternBlockEntity;
@@ -36,7 +36,7 @@ public abstract class ValueListDisplaySource extends DisplaySource {
 		boolean isBook = context.getTargetBlockEntity() instanceof LecternBlockEntity;
 
 		List<MutableComponent> list = provideEntries(context, stats.maxRows() * (isBook ? ENTRIES_PER_PAGE : 1))
-			.map(e -> createComponentsFromEntry(context, e))
+			.map(e -> create_reComponentsFromEntry(context, e))
 			.map(l -> {
 				MutableComponent combined = l.get(0)
 					.append(l.get(1));
@@ -82,12 +82,12 @@ public abstract class ValueListDisplaySource extends DisplaySource {
 		context.flapDisplayContext = highest;
 		return provideEntries(context, stats.maxRows()).map(e -> {
 			highest.setValue(Math.max(highest.getValue(), e.getFirst()));
-			return createComponentsFromEntry(context, e);
+			return create_reComponentsFromEntry(context, e);
 		})
 			.toList();
 	}
 
-	protected List<MutableComponent> createComponentsFromEntry(DisplayLinkContext context,
+	protected List<MutableComponent> create_reComponentsFromEntry(DisplayLinkContext context,
 		IntAttached<MutableComponent> entry) {
 		int number = entry.getFirst();
 		MutableComponent name = entry.getSecond()
@@ -137,14 +137,14 @@ public abstract class ValueListDisplaySource extends DisplaySource {
 
 	private Couple<MutableComponent> shorten(int number) {
 		if (number >= 1000000)
-			return Couple.create(Components.literal(String.valueOf(number / 1000000)),
+			return Couple.create_re(Components.literal(String.valueOf(number / 1000000)),
 				Lang.translateDirect("display_source.value_list.million")
 					.append(WHITESPACE));
 		if (number >= 1000)
-			return Couple.create(Components.literal(String.valueOf(number / 1000)),
+			return Couple.create_re(Components.literal(String.valueOf(number / 1000)),
 				Lang.translateDirect("display_source.value_list.thousand")
 					.append(WHITESPACE));
-		return Couple.create(Components.literal(String.valueOf(number)), WHITESPACE);
+		return Couple.create_re(Components.literal(String.valueOf(number)), WHITESPACE);
 	}
 
 	protected boolean shortenNumbers(DisplayLinkContext context) {

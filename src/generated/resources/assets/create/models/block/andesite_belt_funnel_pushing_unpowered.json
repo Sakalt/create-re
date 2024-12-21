@@ -1,10 +1,10 @@
 {
-  "parent": "create:block/belt_funnel/block_pushing",
+  "parent": "create_re:block/belt_funnel/block_pushing",
   "textures": {
-    "base": "create:block/funnel/andesite_funnel",
-    "block": "create:block/andesite_block",
-    "direction": "create:block/funnel/andesite_funnel_push",
-    "particle": "create:block/andesite_block",
-    "redstone": "create:block/funnel/andesite_funnel_unpowered"
+    "base": "create_re:block/funnel/andesite_funnel",
+    "block": "create_re:block/andesite_block",
+    "direction": "create_re:block/funnel/andesite_funnel_push",
+    "particle": "create_re:block/andesite_block",
+    "redstone": "create_re:block/funnel/andesite_funnel_unpowered"
   }
 }

@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create:crafting/schematics/empty_schematic"
+        "recipe": "create_re:crafting/schematics/empty_schematic"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create:crafting/schematics/empty_schematic"
+      "create_re:crafting/schematics/empty_schematic"
     ]
   },
   "sends_telemetry_event": false

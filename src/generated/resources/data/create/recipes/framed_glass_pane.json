@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "create:framed_glass"
+      "item": "create_re:framed_glass"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 16,
-    "item": "create:framed_glass_pane"
+    "item": "create_re:framed_glass_pane"
   },
   "show_notification": true
 }

@@ -1,13 +1,13 @@
-package com.simibubi.create.content.fluids.potion;
+package com.simibubi.create_re.content.fluids.potion;
 
 import java.util.Collection;
 import java.util.List;
 
-import com.simibubi.create.AllFluids;
-import com.simibubi.create.AllFluids.TintedFluidType;
-import com.simibubi.create.content.fluids.VirtualFluid;
-import com.simibubi.create.foundation.utility.NBTHelper;
-import com.simibubi.create.foundation.utility.RegisteredObjects;
+import com.simibubi.create_re.AllFluids;
+import com.simibubi.create_re.AllFluids.TintedFluidType;
+import com.simibubi.create_re.content.fluids.VirtualFluid;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
+import com.simibubi.create_re.foundation.utility.RegisteredObjects;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

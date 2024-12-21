@@ -1,11 +1,11 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "create:block/large_wheels",
+	"parent": "create_re:block/large_wheels",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "create:block/cogwheel_axis",
-		"3": "create:block/axis_top",
-		"1_2": "create:block/cogwheel",
+		"0": "create_re:block/cogwheel_axis",
+		"3": "create_re:block/axis_top",
+		"1_2": "create_re:block/cogwheel",
 		"particle": "block/stripped_spruce_log_top"
 	},
 	"elements": [

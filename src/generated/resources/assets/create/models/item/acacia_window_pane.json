@@ -1,7 +1,7 @@
 {
-  "parent": "create:item/pane",
+  "parent": "create_re:item/pane",
   "textures": {
     "edge": "minecraft:block/acacia_planks",
-    "pane": "create:block/palettes/acacia_window"
+    "pane": "create_re:block/palettes/acacia_window"
   }
 }

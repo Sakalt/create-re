@@ -6,7 +6,7 @@
       "tag": "minecraft:wool"
     },
     "S": {
-      "item": "create:andesite_alloy"
+      "item": "create_re:andesite_alloy"
     }
   },
   "pattern": [
@@ -15,7 +15,7 @@
     "SSS"
   ],
   "result": {
-    "item": "create:nozzle"
+    "item": "create_re:nozzle"
   },
   "show_notification": true
 }

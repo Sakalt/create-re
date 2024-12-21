@@ -1,4 +1,4 @@
-package com.simibubi.create.content.equipment.bell;
+package com.simibubi.create_re.content.equipment.bell;
 
 import java.util.ArrayList;
 import java.util.HashSet;

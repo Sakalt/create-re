@@ -4,7 +4,7 @@
   "group": "cut_limestone_slab",
   "key": {
     "X": {
-      "item": "create:cut_limestone"
+      "item": "create_re:cut_limestone"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 6,
-    "item": "create:cut_limestone_slab"
+    "item": "create_re:cut_limestone_slab"
   },
   "show_notification": true
 }

@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"3": "create:block/belt/brass_belt_casing",
-		"particle": "create:block/brass_casing"
+		"3": "create_re:block/belt/brass_belt_casing",
+		"particle": "create_re:block/brass_casing"
 	},
 	"elements": [
 		{

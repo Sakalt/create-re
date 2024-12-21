@@ -1,7 +1,7 @@
 {
-	"parent": "create:block/clipboard/block_empty",
+	"parent": "create_re:block/clipboard/block_empty",
 	"textures": {
-		"0": "create:block/clipboard_model_filled",
-		"particle": "create:block/clipboard_model_filled"
+		"0": "create_re:block/clipboard_model_filled",
+		"particle": "create_re:block/clipboard_model_filled"
 	}
 }

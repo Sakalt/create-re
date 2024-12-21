@@ -3,8 +3,8 @@
 	"parent": "block/block",
 	"ambientocclusion": false,
 	"textures": {
-		"6": "create:block/waterwheel_metal",
-		"mechanical_press_pole": "create:block/mechanical_press_pole"
+		"6": "create_re:block/waterwheel_metal",
+		"mechanical_press_pole": "create_re:block/mechanical_press_pole"
 	},
 	"elements": [
 		{

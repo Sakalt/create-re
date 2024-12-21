@@ -1,7 +1,7 @@
-package com.simibubi.create.content.kinetics.belt;
+package com.simibubi.create_re.content.kinetics.belt;
 
-import static com.simibubi.create.content.kinetics.belt.BeltPart.MIDDLE;
-import static com.simibubi.create.content.kinetics.belt.BeltSlope.HORIZONTAL;
+import static com.simibubi.create_re.content.kinetics.belt.BeltPart.MIDDLE;
+import static com.simibubi.create_re.content.kinetics.belt.BeltSlope.HORIZONTAL;
 import static net.minecraft.core.Direction.AxisDirection.NEGATIVE;
 import static net.minecraft.core.Direction.AxisDirection.POSITIVE;
 
@@ -12,22 +12,22 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.function.Function;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.kinetics.base.IRotate;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-import com.simibubi.create.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
-import com.simibubi.create.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour;
-import com.simibubi.create.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour.TransportedResult;
-import com.simibubi.create.content.kinetics.belt.transport.BeltInventory;
-import com.simibubi.create.content.kinetics.belt.transport.BeltMovementHandler;
-import com.simibubi.create.content.kinetics.belt.transport.BeltMovementHandler.TransportedEntityInfo;
-import com.simibubi.create.content.kinetics.belt.transport.BeltTunnelInteractionHandler;
-import com.simibubi.create.content.kinetics.belt.transport.ItemHandlerBeltSegment;
-import com.simibubi.create.content.kinetics.belt.transport.TransportedItemStack;
-import com.simibubi.create.content.logistics.tunnel.BrassTunnelBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.blockEntity.behaviour.inventory.VersionedInventoryTrackerBehaviour;
-import com.simibubi.create.foundation.utility.NBTHelper;
+import com.simibubi.create_re.AllBlocks;
+import com.simibubi.create_re.content.kinetics.base.IRotate;
+import com.simibubi.create_re.content.kinetics.base.KineticBlockEntity;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour;
+import com.simibubi.create_re.content.kinetics.belt.behaviour.TransportedItemStackHandlerBehaviour.TransportedResult;
+import com.simibubi.create_re.content.kinetics.belt.transport.BeltInventory;
+import com.simibubi.create_re.content.kinetics.belt.transport.BeltMovementHandler;
+import com.simibubi.create_re.content.kinetics.belt.transport.BeltMovementHandler.TransportedEntityInfo;
+import com.simibubi.create_re.content.kinetics.belt.transport.BeltTunnelInteractionHandler;
+import com.simibubi.create_re.content.kinetics.belt.transport.ItemHandlerBeltSegment;
+import com.simibubi.create_re.content.kinetics.belt.transport.TransportedItemStack;
+import com.simibubi.create_re.content.logistics.tunnel.BrassTunnelBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.inventory.VersionedInventoryTrackerBehaviour;
+import com.simibubi.create_re.foundation.utility.NBTHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -140,11 +140,11 @@ public class BeltBlockEntity extends KineticBlockEntity {
 	}
 
 	@Override
-	public AABB createRenderBoundingBox() {
+	public AABB create_reRenderBoundingBox() {
 		if (!isController())
-			return super.createRenderBoundingBox();
+			return super.create_reRenderBoundingBox();
 		else
-			return super.createRenderBoundingBox().inflate(beltLength + 1);
+			return super.create_reRenderBoundingBox().inflate(beltLength + 1);
 	}
 
 	protected void initializeItemHandler() {

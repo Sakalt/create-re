@@ -3,13 +3,13 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "create:andesite_casing"
+      "item": "create_re:andesite_casing"
     },
     {
-      "item": "create:chute"
+      "item": "create_re:chute"
     }
   ],
   "result": {
-    "item": "create:portable_storage_interface"
+    "item": "create_re:portable_storage_interface"
   }
 }

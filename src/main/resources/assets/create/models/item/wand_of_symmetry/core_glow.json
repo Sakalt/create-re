@@ -1,6 +1,6 @@
 {
 	"ambientocclusion": false,
-	"parent": "create:item/wand_of_symmetry/item",
+	"parent": "create_re:item/wand_of_symmetry/item",
 	"textures": {
         "3": "block/white_stained_glass"
     },

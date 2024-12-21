@@ -1,13 +1,13 @@
-package com.simibubi.create.content.kinetics.motor;
+package com.simibubi.create_re.content.kinetics.motor;
 
 import com.google.common.collect.ImmutableList;
-import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
-import com.simibubi.create.foundation.blockEntity.behaviour.ValueBoxTransform;
-import com.simibubi.create.foundation.blockEntity.behaviour.ValueSettingsBoard;
-import com.simibubi.create.foundation.blockEntity.behaviour.ValueSettingsFormatter;
-import com.simibubi.create.foundation.blockEntity.behaviour.scrollValue.ScrollValueBehaviour;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
+import com.simibubi.create_re.foundation.blockEntity.SmartBlockEntity;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueBoxTransform;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueSettingsBoard;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.ValueSettingsFormatter;
+import com.simibubi.create_re.foundation.blockEntity.behaviour.scrollValue.ScrollValueBehaviour;
+import com.simibubi.create_re.foundation.utility.Components;
+import com.simibubi.create_re.foundation.utility.Lang;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
@@ -23,7 +23,7 @@ public class KineticScrollValueBehaviour extends ScrollValueBehaviour {
 	}
 
 	@Override
-	public ValueSettingsBoard createBoard(Player player, BlockHitResult hitResult) {
+	public ValueSettingsBoard create_reBoard(Player player, BlockHitResult hitResult) {
 		ImmutableList<Component> rows = ImmutableList.of(Components.literal("\u27f3")
 			.withStyle(ChatFormatting.BOLD),
 			Components.literal("\u27f2")

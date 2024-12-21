@@ -1,4 +1,4 @@
-package com.simibubi.create.foundation.mixin.accessor;
+package com.simibubi.create_re.foundation.mixin.accessor;
 
 import java.util.Map;
 
@@ -13,5 +13,5 @@ import net.minecraft.resources.ResourceLocation;
 public interface ParticleEngineAccessor {
 	// This field cannot be ATed because its type is patched by Forge
 	@Accessor("providers")
-	Map<ResourceLocation, ParticleProvider<?>> create$getProviders();
+	Map<ResourceLocation, ParticleProvider<?>> create_re$getProviders();
 }
