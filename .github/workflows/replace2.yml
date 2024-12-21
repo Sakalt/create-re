@@ -17,7 +17,7 @@ jobs:
         run: |
           # すべてのファイルを対象にして検索・置き換え
           find . -type f \( -name "*.java" -or -name "*.txt" -or -name "*.md" -or -name "*.json" \) | while read file; do
-            sed -i 's/create/create_re/g' "$file"
+            sed -i 's/simibubi/sakalti/g' "$file"
           done
 
       - name: 変更をコミット
